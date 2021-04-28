@@ -1,14 +1,11 @@
 function compareTrue(valor1, valor2) {
-  let resposta = 'false';
   if (valor1 === 'true' && valor2 === 'true') {
-    resposta = 'true';
-    return console.log(resposta);
+    return 'true';
   } else {
-    return console.log(resposta);
+    return 'false';
   }
- }
+}
 
- compareTrue('false', 'true');
 // Desafio 2
 function calcArea() {
   // seu código aqui
