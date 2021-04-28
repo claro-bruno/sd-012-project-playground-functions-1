@@ -8,7 +8,11 @@ function techList(tech, name) {
     }
     list.push(object);
   }
-  return list;
+  return list.sort(function(a, b) {
+    if (a.tech.toLowerCase() < b.tech.toLowerCase()) return -1;
+    else if (a.name.toLowerCase() > a.name.toLowerCase()) return 1;
+    return 0;
+  });
 }
 
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Renan'));
