@@ -1,16 +1,29 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(booleano1, booleano2) {
   // seu código aqui
+  if (booleano1 === true && booleano2 === true)
+    return console.log('true');
+  else return console.log('false');
 }
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
+  let area = (base * height) / 2;
+  return console.log(area);
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(string) {
   // seu código aqui
+  let array1 = [string];
+  let array2 = [];
+  for (let indice = 0; indice < array1.lenght; indice += 1) {
+    if (array1[indice] != ' ') {
+      array2 = [array1[indice].push];
+    };
+  };
+  return console.log(array2);
 }
 
 // Desafio 4
@@ -42,6 +55,7 @@ function fizzBuzz() {
 function encode() {
   // seu código aqui
 }
+
 function decode() {
   // seu código aqui
 }
