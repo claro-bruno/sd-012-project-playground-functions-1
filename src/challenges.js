@@ -2,14 +2,12 @@
 function compareTrue(param1, param2) {
   if (param1 === true && param2 === true) {
     return true;
-  } else {
-    return false;
   }
 }
 
 // Desafio 2
 function calcArea(base, height) {
-  return ((base * height)/2);
+  return ((base * height) / 2);
 }
 
 // Desafio 3
@@ -34,18 +32,15 @@ function footballPoints(wins, ties) {
 function highestCount(numbersArray) {
   let highestNumber = Number.NEGATIVE_INFINITY;
   let frequencyOfTheHighest = 0;
-  for (index = 0; index < numbersArray.length; index += 1) {
+  for (let index = 0; index < numbersArray.length; index += 1) {
     if (numbersArray[index] > highestNumber) {
       highestNumber = numbersArray[index];
-    } else {
-      highestNumber = highestNumber;
     }
   }
-  for (index = 0; index < numbersArray.length; index += 1) {
+
+  for (let index = 0; index < numbersArray.length; index += 1) {
     if (numbersArray[index] === highestNumber) {
       frequencyOfTheHighest += 1;
-    } else {
-      frequencyOfTheHighest = frequencyOfTheHighest;
     }
   }
   return frequencyOfTheHighest;
