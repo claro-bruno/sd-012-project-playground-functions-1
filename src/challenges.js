@@ -64,7 +64,7 @@ function catAndMouse(mouse, cat1, cat2) {
   if (diffCat1Mouse < 0) {
     diffCat1Mouse = diffCat1Mouse * -1;
   }
-  
+
   if (diffCat2Mouse < 0) {
     diffCat2Mouse = diffCat2Mouse * -1;
   }
@@ -78,11 +78,24 @@ function catAndMouse(mouse, cat1, cat2) {
   };
 }
 
-console.log(catAndMouse(5, 4, 6))
-
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(arrayFizzBuzz) {
   // seu código aqui
+
+  let arrayAnswer = [];
+
+  for (let contador = 0; contador < arrayFizzBuzz.length; contador += 1) {
+    if (arrayFizzBuzz[contador] % 3 === 0 && arrayFizzBuzz[contador] % 5 !== 0) {
+      arrayAnswer.push('fizz');
+    } else if (arrayFizzBuzz[contador] % 5 === 0 && arrayFizzBuzz[contador] % 3 !== 0) {
+      arrayAnswer.push('buzz');
+    } else if (arrayFizzBuzz[contador] % 5 === 0 && arrayFizzBuzz[contador] % 3 === 0) {
+      arrayAnswer.push('fizzBuzz');
+    } else {
+      arrayAnswer.push('bug!');
+    }
+  }
+  return arrayAnswer;
 }
 
 // Desafio 9
