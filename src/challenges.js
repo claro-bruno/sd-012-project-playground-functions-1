@@ -81,7 +81,7 @@ function highestCount(VezesMaiorNumeroAparece) {
   return vezesAparece;
 }
 
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
+//console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
