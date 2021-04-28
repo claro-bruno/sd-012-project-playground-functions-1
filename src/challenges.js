@@ -99,12 +99,31 @@ function fizzBuzz(listaInteiros) {
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let separado = string.split("");
+  //console.log(separado);
+  let tamanho = string.length;
+  for (let index = 0; index < tamanho; index += 1) {
+    if (string[index] == "a") {
+      separado[index] = "1";
+    } else if (string[index] == "e") {
+      separado[index] = "2";
+    } else if (string[index] == "i") {
+      separado[index] = "3";
+    } else if (string[index] == "o") {
+      separado[index] = "4";
+    } else if (string[index] == "u") {
+      separado[index] = "5";
+    };
+  };
+  separado = separado.join("");
+  return separado;
 }
 function decode() {
   // seu código aqui
 }
+
+console.log(encode("hi there!"));
 
 module.exports = {
   calcArea,
