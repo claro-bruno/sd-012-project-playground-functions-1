@@ -1,9 +1,9 @@
 // Desafio 1
   let a = true;
-  let b = true;
+  let b = false;
   let answer = a && b;
  function compareTrue(a,b) {
-  if (answer === true) {
+  if (a && b === true) {
     return true;
   } else {
     return false;
