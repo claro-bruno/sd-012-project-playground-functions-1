@@ -7,8 +7,6 @@ function compareTrue(boo1, boo2) {
   }
 }
 
-console.log(compareTrue(false, true))
-
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) / 2;
@@ -22,7 +20,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(arrayDeStrings) {
-  return arrayDeStrings[arrayDeStrings.length -1] + ', ' + arrayDeStrings[0];
+  return arrayDeStrings[arrayDeStrings.length - 1] + ", " + arrayDeStrings[0];
 }
 
 // Desafio 5
