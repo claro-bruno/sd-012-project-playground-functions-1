@@ -1,17 +1,15 @@
 // Desafio 1
 function compareTrue(firstBoolean, secondBoolean) {
-  if (typeof firstBoolean === 'boolean' && typeof secondBoolean === 'boolean'){
-    if (firstBoolean === false) {
+  if (firstBoolean === false) {
       return false;  
+  } else {
+    if (secondBoolean === false) {
+      return false;
     } else {
-      if (secondBoolean === false) {
-        return false;
-      } else {
-        return true;    
-      };
+      return true;    
     };
   };
-  return undefined;
+  return "Error, one of the parameters is not a boolean.";
 }
 // Desafio 2
 function calcArea(base, height) {
@@ -25,7 +23,7 @@ function splitSentence(phrase) {
 
 // Desafio 4
 function concatName(...chosenArray) {
-  return chosenArray[0][chosenArray[0].length - 1] + ' , ' + chosenArray[0][0];
+  return chosenArray[chosenArray.length - 1] + ', ' + chosenArray[0];
 }
 
 // Desafio 5
@@ -34,8 +32,8 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(...numbers) {
+
 }
 
 // Desafio 7
@@ -68,3 +66,4 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+
