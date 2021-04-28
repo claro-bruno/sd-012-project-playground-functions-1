@@ -106,7 +106,9 @@ function highestCount(numbers) {
 
 
 // Desafio 7 -- FAZER
-//function catAndMouse() {}
+function catAndMouse() {
+
+}
 //  let cat1 = "cat1";
 //  let cat2 = "cat2";
  // let erro = "os gatos trombam e o rato foge";
@@ -122,13 +124,13 @@ function highestCount(numbers) {
 
 
 // Desafio 8
-//function fizzBuzz(number) {
+function fizzBuzz(number) {
 //  if([number] / 3 ){
 //    return "fizz";
 //  } else if([number] / 5){
 //    return = "buzz";
  // } else if ([number] / 3 || /5)
-//}
+}
 
 // Desafio 9
 function encode() {
