@@ -102,24 +102,23 @@ catAndMouse(0,2,2);
 // Desafio 8
 function fizzBuzz(lista) {
   
-  let novaLista =[];
+  let novaLista=[];
   for (let index =0 ; index<lista.length ; index +=1){
     
-    if(lista[index]%3==0 && lista[index]%5){
-      return novaLista.push('fizzBuzz');
+    if(lista[index]%3==0 && lista[index]%5==0){
+      novaLista.push('fizzBuzz');
     }
     else if(lista[index]%3==0){
-      return novaLista.push('fizz');
-    }/
+      novaLista.push('fizz');
+    }
     else if(lista[index]%5==0){
-      return novaLista.push('buzz');
+      novaLista.push('buzz');
     }
     else if(lista[index]%5!=0 && lista[index]%3!=0) {
-      return novaLista.push('buzz');
+      novaLista.push(`bug!`);
     }
   }return novaLista;
 }
-
 let numbers = [2, 15, 7, 9, 45];
 console.log(fizzBuzz(numbers));
 
