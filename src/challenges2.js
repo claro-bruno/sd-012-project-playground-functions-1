@@ -17,7 +17,7 @@ function techList(array, string) {
 }
 console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 
-console.log('==================================================')
+console.log('==================================================');
 
 // Desafio 11
 function generatePhoneNumber(array) {
@@ -60,10 +60,20 @@ function generatePhoneNumber(array) {
 }
 console.log (generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
+console.log('==================================================');
+
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  if (lineA < (lineB + lineC) && lineB < (lineA + lineC) && lineC < (lineB + lineA) && lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineB - lineA)) {
+    return true;
+  } else {
+    return false;
+  }
 }
+console.log (triangleCheck(10, 14, 8));
+
+console.log('==================================================');
 
 // Desafio 13
 function hydrate() {
