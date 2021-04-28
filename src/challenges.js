@@ -64,20 +64,34 @@ function catAndMouse(mouse, cat1, cat2) {
   let distance1 = Math.abs(mouse - cat1);
   let distance2 = Math.abs(mouse - cat2);
 
-  if( distance1 > distance2) {
+  if( distance1 < distance2) {
     return 'cat1';
-  } else if (distance1 < distance2) {
+  } else if (distance1 > distance2) {
     return 'cat2';
   } else if (distance1 === distance2) {
     return 'os gatos trombam e o rato foge';
   };
 };
-console.log (catAndMouse(5, 3, 2));
+
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(numbers) {
+  for(let index = 0; index < numbers.length; index += 1) {
+    if(numbers[index] / 3 === 0) {
+      return 'fizz';
+    } else if (numbers[index] / 5 === 0) {
+      return 'buzz';
+    } else if (numbers[index] /3 === 0 && numbers[index] / 5 === 0) {
+      return 'fizzBuzz';
+    } else {
+      return 'bug!';
+    };
+  };
+};
+
+console.log(fizzBuzz(2,15,7,9,45));
+console.log(fizzBuzz(7,9));
+console.log(fizzBuzz(9,25));
 
 // Desafio 9
 function encode() {
