@@ -82,7 +82,7 @@ function highestCount(VezesMaiorNumeroAparece) {
 
 }
 
- console.log(highestCount([0,0,0]))
+//  console.log(highestCount([0,0,0]))
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -104,13 +104,27 @@ function catAndMouse(mouse, cat1, cat2) {
 // console.log(catAndMouse(0,3,2))
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(AcrescentaArrays) {
 
+let result = [];
 
-
-
+for(let index = 0;index < AcrescentaArrays.length; index+=1 ){
+    
+  if(AcrescentaArrays[index] % 3 == 0 && AcrescentaArrays[index] % 5 != 0  ) {
+         result.push("fizz");
+  } else if (AcrescentaArrays[index] % 5 == 0 && AcrescentaArrays[index] % 3 != 0){
+         result.push("buzz");
+  } else if (AcrescentaArrays[index] % 5 == 0 && AcrescentaArrays[index] % 3 == 0 ){
+         result.push("fizzBuzz")
+  } else if (AcrescentaArrays[index] % 5 != 0 && AcrescentaArrays[index] % 3 != 0 ) {
+         result.push("bug!")
+  }
+}
+return result;
 
 }
+
+console.log(fizzBuzz([45]))
 
 // Desafio 9
 function encode() {
