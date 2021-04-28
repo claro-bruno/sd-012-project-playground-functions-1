@@ -79,9 +79,28 @@ function catAndMouse(mouse, cat1, cat2) {
 console.log(catAndMouse(1, 7, 13));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function checkDivisions(value) {
+  if ((value % 3 === 0) && (value % 5 === 0)) {
+    return 'fizzBuzz';
+  }
+  if (value % 3 === 0) {
+    return 'fizz';
+  }
+  if (value % 5 === 0) {
+    return 'buzz';
+  }
+  return 'bug!';
 }
+
+function fizzBuzz(numbers) {
+  let results = [];
+  for (let index = 0; index < numbers.length; index += 1) {
+    results.push(checkDivisions(numbers[index]));
+  }
+  return results;
+}
+
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
