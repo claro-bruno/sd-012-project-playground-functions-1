@@ -32,8 +32,10 @@ function splitSentence(sentence) {
 };
 
 // Desafio 4
-function concatName() {
+function concatName(listaNomes) {
   // seu código aqui
+  let concat = listaNomes[listaNomes.length - 1]+", "+listaNomes[0];
+  return concat;
 }
 
 // Desafio 5
