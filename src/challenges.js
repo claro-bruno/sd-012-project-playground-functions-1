@@ -1,50 +1,59 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-}
+function compareTrue(bool1,bool2) {
+  if ( bool1 == true && bool2 == true) {
+    return true ;
+ } else {
+    return false;
+ }  
+ }
+
+console.log(compareTrue(false,true));
+
+
+
 
 // Desafio 2
-function calcArea() {
+//function calcArea() {
   // seu código aqui
-}
+//{
 
 // Desafio 3
-function splitSentence() {
+//function splitSentence() {
   // seu código aqui
-}
+//}
 
 // Desafio 4
-function concatName() {
+//function concatName() {
   // seu código aqui
-}
+//}
 
 // Desafio 5
-function footballPoints() {
+//function footballPoints() {
   // seu código aqui
-}
+//}
 
 // Desafio 6
-function highestCount() {
+//function highestCount() {
   // seu código aqui
-}
+//}
 
 // Desafio 7
-function catAndMouse() {
+//function catAndMouse() {
   // seu código aqui
-}
+//}
 
 // Desafio 8
-function fizzBuzz() {
+//function fizzBuzz() {
   // seu código aqui
-}
+//}
 
 // Desafio 9
-function encode() {
+//function encode() {
   // seu código aqui
-}
-function decode() {
+//}
+//function decode() {
   // seu código aqui
-}
+//}
 
 module.exports = {
   calcArea,
