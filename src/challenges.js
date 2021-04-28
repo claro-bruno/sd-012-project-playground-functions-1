@@ -116,12 +116,37 @@ function encode(stringToEncode) {
   return stringToEncode.join('');
 }
 
-console.log(encode(['hi there!']));
-
-
 function decode(stringToDecode) {
-  // seu código aqui
+  stringToDecode = stringToDecode.toString().split('');
+
+  for (let index = 0; index < stringToDecode.length; index += 1) {
+    switch(stringToDecode[index]) {
+      case '1':
+        stringToDecode[index] = 'a';
+        break;
+
+      case '2':
+        stringToDecode[index] = 'e';
+        break;
+
+      case '3':
+        stringToDecode[index] = 'i';
+        break;
+
+      case '4':
+        stringToDecode[index] = 'o';
+        break;
+
+      case '5':
+        stringToDecode[index] = 'u';
+        break;
+    }
+  }
+  return stringToDecode.join('');
 }
+
+console.log(decode(['123']));
+
 
 module.exports = {
   calcArea,
