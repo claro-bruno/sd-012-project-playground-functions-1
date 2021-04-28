@@ -9,11 +9,11 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  let string = '';
-  let str = string.split(' '); {
-    return str;
-  }
+// function splitSentence() {
+//   let string = '';
+//   let str = string.split(' '); {
+//     return str
+//   }
 
 
 // Desafio 4
@@ -22,12 +22,10 @@ function concatName() {
 }
 
 // Desafio 5
-function footballPoints() {
-  function footballPoints(wins, ties) {
+function footballPoints(wins, ties) {
     if ((wins * 3) + (ties * 1))
     return wins + ties
   }
-}
 
 // Desafio 6
 function highestCount() {
