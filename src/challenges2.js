@@ -52,20 +52,16 @@ function triangleCheck(lineA, lineB, lineC) {
   }
 }
 
-console.log(triangleCheck(10,13,2))
-
 // Desafio 13
-function hydrate(pedido) {
-  pedido = pedido.toString().split('');
-  console.log(pedido);
-  for (index in pedido) {
-    pedido = parseInt(pedido);
-    }
-    return pedido;
+function hydrate(pedidos) {
+  let soma = 0;
+  pedidos = pedidos.toString().split('');
+  for (let pedido of pedidos) {
+    pedido = (parseInt(pedido) || 0);
+      soma = soma + pedido;
   }
-
-
-// console.log(hydrate(['12 copo', '1 teste']));
+  return soma;
+}
 
 module.exports = {
   generatePhoneNumber,
