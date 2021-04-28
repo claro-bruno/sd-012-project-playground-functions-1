@@ -1,10 +1,13 @@
 // Desafio 1
 function compareTrue(param1, param2) {
+  param1 = true;
+  param2 = true
   if (param1 === true && param2 === true) {
     return true;
   }
 }
 
+console.log(compareTrue(1, 1))
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) / 2;
