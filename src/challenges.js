@@ -4,14 +4,14 @@ function compareTrue(booleano1, booleano2) {
   if (booleano1 === true && booleano2 === true)
     return console.log('true');
   else return console.log('false');
-}
-compareTrue(false,true); compareTrue(false,false); compareTrue(true,true);
+};
+
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
   let area = (base * height) / 2;
   return console.log(area);
-}
+};
 
 // Desafio 3
 function splitSentence(string) {
@@ -24,7 +24,7 @@ function splitSentence(string) {
     };
   };
   return console.log(array2);
-}
+};
 
 // Desafio 4
 function concatName() {
