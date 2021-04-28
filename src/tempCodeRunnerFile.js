@@ -1,11 +1,8 @@
-function concatName(strings) {
-  let array = strings;
-  return (array[array.length -1]) + ', ' + (array[0]);
+function footballPoints(wins, ties) {
+  let points = (wins*3) + ties;
+  return points;
 }
 
-strings = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-console.log(concatName(strings));
-strings =  ['foguete', 'não', 'tem', 'ré'];
-console.log(concatName(strings));
-strings = ['captain', 'my', 'captain'];
-console.log(concatName(strings));
+console.log(footballPoints(14, 8));
+console.log(footballPoints(1, 2));
+console.log(footballPoints(0, 0));
