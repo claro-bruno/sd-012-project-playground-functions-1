@@ -1,10 +1,8 @@
 // Desafio 1
 function compareTrue(num1, num2) {
-  let check = false;
-    if (num1 > num2 && num1 % 2 === 0) {
-      check = true;
-    }
-  return check;
+  if (num1 === true && num2 === true) {
+    return true;
+  }
 }
 
 // Desafio 2
@@ -20,7 +18,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
+  
 }
 
 // Desafio 5
