@@ -1,4 +1,4 @@
-// Desafio 1
+Desafio 1
 function compareTrue(bool1,bool2) {
   if ( bool1 == true && bool2 == true) {
     return true ;
@@ -7,15 +7,38 @@ function compareTrue(bool1,bool2) {
  }  
  }
 
-console.log(compareTrue(false,true));
 
 
-
-
-// Desafio 2
+ //Desafio 2
 //function calcArea() {
-  // seu código aqui
+  // 
 //{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Desafio 3
 //function splitSentence() {
