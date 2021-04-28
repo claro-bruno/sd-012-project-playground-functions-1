@@ -1,8 +1,13 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(parametOne, parametTwo) {
   // seu código aqui
+  if(parametOne > 0 && parametTwo < 10){
+    return true
+  }
+  else {
+    return false
+  }
 }
-
 // Desafio 2
 function calcArea() {
   // seu código aqui
