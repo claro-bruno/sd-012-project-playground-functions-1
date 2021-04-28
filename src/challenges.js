@@ -34,9 +34,20 @@ function concatName(sentenca) {
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins,ties,) {
   // seu código aqui
+  let countWin = 0;
+  let countTies = 0;
+  for(let index = 0; index < wins; index+= 1){
+    countWin+=3;
+  }
+  for(let index = 0; index < ties; index+= 1){
+    countTies+=1;
+  }
+  return countWin + countTies;
+
 }
+
 
 // Desafio 6
 function highestCount() {
