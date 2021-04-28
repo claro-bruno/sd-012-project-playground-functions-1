@@ -1,5 +1,5 @@
 // Desafio 1
-function compareTrue(bolleano1, bolleano2) {
+function compareTrue( bolleano1, bolleano2) {
 
   if (bolleano1 === true && bolleano2 === true) {
     return true;
@@ -38,7 +38,7 @@ let ffinal= [];
 // Desafio 4
 function concatName(array) {
   ultimo= array.length;
-  return array[ultimo-1] + ', ' + array[0];
+  return array[ultimo-1] + ',' + array[0];
 }
 
 function footballPoints(wins,ties) {
@@ -49,13 +49,13 @@ function footballPoints(wins,ties) {
 // Desafio 6
 function highestCount(inteiros) {
 let maior = inteiros[0];
-let contador;
+let contador = 0;
   for (index = 0;index < inteiros.length;index += 1){
-    if(inteiros[index]>maior){
-      maior=inteiros[index];
+    if (inteiros[index] > maior){
+      maior = inteiros[index];
     }
   };
-  for (index = 0;index < inteiros.length;index+=1){
+  for (index = 0;index < inteiros.length;index += 1){
     if (inteiros[index] === maior){
       contador += 1;
     }
@@ -63,10 +63,12 @@ let contador;
   return contador;
 }
 
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let distancia1 = mouse-cat1;
-  let distancia2 = mouse-cat2;
+  let distancia1 = mouse - cat1;
+  let distancia2 = mouse - cat2;
   if (distancia2 < distancia1){
     return 'cat2';
   }
@@ -74,9 +76,10 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat1';
   }
   else {
-    return 'os gatos trombam e o rato fogem';
+    return 'os gatos trombam e o rato foge';
   }
 }
+console.log(catAndMouse(10,8,8));
 
 // Desafio 8
 function fizzBuzz() {
