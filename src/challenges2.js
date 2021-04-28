@@ -1,6 +1,17 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(arr, name) {
+
+  let obj = [];
+
+  arr.forEach(element => {
+    obj.push({
+      tech: element,
+      name: name
+    });
+
+  });
+
+  return obj;
 }
 
 // Desafio 11

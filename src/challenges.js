@@ -60,11 +60,12 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(arr) {
   let message = '';
   let fizzAndBuzz = [];
+
   arr.forEach(element => {
-    (element % 3 == 0 && element % 5 == 0) ? message = 'fizzBuzz'
-      : (element % 3 == 0) ? message = 'fizz'
-        : (element % 5 == 0) ? message = 'buzz'
-          : message = 'bug!';
+    (element % 3 == 0 && element % 5 == 0) ? message = 'fizzBuzz' :
+      (element % 3 == 0) ? message = 'fizz' :
+        (element % 5 == 0) ? message = 'buzz' :
+          message = 'bug!';
 
     fizzAndBuzz.push(message);
 
