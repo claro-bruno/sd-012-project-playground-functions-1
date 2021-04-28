@@ -29,9 +29,8 @@ function concatName(names) {
     if (names[index] === names[0] || names[index] === names[names.length - 1]) {
       concatNames.push(names[index]);
     }
-    concatNames.reverse();
   }
-  return concatNames;
+  return concatNames.reverse();
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 
