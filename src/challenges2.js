@@ -1,6 +1,9 @@
 // Desafio 10
 function techList(array, name) {
   // seu código aqui
+  if(array.length === 0){
+    return "Vazio!";
+  }
   array = array.sort();
   let output = [];
   for (let index = 0; index < array.length; index += 1) {
@@ -20,22 +23,22 @@ function generatePhoneNumber(numbers) {
   if (numbers[0] < 0 || numbers[10] > 9) {
     return "não é possível gerar um número de telefone com esses valores";
   }
-  let occurences = 1;
+  let occurrences = 1;
   for (let index = 1; index < numbers.length; index += 1) {
     if (numbers[index] === numbers [index - 1]){
-      occurences += 1;
-      if (occurences > 3){
+      occurrences += 1;
+      if (occurrences > 3){
         return "não é possível gerar um número de telefone com esses valores";
       }
     }
     else {
-      ocurrences = 1;
+      occurrences = 1;
     }
   }
   string = "("+string.substr(0,2)+") "+string.substr(2,5)+"-"+string.substr(7);
   return string;
 }
-//console.log(generatePhoneNumber([1, 1, 2, 3, 5, 6, 7, 8, 9, 0, 1]))
+console.log(generatePhoneNumber([5,2,8,1,5,3,7,2,8,9,0]))
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
@@ -56,6 +59,9 @@ function hydrate(string) {
     sum = Number(string[index]) + sum;
   }
   console.log(string)
+  if(sum === 1){
+    return `${sum} copo de água`;
+  }
   return `${sum} copos de água`;
 }
 //console.log(hydrate("3 cachaça, 8cervejas e 1 copo de vinho"));

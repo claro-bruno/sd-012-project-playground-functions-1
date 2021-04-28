@@ -79,7 +79,7 @@ function fizzBuzz(numbers) {
       strings.push("fizz");
     }
     else if (numbers[index] % 3 !== 0 && numbers[index] % 5 === 0){
-      strings.push("Buzz");
+      strings.push("buzz");
     }
     else if (numbers[index] % 3 !== 0 && numbers[index] % 5 !== 0){
       strings.push("bug!");
