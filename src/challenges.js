@@ -29,8 +29,21 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+// eslint-disable-next-line sonarjs/cognitive-complexity
+function highestCount(numbers) {
+  let greater = numbers[0];
+  let counter = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] > greater) {
+      greater = numbers[index];
+    }
+  }
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] === greater) {
+      counter += 1;
+    }
+  }
+  return counter;
 }
 
 // Desafio 7
