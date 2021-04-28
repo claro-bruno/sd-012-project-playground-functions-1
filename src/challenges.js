@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
-  let resposta = false;
+  let resposta;
   if (valor1 === true && valor2 === true) {
     resposta = true;
     return resposta;
@@ -14,14 +14,14 @@ console.log(compareTrue(true, true));
 // Desafio 2
 function calcArea(base, altura) {
   let resposta = 0;
-  area = (base * altura) / 2;
+  let area = (base * altura) / 2;
   return area;
 }
 console.log(calcArea(5, 2));
 
 // Desafio 3
 function splitSentence(string) {
-  let array =  [];
+  let array = [];
   array = string.split(" "); // separa a string de acordo com o caracter entre "aspas"
   return array;
 }
@@ -32,9 +32,6 @@ function concatName(array) {
   let primeiroNome = array[0];
   let ultimoNome = array[array.length - 1];
   let primeiroUltimo = ultimoNome + ", " + primeiroNome;
-  //let primeiroUltimo = [];
-  //primeiroUltimo[0] = primeiroNome;
-  //primeiroUltimo[1] = ultimoNome;
   return primeiroUltimo;
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
