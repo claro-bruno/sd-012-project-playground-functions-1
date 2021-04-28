@@ -19,13 +19,13 @@ compareTrue(10, 2)
 
 function calcArea(base, heigth) {
  
-  let calculo = (base * heigth) / 2
-  console.log(calculo)
+  return (base * heigth) / 2;
 
 }
-calcArea(10, 50)
-calcArea(5, 2)
-calcArea(51, 1)
+
+console.log(calcArea(10, 50))
+console.log(calcArea(5, 2))
+console.log(calcArea(51, 1))
 
 
 // Desafio 3
