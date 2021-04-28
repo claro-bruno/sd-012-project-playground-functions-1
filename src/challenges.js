@@ -46,13 +46,13 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(array) {
   let resultado = [];
-  for (let index = 0; index < array.length; index+= 1) {
+  for (let index = 0; index < array.length; index += 1) {
     if ((array[index] % 3 === 0) && (array[index] % 5 === 0)) {
       resultado.push("fizzBuzz");
     } else if ((array[index] % 3 === 0)) {
       resultado.push("fizz");
     } else if ((array[index] % 5 === 0)) {
-      resultado.push("Buzz");
+      resultado.push("buzz");
     } else {  
       resultado.push("bug!");
     };
@@ -61,11 +61,11 @@ function fizzBuzz(array) {
 };
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let resultado = [];
 };
 function decode() {
-  // seu código aqui
+  let resultado = [];
 };
 
 module.exports = {
