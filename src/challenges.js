@@ -74,7 +74,7 @@ function fizzBuzz(numeros) {
         } else if (num % 3 === 0) {
             retorno.push('fizz');
         } else if (num % 5 === 0) {
-            retorno.push('Buzz');
+            retorno.push('buzz');
         } else {
             retorno.push('bug!');
         }
