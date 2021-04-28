@@ -75,19 +75,26 @@ function highestCount(numbers) {
   }
   return timesNumberAppear[singleNumbers.indexOf(Math.max(...singleNumbers))];
 }
-/*
+
 let array = [9, 1, 2, 3, 9, 5, 7];
-console.log(highestCount.apply(null, array));
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 array = [0, 4, 4, 4, 9, 2, 1];
-console.log(highestCount.apply(null, array));
+console.log(highestCount(array));
 array = [0, 0, 0];
-console.log(highestCount.apply(null, array));
-*/
+console.log(highestCount(array));
+
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   cat1 -= mouse;
   cat2 -= mouse;
+
+  if (cat1 < 0) {
+    cat1 *= (-1);
+  }
+  if (cat2 < 0) {
+    cat2 *= (-1);
+  }
 
   if (cat1 === cat2) {
     return 'os gatos trombam e o rato foge';
