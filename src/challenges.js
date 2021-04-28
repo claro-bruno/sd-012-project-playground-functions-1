@@ -28,10 +28,9 @@ console.log(splitSentence('vamo que vamo'))
 // Desafio 4
 function concatName(array) {
   // seu código aqui
-let n = array;
 let primeiro = array[0]
-let ultimo = array[n.length - 1]
-let concatenacao = primeiro + ', ' + ultimo
+let ultimo = array[array.length - 1]
+let concatenacao = ultimo + ',' + ' ' + primeiro 
 return concatenacao;
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
