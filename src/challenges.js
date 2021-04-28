@@ -25,8 +25,13 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(nomeCompleto) {
   // seu código aqui
+  let nome = nomeCompleto.split(" ");
+  let firstName = nome[0];
+  let lastName = nome[nome.length - 1];
+  let printName = lastName + ", " + firstName;
+  return printName;
 }
 
 // Desafio 5
