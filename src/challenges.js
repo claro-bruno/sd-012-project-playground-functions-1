@@ -4,9 +4,9 @@ function compareTrue(valorBoolean1, valorBoolean2) {
   if ((valorBoolean1 === true) && (valorBoolean2 === true)) {
     return true;
   }
-    return false;
+  return false;
 }
-//console.log(compareTrue(true, true));
+// console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, heigth) {
@@ -14,26 +14,54 @@ function calcArea(base, heigth) {
   let result;
 
   result = (base * heigth) / 2;
-  
+
   return result;
 }
-//console . log (calcArea(10, 50));
+// console . log (calcArea(10, 50));
 
 // Desafio 3
 function splitSentence(string) {
   // seu código aqui
-  string = string.split(' '); //Lembrar de dar 2 espaços
-  
+  string = string.split(' '); // Lembrar de dar 2 espaços se não ele separa letra por letra.
+
   return string;
 }
 
-let frase = 'vamo que vamo';
+let frase = 'go trybe';
 console.log(splitSentence(frase));
 
-
 // Desafio 4
-function concatName() {
+function concatName(array) {
   // seu código aqui
+  let nomes = ['lucas', 'cassiano','ferraz','paolillo'];
+  let primeiroNome;
+  let ultimoNome;
+
+  for(let index =0; index < nomes.length; index += 1){
+    
+    primeiroNome = index[0];
+    ultimoNome = index[nomes.length];
+  }
+  console.log(nomes);
+}
+  let last = array.slice(-1)[0];
+  let first = array[0];
+  let together = [];
+  together.push(last + first);
+  return together;
+}
+names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log(concatName(names));
+
+let arrSplit = [];
+for (let index = 0; index < arr.length; index += 1) {
+  console.log(index);
+  if (index === 0 || index === arr.length - 1) {
+    arrSplit.unshift(arr[index]);
+  }
+}
+return arrSplit;
+}
 }
 
 // Desafio 5
