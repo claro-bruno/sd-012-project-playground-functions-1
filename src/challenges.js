@@ -1,3 +1,4 @@
+/* eslint-disable space-before-blocks */
 /* eslint-disable operator-assignment */
 /* eslint-disable no-unused-vars */
 /* eslint-disable prefer-template */
@@ -49,10 +50,22 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(arrayNumeros) {
   // seu código aqui
+  let maior = 0;
+  let vezes = 0;
+  for (let index = 0; index < arrayNumeros.length; index += 1) {
+    if (arrayNumeros[index] > arrayNumeros[index + 1]) {
+      maior = arrayNumeros[index];
+      vezes = 0;
+    }
+    if (arrayNumeros[index] === maior) {
+      vezes += 1;
+    }
+  }
+  return vezes;
 }
-
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
