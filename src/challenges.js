@@ -1,8 +1,16 @@
 // Desafio 1
+let variavel1 = 1;
+let variavel2 = 1;
+
 function compareTrue() {
   // seu código aqui
-  //primeiro commit
-  a+b;
+  if (variavel1 === 0 && variavel2 === 0){
+    estadoAtual = true;
+  } else {
+      estadoAtual = false;
+    }
+
+    return estadoAtual;
 }
 
 // Desafio 2
