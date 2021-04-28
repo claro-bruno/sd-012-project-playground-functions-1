@@ -64,18 +64,64 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(arrayNumbers) {
   let result = [];
+  let fizz = "fizz";
+  let buzz = "buzz";
+  let both = "fizzBuzz";
+  let bug = "bug!";
   for (index = 0; index < arrayNumbers.length; index += 1) {
-    if (arrayNumbers[index] )
+    if (Number.isInteger(arrayNumbers[index] / 3) === true && Number.isInteger(arrayNumbers[index] / 5) === true) {
+      result.push(both);
+    } else if (Number.isInteger(arrayNumbers[index] / 3) === true && Number.isInteger(arrayNumbers[index] / 5) === false) {
+      result.push(fizz);
+    } else if (Number.isInteger(arrayNumbers[index] / 5) === true && Number.isInteger(arrayNumbers[index] / 3) === false) {
+      result.push(buzz);
+    } else {
+      result.push(bug);
+    }
   }
+  return result
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  encodeString = string.split('')
+  for (index = 0; index < encodeString.length; index += 1) {
+    if (encodeString[index] === 'a') {
+      encodeString[index] = 1;
+    } else if (encodeString[index] === 'e') {
+      encodeString[index] = 2;
+    } else if (encodeString[index] === 'i') {
+      encodeString[index] = 3;
+    } else if (encodeString[index] === 'o') {
+      encodeString[index] = 4;
+    } else if (encodeString[index] === 'u') {
+      encodeString[index] = 5;
+    }
+  }
+  encodeString = encodeString.join('')
+  return encodeString;
 }
+
 function decode() {
-  // seu código aqui
+  decodeString = string.split('')
+  for (index = 0; index < decodeString.length; index += 1) {
+    if (decodeString[index] === '1') {
+      decodeString[index] = 'a';
+    } else if (decodeString[index] === '2') {
+      decodeString[index] = 'e';
+    } else if (decodeString[index] === '3') {
+      decodeString[index] = 'i';
+    } else if (decodeString[index] === '4') {
+      decodeString[index] = 'o';
+    } else if (decodeString[index] === '5') {
+      decodeString[index] = 'u';
+    }
+  }
+  decodeString = decodeString.join('')
+  return decodeString;
 }
+
+console.log(encode("1111122223333444555"));
 
 module.exports = {
   calcArea,
