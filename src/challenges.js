@@ -29,8 +29,6 @@ function calcArea(base, heigth) {
   }
 }
 
-console.log(calcArea(51, 1));
-
 
 
 
