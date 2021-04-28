@@ -18,8 +18,9 @@ function splitSentence(phrase) {
 }
 
 // Desafio 4
-function concatName() {
-   // seu código aqui
+function concatName(phrase) {
+  let wordPhrase = phrase.split(' ');
+  return  (wordPhrase[0]) + ' ' + (wordPhrase[wordPhrase.length - 1])
 }
 
 // Desafio 5
