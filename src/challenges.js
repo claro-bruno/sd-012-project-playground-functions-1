@@ -1,3 +1,6 @@
+/* eslint-disable guard-for-in */
+/* eslint-disable max-lines-per-function */
+/* eslint-disable sonarjs/cognitive-complexity */
 /* eslint-disable space-before-blocks */
 /* eslint-disable operator-assignment */
 /* eslint-disable no-unused-vars */
@@ -82,10 +85,23 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(numeros) {
   // seu código aqui
+  let resultado = [];
+  for (let index in numeros) {
+    if (numeros[index] % 3 !== 0 && numeros[index] % 5 !== 0) {
+      resultado.push('bug!');
+    } else if (numeros[index] % 3 === 0 && numeros[index] % 5 === 0) {
+      resultado.push('fizzBuzz');
+    } else if (numeros[index] % 3 === 0) {
+      resultado.push('fizz');
+    } else if (numeros[index] % 5 === 0) {
+      resultado.push('buzz');
+    }
+  }
+  return resultado;
 }
-
+console.log(fizzBuzz([9, 25]));
 // Desafio 9
 function encode() {
   // seu código aqui
