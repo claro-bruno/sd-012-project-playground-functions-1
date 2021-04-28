@@ -72,7 +72,7 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(arrayBuzz) {
   let resultado = [];
-  for (let key in arrayBuzz){
+  for (let key in arrayBuzz) {
     if (arrayBuzz[key] % 3 === 0 && arrayBuzz[key] % 5 !== 0) {
       resultado.push('fizz');
     } else if (arrayBuzz[key] % 5 === 0 && arrayBuzz[key] % 3 !== 0) {
@@ -87,10 +87,35 @@ function fizzBuzz(arrayBuzz) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(toEncode) {
+  let codificado = ''
+  for (let key in toEncode) {
+    if (toEncode[key] === 'a' || toEncode[key] === 'e' || toEncode[key] === 'i' || toEncode[key] === 'o' || toEncode[key] === 'u' ) {
+      switch (toEncode[key]) {
+        case 'a':
+          codificado += '1'
+          break;
+        case 'e':
+          codificado += '2'
+          break;
+        case 'i':
+          codificado += '3'
+          break;
+        case 'o':
+          codificado += '4'
+          break;
+        case 'u':
+          codificado += '5'
+          break; 
+      };
+    } else {
+      codificado += toEncode[key]
+    }
+  }
+  return codificado
 }
-function decode() {
+console.log(encode('h3 th2r2!'))
+function decode(toDecode) {
   // seu código aqui
 }
 
