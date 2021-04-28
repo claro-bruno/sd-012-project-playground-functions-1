@@ -4,18 +4,17 @@ function compareTrue(bool, bool2) {
     return true;
   } else {
     return false;
-  };
-};
+  }
+}
 
 // Desafio 2
 function calcArea(base, height) {
   let triangleArea = (base * height) / 2;
   return triangleArea;
-};
+}
 
 // Desafio 3
 function splitSentence(str) {
-  
   let finalArray = [];
   let actualWord = '';
   for (let index = 0; index < str.length; index += 1) {
