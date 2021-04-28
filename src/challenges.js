@@ -1,7 +1,15 @@
 // Desafio 1
-function compareTrue() {
-  // xablau
+function compareTrue(numero, numero2) {
+
+
+  if(numero > 9 && numero2 > 10){
+    return true
+  } else{
+    return false
+  }
+ 
 }
+console.log(compareTrue(10, 11))
 
 // Desafio 2
 function calcArea() {
