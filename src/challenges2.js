@@ -6,12 +6,13 @@ function techList(array, string) {
     list[key] = {
       tech: sortedArray[key],
       name: string,
-    }
+    };
+  }
+  if (array.length === 0){
+    list = 'Vazio!';
   }
   return list;
 }
-
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
 
 // Desafio 11
 function generatePhoneNumber() {

@@ -1,10 +1,10 @@
 // Desafio 1
 function compareTrue(boolean1, boolean2) {
+  let trueOrFalse = false
   if (boolean1 === true && boolean2 === true) {
-    return true;
-  } else {
-    return false;
-  }
+    trueOrFalse = true;
+  } 
+  return trueOrFalse;
 }
 
 // Desafio 2
@@ -85,17 +85,17 @@ function fizzBuzz(array) {
 // Desafio 9
 function encode(string) {
   let stringLowerCase = string.toLowerCase().split("");
-  for (let key in string){
+  for (let key in stringLowerCase){
     if (stringLowerCase[key] === 'a') {
-      stringLowerCase[key] = 1;
+      stringLowerCase[key] = '1';
     } else if (stringLowerCase[key] === 'e') {
-      stringLowerCase[key] = 2;
+      stringLowerCase[key] = '2';
     } else if (stringLowerCase[key] === 'i') {
-      stringLowerCase[key] = 3;
+      stringLowerCase[key] = '3';
     } else if (stringLowerCase[key] === 'o') {
-      stringLowerCase[key] = 4;
+      stringLowerCase[key] = '4';
     } else if (stringLowerCase[key] === 'u') {
-      stringLowerCase[key] = 5;
+      stringLowerCase[key] = '5';
     }
   }
   return stringLowerCase.join("");
@@ -103,7 +103,7 @@ function encode(string) {
 
 function decode(string) {
   let stringLowerCase = string.toLowerCase().split("");
-  for (let key in string){
+  for (let key in stringLowerCase){
     if (stringLowerCase[key] === '1') {
       stringLowerCase[key] = 'a';
     } else if (stringLowerCase[key] === '2') {
@@ -118,6 +118,7 @@ function decode(string) {
   }
   return stringLowerCase.join("");
 }
+ console.log(encode('teste'));
 
 module.exports = {
   calcArea,
