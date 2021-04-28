@@ -23,12 +23,18 @@ function calcArea(base, height) {
    */
   return (base * height) / 2;
 }
-console.log(calcArea(51,1));
+console.log(calcArea(51, 1));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(stringToSplit) {
+  /*
+  recebe "string"
+  return = [array, de, strings] separadas 
+  */
+  return stringToSplit.split();
+  
 }
+console.log(splitSentence("vamo que vamo"));
 
 // Desafio 4
 function concatName() {
