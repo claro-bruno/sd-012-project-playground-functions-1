@@ -27,10 +27,6 @@ function concatName(array) {
   return nome;
 }
 
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
-console.log(concatName(['foguete', 'não', 'tem', 'ré']));
-console.log(concatName(['captain', 'my', 'captain']));
-
 // Desafio 5
 function footballPoints(wins, ties) {
    return  (wins * 3) + (ties * 1);
