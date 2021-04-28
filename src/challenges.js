@@ -8,35 +8,30 @@ function compareTrue(param1, param2) {
     return false;
   }
 }
-console.log(compareTrue(true, false));
 
 // Desafio 2
 function calcArea(base, altura) {
   let resultado = (base * altura) / 2;
   return resultado;
 }
-console.log(calcArea(10, 50));
 
 // Desafio 3
 function splitSentence(frase) {
   let fraseSeparada = frase.split(' ');
   return fraseSeparada;
 }
-console.log(splitSentence('Vamo que vamo'));
 
 // Desafio 4
 function concatName(array) {
   let concatenaNome = (array[array.length - 1]) + ', ' + array[0];
   return concatenaNome;
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
   let pontuacao = (wins * 3) + (ties * 1)
   return pontuacao;
 }
-console.log(footballPoints(14, 8));
 
 // Desafio 6
 function highestCount(arrayNumeros) {
@@ -54,7 +49,6 @@ function highestCount(arrayNumeros) {
   }
   return repeticoes;
 }
-console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -70,7 +64,6 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   return firstCat;
 }
-console.log(catAndMouse(8, 0, 20));
 
 // Desafio 8
 function fizzBuzz(arrayNumeros) {
@@ -88,7 +81,6 @@ function fizzBuzz(arrayNumeros) {
   }
   return fraseFizzBuzz;
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode(string) {
@@ -117,7 +109,6 @@ function encode(string) {
   }
   return stringEncode;
 }
-console.log(encode('hi there!'));
 
 function decode(string) {
   let stringDecode = '';
@@ -145,7 +136,6 @@ function decode(string) {
   }
   return stringDecode;
 }
-console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
