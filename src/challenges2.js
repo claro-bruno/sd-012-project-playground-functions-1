@@ -15,7 +15,7 @@ function techList(array, name) {
   };
 
   if (array === []) {
-    arrayDeObjeto = "Vazio!";
+    Error("Vazio!")
   }
 
   return arrayDeObjeto;
