@@ -1,11 +1,11 @@
 // Desafio 1
 function compareTrue(bool1Compare,bool2Compare) {
-  return bool1Compare && bool2Compare;
+  return (bool1Compare && bool2Compare);
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(baseTriangulo,aulturaTriangulo) {
+  return (baseTriangulo*aulturaTriangulo/2);
 }
 
 // Desafio 3
