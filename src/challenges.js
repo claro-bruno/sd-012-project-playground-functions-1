@@ -1,19 +1,19 @@
 // Desafio 1
 function compareTrue(firstBoolean, secondBoolean) {
   if (firstBoolean === false) {
-      return false;  
-  } else {
-    if (secondBoolean === false) {
-      return false;
-    } else {
-      return true;    
-    };
-  };
-  return "Error, one of the parameters is not a boolean.";
+    return false;
+  }
+  if (secondBoolean === false) {
+    return false;
+  }
+  if (firstBoolean === true && secondBoolean === true) {
+    return true;
+  }
+  return 'Error, one of the parameters is not a boolean.';
 }
 // Desafio 2
 function calcArea(base, height) {
-  return (base * height) / 2; 
+  return (base * height) / 2;
 }
 
 // Desafio 3
@@ -23,12 +23,13 @@ function splitSentence(phrase) {
 
 // Desafio 4
 function concatName(...chosenArray) {
-  return chosenArray[chosenArray.length - 1] + ', ' + chosenArray[0];
+  let response = '';
+  return response.concat(chosenArray[chosenArray.length - 1], ', ', chosenArray[0]);
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return wins * 3 + ties  * 1;
+  return wins * 3 + ties * 1;
 }
 
 // Desafio 6
@@ -66,4 +67,3 @@ module.exports = {
   highestCount,
   splitSentence,
 };
-
