@@ -1,15 +1,13 @@
 // Desafio 1
-function compareTrue(num1, num2) {
-  if(num1 <= 10 && num2 >= 11) {
+function compareTrue(bool1, bool2) {
+  if (bool1 && bool2) {
     return true;
-  } else {
-    return false;
-  };
+  } 
 };
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, altura) {
+  
 }
 
 // Desafio 3
