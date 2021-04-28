@@ -13,14 +13,42 @@ function compareTrue(param1, param2) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+
+function calcArea(base, height) {
+  let areaDoTriangulo;
+
+  areaDoTriangulo = (base * height)/2;
+
+  return areaDoTriangulo;
+};
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
+
+function splitSentence(str) {
+  let arrayDeStrings = [];
+  let palavraSozinha = "";
+
+  for (let index = 0; index < str.length; index += 1) {
+
+    if (str[index] !== " " && index < str.length-1) {
+
+      palavraSozinha += str[index];
+
+    } else if (str[index] !== " " && index == str.length-1 ) {
+
+      palavraSozinha += str[index];
+      arrayDeStrings.push(palavraSozinha);
+
+    } else {
+
+      arrayDeStrings.push(palavraSozinha);
+      palavraSozinha = "";
+      
+    };
+  }
+
+  return arrayDeStrings;
+};
 
 // Desafio 4
 function concatName() {
