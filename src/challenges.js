@@ -85,56 +85,46 @@ function fizzBuzz(numberArrey) {
 // Desafio 9
 function encode(stringToEncode) {
   let encodedArray = stringToEncode.split('');
-   stringToEncode = '';
-   console.log(stringToEncode);
-  for(let index = 0; index < encodedArray.length; index +=1){
-      if(encodedArray[index] === 'a' ){
-        stringToEncode += '1';
-      }
-      else if(encodedArray[index] == 'e' ){
-        stringToEncode += '2';
-      }
-     else if(encodedArray[index] == 'i' ){
-        stringToEncode += '3';
-      }
-     else if(encodedArray[index] == 'o' ){
-        stringToEncode += '4';
-      }
-      else if (encodedArray[index] == 'u' ){
-        stringToEncode += '5';
-      }
-      else{
-        stringToEncode += encodedArray[index];
-      }
+  stringToEncode = '';
+  console.log(stringToEncode);
+  for (let index = 0; index < encodedArray.length; index += 1) {
+    if (encodedArray[index] === 'a') {
+      stringToEncode += '1';
+    } else if (encodedArray[index] == 'e') {
+      stringToEncode += '2';
+    } else if (encodedArray[index] == 'i') {
+      stringToEncode += '3';
+    } else if (encodedArray[index] == 'o') {
+      stringToEncode += '4';
+    } else if (encodedArray[index] == 'u') {
+      stringToEncode += '5';
+    } else {
+      stringToEncode += encodedArray[index];
+    }
   }
- return stringToEncode
+  return stringToEncode
 }
 
 function decode(stringToDecode) {
   let encodedArray = stringToDecode.split('');
-   stringToDecode = '';
-   console.log(stringToDecode);
-  for(let index = 0; index < encodedArray.length; index +=1){
-      if(encodedArray[index] === '1' ){
-        stringToDecode += 'a';
-      }
-      else if(encodedArray[index] == '2' ){
-        stringToDecode += 'e';
-      }
-     else if(encodedArray[index] == '3' ){
-        stringToDecode += 'i';
-      }
-     else if(encodedArray[index] == '4' ){
-        stringToDecode += 'o';
-      }
-      else if (encodedArray[index] == '5' ){
-        stringToDecode += 'u';
-      }
-      else{
-        stringToDecode += encodedArray[index];
-      }
+  stringToDecode = '';
+  console.log(stringToDecode);
+  for (let index = 0; index < encodedArray.length; index += 1) {
+    if (encodedArray[index] === '1') {
+      stringToDecode += 'a';
+    } else if (encodedArray[index] == '2') {
+      stringToDecode += 'e';
+    } else if (encodedArray[index] == '3') {
+      stringToDecode += 'i';
+    } else if (encodedArray[index] == '4') {
+      stringToDecode += 'o';
+    } else if (encodedArray[index] == '5') {
+      stringToDecode += 'u';
+    } else {
+      stringToDecode += encodedArray[index];
+    }
   }
- return stringToDecode
+  return stringToDecode
 }
 
 module.exports = {

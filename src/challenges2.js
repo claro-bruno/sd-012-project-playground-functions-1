@@ -2,8 +2,7 @@
 function techList(techObj, nome) {
   if (techObj.length === 0) {
     return ('Vazio!')
-  }
-  else {
+  } else {
     let result = [];
     let tecnologias = techObj.sort();
     for (let chave in tecnologias) {
@@ -13,10 +12,10 @@ function techList(techObj, nome) {
       result.push(objeto);
     }
     return result;
-}
+  }
 }
 
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 
 // Desafio 11
 function generatePhoneNumber() {
