@@ -1,22 +1,22 @@
 // Desafio 1
 function compareTrue(elemento1, elemento2) {
-  if (elemento1 === true && elemento2 === true){
+  if (elemento1 === true && elemento2 === true) {
     return true;
-  }
-  else{
+  } else {
     return false;
   }
 }
 
 // Desafio 2
-function calcArea(base, altura) {
-  let area = base * altura / 2;
+function calcArea(base, height) {
+  let area = base * height / 2;
   return area;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(phrase) {
+  let array = phrase.split(' ');
+  return array;
 }
 
 // Desafio 4
