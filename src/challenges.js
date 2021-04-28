@@ -43,7 +43,7 @@ function concatName(switchs) {
 
 }
 
- console.log(concatName(['foguete', 'não', 'tem', 'ré']))
+// console.log(concatName(['foguete', 'não', 'tem', 'ré']))
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -64,11 +64,24 @@ function highestCount(VezesMaiorNumeroAparece) {
 
   let maiorNumero = 0;
   let vezesAparece = 0;
-
+  
   for (let index = 0; index < VezesMaiorNumeroAparece.length; index += 1) {
+     if (VezesMaiorNumeroAparece[index] > VezesMaiorNumeroAparece[index + 1] ){
+       maiorNumero = VezesMaiorNumeroAparece[index];
+       vezesAparece = 0;
+      } 
+      
+      if (VezesMaiorNumeroAparece[index] === maiorNumero) {
+        
+        vezesAparece +=1;
 
+      }
   }
+  
+  return vezesAparece;
 }
+
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
