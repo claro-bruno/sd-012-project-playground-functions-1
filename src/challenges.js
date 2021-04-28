@@ -43,22 +43,47 @@ function highestCount(array) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if (mouse - cat1 < mouse - cat2) return 'cat2';
-  if (mouse - cat1 > mouse - cat2) return 'cat1';
-  if (mouse - cat1 === mouse - cat2) return 'os gatos trombam e o rato foge';
+  let distanciaGatoUm = Math.abs(mouse - cat1);
+  let distanciaGatoDois = Math.abs(mouse - cat2);
+  if (distanciaGatoUm > distanciaGatoDois) return 'cat2';
+  if (distanciaGatoUm < distanciaGatoDois) return 'cat1';
+  if (distanciaGatoUm === distanciaGatoDois) return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let final = [];
+  for (let i = 0; i < array.length; i += 1) {
+    final[i] = 'bug!';
+    if (array[i] % 15 === 0) {
+      final[i] = 'fizzBuzz';
+    } else if (array[i] % 5 === 0) {
+      final[i] = 'buzz';
+    } else if (array[i] % 3 === 0) { final[i] = 'fizz'; }
+  }
+  return final;
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let str = string;
+  str = str.replace(/a/g, 1);
+  str = str.replace(/e/g, 2);
+  str = str.replace(/i/g, 3);
+  str = str.replace(/o/g, 4);
+  str = str.replace(/u/g, 5);
+  return str;
 }
-function decode() {
+
+function decode(string) {
   // seu código aqui
+  let str = string;
+  str = str.replace(/1/g, 'a');
+  str = str.replace(/2/g, 'e');
+  str = str.replace(/3/g, 'i');
+  str = str.replace(/4/g, 'o');
+  str = str.replace(/5/g, 'u');
+  return str;
 }
 
 module.exports = {
