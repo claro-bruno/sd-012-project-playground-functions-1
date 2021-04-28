@@ -51,6 +51,7 @@ function splitSentence(str) {
 };
 
 // Desafio 4
+
 function concatName(array) {
   let strResult = "";
 
@@ -59,12 +60,17 @@ function concatName(array) {
   return strResult;
 }
 
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
-
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  
+  let points;
+
+  points = (wins*3) + ties;
+
+  return points;
 }
+
+console.log(footballPoints(14, 8))
 
 // Desafio 6
 function highestCount() {
