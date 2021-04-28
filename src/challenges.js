@@ -6,7 +6,7 @@ function compareTrue(num1, num2) {
     return false;
   }
 }
-//console.log(compareTrue(false, false));
+// console.log(compareTrue(false, false));
 
 // Desafio 2
 function calcArea(base, height) {
@@ -19,21 +19,21 @@ function splitSentence(string) {
   let arrayOfString = string.split(' ');
   return arrayOfString;
 }
-//console.log(splitSentence('vamo que vamo', ' '))
+// console.log(splitSentence('vamo que vamo', ' '))
 
 // Desafio 4
 function concatName(arrayString) {
   let firstStriElem = arrayString[0];
   let lastStriElem = arrayString[arrayString.length - 1];
   let concatenacao = lastStriElem + ', ' + firstStriElem;
-  return concatenacao
+  return concatenacao;
 }
-//console.log(concatName(['carlo', 'luiz', 'jaci']));
+// console.log(concatName(['carlo', 'luiz', 'jaci']));
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return wins * 3 + ties;
 }
-
+// console.log(footballPoints(1, 2))
 // Desafio 6
 function highestCount() {
   // seu código aqui
