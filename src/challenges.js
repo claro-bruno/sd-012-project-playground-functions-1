@@ -18,7 +18,7 @@ function validation(number) {
     return 'fizz';
   }
   if (number % 5 === 0) {
-    return 'Buzz';
+    return 'buzz';
   }
   return 'bug!';
 }
@@ -66,7 +66,7 @@ function highestCount(numbers) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if (cat1 === cat2) {
+  if (cat1 === cat2 || (Math.abs(cat1 - mouse)) === Math.abs((cat2 - mouse))) {
     return 'os gatos trombam e o rato foge';
   }
   if ((Math.abs(cat1 - mouse)) < Math.abs((cat2 - mouse))) {
