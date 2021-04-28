@@ -1,8 +1,7 @@
 // Desafio 1
-function compareTrue() {
-
-  xablau;
-
+function compareTrue(firstBoolean,secondBoolean) {
+  if(typeof firstBoolean === 'boolean' && typeof secondBoolean === 'boolean')
+    return firstBoolean ===  false ? false : secondBoolean === false ? false : true;
 }
 
 // Desafio 2
@@ -60,3 +59,5 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+
+console.log(compareTrue(true,true));
