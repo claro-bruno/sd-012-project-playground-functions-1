@@ -6,10 +6,11 @@
   // valor booleano 2 tipos (verdadeiro ou false)
   // possui o operador logico && que recebe 2 valores 
   // testar somente a condicao true e o resto retorna false <<<< 
+
   function compareTrue(nun1, nun2) {
     if (nun1 === true && nun2 === true){
       return true;
-    } else {
+    } {
       return false;
     }
   }; 
@@ -36,6 +37,7 @@ function calcArea(base, height) {
   let area = (base * height) / 2;
   return area;
 } 
+
 //console.log(calcArea(base, height));
 
 //let base = 5;
@@ -59,11 +61,8 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-    splitSentence(string)
       let msg = string.split(' ');
-      return msg;
-  
-  
+      return msg; 
 }
 
 // Desafio 4
