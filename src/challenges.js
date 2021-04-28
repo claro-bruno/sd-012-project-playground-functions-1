@@ -21,7 +21,7 @@ function calcArea(base, heigth) {
 
 // Desafio 3
 function splitSentence(string) {
-  // seu código aqui 
+  // seu código aqui
   string = string.split(' '); // Lembrar de dar 2 espaços se não ele separa letra por letra.
 
   return string;
@@ -39,8 +39,8 @@ function concatName(nameList) {
 
   return lastAndFirstName;
 }
-  let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo',];
-  console.log(concatName(nameList));
+let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log(concatName(nameList));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -54,9 +54,24 @@ function footballPoints(wins, ties) {
 // console.log(footballPoints(14,8));
 
 // Desafio 6
-function highestCount() {
+function highestCount(arrayNumeros) {
   // seu código aqui
+  let highNumber = arrayNumeros[0];
+  let counter =0;
+
+  for(let indexHighNumber = 0; indexHighNumber < arrayNumeros.length; indexHighNumber += 1) {
+    if(highNumber < arrayNumeros[indexHighNumber]){ //For para achar o meior numero.
+      highNumber = arrayNumeros[indexHighNumber];
+    }
+  }
+  for(let index of arrayNumeros) {
+    if (index === highNumber){ //For para contagem.
+      counter += 1;
+    }
+  }
+  return counter;
 }
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
 function catAndMouse() {
