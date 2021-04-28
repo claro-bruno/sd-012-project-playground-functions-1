@@ -100,10 +100,27 @@ function encode(string) {
   }
   return novaString;
 }
-console.log(encode('ha he hi ho hu'));
 
-function decode() {
-  // seu código aqui
+function decode(string) {
+  let novaString = '';
+  let consoante = '';
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index] === '1') {
+      novaString += 'a';
+    } else if (string[index] === '2') {
+      novaString += 'e';
+    } else if (string[index] === '3') {
+      novaString += 'i';
+    } else if (string[index] === '4') {
+      novaString += 'o';
+    } else if (string[index] === '5') {
+      novaString += 'u';
+    } else {
+      consoante = string[index];
+      novaString += consoante;
+    }
+  }
+  return novaString;
 }
 
 module.exports = {
