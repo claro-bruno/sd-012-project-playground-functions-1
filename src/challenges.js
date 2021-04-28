@@ -1,6 +1,6 @@
 // Desafio 1
-function compareTrue(num1, num2) {
-  if (num1 < num2 && num2 > num1) {
+function compareTrue(param1, param2) {
+  if (param1 === param2 && param2 === param1) {
     return true;
   }
 }
@@ -50,9 +50,9 @@ function catAndMouse(mouse, cat1, cat2) {
   let distanciaCat1 = mouse - cat1;
   let distanciaCat2 = mouse - cat2;
   if (distanciaCat1 > distanciaCat2) {
-    return 'cat2';
+    return "cat2";
   } else {
-    return 'cat1';
+    return "cat1";
   }
 }
 
