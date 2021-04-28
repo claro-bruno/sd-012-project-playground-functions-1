@@ -1,6 +1,22 @@
 // Desafio 1
+let a = false;
+let b = true;
+console.log(compareTrue());
+
+  // valor booleano 2 tipos (verdadeiro ou false)
+  // possui o operador logico && que recebe 2 valores 
+  // testar somente a condicao true e o resto retorna false <<<< 
+
 function compareTrue() {
-  // seu código aqui
+  if(a == true && b == false) {
+    return false;
+  } else if(a == false && b == false) {
+    return false;
+  } else if(a == true && b === true){
+    return true;
+  } else {
+    return false;
+  };
 }
 
 // Desafio 2
