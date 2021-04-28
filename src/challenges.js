@@ -1,14 +1,14 @@
 // Desafio 1
-function compareTrue(a, b) {
-  if (a <= b && a >= b) {
+function compareTrue(numb1, numb2) {
+  if (numb1 === true && numb2 === true) {
     return true;
   } else {
     return false;
   }
 }
-console.log(compareTrue(1, 2));
-console.log(compareTrue(2, 1));
-console.log(compareTrue(2, 2));
+console.log(compareTrue(false, true));
+console.log(compareTrue(false, false));
+console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, heigth) {
@@ -27,11 +27,14 @@ function splitSentence(string) {
   return array;
 }
 console.log(splitSentence('go trybe'));
+console.log(splitSentence('vamo que vamo'));
+console.log(splitSentence('foguete'));
 
 // Desafio 4
 function concatName() {
   // seu código aqui
 }
+console.log(concatName());
 
 // Desafio 5
 function footballPoints() {
@@ -49,9 +52,14 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(array) {
   // seu código aqui
+  if (array % 3 === 0) return 'fizz';
+  if (array % 3 === 0) return 'buzz';
+  if (array % 3 === 0 && array % 3 === 0) return 'fizzbuzz';
+  return 'bug!';
 }
+console.log();
 
 // Desafio 9
 function encode() {
