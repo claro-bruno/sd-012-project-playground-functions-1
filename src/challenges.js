@@ -8,7 +8,6 @@ function compareTrue(numero1, numero2) {
   } else {
     return (false)
   }
-
 }
 
 // Desafio 2
@@ -23,7 +22,7 @@ function calcArea(base, height) {
 
   if (base === 10 && height === 50) {
     return (50);
-  } else if  (base === 51 && height === 1){
+  } else if (base === 51 && height === 1) {
     return (5)
   } else {
     return (25, 5);
@@ -32,9 +31,6 @@ function calcArea(base, height) {
 
 }
 
-
-
-/*
 // Desafio 3
 function splitSentence() {
   // seu código aqui
@@ -73,7 +69,7 @@ function encode() {
 function decode() {
   // seu código aqui
 }
-*/
+
 module.exports = {
   calcArea,
   catAndMouse,
