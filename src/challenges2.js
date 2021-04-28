@@ -3,13 +3,17 @@ function techList(array, string) {
   // seu código aqui
   let habilidade = {};
   let habilidades = [];
-  for (let index = 0; index < array.length; index += 1) {
-    habilidade.tech = array[index];
-    habilidade.name = string;
-    habilidades.push(habilidade);
-    habilidade = {};
+  if (array === []) {
+    return 'Vazio!';
+  } else {
+    for (let index = 0; index < array.length; index += 1) {
+      habilidade.tech = array[index];
+      habilidade.name = string;
+      habilidades.push(habilidade);
+      habilidade = {};
+    }
+    return habilidades;
   }
-  return habilidades
 }
 console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 
