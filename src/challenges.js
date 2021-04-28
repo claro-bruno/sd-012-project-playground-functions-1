@@ -15,18 +15,19 @@
  // Desafio 2
   let base = 10;
   let height = 50;
-  let area = (base * height) / 2.
   function calcArea (base, height) {
-  return calcArea;
- } console.log(area)
+  return (base * height) / 2;
+ } console.log((base * height) / 2);
  
  
  // Desafio 3
-  function splitSentence(string){
-  return string.split(" ");
-  }
   
-
+  function splitSentence(string){
+   return string.split(" ");
+  }
+  console.log(splitSentence("vamo que vamo"));
+  
+  
 
 // Desafio 4
 function concatName() {
