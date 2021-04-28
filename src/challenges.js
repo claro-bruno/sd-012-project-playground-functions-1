@@ -40,7 +40,7 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-let arrayDeStrings = [];
+
 let array2 = ['arroz', 'batata', 'cebola', 'damasco'];
 
 function concatName(arrayDeStrings) {
