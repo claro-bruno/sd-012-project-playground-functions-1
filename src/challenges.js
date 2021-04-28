@@ -1,10 +1,12 @@
 // Desafio 1
-function compareTrue(boolean1, boolean2){
-  if(boolean1 && boolean2){
-      return true;
+function compareTrue(boolean1, boolean2) {
+  let  value;
+  if (boolean1 && boolean2){
+      value = true;
   } else{
-      return false;
+      value = false;
   };
+  return value;
 }
 
 // Desafio 2
@@ -20,9 +22,8 @@ function splitSentence(string){
 // Desafio 4
 function concatName(arrayName){
   let novaArray = [];
-  novaArray.push(arrayName[arrayName.length -1]);
-  novaArray.push(arrayName[0]);
-  return novaArray;
+  string = arrayName[arrayName.length -1] + ', ' + (arrayName[0]);
+  return string;
 }
 
 // Desafio 5
@@ -65,3 +66,5 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
