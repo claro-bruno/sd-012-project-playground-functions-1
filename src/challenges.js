@@ -1,7 +1,18 @@
 // Desafio 1
 function compareTrue() {
   // seu código aqui
-  xablau
+  let varTrue = true;
+  let vaarFalse = false;
+
+    if(varTrue === varFalse){
+      console.log(true)
+      if(varTrue =! vaarFalse && varFalse != varTrue){
+        console.log(false)
+
+      }
+
+    }
+    return(varTrue,varFalse)
 }
 
 // Desafio 2
