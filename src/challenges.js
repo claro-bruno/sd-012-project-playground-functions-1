@@ -62,13 +62,38 @@ function highestCount(numeros) {
 
 // Desafio 7
 function catAndMouse() {
-  
-}
+/*   let posicaoGato1 = cat1
+  let posicaoGato2 = cat2
+  let posicaoRato = mouse
+  let resultado;
 
-// Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+  if(posicaoGato1 <= posicaoRato && posicaoGato1 < posicaoGato2 + 1 && posicaoGato2 !== posicaoRato){
+    resultado = "cat1"
+  } else { 
+    resultado = "cat2"
+  }
+  return resultado;
 }
+  console.log(catAndMouse(1,2,3)); */
+// Desafio 8
+function fizzBuzz(arrayFizzBuzz) {
+  
+  let resultado = [];
+
+  for (index = 0; index < arrayFizzBuzz.length; index +=1) {
+    if (arrayFizzBuzz[index] % 3 === 0 && arrayFizzBuzz[index] % 5 === 0) {
+      resultado.push("fizzBuzz")
+    } else if (arrayFizzBuzz[index] % 3 === 0) {
+      resultado.push("fizz")
+    } else if (arrayFizzBuzz[index] % 5 === 0) {
+      resultado.push("buzz")
+    } else {
+      resultado.push("bug!")
+    }
+  } 
+  return resultado;
+}
+console.log(fizzBuzz([2,15,7,9,45]))
 
 // Desafio 9
 function encode() {
