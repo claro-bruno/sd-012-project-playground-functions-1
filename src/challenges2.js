@@ -19,7 +19,7 @@ function generatePhoneNumber(number) {
   if (number.length != 11) {
     return "Array com tamanho incorreto.";
   }
-  let cont = 0;
+  let cont = 1;
   let n = false;
   for (let i = 0; i < number.length - 1; i++) {
     for (let j = i + 1; j < number.length; j++) {
