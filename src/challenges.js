@@ -101,9 +101,26 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+let num = [9, 25];
+
+fizzBuzz(num);
+
+function fizzBuzz(num) {
+  let arrFizzBuzz = [];
+  for(let index = 0; index<num.length;index+=1){
+    let verify = num[index];
+    if (verify % 3 === 0 && verify % 5 === 0) {
+      arrFizzBuzz.push('fizzBuzz');
+    }else if(verify % 3 === 0){
+      arrFizzBuzz.push('fizz');
+    }else if(verify % 5 === 0){
+      arrFizzBuzz.push('buzz');
+    }else{
+      arrFizzBuzz.push('bug!');
+    };
+  };
+  return arrFizzBuzz;
+};
 
 // Desafio 9
 function encode() {
