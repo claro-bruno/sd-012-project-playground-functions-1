@@ -37,7 +37,7 @@ function concatName(switchs) {
   let conq = [];
 
   for (index = 0; index < switchs.length; index += 1) {
-    conq = switchs[index] + "," + switchs[0];
+    conq = switchs[index] + ',' + switchs[0];
   }
   return conq;
 
@@ -73,21 +73,21 @@ function highestCount(VezesMaiorNumeroAparece) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
 
-  let distanciaCat1 = mouse - cat1;
-  let distanciaCat2 = mouse - cat2;
+  let distanciaCat1 = Math.abs(mouse - cat1);
+  let distanciaCat2 = Math.abs(mouse - cat2);
 
 
   if (distanciaCat1 < distanciaCat2) {
-    return "cat1"
+    return 'cat1'
   } else if (distanciaCat2 < distanciaCat1) {
-    return "cat2"
+    return 'cat2'
   } else {
-    return "os gatos trombam e o rato foge"
+    return 'os gatos trombam e o rato foge'
   }
 
 }
 
-// console.log(catAndMouse(10,5,5))
+ console.log(catAndMouse(0,3,2))
 
 // Desafio 8
 function fizzBuzz() {
