@@ -32,19 +32,19 @@ function splitSentence(string) {
 let separateString = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 
 function concatName(separateString) {
-  let concatString = "";
+  let stringSplit = [];
+  let stringJoin = "";
 
-  for (index = 0; index < separateString; index += 1) {
-    if (index === (separateString.length - 1)) {
-      concatString = separateString[index] + ", ";
-    }
-    if (index === 0) {
-      concatString = separateString[index];
-    }
+  for(let index = 0; index < separateString.length; index += 1){
+    if(index === 0 || index === separateString.length - 1){
+      stringSplit.unshift(separateString[index]);
+      stringJoin = stringSplit.join(", ")
+    };
   };
-
-  return concatString;
+  return stringJoin;
 };
+
+console.log(concatName(separateString));
 
 // console.log(concatName(separateString));
 
