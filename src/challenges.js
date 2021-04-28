@@ -9,8 +9,6 @@ function calcArea(base, height) {
   return res;
 }
 
-console.log(calcArea(5,2));
-
 // Desafio 3
 function splitSentence(str) {
   return str.split(' ');
@@ -61,10 +59,10 @@ function fizzBuzz(arr) {
     if (arr[i]%3 === 0 && arr[i]%5  !== 0){ arrRes.push('fizz'); }
     if (arr[i]%3 !== 0 && arr[i]%5  === 0){ arrRes.push('buzz'); }
     if (arr[i]%3 === 0 && arr[i]%5  === 0){ arrRes.push('fizzBuzz'); }
-    if (arr[i]%3 !== 0 && arr[i]%5  !== 0){ arrRes.push('bug'); }
+    if (arr[i]%3 !== 0 && arr[i]%5  !== 0){ arrRes.push('bug!'); }
   }
   return arrRes;
-}
+} console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode(str) {
