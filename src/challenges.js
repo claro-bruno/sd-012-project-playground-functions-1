@@ -66,7 +66,7 @@ function highestCount(VezesMaiorNumeroAparece) {
   let vezesAparece = 0;
   
   for (let index = 0; index < VezesMaiorNumeroAparece.length; index += 1) {
-     if (VezesMaiorNumeroAparece[index] > VezesMaiorNumeroAparece[index + 1] ){
+     if (VezesMaiorNumeroAparece[index] > maiorNumero ){
        maiorNumero = VezesMaiorNumeroAparece[index];
        vezesAparece = 0;
       } 
@@ -79,9 +79,10 @@ function highestCount(VezesMaiorNumeroAparece) {
   }
   
   return vezesAparece;
+
 }
 
-//console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
+ console.log(highestCount([0,0,0]))
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -104,6 +105,10 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz() {
+
+
+
+
 
 }
 
