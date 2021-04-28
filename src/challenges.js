@@ -31,12 +31,12 @@ return arrays
 // console.log(splitSentence("foguete"))
 
 // Desafio 4
-function concatName(switchStrings) {
+function concatName(switchs){
   
 let conq = [];
 
-for(index =0;index < switchStrings.length; index +=1) {
-  conq = switchStrings[index] + "," + switchStrings[0]
+for(index =0;index < switchs.length; index +=1) {
+  conq = switchs[index] + "," + switchs[0];
 }
 return conq;
 
@@ -58,14 +58,34 @@ return fut;
 // console.log(footballPoints(14,8))
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+
+function highestCount(VezesMaiorNumeroAparece) {
+  
+let maiorNumero = 0;
+let vezesAparece = 0;
+
+for (let index =0; index < VezesMaiorNumeroAparece.length; index +=1){
+
+}
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse,cat1,cat2) {
+  
+let distanciaCat1 = mouse - cat1;
+let distanciaCat2 = mouse - cat2;
+
+
+if(distanciaCat1 < distanciaCat2 ) {
+  return "cat1"
+} else if (distanciaCat2 < distanciaCat1) {
+  return "cat2"
+} else {
+  return "os gatos trombam e o rato foge"
 }
+}
+
+// console.log(catAndMouse(10,5,5))
 
 // Desafio 8
 function fizzBuzz() {
