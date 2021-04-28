@@ -15,7 +15,6 @@ function splitSentence(str) {
   return arraystring;
 }
 
-
 // Desafio 4
 function concatName() {
   // seu código aqui
