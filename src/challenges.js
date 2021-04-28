@@ -20,7 +20,7 @@ return area;
 // Desafio 3
 function splitSentence(primeiroValor) {
   // seu código aqui
-return primeiroValor.split(' ')
+return primeiroValor.split(' ');
 
 }
 
@@ -28,9 +28,9 @@ return primeiroValor.split(' ')
 function concatName(sentenca) {
   // seu código aqui
   
-  let resultado = `${sentenca[sentenca.length-1]} ${sentenca[0]}`;
+  let resultado = sentenca[sentenca.length-1] + ' ' + sentenca[0];
 
-  return resultado.split(' ')
+  return resultado.split(' ');
 }
 
 // Desafio 5
@@ -56,10 +56,11 @@ function highestCount(vetor) {
   let numMaior = Math.max(...vetor);
   let count = 0;
 for(let index = 0; index < vetor.length;index+=1){
-  if(numMaior == vetor[index])
-    count+=1
+  if(numMaior == vetor[index]){
+    count+=1;
+  }
 }
-return count
+return count;
 }
 
 
@@ -67,11 +68,11 @@ return count
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
 if((cat1-mouse)<(cat2-mouse)){
-  return 'cat1'
+  return 'cat1';
 }else if((cat2-mouse)<(cat1-mouse)){
-  return 'cat2'
+  return 'cat2';
 }else
-return 'os gatos tromam e o rato foge'
+return 'os gatos tromam e o rato foge';
 
 }
 console.log(catAndMouse(5,8,7))
