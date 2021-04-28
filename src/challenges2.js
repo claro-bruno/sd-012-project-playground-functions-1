@@ -30,7 +30,7 @@ function generatePhoneNumber(arr) {
       if(index === 0){
         phoneNumber += ('(' + number);
       }else if(index === 1){
-        phoneNumber += (number + ')');
+        phoneNumber += (number + ') ');
       }else if(index === 6){
         phoneNumber += (number + '-');
       }else{
@@ -74,14 +74,27 @@ function isValid(arr){
 };
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
-}
+
+function triangleCheck(lineA, lineB, lineC) {
+  if(lineA + lineB > lineC && lineA + lineC > lineB && lineB + lineC > lineA){
+    if(Math.abs(lineA - lineB) < lineC && Math.abs(lineA - lineC) < lineB && Math.abs(lineB - lineC) < lineA){
+      return true;
+    };
+  }else{
+    return false;
+  };
+};
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
-}
+
+function hydrate(order) {
+  let numOfOrders = order.match(/\d+/g);
+  let waterCups = 0;
+  for(let index = 0; index < numOfOrders.length; index += 1){
+    waterCups += parseInt(numOfOrders[index]);
+  };
+  return `${waterCups} copos de água`;
+};
 
 module.exports = {
   generatePhoneNumber,
