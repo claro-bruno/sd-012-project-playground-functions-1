@@ -36,12 +36,16 @@ function splitSentence(str) {
 
 console.log(splitSentence('foguete'));
 
-
-
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(arrayOfStrings) {
+  let finalString = '';
+
+  finalString += `'${(arrayOfStrings[arrayOfStrings.length - 1])}, ${(arrayOfStrings[0])}'`;
+  
+  return finalString;
+};
+
+console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints() {
