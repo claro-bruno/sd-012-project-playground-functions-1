@@ -1,12 +1,12 @@
 // Desafio 1
 function compareTrue(numero1, numero2) {
   // seu código aqui
-  let par = false
+  let par = false;
 
   if (numero1 % 2 == 0 && numero2 % 2 == 0){
-    return par = "True"
+    return par = "True";
   } else {
-    return par = "False"
+    return par = "False";
   };
 }
 
@@ -17,11 +17,11 @@ function calcArea(base, altura) {
   return area;
 }
 
-console.log(calcArea(5,2));
-
 // Desafio 3
-function splitSentence() {
+function splitSentence(frase) {
   // seu código aqui
+  let palavras = frase.split(" ");
+  return palavras;
 }
 
 // Desafio 4
