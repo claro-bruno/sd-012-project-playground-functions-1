@@ -1,7 +1,18 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(aluno, turma) {
+  let nome = aluno;
+  let tryber = turma;
+  
+  if (nome === aluno && turma === 12) {
+    resultado = true;
+  } else if (nome === aluno || turma === 12) {
+    resultado = false;
+  } else {
+    resultado = false;
+  } 
+  return resultado;
 }
+
 
 // Desafio 2
 function calcArea() {
