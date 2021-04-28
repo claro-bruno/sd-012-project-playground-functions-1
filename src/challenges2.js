@@ -44,11 +44,11 @@ function generatePhoneNumber(PhoneNumber) {
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
   triangle = true;
-  if (lineA < Math.abs(lineB - lineC) || (lineA > lineB + lineC)){
+  if (lineA < Math.abs(lineB - lineC) && (lineA > lineB + lineC)){
     triangle = false
-  } else if (lineB < Math.abs(lineA - lineC) || (lineB > lineA + lineC)){
+  } else if (lineB < Math.abs(lineA - lineC) && (lineB > lineA + lineC)){
     triangle = false
-  } else if ((lineC < Math.abs(lineB - lineA) || (lineC > lineB + lineA))){
+  } else if ((lineC < Math.abs(lineB - lineA) && (lineC > lineB + lineA))){
     triangle = false
   };
   return triangle;
@@ -59,22 +59,39 @@ function triangleCheck(lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(string) {
   // seu código aqui
-  let arrayNumeros = (string.match(/\d+/g) || []).map(i=>Number(i));
+  let arrayNumeros = (string.match(/\d+/g));
+  let numeros = [];
+  for (numero in arrayNumeros) {
+    numeros.push(parseInt(arrayNumeros[numero]))
+  }
   soma = 0;
-  for (let numero in arrayNumeros) {
-    soma += arrayNumeros[numero]
+  for (let numero in numeros) {
+    soma += numeros[numero]
   }
   if (soma === 1){
     return soma + ' copo de água'
   } else {
     return soma + ' copos de água'
-  }
-  
+  };
 };
 
-console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"))
+// console.log(hydrate("1 cachaça"))
+
+// let s = "1 banana + 1 pineapple + 3 oranges";
+// let result = (s.match(/\d+/g));
+// let numeros = []
+// for (index in result){
+//   numeros.push(parseInt(result[index]))
+// }
+// console.log(result);
+// console.log(numeros)
 
 // Função de retirar números de uma string encontrado em https://stackoverflow.com/questions/42532450/extract-number-from-string-javascript
+
+// const s = "1 banana + 1 pineapple + 3 oranges";
+// const result = (s.match(/\d+/g) || []).map(n => parseInt(n));
+
+// console.log(result);
 
 module.exports = {
   generatePhoneNumber,
