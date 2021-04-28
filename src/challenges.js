@@ -55,7 +55,7 @@ function highestCount(arrayNumeros) {
   let maior = 0;
   let vezes = 0;
   for (let index = 0; index < arrayNumeros.length; index += 1) {
-    if (arrayNumeros[index] > arrayNumeros[index + 1]) {
+    if (arrayNumeros[index] > maior) {
       maior = arrayNumeros[index];
       vezes = 0;
     }
@@ -65,6 +65,7 @@ function highestCount(arrayNumeros) {
   }
   return vezes;
 }
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
 function catAndMouse(cat1, cat2) {
