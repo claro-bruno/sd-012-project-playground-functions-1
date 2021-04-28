@@ -1,10 +1,10 @@
 // Desafio 1
-let variavel1 = 1;
-let variavel2 = 1;
+let variavel1 = true;
+let variavel2 = true;
 
 function compareTrue() {
   // seu código aqui
-  if (variavel1 === 0 && variavel2 === 0){
+  if (variavel1 === true && variavel2 === true){
     estadoAtual = true;
   } else {
       estadoAtual = false;
