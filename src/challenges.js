@@ -64,9 +64,17 @@ return count
 
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+if((cat1-mouse)<(cat2-mouse)){
+  return 'cat1'
+}else if((cat2-mouse)<(cat1-mouse)){
+  return 'cat2'
+}else
+return 'os gatos tromam e o rato foge'
+
 }
+console.log(catAndMouse(5,8,7))
 
 // Desafio 8
 function fizzBuzz() {
