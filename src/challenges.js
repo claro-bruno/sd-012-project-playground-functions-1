@@ -19,10 +19,11 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(name1) {
-  let resultado = [];
-  resultado.push(name1[name1.length-1], name1[0]);
+  let resultado = '';
+  resultado += name1[name1.length - 1] + ', ' +name1[0];
   return resultado;
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
