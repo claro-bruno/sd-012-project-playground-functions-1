@@ -29,12 +29,11 @@ console.log(calcArea(51, 1));
 function splitSentence(stringToSplit) {
   /*
   recebe "string"
-  return = [array, de, strings] separadas 
+  return = [array, de, strings] separadas
   */
-  return stringToSplit.split();
-  
+  return stringToSplit.split(' ');
 }
-console.log(splitSentence("vamo que vamo"));
+console.log(splitSentence('vamo que vamo'));
 
 // Desafio 4
 function concatName() {
