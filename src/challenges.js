@@ -1,9 +1,13 @@
 // Desafio 1
-function compareTrue(numero1, numero2) {
+function compareTrue(par1, par2) {
   // seu código aqui
-  return numero1 % 2 == 0 && numero2 % 2 == 0
-}
 
+  if (par1 == true && par2 == true){
+    return true;
+  } else{
+    return false;
+  }
+}
 
 // Desafio 2
 function calcArea(base, altura) {
@@ -20,11 +24,10 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName(nomeCompleto) {
+function concatName(nomes) {
   // seu código aqui
-  let nome = nomeCompleto.split(" ");
-  let firstName = nome[0];
-  let lastName = nome[nome.length - 1];
+  let firstName = nomes[0];
+  let lastName = nomes[nomes.length - 1];
   return lastName + ", " + firstName
 }
 
@@ -39,7 +42,7 @@ function footballPoints(wins, ties) {
 function highestCount() {
   // seu código aqui
   let numeros = [9, 1, 2, 3, 9, 5, 7];
-  let maiorNumero = Math.max(numeros)
+  let maiorNumero = Math.max(9, 1, 2, 3, 9, 5, 7)
   let contador = 0
 
   for (let index = 0; index <= numeros.length; index += 1){
