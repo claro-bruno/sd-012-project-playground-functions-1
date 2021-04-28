@@ -62,12 +62,11 @@ function catAndMouse() {
 // Desafio 8
 function fizzBuzz(array) {
   // seu código aqui
-  if (array % 3 === 0) return 'fizz';
-  if (array % 3 === 0) return 'buzz';
-  if (array % 3 === 0 && array % 3 === 0) return 'fizzbuzz';
-  return 'bug!';
+  // if (array % 3 === 0) return 'fizz';
+  // if (array % 3 === 0) return 'buzz';
+  // if (array % 3 === 0 && array % 3 === 0) return 'fizzbuzz';
+  // return 'bug!';
 }
-console.log();
 
 // Desafio 9
 function encode() {
