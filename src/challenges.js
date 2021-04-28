@@ -66,9 +66,9 @@ function fizzBuzz(arrayFizzBuzz) {
   for (let key in arrayFizzBuzz) {
     if ((arrayFizzBuzz[key] % 3 === 0) && (arrayFizzBuzz[key] % 5 === 0)) {
       result.push('fizzBuzz');
-    } else if ((arrayFizzBuzz[key] % 3 === 0) && (arrayFizzBuzz[key] % 5 > 0)) {
+    } else if ((arrayFizzBuzz[key] % 3 === 0)) {
       result.push('fizz');
-    } else if ((arrayFizzBuzz[key] % 5 === 0) && (arrayFizzBuzz[key] % 3 > 0)) {
+    } else if ((arrayFizzBuzz[key] % 5 === 0)) {
       result.push('buzz');
     } else {
       result.push('bug!');
@@ -76,14 +76,43 @@ function fizzBuzz(arrayFizzBuzz) {
   }
   return result;
 }
+console.log(fizzBuzz([9, 25]))
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(encodeString) {
+  let result = '';
+  let encode = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5
+  };
+  for (let index = 0; index < encondeString.length; index += 1) {
+    if (encondeString[index] === 'a' || encondeString[index] === 'e' || encondeString[index] === 'i' || encondeString[index] === 'o' || encondeString[index] === 'u') {
+      result += encondeString[index];
+    }
+  };
+  return result;
 }
-function decode() {
-  // seu código aqui
+console.log(encode('hi there!'))
+function decode(decodeString) {
+  let result = '';
+  let decode = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u'
+  };
+  for (let index = 0; index < decodeString.length; index += 1) {
+    if (decodeString[index] === '1' || decodeString[index] === '2' || decodeString[index] === '3' || decodeString[index] === '4' || decodeString[index] === '5') {
+      result += decodeString[index];
+    }
+  }
+  return result;
 }
+
 
 module.exports = {
   calcArea,
