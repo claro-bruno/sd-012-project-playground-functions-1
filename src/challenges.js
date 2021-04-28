@@ -20,7 +20,7 @@ function splitSentence(phrase) {
 // Desafio 4
 function concatName(Array) {
   let phrase = Array;
-  return  (phrase[0]) + ', ' + (phrase[phrase.length - 1]);
+  return  (phrase[phrase.length - 1]) + ', ' + (phrase[0]);
 };
 
 // Desafio 5
