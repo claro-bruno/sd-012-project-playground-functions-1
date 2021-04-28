@@ -24,7 +24,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(arrayDeString) {
-  let concatenada = (arrayDeString.length - 1, arrayDeString[0]);
+  let concatenada = (arrayDeString.slice(-1), arrayDeString[0]);
   
   return concatenada;
 }
