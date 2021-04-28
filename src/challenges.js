@@ -24,9 +24,13 @@ function splitSentence(frase) {
 console.log(splitSentence('Vamo que vamo'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+let array = ['João', 'Maria', 'José', 'Antonio'];
+
+function concatName(procura) {
+  return procura[procura.length -1] + ", " + procura[0];
+};
+
+console.log(concatName(array));
 
 // Desafio 5
 function footballPoints() {
