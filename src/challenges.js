@@ -58,12 +58,34 @@ function footballPoints(wins, ties) {
   let tiesPoints = ties * 1;
   return winsPoints + tiesPoints;
 }
-console.log(footballPoints(0, 0));
+console.log(footballPoints(14, 8));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(arrayOfNumbers) {
+  /*
+  calculo
+  receber uma array de numero
+  return qtd de vezes que o maior numero se repete 
+  repeticao = for
+  criar uma variavel pra receber esse valor = 0 += 1
+  se i=0 > i=1
+  */
+  let biggerNumber = arrayOfNumbers[0];
+  let numberOfTimes = 0;
+  for (let index = 1; index < arrayOfNumbers.length; index += 1) {
+    if(arrayOfNumbers[index] > biggerNumber) {
+      biggerNumber = arrayOfNumbers[index]
+    }
+  }
+  for (let index = 0; index < arrayOfNumbers.length; index += 1) {
+    if(arrayOfNumbers[index] === biggerNumber) {
+      numberOfTimes = numberOfTimes + 1;
+    }
+  }
+  return numberOfTimes;
 }
+console.log(highestCount([0, 0, 0]));
+
 
 // Desafio 7
 function catAndMouse() {
