@@ -1,9 +1,9 @@
 // Desafio 1
-let numero1 = 18;
-let numero2 = 20;
+let numero1 = true;
+let numero2 = false;
 
 function compareTrue(numero1, numero2) {
-  if (numero1 > 10 && numero2 > 10) {
+  if (numero1 === true && numero2 === true) {
     return (true);
   } else {
     return (false)
