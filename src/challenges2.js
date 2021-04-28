@@ -45,12 +45,21 @@ function generatePhoneNumber(numeros) {
 function triangleCheck(a, b, c) {
   return !!(a + b > c && a + c > b && b + c > a && Math.abs(a - b) < c && Math.abs(a - c) < b && Math.abs(b - c) < a);
 }
-console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(birita) {
+  let arrayQtdBirita = birita.replace(/[^0-9]/g, '').split('');
+  let qtdBirita = 0;
+  for (let i of arrayQtdBirita) {
+    qtdBirita += parseInt(i, 36);
+  }
+  if (qtdBirita > 1) {
+    return `${qtdBirita} copos de água`;
+  } else {
+    return `${qtdBirita} copo de água`;
+  }
 }
+console.log(hydrate('1 cerveja, 2 vinhos, 3 cachaças'));
 
 module.exports = {
   generatePhoneNumber,
