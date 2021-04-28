@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
-  if (valor1 == true && valor2 == true) {
+  if (valor1 === true && valor2 === true) {
     return true;
   } else {
     return false;
@@ -9,12 +9,12 @@ function compareTrue(valor1, valor2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  return ((base*height)/2);
+  return ((base*height) / 2);
 }
 
 // Desafio 3
 function splitSentence(nameToSplit) {
-  return nameToSplit.split(' ');  
+  return nameToSplit.split(' ');
 }
 
 // Desafio 4
@@ -24,7 +24,7 @@ function concatName(arrayStringsToConcat) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return (wins*3 + ties*1);
+  return (wins * 3 + ties * 1);
 }
 
 // Desafio 6
@@ -32,15 +32,15 @@ function highestCount(arrayToCount) {
   let highestNumber = 0;
   let highestNumberCount = 0;
 
-  for (index = 0; index < arrayToCount.length; index += 1) {
+  for (let index = 0; index < arrayToCount.length; index += 1) {
     if (arrayToCount[index] > highestNumber) {
       highestNumber = arrayToCount[index];
       highestNumberCount = 0;
       highestNumberCount += 1;
-    } 
+    }
     else if (arrayToCount[index] == highestNumber) {
       highestNumberCount += 1;
-    } 
+    }
   }
   return highestNumberCount;
 }
@@ -53,7 +53,7 @@ function catAndMouse(mouse, cat1, cat2) {
 
   if (cat1ToMouse > cat2ToMouse) {
     return ('cat2');
-  } 
+  }
   
   else if (cat1ToMouse < cat2ToMouse) {
     return ('cat1');
@@ -65,9 +65,15 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(arrayToFizzBuzz) {
+  for (let index = 0; index < arrayToFizzBuzz.length; index += 1) {
+    if (arrayToFizzBuzz[index] % 2 == 1) {
+      arrayToFizzBuzz[index] = 'fizz';
+    }
+  }
+  return [arrayToFizzBuzz];
 }
+console.log([3, 2]);
 
 // Desafio 9
 function encode() {
@@ -89,4 +95,3 @@ module.exports = {
   highestCount,
   splitSentence,
 };
-
