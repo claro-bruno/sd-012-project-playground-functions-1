@@ -1,6 +1,8 @@
 // Desafio 1
+// gg wp
 function compareTrue() {
   // seu código aqui
+  let status
 }
 
 // Desafio 2
