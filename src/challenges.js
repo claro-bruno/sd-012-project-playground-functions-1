@@ -29,7 +29,8 @@ console.log(splitSentence(sentence));
 function concatName(arr) {
   // seu código aqui
   let first = (`${arr[arr.length - 1]}` + ' ' + `${arr[0]}`);
-  return first.split(' ');
+  first.split(' ');
+  return first.toString();
 }
 names = ['Gabriel', 'Cassiano', 'Ferraz', 'Paolillo'];
 console.log(concatName(names));
@@ -55,6 +56,7 @@ function highestCount(arr, repCount) {
     });
     return rep;
 }
+let numbers = 
 
 // Desafio 7
 function catAndMouse() {
