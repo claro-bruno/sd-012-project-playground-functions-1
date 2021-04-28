@@ -64,8 +64,15 @@ function hydrate(string) {
   for (let numero in arrayNumeros) {
     soma += arrayNumeros[numero]
   }
-  return soma + ' copos de água'
+  if (soma === 1){
+    return soma + ' copo de água'
+  } else {
+    return soma + ' copos de água'
+  }
+  
 };
+
+console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"))
 
 // Função de retirar números de uma string encontrado em https://stackoverflow.com/questions/42532450/extract-number-from-string-javascript
 
