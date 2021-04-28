@@ -34,23 +34,30 @@ function highestCount(numbers) {
   let qtd = 0;
   let maior = 0;
 
-  for (let i =0 ;i < numbers.length;i +=1){
-    if (maior<numbers[i]){
-        maior = numbers[i]
+  for (let i = 0; i < numbers.length; i += 1) {
+    if (maior < numbers[i]){
+        maior = numbers[i];
     }
   }
 
-  for (let i=0; i<numbers.length;i +=1){
-      if (numbers[i] === maior){
-          qtd +=1;
-      }
+  for (let i=0; i<numbers.length; i += 1) {
+    if (numbers[i] === maior) {
+      qtd += 1;
+    }
   }
   return qtd;
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  if (mouse - cat1 < mouse - cat2){
+      return "cat2";
+  }else if(mouse - cat1 > mouse - cat2) {
+      return "cat1";
+  }else{
+      return "os gatos trombam e o rato foge"
+  }
 }
 
 // Desafio 8
