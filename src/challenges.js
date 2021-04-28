@@ -109,12 +109,57 @@ console.log(fizzBuzz([7, 9]));
 console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let splitedString = string.split('');
+  let encodeName = [];
+  for (let letter in splitedString) {
+    if (splitedString[letter] === 'a') {
+      splitedString[letter] = '1';
+    }
+    else if (splitedString[letter] === 'e') {
+      splitedString[letter] = '2';
+    }
+    else if (splitedString[letter] === 'i') {
+      splitedString[letter] = '3';
+    }
+    else if (splitedString[letter] === 'o') {
+      splitedString[letter] = '4';
+    }
+    else if (splitedString[letter] === 'u') {
+      splitedString[letter] = '5';
+    }
+    encodeName.push(splitedString[letter])
+  }
+  return encodeName.join('');
 }
-function decode() {
-  // seu código aqui
+
+console.log(encode('hi there!'));
+
+function decode(string) {
+  let splitedString = string.split('');
+  let encodeName = [];
+  for (let letter in splitedString) {
+    if (splitedString[letter] === '1') {
+      splitedString[letter] = 'a';
+    }
+    else if (splitedString[letter] === '2') {
+      splitedString[letter] = 'e';
+    }
+    else if (splitedString[letter] === '3') {
+      splitedString[letter] = 'i';
+    }
+    else if (splitedString[letter] === '4') {
+      splitedString[letter] = 'o';
+    }
+    else if (splitedString[letter] === '5') {
+      splitedString[letter] = 'u';
+    }
+    encodeName.push(splitedString[letter])
+  }
+  return encodeName.join('');
 }
+
+console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
