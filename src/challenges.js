@@ -9,13 +9,15 @@ function compareTrue(num1, num2) {
 // Desafio 2
 function calcArea(base, height) {
   let triangulo = (base * height) / 2;
- return triangulo;
+  return triangulo;
 }
-console.log(calcArea(5,1))
+
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  let array = string.split(" ")
+  return array
 }
+console.log(splitSentence('go trybe'))
 
 // Desafio 4
 function concatName() {
