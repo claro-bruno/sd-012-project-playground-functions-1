@@ -31,38 +31,18 @@ let frase = 'go trybe';
 console.log(splitSentence(frase));
 
 // Desafio 4
-function concatName(array) {
+function concatName(nameList) {
   // seu código aqui
-  let nomes = ['lucas', 'cassiano','ferraz','paolillo'];
-  let primeiroNome;
-  let ultimoNome;
-
-  for(let index =0; index < nomes.length; index += 1){
-    
-    primeiroNome = index[0];
-    ultimoNome = index[nomes.length];
-  }
-  console.log(nomes);
+  let firstName = nameList[0];
+  let lastName = nameList.slice(-1); // Slice() para copiar e adicionar em novo Array.
+  let lastAndFirstName = []; // Criar novo array para adicionar o lastName e firstName.
+  
+  lastAndFirstName.push(lastName + ' ' + firstName); // Adiciona no array.
+  
+  return lastAndFirstName;
 }
-  let last = array.slice(-1)[0];
-  let first = array[0];
-  let together = [];
-  together.push(last + first);
-  return together;
-}
-names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo', 'juan', 'Pedro', 'Rafa', 'joao', 'Thiago'];
 console.log(concatName(names));
-
-let arrSplit = [];
-for (let index = 0; index < arr.length; index += 1) {
-  console.log(index);
-  if (index === 0 || index === arr.length - 1) {
-    arrSplit.unshift(arr[index]);
-  }
-}
-return arrSplit;
-}
-}
 
 // Desafio 5
 function footballPoints() {
