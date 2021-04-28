@@ -3,6 +3,8 @@ function compareTrue() {
   // seu código aqui
 }
 
+bota o codiguin pra roda, janaino
+
 // Desafio 2
 function calcArea() {
   // seu código aqui
