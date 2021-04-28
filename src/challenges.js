@@ -15,7 +15,7 @@ function calcArea(base, height) {
 function splitSentence() {
   let string;
   let stringtwo = string.split(' ');
- return stringwo;
+ return string, stringtwo;
 }
 
 // Desafio 4
@@ -40,7 +40,22 @@ function catAndMouse() {
 
 // Desafio 8
 function fizzBuzz() {
-  // seu código aqui
+  let num = [];
+
+for (index = 0; index <= num.length; i+=1) {
+
+if  (i % 3 === 0) {
+  console.log("fizz");
+  
+} else if (index % 5 === 0) {
+    console.log("buzz");
+    
+} else if (index % 3 === 0 && i % 5 === 0) {
+    console.log("fizzBuzz");
+    
+    } else (index % 3 !== 0 && i % 5 !== 0); {
+      
+   console.log("bug");
 }
 
 // Desafio 9
