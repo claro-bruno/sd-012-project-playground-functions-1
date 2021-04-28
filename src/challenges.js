@@ -55,56 +55,16 @@ function encode(string) {
   // seu código aqui
   let result = '';
   for (let letra of string) {
-    switch (letra) {
-      case 'a':
-        letra = '1';
-        break; 
-      case 'e':
-        letra = '2';
-        break; 
-      case 'i':
-        letra = '3';
-        break; 
-      case 'o':
-        letra = '4';
-        break; 
-      case 'u':
-       letra = '5';
-       break; 
-      default:
-        break;
-    }
-    result = result + letra;
+   
   }
-
   return result;
 }
 
 function decode(string) {
   // seu código aqui
   let result = '';
-  for (let letra of string) {
-    switch (letra) {
-      case '1':
-        letra = 'a';
-        break; 
-      case '2':
-        letra = 'e';
-        break; 
-      case '3':
-        letra = 'i';
-        break; 
-      case '4':
-        letra = 'o';
-        break; 
-      case '5':
-       letra = 'u';
-       break; 
-      default:
-        break;
-    }
-    result = result + letra;
-}
+  
+  return result;
 }
 
 module.exports = {
@@ -118,4 +78,4 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-}
+};
