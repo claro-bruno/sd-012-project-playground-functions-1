@@ -16,9 +16,20 @@ function calcArea(base, height) {
 };
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(sentence) {
   // seu código aqui
-}
+  let palavrasFrase = [""];
+  let indexCounter = 0;
+  for(letra of sentence){
+    if(letra === " "){
+      palavrasFrase.push("");
+      indexCounter += 1;
+    }else{
+      palavrasFrase[indexCounter] += letra;
+    };
+  };
+  return palavrasFrase;
+};
 
 // Desafio 4
 function concatName() {
