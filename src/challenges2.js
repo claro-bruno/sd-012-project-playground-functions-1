@@ -103,12 +103,19 @@ function triangleCheck(lineA, lineB, lineC) {
 function hydrate(str) {
   let numberInStr = str.replace(/[^0-9]/g,"");
   let total = 0;
+  let result;
 
   for (let key in numberInStr) {
     total += parseInt(numberInStr[key]);
-  }
+  };
 
-  return (total + " copos de água");
+  if (total == 1) {
+    result = total + " copo de água";
+  } else {
+    result = total + " copos de água"
+  };
+
+  return result;
 };
 
 module.exports = {
