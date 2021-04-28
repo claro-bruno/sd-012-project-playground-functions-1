@@ -20,9 +20,15 @@ return area;
 console.log(calcArea(51,1))
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  let arrays = [];
+
+arrays = string.split(" ");
+
+return arrays
+
 }
+console.log(splitSentence("foguete"))
 
 // Desafio 4
 function concatName() {
