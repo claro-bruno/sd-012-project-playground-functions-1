@@ -32,7 +32,7 @@ function footballPoints(wins, ties) {
   let pontos = 3
   let pontosEmpate = 1
   let pontosTotal = wins * pontos + pontosEmpate * ties
-  return pontosTotal + " pontos"
+  return pontosTotal 
 }
 
 // Desafio 6
