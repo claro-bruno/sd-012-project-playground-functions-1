@@ -21,7 +21,7 @@ function generatePhoneNumber(number) {
   }
   let cont = 0;
   let n = false;
-  for (let i = 2; i < number.length - 1; i++) {
+  for (let i = 0; i < number.length - 1; i++) {
     for (let j = i + 1; j < number.length; j++) {
       if (number[i] == number[j]) {
         cont++;
