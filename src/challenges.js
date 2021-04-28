@@ -1,9 +1,9 @@
 // Desafio 1
 function compareTrue(num1, num2) {
   if (num1 === true && num2 === true) {
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
 }
 //console.log(compareTrue(false, false));
@@ -22,10 +22,12 @@ function splitSentence(string) {
 //console.log(splitSentence('vamo que vamo', ' '))
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayString) {
+  let firstStriElem = arrayString[0];
+  let lastStriElem = arrayString[arrayString.length -1];
+  return lastStriElem + ', ' + firstStriElem;
 }
-
+console.log(concatName(['carlo', 'luiz', 'jaci']));
 // Desafio 5
 function footballPoints() {
   // seu código aqui
