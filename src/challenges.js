@@ -89,6 +89,7 @@ function fizzBuzz(array) {
   return resultado;
 }
 console.log(fizzBuzz([2, 15, 7, 9, 45]))
+
 // Desafio 9
 function encode(string) {
   let cod = ['a', 1, 'e', 2, 'i', 3, 'o', 4, 'u', 5];
@@ -102,6 +103,7 @@ function encode(string) {
   }
   return string.join('');
 }
+  
 function decode(string) {
   let cod = [1, 'a', 2, 'e', 3, 'i', 4, 'o', 5, 'u'];
   string = string.split('');
