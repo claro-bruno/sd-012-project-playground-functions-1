@@ -5,12 +5,13 @@ function compareTrue(parametro1, parametro2) {
   }
   return false;
 }
-console.log(compareTrue(true, true));
+// console.log(compareTrue(true, true));
 
 // Desafio 2
-// function calcArea() {
-//   // seu código aqui
-// }
+function calcArea(base, height) {
+  return ((base*height)/2);
+}
+// console.log(calcArea(51,1));
 
 // // Desafio 3
 // function splitSentence() {
@@ -51,7 +52,7 @@ console.log(compareTrue(true, true));
 // }
 
 module.exports = {
-  // calcArea,
+  calcArea,
   // catAndMouse,
   compareTrue,
   // concatName,
