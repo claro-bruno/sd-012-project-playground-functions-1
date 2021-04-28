@@ -18,8 +18,6 @@ function splitSentence(string) {
   return string.split(' ')
 }
 
-console.log(splitSentence('go Trybe'));
-
 // Desafio 4
 function concatName() {
   // seu código aqui
