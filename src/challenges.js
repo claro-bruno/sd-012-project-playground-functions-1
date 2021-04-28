@@ -76,14 +76,12 @@ function fizzBuzz(arrayFizzBuzz) {
   }
   return result;
 }
-console.log(fizzBuzz([9, 25]))
 
 // Desafio 9
-function encode(encodeString) {
+function encode() {
 }
 
-function decode(decodeString) {
-  
+function decode() {
 }
 
 module.exports = {
