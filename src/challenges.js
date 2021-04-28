@@ -40,7 +40,7 @@ console.log(splitSentence('foguete'));
 function concatName(arrayOfStrings) {
   let finalString = '';
 
-  finalString += `'${(arrayOfStrings[arrayOfStrings.length - 1])}, ${(arrayOfStrings[0])}'`;
+  finalString = `${(arrayOfStrings[arrayOfStrings.length - 1])}, ${(arrayOfStrings[0])}`;
   
   return finalString;
 };
@@ -78,9 +78,27 @@ function highestCount(arrayOfNumbers) {
 console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+function catAndMouse(mouse, cat1, cat2) {
+  let distanceCat1 = mouse - cat1;
+  let distanceCat2 = mouse - cat2;
+
+  if (distanceCat1 < 0) {
+    distanceCat1 *= -1;
+  };
+  if (distanceCat2 < 0) {
+    distanceCat2 *= -1;
+  };
+  
+  if (distanceCat1 < distanceCat2) {
+    return 'cat1';
+  } else if (distanceCat2 < distanceCat1) {
+    return 'cat2';
+  } else {
+    return 'os gatos trombam e o rato foge';
+  };
+};
+
+console.log(catAndMouse(0, -6, 6));
 
 // Desafio 8
 function fizzBuzz() {
