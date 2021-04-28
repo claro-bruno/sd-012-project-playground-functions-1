@@ -8,9 +8,7 @@ function calcArea(base, height) { return ((base * height) / 2) }
 function splitSentence(str) { return str.split(" ") };
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(arr) { return `${arr[arr.length - 1]}, ${arr[0]}` };
 
 // Desafio 5
 function footballPoints() {
