@@ -1,7 +1,14 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+  tenhoDinheiro = true;
+  tempo = true;
+function compareTrue(tenhoDinheiro, tempo) {
+  if (tenhoDinheiro && tempo) {
+    return true;
+  } else {
+    return false;
+  }
 }
+console.log(vouAoShopping);
 
 // Desafio 2
 function calcArea() {
