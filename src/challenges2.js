@@ -3,7 +3,7 @@ function techList(array, string) {
   // seu código aqui
   let habilidade = {};
   let habilidades = [];
-  if (array === []) {
+  if (array.length === 0) {
     return 'Vazio!';
   } else {
     for (let index = 0; index < array.length; index += 1) {
@@ -15,11 +15,14 @@ function techList(array, string) {
     return habilidades;
   }
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
+console.log(techList([], "Lucas"));
 
 // Desafio 11
-function generatePhoneNumber() {
+function generatePhoneNumber(array) {
   // seu código aqui
+  if (array.length != 11) {
+    return 'Array com tamanho incorreto.';
+  } else {}
 }
 
 // Desafio 12
