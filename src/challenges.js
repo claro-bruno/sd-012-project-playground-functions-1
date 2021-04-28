@@ -1,3 +1,16 @@
+// funcão auxiliar para o desafio 6:
+const MaiorElemento = (arr) => {
+  let maior = 0;
+
+  arr.forEach(element => {
+    if (element > maior) {
+      maior = element;
+    };
+  });
+
+  return maior;
+};
+
 // Desafio 1
 function compareTrue(bool1, bool2) { return (bool1 && bool2) };
 
@@ -14,9 +27,20 @@ function concatName(arr) { return `${arr[arr.length - 1]}, ${arr[0]}` };
 function footballPoints(wins, ties) { return ((wins * 3) + ties) };
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(arr) {
+  let contador = 0;
+  let maiorNum = MaiorElemento(arr);
+
+  arr.forEach(element => {
+    if (element == maiorNum) {
+      contador++;
+    };
+  });
+
+  return contador;
+};
+
+console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse() {
