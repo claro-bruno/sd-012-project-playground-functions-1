@@ -67,9 +67,19 @@ function highestCount(maiorInteiro) {
 console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  cat1 = cat1 - mouse;
+  cat2 = cat2 - mouse;
+
+  if (cat1 < cat2) {
+    return cat1;
+  } else if (cat2 < cat1) {
+    return cat2;
+  } else {
+    return "os gatos trombam e o rato foge";
+  }
 }
+console.log(catAndMouse(5, 9, 9));
 
 // Desafio 8
 function fizzBuzz() {
