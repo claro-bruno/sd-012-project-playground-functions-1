@@ -94,14 +94,51 @@ function fizzBuzz(n) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
+function encode(string) {
+  let e = string;
+  for (let i = 0; i < e.length; i++) {
+    if (e[i] == 'a') {
+      e = e.replace('a', '1');
+    }
+    else if (e[i] == 'e') {
+      e = e.replace('e', '2');
+    }
+    else if (e[i] == 'i') {
+      e = e.replace('i', '3');
+    }
+    else if (e[i] == 'o') {
+      e = e.replace('o', '4');
+    }
+    else if (e[i] == 'u') {
+      e = e.replace('u', '5');
+    }
+  }
+  return e;
 }
 
-module.exports = {
+function decode(string) {
+  let d = string;
+  for (let i = 0; i < string.length; i++) {
+    if (d[i] == '1') {
+      d = d.replace('1', 'a');
+    }
+    else if (d[i] == '2') {
+      d = d.replace('2', 'e');
+    }
+    else if (d[i] == '3') {
+      d = d.replace('3', 'i');
+    }
+    else if (d[i] == '4') {
+      d = d.replace('4', 'o');
+    }
+    else if (d[i] == '5') {
+      d = d.replace('5', 'u');
+    }
+  }
+  return d;
+}
+
+module.exports = {  
   calcArea,
   catAndMouse,
   compareTrue,
