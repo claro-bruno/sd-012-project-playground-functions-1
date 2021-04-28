@@ -1,19 +1,23 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
-  let eVerdadeiro = false;
-  if (valor1 > 0 && valor2 > 0){
-    return eVerdadeiro = true;
-  } else {
+  let eVerdadeiro = true;
+  if (valor1 > 0 && valor2 > 0) {
     return eVerdadeiro;
+  } else {
+    return eVerdadeiro = false;
   }
 };
-console.log(compareTrue(5, 5));
+
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
-
+function calcArea(base, altura) {
+  let area = 0;
+  if (base > 0 && altura > 0){
+    area = (base * altura) / 2;
+  };
+  return area;
+};
+console.log(calcArea(51, 1))
 // Desafio 3
 function splitSentence() {
   // seu código aqui
