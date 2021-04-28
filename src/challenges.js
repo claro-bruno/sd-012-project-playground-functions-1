@@ -28,7 +28,7 @@ let array = ['João', 'Maria', 'José', 'Antonio'];
 
 function concatName(procura) {
   let resultado = procura[procura.length -1] + ', ' + procura[0];
-  return resultado
+  return resultado;
 };
 
 console.log(concatName(array));
@@ -44,7 +44,7 @@ console.log(footballPoints(15, 8));
 
 // Desafio 6
 
-let arrayAlet =  [0, 0, 0, 11];
+let arrayAlet = [0, 0, 0, 11];
 
 function highestCount(arrayNum) {
   let resultado3 = 0;
@@ -65,11 +65,29 @@ function highestCount(arrayNum) {
 
 console.log(highestCount(arrayAlet));
 
-
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+function catAndMouse(mouse, cat1, cat2) {
+  let distanciaCat1 = mouse - cat1;
+  let distanciaCat2 = mouse - cat2;
+
+  if (distanciaCat1 < 0) {
+    distanciaCat1 = distanciaCat1 * -1;
+  };
+
+  if (distanciaCat2 < 0) {
+    distanciaCat2 = distanciaCat2 * -1;
+  };
+
+  if (distanciaCat1 < distanciaCat2) {
+    return 'Cat 1';
+  } else if (distanciaCat2 < distanciaCat1) {
+    return 'Cat 2';
+  } else {
+    return 'os gatos trombam e o rato foge.';
+  };
+};
+
+console.log(catAndMouse(8, 9, 7));
 
 // Desafio 8
 function fizzBuzz() {
