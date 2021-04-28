@@ -1,13 +1,16 @@
 // Desafio 10
 function techList(tech, name) {
-  let teste = {
+
+  tech = tech.sort();
+
+  let tecnologias = {
     tecnologia: tech,
     nome: name
   };
 
   if (tech.length > 0) {
     for (let index = 0; index < tech.length; index += 1) {
-      console.log(`${teste.tecnologia[index]}, ${teste.nome}`);
+      console.log(`${tecnologias.tecnologia[index]}, ${tecnologias.nome}`);
     }
   } else {
     console.log('Vazio!');
