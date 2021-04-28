@@ -1,15 +1,13 @@
 // Desafio 1
-function compareTrue() {
-  if (num1 === true && num2 === true){
+function compareTrue(word1, word2) {
+  if (word1 === true && word2 === true){
     return true
   }
   else {
     return false
   }
 }
-num1 = true
-num2 = true
-compareTrue(num1, num2)
+compareTrue(false, true)
 
 // Desafio 2
 function calcArea(base, height) {
