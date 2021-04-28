@@ -24,7 +24,7 @@ function concatName(namesArray) {
   let max = namesArray[namesArray.length - 1];
   let min = namesArray[0];
   let string = max + ', ' + min;
-  console.log('string');
+  console.log(string);
 }
 
 
