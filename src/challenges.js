@@ -1,9 +1,10 @@
 // Desafio 1
 function compareTrue(booleano1, booleano2) {
   // seu código aqui
+  let resultado = ;
   if (booleano1 === true && booleano2 === true)
-    return console.log('true');
-  else return console.log('false');
+    return resultado = true;
+  else return resultado = false;
 };
 
 // Desafio 2
@@ -19,8 +20,9 @@ function splitSentence(string) {
   let array1 = [string];
   let array2 = [];
   for (let indice = 0; indice < array1.lenght; indice += 1) {
-    if (array1[indice] != ' ') {
-      array2 = [array1[indice].push];
+    if (array1[indice] === ' ') {
+      break;
+    else array2.push(array1[indice])
     };
   };
   return console.log(array2);
