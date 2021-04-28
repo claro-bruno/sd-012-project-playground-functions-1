@@ -17,14 +17,11 @@ function techList(array, string) {
 // Desafio 11
 function generatePhoneNumber(array) {
   if (array.length !== 11) {
-    return 'Array com tamanho incorreto';
+    return 'Array com tamanho incorreto.';
   }
   let phoneNumber = '(';
   for (let index = 0; index < array.length; index += 1) {
     let contador = 0;
-    if (array[index] < 0 || array[index]> 9) {
-      return 'não é possível gerar um número de telefone com esses valores'
-    }
     phoneNumber += array[index];
     if (index === 1) {
       phoneNumber += ') ';
@@ -32,11 +29,11 @@ function generatePhoneNumber(array) {
     if (index === 6) {
       phoneNumber += '-';
     }
-    for (let index2 = 0; index2 < array.length; index2 +=1) {
+    for (let index2 = 0; index2 < array.length; index2 += 1) {
       if (array[index] === array[index2]) {
         contador += 1;
-        if (contador >= 3) {
-          return 'não é possível gerar um número de telefone com esses valores'
+        if (contador >= 3 || array[index] < 0 || array[index] > 9) {
+          return 'não é possível gerar um número de telefone com esses valores';
         }
       }
     }
@@ -47,7 +44,7 @@ function generatePhoneNumber(array) {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   let value = true;
-  if (lineA > lineB + lineC || lineB > lineA + lineC || lineC > lineA + lineB || lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC) || lineC < Math.abs(lineA-lineB)){
+  if (lineA > lineB + lineC || lineB > lineA + lineC || lineC > lineA + lineB || lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC) || lineC < Math.abs(lineA -lineB)) {
     value = false;
   }
   return value;
@@ -61,15 +58,11 @@ function hydrate(string) {
   for (let key in quantidadeBebidas) {
     water += Number(quantidadeBebidas[key]);
   }
-  if (water === 1){
-    return `${water} copo de água`;
-  } else {
-    return `${water} copos de água`;
-  }
+  if (water === 1) {
+    return water + ' copo de água';
+  } 
+  return water + ' copos de água';
 }
-
-console.log(hydrate("1 cerveja"));
-
 
 module.exports = {
   generatePhoneNumber,

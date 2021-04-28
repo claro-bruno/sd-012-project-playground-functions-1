@@ -1,15 +1,14 @@
 // Desafio 1
 function compareTrue(boolean1, boolean2) {
-  let trueOrFalse = false
   if (boolean1 === true && boolean2 === true) {
-    trueOrFalse = true;
+    return true;
   } 
-  return trueOrFalse;
+  return false;
 }
 
 // Desafio 2
 function calcArea(base, height) {
-  return (base * height / 2);
+  return (base * height) / 2;
 }
 
 // Desafio 3
@@ -39,7 +38,7 @@ function footballPoints(wins, ties) {
 function highestCount(array) {
   let count = 0;
   let hightestIndex = 0;
-  for (let index = 1; index < array.length; index +=1) {
+  for (let index = 1; index < array.length; index += 1) {
     if (array[index] > array[hightestIndex]) {
       hightestIndex = index;
     }
@@ -54,26 +53,25 @@ function highestCount(array) {
 
 // Desafio 7
 function catAndMouse(mouseDistance, cat1Distance, cat2Distance) {
-   let cat1MouseDist = Math.abs(mouseDistance - cat1Distance);
-   let cat2MouseDist = Math.abs(mouseDistance - cat2Distance);
-   if (cat1MouseDist > cat2MouseDist) {
-     return 'cat2';
-   } else if (cat2MouseDist > cat1MouseDist) {
-     return 'cat1';
-   } else {
-     return 'os gatos trombam e o rato foge';
-   }
+  let cat1MouseDist = Math.abs(mouseDistance - cat1Distance);
+  let cat2MouseDist = Math.abs(mouseDistance - cat2Distance);
+  if (cat1MouseDist > cat2MouseDist) {
+    return 'cat2';
+  } else if (cat2MouseDist > cat1MouseDist) {
+    return 'cat1';
+  }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
 function fizzBuzz(array) {
   let answerArray = [];
   for (let key in array) {
-    if (array[key]%3 === 0 && array[key]%5 === 0){
+    if (array[key] % 3 === 0 && array[key] % 5 === 0) {
       answerArray[key] = 'fizzBuzz';
-    } else if (array[key]%3 === 0) {
+    } else if (array[key] % 3 === 0) {
       answerArray[key] = 'fizz';
-    } else if (array[key]%5 === 0) {
+    } else if (array[key] % 5 === 0) {
       answerArray[key] = 'buzz';
     } else {
       answerArray[key] = 'bug!';
@@ -84,8 +82,8 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-  let stringLowerCase = string.split("");
-  for (let key in stringLowerCase){
+  let stringLowerCase = string.split('');
+  for (let key in stringLowerCase) {
     if (stringLowerCase[key] === 'a') {
       stringLowerCase[key] = '1';
     } else if (stringLowerCase[key] === 'e') {
@@ -98,12 +96,12 @@ function encode(string) {
       stringLowerCase[key] = '5';
     }
   }
-  return stringLowerCase.join("");
+  return stringLowerCase.join('');
 }
 
 function decode(string) {
-  let stringLowerCase = string.split("");
-  for (let key in stringLowerCase){
+  let stringLowerCase = string.split('');
+  for (let key in stringLowerCase) {
     if (stringLowerCase[key] === '1') {
       stringLowerCase[key] = 'a';
     } else if (stringLowerCase[key] === '2') {
@@ -116,9 +114,9 @@ function decode(string) {
       stringLowerCase[key] = 'u';
     }
   }
-  return stringLowerCase.join("");
+  return stringLowerCase.join('');
 }
- console.log(encode('teste'));
+
 
 module.exports = {
   calcArea,
