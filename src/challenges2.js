@@ -67,9 +67,20 @@ console.log(generatePhoneNumber(elevenNumbersArray2));
 console.log(generatePhoneNumber(elevenNumbersArray3));
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+let lineA = 10;
+let lineB = 14;
+let lineC = 4;
+
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA > lineB + lineC || lineB > lineA + lineC || lineC > lineA + lineB) {
+    return false;
+  } else if (lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC || lineC < Math.abs(lineA - lineB))) {
+    return false;
+  } else {
+    return true
+  }
 }
+console.log(triangleCheck(lineA, lineB, lineC));
 
 // Desafio 13
 function hydrate() {
