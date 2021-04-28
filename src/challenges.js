@@ -10,7 +10,7 @@ function calcArea(baseTriangulo,aulturaTriangulo) {
 
 // Desafio 3
 function splitSentence(frase) {
-  let arrayStrings=[]
+  let arrayStrings=[];
   for (index=0;index<frase.lenght;index+=1)
 }
 
@@ -76,9 +76,33 @@ function fizzBuzz(arrayNum) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  let fraseEncode="";
+  for (let index=0;index<(frase.length);index+=1){
+    switch (frase[index]) {
+      case 'a':
+        fraseEncode+="1"
+        break;
+      case 'e':
+        fraseEncode+="2"
+        break;
+      case 'i':
+        fraseEncode+="3"
+        break;
+      case 'o':
+        fraseEncode+="4"
+        break;
+      case 'u':
+        fraseEncode+="5"
+        break;
+      default:
+        fraseEncode+=frase[index];
+    }
+  }
+  return fraseEncode
 }
+p1="hi there!";
+console.log(encode(p1));
 function decode() {
   // seu código aqui
 }
