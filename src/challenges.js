@@ -7,15 +7,11 @@ function compareTrue(bool, bool2) {
   };
 };
 
-console.log(compareTrue(false, false));
-
 // Desafio 2
 function calcArea(base, height) {
   let triangleArea = (base * height) / 2;
   return triangleArea;
 };
-
-console.log(calcArea(51, 1));
 
 // Desafio 3
 function splitSentence(str) {
@@ -34,8 +30,6 @@ function splitSentence(str) {
   return finalArray;
 };
 
-console.log(splitSentence('foguete'));
-
 // Desafio 4
 function concatName(arrayOfStrings) {
   let finalString = '';
@@ -45,8 +39,6 @@ function concatName(arrayOfStrings) {
   return finalString;
 };
 
-console.log(concatName(['captain', 'my', 'captain']));
-
 // Desafio 5
 function footballPoints(wins, ties) {
   let victoryPoints = wins * 3;
@@ -55,8 +47,6 @@ function footballPoints(wins, ties) {
 
   return totalPoints;
 };
-
-console.log(footballPoints(0, 0));
 
 // Desafio 6
 function highestCount(arrayOfNumbers) {
@@ -74,8 +64,6 @@ function highestCount(arrayOfNumbers) {
   };
   return count;
 };
-
-console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -98,8 +86,6 @@ function catAndMouse(mouse, cat1, cat2) {
   };
 };
 
-console.log(catAndMouse(0, -6, 6));
-
 // Desafio 8
 function fizzBuzz(arrNumbers) {
 
@@ -117,8 +103,6 @@ function fizzBuzz(arrNumbers) {
   };
   return arr;
 };
-
-console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode(str) {
@@ -142,16 +126,14 @@ function encode(str) {
   return returnString;
 };
 
-console.log(encode('hi there!'));
-
 function decode(str) {
   let returnString = '';
   let encode = {
-    1: a,
-    2: e,
-    3: i,
-    4: o,
-    5: u
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u'
   };
 
   for (let index = 0; index < str.length; index += 1) {
@@ -163,8 +145,6 @@ function decode(str) {
   };
   return returnString;
 };
-
-console.log(encode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
