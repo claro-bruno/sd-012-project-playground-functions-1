@@ -21,9 +21,13 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(...string) {
   // seu código aqui
+  let separa = string[string.length -1] + ' ' + string[0];
+  let array = separa.split(' ');
+  return array;
 }
+console.log(concatName('foguete', 'não', 'tem', 'ré'));
 
 // Desafio 5
 function footballPoints() {
