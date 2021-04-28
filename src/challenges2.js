@@ -60,7 +60,12 @@ function hydrate(pedidos) {
     pedido = (parseInt(pedido) || 0);
       soma = soma + pedido;
   }
-  return soma;
+
+  if (soma === 1) {
+    return `${soma} copo de água`;
+  } else {
+    return `${soma} copos de água`;
+  }
 }
 
 module.exports = {
