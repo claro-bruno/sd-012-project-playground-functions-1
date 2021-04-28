@@ -19,7 +19,7 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-let array = ['Ramon', 'Paschoal', 'Tato'];
+let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 
 function concatName(string) {
   if (array.length > 0) {
@@ -28,6 +28,8 @@ function concatName(string) {
  
   return array;
 }
+
+console.log(concatName(array));
 
 // Desafio 5
 function footballPoints() {
