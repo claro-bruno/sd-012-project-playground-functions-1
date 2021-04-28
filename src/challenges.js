@@ -25,7 +25,7 @@ function concatName(nomes) {
   let strConcatenada = "";
 
   strConcatenada = nomes[nomes.length-1] + ", " + nomes[0];
-  
+
   return strConcatenada;
 }
 
@@ -56,8 +56,37 @@ function highestCount(numeros) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distanciaCat1;
+  let distanciaCat2;
+
+  if(mouse < cat1) {
+    distanciaCat1 = cat1 - mouse;
+  }
+
+  if(mouse > cat1) {
+    distanciaCat1 = mouse - cat1;
+  }
+  
+  if(mouse < cat2) {
+    distanciaCat2 = cat2 - mouse;
+  }
+
+  if(mouse > cat2) {
+    distanciaCat2 = mouse - cat2;
+  }
+
+  if(distanciaCat1 < distanciaCat2) {
+    return "cat1";
+  }
+
+  if(distanciaCat2 < distanciaCat1) {
+    return "cat2";
+  }
+
+  if(distanciaCat1 === distanciaCat2) {
+    return "os gatos trombam e o rato foge"
+  } 
 }
 
 // Desafio 8
