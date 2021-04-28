@@ -24,7 +24,7 @@ function techList(techNames, nome) {
 // eslint-disable-next-line max-lines-per-function
 function generatePhoneNumber(numeros) {
   if (numeros.length !== 11) {
-    return 'Array com tamanho incorreto';
+    return 'Array com tamanho incorreto.';
   } else {
     for (let i = 0; i < numeros.length; i += 1) {
       let count = 0;
@@ -42,9 +42,11 @@ function generatePhoneNumber(numeros) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(a, b, c) {
+  return !!(a + b > c && a + c > b && b + c > a &&);
 }
+console.log(triangleCheck(10, 14, 2));
+
 
 // Desafio 13
 function hydrate() {
