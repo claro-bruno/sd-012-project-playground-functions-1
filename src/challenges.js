@@ -80,12 +80,24 @@ function footballPoints(wins, ties) {
   return quantidade;
 } 
 
-console.log(footballPoints(1, 2));
+//console.log(footballPoints(1, 2));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(numbers) {
+  let higherNumber = numbers[0];
+
+  for (let index = 0; index < numbers.length; index += 1){
+    if (numbers[index] > higherNumber){
+      higherNumber = numbers[index];
+    }
+  } 
+  return higherNumber;
+} 
+
+
+
+//console.log(highestCount([-1,-2,-3,-4]));
+
 
 // Desafio 7
 function catAndMouse() {
