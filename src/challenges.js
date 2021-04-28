@@ -27,7 +27,6 @@ function concatName(...string) {
   let array = separa.split(' ');
   return array;
 }
-console.log(concatName('foguete', 'não', 'tem', 'ré'));
 
 // Desafio 5
 function footballPoints() {
