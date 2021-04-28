@@ -69,11 +69,14 @@ function highestCount(numbers) {
     return repetitions;
   }
 
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
-console.log(highestCount([0, 0, 0]));
+//Retirei a idéia de parte do código do colega Eric Kreis (https://github.com/tryber/sd-012-project-playground-functions/tree/eric-kreis-playground-functions), especificamente, as linhas 58, 64, 65,66 e 69. Soube encontrar o número maior, passei horas pesquisando e testando e não consegui chegar ao resultado, desta forma, notei que faltava uma variável para repetições e que deveria fazer um for of incrementando a variavel repetição sempre que o numero maior se repetia.
+
+// console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+// console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+// console.log(highestCount([0, 0, 0]));
+
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
 }
 
