@@ -1,17 +1,44 @@
 // Desafio 1
-function compareTrue() {
-  oi
+function compareTrue(bolleano1,bolleano2) {
+  if(bulleano1===true && bulleano2===true){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base,height) {
+  return (base*height/2)
+  
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(frase) {
+let marcador=0;
+let palavras=[];
+let ffinal=[];
+  for(let index=0; index<frase.length; index+=1){
+    if(frase[index]===' '){
+        for(marcador; marcador<index; marcador+=1){
+          palavras+=frase[marcador];
+        }
+        ffinal.push(palavras);
+        palavras=[];
+        marcador=index+1;
+    }
+
+  }
+  for(marcador;marcador<frase.length;marcador+=1){
+    palavras+=frase[marcador];
+  }
+     ffinal.push(palavras);
+
+  return ffinal;
+  
 }
+console.log(splitSentence('Vamo que Vamo'));
 
 // Desafio 4
 function concatName() {
