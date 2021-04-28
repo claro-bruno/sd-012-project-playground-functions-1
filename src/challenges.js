@@ -23,9 +23,17 @@ function splitSentence(sentence) {
 console.log(splitSentence('foguete'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(names) {
+  let concatNames = [];
+  for (let index = 0; index < names.length; index += 1) {
+    if (names[index] === names[0] || names[index] === names[names.length - 1]) {
+      concatNames.push(names[index]);
+    }
+    concatNames.reverse();
+  }
+  return concatNames;
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 
 // Desafio 5
 function footballPoints() {
