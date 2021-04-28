@@ -36,7 +36,7 @@ function generatePhoneNumber(number) {
   if (cont > 2 || n == true) {
     return "não é possível gerar um número de telefone com esses valores"
   }
-  return "(" + number[0] + number[1] + ")" + number[2] + number[3] + number[4] + number[5] + number[6] + "-" +  + number[7] + number[8] + number[9] + number[10];
+  return "(" + number[0] + number[1] + ") " + number[2] + number[3] + number[4] + number[5] + number[6] + "-" +  + number[7] + number[8] + number[9] + number[10];
 }
 
 // Desafio 12
