@@ -85,20 +85,22 @@ function footballPoints(wins, ties) {
 // Desafio 6  - PRECISA FINALIZAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 function highestCount(numbers) {
   let higherNumber = numbers[0];
+  let repeat = 0;
   for (let index = 0; index < numbers.length; index += 1){
-    if (higherNumber < numbers[index]){
+    if (numbers[index] > higherNumber){
       higherNumber = numbers[index];
-    }
+    } 
   } 
-  return higherNumber;
-} 
+  for (let key in numbers){
+    if (numbers[key] === higherNumber)
+    repeat += 1;
+  } return repeat; 
+  
+}  console.log(highestCount([9, 1, 2, 3, 9, 5, 7, 9]));
 
 //>>>>>highestCount(){
 //>>>>>return higherNumber * higherNumber;
 //}
-// 
-
-
 //console.log(highestCount([-1,-2,-3,-4]));
 
 
