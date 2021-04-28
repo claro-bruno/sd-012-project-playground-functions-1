@@ -2,6 +2,8 @@
 function compareTrue(num1, num2) {
   if (num1 === true && num2 === true) {
     return true;
+  } else {
+    return false;
   }
 }
 //console.log(compareTrue(true, true));
@@ -12,7 +14,7 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence(string, separador) {
+function splitSentence(string) {
   let arrayOfString = string.split(separador);
   return arrayOfString;
 }
