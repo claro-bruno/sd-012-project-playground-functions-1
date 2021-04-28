@@ -158,6 +158,7 @@ function fizzBuzz(arrayOfNumbers) {
 };
 
 // Desafio 9
+
 function encode(str1) {
 
   let str1Result = "";
@@ -193,9 +194,40 @@ function encode(str1) {
   return str1Result;
 };
 
-function decode() {
-  // seu código aqui
-}
+function decode(str1) {
+  
+  let str1Result = "";
+
+  for (let key in str1) {
+    switch (true) {
+      case (str1[key] === "1"):
+        str1Result += "a";
+        break;
+        
+      case (str1[key] === "2"):
+        str1Result += "e";
+        break;
+
+      case (str1[key] === "3"):
+        str1Result += "1";
+        break;
+
+      case (str1[key] === "4"):
+        str1Result += "o";
+        break;
+
+      case (str1[key] === "5"):
+        str1Result += "u";
+        break;
+
+      default:
+        str1Result += str1[key];
+        break;
+    };
+  };
+
+  return str1Result;
+};
 
 module.exports = {
   calcArea,
