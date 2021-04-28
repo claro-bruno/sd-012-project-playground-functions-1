@@ -92,24 +92,22 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(str) {
-  let rtn = '';
+  let subStr = str.split('');
   for (let index = 0; index < str.length; index += 1) {
     switch (str[index]) {
     case 'a':
-      rtn += '1'; break;
+      subStr[index] = '1'; break;
     case 'e':
-      rtn += '2'; break;
+      subStr[index] = '2'; break;
     case 'i':
-      rtn += '3'; break;
+      subStr[index] = '3'; break;
     case 'o':
-      rtn += '4'; break;
+      subStr[index] = '4'; break;
     case 'u':
-      rtn += '5'; break;
-    default:
-      rtn += str[index]; break;
+      subStr[index] = '5'; break;
+    default: break;
     }
-  }
-  return rtn;
+  } return subStr.join('');
 }
 
 function decode(str) {
