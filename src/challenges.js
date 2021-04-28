@@ -73,7 +73,7 @@ function fizzBuzz(numeros) {
   return result;
 }
 
-// Desafio 9
+// Desafio 9.1
 function encode(palavra) {
   let codeLetter = ['a', 'e', 'i', 'o', 'u'];
   let codeNumber = ['1', '2', '3', '4', '5'];
@@ -92,7 +92,7 @@ function encode(palavra) {
   return newPalavra;
 }
 
-// Desafio 10
+// Desafio 9.2
 function decode(palavra) {
   let decodeLetter = ['a', 'e', 'i', 'o', 'u'];
   let decodeNumber = ['1', '2', '3', '4', '5'];
