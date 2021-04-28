@@ -4,7 +4,7 @@ function compareTrue(value1, value2) {
     return true   
   }
 }
-compareTrue()
+
 
 //  console.log(compareTrue(true, true));
 
@@ -27,10 +27,10 @@ function splitSentence(string){
 }
 
 // Desafio 4
-function concatName(string1, string2) {
-  for (index = 0; index <) 
-  teste 
-}
+// function concatName(string1, string2) {
+//   for (index = 0; index <) 
+//   teste 
+// }
 
 // Desafio 5
 function footballPoints() {
