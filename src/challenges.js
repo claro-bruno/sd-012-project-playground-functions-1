@@ -128,8 +128,28 @@ function encode(word) {
   return result;
 };
 
-function decode() {
-  // seu código aqui
+function decode(string) {
+  let vowels = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  };
+
+  let arrayString = string.split('');
+  let result = '';
+
+  for (let indexString = 0; indexString < string.length; indexString += 1) {
+    for (let key in vowels) {
+      if (string[indexString] === key) {
+        arrayString[indexString] = vowels[key];
+      };
+    };
+    result += arrayString[indexString];
+  };
+
+  return result;
 }
 
 module.exports = {
