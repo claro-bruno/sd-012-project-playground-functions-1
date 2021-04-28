@@ -50,8 +50,8 @@ function highestCount(numArray) {
 
 // Desafio 7
 function catAndMouse(posMouse, posCat1, posCat2) {
-  let distance1 = Math.abs(posMouse) - Math.abs(posCat1);
-  let distance2 = Math.abs(posMouse) - Math.abs(posCat2);
+  let distance1 = Math.abs(posMouse - posCat1);
+  let distance2 = Math.abs(posMouse - posCat2);
   if (distance1 < distance2) {
     return 'cat1';
   } else if (distance2 < distance1) {
@@ -78,8 +78,15 @@ function fizzBuzz(arrayNum) {
 }
 
 // Desafio 9
-function encode() {
-  
+function encode(word) {
+  let vowels = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5
+  }
+
 }
 function decode() {
   // seu código aqui
