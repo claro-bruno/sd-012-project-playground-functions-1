@@ -25,8 +25,12 @@ return primeiroValor.split(' ')
 }
 
 // Desafio 4
-function concatName() {
+function concatName(sentenca) {
   // seu código aqui
+  
+  let resultado = `${sentenca[sentenca.length-1]} ${sentenca[0]}`;
+
+  return resultado.split(' ')
 }
 
 // Desafio 5
