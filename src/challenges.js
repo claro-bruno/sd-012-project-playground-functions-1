@@ -70,14 +70,18 @@ function highestCount(array) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if ((cat1 - mouse) < (cat2 - mouse)){
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)){
     return 'cat1'
-  } else if ((cat2 - mouse) < (cat1 - mouse)) {
+  } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
     return 'cat2'
-  } else if ((cat2 - mouse) ===(cat1 - mouse)){
+  } else if (Math.abs(cat2 - mouse) === Math.abs(cat1 - mouse)){
     return "os gatos trombam e o rato foge"
   };
 };
+
+
+//Função Math.abs - Retornar o valor em módulo de um número - fonte: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+
 
 // Desafio 8
 function fizzBuzz(numeros) {
@@ -100,6 +104,7 @@ function fizzBuzz(numeros) {
 // Desafio 9
 function encode() {
   // seu código aqui
+
 }
 function decode() {
   // seu código aqui
