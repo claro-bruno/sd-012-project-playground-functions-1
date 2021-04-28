@@ -1,3 +1,5 @@
+/* eslint-disable sonarjs/cognitive-complexity */
+/* eslint-disable complexity */
 // Desafio 1
 function compareTrue(valueOne, valueTwo) {
   if (valueOne && valueTwo) {
@@ -29,7 +31,6 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-// eslint-disable-next-line sonarjs/cognitive-complexity
 function highestCount(numbers) {
   let greater = numbers[0];
   let counter = 0;
@@ -57,8 +58,20 @@ function catAndMouse(unityCatOne, unityCatTwo, unityRat) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numbers) {
+  let answer = [];
+  for (let index = 0; index < numbers.length; index += 1) {
+    if ((numbers[index] % 5 === 0) && (numbers[index] % 3 === 0)) {
+      answer.push('fizzBuzz');
+    } else if (numbers[index] % 3 === 0) {
+      answer.push('fizz');
+    } else if (numbers[index] % 5 === 0) {
+      answer.push('Buzz');
+    } else {
+      answer.push('bug!');
+    }
+  }
+  return answer;
 }
 
 // Desafio 9
@@ -82,3 +95,5 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+
+console.log(fizzBuzz([9, 25]));
