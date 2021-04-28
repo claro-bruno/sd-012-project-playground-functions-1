@@ -40,7 +40,7 @@ function highestCount(valores) {
       numeroMaior = valores[num];
     }
   }
-  for (let num2 = 0; num2 < valores.length; num2 += 1){
+  for (let num2 = 0; num2 < valores.length; num2 += 1) {
     if (valores[num2] === numeroMaior) {
       contador += 1;
     }
@@ -64,8 +64,20 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numeros) {
+  let retorno = []
+  for (let index = 0; index < numeros.length; index += 1) {
+    if ((numeros[index] % 3 === 0) && (numeros[index] % 5 === 0)) {
+      retorno.push('fizzBuzz');
+    } else if (numeros[index] % 3 === 0) {
+      retorno.push('fizz');
+    } else if ((numeros[index] % 5 === 0)) {
+      retorno.push('buzz');
+    } else {
+      retorno.push('bug!');
+    }
+  }
+  return retorno;
 }
 
 // Desafio 9
@@ -89,4 +101,4 @@ module.exports = {
   splitSentence,
 };
 
-//console.log(catAndMouse(3, 2, 4));
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
