@@ -1,21 +1,23 @@
 // Desafio 1
+function compareTrue(n1, n2) {
 
+  if (n1 === true && n2 === true) {
+    return true;
+  } else {
+    return false;
+  }
 
-function compareTrue(n1,n2) {
-
-if (n1 === true && n2 === true ){
-   return true;
-} else {
-  return false;
 }
-  
-}
-console.log(compareTrue(true,true))
+console.log(compareTrue(true, true))
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+
+area = base * height /2;
+return area;
+
 }
+console.log(calcArea(51,1))
 
 // Desafio 3
 function splitSentence() {
@@ -51,6 +53,7 @@ function fizzBuzz() {
 function encode() {
   // seu código aqui
 }
+
 function decode() {
   // seu código aqui
 }
