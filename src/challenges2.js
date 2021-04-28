@@ -1,6 +1,16 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(name, tech) {
+  tech.sort();
+  let objeto = []
+  let lista = {}
+    for (let key in tech){
+      lista = {
+        tech: tech[key],
+        name: name
+      };
+      objeto.push(lista);
+    }
+  return objeto
 }
 
 // Desafio 11
