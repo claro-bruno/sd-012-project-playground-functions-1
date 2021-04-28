@@ -19,10 +19,17 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName(string) {
-  let nome = string.split(' ');
-  let primeiroNome = nome[0];
+function concatName(array) {
+  let primeiroNome = array[0];
+  let ultimoNome = array[array.length -1];
+  let nome = primeiroNome + ', ' + ultimoNome;
+
+  return nome;
 }
+
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
