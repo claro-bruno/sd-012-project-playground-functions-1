@@ -14,8 +14,6 @@ function techList(tech, name) {
   }
 }
 
-techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas');
-
 // Desafio 11
 function generatePhoneNumber(arrayNumbers) {
   let numeroCorreto = true;
@@ -46,8 +44,12 @@ function generatePhoneNumber(arrayNumbers) {
 
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  if ((Math.abs(lineA + lineB) > lineC) && (Math.abs(lineB + lineC) > lineA) && (Math.abs(lineC + lineB) > lineA)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Desafio 13
