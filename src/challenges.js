@@ -1,5 +1,28 @@
-/* eslint-disable sonarjs/cognitive-complexity */
-/* eslint-disable complexity */
+// Desafio 6 - ESLint
+function mostRepeated(numbers, greater) {
+  let counter = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] === greater) {
+      counter += 1;
+    }
+  }
+  return counter;
+}
+
+// Desafio 8 - ESLint
+function validation(number) {
+  if ((number % 5 === 0) && (number % 3 === 0)) {
+    return 'fizzBuzz';
+  }
+  if (number % 3 === 0) {
+    return 'fizz';
+  }
+  if (number % 5 === 0) {
+    return 'Buzz';
+  }
+  return 'bug!';
+}
+
 // Desafio 1
 function compareTrue(valueOne, valueTwo) {
   if (valueOne && valueTwo) {
@@ -33,25 +56,20 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(numbers) {
   let greater = numbers[0];
-  let counter = 0;
   for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] > greater) {
       greater = numbers[index];
     }
   }
-  for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] === greater) {
-      counter += 1;
-    }
-  }
-  return counter;
+  return mostRepeated(numbers, greater);
 }
 
 // Desafio 7
-function catAndMouse(unityCatOne, unityCatTwo, unityRat) {
-  if (unityCatOne === unityCatTwo) {
+function catAndMouse(mouse, cat1, cat2) {
+  if (cat1 === cat2) {
     return 'os gatos trombam e o rato foge';
-  } if ((Math.abs(unityCatOne - unityRat)) < Math.abs((unityCatTwo - unityRat))) {
+  }
+  if ((Math.abs(cat1 - mouse)) < Math.abs((cat2 - mouse))) {
     return 'cat1';
   }
   return 'cat2';
@@ -61,15 +79,7 @@ function catAndMouse(unityCatOne, unityCatTwo, unityRat) {
 function fizzBuzz(numbers) {
   let answer = [];
   for (let index = 0; index < numbers.length; index += 1) {
-    if ((numbers[index] % 5 === 0) && (numbers[index] % 3 === 0)) {
-      answer.push('fizzBuzz');
-    } else if (numbers[index] % 3 === 0) {
-      answer.push('fizz');
-    } else if (numbers[index] % 5 === 0) {
-      answer.push('Buzz');
-    } else {
-      answer.push('bug!');
-    }
+    answer.push(validation(numbers[index]));
   }
   return answer;
 }
@@ -95,5 +105,3 @@ module.exports = {
   highestCount,
   splitSentence,
 };
-
-console.log(fizzBuzz([9, 25]));
