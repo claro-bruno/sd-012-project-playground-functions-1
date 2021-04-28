@@ -9,9 +9,11 @@ function compareTrue(boolean1, boolean2) {
 };
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
-}
+  let= areaTriangulo = (base * height)/2;
+  return areaTriangulo;
+};
 
 // Desafio 3
 function splitSentence() {
