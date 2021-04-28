@@ -18,14 +18,27 @@ function splitSentence(sentence) {
 };
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(array) {
+  let phrase = '';
+  for(let index = 0; index<array.lenght;index+=1){
+    if(index == 0){
+      console.log(index);
+      phrase+=`${array[array.lenght-1]}, `
+    }else if(index === (array.lenght-1) ){
+      phrase+= array[0];
+    };
+  };
+  return phrase;
+};
+
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins,ties) {
+  return (wins*3+ties);
 }
+
+console.log(footballPoints(0,0));
 
 // Desafio 6
 function highestCount() {
