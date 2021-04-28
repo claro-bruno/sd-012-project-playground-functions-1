@@ -1,24 +1,20 @@
 // Desafio 1
-function compareTrue(value, value2) {
-    if (value === true && value2 === false || value === false && value2 === false) {
-    return false;
-  } else {
+function compareTrue(bool1, bool2) {
+  if (bool1 === true && bool2 === true){
     return true;
-  };
+  } else {
+    return false;
+  }
 };
 
-/*
+
+
 
 // Desafio 2
-let base = 51;
-let height = 1;
-
 function calcArea(base, height) {
   let operationCalcArea = (base * height) / 2
   return operationCalcArea
 }
-
-console.log(calcArea(base, height));
 
 
 
@@ -179,6 +175,7 @@ function encode() {
 function decode() {
   // seu código aqui
 }
+
 
 module.exports = {
   calcArea,
