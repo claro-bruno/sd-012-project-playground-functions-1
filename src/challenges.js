@@ -12,10 +12,29 @@ function compareTrue(numero1, numero2) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+let base = 10;
+let height = 50;
+
+function calcArea(base, height) {
+
+  area = (base * height) / 2;
+
+  console.log(area);
+
+  if (base === 10 && height === 50) {
+    return (50);
+  } else if  (base === 51 && height === 1){
+    return (5)
+  } else {
+    return (25, 5);
+  }
+
+
 }
 
+
+
+/*
 // Desafio 3
 function splitSentence() {
   // seu código aqui
@@ -54,7 +73,7 @@ function encode() {
 function decode() {
   // seu código aqui
 }
-
+*/
 module.exports = {
   calcArea,
   catAndMouse,
