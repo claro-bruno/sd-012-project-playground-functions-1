@@ -1,24 +1,29 @@
 // Desafio 10
 
 function techList(array, name) {
-  let arrayDeObjeto = [];
+  let result;
 
-  let arrayOrdenado = array.sort();
+  if (array.length > 0) {
 
-  for (let key in array) {
-    const object = { 
-      tech: arrayOrdenado[key],
-      name: name
-    };
+    let arrayDeObjeto = [];
+    let arrayOrdenado = array.sort();
 
-    arrayDeObjeto.push(object);
+      for (let key in array) {
+        const object = { 
+          tech: arrayOrdenado[key],
+          name: name
+        };
+
+        arrayDeObjeto.push(object);
+      };
+
+    result = arrayDeObjeto;
+
+  } else {
+    result = "Vazio!"
   };
 
-  if (array === []) {
-    Error("Vazio!")
-  }
-
-  return arrayDeObjeto;
+  return result;
 };
 
 // Desafio 11
