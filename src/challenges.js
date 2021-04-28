@@ -17,15 +17,13 @@ function splitSentence(sentence) {
   return sentence.split(' ');
 }
 
-console.log(splitSentence('go Trybe'))
-
 // Desafio 4
 function concatName(array) {
   let phrase = '';
   for (let index = 0; index < array.length; index += 1) {
     if (index === 0) {
-      phrase += `${array[array.length-1]}, `;
-    } else if (index === (array.length-1)) {
+      phrase += `${array[array.length - 1]}, `;
+    } else if (index === (array.length - 1)) {
       phrase += array[0];
     }
   }
@@ -33,7 +31,7 @@ function concatName(array) {
 }
 
 // Desafio 5
-function footballPoints(wins,ties) {
+function footballPoints(wins, ties) {
   return (wins * 3 + ties);
 }
 
@@ -55,9 +53,9 @@ function highestCount(array) {
 }
 
 // Desafio 7
-function catAndMouse(mouseDistance,cat1Distance,cat2Distance) {
-   cat1MouseDist = Math.abs(mouseDistance - cat1Distance);
-   cat2MouseDist = Math.abs(mouseDistance - cat2Distance);
+function catAndMouse(mouseDistance, cat1Distance, cat2Distance) {
+   let cat1MouseDist = Math.abs(mouseDistance - cat1Distance);
+   let cat2MouseDist = Math.abs(mouseDistance - cat2Distance);
    if (cat1MouseDist > cat2MouseDist) {
      return 'cat2';
    } else if (cat2MouseDist > cat1MouseDist) {
@@ -67,19 +65,58 @@ function catAndMouse(mouseDistance,cat1Distance,cat2Distance) {
    }
 }
 
-console.log(catAndMouse(0,3,2));
-
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let answerArray = [];
+  for (let key in array) {
+    if (array[key]%3 === 0 && array[key]%5 === 0){
+      answerArray[key] = 'fizzBuzz';
+    } else if (array[key]%3 === 0) {
+      answerArray[key] = 'fizz';
+    } else if (array[key]%5 === 0) {
+      answerArray[key] = 'buzz';
+    } else {
+      answerArray[key] = 'bug!';
+    }
+  }
+  return answerArray;
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let stringLowerCase = string.toLowerCase().split("");
+  for (let key in string){
+    if (stringLowerCase[key] === 'a') {
+      stringLowerCase[key] = 1;
+    } else if (stringLowerCase[key] === 'e') {
+      stringLowerCase[key] = 2;
+    } else if (stringLowerCase[key] === 'i') {
+      stringLowerCase[key] = 3;
+    } else if (stringLowerCase[key] === 'o') {
+      stringLowerCase[key] = 4;
+    } else if (stringLowerCase[key] === 'u') {
+      stringLowerCase[key] = 5;
+    }
+  }
+  return stringLowerCase.join("");
 }
-function decode() {
-  // seu código aqui
+
+function decode(string) {
+  let stringLowerCase = string.toLowerCase().split("");
+  for (let key in string){
+    if (stringLowerCase[key] === '1') {
+      stringLowerCase[key] = 'a';
+    } else if (stringLowerCase[key] === '2') {
+      stringLowerCase[key] = 'e';
+    } else if (stringLowerCase[key] === '3') {
+      stringLowerCase[key] = 'i';
+    } else if (stringLowerCase[key] === '4') {
+      stringLowerCase[key] = 'o';
+    } else if (stringLowerCase[key] === '5') {
+      stringLowerCase[key] = 'u';
+    }
+  }
+  return stringLowerCase.join("");
 }
 
 module.exports = {
