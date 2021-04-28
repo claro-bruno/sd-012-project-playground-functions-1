@@ -26,9 +26,15 @@ return dividindoFrases;
 console.log(splitSentence('vamo que vamo'))
 
 // Desafio 4
-function concatName() {
+function concatName(array) {
   // seu código aqui
+let n = array;
+let primeiro = array[0]
+let ultimo = array[n.length - 1]
+let concatenacao = primeiro + ',' + ' ' + ultimo
+return concatenacao;
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 
 // Desafio 5
 function footballPoints(wins, ties) {
