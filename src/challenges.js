@@ -91,22 +91,30 @@ function catAndMouse(mouse, cat1, cat2) {
   Retorne a string 'cat2' caso a função catAndMouse receba os parâmetros onde gato cat2 esteja a 2 unidades de distância do rato e cat1 esteja a 3 unidades de distância do rato
   mouse - cat1 = 2 / mouse - cat2 = 3
   */
-  let mouseCat1 = mouse - cat1;
-  let mouseCat2 = mouse - cat2;
+  let mouseCat1 = cat1 - mouse;
+  let mouseCat2 = cat2 - mouse;
   if (mouseCat1 < mouseCat2) {
     return 'cat1';
-  } else if (mouseCat2 < mouseCat1) {
-    return 'cat2';  
+  } else if (mouseCat1 > mouseCat2) {
+    return 'cat2'; 
   } else {
     return 'os gatos trombam e o rato foge';
   }
 }
-console.log(catAndMouse(5, 3, 2));
+console.log(catAndMouse(1, 6, 6));
 
 // Desafio 8
 function fizzBuzz() {
-  // seu código aqui
+  /*
+  receba array de numeros
+  return array:
+  divisivel apenas por 3 = fizz
+  divisivel apenas por 5 = buzz
+  divisivel por 3 e 5 = fizzBuzz
+  nenhum = bug!
+  */
 }
+console.log(fizzBuzz(2, 15, 7, 9, 45));
 
 // Desafio 9
 function encode() {
