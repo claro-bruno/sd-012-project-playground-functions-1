@@ -174,6 +174,7 @@ function techList(vetor,name){
 }
 if(vetor.length == 0)
 return console.log("Vazio!")
+else
 return resultado
 }
 
