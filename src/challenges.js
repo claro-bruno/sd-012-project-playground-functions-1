@@ -36,14 +36,29 @@ function splitSentence(stringToSplit) {
 console.log(splitSentence('vamo que vamo'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayDeStrings) {
+  /*
+  concatenacao +
+  recebe = [array, de, strings]
+  return "string" 'ÚLTIMO ITEM, PRIMEIRO ITEM' independente do tamanho da array
+  .length
+  VOLTAR AQUI DEPOIS
+  */
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  /*
+  calculo
+  recebe numero de vitorias wins = 3pontos
+  receba numero de empates ties = 1ponto
+  return qntde de pontos
+  */
+  let winsPoints = wins * 3;
+  let tiesPoints = ties * 1;
+  return winsPoints + tiesPoints;
 }
+console.log(footballPoints(0, 0));
 
 // Desafio 6
 function highestCount() {
