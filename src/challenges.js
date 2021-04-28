@@ -40,7 +40,7 @@ function highestCount(numeros) {
 }
 
 // Desafio 7
-function catAndMouse(cat1, cat2, mouse) {
+function catAndMouse(mouse, cat1, cat2) {
   let cat1Mouse = Math.abs(cat1 - mouse);
   let cat2Mouse = Math.abs(cat2 - mouse);
   let quemPega;
@@ -53,6 +53,8 @@ function catAndMouse(cat1, cat2, mouse) {
   }
   return quemPega;
 }
+
+console.log(catAndMouse(1, 0, 2));
 
 // Desafio 8
 function fizzBuzz(numeros) {
