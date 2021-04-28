@@ -20,7 +20,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-  let nomeConcatenado = array[array.length-1] + ', ' + array[0];
+  let nomeConcatenado = array[array.length - 1] + ', ' + array[0];
   return nomeConcatenado;
 }
 
@@ -31,7 +31,7 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount (array) {
+function highestCount(array) {
   let maiorNumero = 0;
   let contador = 0;
   for (let index = 0; index < array.length; index += 1) {
@@ -56,7 +56,7 @@ function catAndMouse(mouse, cat1, cat2) {
   } else if (Math.abs(sub2) < Math.abs(sub1)) {
     return 'cat2';
   } else {
-    return 'os gatos trombam e o rato foge'
+    return 'os gatos trombam e o rato foge';
   }
 }
 
@@ -79,9 +79,29 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let novaString = '';
+  let consoante = '';
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index] === 'a') {
+      novaString += '1';
+    } else if (string[index] === 'e') {
+      novaString += '2';
+    } else if (string[index] === 'i') {
+      novaString += '3';
+    } else if (string[index] === 'o') {
+      novaString += '4';
+    } else if (string[index] === 'u') {
+      novaString += '5';
+    } else {
+      consoante = string[index];
+      novaString += consoante;
+    }
+  }
+  return novaString;
 }
+console.log(encode('ha he hi ho hu'));
+
 function decode() {
   // seu código aqui
 }
