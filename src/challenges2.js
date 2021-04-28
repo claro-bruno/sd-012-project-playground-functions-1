@@ -16,16 +16,62 @@ function techList(arr, name) {
 };
 
 // Desafio 11
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
 
 function generatePhoneNumber(arr) {
-  let phoneNumber = '';
-  for(let index = 0; index < arr.length ; index += 0){
-    if(arr[index]===0){
-      phoneNumber += ('(' + arr[index]);
-    }
-  }
-}
+
+  let validate = isValid(arr);
+
+  if(validate.isValid === true){
+    let phoneNumber = '';
+
+    for(let index = 0; index < arr.length ; index += 1){
+      let number = arr[index];
+
+      if(index === 0){
+        phoneNumber += ('(' + number);
+      }else if(index === 1){
+        phoneNumber += (number + ')');
+      }else if(index === 6){
+        phoneNumber += (number + '-');
+      }else{
+        phoneNumber += number;
+      };
+    };
+
+    return phoneNumber;
+  }else{
+    return validate.reason;
+  };
+};
+
+function isValid(arr){
+
+  let validate = {
+    isValid: true,
+  };
+
+  if(arr.length != 11){
+    validate.isValid = false;
+    validate.reason = 'Array com tamanho incorreto.';
+  }else{
+    for(let num = 0; num < arr.length; num += 1){
+      let count = 0;
+
+      for(let index = 0; index < arr.length; index += 1){
+        if(arr[num] ===  arr[index]){
+          count += 1;
+        };
+      };
+
+      if(count >= 3 || arr[num] > 9 || arr[num] < 0){
+        validate.isValid = false;
+        validate.reason = 'não é possível gerar um número de telefone com esses valores';
+      };
+    };
+  };
+
+  return validate;
+};
 
 // Desafio 12
 function triangleCheck() {
