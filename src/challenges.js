@@ -86,7 +86,7 @@ function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   if (Math.abs(cat1 - mouse) === Math.abs(cat2 - mouse)) {
     return 'os gatos trombam e o rato foge';
-  } else if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
     return 'cat2';
   } else {
     return 'cat1';
