@@ -1,7 +1,7 @@
-// Desafio 3
-function splitSentence(string) {
-  // seu código aqui
-  return string.split(" ")
+// Desafio 4
+function concatName(array) {
+    // seu código aqui
+    return array[array.length-1]+", "+array[0]
   }
-
-  console.log(splitSentence("go trybe"))
+  
+  console.log(concatName(["Roberto", "Jordan", "Rachid", "Ferreira","Bastos"]))
