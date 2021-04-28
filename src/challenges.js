@@ -145,8 +145,6 @@ function decode(stringToDecode) {
   return stringToDecode.join('');
 }
 
-console.log(decode(['123']));
-
 
 module.exports = {
   calcArea,
