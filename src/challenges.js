@@ -1,8 +1,13 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-  //teste de commit
+function compareTrue(n1, n2) {
+  if(n1.valueOf() === true && n2.valueOf() === true){
+    return "true";
+  }
+  else{
+    return "false";
+  }
 }
+console.log(compareTrue(true, false));
 
 // Desafio 2
 function calcArea() {
