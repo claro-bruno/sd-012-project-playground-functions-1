@@ -71,19 +71,19 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(arrayBuzz) {
-  let resultado = []
+  let resultado = [];
   for (let key in arrayBuzz){
-    if (arrayBuzz[key] % 3 == 0 && arrayBuzz[key] % 5 !== 0) {
+    if (arrayBuzz[key] % 3 === 0 && arrayBuzz[key] % 5 !== 0) {
       resultado.push('fizz');
-    } else if (arrayBuzz[key] % 5 == 0 && arrayBuzz[key] % 3 !== 0) {
+    } else if (arrayBuzz[key] % 5 === 0 && arrayBuzz[key] % 3 !== 0) {
       resultado.push('buzz');
-    } else if (arrayBuzz[key] % 3 == 0 && arrayBuzz[key] % 5 == 0) {
+    } else if (arrayBuzz[key] % 3 === 0 && arrayBuzz[key] % 5 === 0) {
       resultado.push('fizzBuzz');
-    } else if (arrayBuzz[key] % 3 !== 0 && arrayBuzz[key] % 5 !== 0){
-      resultado.push('bug!')
+    } else if (arrayBuzz[key] % 3 !== 0 && arrayBuzz[key] % 5 !== 0) {
+      resultado.push('bug!');
     }
   }
-  return resultado
+  return resultado;
 }
 
 // Desafio 9
