@@ -31,29 +31,28 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(array) {
   let contadorNumeroQueMaisSeRepete = 0;
-
   for (let varredura2 = 0; varredura2 < array.length; varredura2 += 1) {
-      let contador = 0;
-      for (let varredura1 = 0; varredura1 < array.length; varredura1 += 1) {
-          if (array[varredura2] === array[varredura1]) {
-              contador += 1;
-          }
-          if (contador > contadorNumeroQueMaisSeRepete) {
-              contadorNumeroQueMaisSeRepete = contador;
-          }
+    let contador = 0;
+    for (let varredura1 = 0; varredura1 < array.length; varredura1 += 1) {
+      if (array[varredura2] === array[varredura1]) {
+        contador += 1;
       }
+      if (contador > contadorNumeroQueMaisSeRepete) {
+        contadorNumeroQueMaisSeRepete = contador;
+      }
+    }
   }
   return contadorNumeroQueMaisSeRepete;
 }
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let distanciaCat1 = mouse - cat1
-  let distanciaCat2 = mouse - cat2
+  let distanciaCat1 = mouse - cat1;
+  let distanciaCat2 = mouse - cat2;
   if (distanciaCat1 > distanciaCat2) {
-    return 'cat2'
+    return 'cat2';
   } else {
-    return 'cat1'
+    return 'cat1';
   }
 }
 
