@@ -1,7 +1,14 @@
-// Desafio 1
-function compareTrue() {
-  
+// Desafio 1 - Verificação de números pares
+function compareTrue(valor1, valor2) {
+  if (valor1 % 2 == 0 && valor2 % 2 ==0) {
+    return('true');
+  }
+  else {
+    return('false');
+  }
 }
+
+
 
 // Desafio 2
 function calcArea() {
