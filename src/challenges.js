@@ -83,12 +83,38 @@ function fizzBuzz(numeros) {
 }
 
 // Desafio 9
-function encode() {
-    // seu código aqui
+let decodificador = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5
 }
 
-function decode() {
-    // seu código aqui
+function encode(frase) {
+    let novaFrase = '';
+    for (let letra of frase) {
+        for (key in decodificador) {
+            if (letra === key) {
+                letra = decodificador[key]
+            }
+        }
+        novaFrase += letra;
+    }
+    return novaFrase;
+}
+
+function decode(frase) {
+    let novaFrase = '';
+    for (let letra of frase) {
+        for (key in decodificador) {
+            if (letra == decodificador[key]) {
+                letra = key
+            }
+        }
+        novaFrase += letra;
+    }
+    return novaFrase;
 }
 
 module.exports = {
