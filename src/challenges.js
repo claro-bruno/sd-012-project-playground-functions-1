@@ -40,7 +40,6 @@ function highestCount(arr) {
   return contador;
 };
 
-console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -62,7 +61,10 @@ function fizzBuzz(arr) {
   let message = '';
   let fizzAndBuzz = [];
   arr.forEach(element => {
-    (element % 3 == 0 && element % 5 == 0) ? message = 'fizzBuzz' : (element % 3 == 0) ? message = 'fizz' : (element % 5 == 0) ? message = 'buzz' : message = 'bug!';
+    (element % 3 == 0 && element % 5 == 0) ? message = 'fizzBuzz'
+      : (element % 3 == 0) ? message = 'fizz'
+        : (element % 5 == 0) ? message = 'buzz'
+          : message = 'bug!';
 
     fizzAndBuzz.push(message);
 
@@ -71,15 +73,31 @@ function fizzBuzz(arr) {
   return fizzAndBuzz;
 }
 
-console.log(fizzBuzz([9, 25]));
-
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(str) {
+
+  str = str.split('a').join('1');
+  str = str.split('e').join('2');
+  str = str.split('i').join('3');
+  str = str.split('o').join('4');
+  str = str.split('u').join('5');
+
+  return str;
 }
-function decode() {
-  // seu código aqui
+
+
+function decode(str) {
+
+  str = str.split('1').join('a');
+  str = str.split('2').join('e');
+  str = str.split('3').join('i');
+  str = str.split('4').join('o');
+  str = str.split('5').join('u');
+
+  return str;
+
 }
+
 
 module.exports = {
   calcArea,
