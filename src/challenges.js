@@ -33,7 +33,7 @@ function splitSentence(phrase) {
   }
 }
 
-console.log (splitSentence('go Trybe'))
+(splitSentence('go Trybe'))
 
 // Desafio 4
 function concatName() {
