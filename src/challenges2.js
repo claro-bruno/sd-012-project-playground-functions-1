@@ -51,28 +51,30 @@ function triangleCheckLineC(lineA, lineB, lineC) {
 }
 
 function triangleCheckABC(lineA, lineB, lineC) {
-  // let checkA;
-  // if (triangleCheckLineA(lineA, lineB, lineC) === true) {
-  //   checkA = true;
-  // }
-  // let checkB;
-  // if (triangleCheckLineB(lineA, lineB, lineC) === true) {
-  //   checkB = true;
-  // }
-  // let checkC;
-  // if (triangleCheckLineC(lineA, lineB, lineC) === true) {
-  //   checkC = true;
-  // }
-  return [checkA, checkB, checkC];
+  let checkA;
+  if (triangleCheckLineA(lineA, lineB, lineC) === true) {
+    checkA = true;
+  }
+  let checkB;
+  if (triangleCheckLineB(lineA, lineB, lineC) === true) {
+    checkB = true;
+  }
+  let checkC;
+  if (triangleCheckLineC(lineA, lineB, lineC) === true) {
+    checkC = true;
+  }
+  return `${checkA}, ${checkB}, ${checkC}`;
 }
 
 function triangleCheck(lineA, lineB, lineC) {
-  if (triangleCheckABC(lineA, lineB, lineC) === [true, true, true]) {
+  if (triangleCheckABC(lineA, lineB, lineC) === 'true, true, true') {
     return true;
   }
 
   return false;
 }
+
+console.log(triangleCheck(10,14,8));
 
 // Desafio 13
 function hydrate(string) {
