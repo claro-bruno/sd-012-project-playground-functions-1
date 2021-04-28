@@ -22,25 +22,27 @@ function concatName(array) {
   return array[array.length - 1] + ", " + array[0];
 }
 
+// Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
   return (wins * 3) + ties;
 }
 
+// Desafio 6
 function highestCount(numbers) {
   // seu código aqui
   let qtd = 0;
   let maior = 0;
 
-  for(let i=0;i<numbers.length;i++){
-    if(maior<numbers[i]){
+  for (let i =0 ;i < numbers.length;i +=1){
+    if (maior<numbers[i]){
         maior = numbers[i]
     }
   }
 
-  for(let i=0; i<numbers.length;i++){
-      if(numbers[i] === maior){
-          qtd++;
+  for (let i=0; i<numbers.length;i +=1){
+      if (numbers[i] === maior){
+          qtd +=1;
       }
   }
   return qtd;
