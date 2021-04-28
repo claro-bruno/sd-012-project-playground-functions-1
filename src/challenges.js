@@ -2,7 +2,7 @@
 function compareTrue(param1, param2) {
   if(param1 === true && param2 === true) {
     return true;
-  } else if(param1 != param2) {
+  } else if(param1 !== param2) {
     return false;
   } else {
     return false;
@@ -60,12 +60,13 @@ console.log(highestCount([0, 0, 0]));
 function catAndMouse(mouse, cat1, cat2) {
   let firstCat = '';
   if((mouse - cat1) > (mouse - cat2)) {
-    return 'cat2';
+    firstCat = 'cat2';
   } else if ((mouse - cat1) < (mouse - cat2)) {
-    return 'cat1';
+    firstCat = 'cat1';
   } else {
-    return 'os gatos trombam e o rato foge';
+    firstCat = 'os gatos trombam e o rato foge';
   }
+  return firstCat;
 }
 console.log(catAndMouse(10, 5, 6));
 
