@@ -17,9 +17,18 @@ function calcArea(base, height) {
 
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+//fonte de pesquisa: https://blog.betrybe.com/javascript/javascript-split/
+function splitSentence(stringSentence) {
+  // utilizei a espressão regular (/[\s,]+/) para varrer a string em busca de espaço entre os elemntos
+  let result = stringSentence.split(/[\s,]+/);
+  
+
+  return result;
 }
+console.log(splitSentence('foguete'))
+
+
+
 
 // Desafio 4
 function concatName() {
