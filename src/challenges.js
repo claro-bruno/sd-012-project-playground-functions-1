@@ -39,13 +39,19 @@ function concatName(nameList) {
 
   return lastAndFirstName;
 }
-nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo', 'juan', 'Pedro', 'Rafa', 'joao', 'Thiago'];
-console.log(concatName(nameList));
+  let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo',];
+  console.log(concatName(nameList));
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  let point;
+
+  point = (wins * 3) + ties;
+
+  return point;
 }
+// console.log(footballPoints(14,8));
 
 // Desafio 6
 function highestCount() {
