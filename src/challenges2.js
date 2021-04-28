@@ -51,18 +51,18 @@ function triangleCheckLineC(lineA, lineB, lineC) {
 }
 
 function triangleCheckABC(lineA, lineB, lineC) {
-  let checkA;
-  if (triangleCheckLineA(lineA, lineB, lineC) === true) {
-    checkA = true;
-  }
-  let checkB;
-  if (triangleCheckLineB(lineA, lineB, lineC) === true) {
-    checkB = true;
-  }
-  let checkC;
-  if (triangleCheckLineC(lineA, lineB, lineC) === true) {
-    checkC = true;
-  }
+  // let checkA;
+  // if (triangleCheckLineA(lineA, lineB, lineC) === true) {
+  //   checkA = true;
+  // }
+  // let checkB;
+  // if (triangleCheckLineB(lineA, lineB, lineC) === true) {
+  //   checkB = true;
+  // }
+  // let checkC;
+  // if (triangleCheckLineC(lineA, lineB, lineC) === true) {
+  //   checkC = true;
+  // }
   return [checkA, checkB, checkC];
 }
 
@@ -75,8 +75,14 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let array = string.match(/[0-9]+/g);
+  let counter = 0;
+  for (let indexArray = 0; indexArray < array.length; indexArray += 1) {
+    let indexToNumber = Number(array[indexArray]);
+    counter += indexToNumber;
+  }
+  return counter + ' copos de água';
 }
 
 module.exports = {
