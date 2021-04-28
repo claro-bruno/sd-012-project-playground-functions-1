@@ -31,17 +31,24 @@ function splitSentence(string) {
       array2.push(palavras);
       palavras = '';
     };
-    
+
   };
   array2.push(palavras);
   return console.log(array2);
 };
 
 // Desafio 4
-function concatName() {
+function concatName(array) {
   // seu código aqui
+  let stringcompleta = ''
+  let indiceultimo = (array.length) -1
+  stringcompleta = array[indiceultimo] + ', ' + array[0]
   
-}
+  return console.log(stringcompleta);
+};
+concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'])
+
+
 
 // Desafio 5
 function footballPoints() {
