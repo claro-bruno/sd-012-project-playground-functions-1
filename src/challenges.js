@@ -1,37 +1,47 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(valor1, valor2) {
+  if (valor1 === true && valor2 === true) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let triangleArea = base * height / 2;
+  return triangleArea;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  let splitString = string.split(' ');
+  return splitString;
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let firstLast = `${array[array.length-1]}, ${array[0]}`;
+  return firstLast;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numbers) {
+
+  }
+  return repeatTimes
 }
 
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
+
 }
+
 
 // Desafio 8
 function fizzBuzz() {
