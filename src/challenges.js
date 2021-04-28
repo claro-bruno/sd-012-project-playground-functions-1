@@ -2,6 +2,8 @@
 function compareTrue(param1, param2) {
   if (param1 === true && param2 === true) {
     return true;
+  } else {
+    return false;
   }
 }
 
@@ -13,7 +15,7 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(string) {
   return string.split(' ');
-} 
+}
 
 // Desafio 4
 function concatName(arrayDeStrings) {
@@ -37,7 +39,6 @@ function highestCount(numbersArray) {
       highestNumber = numbersArray[index];
     }
   }
-
   for (let index = 0; index < numbersArray.length; index += 1) {
     if (numbersArray[index] === highestNumber) {
       frequencyOfTheHighest += 1;
