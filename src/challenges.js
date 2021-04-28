@@ -19,7 +19,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-  return `${array[array.length - 1]}, ${array[0]}`
+  return `${array[array.length - 1]}, ${array[0]}`;
 }
 
 // Desafio 5
@@ -50,10 +50,12 @@ function highestCount(array) {
 function catAndMouse(mouse, cat1, cat2) {
   let distanciaCat1 = mouse - cat1;
   let distanciaCat2 = mouse - cat2;
-  if (distanciaCat1 > distanciaCat2) {
+  if (distanciaCat1 < distanciaCat2) {
+    return 'cat1';
+  } else if (distanciaCat1 > distanciaCat2) {
     return 'cat2';
   } else {
-    return 'cat1';
+    return 'os gatos trombam e o rato foge'
   }
 }
 
