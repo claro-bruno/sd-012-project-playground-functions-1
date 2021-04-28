@@ -37,13 +37,13 @@ function concatName(switchs) {
   let conq = [];
 
   for (index = 0; index < switchs.length; index += 1) {
-    conq = switchs[index] + ',' + switchs[0];
+    conq = switchs[switchs.length - 1] + ', ' + switchs[0];
   }
   return conq;
 
 }
 
-//console.log(concatName(['captain', 'my', 'captain']))
+ console.log(concatName(['foguete', 'não', 'tem', 'ré']))
 
 // Desafio 5
 function footballPoints(wins, ties) {
