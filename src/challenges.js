@@ -1,9 +1,9 @@
 // Desafio 1
 function compareTrue(a, b, c) {
   if (a < b && b < c) {
-    return true
+   true
   } else {
-    return false
+   false
   }
 }
 compareTrue();
