@@ -1,13 +1,13 @@
 // Desafio 1
 let a = false;
 let b = true;
-console.log(compareTrue());
+console.log(compareTrue(a, b));
 
   // valor booleano 2 tipos (verdadeiro ou false)
   // possui o operador logico && que recebe 2 valores 
   // testar somente a condicao true e o resto retorna false <<<< 
 
-function compareTrue() {
+function compareTrue(a, b) {
   if(a == true && b == false) {
     return false;
   } else if(a == false && b == false) {
@@ -20,9 +20,35 @@ function compareTrue() {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+let base = 10;
+let height = 50;
+
+function calcArea(base, height) {
+  let area = base * height / 2;
+  return area;
+} 
+console.log(calcArea(base, height));
+
+let base = 5;
+let height = 2;
+
+function calcArea(base, height) {
+  let area = base * height / 2;
+  return area;
+} 
+console.log(calcArea(base, height));
+
+let base = 51;
+let height = 1;
+
+function calcArea(base, height) {
+  let area = base * height / 2;
+  return area;
+} 
+console.log(calcArea(base, height));
+
+
+
 
 // Desafio 3
 function splitSentence() {
