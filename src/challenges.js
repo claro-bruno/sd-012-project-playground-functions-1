@@ -36,7 +36,8 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(string1, string2) {
-  for (index = 0; index <)
+  for (index = 0; index <) 
+  teste 
 }
 
 // Desafio 5
