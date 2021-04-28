@@ -5,8 +5,9 @@ function compareTrue(num1, num2) {
   } else {
     return false;
   }
-  
 }
+
+console.log(compareTrue(1, -1));
 
 // Desafio 2
 function calcArea() {
