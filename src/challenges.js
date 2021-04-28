@@ -16,7 +16,7 @@ function calcArea(base, height) {
  return base * height / 2
   
 }
-console.log(calcArea(10, 10))
+
 
 // Desafio 3
 function splitSentence() {
@@ -24,8 +24,11 @@ function splitSentence() {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(Valor) {
+  let arrayLeng = Valor.length - 1
+  
+  let resultado =  Valor[0] + ", " + Valor[arrayLeng]
+  return resultado
 }
 
 // Desafio 5
