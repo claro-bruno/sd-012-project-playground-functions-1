@@ -8,12 +8,12 @@ function compareTrue(valueOne, valueTwo) {
 
 // Desafio 2
 function calcArea(base, altura) {
-  return base * altura / 2;
+  return (base * altura) / 2;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(text) {
+  return text.split(' ');
 }
 
 // Desafio 4
