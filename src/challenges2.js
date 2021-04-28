@@ -43,10 +43,9 @@ function generatePhoneNumber(numeros) {
 
 // Desafio 12
 function triangleCheck(a, b, c) {
-  return !!(a + b > c && a + c > b && b + c > a &&);
+  return !!(a + b > c && a + c > b && b + c > a && Math.abs(a - b) < c && Math.abs(a - c) < b && Math.abs(b - c) < a);
 }
-console.log(triangleCheck(10, 14, 2));
-
+console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate() {
