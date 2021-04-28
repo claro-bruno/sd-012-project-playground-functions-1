@@ -64,18 +64,20 @@ function fizzBuzz(array) {
         } else if (array[numero] % 5 === 0 && array[numero] % 3 !==0) {
             respArray.push('buzz');
         } else if (array[numero] % 3 === 0 && array[numero] % 5 === 0) {
-            respArray.push('fizzbuzz')
+            respArray.push('fizzBuzz')
         } else {
             respArray.push('bug!')
         };
     };
     return respArray;
 };
-console.log(fizzBuzz([9, 25]))
+
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
+function encode(string) {
+
+};
+console.log(encode('hi there'));
+
 function decode() {
   // seu código aqui
 }
