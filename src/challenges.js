@@ -19,8 +19,14 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  
+let array = ['Ramon', 'Paschoal', 'Tato'];
+
+function concatName(string) {
+  if (array.length > 0) {
+    array = (array[array.length - 1]) + ', ' + (array[0])
+  }
+ 
+  return array;
 }
 
 // Desafio 5
