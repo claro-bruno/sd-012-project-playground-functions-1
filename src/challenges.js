@@ -4,15 +4,14 @@ function compareTrue(num1, num2) {
     return true;
   }
   return false;
-};
-console.log(compareTrue (true, false));
-
-
-// Desafio 2
-function calcArea() {
-  // seu código aqui
 }
 
+// Desafio 2
+function calcArea(base, height) {
+  let triangulo = (base * height) / 2;
+ return triangulo;
+}
+console.log(calcArea(5,1))
 // Desafio 3
 function splitSentence() {
   // seu código aqui
