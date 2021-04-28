@@ -21,9 +21,24 @@ console.log(calcArea(10, 50));
 console.log('==================================================');
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(string) {
   // seu código aqui
+  let array = [];
+  let palavra = '';
+  for (let caractere = 0; caractere < string.length; caractere += 1) {
+    if (string[caractere] !== ' ') {
+      palavra = palavra + string[caractere];
+    } else {
+      array.push(palavra);
+      palavra = '';
+    }
+  }
+  array.push(palavra);
+  return array
 }
+console.log(splitSentence("go Trybe"));
+
+console.log('==================================================');
 
 // Desafio 4
 function concatName() {
