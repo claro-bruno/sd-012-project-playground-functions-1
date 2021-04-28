@@ -1,9 +1,9 @@
 // Desafio 1
-function compareTrue(fistBoolean, secondBoolean) {
-  if (fistBoolean && secondBoolean === true ) {
-    console.log('true');
+function compareTrue(firstBoolean, secondBoolean) {
+  if ((firstBoolean && secondBoolean) === true ) {
+    return true;
   } else {
-    console.log('false');
+    return false;
   }
 }
 
@@ -23,9 +23,10 @@ function splitSentence(stringToSplit) {
 function concatName(namesArray) {
   let max = namesArray[namesArray.length - 1];
   let min = namesArray[0];
-  let string = max + ', ' + min;
-  console.log(string);
+  let string = max +','+ min;
+  return string;
 }
+console.log(concatName(['oi', 'marcos']));
 
 
 
