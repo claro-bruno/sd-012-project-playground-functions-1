@@ -24,9 +24,12 @@ function splitSentence(string) {
 
 
 // Desafio 4
-function concatName() {
+function concatName(names) {
+  let result = (names[names.length -1] + ', ' + names[0]);
   
-}
+  return result;
+};
+
 
 // Desafio 5
 function footballPoints() {
