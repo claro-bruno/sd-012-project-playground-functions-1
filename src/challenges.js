@@ -107,9 +107,20 @@ function encode(string) {
   }
   return string.join('');
 }
-function decode() {
-  // seu código aqui
+function decode(string) {
+  let cod=[1,'a',2,'e',3,'i',4,'o',5,'u']; 
+  string=string.split("");
+  for(i in string){
+    for(let k=0;k<cod.length*2;k+=2){
+      if(string[i]==cod[k]){
+        string[i]=cod[k+1];
+      }
+  }
+  }
+  return string.join('');
 }
+console.log(decode("h3 th2r2!"))
+
 
 module.exports = {
   calcArea,
