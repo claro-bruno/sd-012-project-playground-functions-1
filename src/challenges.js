@@ -104,17 +104,26 @@ function catAndMouse(mouse, cat1, cat2) {
 console.log(catAndMouse(1, 6, 6));
 
 // Desafio 8
-function fizzBuzz() {
-  /*
-  receba array de numeros
-  return array:
-  divisivel apenas por 3 = fizz
-  divisivel apenas por 5 = buzz
-  divisivel por 3 e 5 = fizzBuzz
-  nenhum = bug!
-  */
+function fizzBuzz(arrayOfNumbers) {
+  let newArray = [];
+  let div3 = 'fizz';
+  let div5 = 'buzz';
+  let div35 = 'fizzBuzz';
+  let divNone = 'bug!';
+  for(let index = 0; index < arrayOfNumbers.length; index += 1) {
+    if (arrayOfNumbers[index] % 3 !== 0 && arrayOfNumbers[index] % 5 !== 0) {
+        newArray.push(divNone);
+    } else if (arrayOfNumbers[index] % 3 === 0 && arrayOfNumbers[index] % 5 === 0) {
+          newArray.push(div35);          
+    } else if (arrayOfNumbers[index] % 3 === 0 && arrayOfNumbers[index] % 5 !== 0) {
+      newArray.push(div3);
+    } else if (arrayOfNumbers[index] % 3 !== 0 && arrayOfNumbers[index] % 5 === 0) {
+      newArray.push(div5);
+    } 
+  }
+  return newArray;
 }
-console.log(fizzBuzz(2, 15, 7, 9, 45));
+console.log(fizzBuzz([15, 30, 45]));
 
 // Desafio 9
 function encode() {
