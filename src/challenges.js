@@ -11,14 +11,13 @@ function compareTrue(bool1, bool2) {
 // Desafio 2
 function calcArea(base, height) {
    return (base * height) / 2
-}
+};
 // console.log(calcArea(10, 50));
 
 // Desafio 3
 function splitSentence(frase) {
-  
   return  frase.split(" ");
-}
+};
 // console.log(splitSentence("vamo que vamo"));
 
 // Desafio 4
@@ -27,9 +26,10 @@ function concatName() {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+function footballPoints(wins, ties) {
+  return (wins * 3) + ties
+};
+// console.log(footballPoints(0, 0));
 
 // Desafio 6
 function highestCount() {
