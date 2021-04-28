@@ -86,8 +86,8 @@ function encode(word) {
     o: 4,
     u: 5
   }
-
 }
+
 function decode() {
   // seu código aqui
 }
