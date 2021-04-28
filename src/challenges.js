@@ -1,22 +1,26 @@
 // Desafio 1
 function compareTrue(value1, value2) {
-  /* 
+  /*
   &&
-  2 valores boleanos
+  receba 2 valores boleanos
   retorn true ou false
   */
   if (value1 && value2 === true) {
     return true;
   } else {
     return false;
-  };
-};
+  }
+}
 console.log(compareTrue(true, true));
-
 
 // Desafio 2
 function calcArea() {
-  // seu código aqui
+  /*
+  receba valor de base
+  receba valor de altura
+  return calculo da area
+  formula (base * altura) / 2
+   */
 }
 
 // Desafio 3
