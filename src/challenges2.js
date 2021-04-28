@@ -3,6 +3,7 @@ function techList(technology, person) {
   if (technology.length < 1) {
     return 'Vazio!';
   }
+  technology.sort();
   let result = [];
   let object = {};
   for (let index = 0; index < technology.length; index += 1) {
