@@ -1,6 +1,6 @@
 // Desafio 1
-function compareTrue(num1, num2) {
-  if(num1 && num2 >= 0) {
+function compareTrue(paran1, paran2) {
+  if(paran1 && paran2) {
     return true;
   } else {
     return false;
@@ -13,8 +13,9 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(sentence) {
+  let str = sentence;
+  return str.split(' ');
 }
 
 // Desafio 4
