@@ -1,8 +1,8 @@
 // Desafio 1
 function compareTrue() {
   let a = 1;
-  let b = 1;
-  if (a === b) {
+  let b = 2;
+  if (a <= b && a >= b) {
     return true;
   } else {
     return false;
