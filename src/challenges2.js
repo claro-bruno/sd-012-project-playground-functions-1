@@ -83,12 +83,21 @@ function generatePhoneNumber(array) {
   return result;
 };
 
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 1, 1, 1]))
-
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
-}
+
+function triangleCheck(lineA, lineB, lineC) {
+  let verificacao = false;
+
+  if ((lineA < lineB + lineC) && (lineA > Math.abs(lineB - lineC))){
+    if ((lineB < lineA + lineC) && (lineB > Math.abs(lineA - lineC))) {
+      if ((lineC < lineB + lineA) && (lineC > Math.abs(lineB - lineA))) {
+        verificacao = true;
+      };
+    };
+  };
+
+  return verificacao;
+};
 
 // Desafio 13
 function hydrate() {
