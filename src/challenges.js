@@ -2,10 +2,10 @@
 function compareTrue(value1, value2) {
   if (value1 === true && value2 === true) {
     return true;
+    
   }
 }
  
-    return false;
 
 //  console.log(compareTrue(true, true));
 
@@ -15,6 +15,7 @@ function compareTrue(value1, value2) {
 function calcArea(base, height){
   return (base * height) / 2;
 }
+calcArea()
 // console.log(calcArea(10, 50));
 // console.log(calcArea(5, 2));
 // console.log(calcArea(51, 1));
