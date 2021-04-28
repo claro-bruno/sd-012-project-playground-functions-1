@@ -3,7 +3,7 @@ function compareTrue(valor1, valor2) {
   if (valor1 === true && valor2 === true) {
     return true;
   }
-    return false;
+  return false;
 }
 
 // Desafio 2
@@ -12,13 +12,15 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence(string) {
-  return string.split(" ");
+function splitSentence(palavra) {
+  return palavra.split(" ");
 }
-
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(nome) {
+  let nome1=[];
+  nome1.push (nome[nome.length - 1]); 
+  nome1.push (nome[0]);
+  return nome1;
 }
 
 // Desafio 5
