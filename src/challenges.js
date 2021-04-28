@@ -6,7 +6,9 @@ function compareTrue(boleano1, boleano2) {
     return console.log('False');
 };
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
+  let area = (base * height) / 2;
+  return console.log(area); 
 }
 
 // Desafio 3
