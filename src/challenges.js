@@ -26,7 +26,6 @@ function concatName(...string) {
   let separate = string[string.length -1] + ', ' + string[0];
   return separate;
 }
-console.log(concatName('Lucas', 'Cassiano', 'Ferraz', 'Paolillo'))
 
 // Desafio 5
 function footballPoints() {
