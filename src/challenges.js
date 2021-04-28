@@ -36,12 +36,20 @@ function concatName(listaNomes) {
   // seu código aqui
   let concat = listaNomes[listaNomes.length - 1]+", "+listaNomes[0];
   return concat;
-}
+};
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
-}
+  let points = 0;
+  for(let win = 0; win < wins; win += 1){
+    points += 3;
+  };
+  for(let tie = 0; tie < ties; tie += 1){
+    points += 1;
+  };
+  return points;
+};
 
 // Desafio 6
 function highestCount() {
