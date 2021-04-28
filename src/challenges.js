@@ -20,7 +20,7 @@ function splitSentence(string) {
   return string.split(' ');
 }
 
-console.log(splitSentence('foguete'));
+console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName(array) {
@@ -28,7 +28,7 @@ function concatName(array) {
   let lastItem = array[array.length - 1].split(' ');
   let result = lastItem.concat(firstItem);
 
-  return result;
+  return result.toString();
 }
 
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
