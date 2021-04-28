@@ -31,10 +31,45 @@ function footballPoints(wins, ties) {
 };
 // console.log(footballPoints(0, 0));
 
+
+
+
+
+
+
+
+
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(arraynumbers) {
+// Verifica maior número da array.
+    let maior = 0;
+    for(let index =  0; index < arraynumbers.length; index++){
+      if(arraynumbers[index] > maior){
+        maior = arraynumbers[index];
+        console.log(maior);
+      }
+    }
+//Verifica quantas vezes o maior número de repete dentro de uma array.
+    let contador = 0;
+    for(let index2 = 0; index2 < arraynumbers.length; index2 ++){
+        if(maior == arraynumbers[index2]){
+        contador  ++;
+        // return contador;
+        console.log(contador);
+      }
+    }
 }
+console.log(highestCount([2, 3, 5, 6, 9, 9, 9,]));
+
+
+
+
+
+
+
+
+
+
 
 // Desafio 7
 function catAndMouse() {
@@ -65,4 +100,4 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-};
+}
