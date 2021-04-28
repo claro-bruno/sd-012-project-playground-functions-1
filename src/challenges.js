@@ -20,9 +20,12 @@ function calcArea(base, altura) {
 console.log(calcArea(5, 2));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  let array =  [];
+  array = string.split(" "); // separa a string de acordo com o caracter entre "aspas"
+  return array;
 }
+console.log(splitSentence("Vamo que Vamo"));
 
 // Desafio 4
 function concatName() {
