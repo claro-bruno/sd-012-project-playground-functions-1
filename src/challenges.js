@@ -1,11 +1,10 @@
 // Desafio 1
 function compareTrue(parametOne, parametTwo) {
   // seu código aqui
-  if(parametOne === true  && parametTwo === true ){
-    return true
-  }
-  else {
-    return false
+  if (parametOne === true && parametTwo === true) {
+    return true;
+  } else {
+    return false;
   }
 }
 // Desafio 2
@@ -15,10 +14,11 @@ function calcArea(base, height) {
   return area;
 }
 // Desafio 3
-function splitSentence() {
+function splitSentence(string) {
   // seu código aqui
+  let frase = string.split(" ");
+  return frase;
 }
-
 // Desafio 4
 function concatName() {
   // seu código aqui
