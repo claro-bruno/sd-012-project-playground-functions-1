@@ -9,12 +9,11 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-//   let string = '';
-//   let str = string.split(' '); {
-//     return str
+function splitSentence(){
+  let string = '';
+  let str = string.split(' '); 
+    return str
 }
-
 
 // Desafio 4
 function concatName() {
@@ -40,13 +39,10 @@ function catAndMouse() {
 // Desafio 8
 function fizzBuzz() {
   let num= [2, 15, 7, 9, 45];
-
-for (index = 0; i <= num.length; index+=1) {
-
+for (index = 0; index <= num.length; index+= 1) {
 if  (index % 3 === 0) {
   console.log("fizz");
-  
-} else if (index % 5 === 0) {
+  } else if (index % 5 === 0) {
     console.log("buzz");
     
 } else if (index % 3 === 0 && index % 5 === 0) {
@@ -57,10 +53,11 @@ if  (index % 3 === 0) {
    console.log("bug");
    
    } else {
-     console.log(i);
+     console.log(index);
      }
      return fizzBuzz();
-};
+}
+}
 
 // Desafio 9
 function encode(string) {
