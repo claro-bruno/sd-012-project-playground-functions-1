@@ -23,7 +23,7 @@ function splitSentence(frase) {
 // Desafio 4
 function concatName(paramArray) {
   let primeiroUltimo = `${paramArray[paramArray.length - 1]}, ${paramArray[0]}`
-  return primeiroUltimo
+  return primeiroUltimo;
 };
 
 // Desafio 5
