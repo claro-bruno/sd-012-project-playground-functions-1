@@ -43,11 +43,20 @@ function highestCount(number) {
   }
   return result;
 }
-console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let result = '';
+  if ((mouse - cat1) > (mouse - cat2)) {
+    result = 'cat2';
+  }
+  else if ((mouse - cat1) == (mouse - cat2)) {
+    result = 'os gatos trombam e o rato foge';
+  }
+  else {
+    result = 'cat1';
+  }
+  return result;
 }
 
 // Desafio 8
