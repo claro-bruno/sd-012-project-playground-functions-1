@@ -57,14 +57,18 @@ function highestCount(arr) {
   let highest = arr[0];
   let count = 0;
   for(let index = 0; index < arr.length;index +=1){
-    if(arr[index] > highest) {
-      arr[index] = highest;
-    }
-    return highest;
+    if(highest < arr[index]) {
+      highest = arr[index];
+    };
   }
+  for (let index of arr){
+    if (index === highest){
+      count += 1;
+    }
+  }
+  return count;
 }
-let numbers = [9, 1, 2, 3, 9, 5, 7];
-console.log(highestCount(numbers));
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
 function catAndMouse() {
