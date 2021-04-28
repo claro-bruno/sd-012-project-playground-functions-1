@@ -101,10 +101,31 @@ function encode(frase) {
   }
   return fraseEncode
 }
-p1="hi there!";
-console.log(encode(p1));
-function decode() {
-  // seu código aqui
+
+function decode(frase) {
+  let fraseDecode="";
+  for (let index=0;index<(frase.length);index+=1){
+    switch (frase[index]) {
+      case '1':
+        fraseDecode+="a"
+        break;
+      case '2':
+        fraseDecode+="e"
+        break;
+      case '3':
+        fraseDecode+="i"
+        break;
+      case '4':
+        fraseDecode+="o"
+        break;
+      case '5':
+        fraseDecode+="u"
+        break;
+      default:
+        fraseDecode+=frase[index];
+    }
+  }
+  return fraseDecode
 }
 
 module.exports = {
