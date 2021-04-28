@@ -1,10 +1,11 @@
 // Desafio 1
 let variavel1 = true;
 let variavel2 = true;
+let estadoAtual = false;
 
 function compareTrue() {
   // seu código aqui
-  if (variavel1 === true && variavel2 === true){
+  if (variavel1 === true && variavel2 === true) {
     estadoAtual = true;
   } else {
      estadoAtual = false;
@@ -12,8 +13,6 @@ function compareTrue() {
 
     return estadoAtual;
 }
-
-console.log(compareTrue());
 
 // Desafio 2
 function calcArea(base, height) {
