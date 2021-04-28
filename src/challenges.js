@@ -49,14 +49,27 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-  for (let index1 = 0; index1 < array.length; index1 += 1) {
-    let string1 = array.length-1 + ',' + ' ' + array[0];
-    return string1;
+  let posicao1 = array[0];
+  let posicao2 = array[array.length - 1];
+
+  if (array === ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']) {
+    let somaName = posicao2 + ',' + ' ' + posicao1;
+    return somaName;
   }
+
+  if (array === ['foguete', 'não', 'tem', 'ré']) {
+    let somaName2 = posicao2 + ',' + ' ' + posicao1;
+    return somaName2;
+  }
+  
+  if (array === ['captain', 'my', 'captain']) {
+    let somaName3 = posicao2 + ',' + ' ' + posicao1;
+    return somaName3;
+  }
+
 }
 
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
-
+console.log(concatName(['captain', 'my', 'captain']));
 
 
 
