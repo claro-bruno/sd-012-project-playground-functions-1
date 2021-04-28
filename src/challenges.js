@@ -9,16 +9,16 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence(inputString) {
-
+function splitSentence(string) {
+  return string.split(' ');
 }
-// console.log(splitSentence('go trybe'))
+// console.log(splitSentence('foguete'))
 
 // Desafio 4
 function concatName(arrayStrings) {
-  firstString = arrayStrings[0];
-  lastString = arrayStrings[arrayStrings.length - 1];
-  return (lastString +', ' + firstString);
+  let firstString = arrayStrings[0];
+  let lastString = arrayStrings[arrayStrings.length - 1];
+  return (lastString + ', ' + firstString);
 }
 
 // Desafio 5
@@ -27,13 +27,28 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numbers) {
+  let times = 0;
+  let highestNumber = 0;
+  for (index in numbers) {
+    for (let indexNumber = 0; indexNumber < numbers.length; indexNumber += 1) {
+      if (numbers[index] > highestNumber) {
+        highestNumber = numbers[index];
+      }
+    }
+  }
+  for (index in numbers) {
+    if (numbers[index] === highestNumber) {
+      times += 1;
+    }
+  }
+  return times;
 }
 
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
+  // pesquisar funcao ABS(retorna falor absoluto)
 }
 
 // Desafio 8
