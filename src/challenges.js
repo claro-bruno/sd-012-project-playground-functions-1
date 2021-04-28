@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+/* eslint-disable complexity */
 // Desafio 1
 // VAMO COMEÇAR!
 function compareTrue(param1, param2) {
@@ -16,8 +18,7 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(nomes) {
-  let n = nomes.length;
-  return `${nomes[n - 1]}, ${nomes[0]}`;
+  return `${nomes[nomes.length - 1]}, ${nomes[0]}`;
 }
 
 // Desafio 5
@@ -70,15 +71,43 @@ function fizzBuzz(numeros) {
   return result;
 }
 
-
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(palavra) {
+  let codeLetter = ['a', 'e', 'i', 'o', 'u'];
+  let codeNumber = ['1', '2', '3', '4', '5'];
+  let newPalavra = '';
+  for (let i = 0; i < palavra.length; i++) {
+    if (palavra[i] === 'a' || palavra[i] === 'e' || palavra[i] === 'i' || palavra[i] === 'o' || palavra[i] === 'u') {
+      for (let j = 0; j < codeLetter.length; j++) {
+        if (palavra[i] === codeLetter[j]) {
+          newPalavra += codeNumber[j];
+        }
+      }
+    } else {
+      newPalavra += palavra[i];
+    }
+  }
+  return newPalavra;
 }
 
-function decode() {
-  // seu código aqui
+function decode(palavra) {
+  let decodeLetter = ['a', 'e', 'i', 'o', 'u'];
+  let decodeNumber = ['1', '2', '3', '4', '5'];
+  let newPalavra = '';
+  for (let i = 0; i < palavra.length; i++) {
+    if (palavra[i] === '1' || palavra[i] === '2' || palavra[i] === '3' || palavra[i] === '4' || palavra[i] === '5') {
+      for (let j = 0; j < decodeNumber.length; j++) {
+        if (palavra[i] === decodeNumber[j]) {
+          newPalavra += decodeLetter[j];
+        }
+      }
+    } else {
+      newPalavra += palavra[i];
+    }
+  }
+  return newPalavra;
 }
+
 
 module.exports = {
   calcArea,
