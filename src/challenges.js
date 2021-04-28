@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue() {
-  let idade = 16;
+  let idade = 18;
   let cnh = 18;
   if (idade >= 18 && cnh >= 18) {
     return true;
