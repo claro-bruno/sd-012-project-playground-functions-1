@@ -45,16 +45,18 @@ function generatePhoneNumber(PhoneNumber) {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-  triangle = true;
-  if (lineA < Math.abs(lineB - lineC) && (lineA > lineB + lineC)){
-    triangle = false
-  } else if (lineB < Math.abs(lineA - lineC) && (lineB > lineA + lineC)){
-    triangle = false
-  } else if ((lineC < Math.abs(lineB - lineA) && (lineC > lineB + lineA))){
-    triangle = false
+  triangle = false;
+  if ((lineA < lineB + lineC)  && (lineA > Math.abs(lineB - lineC))){
+    triangle = true;
+  } else if ((lineB < lineA + lineC)  && (lineB > Math.abs(lineA - lineC))){
+    triangle = true;
+  } else if ((lineC < lineB + lineA)  && (lineC > Math.abs(lineB - lineA))){
+    triangle = true;
   };
   return triangle;
 };
+
+
 
 
 
