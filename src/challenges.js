@@ -23,8 +23,19 @@ function splitSentence(str) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+
+function getLenght(array){
+  let lenght
+  for(let strings in array){
+    lenght = strings
+  }
+  return lenght
+}
+
+function concatName(array) {
+  
+  return `${array[getLenght(array)]}, ${array[0]}`
+
 }
 
 // Desafio 5
