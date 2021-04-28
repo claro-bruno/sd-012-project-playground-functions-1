@@ -82,7 +82,7 @@ function hydrate(string) {
     let indexToNumber = Number(array[indexArray]);
     counter += indexToNumber;
   }
-  return counter + ' copos de água';
+  return `${counter} +  copos de água`;
 }
 
 module.exports = {
