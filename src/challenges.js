@@ -36,10 +36,7 @@ console.log(splitSentence('foguete'))
 // Desafio 4
 
 function concatName(array) {
-  aux1 = array[array.length -1];
-  aux2 = array[0]
-  let resultado = "'" + aux1 + ", " + aux2 + "'";
-  
+  let resultado = array[array.length -1] + ', ' + array[0];
   return resultado;
 };
 
