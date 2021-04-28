@@ -1,7 +1,10 @@
 // Desafio 10
 function techList(array, name) {
   // seu código aqui
-  let habilidade = {};
+  let habilidade = {
+    tech: '',
+    name: '',
+  };
   let habilidades = [];
   if (array.length === 0) {
     return 'Vazio!';
@@ -10,7 +13,10 @@ function techList(array, name) {
       habilidade.tech = array[index];
       habilidade.name = name;
       habilidades.push(habilidade);
-      habilidade = {};
+      habilidade = {
+        tech: '',
+        name: '',
+      };
     }
     return habilidades;
   }
