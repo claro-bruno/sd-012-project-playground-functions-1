@@ -6,23 +6,24 @@ let bool2 = false;
 console.log(compareTrue(bool1, bool2));
 
 function compareTrue(bool1, bool2) {
-  if(bool1&&bool2){
+  if (bool1 && bool2) {
     return true;
-  }else{
+  } else {
     return false;
-  };
-};
+  }
+}
 
 // Desafio 2
+console.log(calcArea(51, 1));
 
+function calcArea(base, height) {
+  return (base * height) / 2;
+}
 
 // Desafio 3
 
-
 // Desafio 4
-function concatName() {
-  
-}
+function concatName() {}
 
 // Desafio 5
 function footballPoints() {
