@@ -76,12 +76,12 @@ function highestCount(numberArray) {
 }
 
 // Desafio 7
-function catAndMouse(mouse, cat2, cat1) {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   if ((cat1 - mouse) < (cat2 - mouse)) {
     return 'cat1';
   }
-  if ((cat1 - mouse) > (cat2 - mouse)) {
+  if ((cat2 - mouse) < (cat1 - mouse)) {
     return 'cat2';
   }
   if ((cat1 - mouse) === (cat2 - mouse)) {
