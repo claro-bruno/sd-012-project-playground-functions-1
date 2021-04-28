@@ -19,11 +19,13 @@ function calcArea(base, height) {
   return (base * height) / 2;
 }
 
-console.log(calcArea(base, height));
-
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+let string = "go Trybe";
+
+function splitSentence(string) {
+  for (index = 0; index < string.length; index += 1) {
+    if
+  }
 }
 
 // Desafio 4
