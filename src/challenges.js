@@ -30,9 +30,12 @@ function splitSentence(frase) {
 
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(frase1) {
+  let frase1 = [];
+  let resultado = frase1[0] + frase1[frase1.length-1];
+  return resultado;
 }
+
 
 // Desafio 5
 function footballPoints() {
