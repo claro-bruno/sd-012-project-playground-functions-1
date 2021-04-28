@@ -54,11 +54,17 @@ function generatePhoneNumber(arrayNumbers) {
   return result;
 }
 
-console.log(generatePhoneNumber([1, 4, 3, 4, 5, 6, 7, 4, 2, 0, 1]))
-
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let result = false;
+  if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
+    result = true;
+  } else if (lineB < lineA + lineC && lineB > Math.abs(lineA - lineC)){
+    result = true;
+  } else if (lineC < lineA + lineB && lineC > Math.abs(lineA - lineB)) {
+    result = true;
+  }
+  return result;
 }
 
 // Desafio 13
