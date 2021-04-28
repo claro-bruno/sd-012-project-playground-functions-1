@@ -1,11 +1,7 @@
-function compareTrue(parameter1, parameter2) {
-  if (parameter1 && parameter2 == true){
-    return(true);
-  } else {
-    return(false);
-  };
+function calcArea(base, height) {
+  return((base*height)/2);
 };
 
-console.log(compareTrue(true, true));
-console.log(compareTrue(true, false));
-console.log(compareTrue(false, true));
+console.log(calcArea(10, 50));
+console.log(calcArea(5, 2));
+console.log(calcArea(51, 1));
