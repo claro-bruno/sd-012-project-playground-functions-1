@@ -40,16 +40,21 @@ console.log(splitSentence("foguete"))
 
 
 // Desafio 4
-function concatName() {
-  //test
-
-
+function concatName(){
+// seu código aqui
 }
+
+
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let calculo = (wins * 3) + (ties * 1);
+
+return calculo
 }
+console.log(footballPoints(14,8))
+console.log(footballPoints(1,2))
+console.log(footballPoints(0,0))
 
 // Desafio 6
 function highestCount() {
