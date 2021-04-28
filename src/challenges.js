@@ -110,12 +110,61 @@ console.log(fizzBuzz(numberArray5));
 console.log(fizzBuzz(numberArray6));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+let decodedString = "hi there!";
+let encodedString = "h3 th2r2!";
+
+function encode(decodedString) {
+  let encodedString = "";
+  for (let index in decodedString) {
+    switch (decodedString[index]) {
+      case "a":
+        encodedString += "1";
+        break;
+      case "e":
+        encodedString += "2";
+        break;
+      case "i":
+        encodedString += "3";
+        break;
+      case "o":
+        encodedString += "4";
+        break;
+      case "u":
+        encodedString += "5"
+        break;
+      default:
+        encodedString += decodedString[index];
+    }
+  }
+  return encodedString;
 }
-function decode() {
-  // seu código aqui
+console.log(encode(decodedString));
+function decode(encodedString) {
+  let decodedString = "";
+  for (let index in encodedString) {
+    switch (encodedString[index]) {
+      case "1":
+        decodedString += "a";
+        break;
+      case "2":
+        decodedString += "e";
+        break;
+      case "3":
+        decodedString += "i";
+        break;
+      case "4":
+        decodedString += "o";
+        break;
+      case "5":
+        decodedString += "u"
+        break;
+      default:
+        decodedString += encodedString[index];
+    }
+  }
+  return decodedString;
 }
+console.log(decode(encodedString));
 
 module.exports = {
   calcArea,
