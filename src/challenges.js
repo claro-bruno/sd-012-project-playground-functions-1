@@ -60,16 +60,16 @@ function highestCount(numberArray) {
   for (let index = 0; index < numberArray.length; index += 1) {
     if (numberArray[index] > highestNumber) {
       highestNumber = numberArray[index];
-    }
+    }    
   }
-  for (let index = 0; index < numberArray.length; index += 1) {
-    if (numberArray[index] === highestNumber) {
+  for (let numberIndex = 0; numberIndex < numberArray.length; numberIndex += 1) {
+    if (numberArray[numberIndex] === highestNumber) {
       numberCount += 1;
     }
   }
   return numberCount;
 }
-
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
