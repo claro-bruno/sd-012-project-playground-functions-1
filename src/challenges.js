@@ -82,7 +82,7 @@ function footballPoints(wins, ties) {
 
 //console.log(footballPoints(1, 2));
 
-// Desafio 6  - PRECISA FINALIZAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// Desafio 6  - 
 function highestCount(numbers) {
   let higherNumber = numbers[0];
   let repeat = 0;
@@ -95,8 +95,9 @@ function highestCount(numbers) {
     if (numbers[key] === higherNumber)
     repeat += 1;
   } return repeat; 
-  
-}  console.log(highestCount([9, 1, 2, 3, 9, 5, 7, 9]));
+}  
+
+//console.log(highestCount([9, 1, 2, 3, 9, 5, 7, 9]));
 
 //>>>>>highestCount(){
 //>>>>>return higherNumber * higherNumber;
@@ -105,29 +106,29 @@ function highestCount(numbers) {
 
 
 // Desafio 7 -- FAZER
-function catAndMouse() {
-  let cat1 = "cat1";
-  let cat2 = "cat2";
-  let erro = "os gatos trombam e o rato foge";
-  let mouse;
-  let mousePosition;
-  let cat1Position;
-  let cat2Position;
-  let catAndMouse;
+//function catAndMouse() {}
+//  let cat1 = "cat1";
+//  let cat2 = "cat2";
+ // let erro = "os gatos trombam e o rato foge";
+ // let mouse;
+ // let mousePosition;
+ // let cat1Position;
+ // let cat2Position;
+ // let catAndMouse;
 
 
 
 
-}
+
 
 // Desafio 8
-function fizzBuzz(number) {
-  if([number] / 3 ){
-    return "fizz";
-  } else if([number] / 5){
-    return = "buzz";
-  } else if ([number] / 3 || /5)
-}
+//function fizzBuzz(number) {
+//  if([number] / 3 ){
+//    return "fizz";
+//  } else if([number] / 5){
+//    return = "buzz";
+ // } else if ([number] / 3 || /5)
+//}
 
 // Desafio 9
 function encode() {
