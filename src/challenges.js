@@ -59,11 +59,11 @@ function highestCount(arrayCount) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let cat1Distance = mouse - Math.abs(cat1);
-  let cat2Distance = mouse - Math.abs(cat2);
-  if (cat1Distance < cat2Distance) {
+  let cat1Distance = Math.abs(cat1) - mouse;
+  let cat2Distance = Math.abs(cat2) - mouse;
+  if (Math.abs(cat1Distance) < Math.abs(cat2Distance)) {
     return 'cat1';
-  } else if (cat1Distance > cat2Distance) {
+  } else if (Math.abs(cat1Distance) > Math.abs(cat2Distance)) {
     return 'cat2';
   }
   return 'os gatos trombam e o rato foge';
@@ -114,9 +114,33 @@ function encode(toEncode) {
   }
   return codificado
 }
-console.log(encode('h3 th2r2!'))
+
 function decode(toDecode) {
-  // seu código aqui
+  let decodificado = ''
+  for (let key in toEncode) {
+    if (toEncode[key] === 'a' || toEncode[key] === 'e' || toEncode[key] === 'i' || toEncode[key] === 'o' || toEncode[key] === 'u' ) {
+      switch (toEncode[key]) {
+        case 'a':
+          codificado += '1'
+          break;
+        case 'e':
+          codificado += '2'
+          break;
+        case 'i':
+          codificado += '3'
+          break;
+        case 'o':
+          codificado += '4'
+          break;
+        case 'u':
+          codificado += '5'
+          break; 
+      };
+    } else {
+      codificado += toEncode[key]
+    }
+  }
+  return decodificado
 }
 
 module.exports = {
