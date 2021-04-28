@@ -1,11 +1,9 @@
 // Desafio 1
 function compareTrue(bool1, bool2) {
-  if (bool1 == true && bool2 == true) {
+  if (bool1 === true && bool2 === true) {
     return true;
   }
-  else {
     return false;
-  }
 }
 
 // Desafio 2
@@ -64,10 +62,10 @@ function highestCount(array) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if (cat1 - mouse > cat2 - mouse) {
+  if (cat1 > cat2) {
     return "cat1";
   }
-  if (cat2 - mouse > cat1 - mouse) {
+  if (cat2 > cat1) {
     return "cat2";
   }
   return "os gatos trombam e o rato foge";
