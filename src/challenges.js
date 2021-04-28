@@ -53,11 +53,11 @@ function catAndMouse(posMouse, posCat1, posCat2) {
   let distance1 = Math.abs(posMouse - posCat1);
   let distance2 = Math.abs(posMouse - posCat2);
   if (distance1 < distance2) {
-    return 'cat1';
+    return "cat1";
   } else if (distance2 < distance1) {
-    return 'cat2';
+    return "cat2";
   }
-  return 'os gatos trombaram e o rato foge';
+  return "os gatos trombaram e o rato foge";
 }
 
 // Desafio 8
@@ -80,12 +80,22 @@ function fizzBuzz(arrayNum) {
 // Desafio 9
 function encode(word) {
   let vowels = {
-    a: 1,
-    e: 2,
-    i: 3,
-    o: 4,
-    u: 5
+    'a': '1',
+    'e': '2',
+    'i': '3',
+    'o': '4',
+    'u': '5',
+  };
+  let result = '';
+  for (let letter of word) {
+    for (let key in vowels) {
+      if (letter === key) {
+        letter = vowels[key];
+      }
+    }
+    result += letter;
   }
+  return result;
 }
 
 function decode() {
