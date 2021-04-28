@@ -2,15 +2,16 @@
 function techList(array, nome) {
   let obj =[];
 let arrayOrdenado=array.sort()
-  if (arrayOrdenado.length >= 0) {
+  if (arrayOrdenado.length > 0) {
     for (let i = 0; i < arrayOrdenado.length; i += 1) {
       obj[i] = { tech: arrayOrdenado[i], name: nome };
     }
     return obj;
   } else {
-    return 'vazio';
+    return 'Vazio!';
   }
 }
+console.log(techList([],'lucas'))
 
 
 
