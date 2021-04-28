@@ -63,8 +63,6 @@ let contador = 0;
   return contador;
 }
 
-console.log(highestCount([0, 0, 0]));
-
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let distancia1 = mouse - cat1;
@@ -150,8 +148,6 @@ function decode(string1) {
   }
 return final1
 }
-
-console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
