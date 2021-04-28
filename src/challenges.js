@@ -21,18 +21,18 @@ function splitSentence() {
 // Desafio 4
 function concatName(Valor) {
 
-    let arrayLeng = Valor.length - 1
-    let resultado = Valor[0] + "," + Valor[arrayLeng]
-    return resultado
+  let arrayLeng = Valor.length - 1
+  let resultado = Valor[0] + "," + Valor[arrayLeng]
+  return resultado
 
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-let pontos = 3
-let pontosEmpate = 1
-let pontosTotal = wins * pontos + empate * ties
-return pontosTotal
+  let pontos = 3
+  let pontosEmpate = 1
+  let pontosTotal = wins * pontos + pontosEmpate * ties
+  return pontosTotal + " pontos"
 }
 
 // Desafio 6
