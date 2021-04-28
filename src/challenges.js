@@ -57,15 +57,13 @@ function highestCount(numberArray) {
   // seu código aqui
   let highestNumber = 0;
   let numberCount = 0;
-  for (let index = 0; index < numberArray.length; index += 1) {
-    let currentNumber = numberArray[index];
-    if (currentNumber > highestNumber) {
+  for (let index = 0; index < numberArray.length; index += 1) {    
+    if (numberArray[index] > highestNumber) {
       highestNumber = currentNumber;
     }
   }
-  for (let index = 0; index < numberArray.length; index += 1) {
-    let currentNumber = numberArray[index];
-    if (currentNumber === highestNumber) {
+  for (let index = 0; index < numberArray.length; index += 1) {    
+    if (numberArray[index] === highestNumber) {
       numberCount += 1;
     }
   }
