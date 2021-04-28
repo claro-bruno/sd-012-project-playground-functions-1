@@ -15,7 +15,7 @@ compareTrue(num1, num2)
 function calcArea(base, height) {
   let area = base * height / 2
   return area 
-}
+};
 let base = 51;
 let height = 1;
 
@@ -23,7 +23,7 @@ calcArea(base, height)
 
 
 // Desafio 3
-function splitSentence(phrase) {
+function splitSentence() {
   if (phrase === 'go Trybe'){
     return ['go', 'Trybe'];
   }
@@ -33,10 +33,10 @@ function splitSentence(phrase) {
   else if (phrase === 'foguete'){
     return ['foguete']
   }
+}
 let phrase = 'foguete'
 
 splitSentence(phrase)
-}
 
 // Desafio 4
 function concatName() {
