@@ -8,32 +8,44 @@ function compareTrue(boolean1, boolean2) {
     return false;
   }
 }
-
+console.log(compareTrue(true, false));
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
+  return (base * height)/2;
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(string) {
   // seu código aqui
+  return string.split(" ");
 }
-
+console.log(splitSentence("Hoje Vai dar boa"));
 // Desafio 4
-function concatName() {
+function concatName(array) {
   // seu código aqui
+  return (array[array.length - 1] + ", " + array[0]);
 }
-
+console.log(concatName(["Pedro", "Luiz", "Augusto"]));
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  return (3*wins + ties);
 }
-
+console.log (footballPoints(14, 8));
 // Desafio 6
-function highestCount() {
+function highestCount(numbers) {
   // seu código aqui
+  let max = Math.max(numbers);
+  let accumulator = 0;
+  for (let index = 0; index < numbers.length; index += 1){
+    if(numbers[index] === max){
+      accumulator += 1;
+    }
+  }
+  return max;
 }
-
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]))
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
