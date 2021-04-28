@@ -30,7 +30,7 @@ function concatName(arr) {
   // seu código aqui
   let last = arr[arr.length - 1];
   let first = arr[0];
-  let together = last + ' ' + first;
+  let together = last + ',' + ' ' + first;
   return together;
 };
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
@@ -72,9 +72,21 @@ function highestCount(arr) {
 console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let distCat1 = Math.abs(mouse - cat1);
+  let distCat2 = Math.abs(mouse - cat2);
+  let res = '';
+  if(distCat1 > distCat2) {
+    res = 'cat1';
+  } else if(distCat1 < distCat2) {
+    res = 'cat2';
+  } else if(distCat2 === distCat1) {
+    res = 'os gatos trombam e o rato foge';
+  }
+  return res;
 }
+console.log(catAndMouse(1, 6, 6));
 
 // Desafio 8
 function fizzBuzz() {
