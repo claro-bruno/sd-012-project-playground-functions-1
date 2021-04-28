@@ -29,8 +29,6 @@ function concatName(string) {
   return array;
 }
 
-console.log(concatName(array));
-
 // Desafio 5
 function footballPoints() {
   // seu código aqui
