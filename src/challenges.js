@@ -58,7 +58,7 @@ function concatName(array) {
   strResult = array[array.length - 1] + ", " + array[0];
 
   return strResult;
-}
+};
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -68,14 +68,29 @@ function footballPoints(wins, ties) {
   points = (wins*3) + ties;
 
   return points;
-}
-
-console.log(footballPoints(14, 8))
+};
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+
+function highestCount(arrayNumbers) {
+
+  let maiorNumero = 0;
+  let qtdeDeRepeticoes = 0;
+
+  for (let index = 0; index < arrayNumbers.length; index += 1) {
+    if (maiorNumero < arrayNumbers[index]) {
+      maiorNumero = arrayNumbers[index];
+    };
+  };
+
+    for (let index = 0; index < arrayNumbers.length; index += 1) {
+      if (arrayNumbers[index] === maiorNumero) {
+        qtdeDeRepeticoes += 1;
+      };
+    };
+
+    return qtdeDeRepeticoes;
+};
 
 // Desafio 7
 function catAndMouse() {
