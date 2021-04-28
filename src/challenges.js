@@ -5,11 +5,11 @@ function compareTrue(bool1, bool2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  let res = (base*height/2);
+  let res = (base*height)/2;
   return res;
 }
 
-console.log(calcArea(51,1));
+console.log(calcArea(5,2));
 
 // Desafio 3
 function splitSentence(str) {
