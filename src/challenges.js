@@ -1,9 +1,9 @@
 // Desafio 1
 function compareTrue(fistBoolean, secondBoolean) {
-  if (fistBoolean === true && secondBoolean === true) {
-    return 'true';
+  if (fistBoolean && secondBoolean === true ) {
+    console.log('true');
   } else {
-    return 'false';
+    console.log('false');
   }
 }
 
@@ -23,8 +23,8 @@ function splitSentence(stringToSplit) {
 function concatName(namesArray) {
   let max = namesArray[namesArray.length - 1];
   let min = namesArray[0];
-  let string = max + ',' + min;
-  return string;
+  let string = max + ', ' + min;
+  console.log('string');
 }
 
 
@@ -59,11 +59,11 @@ function catAndMouse(cat1, cat2, mouse) {
   cat1Distance = Math.abs(mouse - cat1);
   cat2Distance = Math.abs(mouse - cat2);
   if(cat1Distance < cat2Distance){
-    return 'cat1'
+   console.log('cat1');
   }else if (cat2Distance < cat1Distance){
-    return 'cat2'
+    console.log('cat2');
   }else{
-    return 'os gatos trombam e o rato foge'
+    console.log('os gatos trombam e o rato foge');
   }
 }
 
