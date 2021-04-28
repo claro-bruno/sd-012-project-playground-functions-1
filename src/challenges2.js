@@ -22,16 +22,56 @@ function compare(a,b) {
   return 0;
 }
 
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
-
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheckLineA(lineA, lineB, lineC) {
+  if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
+    return true;
+  }
+
+  return false;
+}
+function triangleCheckLineB(lineA, lineB, lineC) {
+  if (lineB < lineA + lineC && lineB > Math.abs(lineA - lineC)) {
+    return true;
+  }
+
+  return false;
+}
+function triangleCheckLineC(lineA, lineB, lineC) {
+  if (lineC < lineB + lineA && lineC > Math.abs(lineB - lineA)) {
+    return true;
+  }
+
+  return false;
+}
+
+function triangleCheckABC(lineA, lineB, lineC) {
+  let checkA;
+  if (triangleCheckLineA(lineA, lineB, lineC) === true) {
+    checkA = true;
+  }
+  let checkB;
+  if (triangleCheckLineB(lineA, lineB, lineC) === true) {
+    checkB = true;
+  }
+  let checkC;
+  if (triangleCheckLineC(lineA, lineB, lineC) === true) {
+    checkC = true;
+  }
+  return [checkA, checkB, checkC];
+}
+
+function triangleCheck(lineA, lineB, lineC) {
+  if (triangleCheckABC(lineA, lineB, lineC) === [true, true, true]) {
+    return true;
+  }
+
+  return false;
 }
 
 // Desafio 13
