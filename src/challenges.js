@@ -1,12 +1,12 @@
 // Desafio 1
 function compareTrue(value1, value2) {
-  if (value1 == true && value2 == true) {
+  if (value1 && value2) {
     return true;
   } else {
     return false;
   }
 }
-console.log(compareTrue(true, true));
+console.log(compareTrue(0, 1));
 
 // Desafio 2
 function calcArea(base, height) {
@@ -50,9 +50,25 @@ console.log(footballPoints(1, 2));
 console.log(footballPoints(0, 0));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numbers) {
+  let highNumber = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] > highNumber) {
+      highNumber = numbers[index];
+    }
+  }
+  let repeatedCount = 0;
+  for (let num in numbers) {
+    if (highNumber === numbers[num]) {
+      repeatedCount += 1
+    }
+  }
+  return repeatedCount
 }
+
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse() {
