@@ -71,7 +71,7 @@ function fizzBuzz(array) {
       result.push('buzz');
     }
     else if (array[index] % 3 === 0 && array[index] % 5 === 0){
-      result.push('fizzbuzz');
+      result.push('fizzBuzz');
     }
     else {
       result.push('bug!');
