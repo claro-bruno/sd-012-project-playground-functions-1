@@ -69,18 +69,23 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
+function converteDivisivel(num) {
+  if ((num % 3 === 0) && (num % 5 === 0)) {
+    return 'fizzBuzz';
+  }
+  if (num % 3 === 0) {
+    return 'fizz';
+  } 
+  if (num % 5 === 0) {
+    return 'buzz';
+  }
+  return 'bug!';
+} 
+
 function fizzBuzz(array) {
   let rtn = [];
   for (let index = 0; index < array.length; index += 1) {
-    if ((array[index] % 3 === 0) && (array[index] % 5 === 0)) {
-      rtn.push('fizzBuzz');
-    } else if ((array[index] % 3 === 0)) {
-      rtn.push('fizz');
-    } else if ((array[index] % 5 === 0)) {
-      rtn.push('buzz');
-    } else {
-      rtn.push('bug!');
-    }
+    rtn.push(converteDivisivel(array[index]));
   }
   return rtn;
 }
