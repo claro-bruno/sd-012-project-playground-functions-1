@@ -80,39 +80,11 @@ console.log(fizzBuzz([9, 25]))
 
 // Desafio 9
 function encode(encodeString) {
-  let result = '';
-  let encode = {
-    a: 1,
-    e: 2,
-    i: 3,
-    o: 4,
-    u: 5
-  };
-  for (let index = 0; index < encondeString.length; index += 1) {
-    if (encondeString[index] === 'a' || encondeString[index] === 'e' || encondeString[index] === 'i' || encondeString[index] === 'o' || encondeString[index] === 'u') {
-      result += encondeString[index];
-    }
-  };
-  return result;
-}
-console.log(encode('hi there!'))
-function decode(decodeString) {
-  let result = '';
-  let decode = {
-    1: 'a',
-    2: 'e',
-    3: 'i',
-    4: 'o',
-    5: 'u'
-  };
-  for (let index = 0; index < decodeString.length; index += 1) {
-    if (decodeString[index] === '1' || decodeString[index] === '2' || decodeString[index] === '3' || decodeString[index] === '4' || decodeString[index] === '5') {
-      result += decodeString[index];
-    }
-  }
-  return result;
 }
 
+function decode(decodeString) {
+  
+}
 
 module.exports = {
   calcArea,
