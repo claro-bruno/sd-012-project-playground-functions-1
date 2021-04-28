@@ -81,11 +81,39 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  array = string.split('');
+    for (let char in array) {
+      if (array[char] === 'a') {
+        array[char] = '1';
+      } if (array[char] === 'e') {
+        array[char] = '2';
+      } if (array[char] === 'i') {
+        array[char] = '3';
+      } if (array[char] === 'o') {
+        array[char] = '4';
+      } if (array[char] === 'u') {
+        array[char] = '5';
+      }
+    }
+  return array.join(""); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
 }
-function decode() {
-  // seu código aqui
+function decode(string) {
+  array = string.split('');
+    for (let char in array) {
+      if (array[char] === '1') {
+        array[char] = 'a';
+      } if (array[char] === '2') {
+        array[char] = 'e';
+      } if (array[char] === '3') {
+        array[char] = 'i';
+      } if (array[char] === '4') {
+        array[char] = 'o';
+      } if (array[char] === '5') {
+        array[char] = 'u';
+      }
+    }
+  return array.join(""); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
 }
 
 module.exports = {
