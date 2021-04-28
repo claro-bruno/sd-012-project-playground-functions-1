@@ -1,7 +1,11 @@
 // Desafio 1
-function compareTrue() {
-  
-}
+function compareTrue(boolean1, boolean2) {
+  if (boolean1 === true && boolean2 === boolean1) {
+    return true;
+  } else {
+    return false;
+  };
+};
 
 // Desafio 2
 function calcArea() {
@@ -42,6 +46,7 @@ function fizzBuzz() {
 function encode() {
   // seu código aqui
 }
+
 function decode() {
   // seu código aqui
 }
