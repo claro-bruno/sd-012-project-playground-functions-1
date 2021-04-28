@@ -10,7 +10,7 @@ function compareTrue(a, b, c) {
 // Desafio 2
 function calcArea(base, height) {
   return ((base * height) / 2);
-} 
+}
 
 // Desafio 3
 function splitSentence() {
