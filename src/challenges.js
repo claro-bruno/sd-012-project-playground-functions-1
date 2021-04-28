@@ -90,9 +90,22 @@ function catAndMouse(mouse, cat1, cat2) {
 };
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(numberArray) {
   // seu código aqui
-}
+  let stringList = [];
+  for(let number of numberArray){
+    if(number % 3 === 0 && number % 5 === 0){
+      stringList.push("fizzBuss");
+    }else if(number % 3 === 0){
+      stringList.push("fizz");
+    }else if(number % 5 === 0){
+      stringList.push("buss");
+    }else{
+      stringList.push("bug!");
+    };
+  };
+  return stringList;
+};
 
 // Desafio 9
 function encode() {
