@@ -23,7 +23,6 @@ function concatName(arrayDeStrings) {
   concatArray = arrayDeStrings[arrayDeStrings.length - 1] + ', ' + arrayDeStrings[0];
   return concatArray;
 }
-console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -51,12 +50,12 @@ function highestCount(numbersArray) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let catcher;
-  if ((cat1 - mouse) > (cat2 - mouse)) {
+  if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
     catcher = 'cat2';
-  } else if ((cat2 - mouse) > (cat1 - mouse)){
+  } else if (Math.abs(cat2 - mouse) > Math.abs(cat1 - mouse)) {
     catcher = 'cat1';
-  } else if ((cat1 - mouse) == (cat2 - mouse)) {
-    catcher = "os gatos trombam e o rato foge";
+  } else if (Math.abs(cat1 - mouse) === Math.abs(cat2 - mouse)) {
+    catcher = 'os gatos trombam e o rato foge';
   }
   return catcher;
 }
