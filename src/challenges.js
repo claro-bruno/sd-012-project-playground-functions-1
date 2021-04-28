@@ -13,18 +13,18 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(frase) {
   // seu código aqui
-  return frase.split(" ")
+  return frase.split(" ");
 }
 
 // Desafio 4
 function concatName(array) {
   // seu código aqui
-  return array[array.length-1]+", "+array[0]
+  return array[array.length - 1] + ", " + array[0];
 }
 
-// Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  return (wins * 3) + ties;
 }
 
 // Desafio 6
