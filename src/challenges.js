@@ -54,11 +54,12 @@ function catAndMouse(mouse, cat1, cat2) {
   if (distanciaCat1 < 0) distanciaCat1 *= -1;
   if (distanciaCat2 < 0) distanciaCat2 *= -1;
   if (distanciaCat1 < distanciaCat2) {
-    return "cat1";
-  } else if (distanciaCat2 < distanciaCat1) {
-    return "cat2";
+    return 'cat1';
+  }
+  if (distanciaCat2 < distanciaCat1) {
+    return 'cat2';
   } else {
-    return "os gatos trombam e o rato foge";
+    return 'os gatos trombam e o rato foge';
   }
 }
 
