@@ -82,31 +82,49 @@ function footballPoints(wins, ties) {
 
 //console.log(footballPoints(1, 2));
 
-// Desafio 6
+// Desafio 6  - PRECISA FINALIZAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 function highestCount(numbers) {
   let higherNumber = numbers[0];
-
   for (let index = 0; index < numbers.length; index += 1){
-    if (numbers[index] > higherNumber){
+    if (higherNumber < numbers[index]){
       higherNumber = numbers[index];
     }
   } 
   return higherNumber;
 } 
 
+//>>>>>highestCount(){
+//>>>>>return higherNumber * higherNumber;
+//}
+// 
 
 
 //console.log(highestCount([-1,-2,-3,-4]));
 
 
-// Desafio 7
+// Desafio 7 -- FAZER
 function catAndMouse() {
-  // seu código aqui
+  let cat1 = "cat1";
+  let cat2 = "cat2";
+  let erro = "os gatos trombam e o rato foge";
+  let mouse;
+  let mousePosition;
+  let cat1Position;
+  let cat2Position;
+  let catAndMouse;
+
+
+
+
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(number) {
+  if([number] / 3 ){
+    return "fizz";
+  } else if([number] / 5){
+    return = "buzz";
+  } else if ([number] / 3 || /5)
 }
 
 // Desafio 9
