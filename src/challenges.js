@@ -23,7 +23,6 @@ function concatName(name1) {
   resultado += name1[name1.length - 1] + ', ' + name1[0];
   return resultado;
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -62,8 +61,23 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let result = [];
+  for (let index = 0; index < array.length; index += 1){
+    if (array[index] % 3 === 0 && array[index] % 5 !== 0){
+      result.push('fizz');
+    }
+    else if (array[index] % 5 === 0 && array[index] % 3 !== 0){
+      result.push('buzz');
+    }
+    else if (array[index] % 3 === 0 && array[index] % 5 === 0){
+      result.push('fizzbuzz');
+    }
+    else {
+      result.push('bug!');
+    }
+  }
+  return result;
 }
 
 // Desafio 9
