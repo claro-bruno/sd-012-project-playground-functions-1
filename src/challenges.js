@@ -95,11 +95,11 @@ function fizzBuzz(numberArray) {
   let stringList = [];
   for(let number of numberArray){
     if(number % 3 === 0 && number % 5 === 0){
-      stringList.push("fizzBuss");
+      stringList.push("fizzBuzz");
     }else if(number % 3 === 0){
       stringList.push("fizz");
     }else if(number % 5 === 0){
-      stringList.push("buss");
+      stringList.push("buzz");
     }else{
       stringList.push("bug!");
     };
