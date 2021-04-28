@@ -74,15 +74,29 @@ if(Math.abs(cat1-mouse)<Math.abs(cat2-mouse)){
 }else if(Math.abs(cat2-mouse)<Math.abs(cat1-mouse)){
   return 'cat2';
 }else
-return 'os gatos tromam e o rato foge';
-
+return 'os gatos trombam e o rato foge';
 }
 
 
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(vetor) {
   // seu código aqui
+  let resultado = [];
+  for(let each in vetor){
+    if(vetor[each] % 3 == 0 || vetor[each] % 5 == 0){
+        if(vetor[each] % 3 == 0 && vetor[each] % 5 == 0 ){
+        resultado.push('fizzBuzz')
+        }else if ( vetor[each] % 3 == 0){
+            resultado.push('fizz')
+        } else if(vetor[each] % 5 == 0){
+          resultado.push('buzz')
+        } 
+  } else if(vetor[each] % 3 != 0 && vetor[each] % 5 != 0){
+    resultado.push('bug!')
+  }
+  }
+  return resultado
 }
 
 // Desafio 9
