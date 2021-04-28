@@ -1,6 +1,8 @@
 // Desafio 1
 function compareTrue() {
   // seu código aqui
+  //primeiro commit
+  a+b;
 }
 
 // Desafio 2
