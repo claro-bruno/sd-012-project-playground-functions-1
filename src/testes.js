@@ -1,7 +1,21 @@
-// Desafio 4
-function concatName(array) {
+// Desafio 6
+function highestCount(numbers) {
     // seu código aqui
-    return array[array.length-1]+", "+array[0]
+    let qtd = 0;
+    let maior = 0;
+
+   for(let i=0;i<numbers.length;i++){
+    if(maior<numbers[i]){
+        maior = numbers[i]
+    }
+ }
+
+    for(let i=0; i<numbers.length;i++){
+        if(numbers[i] === maior){
+            qtd++;
+        }
+    }
+    return qtd;
   }
   
-  console.log(concatName(["Roberto", "Jordan", "Rachid", "Ferreira","Bastos"]))
+  console.log(highestCount([9, 1, 2, 3, 9, 5, 7]))
