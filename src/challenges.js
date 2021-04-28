@@ -1,12 +1,10 @@
 // Desafio 1
-function compareTrue(transBH) {
-  let idade = 18;
-  let cnh = 18;
-  if (idade >= 18 && cnh >= 18) {
-    return true;
-  } else {
-  return false;
-  }
+function compareTrue() {
+  let idade = 16;
+  let show = 18;
+  if (idade >= 16 && show >= 18) {
+  } else if (idade >= 16 && show > 19) {
+  } else (idade > 17 && show > 19)
 }
 
 // Desafio 2
