@@ -124,7 +124,7 @@ return result;
 
 }
 
-console.log(fizzBuzz([45]))
+// console.log(fizzBuzz([45]))
 
 // Desafio 9
 function encode() {
