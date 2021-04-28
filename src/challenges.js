@@ -1,22 +1,28 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-
+function compareTrue(boolean1, boolean2){
+  if(boolean1 && boolean2){
+      return true;
+  } else{
+      return false;
+  };
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height){
+  return (base*height)/2;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string){
+  return string.split(' ');
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayName){
+  let novaArray = [];
+  novaArray.push(arrayName[arrayName.length -1]);
+  novaArray.push(arrayName[0]);
+  return novaArray;
 }
 
 // Desafio 5
