@@ -15,7 +15,7 @@ function techList(arr, name) {
       }
     }
 
-    const obj = CreateObj(element, name);
+    const obj = new CreateObj(element, name);
 
     result.push(obj);
   });
