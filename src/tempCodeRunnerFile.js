@@ -1,7 +1,7 @@
-function calcArea(base, height) {
-  return((base*height)/2);
+function splitSentence(string) {
+  return string.split ("");
 };
 
-console.log(calcArea(10, 50));
-console.log(calcArea(5, 2));
-console.log(calcArea(51, 1));
+console.log(splitSentence("go Trybe"));
+console.log(splitSentence("vamo que vamo"));
+console.log(splitSentence("foguete"));
