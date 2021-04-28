@@ -1,7 +1,7 @@
 // Desafio 1
-let nun1 = true;
-let nun2 = true;
-console.log(compareTrue(nun1, nun2));
+//let nun1 = true;
+//let nun2 = true;
+//console.log(compareTrue(nun1, nun2));
 
   // valor booleano 2 tipos (verdadeiro ou false)
   // possui o operador logico && que recebe 2 valores 
@@ -15,17 +15,17 @@ console.log(compareTrue(nun1, nun2));
   }; 
 
 
-function compareTrue(a, b) {
-  if(a == true && b == false) {
-    return false;
-  } else if(a == false && b == false) {
-    return false;
-  } else if(a == true && b === true){
-    return true;
-  } else {
-    return false;
-  };
-}
+//function compareTrue(a, b) {
+//  if(a == true && b == false) {
+//    return false;
+//  } else if(a == false && b == false) {
+//    return false;
+//  } else if(a == true && b === true){
+//    return true;
+//  } else {
+//    return false;
+//  };
+//}
 
 
 // Desafio 2
