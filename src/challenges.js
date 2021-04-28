@@ -1,29 +1,35 @@
 // Desafio 1
-function compareTrue(valorBoolean_1, valorBoolean_2) {
+function compareTrue(valorBoolean1, valorBoolean2) {
   // seu código aqui
-  if((valorBoolean_1 === true)&&(valorBoolean_2 === true)) {
+  if ((valorBoolean1 === true) && (valorBoolean2 === true)) {
     return true;
-  } else {
-    return false;
   }
+    return false;
 }
-//console.log(compareTrue(false, true));
+//console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, heigth) {
   // seu código aqui
   let result;
 
-  result = (base*heigth)/2;
+  result = (base * heigth) / 2;
   
   return result;
 }
 //console . log (calcArea(10, 50));
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(string) {
   // seu código aqui
+  string = string.split(' '); //Lembrar de dar 2 espaços
+  
+  return string;
 }
+
+let frase = 'vamo que vamo';
+console.log(splitSentence(frase));
+
 
 // Desafio 4
 function concatName() {
