@@ -52,9 +52,9 @@ function catAndMouse(mouse, cat1, cat2) {
   let positionCat2Mouse = Math.abs(cat2 - mouse);
   let cases = 'Os gatos trombam e o rato foge';
   if (positionCat1Mouse < positionCat2Mouse) {
-    cases = 'Cat1';
+    cases = 'cat1';
   } else if (positionCat2Mouse < positionCat1Mouse) {
-    cases = 'Cat2';
+    cases = 'cat2';
   }
   return cases;
 }
@@ -64,16 +64,16 @@ function fizzBuzz(arrayFizzBuzz) {
   // seu código aqui
   let arrayReturn = [];
   for (let indArrayFizzBuzz = 0; indArrayFizzBuzz < arrayFizzBuzz.length; indArrayFizzBuzz += 1) {
-    if (arrayFizzBuzz[indArrayFizzBuzz] % 3 === 0) {
-      if (arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0) {
-        arrayReturn[indArrayFizzBuzz] = 'fizzBuzz'
-      }
-      else {
-        arrayReturn[indArrayFizzBuzz] = 'fizz';
-      }
-    } else if (arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0 && arrayFizzBuzz[indArrayFizzBuzz] % 3 !== 0) {
+    if (arrayFizzBuzz[indArrayFizzBuzz] % 3 === 0 && arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0) {
+      arrayReturn[indArrayFizzBuzz] = 'fizzBuzz';
+    }
+    if (arrayFizzBuzz[indArrayFizzBuzz] % 3 === 0 && arrayFizzBuzz[indArrayFizzBuzz] % 5 !== 0) {
+      arrayReturn[indArrayFizzBuzz] = 'fizz';
+    }
+    if (arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0 && arrayFizzBuzz[indArrayFizzBuzz] % 3 !== 0) {
       arrayReturn[indArrayFizzBuzz] = 'buzz';
-    } else {
+    } 
+    else {
       arrayReturn[indArrayFizzBuzz] = 'bug!';
     }
   }
@@ -81,7 +81,7 @@ function fizzBuzz(arrayFizzBuzz) {
 }
 
 // Desafio 9
-function encode(strEcode) {
+function encode() {
   // seu código aqui
 }
 
