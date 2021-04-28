@@ -100,9 +100,16 @@ function triangleCheck(lineA, lineB, lineC) {
 };
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
-}
+function hydrate(str) {
+  let numberInStr = str.replace(/[^0-9]/g,"");
+  let total = 0;
+
+  for (let key in numberInStr) {
+    total += parseInt(numberInStr[key]);
+  }
+
+  return (total + " copos de água");
+};
 
 module.exports = {
   generatePhoneNumber,
