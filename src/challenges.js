@@ -48,7 +48,7 @@ function highestCount(numbers) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  // pesquisar funcao ABS(retorna falor absoluto)
+  // pesquisar funcao ABS (plantao do Issac)
   let cat1Distance = Math.abs(cat1 - mouse);
   let cat2Distance = Math.abs(cat2 - mouse);
   let nearCat = '';
@@ -64,9 +64,22 @@ function catAndMouse(mouse, cat1, cat2) {
 // console.log(catAndMouse(0, 6, 12));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numbers) {
+  let outputArray = [];
+  for (let index in numbers){
+    if (((numbers[index] % 3) === 0) && ((numbers[index] % 5) === 0)){
+      outputArray.push('fizzBuzz');
+    }else if ((numbers[index] % 3) === 0){
+      outputArray.push('fizz');
+    }else if ((numbers[index] % 5) === 0){
+      outputArray.push('buzz');
+    }else {
+      outputArray.push('bug!');
+    };
+  };
+  return outputArray;
 }
+// console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode() {
