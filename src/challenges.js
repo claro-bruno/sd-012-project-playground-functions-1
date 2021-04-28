@@ -130,8 +130,7 @@ function encode(vogais) {
    } 
   return resultado.join('');
 }
-let para = 'hi there';
-console.log(encode(para))
+
 function decode(letras) {
   // seu código aqui
   let resultado= [];
@@ -160,8 +159,21 @@ function decode(letras) {
    } 
   return resultado.join('');
 }
-let param = 'h3 th2r2';
-console.log(decode(param))
+function techList(vetor,name){
+  vetor.sort()
+  let obj = {};
+  for(let each in vetor){
+  
+  obj ={
+    tech: vetor[each],
+    nome: name
+  }
+  console.log(obj)
+ 
+}
+}
+
+
 
 module.exports = {
   calcArea,
