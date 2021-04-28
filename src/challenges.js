@@ -98,9 +98,24 @@ function catAndMouse(mouse, cat1, cat2) {
 };
 
 // Desafio 8
-function fizzBuzz() {
+let numbers = [9, 25];
 
-}
+function fizzBuzz(numArr) {
+  let fizzBuzzArr = [];
+
+  for (let index in numArr) {
+    if (numArr[index] % 3 === 0 && numArr[index] % 5 === 0) {
+      fizzBuzzArr.push("fizzBuzz");
+    } else if (numArr[index] % 5 === 0) {
+      fizzBuzzArr.push("buzz");
+    } else if (numArr[index] % 3 === 0) {
+      fizzBuzzArr.push("fizz");
+    } else {
+      fizzBuzzArr.push("bug!")
+    };
+  };
+  return fizzBuzzArr;
+};
 
 // Desafio 9
 function encode() {
