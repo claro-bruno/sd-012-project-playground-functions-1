@@ -11,7 +11,7 @@ function compareTrue(booleano1, booleano2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  let resultado = (base * height) /2;
+  let resultado = (base * height) / 2;
   return resultado;
 } console.log(calcArea(51, 1));
 
@@ -22,9 +22,15 @@ function splitSentence(string) {
 } console.log(splitSentence("foquete"));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(array) {
+  let arrayDeStrings = [array[array.length -1] + ',' + ' ' + array[0]];
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] === arrayDeStrings) {
+      arrayDeStrings = array[index];
+    }
+    return arrayDeStrings;
+  }
+} console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints() {
