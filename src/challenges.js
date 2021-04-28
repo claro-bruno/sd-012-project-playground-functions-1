@@ -51,39 +51,8 @@ function splitSentence(string) {
 function concatName(array) {
   let posicao1 = array[0];
   let posicao2 = array[array.length - 1];
-
-  if (array === ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']) {
-    let somaName = posicao2 + ',' + ' ' + posicao1;
-    return somaName;
-  }
-
-  if (array === ['foguete', 'não', 'tem', 'ré']) {
-    let somaName2 = posicao2 + ',' + ' ' + posicao1;
-    return somaName2;
-  }
-  
-  if (array === ['captain', 'my', 'captain']) {
-    let somaName3 = posicao2 + ',' + ' ' + posicao1;
-    return somaName3;
-  }
-
+  return posicao2 + ',' + ' ' + posicao1;
 }
-
-console.log(concatName(['captain', 'my', 'captain']));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Desafio 5
 function footballPoints() {
