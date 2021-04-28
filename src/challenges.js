@@ -96,7 +96,7 @@ function catAndMouse(mouse, cat1, cat2) {
   if (mouseCat1 < mouseCat2) {
     return 'cat1';
   } else if (mouseCat1 > mouseCat2) {
-    return 'cat2'; 
+    return 'cat2';
   } else {
     return 'os gatos trombam e o rato foge';
   }
@@ -110,28 +110,73 @@ function fizzBuzz(arrayOfNumbers) {
   let div5 = 'buzz';
   let div35 = 'fizzBuzz';
   let divNone = 'bug!';
-  for(let index = 0; index < arrayOfNumbers.length; index += 1) {
+  for (let index = 0; index < arrayOfNumbers.length; index += 1) {
     if (arrayOfNumbers[index] % 3 !== 0 && arrayOfNumbers[index] % 5 !== 0) {
-        newArray.push(divNone);
+      newArray.push(divNone);
     } else if (arrayOfNumbers[index] % 3 === 0 && arrayOfNumbers[index] % 5 === 0) {
-          newArray.push(div35);          
+      newArray.push(div35);         
     } else if (arrayOfNumbers[index] % 3 === 0 && arrayOfNumbers[index] % 5 !== 0) {
       newArray.push(div3);
     } else if (arrayOfNumbers[index] % 3 !== 0 && arrayOfNumbers[index] % 5 === 0) {
       newArray.push(div5);
-    } 
+    }
   }
   return newArray;
 }
 console.log(fizzBuzz([15, 30, 45]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
+function encode(string) {
+  /* 
+  recebe string e troca vogais minuscula por numero
+  achar as vogais = for
+  trocar se a 
+  */
+
+  let changeVowel;
+
+  // for (let index = 0; index < string.length; index += 1) {
+  //   return string.replace(/a/, '1');
+  //   return string.replace(/e/, '2');
+  //   return string.replace(/i/, '3');
+  //   return string.replace(/o/, '4');
+  //   return string.replace(/u/, '5');
+  //   changeVowel = string[index];
+  //   }
+
+  return string.replace(/a/, '1');
+  return string.replace(/e/, '2');
+  return string.replace(/i/, '3');
+  return string.replace(/o/, '4');
+  return string.replace(/u/, '5');
+  
+  changeVowel = 
+  }
+
+console.log(encode('hi there!'));
+
+
+a -> 1
+e -> 2
+i -> 3
+o -> 4
+u -> 5
+
+let vogais = 'hae!'
+let vogais2 = vogais.replace(/a/, '1');
+vogais.replace(/e/, '2');
+console.log(vogais2);
+
+
+
+
 function decode() {
-  // seu código aqui
+  /* 
+  recebe string contendo numeros no lugar das letras minusculas
+  retorna string com vogais no lugar dos numeros
+  */
 }
+console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
