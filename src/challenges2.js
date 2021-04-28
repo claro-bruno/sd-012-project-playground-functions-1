@@ -83,9 +83,25 @@ function triangleCheck(lineA, lineB, lineC) {
 console.log(triangleCheck(lineA, lineB, lineC));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+let string1 = "1 cerveja";
+let string2 = "1 cachaça, 5 cervejas e 1 copo de vinho";
+let string3 = "1 cachaça, 5 cervejas e 1 copo de vinho";
+
+function hydrate(string) {
+  let numbers = string.match(/\d+/g).map(Number) // array.match() retorna um array com os matches da expressão regular dentro dos parênteses. A expressão regular "/\d+/g" seleciona dígitos (números) "/\d+/", em toda a string (flag global) "g". O método .map(Number) converte um array de strings para um array de integers.
+  let sum = 0;
+  for (let index in numbers) {
+    sum += numbers[index];
+  }
+  if (sum === 1) {
+    return `${sum} copo de água`;
+  } else {
+    return `${sum} copos de água`;
+  }
 }
+console.log(hydrate(string1));
+console.log(hydrate(string2));
+console.log(hydrate(string3));
 
 module.exports = {
   generatePhoneNumber,
