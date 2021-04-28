@@ -19,10 +19,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-  let resposta = [];
-  resposta.push(array[array.length - 1]);
-  resposta.push(array[0]);
-  return resposta;
+  return `${array[array.length - 1]}, ${array[0]}`
 }
 
 // Desafio 5
@@ -34,7 +31,7 @@ function footballPoints(wins, ties) {
 function highestCount(array) {
   let maiorNumero = array[0];
   let contador = 0;
-  
+
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] > maiorNumero) {
       maiorNumero = array[index];
