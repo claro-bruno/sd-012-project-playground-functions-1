@@ -16,14 +16,19 @@ function splitSentence(){
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(inicio, fim) {
+let nomes = [' ', ' '];
+let inicio = nomes[0];
+let fim = nomes[nomes.length - 1];    
+return fim + ' ' + inicio;
+    }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-    if ((wins * 3) + (ties * 1))
-    return wins + ties
+    if ((wins * 3) + (ties * 1)) {
+
+    } return wins + ties
+    
   }
 
 // Desafio 6
