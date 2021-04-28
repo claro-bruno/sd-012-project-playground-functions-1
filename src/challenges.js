@@ -1,19 +1,18 @@
-// Desafio 1
-  tenhoDinheiro = true;
-  tempo = true;
-function compareTrue(tenhoDinheiro, tempo) {
-  if (tenhoDinheiro && tempo) {
+// X Desafio 1
+  let x = true;
+  let y = false;
+  let resposta = x && y;
+function compareTrue(x, y) {
+  if (x && y) {
     return true;
   } else {
     return false;
   }
 }
-console.log(vouAoShopping);
+console.log(resposta);
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+
 
 // Desafio 3
 function splitSentence() {
