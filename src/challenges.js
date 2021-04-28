@@ -92,24 +92,32 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 
+// Auxiliar do desafio 8
+function fizzBuzzAux (numberArray, index) {  
+  if ((numberArray[index] % 3) === 0 && (numberArray[index] % 5) !== 0) {
+    return 'fizz';
+  }
+  if ((numberArray[index] % 5) === 0 && (numberArray[index] % 3) !== 0) {
+    return 'buzz';
+  }
+  if ((numberArray[index] % 3) === 0 && (numberArray[index] % 5) === 0) {
+    return 'fizzBuzz';
+  }
+  if ((numberArray[index] % 3) !== 0 && (numberArray[index] % 5) !== 0) {
+    return 'bug!';
+  }  
+}
+
 // Desafio 8
 function fizzBuzz(numberArray) {
   // seu código aqui
   let fizzBuzzArray = [];
   for (let index = 0; index < numberArray.length; index += 1) {
-    if ((numberArray[index] % 3) === 0 && (numberArray[index] % 5) !== 0) {
-      fizzBuzzArray[index] = 'fizz';
-    } else if ((numberArray[index] % 5) === 0 && (numberArray[index] % 3) !== 0) {
-      fizzBuzzArray[index] = 'buzz';
-    } else if ((numberArray[index] % 3) === 0 && (numberArray[index] % 5) === 0) {
-      fizzBuzzArray[index] = 'fizzBuzz';
-    } else {
-      fizzBuzzArray[index] = 'bug!';
-    }
+    fizzBuzzArray[index] = fizzBuzzAux(numberArray, index);
   }
   return fizzBuzzArray;
 }
-
+console.log(fizzBuzz([9, 25]));
 // Desafio 9
 function encode() {
   // seu código aqui
