@@ -4,7 +4,8 @@ function compareTrue(num1, num2) {
     return true;
   }
 }
-//console.log(compareTrue(true, true));
+// console.log(compareTrue(true, true));
+
 // Desafio 2
 function calcArea(base, height) {
   let area = (base * height) / 2;
@@ -13,7 +14,7 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-  let arrayOfString = string.split(separador);
+  let arrayOfString = string.split(' ');
   return arrayOfString;
 }
 //console.log(splitSentence('vamo que vamo', ' '))
