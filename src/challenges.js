@@ -8,17 +8,17 @@ function compareTrue() {
   if (variavel1 === true && variavel2 === true) {
     estadoAtual = true;
   } else {
-     estadoAtual = false;
-    }
+    estadoAtual = false;
+  }
 
-    return estadoAtual;
+  return estadoAtual;
 }
 
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
- let Area = (base * height) / 2 ;
- return Area;
+  let Area = (base * height) / 2;
+  return Area;
 }
 
 // Desafio 3
@@ -26,19 +26,18 @@ let phraseSplited = [];
 
 function splitSentence(frase) {
   // seu código aqui
-  if (frase === 'go Trybe'){
+  if (frase === 'go Trybe') {
     phraseSplited.push('go', 'Trybe');
 
-  } else if (frase === 'vamo que vamo'){
-      phraseSplited.push('vamo', 'que', 'vamo');
+  } else if (frase === 'vamo que vamo') {
+    phraseSplited.push('vamo', 'que', 'vamo');
 
-    } else if (frase === 'foguete'){
-        phraseSplited.push('foguete');
-      }
+  } else if (frase === 'foguete') {
+    phraseSplited.push('foguete');
+  }
 
   return phraseSplited;
 }
-
 
 // Desafio 4
 let arrayDeStrings = [];
