@@ -7,11 +7,12 @@ function compareTrue(valor1, valor2) {
   }
   return resultado;
 }
-console.log(compareTrue(false, true));
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
+  let triangleArea = ((base * height) / 2);
+  return triangleArea;
 }
 
 // Desafio 3
