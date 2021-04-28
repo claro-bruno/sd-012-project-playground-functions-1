@@ -6,13 +6,14 @@ function compareTrue(bool1, bool2) {
       return false;
   };
 };
-// console.log(compareTrue(true, false));
-
+// console.log(compareTrue(true, true));
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
+   return (base * height) / 2
 }
+// console.log(calcArea(10, 50));
 
 // Desafio 3
 function splitSentence() {
