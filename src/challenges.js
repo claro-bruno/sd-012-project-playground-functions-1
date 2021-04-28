@@ -93,18 +93,18 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Auxiliar do desafio 8
-function fizzBuzzAux(numberArray, index) {
-  let fizzBuzzString = '';
-  if ((numberArray[index] % 3) === 0 && (numberArray[index] % 5) !== 0) {
-    fizzBuzzString = 'fizz';
-  } else if ((numberArray[index] % 5) === 0 && (numberArray[index] % 3) !== 0) {
-    fizzBuzzString = 'buzz';
-  } else if ((numberArray[index] % 3) === 0 && (numberArray[index] % 5) === 0) {
-    fizzBuzzString = 'fizzBuzz';
+function fizzBuzzAux(array, index) {
+  let resultValue = '';
+  if ((array[index] % 3) === 0 && (array[index] % 5) !== 0) {
+    resultValue = 'fizz';
+  } else if ((array[index] % 5) === 0 && (array[index] % 3) !== 0) {
+    resultValue = 'buzz';
+  } else if ((array[index] % 3) === 0 && (array[index] % 5) === 0) {
+    resultValue = 'fizzBuzz';
   } else {
-    fizzBuzzString = 'bug!';
+    resultValue = 'bug!';
   }
-  return fizzBuzzString;
+  return resultValue;
 }
 
 // Desafio 8
