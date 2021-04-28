@@ -16,10 +16,10 @@ function splitSentence(frase) {
 // Desafio 4
 function concatName(matriz) {
   /* matriz = ["Carla","bruna","lucia"]; */
-  let resposta = matriz[0];
+  let resposta = matriz[matriz.length - 1];
   resposta += ', ';
-  resposta += matriz[matriz.length - 1];
-  /* resposta += '.'; */
+  resposta += matriz[0];
+  resposta += '.'; 
   return resposta;
 }
 
@@ -46,16 +46,14 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(matriz) {
   /* matriz = ["Carla","bruna","lucia"]; */
-  resposta = [];
+  let resposta = [];
   for (let index = 0; index < matriz.length; index += 1) {
     if (matriz[index] % 3) {
       matriz.push('fizz');
-    }
-    else if (matriz[index] % 5) {
+    } else if (matriz[index] % 5) {
       matriz.push('buzz');
-    } 
-    else {
-        matriz.push('bug!');
+    } else {
+      matriz.push('bug!');
     }
   }
   /* console.log(matriz); */
@@ -63,8 +61,27 @@ function fizzBuzz(matriz) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(variavel) {
+  let resposta = '';
+  switch (variavel){
+    case 'a':
+      resposta = 1;
+    case 'e':
+      resposta = 2;
+      break;
+    case 'i':
+      resposta = 3;
+      break;
+    case 'o':
+        resposta = 4;
+      break;
+    case 'u':
+      resposta = 3;
+      break;
+}
+
+o -> 4
+u -> 5
 }
 function decode() {
   // seu código aqui
