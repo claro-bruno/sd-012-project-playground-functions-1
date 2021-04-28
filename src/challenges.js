@@ -45,9 +45,16 @@ function concatName(separateString) {
 };
 
 // Desafio 5
-function footballPoints() {
+let team = {
+  wins: 14,
+  ties: 8,
+};
 
-}
+function footballPoints(wins, ties) {
+  let scorePoints = (wins * 3) + ties;
+  
+  return scorePoints;
+};
 
 // Desafio 6
 function highestCount() {
