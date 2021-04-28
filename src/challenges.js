@@ -21,14 +21,12 @@ function calcArea(base, heigth) {
 
 // Desafio 3
 function splitSentence(string) {
-  // seu código aqui
+  // seu código aqui 
   string = string.split(' '); // Lembrar de dar 2 espaços se não ele separa letra por letra.
 
   return string;
 }
-
-let frase = 'go trybe';
-console.log(splitSentence(frase));
+console.log(splitSentence('Go trybe'));
 
 // Desafio 4
 function concatName(nameList) {
@@ -36,13 +34,13 @@ function concatName(nameList) {
   let firstName = nameList[0];
   let lastName = nameList.slice(-1); // Slice() para copiar e adicionar em novo Array.
   let lastAndFirstName = []; // Criar novo array para adicionar o lastName e firstName.
-  
+
   lastAndFirstName.push(lastName + ' ' + firstName); // Adiciona no array.
-  
+
   return lastAndFirstName;
 }
-names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo', 'juan', 'Pedro', 'Rafa', 'joao', 'Thiago'];
-console.log(concatName(names));
+nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo', 'juan', 'Pedro', 'Rafa', 'joao', 'Thiago'];
+console.log(concatName(nameList));
 
 // Desafio 5
 function footballPoints() {
