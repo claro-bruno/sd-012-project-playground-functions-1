@@ -52,6 +52,15 @@ function highestCount(numbers) {
 function catAndMouse(mouse, cat1, cat2) {
   let distancia1 = mouse - cat1;
   let distancia2 = mouse - cat2;
+  if (distancia1 < 0 && distancia2 < 0) {
+    //font Math.abs(): https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+    distancia1 = Math.abs(distancia1);
+    distancia2 = Math.abs(distancia2);
+  } else if (distancia2 < 0 && distancia1 > 0) {
+    distancia2 = Math.abs(distancia2);
+  } else if (distancia1 < 0 && distancia2 > 0) {
+    distancia1 = Math.abs(distancia1);
+  }
   if (distancia1 < distancia2){
     return "cat1";
   } else if (distancia1 > distancia2) {
@@ -121,8 +130,6 @@ function decode(string) {
   decodeString = decodeString.join('')
   return decodeString;
 }
-
-console.log(decode("11112222333444555"));
 
 module.exports = {
   calcArea,
