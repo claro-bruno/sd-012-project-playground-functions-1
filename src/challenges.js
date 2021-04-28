@@ -1,8 +1,13 @@
 // Desafio 1
-function compareTrue() {
-  xablau
+function compareTrue(bloco1, bloco2) {
+  if(bloco1 && bloco2 === true){
+ return true
+  }else{
+    false
+  }
   // seu código aqui
 }
+
 
 // Desafio 2
 function calcArea() {
@@ -11,6 +16,7 @@ function calcArea() {
 
 // Desafio 3
 function splitSentence() {
+  
   // seu código aqui
 }
 
