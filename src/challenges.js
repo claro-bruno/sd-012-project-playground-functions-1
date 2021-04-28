@@ -19,11 +19,11 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(arrayDeStrings) {
-  let concatArray = [];
-  concatArray.push(arrayDeStrings[arrayDeStrings.length - 1], arrayDeStrings[0]);
-  concatArray = concatArray.join(",");
+  let concatArray;
+  concatArray = arrayDeStrings[arrayDeStrings.length - 1] + ', ' + arrayDeStrings[0];
   return concatArray;
 }
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
