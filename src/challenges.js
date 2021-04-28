@@ -12,16 +12,16 @@ console.log(compareTrue(true,false));
 let base = 10;
 let height = 50;
 function calcArea(base,height) {
-  
   return (base * height) / 2;
 };
-console.log (area);
+console.log (calcArea(base,height));
 
 // // Desafio 3
-// function splitSentence() {
-  
-//   // seu código aqui
-// }
+let string = 'go Trybe'
+function splitSentence(string) {
+  return string.split(' ');
+};
+console.log(splitSentence(string));
 
 // // Desafio 4
 // function concatName() {
