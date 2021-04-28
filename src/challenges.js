@@ -44,20 +44,36 @@ function concatName(array) {
   let indiceultimo = (array.length) - 1
   stringcompleta = array[indiceultimo] + ', ' + array[0]
 
-  return console.log(stringcompleta);
+  return stringcompleta;
 };
 
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  let totaldepontos = (wins*3)+(ties*1);
+  let totaldepontos = (wins * 3) + (ties * 1);
   return totaldepontos;
-  
+
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(array) {
   // seu código aqui
+  let maiornumero = null;
+  let numero1 = null;
+  let numero2 = null;
+  for (indice1 = 0; indice1 < array.length; indice1 += 1) {
+    numero1= array[indice1];
+
+    for (indice2 = 0; indice2 < array.length; indice2 += 1) {
+      numero2 = array[indice2];
+      if (numero1>numero2) {
+       maiornumero==numero1;
+      }
+      else {
+        maiornumero==numero2
+      }
+    };
+  };
 }
 
 // Desafio 7
