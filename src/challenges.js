@@ -18,13 +18,16 @@ function splitSentence(stringToSplit) {
 }
 
 // Desafio 4
-function concatName() {
-    // seu código aqui
+function concatName(arrayComNomes) {
+    let fullName =
+        arrayComNomes[arrayComNomes.length - 1] + ', ' + arrayComNomes[0];
+    return fullName;
 }
 
 // Desafio 5
-function footballPoints() {
-    // seu código aqui
+function footballPoints(wins, ties) {
+    let saldo = (wins * 3) + (ties * 1)
+    return saldo
 }
 
 // Desafio 6
