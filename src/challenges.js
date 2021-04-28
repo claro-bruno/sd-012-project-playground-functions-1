@@ -48,9 +48,29 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  for (let index1 = 0; index1 < array.length; index1 += 1) {
+    let string1 = array.length-1 + ',' + ' ' + array[0];
+    return string1;
+  }
 }
+
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Desafio 5
 function footballPoints() {
