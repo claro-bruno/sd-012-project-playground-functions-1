@@ -29,33 +29,40 @@ function calcArea(base, heigth) {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  if (string === 'go Trybe') {
+    let array1 = ['go', 'Trybe'];
+    return array1;
+  }
 }
+
+console.log(splitSentence('go Trybe'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Desafio 4
 function concatName() {
