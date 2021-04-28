@@ -35,13 +35,20 @@ function splitSentence(frase) {
     } else if (frase === 'foguete'){
         phraseSplited.push('foguete');
       }
-      
+
   return phraseSplited;
 }
 
+
 // Desafio 4
-function concatName() {
+let arrayDeStrings = [];
+let array2 = ['arroz', 'batata', 'cebola', 'damasco'];
+
+function concatName(arrayDeStrings) {
   // seu código aqui
+  n = arrayDeStrings.length - 1;
+  array3 = arrayDeStrings[n]+ ', ' + arrayDeStrings[0];
+return (array3);
 }
 
 // Desafio 5
