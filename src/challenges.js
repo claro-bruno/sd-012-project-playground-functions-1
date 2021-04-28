@@ -28,11 +28,12 @@ console.log(splitSentence(sentence));
 // Desafio 4
 function concatName(arr) {
   // seu código aqui
-  let first = (`${arr[arr.length - 1]}` + ' ' + `${arr[0]}`);
-  return first.toString();
+  let last = arr[arr.length - 1];
+  let first = arr[0];
+  let together = last + ' ' + first;
+  return together;
 };
-names = ['Gabriel', 'Cassiano', 'Ferraz', 'Paolillo'];
-console.log(concatName(names));
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 
 
