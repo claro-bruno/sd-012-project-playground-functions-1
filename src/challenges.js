@@ -29,7 +29,7 @@ console.log(calcArea(51, 1))
 
 
 // Desafio 3
-function splitSentence(string, parts) {
+function splitSentence(string) {
 
 return string.split(' ')
 
@@ -41,7 +41,9 @@ console.log(splitSentence("foguete"))
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
+  
+
+
 }
 
 // Desafio 5
