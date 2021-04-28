@@ -1,23 +1,22 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
-  if (valor1 === valor2 && valor2 === true){
+  if (valor1 === valor2 && valor2 === true) {
     return true;
-  } else {
-    return false;
-  };
-};
+  }
+  return false
+}
 
 // Desafio 2
 function calcArea(base, height) {
-  triangle = (base * height) / 2;
+  let triangle = (base * height) / 2;
   return triangle;
-};
+}
 
 // Desafio 3
 function splitSentence(string) {
  array = string.split(" ");
  return array;
-};
+}
 
 // Desafio 4
 function concatName() {
