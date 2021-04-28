@@ -45,17 +45,27 @@ function generatePhoneNumber(arrayNumbers) {
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  if ((Math.abs(lineA + lineB) > lineC) && (Math.abs(lineB + lineC) > lineA) && (Math.abs(lineC + lineB) > lineA)) {
+  if ((Math.abs(lineA + lineB) > lineC) && (Math.abs(lineB + lineC) > lineA) && (Math.abs(lineC + lineB) > lineA) && (Math.abs(lineA - lineB) < lineC) && (Math.abs(lineB - lineC) < lineA) && (Math.abs(lineC - lineB) < lineA)){
     return true;
   } else {
     return false;
   }
 }
 
+console.log(triangleCheck(10,13,2))
+
 // Desafio 13
-function hydrate() {
-  // seu código aqui
-}
+function hydrate(pedido) {
+  pedido = pedido.toString().split('');
+  console.log(pedido);
+  for (index in pedido) {
+    pedido = parseInt(pedido);
+    }
+    return pedido;
+  }
+
+
+// console.log(hydrate(['12 copo', '1 teste']));
 
 module.exports = {
   generatePhoneNumber,
