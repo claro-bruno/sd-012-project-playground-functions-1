@@ -1,7 +1,11 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-  xablovski
+function compareTrue(num1, num2) {
+  let comparador = false;
+  if (num1 % 2 === 0 && num2 % 2 === 0) {
+    comparador = true;
+  } else {
+    comparador = false;
+  }
 }
 
 // Desafio 2
