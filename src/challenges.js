@@ -52,9 +52,9 @@ console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 function footballPoints(wins, ties) {
   let totalWins = wins * 3;
   let total = totalWins + ties;
-  return total + " pontos";
+  return total;
 };
-console.log(footballPoints(0, 0));
+console.log(footballPoints(14, 8));
 
 // Desafio 6
 function highestCount() {
