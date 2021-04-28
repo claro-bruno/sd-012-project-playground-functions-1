@@ -5,11 +5,12 @@ function compareTrue() {
 
 // Desafio 2
 function calcArea() {
-  // seu código aqui
+ 
 }
 
 // Desafio 3
 function splitSentence() {
+
   // seu código aqui
 }
 
