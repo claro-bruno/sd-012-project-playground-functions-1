@@ -32,12 +32,29 @@ function splitSentence(sentence) {
 // console.log(splitSentence(sentence));
 // let sentence2 = 'vamo que vamo';
 // console.log(splitSentence(sentence2));
-let sentence3 = 'foguete';
-console.log(splitSentence(sentence3));
+// let sentence3 = 'foguete';
+// console.log(splitSentence(sentence3));
+
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let switched = '';
+  let firstWord = array[0];
+  let lastWord = array[array.length - 1];
+  for(index = 0; index < lastWord.length; index += 1){
+    switched += lastWord[index];
+  }
+  switched += ', ';
+  for(index = 0; index < firstWord.length; index += 1){
+    switched += firstWord[index];
+  }
+  return switched;
 }
+// let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+// console.log(concatName(array));
+// let array2 = ['foguete', 'não', 'tem', 'ré'];
+// console.log(concatName(array2));
+// let array3 = ['captain', 'my', 'captain']
+// console.log(concatName(array3));
 
 // Desafio 5
 function footballPoints() {
