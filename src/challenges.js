@@ -1,16 +1,15 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(valor, valor2) {
   // seu código aqui
   let valor = 0;
   let valor2 = 1;
   if (valor < 4 && valor2 > 4){
-    console.log("true");
+    compareTrue = 'true';
   }else{
-    console.log('false');
+    compareTrue = 'false';
   }
-
+return(compareTrue);
 }
-console.log(compareTrue);
 
 // Desafio 2
 function calcArea() {
