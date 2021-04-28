@@ -10,9 +10,9 @@
   function compareTrue(nun1, nun2) {
     if (nun1 === true && nun2 === true){
       return true;
-    } {
-      return false;
     }
+      return false;
+    
   }; 
 
 
