@@ -63,8 +63,17 @@ if ((lineA<lineB+lineC)&&(lineA>Math.abs(lineB-lineC))&&(lineB<lineA+lineC)&&(li
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(strBebidas) {
+  let qtdBedidas=strBebidas.replace(/\D/g, '');
+  let qtdTotal=0;
+  for (index=0;index<qtdBedidas.length;index+=1) {
+    qtdTotal+=parseInt(qtdBedidas[index]);
+  }
+  if (qtdTotal==1) {
+    return (qtdTotal + " copo de água")
+  } else {
+    return (qtdTotal + " copos de água")
+  }
 }
 
 module.exports = {
