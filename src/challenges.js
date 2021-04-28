@@ -160,6 +160,7 @@ function decode(letras) {
   return resultado.join('');
 }
 function techList(vetor,name){
+  let resultado = []
   vetor.sort()
   let obj = {};
   for(let each in vetor){
@@ -168,9 +169,10 @@ function techList(vetor,name){
     tech: vetor[each],
     nome: name
   }
-  console.log(obj)
+  resultado.push(obj)
  
 }
+return resultado
 }
 
 
