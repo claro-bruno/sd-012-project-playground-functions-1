@@ -1,17 +1,16 @@
 // Desafio 1
 
-let valor1 = 5;
-let valor2 = 12;
-
-function compareTrue() {
-  let verificador = false;
-  if (valor1 > 0 && valor2 > 0){
-    verificador = true;
+function compareTrue(firstValue,secondValue) {
+  if(firstValue === true && secondValue === true){
+    return true;
   } else {
-    verificador = false;
+    return false;
   }
-  return verificador
 };
+
+console.log(compareTrue(false,true));
+console.log(compareTrue(false,false));
+console.log(compareTrue(true,true));
 
 
 
@@ -102,9 +101,27 @@ console.log(catAndMouse(0,0,0));
 
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+
+
+function fizzBuzz(numbersFizzBuzz) {
+  for(let index = 0; index < numbersFizzBuzz.length; index += 1) {       
+    if (numbersFizzBuzz[index] % 3 == 0 & numbersFizzBuzz[index] % 5 != 0) {
+      fizzBuzzBug.push('fizz');
+    } else if (numbersFizzBuzz[index] % 3 != 0 & numbersFizzBuzz[index] % 5 == 0) {
+      fizzBuzzBug.push('buzz');
+    } else if(numbersFizzBuzz[index] % 3 == 0 & numbersFizzBuzz[index] % 5 == 0) {
+      fizzBuzzBug.push('fizzBuzz');   
+    } else {
+      fizzBuzzBug.push('bug!');
+    }
+  }
+  
+  return fizzBuzzBug
 }
+
+console.log(fizzBuzz[2, 15, 7, 9, 45]);
+console.log(fizzBuzz[7, 9]);
+console.log(fizzBuzz[9, 25]);
 
 // Desafio 9
 function encode() {
