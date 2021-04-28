@@ -1,6 +1,6 @@
-// Desafio 2
-function calcArea(base, height) {
+function splitSentence(string) {
+  string = "inhaí gatan";
+for (let stringList[] of string)
+console.log(stringList);
   // seu código aqui
-  let area = (base * height) / 2;
-  return area;
-} 
+}
