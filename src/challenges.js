@@ -81,6 +81,7 @@ function fizzBuzz(arr) {
 // Desafio 9
 
 let strTeste = 'hi there!';
+let strTeste2 = 'h3 th2r2!';
 
 function encode(str) {
   let separatedStr = str.split('');
@@ -97,26 +98,32 @@ function encode(str) {
       separatedStr[key] = 5;
     }
   }
-  return separatedStr.join();
+  let jointStr = separatedStr.join('');
+  return jointStr;
 }
 function decode(str) {
-  let separatedStr = str.split('');
-  for (let key in separatedStr) {
-    if (separatedStr[key] === 1) {
-      separatedStr[key] = 'a';
-    } else if (separatedStr[key] === 2) {
-      separatedStr[key] = 'e';
-    } else if (separatedStr[key] === 3) {
-      separatedStr[key] = 'i';
-    } else if (separatedStr[key] === 4) {
-      separatedStr[key] = 'o';
-    } else if (separatedStr[key] === 5) {
-      separatedStr[key] = 'u';
+  let separatedStr2 = str.split('');
+  for (let key in separatedStr2) {
+    if (separatedStr2[key] === '1') {
+      separatedStr2[key] = 'a';
+    } else if (separatedStr2[key] === '2') {
+      separatedStr2[key] = 'e';
+    } else if (separatedStr2[key] === '3') {
+      separatedStr2[key] = 'i';
+    } else if (separatedStr2[key] === '4') {
+      separatedStr2[key] = 'o';
+    } else if (separatedStr2[key] === '5') {
+      separatedStr2[key] = 'u';
     }
   }
-  return separatedStr.join();
+  let jointStr2 = separatedStr2.join('');
+  return jointStr2;
   ;
 }
+
+console.log (encode(strTeste));
+console.log (decode(strTeste2));
+
 
 module.exports = {
   calcArea,
