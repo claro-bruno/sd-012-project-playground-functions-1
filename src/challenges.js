@@ -1,13 +1,18 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-  //primeiro commit para gerar o PULL REQUEST
-}
+function compareTrue(boolean1,boolean2) {
+  if (boolean1 === true && boolean2 === true){
+    return true;
+  }else {
+    return false;
+  };
+};
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base,height) {
+  return (base*height/2);
 }
+
+console.log(calcArea(51,1));
 
 // Desafio 3
 function splitSentence() {
