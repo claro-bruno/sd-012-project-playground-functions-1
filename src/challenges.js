@@ -9,18 +9,18 @@ function compareTrue(fistBoolean, secondBoolean) {
 
 // Desafio 2
 function calcArea(base, height) {
-  let resultado = (base * height) / 2;
-  return resultado;
+  let area = (base * height) / 2;
+  return area;
 }
 
 // Desafio 3
-function splitSentence(string) {
+function splitSentence(stringToSplit) {
   let array = string.split(' ');
   return array;
 }
 
 // Desafio 4
-function concatName(array) {
+function concatName(namesArray) {
   let max = array[array.length - 1];
   let min = array[0];
   let string = max + ',' + min
@@ -31,14 +31,28 @@ function concatName(array) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  let result = (wins * 3) + (ties * 1);
-  return result
+  let points = (wins * 3) + (ties * 1);
+  return points;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numbArrey) {
+  let maior = 0;
+  let count = 0;
+  for (index = 0; index < numbArrey.length; index += 1) {
+    if (numbArrey[index] >= maior) {
+      maior = numbArrey[index];
+    }
+  }
+  console.log(maior);
+  for (index = 0; index < numbArrey.length; index += 1) {
+    if (numbArrey[index] == maior) {
+      count++;
+    }
+  }
+  return count;
 }
+
 
 // Desafio 7
 function catAndMouse() {
