@@ -15,10 +15,10 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(matriz) {
-  let resposta = matriz[0] 
-  resposta = resposta +', ';
-  resposta = resposta + matriz[matriz.length-1] 
-  resposta = resposta + '.';
+  let resposta = matriz[0];
+  resposta += ', ';
+  resposta += matriz[matriz.length-1]; 
+  resposta += '.';
   return resposta;
 }
 
@@ -29,13 +29,20 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount() {
-  // seu código aqui
+  
 }
 
+
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+function catAndMouse(mouse, cat1, cat2) {
+  if (cat1 === cat2) {
+    return 'os gatos trombam e o rato foge';
+  }
+  if ((cat1 - mouse) < (cat2 - mouse)) {
+    return "cat1";
+  }
+  return "cat2";
+ }
 
 // Desafio 8
 function fizzBuzz() {
