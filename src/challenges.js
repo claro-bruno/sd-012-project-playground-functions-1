@@ -2,7 +2,7 @@
 function compareTrue() {
   let n1 = true
   let n2 = true
-  if (n1 && n2) {
+  if (n1 == n2 && n2 == n1) {
     return true;
   } else {
     return false;
