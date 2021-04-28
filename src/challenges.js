@@ -24,7 +24,7 @@ function concatName(array) {
   let ultimo = '';
   primeiro = array[0];
   ultimo = array[array.length - 1];
-  let concatena = ultimo + ' , ' + primeiro;
+  let concatena = ultimo + ', ' + primeiro;
   return concatena;
 }
 
