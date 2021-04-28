@@ -3,20 +3,26 @@ function compareTrue(bool1, bool2) {
   // seu código aqui Xablau
   let trueOrFalse;
   if (bool1 === true && bool2 === true){
-    trueOrFalse = true
+    trueOrFalse = true;
   } else {
-    trueOrFalse = false
+    trueOrFalse = false;
   }
-  return trueOrFalse
+  return trueOrFalse;
   
 }
-//console.log(compareTrue(true, false))
+//console.log(compareTrue(true, false));
 
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
+  let calc;
+  calc = (base * height) /2;
+
+  return calc;
 }
+
+//console.log(calcArea (51, 1));
 
 // Desafio 3
 function splitSentence() {
