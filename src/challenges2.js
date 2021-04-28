@@ -30,6 +30,7 @@ function generatePhoneNumber(number) {
     if (cont >=3) {
       return "não é possível gerar um número de telefone com esses valores";
     }
+    cont = 0;
   }
   for (let k = 0; k < number.length; k++) {
     if (number[k] < 0 || number[k] > 9) {
