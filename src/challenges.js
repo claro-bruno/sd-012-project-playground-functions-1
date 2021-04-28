@@ -1,14 +1,13 @@
 // Desafio 1
 function compareTrue(value, value2) {
-  if (value === true && value2 === false || value === false && value2 === false) {
+    if (value === true && value2 === false || value === false && value2 === false) {
     return false;
   } else {
     return true;
   };
 };
 
-
-
+/*
 
 // Desafio 2
 let base = 51;
