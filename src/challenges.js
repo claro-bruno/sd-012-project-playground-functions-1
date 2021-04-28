@@ -31,18 +31,21 @@ console.log(splitSentence("Vamo que Vamo"));
 function concatName(array) {
   let primeiroNome = array[0];
   let ultimoNome = array[array.length - 1];
-  let primeiroUltimo = primeiroNome + ", " + ultimoNome;
-  //let primeiroUltimo = [];
-  //primeiroUltimo[0] = primeiroNome;
-  //primeiroUltimo[1] = ultimoNome;
+  //let primeiroUltimo = primeiroNome + ", " + ultimoNome;
+  let primeiroUltimo = [];
+  primeiroUltimo[0] = primeiroNome;
+  primeiroUltimo[1] = ultimoNome;
   return primeiroUltimo;
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  wins = wins * 3;
+  let totalPoints = wins + ties;
+  return totalPoints;
 }
+console.log(footballPoints(7, 3));
 
 // Desafio 6
 function highestCount() {
