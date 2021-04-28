@@ -23,7 +23,7 @@ function splitSentence(stringToSplit) {
 function concatName(namesArray) {
   let max = namesArray[namesArray.length - 1];
   let min = namesArray[0];
-  let string = max +','+ min;
+  let string = max +', '+ min;
   return string;
 }
 
@@ -52,17 +52,18 @@ function highestCount(numbArrey) {
 }
 
 // Desafio 7
-function catAndMouse(cat1, cat2, mouse) {
+function catAndMouse(mouse, cat1,cat2) {
   let cat1Distance = Math.abs(mouse - cat1);
   let cat2Distance = Math.abs(mouse - cat2);
   if(cat1Distance < cat2Distance){
-   console.log('cat1');
+   return ("cat1");
   }else if (cat2Distance < cat1Distance){
-    console.log('cat2');
+    return("cat2");
   }else{
-    console.log('os gatos trombam e o rato foge');
+    return ("os gatos trombam e o rato foge");
   }
 }
+
 
 // Desafio 8
 function fizzBuzz() {
