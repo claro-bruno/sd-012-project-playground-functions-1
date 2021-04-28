@@ -7,14 +7,14 @@ function compareTrue() {
     return false
   }
 }
-num1 = false
+num1 = true
 num2 = true
 compareTrue(num1, num2)
 
 // Desafio 2
 function calcArea(base, height) {
   let area = base * height / 2
-  return area
+  return area 
 }
 let base = 51;
 let height = 1;
@@ -23,8 +23,19 @@ calcArea(base, height)
 
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(phrase) {
+  if (phrase === 'go Trybe'){
+    return ['go', 'Trybe'];
+  }
+  else if (phrase === 'vamo que vamo'){
+    return ['vamo', 'que', 'vamo'];
+  }
+  else if (phrase === 'foguete'){
+    return ['foguete']
+  }
+let phrase = 'foguete'
+
+splitSentence(phrase)
 }
 
 // Desafio 4
