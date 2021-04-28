@@ -13,9 +13,10 @@ function techList(tech, name) {
       console.log(`${tecnologias.tecnologia[index]}, ${tecnologias.nome}`);
     }
   } else if (tech.length === 0) {
-    console.log('Vazio!');
+    return 'Vazio!';
   }
 }
+
 
 // Desafio 11
 function generatePhoneNumber(arrayNumbers) {
