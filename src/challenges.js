@@ -17,10 +17,11 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-  var resultado = string.split(" ");
-  console.log(resultado);
+  let resultado = string.split(" ");
+
+  return resultado;
 }
-splitSentence('Eu amo feijão');
+
 
 // Desafio 4
 function concatName() {
