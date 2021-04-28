@@ -16,13 +16,17 @@ function compareTrue() {
 
 
 // Desafio 2
-let base = 51;
-let height = 1;
+let base;
+let height;
 
-function calcArea() {
+function calcArea(base,height) {
   return (base * height) / 2;
   
 }
+
+console.log(calcArea(10,50));
+console.log(calcArea(5,2));
+console.log(calcArea(51,1));
 
 
 // Desafio 3
