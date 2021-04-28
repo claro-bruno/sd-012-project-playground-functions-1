@@ -9,13 +9,14 @@ function calcArea(baseTriangulo,aulturaTriangulo) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(frase) {
+  let arrayStrings=[]
+  for (index=0;index<frase.lenght;index+=1)
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(listaNomes) {
+  return (listaNomes[((listaNomes.length)-1)] + ", " + listaNomes[0]);
 }
 
 // Desafio 5
