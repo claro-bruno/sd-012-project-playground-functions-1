@@ -1,9 +1,18 @@
 // Desafio 1
-function compareTrue(firstBoolean,secondBoolean) {
-  if(typeof firstBoolean === 'boolean' && typeof secondBoolean === 'boolean')
-    return firstBoolean ===  false ? false : secondBoolean === false ? false : true;
+function compareTrue(firstBoolean, secondBoolean) {
+  if (typeof firstBoolean === 'boolean' && typeof secondBoolean === 'boolean'){
+    if (firstBoolean === false) {
+      return false;  
+    } else {
+      if (secondBoolean === false) {
+        return false;
+      } else {
+        return true;    
+      };
+    };
+  };
+  return undefined;
 }
-
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) / 2; 
@@ -15,8 +24,8 @@ function splitSentence(phrase) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(...chosenArray) {
+  return chosenArray[0][chosenArray[0].length - 1] + ' , ' + chosenArray[0][0];
 }
 
 // Desafio 5
@@ -59,4 +68,3 @@ module.exports = {
   highestCount,
   splitSentence,
 };
-console.log(splitSentence("foguete"));
