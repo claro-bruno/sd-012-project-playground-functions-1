@@ -27,7 +27,7 @@ function concatName(...array) {
   let separate2 = array[0];
   return separate  + ', ' + separate2;
 }
-console.log(concatName('foguete', 'não', 'tem', 'ré'))
+// console.log(concatName('foguete', 'não', 'tem', 'ré'))
 
 // Desafio 5
 function footballPoints() {
@@ -35,8 +35,11 @@ function footballPoints() {
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(wins, ties) {
   // seu código aqui
+  let vit = wins * 3;
+  let emp = ties;
+  return vit + emp;
 }
 
 // Desafio 7
