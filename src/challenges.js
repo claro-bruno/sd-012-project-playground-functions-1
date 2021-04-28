@@ -1,4 +1,5 @@
 // Desafio 1
+
 function compareTrue(value1, value2) {
   if (value1 === true && value2 === true) {
     return true   
@@ -27,10 +28,13 @@ function splitSentence(string){
 }
 
 // Desafio 4
-function concatName(string1, string2) {
-//   for (index = 0; index <) 
-//   teste 
+function concatName(arrayStrings) {
+  let ultimoItem = arrayStrings[arrayStrings.length - 1];
+  let primeiroItem = arrayStrings[0];
+  let stringFinal = ultimoItem + ", " + primeiroItem;
+  return stringFinal;
 }
+// console.log(concatName( ['captain', 'my', 'captain']))
 
 // Desafio 5
 function footballPoints() {
