@@ -102,18 +102,18 @@ function encode(string) {
   return encodeString;
 }
 
-function decode() {
+function decode(string) {
   decodeString = string.split('')
   for (index = 0; index < decodeString.length; index += 1) {
-    if (decodeString[index] === '1') {
+    if (decodeString[index] == '1') {
       decodeString[index] = 'a';
-    } else if (decodeString[index] === '2') {
+    } else if (decodeString[index] == '2') {
       decodeString[index] = 'e';
-    } else if (decodeString[index] === '3') {
+    } else if (decodeString[index] == '3') {
       decodeString[index] = 'i';
-    } else if (decodeString[index] === '4') {
+    } else if (decodeString[index] == '4') {
       decodeString[index] = 'o';
-    } else if (decodeString[index] === '5') {
+    } else if (decodeString[index] == '5') {
       decodeString[index] = 'u';
     }
   }
@@ -121,7 +121,7 @@ function decode() {
   return decodeString;
 }
 
-console.log(encode("1111122223333444555"));
+console.log(decode("11112222333444555"));
 
 module.exports = {
   calcArea,
