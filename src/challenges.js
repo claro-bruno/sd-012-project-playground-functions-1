@@ -209,7 +209,7 @@ function decode(str1) {
         break;
 
       case (str1[key] === "3"):
-        str1Result += "1";
+        str1Result += "i";
         break;
 
       case (str1[key] === "4"):
