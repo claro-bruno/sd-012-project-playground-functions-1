@@ -23,6 +23,16 @@ function validation(number) {
   return 'bug!';
 }
 
+// Desafio 9.1 - ESLint
+function challengeNine(characters, word, index) {
+  for (let key in characters) {
+    if (word[index] === key) {
+      return characters[key];
+    }
+  }
+  return word[index];
+}
+
 // Desafio 1
 function compareTrue(valueOne, valueTwo) {
   if (valueOne && valueTwo) {
@@ -85,12 +95,34 @@ function fizzBuzz(numbers) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(word) {
+  let characters = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  };
+  let code = '';
+  for (let index = 0; index < word.length; index += 1) {
+    code += challengeNine(characters, word, index);
+  }
+  return code;
 }
 
-function decode() {
-  // seu código aqui
+function decode(word) {
+  let characters = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  };
+  let decoding = '';
+  for (let index = 0; index < word.length; index += 1) {
+    decoding += challengeNine(characters, word, index);
+  }
+  return decoding;
 }
 
 module.exports = {
