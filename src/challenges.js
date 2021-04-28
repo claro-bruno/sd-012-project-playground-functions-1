@@ -28,10 +28,10 @@ console.log(splitSentence(sentence));
 // Desafio 4
 function concatName(arr) {
   // seu código aqui
-  let first = (arr[arr.length - 1] + ' ' + arr[0]);
+  let first = (`${arr[arr.length - 1]}` + ' ' + `${arr[0]}`);
   return first.split(' ');
 }
-names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+names = ['Gabriel', 'Cassiano', 'Ferraz', 'Paolillo'];
 console.log(concatName(names));
 
 // Desafio 5
@@ -45,8 +45,15 @@ console.log(footballPoints(1, 2))
 
 
 // Desafio 6
-function highestCount() {
+function highestCount(arr, repCount) {
   // seu código aqui
+  let rep = 0;
+    arr.forEach(element => {
+        if(element === repCount) {
+            rep++
+        };
+    });
+    return rep;
 }
 
 // Desafio 7
