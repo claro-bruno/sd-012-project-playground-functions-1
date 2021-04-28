@@ -11,9 +11,13 @@ function compareTrue(numero1, numero2) {
 }
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, altura) {
   // seu código aqui
+  let area = (base * altura) / 2;
+  return area;
 }
+
+console.log(calcArea(5,2));
 
 // Desafio 3
 function splitSentence() {
