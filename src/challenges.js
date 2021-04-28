@@ -3,13 +3,14 @@ function compareTrue(fistBoolean, secondBoolean) {
   if (fistBoolean === true && secondBoolean === true) {
     return 'true';
   } else {
-    return false ;
+    return false;
   }
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let resultado = (base * height) / 2;
+  return resultado;
 }
 
 // Desafio 3
