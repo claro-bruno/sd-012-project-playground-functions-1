@@ -22,13 +22,15 @@ function splitSentence(string) {
   let divisao = string.split(" ");
   return divisao;
 };
-console.log(splitSentence("foguete"));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+let concatenacaoString = [];
+function concatName(string) {
+  for (let index = 0; index < string.length; index += 1){
+    concatenacaoString = string[index] + ", " + string[0];
+  }
+  return concatenacaoString;
 }
-
 // Desafio 5
 function footballPoints() {
   // seu código aqui
