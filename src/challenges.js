@@ -1,13 +1,14 @@
 // Desafio 1
-function compareTrue(numero1, numero2, numero3) {
-  if (numero1 === numero2 && numero3) {
+function compareTrue(numero1, numero2) {
+  if (numero1 > 10 && numero2 > 10) {
     return (true);
   } else {
     return (false)
   }
 
 }
-//console.log(compareTrue(2, 2, 2));
+
+//console.log(compareTrue(5, 20));
 
 
 // Desafio 2
