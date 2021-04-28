@@ -118,7 +118,10 @@ function encode(stringToEncode) {
 }
 
 function decode(stringToDecode) {
+    // A new array to put all characters inside of it
     let decodedString = [];
+    // Decode algorythm
+
     for (
         let decodeReader = 0; decodeReader < stringToDecode.length; decodeReader += 1
     ) {
@@ -136,9 +139,10 @@ function decode(stringToDecode) {
             decodedString.push(stringToDecode[decodeReader]);
         }
     }
+
+    // Return the array but joining it without a comma
     return decodedString.join('');
 }
-console.log(decode("h3 th2r2!"));
 
 module.exports = {
     calcArea,
