@@ -1,7 +1,7 @@
 // Desafio 1
-function compareTrue(num1, num2) {
+function compareTrue(bool1, bool2) {
   let comparador = false;
-  if (num1 % 2 === 0 && num2 % 2 === 0) {
+  if (bool1 === true && bool2 === true) {
     comparador = true;
   } else {
     comparador = false;
@@ -16,9 +16,11 @@ function calcArea(base, height) {
 
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  var resultado = string.split(" ");
+  console.log(resultado);
 }
+splitSentence('Eu amo feijão');
 
 // Desafio 4
 function concatName() {
