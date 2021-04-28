@@ -9,9 +9,10 @@
   function compareTrue(nun1, nun2) {
     if (nun1 === true && nun2 === true){
       return true;
-    } return false;
-    };
-   
+    } else {
+      return false;
+    }
+  }; 
 
 
 //function compareTrue(a, b) {
@@ -57,9 +58,8 @@ function calcArea(base, height) {
 
 
 // Desafio 3
-function splitSentence(string) {
-    let msg = string.split(' ');
-    return msg;
+function splitSentence() {
+  // seu código aqui
 }
 
 // Desafio 4
