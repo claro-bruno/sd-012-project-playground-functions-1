@@ -19,7 +19,7 @@ function splitSentence(phrase) {
 
 // Desafio 4
 function concatName(arrayNomes) {
-  let ultPrimeiro = ('' + arrayNomes[arrayNomes.length -1] + ', ' + arrayNomes[0] + '');
+  let ultPrimeiro = (`${arrayNomes[arrayNomes.length -1]}, ${arrayNomes[0]}`);
   return ultPrimeiro;
 }
 
@@ -32,10 +32,9 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(numbers) {
   let maiorNum = 0;
-  for (let i in numbers){
+  for (let i in numbers) {
     if(numbers[i] > maiorNum) maiorNum = numbers[i];
   }
- 
   return contRepeated(numbers, maiorNum);
 }
 
@@ -43,11 +42,11 @@ function highestCount(numbers) {
 function contRepeated(numbers, maiorNum){
   let contMaiorNum = 0;
   for (let i in numbers){
-    if(numbers[i] === maiorNum) contMaiorNum += 1;
+    if (numbers[i] === maiorNum) contMaiorNum += 1;
   }
   return contMaiorNum;
 }
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let distanciaCat1 = (mouse - cat1);
