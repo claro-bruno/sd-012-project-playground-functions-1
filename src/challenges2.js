@@ -2,20 +2,19 @@
 function techList(tech, name) {
   // seu código aqui
   let array = [];
-  if (tech == array) {
+  let alfabetica = tech.sort();
+  if (tech.length === 0) {
     return 'Vazio!'
   } else {
-    for (let language in tech){
+    for (let language in alfabetica){
       array.push ({
-        tech: tech[language],
+        tech: alfabetica[language],
         name: name
       });
     };
     return array;
-  };
-  
+  }; 
 };
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas'))
 
 // Desafio 11
 function generatePhoneNumber() {
