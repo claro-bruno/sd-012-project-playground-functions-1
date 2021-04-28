@@ -19,35 +19,38 @@ function splitSentence(frase) {
 let marcador=0;
 let palavras=[];
 let ffinal=[];
+
   for(let index=0; index<frase.length; index+=1){
     if(frase[index]===' '){
         for(marcador; marcador<index; marcador+=1){
           palavras+=frase[marcador];
-        }
+        };
         ffinal.push(palavras);
         palavras=[];
         marcador=index+1;
-    }
+    };
 
-  }
+  };
+
+
   for(marcador;marcador<frase.length;marcador+=1){
     palavras+=frase[marcador];
-  }
+  };
      ffinal.push(palavras);
-
   return ffinal;
-  
-}
-console.log(splitSentence('Vamo que Vamo'));
+};
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  ultimo=array.length;
+  return array[ultimo-1] +','+ array[0]+'.'
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins,ties) {
+  return wins*3+ties;
+  
 }
 
 // Desafio 6
