@@ -97,9 +97,38 @@ function fizzBuzz(array) {
 } 
 
 // Desafio 9
-function encode() {
+function encode(frase) {
   // seu código aqui
+   let array = frase.split();
+
+  for (let index = 0; index < array.length; index += 1){
+    switch(true){
+      case 'a':
+        frase[index] = '1';
+        break;
+
+      case 'e':
+        frase[index] = '2';
+        break;
+
+      case 'i':
+        frase[index] = '3';
+        break;
+        
+      case 'o':
+        frase[index] = '4';
+        break;  
+
+      case 'u':
+        frase[index] = '5';
+        break;     
+    }
+  }
+  return array;
 }
+
+console.log(encode('hi there!'))
+
 function decode() {
   // seu código aqui
 }
