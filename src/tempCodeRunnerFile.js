@@ -1,7 +1,11 @@
-function splitSentence(string) {
-  return string.split ("");
-};
+function concatName(strings) {
+  let array = strings;
+  return (array[array.length -1]) + ', ' + (array[0]);
+}
 
-console.log(splitSentence("go Trybe"));
-console.log(splitSentence("vamo que vamo"));
-console.log(splitSentence("foguete"));
+strings = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log(concatName(strings));
+strings =  ['foguete', 'não', 'tem', 'ré'];
+console.log(concatName(strings));
+strings = ['captain', 'my', 'captain'];
+console.log(concatName(strings));

@@ -1,41 +1,46 @@
 // Desafio 1
 function compareTrue(parameter1, parameter2) {
-  if (parameter1 && parameter2 == true){
-    return(true);
+  if(parameter1 && parameter2 == true){
+    return (true);
   } else {
-    return(false);
-  };
-};
+    return (false);
+  }
+}
 
-//console.log(compareTrue(true, true));
-//console.log(compareTrue(true, false));
-//console.log(compareTrue(false, true));
-
+// console.log(compareTrue(true, true));
+// console.log(compareTrue(true, false));
+// console.log(compareTrue(false, true));
 
 // Desafio 2
 function calcArea(base, height) {
-  return((base*height)/2);
-};
+  return ((base * height) / 2);
+} 
 
-//console.log(calcArea(10, 50));
-//console.log(calcArea(5, 2));
-//console.log(calcArea(51, 1));
-
+// console.log(calcArea(10, 50));
+// console.log(calcArea(5, 2));
+// console.log(calcArea(51, 1));
 
 // Desafio 3
-function splitSentence(string) {
-  return string.split (" ");
-};
+function splitSentence (string) {
+  return string.split(' ');
+}
 
-//console.log(splitSentence("go Trybe"));
-//console.log(splitSentence("vamo que vamo"));
-//console.log(splitSentence("foguete"));
- 
+// console.log(splitSentence("go Trybe"));
+// console.log(splitSentence("vamo que vamo"));
+// console.log(splitSentence("foguete"));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(strings) {
+  let array = strings;
+  return (array[array.length -1]) + ', ' + (array[0]);
 }
+
+strings = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log(concatName(strings));
+strings =  ['foguete', 'não', 'tem', 'ré'];
+console.log(concatName(strings));
+strings = ['captain', 'my', 'captain'];
+console.log(concatName(strings));
 
 // Desafio 5
 function footballPoints() {
