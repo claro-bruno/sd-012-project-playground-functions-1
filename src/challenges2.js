@@ -56,11 +56,10 @@ function generatePhoneNumber(arrayNum) {
     }
   
 }
-console.log(generatePhoneNumber([1, 2, 9, 4, 5, 7, 7, 8, 9 ,0 ,1]));
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA,lineB,lineC) {
+if ((lineA<lineB+lineC)&&(lineA>Math.abs(lineB-lineC))&&(lineB<lineA+lineC)&&(lineB>Math.abs(lineA-lineC))&&(lineC<lineA+lineC)&&(lineC>Math.abs(lineA-lineC))) {return true;} else {return false;}
 }
 
 // Desafio 13
