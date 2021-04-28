@@ -18,8 +18,10 @@ return area;
 
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(primeiroValor) {
   // seu código aqui
+return primeiroValor.split(' ')
+
 }
 
 // Desafio 4
