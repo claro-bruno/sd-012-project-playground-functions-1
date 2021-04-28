@@ -1,9 +1,9 @@
 // Desafio 1
 function compareTrue(n1, n2) {
   if (n1.valueOf() === true && n2.valueOf() === true) {
-    return 'true';
+    return true;
   } else {
-    return 'false';
+    return false;
   }
 }
 console.log(compareTrue(true, false));
@@ -15,9 +15,21 @@ function calcArea(base, height) {
 console.log(calcArea(51, 1));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(frase) {
+  let array = [];
+  let string = '';
+  for (let index = 0; index < frase.length; index += 1){
+    if (frase[index] != ' '){
+      string = string + frase[index];
+    } else {
+      array.push (string);
+      string = '';
+    }
+  };
+  array.push (string);
+  return array;
 }
+console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName() {
