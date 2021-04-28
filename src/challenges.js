@@ -14,14 +14,16 @@ function compareTrue(value1, value2) {
 console.log(compareTrue(true, true));
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   /*
   receba valor de base
   receba valor de altura
   return calculo da area
   formula (base * altura) / 2
    */
+  return (base * height) / 2;
 }
+console.log(calcArea(51,1));
 
 // Desafio 3
 function splitSentence() {
