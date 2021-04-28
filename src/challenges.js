@@ -18,9 +18,9 @@ function splitSentence(phrase) {
 };
 
 // Desafio 4
-function concatName(phrase) {
-  let wordPhrase = phrase;
-  return  (wordPhrase[0]) + ' ' + (wordPhrase[wordPhrase.length - 1]);
+function concatName(Array) {
+  let phrase = Array;
+  return  (phrase[0]) + ', ' + (phrase[phrase.length - 1]);
 };
 
 // Desafio 5
