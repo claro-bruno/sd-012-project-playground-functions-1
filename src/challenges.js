@@ -83,12 +83,19 @@ function highestCount(numbers) {
   return repetitions;
 };
 
-console.log(highestCount(arrNumbers));
-
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
+  cat1 = cat1 < mouse ? mouse - cat1 : cat1 - mouse;
+  cat2 = cat2 < mouse ? mouse - cat2 : cat2 - mouse;
 
-}
+  if (cat1 > cat2) {
+    return cat2;
+  } else if (cat2 > cat1) {
+    return cat1;
+  } else {
+    return "os gatos trombam e o rato foge";
+  };
+};
 
 // Desafio 8
 function fizzBuzz() {
