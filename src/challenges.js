@@ -10,15 +10,16 @@ function compareTrue(bool1, bool2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  // seu código aqui
    return (base * height) / 2
 }
 // console.log(calcArea(10, 50));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(frase) {
+  
+  return  frase.split(" ");
 }
+// console.log(splitSentence("vamo que vamo"));
 
 // Desafio 4
 function concatName() {
