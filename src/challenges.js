@@ -1,19 +1,28 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
   if (valor1 === true && valor2 === true) {
-    return true
+    return true;
   }
   else {
-    return false
+    return false;
   }
 }
 
 console.log(compareTrue(true, true));
+console.log(compareTrue(false, false));
+console.log(compareTrue(false, true));
+console.log(compareTrue(true, false));
+
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  return (base * height / 2);
 }
+
+console.log(calcArea(10, 50));
+console.log(calcArea(5, 2));
+console.log(calcArea(51, 1));
+
 
 // Desafio 3
 function splitSentence() {
