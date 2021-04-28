@@ -3,12 +3,12 @@ function compareTrue(bool1,bool2) {
   // seu código aqui
  if (bool1 === true && bool2 === true ) {
    return true
-  };
+  }
   else {
     return false;
   }
 };
-console.log(compareTrue(true,true))
+console.log(compareTrue(true,false))
 // Desafio 2
 function calcArea() {
   // seu código aqui
