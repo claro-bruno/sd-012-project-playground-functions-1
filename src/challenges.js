@@ -1,22 +1,27 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-  
-}
+
+let bool1 = true;
+let bool2 = false;
+
+console.log(compareTrue(bool1, bool2));
+
+function compareTrue(bool1, bool2) {
+  if(bool1&&bool2){
+    return true;
+  }else{
+    return false;
+  };
+};
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
+
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
+  
 }
 
 // Desafio 5
