@@ -1,7 +1,7 @@
 // Desafio 1
-function compareTrue(cond1, cond2, cond3, cond4) {
+function compareTrue() {
   // seu código aqui
-  let result;
+  let result = false;
   
   if ((cond1 === cond2) && (cond3 === cond4) ) {
     result = true;
@@ -12,9 +12,11 @@ function compareTrue(cond1, cond2, cond3, cond4) {
   return result;
 }
 
+
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
+  return (base * height)/2;
 }
 
 // Desafio 3
