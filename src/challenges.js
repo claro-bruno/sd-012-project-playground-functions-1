@@ -1,7 +1,12 @@
 // Desafio 1
-function compareTrue() {
-
+function compareTrue(number1, number2) {
+  if (number1 > 10 && number2 > 10) {
+    return true;
+  } else {
+    return false
+  }
 }
+console.log(compareTrue(9, 11));
 
 // Desafio 2
 function calcArea() {
