@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(firstBoolean, secondBoolean) {
-  if ((firstBoolean && secondBoolean) === true ) {
+  if ((firstBoolean && secondBoolean) === true) {
     return true;
   } else {
     return false;
@@ -26,9 +26,6 @@ function concatName(namesArray) {
   let string = max +','+ min;
   return string;
 }
-console.log(concatName(['oi', 'marcos']));
-
-
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -54,11 +51,10 @@ function highestCount(numbArrey) {
   return count;
 }
 
-
 // Desafio 7
 function catAndMouse(cat1, cat2, mouse) {
-  cat1Distance = Math.abs(mouse - cat1);
-  cat2Distance = Math.abs(mouse - cat2);
+  let cat1Distance = Math.abs(mouse - cat1);
+  let cat2Distance = Math.abs(mouse - cat2);
   if(cat1Distance < cat2Distance){
    console.log('cat1');
   }else if (cat2Distance < cat1Distance){
