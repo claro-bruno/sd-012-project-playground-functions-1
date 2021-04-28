@@ -3,14 +3,14 @@ function techList(tech, name) {
   let teste = {
     tecnologia: tech,
     nome: name
-  }
+  };
 
   if (tech.length > 0) {
     for (let index = 0; index < tech.length; index += 1) {
       console.log(`${teste.tecnologia[index]}, ${teste.nome}`);
     }
   } else {
-    console.log('Vazio!')
+    console.log('Vazio!');
   }
 }
 
@@ -18,17 +18,17 @@ function techList(tech, name) {
 function generatePhoneNumber(arrayNumbers) {
   let numeroCorreto = true;
   let numero;
-  if (arrayNumbers.length == 11) {
+  if (arrayNumbers.length === 11) {
     for (let index = 0; index < arrayNumbers.length; index += 1) {
       let count = 0;
       numero = arrayNumbers[index];
       for (let number of arrayNumbers) {
-          if (number == arrayNumbers[index]) {
-            count+=1;
-          }
+        if (number === arrayNumbers[index]) {
+          count += 1;
+        }
       }
 
-      if ((arrayNumbers[index] > 9) || (arrayNumbers[index] < 0 || count >= 3)) {
+      if (arrayNumbers[index] > 9 || arrayNumbers[index] < 0 || count >= 3) {
         numeroCorreto = false;
         return 'não é possível gerar um número de telefone com esses valores';
       }
@@ -42,10 +42,16 @@ function generatePhoneNumber(arrayNumbers) {
   }
 }
 
-
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  if ((Math.abs(lineA + lineB) > lineC) && (Math.abs(lineB + lineC) > lineA) && (Math.abs(lineC + lineB) > lineA) && (Math.abs(lineA - lineB) < lineC) && (Math.abs(lineB - lineC) < lineA) && (Math.abs(lineC - lineB) < lineA)){
+  if (
+    Math.abs(lineA + lineB) > lineC &&
+    Math.abs(lineB + lineC) > lineA &&
+    Math.abs(lineC + lineB) > lineA &&
+    Math.abs(lineA - lineB) < lineC &&
+    Math.abs(lineB - lineC) < lineA &&
+    Math.abs(lineC - lineB) < lineA
+  ) {
     return true;
   } else {
     return false;
@@ -57,8 +63,8 @@ function hydrate(pedidos) {
   let soma = 0;
   pedidos = pedidos.toString().split('');
   for (let pedido of pedidos) {
-    pedido = (parseInt(pedido) || 0);
-      soma = soma + pedido;
+    pedido = parseInt(pedido) || 0;
+    soma = soma + pedido;
   }
 
   if (soma === 1) {
