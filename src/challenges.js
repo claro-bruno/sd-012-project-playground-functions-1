@@ -55,9 +55,21 @@ function highestCount(array) {
   return contagem;
 };
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+let foge = "os gatos trombam e o rato foge"
+function catAndMouse(mouse, cat1, cat2) {
+if (cat1 < cat2 && mouse < cat1){
+  cat1 = "cat1"
+  return cat1;
+}else if (cat2 < cat1 && mouse < cat2){
+  cat2 = "cat2"
+  return cat2;
+} else {
+  return foge;
 }
+}
+console.log(catAndMouse(0,3,2));
+console.log(catAndMouse(0,6,12));
+console.log(catAndMouse(0,2,2));
 
 // Desafio 8
 function fizzBuzz() {
