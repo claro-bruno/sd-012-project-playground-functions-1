@@ -18,7 +18,7 @@ function generatePhoneNumber(numbers) {
     return 'Array com tamanho incorreto.';
   }
   let string = numbers.join('');
-  numbers = numbers.sort(function (a, b){ return a - b });
+  numbers = numbers.sort(function (a, b) { return a - b; });
   if (numbers[0] < 0 || numbers[10] > 9) {
     return 'não é possível gerar um número de telefone com esses valores';
   }
@@ -54,7 +54,6 @@ function hydrate(string) {
   for (let index = 0; index < string.length; index += 1) {
     sum = Number(string[index]) + sum;
   }
-  console.log(string)
   if (sum === 1) {
     return `${sum} copo de água`;
   }
