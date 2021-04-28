@@ -1,5 +1,5 @@
 // Desafio 10
-function techList(array, string) {
+function techList(array, name) {
   // seu código aqui
   let habilidade = {};
   let habilidades = [];
@@ -8,21 +8,21 @@ function techList(array, string) {
   } else {
     for (let index = 0; index < array.length; index += 1) {
       habilidade.tech = array[index];
-      habilidade.name = string;
+      habilidade.name = name;
       habilidades.push(habilidade);
       habilidade = {};
     }
     return habilidades;
   }
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 console.log('==================================================');
 
 // Desafio 11
 function generatePhoneNumber(array) {
   // seu código aqui
-  let numero = '('
+  let numero = '(';
   let numerosRepetidos = false;
   let numerosInvalidos = false;
   for (let index = 0; index < array.length; index += 1) {
@@ -41,7 +41,7 @@ function generatePhoneNumber(array) {
       numerosInvalidos = true;
     }
   }
-  if (array.length != 11) {
+  if (array.length !== 11) {
     return 'Array com tamanho incorreto.';
   } else if (numerosRepetidos === true || numerosInvalidos === true) {
     return 'não é possível gerar um número de telefone com esses valores';
@@ -65,7 +65,9 @@ console.log('==================================================');
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-  if (lineA < (lineB + lineC) && lineB < (lineA + lineC) && lineC < (lineB + lineA) && lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineB - lineA)) {
+  if (lineA < (lineB + lineC) && lineB < (lineA + lineC) && lineC < (lineB + lineA)
+   && lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC)
+    && lineC > Math.abs(lineB - lineA)) {
     return true;
   } else {
     return false;
