@@ -28,20 +28,39 @@ function calcArea(base, height) {
 console.log(calcArea(base, height));
 
 
+
+
+
+// Desafio 3 - FALTA
+let string = 'go trybe';
+
+function splitSentence(string) {
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index] === ' '){
+      string += ',';
+    }
+    
+  }
+}
+
 */
 
 
-// Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
-
-/*
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+let arrayString = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+
+function concatName(arrayString) {
+
+  let finalElement = arrayString[arrayString.length-1] + ', ' + arrayString[0];
+
+  return finalElement;
+  
 }
+
+console.log(concatName(arrayString));
+
+/*
 
 // Desafio 5
 function footballPoints() {
