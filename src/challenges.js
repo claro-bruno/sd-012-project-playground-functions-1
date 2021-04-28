@@ -39,24 +39,25 @@ console.log(splitSentence('foguete'));
 */
 
 // Desafio 4
-function concatName(...chosenArray) {
+function concatName(chosenArray) {
   let response = '';
-  return response.concat(chosenArray[0][chosenArray.length - 1], ', ', chosenArray[0][0]);
+  return response.concat(chosenArray[chosenArray.length - 1], ', ', chosenArray[0]);
 }
+/*
 let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-console.log(concatName(...array));
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 array = ['foguete', 'não', 'tem', 'ré'];
-console.log(concatName(...array));
+console.log(concatName(array));
 array = ['captain', 'hello', 'my', 'captain'];
-console.log(concatName(...array));
-
+console.log(concatName(array));
+*/
 // Desafio 5
 function footballPoints(wins, ties) {
   return wins * 3 + ties * 1;
 }
 
 // Desafio 6
-function highestCount(...numbers) {
+function highestCount(numbers) {
   let singleNumbers = [];
   let timesNumberAppear = [];
   for (const number of numbers) {
