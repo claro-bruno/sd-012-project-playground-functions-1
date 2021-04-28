@@ -101,7 +101,24 @@ function decode(string) {
   string = string.replace(/5/g, 'u');
   return string;
 }
-console.log(decode('h3 th2r2!'));
+
+function techList(arrayTech, name) {
+  let arrayObjects = [];
+  if (arrayTech.length === 0) {
+    return 'Vazio!';
+  } else {
+    for (let index = 0; index < arrayTech.length; index += 1) {
+      arrayObjects[index] = 
+      {
+        tech: arrayTech[index],
+        name: name
+      }
+    }
+    return arrayObjects;
+  }
+}
+// console.table(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
+// console.log(techList([], "Lucas"));
 
 module.exports = {
   calcArea,
