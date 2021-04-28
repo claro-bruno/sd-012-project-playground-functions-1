@@ -2,21 +2,23 @@
 function compareTrue(boo1, boo2) {
   if (boo1 === true && boo2 === true) {
     return true;
-  } else if (boo1 === false || boo2 === false) {
+  } if (boo1 === false || boo2 === false) {
     return false;
-  };
-};
+  }
+}
+
+console.log(compareTrue(false, true))
 
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) / 2;
-};
+}
 
 // Desafio 3
 function splitSentence(string) {
-  let result = string.split(" ");
+  let result = string.split(' ');
   return result;
-};
+}
 
 // Desafio 4
 function concatName() {
