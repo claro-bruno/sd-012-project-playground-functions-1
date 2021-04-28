@@ -59,7 +59,6 @@ function hydrate(birita) {
     return `${qtdBirita} copo de água`;
   }
 }
-console.log(hydrate('1 cerveja, 2 vinhos, 3 cachaças'));
 
 module.exports = {
   generatePhoneNumber,
