@@ -20,13 +20,15 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-let string = "go Trybe";
+let string = "Vamo que vamo!";
 
 function splitSentence(string) {
-  for (index = 0; index < string.length; index += 1) {
-    if
-  }
+ let array = string.split(" ");
+
+ return array;
 }
+
+console.log(splitSentence(string));
 
 // Desafio 4
 function concatName() {
