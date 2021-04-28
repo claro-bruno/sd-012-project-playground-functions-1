@@ -1,8 +1,12 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(first, second) {
   // seu código aqui
-  sjs
-}
+  if(first === false && second === false) {
+    return false;
+  } else {
+    return true
+  };
+};
 
 // Desafio 2
 function calcArea() {
