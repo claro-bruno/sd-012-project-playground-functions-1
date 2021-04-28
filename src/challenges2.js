@@ -32,7 +32,7 @@ function generatePhoneNumber(numeros) {
         if (numeros[i] === numeros[j]) {
           count += 1;
           if (count > 2 || numeros[i] > 9 || numeros[i] < 0) {
-            return 'Não é possível gerar um número de telefone com esses valores';
+            return 'não é possível gerar um número de telefone com esses valores';
           }
         }
       }
