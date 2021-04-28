@@ -33,9 +33,17 @@ return string.split(' ');
 console.log(splitSentence('go Trybe'));
 
 // Desafio 4
-function concatName() {
+function concatName(array) {
   // seu código aqui
+  let firstName = array[0];
+  let lastName = array[(array.length -1)];
+  let result = lastName + ', ' + firstName;
+  return result;
 }
+//Teste de função
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints() {
