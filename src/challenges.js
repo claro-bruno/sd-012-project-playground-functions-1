@@ -1,12 +1,21 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui xablau
+function compareTrue(valor1, valor2) {
+  // seu código aqui
+  if (valor1 == true && valor2 == true) {
+    return true
+  } else {
+    return false
+  }
 }
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, heigth) {
   // seu código aqui
+  let result = ((base * heigth) / 2)
+  return result
 }
+
+console.log(calcArea(1, 51))
 
 // Desafio 3
 function splitSentence() {
