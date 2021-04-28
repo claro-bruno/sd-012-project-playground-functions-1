@@ -1,21 +1,22 @@
 // Desafio 1
 function compareTrue(boleano1, boleano2) {
-  if (boleano1 === true && boleano2 === true) 
-    return console.log('True');
-    else 
-    return console.log('False');
+  if (boleano1 === true && boleano2 === true){
+    return true;
+} else {
+    return false;
+}
 };
 // Desafio 2
 function calcArea(base, height) {
   let area = (base * height) / 2;
-  return console.log(area); 
+  return area; 
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  let msg = string.split(' ');
+  return msg;
 }
-
 // Desafio 4
 function concatName() {
   // seu código aqui
