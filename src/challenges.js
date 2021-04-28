@@ -24,11 +24,12 @@ console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName(array) {
-  let firstItem = array[0];
-  let lastItem = array[array.length - 1].split(' ');
+  let firstItem = array[0].split(' ');
+  let lastItem = array[array.length - 1].split(', ');
   let result = lastItem.concat(firstItem);
+  let resultAsString = result.join(', ');
 
-  return result.toString();
+  return resultAsString;
 }
 
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
