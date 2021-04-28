@@ -95,24 +95,18 @@ function encode(str) {
   let rtn = '';
   for (let index = 0; index < str.length; index += 1) {
     switch (str[index]) {
-      case 'a' :
-        rtn += '1';
-        break;
-      case 'e' :
-        rtn += '2';
-        break;
-      case 'i' :
-        rtn += '3';
-        break;
-      case 'o' :
-        rtn += '4';
-        break;
-      case 'u' :
-        rtn += '5';
-        break;
-      default:
-        rtn += str[index];
-        break;
+    case 'a' :
+      rtn += '1'; break;
+    case 'e' :
+      rtn += '2'; break;
+    case 'i' :
+      rtn += '3'; break;
+    case 'o' :
+      rtn += '4'; break;
+    case 'u' :
+      rtn += '5'; break;
+    default:
+      rtn += str[index]; break;
     }
   }
   return rtn;
@@ -122,24 +116,18 @@ function decode(str) {
   let rtn = '';
   for (let index = 0; index < str.length; index += 1) {
     switch (str[index]) {
-      case '1' :
-        rtn += 'a';
-        break;
-      case '2' :
-        rtn += 'e';
-        break;
-      case '3' :
-        rtn += 'i';
-        break;
-      case '4' :
-        rtn += 'o';
-        break;
-      case '5' :
-        rtn += 'u';
-        break;
-      default:
-        rtn += str[index];
-        break;
+    case '1' :
+      rtn += 'a'; break;
+    case '2' :
+      rtn += 'e'; break;
+    case '3' :
+      rtn += 'i'; break;
+    case '4' :
+      rtn += 'o'; break;
+    case '5' :
+      rtn += 'u'; break;
+    default:
+      rtn += str[index]; break;
     }
   }
   return rtn;
