@@ -15,14 +15,13 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence() {
   // seu código aqui
-}
+};
 
 // Desafio 4
 function concatName(array) {
-  let array2 = [];
-  array2.push(array[array.length - 1], array[0]);
-  return array2;
+  return array[array.length - 1] + ", " + array[0];
 };
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -32,7 +31,7 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount() {
   // seu código aqui
-}
+};
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -48,15 +47,15 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
-}
+};
 
 // Desafio 9
 function encode() {
   // seu código aqui
-}
+};
 function decode() {
   // seu código aqui
-}
+};
 
 module.exports = {
   calcArea,
