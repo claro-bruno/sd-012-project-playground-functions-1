@@ -19,14 +19,9 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-
 function concatName(string) {
-  if (array.length > 0) {
-    array = (array[array.length - 1]) + ', ' + (array[0])
-  }
- 
-  return array;
+  let nome = string.split(' ');
+  let primeiroNome = nome[0];
 }
 
 // Desafio 5
@@ -46,7 +41,7 @@ function catAndMouse(mouse, cat1, cat2) {
 } else if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
   return 'cat1'
 } else {
-    return 'Os gatos trombam e o rato foge'
+    return 'os gatos trombam e o rato foge'
 }
 }
 
