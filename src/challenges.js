@@ -28,10 +28,11 @@ return primeiroValor.split(' ');
 function concatName(sentenca) {
   // seu código aqui
   
-  let resultado = sentenca[sentenca.length-1] + ' ' + sentenca[0];
+  let resultado = sentenca[sentenca.length-1]+ ", " + sentenca[0];
 
-  return resultado.split(' ');
+  return resultado;
 }
+
 
 // Desafio 5
 function footballPoints(wins,ties,) {
@@ -75,7 +76,7 @@ if((cat1-mouse)<(cat2-mouse)){
 return 'os gatos tromam e o rato foge';
 
 }
-console.log(catAndMouse(5,8,7))
+
 
 // Desafio 8
 function fizzBuzz() {
