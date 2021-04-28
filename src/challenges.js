@@ -1,7 +1,14 @@
 // Desafio 1
 function compareTrue() {
-  // seu código aqui
-  Start
+  let idades = 16;
+  let cnh = 18;
+  
+  if (idade >= 18 && cnh >= 18) {
+    return true;
+  } else if (idade >= 16 && cnh >= 18) {
+    return false;
+  } else (idade >= 17 && cnh <= 17)
+  return false;
 }
 
 // Desafio 2
