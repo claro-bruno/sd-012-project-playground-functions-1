@@ -3,13 +3,12 @@ function compareTrue(bool1, bool2) {
   if (bool1 === true && bool2 === true) {
     return true;
   }
-  else {
-    return false;
-  };
+
+  return false;
 }
 
 // Desafio 2
-function calcArea(base,height) {
+function calcArea(base, height) {
   let area = (base * height) / 2;
 
   return area;
@@ -28,7 +27,7 @@ function concatName(array) {
   let lastItem = array[array.length - 1];
   let firstItem = array[0];
 
-  let result = lastItem + ', ' + firstItem;
+  let result = `${lastItem}, ${firstItem}`;
 
   return result;
 }
@@ -63,19 +62,6 @@ function highestCount(numbers) {
 }
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
-  let distCat1 = cat1 - mouse;
-  if (distCat1 < 0) {
-    distCat1 *= -1;
-  }
-  let distCat2 = cat2 - mouse;
-  if (distCat2 < 0) {
-    distCat2 *= -1;
-  }
-
-  return highestDistance(distCat1, distCat2);
-}
-
 function highestDistance(distCat1, distCat2) {
   let result;
 
@@ -90,27 +76,33 @@ function highestDistance(distCat1, distCat2) {
   return result;
 }
 
-console.log(catAndMouse(1,0,2));
+function catAndMouse(mouse, cat1, cat2) {
+  let distCat1 = cat1 - mouse;
+  if (distCat1 < 0) {
+    distCat1 *= -1;
+  }
+  let distCat2 = cat2 - mouse;
+  if (distCat2 < 0) {
+    distCat2 *= -1;
+  }
+
+  return highestDistance(distCat1, distCat2);
+}
 
 // Desafio 8
 function fizzBuzz(numbers) {
   let result = [];
-
   for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) {
       result.push('fizzBuzz');
-    }
-    else if (numbers[index] % 3 === 0) {
+    } else if (numbers[index] % 3 === 0) {
       result.push('fizz');
-    }
-    else if (numbers[index] % 5 === 0) {
+    } else if (numbers[index] % 5 === 0) {
       result.push('buzz');
-    }
-    else {
+    } else {
       result.push('bug!');
     }
   }
-
   return result;
 }
 
@@ -122,7 +114,7 @@ function encode(word) {
     i: 3,
     o: 4,
     u: 5,
-  }
+  };
 
   let arrayWord = word.split('');
   let result = '';
@@ -146,8 +138,7 @@ function decode(string) {
     3: 'i',
     4: 'o',
     5: 'u',
-  }
-
+  };
   let arrayString = string.split('');
   let result = '';
 
