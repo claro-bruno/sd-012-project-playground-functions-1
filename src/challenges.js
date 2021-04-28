@@ -1,24 +1,31 @@
 // Desafio 1
 function compareTrue(ParametroA, ParametroB) {
-  // seu código aqui
-  if(ParametroA === true && ParametroB === true){
-    return true;
-  }else{
-    return false;
-  }
+// seu código aqui
+if(ParametroA === true && ParametroB === true){
+  return true;
+}else{
+  return false;
+}
 }
 //Teste da função
 //let result = compareTrue(true,true)
 //console.log(result);
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base,heigth) {
+//seu código aqui
+//base = 51;
+//heigth = 1;
+calcArea = (base * heigth)/2;
+return calcArea;
 }
+//Teste de função
+//let result = calcArea(2,4);
+//console.log(result);
 
 // Desafio 3
 function splitSentence() {
-  // seu código aqui
+// seu código aqui
 }
 
 // Desafio 4
