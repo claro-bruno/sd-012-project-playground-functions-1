@@ -6,14 +6,14 @@ function compareTrue(bool1, bool2) {
   } else {
     comparador = false;
   } return comparador;
-} 
+}
 
 // Desafio 2
 function calcArea(base, height) {
   let area = (base * height) / 2;
+  
   return area;
 }
-
 
 // Desafio 3
 function splitSentence(string) {
@@ -22,16 +22,18 @@ function splitSentence(string) {
   return resultado;
 }
 
-
 // Desafio 4
 function concatName(arrayDeString) {
   let concatenada = (arrayDeString.length - 1, arrayDeString[0]);
+  
   return concatenada;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let total = (wins * 3) + (ties);
+  
+  return total;
 }
 
 // Desafio 6
