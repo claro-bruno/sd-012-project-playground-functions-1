@@ -1,8 +1,9 @@
 // Desafio 1
 function compareTrue() {
   // seu código aqui
-  let valor = 10
-  if (valor < 10 && valor > 4){
+  let valor = 0;
+  let valor2 = 1;
+  if (valor < 4 && valor2 > 4){
     console.log("true");
   }else{
     console.log('false');
