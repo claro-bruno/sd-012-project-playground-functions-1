@@ -103,17 +103,38 @@ function catAndMouse(mouse, cat1, cat2) {
     return "cat2";
   }
 }
-let mouse = 0, cat1 = 3, cat2 = 2;
-console.log(catAndMouse(mouse, cat1, cat2));
-let mouse2 = 0, cat12 = 6, cat22 = 12;
-console.log(catAndMouse(mouse2, cat12, cat22));
-let mouse3 = 0, cat13 = 6, cat23 = 6;
-console.log(catAndMouse(mouse3, cat13, cat23));
+// let mouse = 0, cat1 = 3, cat2 = 2;
+// console.log(catAndMouse(mouse, cat1, cat2));
+// let mouse2 = 0, cat12 = 6, cat22 = 12;
+// console.log(catAndMouse(mouse2, cat12, cat22));
+// let mouse3 = 0, cat13 = 6, cat23 = 6;
+// console.log(catAndMouse(mouse3, cat13, cat23));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let outputArray = [];
+  for(let number of array){
+    if(number % 3 === 0 && number % 5 === 0){
+      outputArray.push("fizzBuzz");
+    }
+    else if(number % 3 === 0){
+      outputArray.push("fizz");
+    }
+    else if(number % 5 === 0){
+      outputArray.push("buzz");
+    }
+    else{
+      outputArray.push("bug!");
+    }
+  }
+  return outputArray;
 }
+// let array =  [2, 15, 7, 9, 45];
+// console.log(fizzBuzz(array));
+// let array2 = [7, 9];
+// console.log(fizzBuzz(array2));
+// let array3 = [9, 25];
+// console.log(fizzBuzz(array3));
 
 // Desafio 9
 function encode() {
