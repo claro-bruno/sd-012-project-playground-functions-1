@@ -4,21 +4,17 @@ function techList(lista, name) {
   for (let index = 0; index < lista.length; index += 1) {
     let objeto = {
       tech: lista[index],
-      name: name
-    }
+      name: name,
+    };
     listaSaida.push(objeto);
   }
-   return listaSaida.sort(function(a, b) {
+  return listaSaida.sort(function (a, b) {
     if (a.tech < b.tech) {
       return -1;
-    } else {
-      return true;
     }
+    return true;
   });  
 }
-let listai = ["React", "Jest", "HTML", "CSS", "JavaScript"];
-let nome = "Lucas";
-console.log(techList(listai, nome));
 
 // Desafio 11
 function generatePhoneNumber() {
