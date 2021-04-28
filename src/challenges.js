@@ -69,6 +69,7 @@ function fizzBuzz(arrayNumbers) {
   let both = "fizzBuzz";
   let bug = "bug!";
   for (index = 0; index < arrayNumbers.length; index += 1) {
+    // fonte Number.isInteger: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
     if (Number.isInteger(arrayNumbers[index] / 3) === true && Number.isInteger(arrayNumbers[index] / 5) === true) {
       result.push(both);
     } else if (Number.isInteger(arrayNumbers[index] / 3) === true && Number.isInteger(arrayNumbers[index] / 5) === false) {
