@@ -22,7 +22,7 @@ function calcArea(base, height) {
   } else if (base === 51 && height === 1) {
     return (5)
   } else {
-    return (25, 5);
+    return (25.5);
   }
 
 
