@@ -57,9 +57,17 @@ function triangleCheck(lineA, lineB, lineC) {
 
 
 // Desafio 13
-function hydrate() {
+function hydrate(string) {
   // seu código aqui
-}
+  let arrayNumeros = (string.match(/\d+/g) || []).map(i=>Number(i));
+  soma = 0;
+  for (let numero in arrayNumeros) {
+    soma += arrayNumeros[numero]
+  }
+  return soma + ' copos de água'
+};
+
+// Função de retirar números de uma string encontrado em https://stackoverflow.com/questions/42532450/extract-number-from-string-javascript
 
 module.exports = {
   generatePhoneNumber,
@@ -67,3 +75,5 @@ module.exports = {
   hydrate,
   triangleCheck,
 };
+
+
