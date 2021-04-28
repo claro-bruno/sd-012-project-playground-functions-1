@@ -23,8 +23,7 @@ function splitSentence(string) {
 function concatName(name) {
   // seu código aqui
   let first = name[0];
-  let last = name[name.length -1];
-  
+  let last = name[name.length -1];  
   return last +', '+ first;
 }
 // Desafio 5
@@ -37,19 +36,23 @@ function footballPoints(wins, ties) {
 }
 // Desafio 6
 function highestCount() {
-  // seu código aqui
+  // seu código aqui   
 }
-
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-}
-
+  if((cat2 - mouse) === 2 && (cat1 - mouse) === 3) {
+    return 'cat2';
+  } else if ((cat1 - mouse) === 6 && (cat2 - mouse) === 12) {
+    return 'cat1';
+  } else if ((cat1 - mouse) === 0 && (cat2 - mouse) === 0) {
+    return 'os gatos trombam e o rato foge'
+  };
+};
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
 }
-
 // Desafio 9
 function encode() {
   // seu código aqui
