@@ -15,14 +15,10 @@ function calcArea(base, height) {
 function splitSentence(palavra) {
   return palavra.split(" ");
 }
-let nome = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 // Desafio 4
 function concatName(nome) {
-  let nome1=[];
-  nome1.push (nome[nome.length - 1]); 
-  nome1.push (nome[0]);
-  return nome1;
-}console.log (concatName(nome));
+  return (`${nome[nome.length - 1]}, ${nome[0]}`);
+  }
 
 // Desafio 5
 function footballPoints() {
