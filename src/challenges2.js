@@ -2,7 +2,7 @@
 function techList(arr, name) {
 
   let result = []
-
+  arr = arr.sort();
   if (arr.length == 0) {
     return 'Vazio';
   };
