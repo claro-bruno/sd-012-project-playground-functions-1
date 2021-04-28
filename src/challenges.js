@@ -36,15 +36,18 @@ function splitSentence(stringToSplit) {
 console.log(splitSentence('vamo que vamo'));
 
 // Desafio 4
-function concatName(arrayDeStrings) {
+function concatName(arrayOfStrings) {
   /*
   concatenacao +
   recebe = [array, de, strings]
   return "string" 'ÚLTIMO ITEM, PRIMEIRO ITEM' independente do tamanho da array
-  .length
-  VOLTAR AQUI DEPOIS
+  pop()
   */
+  let ultimoItem = arrayOfStrings.pop();
+  let primeiroItem = arrayOfStrings[0];
+  return ultimoItem + ", " + primeiroItem;
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -85,7 +88,6 @@ function highestCount(arrayOfNumbers) {
   return numberOfTimes;
 }
 console.log(highestCount([0, 0, 0]));
-
 
 // Desafio 7
 function catAndMouse() {
