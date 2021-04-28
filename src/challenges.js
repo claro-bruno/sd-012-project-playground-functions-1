@@ -52,11 +52,11 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat1Distance = Math.abs(cat1 - mouse);
   let cat2Distance = Math.abs(cat2 - mouse);
   let nearCat = '';
-  if (cat1Distance < cat2Distance){
+  if (cat1Distance < cat2Distance) {
     nearCat = 'cat1';
-  } else if (cat2Distance < cat1Distance){
+  } else if (cat2Distance < cat1Distance) {
     nearCat = 'cat2';
-  }else{
+  } else {
     nearCat = 'os gatos trombam e o rato foge';
   }
   return nearCat;
