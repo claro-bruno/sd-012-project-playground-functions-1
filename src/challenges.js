@@ -21,6 +21,14 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
+let string = 'go trybe';
+
+console.log(splitSentence(string));
+
+function splitSentence(string) {
+  let stringSplit = string.split(' ');
+  return stringSplit;
+}
 
 // Desafio 4
 function concatName() {}
