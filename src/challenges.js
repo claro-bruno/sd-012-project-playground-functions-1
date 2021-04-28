@@ -1,17 +1,19 @@
 // Desafio 1
 function compareTrue(booleano1, booleano2) {
   // seu código aqui
-  let resultado = ;
+  let resultado = null;
   if (booleano1 === true && booleano2 === true)
-    return resultado = true;
-  else return resultado = false;
+    {resultado = true}
+  else {resultado = false};
+  return resultado;
 };
+  
 
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
   let area = (base * height) / 2;
-  return console.log(area);
+  return area;
 };
 
 // Desafio 3
@@ -19,18 +21,25 @@ function splitSentence(string) {
   // seu código aqui
   let array1 = [string];
   let array2 = [];
-  for (let indice = 0; indice < array1.lenght; indice += 1) {
-    if (array1[indice] === ' ') {
-      break;
-    else array2.push(array1[indice])
-    };
+  let palavras = null;
+  for (let indice1 = 0; indice1 < array1.lenght; indice1 += 1) {
+    if (array1[indice1] != ' ') 
+       palavras= palavras + array1[indice1];
+    else{
+          array2.push(palavras);   
+          palavras = null;
+        };
   };
+  array2.push(palavras);
   return console.log(array2);
 };
+ splitSentence('Go Trybe');
+
 
 // Desafio 4
 function concatName() {
   // seu código aqui
+  
 }
 
 // Desafio 5
