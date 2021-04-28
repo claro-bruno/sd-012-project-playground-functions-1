@@ -72,14 +72,19 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(array) {
   let rtn = [];
   for (let index = 0; index < array.length; index += 1) {
-    if ((array[index] % 3 === 0) && (array[index] % 5 === 0)) {
-      rtn.push('fizzBuzz');
-    } else if ((array[index] % 3 === 0)) {
-      rtn.push('fizz');
-    } else if ((array[index] % 5 === 0)) {
-      rtn.push('buzz');
-    } else {
-      rtn.push('bug!');
+    switch (true) {
+      case ((array[index] % 3 === 0) && (array[index] % 5 === 0)) :
+        rtn.push('fizzBuzz');
+        break;
+      case (array[index] % 3 === 0) :
+        rtn.push('fizz');
+        break;
+      case (array[index] % 5 === 0) :
+        rtn.push('buzz');
+        break;
+      default :
+        rtn.push('bug!');
+        break; 
     }
   }
   return rtn;
