@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(num1, num2) {
-  if ((num1 + num2) >= 5 && num1 < num2) {
+  if (num1 < num2 && num2 > num1) {
     return true;
   }
 }
@@ -16,8 +16,11 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let resposta = []
+  resposta.push(array[array.length - 1])
+  resposta.push(array[0])
+  return resposta
 }
 
 // Desafio 5
