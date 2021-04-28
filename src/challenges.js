@@ -11,14 +11,15 @@ function compareTrue(booleano1, booleano2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  let resultado = (base * height)/2;
+  let resultado = (base * height) /2;
   return resultado;
 } console.log(calcArea(51, 1));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
+function splitSentence(string) {
+  let arrayDeStrings = string.split(" ",);
+  return arrayDeStrings;
+} console.log(splitSentence("foquete"));
 
 // Desafio 4
 function concatName() {
