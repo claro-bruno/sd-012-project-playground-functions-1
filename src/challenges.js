@@ -1,10 +1,10 @@
 // Desafio 1
 function compareTrue(boolean1, boolean2) {
-  let  value;
-  if (boolean1 && boolean2){
-      value = true;
-  } else{
-      value = false;
+  let value;
+  if (boolean1 && boolean2) {
+    value = true;
+  } else {
+    value = false;
   }
   return value;
 }
@@ -29,7 +29,6 @@ function concatName(arrayName) {
 // Desafio 5
 function footballPoints(wins, ties) {
   return (wins * 3) + ties;
-  
 }
 
 // Desafio 6
@@ -50,8 +49,18 @@ function highestCount(valores) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let valorDeRetorno;
+  let distanciaCat1 = Math.abs(mouse - cat1);
+  let distanciaCat2 = Math.abs(mouse - cat2);
+  if (distanciaCat1 < distanciaCat2) {
+     valorDeRetorno = 'cat1';
+  } else if (distanciaCat2 < distanciaCat1) {
+    valorDeRetorno = 'cat2';
+  } else {
+    valorDeRetorno = 'os gatos trombam e o rato foge';
+  }
+  return valorDeRetorno;
 }
 
 // Desafio 8
@@ -80,4 +89,4 @@ module.exports = {
   splitSentence,
 };
 
-console.log(highestCount([0, 0, 0]));
+//console.log(catAndMouse(3, 2, 4));
