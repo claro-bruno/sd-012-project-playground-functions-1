@@ -31,9 +31,12 @@ function concatName(string) {
   }
   return concatenacaoString;
 }
+
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+let total = 0;
+function footballPoints(wins, ties) {
+  total = (wins * 3) + (ties);
+  return total;
 }
 
 // Desafio 6
