@@ -66,14 +66,11 @@ function fizzBuzz(numbers) {
   for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) {
       strings.push('fizzBuzz');
-    }
-    else if (numbers[index] % 3 === 0 && numbers[index] % 5 !== 0) {
+    } else if (numbers[index] % 3 === 0 && numbers[index] % 5 !== 0) {
       strings.push('fizz');
-    }
-    else if (numbers[index] % 3 !== 0 && numbers[index] % 5 === 0) {
+    } else if (numbers[index] % 3 !== 0 && numbers[index] % 5 === 0) {
       strings.push('buzz');
-    }
-    else if (numbers[index] % 3 !== 0 && numbers[index] % 5 !== 0) {
+    } else if (numbers[index] % 3 !== 0 && numbers[index] % 5 !== 0) {
       strings.push('bug!');
     }
   }
