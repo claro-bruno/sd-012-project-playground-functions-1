@@ -24,9 +24,13 @@ return calcArea;
 //console.log(result);
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(string) {
 // seu código aqui
+
+return string.split(' ');
 }
+//Teste de função
+console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName() {
