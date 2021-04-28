@@ -51,8 +51,10 @@ return (array3);
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  let Points = wins * 3 + ties;
+  return Points;
 }
 
 // Desafio 6
