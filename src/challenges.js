@@ -3,6 +3,8 @@ function compareTrue() {
   // seu código aqui
 }
 
+//Starting repository
+
 // Desafio 2
 function calcArea() {
   // seu código aqui
