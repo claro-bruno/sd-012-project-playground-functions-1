@@ -65,21 +65,22 @@ function highestCount(arrayNumeros) {
   }
   return vezes;
 }
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
-function catAndMouse(cat1, cat2) {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let resultado = '';
-  if (cat1 > cat2) {
-    resultado = 'cat2';
-  } else if (cat2 > cat1) {
-    resultado = 'cat1';
-  } else if (cat1 === cat2) {
-    resultado = 'os gatos trombam e o rato foge';
+  let distanciaCat1 = mouse - cat1;
+  let distanciaCat2 = mouse - cat2;
+
+  if (distanciaCat1 > distanciaCat2) {
+    return 'cat2';
+  } else if (distanciaCat2 > distanciaCat1) {
+    return 'cat1';
+  } else if (distanciaCat1 === distanciaCat2) {
+    return 'os gatos trombam e o rato foge';
   }
-  return resultado;
 }
+console.log(catAndMouse(0, 3, 2));
 
 // Desafio 8
 function fizzBuzz() {
