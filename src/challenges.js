@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(parametro1, parametro2) {
-  if (parametro1 === true && parametro2 === true){ 
+  if (parametro1 === true && parametro2 === true) { 
     return true;
   } else {
     return false;
@@ -53,14 +53,14 @@ function compareTrue(parametro1, parametro2) {
 // }
 
 module.exports = {
-  calcArea,
-  catAndMouse,
+  // calcArea,
+  // catAndMouse,
   compareTrue,
-  concatName,
-  decode,
-  encode,
-  fizzBuzz,
-  footballPoints,
-  highestCount,
-  splitSentence,
+  // concatName,
+  // decode,
+  // encode,
+  // fizzBuzz,
+  // footballPoints,
+  // highestCount,
+  // splitSentence,
 };
