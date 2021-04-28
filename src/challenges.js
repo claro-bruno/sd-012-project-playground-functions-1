@@ -143,7 +143,7 @@ function encode(string) {
   return newStr;
 }
 
-function decode() {
+function decode(string) {
   let newStr = '';
   for (let index = 0; index < string.length; index += 1) {
     if (string[index] === '1') {
