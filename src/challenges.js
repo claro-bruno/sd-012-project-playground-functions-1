@@ -46,7 +46,7 @@ function highestCount(arraynumbers) {
     for(let index =  0; index < arraynumbers.length; index++){
       if(arraynumbers[index] > maior){
         maior = arraynumbers[index];
-        console.log(maior);
+        // console.log(maior);
       }
     }
 //Verifica quantas vezes o maior número de repete dentro de uma array.
@@ -55,11 +55,11 @@ function highestCount(arraynumbers) {
         if(maior == arraynumbers[index2]){
         contador  ++;
         // return contador;
-        console.log(contador);
       }
     }
+    return contador;
 }
-console.log(highestCount([2, 3, 5, 6, 9, 9, 9,]));
+// console.log(highestCount([2, 3, 5, 6, 9, 9, 9,]));
 
 
 
