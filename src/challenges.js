@@ -19,20 +19,20 @@ function calcArea(base, height) {
 function splitSentence(frase) {
   // seu código aqui
   let words = [];
-  let word = "";
+  let word = '';
 
-  for (let index = 0; index < (frase.length); index += 1){
-    if(frase[index] != " "){
+  for (let index = 0; index < (frase.length); index += 1) {
+    if (frase[index] !== ' ') {
       word += frase[index];
-    }else{
+    } else {
       words.push(word);
-      word = "";
+      word = '';
     }
   }
 
-  if(word != ""){
+  if (word !== '') {
     words.push(word);
-    word = "";
+    word = '';
   }
 
   return words;
