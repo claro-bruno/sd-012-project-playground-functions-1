@@ -40,6 +40,8 @@ function generatePhoneNumber(PhoneNumber) {
   };
 };
 
+
+
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
@@ -59,14 +61,39 @@ function triangleCheck(lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(string) {
   // seu código aqui
-  let arrayNumeros = (string.match(/\d+/g));
-  let numeros = [];
-  for (numero in arrayNumeros) {
-    numeros.push(parseInt(arrayNumeros[numero]))
-  }
-  soma = 0;
-  for (let numero in numeros) {
-    soma += numeros[numero]
+  let soma = 0
+  for (let index in string){
+    switch (string[index]){
+      case '1':
+        soma += 1;
+        break;
+      case '2':
+        soma += 2;
+        break;
+      case '3':
+        soma += 3;
+        break;
+      case '4':
+        soma += 4;
+        break;
+      case '5':
+        soma += 5;
+        break;
+      case '6':
+        soma += 6;
+        break;
+      case '7':
+        soma += 7;
+        break;
+      case '8':
+        soma += 8;
+        break;
+      case '9':
+        soma += 9;
+        break;
+      default:
+        soma = soma; 
+    }
   }
   if (soma === 1){
     return soma + ' copo de água'
@@ -75,7 +102,6 @@ function hydrate(string) {
   };
 };
 
-// console.log(hydrate("1 cachaça"))
 
 // let s = "1 banana + 1 pineapple + 3 oranges";
 // let result = (s.match(/\d+/g));
