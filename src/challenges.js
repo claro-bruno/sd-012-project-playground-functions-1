@@ -27,18 +27,29 @@ function concatName(array) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-
+  pontos = wins * 3 + ties;
+  return pontos;
 }
 
 // Desafio 6
 function highestCount(numbers) {
-
+  let repeatTimes = 0;
+  let highestNumber = 0;
+  for (index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] > highestNumber) {
+      highestNumber = numbers[index];
+    }
+  }
+  for (index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] === highestNumber) {
+        repeatTimes += 1;
+    }
   }
   return repeatTimes
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
 
 }
 
