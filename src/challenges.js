@@ -22,7 +22,7 @@ function splitSentence(string) {
 function concatName(array) {
   let primeiroNome = array[0];
   let ultimoNome = array[array.length -1];
-  let nome = primeiroNome + ', ' + ultimoNome;
+  let nome = ultimoNome + ', ' + primeiroNome;
 
   return nome;
 }
@@ -33,9 +33,21 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  let highestNumber = array[0];
+  let repeat = 0;
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] >= highestNumber) {
+      highestNumber = array[index];
+      repeat += 1;
+    }
+  }  
+  return repeat
 }
+
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]))
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
+console.log(highestCount([0, 0, 0]))
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
