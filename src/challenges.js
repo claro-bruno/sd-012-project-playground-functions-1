@@ -56,9 +56,8 @@ function catAndMouse(posMouse, posCat1, posCat2) {
     return 'cat1';
   } else if (distance2 < distance1) {
     return 'cat2';
-  } else if (distance1 == distance2) {
-    return 'os gatos trombaram e o rato foge';
   }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
