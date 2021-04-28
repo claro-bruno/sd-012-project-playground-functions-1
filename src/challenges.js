@@ -1,14 +1,12 @@
 // Desafio 1
-function compareTrue(num1, num2) {
+function compareTrue(param1, param2) {
   // seu código aqui
-  if (num1 > 0 && num2 <= 50) {
+  if (param1 === true && param2 === true) {
     return 'true';
   } else {
     return 'false';
   };
 };
-console.log(compareTrue(5, 6));
-console.log(compareTrue(70, 60));
 
 // Desafio 2
 function calcArea() {
