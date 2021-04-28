@@ -118,12 +118,46 @@ console.log(fizzBuzz([2, 15, 7, 9, 45]));
 console.log('==================================================');
 
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
+  let referencia = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  }
+  let encoded = '';
+  for (let index in string) {
+    if (string[index] === 'a' || string[index] === 'e' || string[index] === 'i' || string[index] === 'o' || string[index] === 'u') {
+      encoded = encoded + referencia[string[index]];
+    } else {
+      encoded = encoded + string[index];
+    }
+  }
+  return encoded;
 }
-function decode() {
+console.log(encode('hi there!'));
+function decode(string) {
   // seu código aqui
+  let referencia = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  }
+  let decoded = '';
+  for (let index in string) {
+    if (string[index] === '1' || string[index] === '2' || string[index] === '3' || string[index] === '4' || string[index] === '5') {
+      decoded = decoded + referencia[string[index]];
+    } else {
+      decoded = decoded + string[index];
+    }
+  }
+  return decoded;
 }
+console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
