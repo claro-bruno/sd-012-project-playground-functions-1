@@ -1,17 +1,16 @@
 // Desafio 1
 function compareTrue(num1, num2) {
-    if(num1 === true && num2 === true){
-      return true;
-    }
-    else{
-      return false;
-    };
-};
-console.log(compareTrue(true, true));
+  if (num1 === true && num2 === true) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  return (base * height) / 2;
 }
 
 // Desafio 3
