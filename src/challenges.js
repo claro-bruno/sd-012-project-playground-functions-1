@@ -19,7 +19,7 @@ function splitSentence(phrase) {
 
 // Desafio 4
 function concatName(phrase) {
-  let wordPhrase = phrase.split(' ');
+  let wordPhrase = phrase
   return  (wordPhrase[0]) + ' ' + (wordPhrase[wordPhrase.length - 1])
 }
 
