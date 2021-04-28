@@ -76,17 +76,20 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(numbers) {
-  for(let index = 0; index < numbers.length; index += 1) {
-    if(numbers[index] / 3 === 0) {
-      return 'fizz';
-    } else if (numbers[index] / 5 === 0) {
-      return 'buzz';
-    } else if (numbers[index] /3 === 0 && numbers[index] / 5 === 0) {
-      return 'fizzBuzz';
-    } else {
-      return 'bug!';
+  let result = 0;
+
+  for(let index = 0; index < numbers.length; index += 1) {  
+    if(numbers[index] % 3 == 0) {
+      result.push('fizz');
+    } else if (numbers[index] % 5 == 0) {
+      result.push('buzz');
+    } else if (numbers[index] % 3 == 0 && numbers[index] % 5 == 0) {
+      result.push('fizzBuzz');
+    } else if (numbers[index] % 3 != 0 && numbers[index] % 5 != 0 {
+      result.push('bug!');
     };
   };
+  return result;
 };
 
 console.log(fizzBuzz(2,15,7,9,45));
