@@ -1,7 +1,11 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(varBol1, varBol2) {
   // seu código aqui
-  
+  let compare = false;
+  if (varBol1 === true && varBol2 === true) {
+    compare = true;
+  }
+  return compare;
 }
 
 // Desafio 2
