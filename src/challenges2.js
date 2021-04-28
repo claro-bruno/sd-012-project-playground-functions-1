@@ -1,18 +1,19 @@
 // Desafio 10
 function techList(arr, name) {
 
-  let obj = [];
-
+  let result = []
   arr.forEach(element => {
-    obj.push({
+    const obj = {
       tech: element,
       name: name
-    });
+    };
 
+    result.push(obj);
   });
 
-  return obj;
+  return result;
 }
+
 
 // Desafio 11
 function generatePhoneNumber() {
