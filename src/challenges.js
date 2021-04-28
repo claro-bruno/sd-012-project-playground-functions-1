@@ -31,7 +31,7 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(frase1) {
-  let frase1 = [];
+  
   let resultado = frase1[0] + frase1[frase1.length-1];
   return resultado;
 }
@@ -62,7 +62,7 @@ function highestCount(numeros) {
 
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
+  
 }
 
 // Desafio 8
