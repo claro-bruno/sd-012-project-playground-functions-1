@@ -1,7 +1,14 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui //
+function compareTrue(numero1, numero2, numero3) {
+  if (numero1 === numero2 && numero3) {
+    return (true);
+  } else {
+    return (false)
+  }
+
 }
+//console.log(compareTrue(2, 2, 2));
+
 
 // Desafio 2
 function calcArea() {
@@ -42,6 +49,7 @@ function fizzBuzz() {
 function encode() {
   // seu código aqui
 }
+
 function decode() {
   // seu código aqui
 }
