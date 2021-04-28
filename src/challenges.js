@@ -26,14 +26,26 @@ let sentence = 'go Tybe';
 console.log(splitSentence(sentence));
 
 // Desafio 4
-function concatName() {
+function concatName(arr) {
   // seu código aqui
+  let last = arr.slice(-1)[0];
+  let first = arr[0];
+  let together = [];
+  together.push(last + first);
+  return together;
 }
+names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log(concatName(names));
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  
+  let points = (wins*3) + ties;
+  return points;
 }
+console.log(footballPoints(1, 2))
+
 
 // Desafio 6
 function highestCount() {
