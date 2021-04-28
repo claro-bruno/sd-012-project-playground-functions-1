@@ -2,6 +2,11 @@
 function techList(arr, name) {
 
   let result = []
+
+  if (arr.length == 0) {
+    return 'Vazio';
+  };
+
   arr.forEach(element => {
     function CreateObj(element, name) {
       return {
