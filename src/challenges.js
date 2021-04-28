@@ -50,9 +50,18 @@ function footballPoints(wins,ties,) {
 
 
 // Desafio 6
-function highestCount() {
+function highestCount(vetor) {
   // seu código aqui
+
+  let numMaior = Math.max(...vetor);
+  let count = 0;
+for(let index = 0; index < vetor.length;index+=1){
+  if(numMaior == vetor[index])
+    count+=1
 }
+return count
+}
+
 
 // Desafio 7
 function catAndMouse() {
