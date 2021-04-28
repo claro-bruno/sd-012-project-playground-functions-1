@@ -11,18 +11,19 @@ function compareTrue(value1, value2) {
 
 // Desafio 2
 
-function calcArea(base, height) {
-  return ( base * height ) / 2
-}
+function calcArea(base, height){
+  return( base * height ) / 2;
+};
 // console.log(calcArea(10, 50));
 // console.log(calcArea(5, 2));
 // console.log(calcArea(51, 1));
 
 
 // Desafio 3
-function splitSentence(string) {
-  return string.split (' ');
-}
+
+function splitSentence(string){
+  return string.split(' ');
+};
 // console.log(splitSentence('go trybe'))
 
 // for (index = 0; index < string.length; index += 1)
