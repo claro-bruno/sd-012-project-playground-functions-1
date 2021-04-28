@@ -74,8 +74,6 @@ function triangleCheck(lineA, lineB, lineC) {
   return false;
 }
 
-console.log(triangleCheck(10,14,8));
-
 // Desafio 13
 function hydrate(string) {
   let array = string.match(/[0-9]+/g);
@@ -84,8 +82,16 @@ function hydrate(string) {
     let indexToNumber = Number(array[indexArray]);
     counter += indexToNumber;
   }
-  return `${counter} +  copos de água`;
+  if (counter > 1) {
+    result = `${counter} copos de água`;
+  }
+  else {
+    result = `1 copo de água`;
+  }
+  return result;
 }
+
+console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
