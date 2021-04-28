@@ -1,19 +1,17 @@
 // Desafio 1
-let numbers = [4, 8, 6, 4, 5];
+let numbers = [4, 8, 6, 4, 6];
 
 function compareTrue(parametro) {
   let check = false;
   for (let key in numbers) {
     if (parametro[key] % 2 === 0 && parametro[key] > 2) {
       check = true;
-      console.log(check)
     } else {
       check = false;
-      console.log(check)
     }
   };
   return check;
-};
+}
 console.log(compareTrue(numbers));
 
 // Desafio 2
