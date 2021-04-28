@@ -23,7 +23,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-  let arrayDeStrings = ('"' + array[array.length -1] + ',' + ' ' + array[0] + '"');
+  let arrayDeStrings = (array[array.length -1] + ',' + ' ' + array[0]);
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] === arrayDeStrings) {
       arrayDeStrings = array[index];
