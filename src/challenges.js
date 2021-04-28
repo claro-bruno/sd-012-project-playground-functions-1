@@ -7,11 +7,12 @@ function compareTrue(num1, num2) {
   return check;
 }
 
-
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+    return (base * height) / 2
 }
+
+console.log(calcArea(5, 10))
 
 // Desafio 3
 function splitSentence() {
