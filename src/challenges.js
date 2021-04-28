@@ -3,7 +3,7 @@ function compareTrue(a, b, c) {
   if (a < b && b < c) {
    true
   } else {
-   false
+   return false
   }
 }
 compareTrue();
