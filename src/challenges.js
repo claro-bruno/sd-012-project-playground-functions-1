@@ -22,22 +22,16 @@ calcArea(base, height)
 
 // Desafio 3
 function splitSentence(phrase) {
-  if (phrase === 'go Trybe'){
-    return ["go", "Trybe"];
+  let result = phrase.split(' ');
+  return result;
   }
-  else if (phrase === 'vamo que vamo'){
-    return ["vamo", "que", "vamo"];
-  }
-  else if (phrase === 'foguete'){
-    return ["foguete"];
-  }
-}
+ 
 
 (splitSentence('vamo que vamo'))
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
+  
 }
 
 // Desafio 5
