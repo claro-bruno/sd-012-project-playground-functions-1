@@ -5,7 +5,7 @@ function compareTrue(booleano1, booleano2) {
     return console.log('true');
   else return console.log('false');
 }
-
+compareTrue(false,true); compareTrue(false,false); compareTrue(true,true);
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
