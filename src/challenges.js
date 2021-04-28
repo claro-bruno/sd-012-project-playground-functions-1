@@ -1,9 +1,6 @@
 // Desafio 1
-function compareTrue(a, b, c) {
-  if (a < b && b < c) {
-  } else {
-    return false;
-  }
+function compareTrue() {
+
 }
 
 // Desafio 2
@@ -40,35 +37,20 @@ function catAndMouse() {
 
 // Desafio 8
 function fizzBuzz() {
-  let num = [];
-
-for (index = 0; index <= num.length; i+=1) {
-
-if  (i % 3 === 0) {
-  console.log("fizz");
-  
-} else if (index % 5 === 0) {
-    console.log("buzz");
-    
-} else if (index % 3 === 0 && i % 5 === 0) {
-    console.log("fizzBuzz");
-    
-    } else if (index % 3 !== 0 && i % 5 !== 0) {
-      
-   console.log("bug");
-   
-   } else {
-     console.log(i);
-     }
-     return fizzBuzz;
+  // seu código aqui
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  return string.replace(/a/g, '1')
+  return string.replace(/e/g, '2')
+  return string.replace(/i/g, '3')
+  return string.replace(/o/g, '4')
+  return string.replace(/u/g, '5')
 }
+
 function decode() {
-  // seu código aqui
+  
 }
 
 module.exports = {
