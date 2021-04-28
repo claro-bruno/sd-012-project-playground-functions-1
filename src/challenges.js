@@ -41,9 +41,9 @@ function highestCount() {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if ((cat2 - mouse) === 2 && (cat1 - mouse) === 3) {
+  if ((mouse - cat2) === 2 && (cat1 - mouse) === 3) {
     return 'cat2';
-  } else if ((cat1 - mouse) === 6 && (cat2 - mouse) === 12) {
+  } else if ((mouse - cat1) === 6 && (cat2 - mouse) === 12) {
     return 'cat1';
   } else if ((mouse - cat1) === 1 && (cat2 - mouse) === 1) {
     return 'os gatos trombam e o rato foge'
