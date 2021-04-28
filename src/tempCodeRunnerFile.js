@@ -1,22 +1,16 @@
-let numberArray4 = [2, 15, 7, 9, 45];
-let numberArray5 = [7, 9];
-let numberArray6 = [9, 25];
+let numberArray1 = [9, 1, 2, 3, 9, 5, 7];
+let numberArray2 = [0, 4, 4, 4, 9, 2, 1];
+let numberArray3 = [0, 0, 0];
 
-function fizzBuzz(numberArray) {
-  let stringArray = [];
-  for (let index in numberArray) {
-    if (numberArray[index] % 3 === 0 && numberArray[index] % 5 !== 0) {
-      stringArray.push("fizz");
-    } else if (numberArray[index] % 5 === 0 && numberArray[index] % 3 !== 0) {
-      stringArray.push("buzz");
-    } else if (numberArray[index] % 3 === 0 && numberArray[index] % 5 === 0) {
-      stringArray.push("fizzbuzz");
-    } else {
-      stringArray.push("bug!");
+function getHighestNumberFromArray(array) {
+  let highestNumber = 0;
+  for (let index in array) {
+    if (array[index] > highestNumber) {
+      highestNumber = array[index];
     }
   }
-  return stringArray;
+  return highestNumber;
 }
-console.log(fizzBuzz(numberArray4));
-console.log(fizzBuzz(numberArray5));
-console.log(fizzBuzz(numberArray6));
+console.log(getHighestNumberFromArray(numberArray1));
+console.log(getHighestNumberFromArray(numberArray2));
+console.log(getHighestNumberFromArray(numberArray3));
