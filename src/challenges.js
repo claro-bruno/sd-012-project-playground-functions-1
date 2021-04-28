@@ -56,7 +56,6 @@ function footballPoints(win, tie) {
 }
 
 // Desafio 6
-highestCount(arr);
 
 function highestCount(arr) {
   let highNum = highestNum(arr);
