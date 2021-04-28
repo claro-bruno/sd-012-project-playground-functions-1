@@ -23,7 +23,7 @@ function splitSentence(stringToSplit) {
 function concatName(namesArray) {
   let max = namesArray[namesArray.length - 1];
   let min = namesArray[0];
-  let string = max +', '+ min;
+  let string = `${max}, ${min}`;
   return string;
 }
 
