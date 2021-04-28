@@ -100,12 +100,68 @@ function fizzBuzz(vetor) {
 }
 
 // Desafio 9
-function encode() {
+function encode(vogais) {
   // seu código aqui
+  let resultado= [];
+  for(let each in vogais){
+    
+
+    
+      switch(vogais.charAt(each)){
+        case 'a':
+          resultado.push('1');
+          break;
+        case 'e':
+          resultado.push('2');;
+          break;
+        case 'i':
+          resultado.push('3');;
+          break;
+        case 'o':
+          resultado.push('4');;
+          break;
+          case 'u':
+            resultado.push('5');;
+            break;
+        default:
+          resultado.push(vogais.charAt(each));;
+      }
+    
+   } 
+  return resultado.join('');
 }
-function decode() {
+let para = 'hi there';
+console.log(encode(para))
+function decode(letras) {
   // seu código aqui
+  let resultado= [];
+  for(let each in letras){
+    
+      switch(letras.charAt(each)){
+        case '1':
+          resultado.push('a');
+          break;
+        case '2':
+          resultado.push('e');;
+          break;
+        case '3':
+          resultado.push('i');;
+          break;
+        case '4':
+          resultado.push('o');;
+          break;
+          case '5':
+            resultado.push('u');;
+            break;
+        default:
+          resultado.push(letras.charAt(each));;
+      }
+    
+   } 
+  return resultado.join('');
 }
+let param = 'h3 th2r2';
+console.log(decode(param))
 
 module.exports = {
   calcArea,
