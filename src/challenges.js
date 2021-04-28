@@ -34,9 +34,18 @@ console.log(splitSentence(string2));
 console.log(splitSentence(string3));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+let stringsArray1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+let stringsArray2 = ['foguete', 'não', 'tem', 'ré'];
+let stringsArray3 = ['captain', 'my', 'captain'];
+
+function concatName(array) {
+  let firstName = array[0];
+  let lastName = array[(array.length) - 1];
+  return `${lastName}, ${firstName}`;
 }
+console.log(concatName(stringsArray1));
+console.log(concatName(stringsArray2));
+console.log(concatName(stringsArray3));
 
 // Desafio 5
 function footballPoints() {
