@@ -11,8 +11,21 @@ function calcArea(baseTriangulo,aulturaTriangulo) {
 // Desafio 3
 function splitSentence(frase) {
   let arrayStrings=[];
-  for (index=0;index<frase.lenght;index+=1)
+  let palavra="";
+  for (index=0;index<(frase.length);index+=1){
+    if (frase[index]!=" ") {
+      palavra+=frase[index];
+    } else {
+      arrayStrings.push(palavra);
+      palavra="";
+    }
+    if ((index==frase.length-1)&&(palavra!=" ")){
+      arrayStrings.push(palavra);
+    }
+  }
+  return arrayStrings
 }
+console.log(splitSentence("foguete"));
 
 // Desafio 4
 function concatName(listaNomes) {
