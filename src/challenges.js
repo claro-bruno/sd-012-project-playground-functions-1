@@ -11,18 +11,13 @@ function compareTrue(numero1, numero2) {
 }
 
 // Desafio 2
+
 let base = 10;
 let height = 50;
 
 function calcArea(base, height) {
-  (base * height) / 2;
-  if (base == 10 && height == 50) {
-    return (50);
-  } else if (base == 51 && height == 1) {
-    return (5);
-  } else {
-    return (25.5);
-  }
+  return (base * height) / 2;
+
 
 
 }
