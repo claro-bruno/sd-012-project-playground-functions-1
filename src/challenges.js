@@ -21,6 +21,7 @@ function splitSentence(string) {
 function concatName(arrayDeStrings) {
   let concatArray = [];
   concatArray.push(arrayDeStrings[arrayDeStrings.length - 1], arrayDeStrings[0]);
+  concatArray = concatArray.join(",");
   return concatArray;
 }
 
