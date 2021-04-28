@@ -19,7 +19,6 @@ function splitSentence(frase) {
  let palavras = frase.split(" ")
  return palavras
 }
-console.log(splitSentence("go trybe"))
 
 // Desafio 4
 function concatName() {
@@ -27,8 +26,10 @@ function concatName() {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let resultado = (3 * wins) + ties;
+
+  return resultado
 }
 
 // Desafio 6
