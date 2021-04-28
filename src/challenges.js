@@ -1,7 +1,7 @@
 // Desafio 1
 function compareTrue(value, value2) {
   // seu código aqui
-  if (value === true && value2 === true){
+  if (value === true && value2 === true) {
     return true;
   } else {
     return false;
@@ -30,9 +30,9 @@ function concatName(nome) {
   // seu código aqui
   firstName = nome[0];
   lastName = nome[nome.length -1];
-  return lastName.concat(' ', firstName);
+  return lastName.concat(', ', firstName);;
 };
-console.log(concatName(['captain', 'my', 'captain']));
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints() {
