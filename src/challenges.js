@@ -74,14 +74,18 @@ function fizzBuzz(array) {
   for (let index = 0; index < array.length; index += 1) {
     if ((array[index] % 3 === 0) && (array[index] % 5 === 0)) {
       rtn.push('fizzBuzz');
-    } else if ((array[index] % 3 === 0)) {
-      rtn.push('fizz');
-    } else if ((array[index] % 5 === 0)) {
-      rtn.push('buzz');
-    } else {
-      rtn.push('bug!');
+      break;
     }
-  }
+    if ((array[index] % 3 === 0)) {
+      rtn.push('fizz');
+      break;
+    }
+    if ((array[index] % 5 === 0)) {
+      rtn.push('buzz');
+      break;
+    }
+  rtn.push('bug!');
+}
   return rtn;
 }
 
