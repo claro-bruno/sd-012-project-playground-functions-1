@@ -15,15 +15,15 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(stringToSplit) {
-  let array = string.split(' ');
+  let array = stringToSplit.split(' ');
   return array;
 }
 
 // Desafio 4
 function concatName(namesArray) {
-  let max = array[array.length - 1];
-  let min = array[0];
-  let string = max + ',' + min
+  let max = namesArray[namesArray.length - 1];
+  let min = namesArray[0];
+  let string = max + ',' + min;
   return string;
 }
 
@@ -39,15 +39,15 @@ function footballPoints(wins, ties) {
 function highestCount(numbArrey) {
   let maior = 0;
   let count = 0;
-  for (index = 0; index < numbArrey.length; index += 1) {
+  for (let index = 0; index < numbArrey.length; index += 1) {
     if (numbArrey[index] >= maior) {
       maior = numbArrey[index];
     }
   }
   console.log(maior);
-  for (index = 0; index < numbArrey.length; index += 1) {
-    if (numbArrey[index] == maior) {
-      count++;
+  for (let index = 0; index < numbArrey.length; index += 1) {
+    if (numbArrey[index] === maior) {
+      count += 1;
     }
   }
   return count;
@@ -55,8 +55,16 @@ function highestCount(numbArrey) {
 
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(cat1, cat2, mouse) {
+  cat1Distance = Math.abs(mouse - cat1);
+  cat2Distance = Math.abs(mouse - cat2);
+  if(cat1Distance < cat2Distance){
+    return 'cat1'
+  }else if (cat2Distance < cat1Distance){
+    return 'cat2'
+  }else{
+    return 'os gatos trombam e o rato foge'
+  }
 }
 
 // Desafio 8
