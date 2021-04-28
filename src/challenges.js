@@ -52,23 +52,24 @@ function getNumberRepeater(arrayCount) {
 }
 function highestCount(arrayCount) {
   // Descobrindo o Maior Numero
-  let maior = getHighestNumber(arrayCount);
-  //Descobrindo quantas vezes se repete
-  let repete = getNumberRepeater(arrayCount);
-  return repete;
+  getHighestNumber(arrayCount);
+  // Descobrindo quantas vezes se repete
+  return getNumberRepeater(arrayCount); 
 }
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if (cat1 === cat2) {
-    return "os gatos trombam e o rato foge"
-  } else if (cat2 < cat1) {
-    return "cat2"
-  } else if (cat1 < cat2) {
-    return "cat1"
+  let cat1Distance = mouse - Math.abs(cat1);
+  let cat2Distance = mouse - Math.abs(cat2);
+  if (cat1Distance < cat2Distance) {
+    return 'cat1';
+  } else if (cat1Distance > cat2Distance) {
+    return 'cat2'
+  } else {
+    return 'os gatos trombam e o rato foge';
   }
 }
-console.log(catAndMouse())
+
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
