@@ -41,7 +41,7 @@ function highestCount() {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if ((mouse - cat2) === 2 && (cat1 - mouse) === 3) {
+  if ((cat2 - mouse) === 2 && (cat1 - mouse) === 3) {
     return 'cat2';
   } else if ((mouse - cat1) === 6 && (cat2 - mouse) === 12) {
     return 'cat1';
