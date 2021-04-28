@@ -18,8 +18,9 @@ function splitSentence(str) {
     } else {
       rtn.push(substr);
       substr = '';
-    }
+    }     
   }
+  rtn.push(substr);
   return rtn;
 }
 
