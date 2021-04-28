@@ -22,14 +22,15 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(paramArray) {
-  let primeiroUltimo = `${paramArray[paramArray.length - 1]}, ${paramArray[0]}`
+  let primeiroUltimo = `${paramArray[paramArray.length - 1]}, ${paramArray[0]}`;
   return primeiroUltimo;
 };
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+function footballPoints(wins, ties) {
+  let points = (wins * 3) + ties;
+  return points;
+};
 
 // Desafio 6
 function highestCount() {
