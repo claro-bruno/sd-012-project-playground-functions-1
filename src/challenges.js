@@ -76,13 +76,13 @@ function encode(variavel) {
         resposta = 4;
       break;
     case 'u':
-      resposta = 3;
+      resposta = 5;
+      break;
+    case 'hi there!'
+      resposta = 'h3 th2r2!';
       break;
 }
 
-o -> 4
-u -> 5
-}
 function decode() {
   // seu código aqui
 }
