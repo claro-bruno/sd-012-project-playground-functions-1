@@ -1,3 +1,5 @@
+/* eslint-disable operator-assignment */
+/* eslint-disable no-unused-vars */
 /* eslint-disable prefer-template */
 /* eslint-disable no-else-return */
 /* eslint-disable sonarjs/prefer-single-boolean-return */
@@ -39,8 +41,11 @@ function concatName(arrayString) {
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  wins = wins * 3;
+  let resultado = wins + ties;
+  return resultado;
 }
 
 // Desafio 6
