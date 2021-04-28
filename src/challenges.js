@@ -30,14 +30,14 @@ function footballPoints(wins, ties) {
 function highestCount(numbers) {
   let times = 0;
   let highestNumber = 0;
-  for (index in numbers) {
+  for (let index in numbers) {
     for (let indexNumber = 0; indexNumber < numbers.length; indexNumber += 1) {
       if (numbers[index] > highestNumber) {
         highestNumber = numbers[index];
       }
     }
   }
-  for (index in numbers) {
+  for (let index in numbers) {
     if (numbers[index] === highestNumber) {
       times += 1;
     }
@@ -46,10 +46,22 @@ function highestCount(numbers) {
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   // pesquisar funcao ABS(retorna falor absoluto)
+  let cat1Distance = Math.abs(cat1 - mouse);
+  let cat2Distance = Math.abs(cat2 - mouse);
+  let nearCat = '';
+  if (cat1Distance < cat2Distance){
+    nearCat = 'cat1';
+  } else if (cat2Distance < cat1Distance){
+    nearCat = 'cat2';
+  }else{
+    nearCat = 'os gatos trombam e o rato foge';
+  }
+  return nearCat;
 }
+// console.log(catAndMouse(0, 6, 12));
 
 // Desafio 8
 function fizzBuzz() {
