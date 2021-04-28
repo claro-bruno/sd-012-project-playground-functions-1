@@ -1,14 +1,25 @@
 // Desafio 1
+let bool1 = true;
+let bool2 = true;
+
 function compareTrue(bool1, bool2) {
   if (bool1 && bool2) {
     return true;
-  } 
+  }
+  else {
+    return false;
+  }; 
 };
 
 // Desafio 2
-function calcArea(base, altura) {
-  
+let base = 51;
+let height = 1;
+
+function calcArea(base, height) {
+  return (base * height) / 2;
 }
+
+console.log(calcArea(base, height));
 
 // Desafio 3
 function splitSentence() {
