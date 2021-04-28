@@ -1,17 +1,11 @@
 // Desafio 1
-
-let value = true;
-let value2 = true;
-
 function compareTrue(value, value2) {
-  if(value === true && value2 === false || value === false && value2 === false){
+  if (value === true && value2 === false || value === false && value2 === false) {
     return false;
   } else {
     return true;
   };
 };
-
-console.log(compareTrue(value, value2));
 
 
 
@@ -48,10 +42,10 @@ let arrayString = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 
 function concatName(arrayString) {
 
-  let finalElement = arrayString[arrayString.length-1] + ', ' + arrayString[0];
+  let finalElement = arrayString[arrayString.length - 1] + ', ' + arrayString[0];
 
   return finalElement;
-  
+
 }
 
 console.log(concatName(arrayString));
@@ -63,11 +57,11 @@ let wins = 0;
 let ties = 0;
 
 function footballPoints(wins, ties) {
-  
+
   let points = (wins * 3) + (ties * 1);
 
   return points;
-  
+
 }
 
 console.log(footballPoints(wins, ties));
@@ -83,22 +77,22 @@ function highestCount(array) {
 
   let higherNumber = array[0];
 
-  for (let index = 0; index < array.length; index += 1){
+  for (let index = 0; index < array.length; index += 1) {
     if (array[index] > higherNumber) {
       higherNumber = array[index];
     } else {
       higherNumber = higherNumber;
     };
   };
-  
+
   let numberOfRepetitions = 0;
-  
-  for (let counter = 0; counter < array.length; counter += 1){
+
+  for (let counter = 0; counter < array.length; counter += 1) {
     if (array[counter] === higherNumber) {
       numberOfRepetitions += 1;
-    }; 
+    };
   };
-  
+
   return numberOfRepetitions;
 
 }
@@ -112,14 +106,16 @@ console.log(highestCount(array));
 // Desafio 7
 
 let cat1 = 6;
-let cat2 = 6;
+let cat2 = 2;
 
 function catAndMouse(cat1, cat2) {
   if (cat1 < cat2) {
     return 'cat1';
-  } else if (cat2 < cat1){
+  } else if (cat2 < cat1) {
     return 'cat2';
-  } else {return "os gatos trombam e o rato foge"; }; 
+  } else {
+    return "os gatos trombam e o rato foge";
+  };
 };
 
 console.log(catAndMouse(cat1, cat2))
@@ -128,29 +124,23 @@ console.log(catAndMouse(cat1, cat2))
 
 
 // Desafio 8 - FALTA
-
-let array = [2, 15, 7, 9, 45];
+function fizzBuzz(array8) {
 
 let arrayNova = [];
 
-for (let index = 0; index < array.length; index += 1) {
-  if (array[index] % 3 = 0 && array[index] % 5 = 0){
+for (let index = 0; index < array8.length; index += 1) {
+  if (array8[index] % 3 === 0 && array8[index] % 5 === 0) {
     arrayNova.push('fizzBuzz');
-  } else if (array[index] % 3 = 0) {
-      arrayNova.push('fizz');
-  } else if (array[index] % 5 = 0) {
-      arrayNova.push('buzz');
+  } else if (array8[index] % 3 === 0) {
+    arrayNova.push('fizz');
+  } else if (array8[index] % 5 === 0) {
+    arrayNova.push('buzz');
   } else {
-      arrayNova.push('bug!');
+    arrayNova.push('bug!');
   };
-  console.log(arrayNova);
+  return arrayNova;
 };
-
-
-
-function fizzBuzz() {
-  // seu código aqui
-}
+};
 
 
 
@@ -170,7 +160,7 @@ let frase = '';
 
 for (let index = 0; index < string.length; index += 1) {
   for (let key in object) {
-    if (string[index] === key){
+    if (string[index] === key) {
       frase += object[key];
     } else {
       frase += string[index];
@@ -184,8 +174,9 @@ console.log(frase);
 
 
 function encode() {
- 
+
 }
+
 function decode() {
   // seu código aqui
 }
@@ -202,5 +193,3 @@ module.exports = {
   highestCount,
   splitSentence,
 };
-
-
