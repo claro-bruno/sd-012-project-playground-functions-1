@@ -1,19 +1,36 @@
 // Desafio 10
 
 function techList(arr, name) {
-  if(arr.length === 0){
-    return 'Vazio!';
-  };
-  let techList = [];
-  for(let index = 0; index< arr.length; index+=1){
-    let obj = {};
-    obj.tech = arr[index];
-    obj.name = name;
-    techList.push(obj);
+    if(arr.length === 0){
+      return 'Vazio!';
+    };
+    
+    arr = sortList(arr);
+
+    let techList = [];
+    for(let index = 0; index< arr.length; index+=1){
+      let obj = {};
+      obj.tech = arr[index];
+      obj.name = name;
+      techList.push(obj);
+    };
+  
+    return techList;
   };
 
-  return techList;
-};
+  function sortList(arr){
+    for(let word = 0; word < arr.length; word += 1){
+        for(let index = 0; index < arr.length; index += 1){
+            if(arr[word] < arr[index]){
+                let holder = arr[word];
+                console.log(holder)
+                arr[word] = arr[index];
+                arr[index] = holder;
+            };
+        };
+    };
+    return arr;
+  };
 
 // Desafio 11
 
@@ -93,7 +110,12 @@ function hydrate(order) {
   for(let index = 0; index < numOfOrders.length; index += 1){
     waterCups += parseInt(numOfOrders[index]);
   };
-  return `${waterCups} copos de água`;
+  if(waterCups === 1){
+    return `${waterCups} copo de água`;
+  }else{
+    return `${waterCups} copos de água`;
+  };
+  
 };
 
 module.exports = {
