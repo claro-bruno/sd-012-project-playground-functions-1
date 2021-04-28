@@ -7,13 +7,21 @@ function compareTrue(valor1, valor2) {
     return('false');
   }
 }
+console.log(compareTrue(89,56))
+console.log(compareTrue(73,11))
+console.log(compareTrue(98,42))
 
 
 
-// Desafio 2
-function calcArea() {
- 
+// Desafio 2 - Cálculo da área do triângulo
+function calcArea(base, height) {
+ return ((base * height) / 2);
 }
+console.log(calcArea(10,50))
+console.log(calcArea(5,2))
+console.log(calcArea(51,1))
+
+
 
 // Desafio 3
 function splitSentence() {
