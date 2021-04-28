@@ -3,9 +3,9 @@ function compareTrue() {
   let valor1 = true;
   let valor2 = false;
 if ( valor1 =true && valor2 = false) {
-  return console.log ('true');
+  return true;
   else 
-  return(console.log('false'));
+  return false;
 }
 
 
