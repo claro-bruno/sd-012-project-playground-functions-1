@@ -24,10 +24,11 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(arrayString) {
   let firstStriElem = arrayString[0];
-  let lastStriElem = arrayString[arrayString.length -1];
-  return lastStriElem + ', ' + firstStriElem;
+  let lastStriElem = arrayString[arrayString.length - 1];
+  let concatenacao = lastStriElem + ', ' + firstStriElem;
+  return concatenacao
 }
-console.log(concatName(['carlo', 'luiz', 'jaci']));
+//console.log(concatName(['carlo', 'luiz', 'jaci']));
 // Desafio 5
 function footballPoints() {
   // seu código aqui
