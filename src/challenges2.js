@@ -1,12 +1,13 @@
 // Desafio 10
 function techList(arr, name) {
+  if(arr.length === 0){return "Vazio!"}
   arr.sort();
   let arrRes = [];
   for (let i = 0; i < arr.length; i++){
     arrRes[i] = { tech: arr[i], name: name }
   } 
   return arrRes;
-}
+} 
 
 // Desafio 11
 function generatePhoneNumber(arr) {
@@ -14,7 +15,7 @@ function generatePhoneNumber(arr) {
   
   //Condicao 1
   if (arr.length !== 11){
-    return 'Array com tamanho incorreto';
+    return 'Array com tamanho incorreto.';
   }
 
   //Condicao 2 e 3
@@ -32,7 +33,7 @@ function generatePhoneNumber(arr) {
       }
     }
     if (Repeated >= 3){ return errorMsg }
-  }
+  } 
 
   //Codigo
   let str = '('
@@ -51,7 +52,7 @@ function generatePhoneNumber(arr) {
   + arr[10].toString(); 
 
   return str;
-}
+}console.log(generatePhoneNumber([1, 1, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
