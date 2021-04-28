@@ -52,8 +52,8 @@ function highestCount(arrayNum) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let positionCat1Mouse = Math.sqrt(cat1 - mouse ** 2);
-  let positionCat2Mouse = Math.sqrt(cat2 - mouse ** 2);
+  let positionCat1Mouse = Math.sqrt((cat1 - mouse) ** 2);
+  let positionCat2Mouse = Math.sqrt((cat2 - mouse) ** 2);
   let cases = 'Os gatos trombam e o rato foge';
   if (positionCat1Mouse < positionCat2Mouse) {
     cases = 'Cat1';
@@ -85,8 +85,14 @@ function fizzBuzz(arrayFizzBuzz) {
 }
 
 // Desafio 9
-function encode() {
+function encode(strEcode) {
   // seu código aqui
+  for (let key in strEcode) {
+    if () {
+  
+    
+    }
+  }
 }
 function decode() {
   // seu código aqui
