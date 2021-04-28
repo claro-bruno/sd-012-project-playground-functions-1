@@ -161,6 +161,7 @@ function encode(string) {
   // let vogais2 = vogais.replace(/a/, '1');
   // vogais.replace(/e/, '2');
   // console.log(vogais2);
+}
 
 function decode() {
   /* 
