@@ -16,13 +16,13 @@ base = 10;
 height = 50;
 let area = (base * height) / 2;
 function calcArea(base, height) {  
-  return area
+  return calcArea
 }
 console.log(area);
 
 // Desafio 3
 function splitSentence() {
-  // seu código aqui
+  
 }
 
 // Desafio 4
