@@ -23,7 +23,7 @@ function splitSentence(phrase) {
 function concatName(arrayWord) {
   let lastItem = arrayWord[arrayWord.length - 1];
   let firstItem = arrayWord[0];
-  let fullName = lastItem + ', ' + firstItem;
+  let fullName = `${lastItem}, ${firstItem}`;
 
   return fullName;
 }
