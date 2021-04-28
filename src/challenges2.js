@@ -37,15 +37,28 @@ function generatePhoneNumber(numbers) {
 }
 //console.log(generatePhoneNumber([1, 1, 2, 3, 5, 6, 7, 8, 9, 0, 1]))
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  if (lineA+lineB>lineC && lineB+lineC>lineA && lineC+lineA>lineC){
+    if (lineA>Math.abs(lineB-lineC) && lineB>Math.abs(lineA-lineC) && lineC>Math.abs(lineB-lineA)){
+      return true;
+    }
+  }
+  return false;
 }
-
+//console.log(triangleCheck(10, 14, 24))
 // Desafio 13
-function hydrate() {
+function hydrate(string) {
   // seu código aqui
+  string = string.replace(/\D/g, "");
+  let sum = 0;
+  for (let index = 0; index < string.length; index += 1){
+    sum = Number(string[index]) + sum;
+  }
+  console.log(string)
+  return sum;
 }
-
+//console.log(hydrate("3 cachaça, 8cervejas e 1 copo de vinho"));
 module.exports = {
   generatePhoneNumber,
   techList,
