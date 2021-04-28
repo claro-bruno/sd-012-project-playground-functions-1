@@ -9,19 +9,19 @@ function compareTrue(a, b) {
 
 // Desafio 2
 function calcArea(base, height) {
-  return (base * height)/2
-}
+  return (base * height)/2;
+};
 
 // Desafio 3
 function splitSentence(phrase) {
   return phrase.split(' ');
-}
+};
 
 // Desafio 4
 function concatName(phrase) {
-  let wordPhrase = phrase
-  return  (wordPhrase[0]) + ' ' + (wordPhrase[wordPhrase.length - 1])
-}
+  let wordPhrase = phrase;
+  return  (wordPhrase[0]) + ' ' + (wordPhrase[wordPhrase.length - 1]);
+};
 
 // Desafio 5
 function footballPoints() {
