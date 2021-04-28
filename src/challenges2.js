@@ -1,19 +1,18 @@
-let array = ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'];
-let nome = 'lucas';
-
 // Desafio 10
 function techList(array, nome) {
-  let obj = {};
-  if (array.length >= 0) {
-    for (let i = 0; i < array.length; i += 1) {
-      obj[i] = { tech: array[i], name: nome };
+  let obj =[];
+let arrayOrdenado=array.sort()
+  if (arrayOrdenado.length >= 0) {
+    for (let i = 0; i < arrayOrdenado.length; i += 1) {
+      obj[i] = { tech: arrayOrdenado[i], name: nome };
     }
     return obj;
   } else {
     return 'vazio';
   }
 }
-console.log(techList(array, nome));
+
+
 
 // Desafio 11
 function generatePhoneNumber() {
