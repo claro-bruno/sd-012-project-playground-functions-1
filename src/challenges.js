@@ -1,8 +1,10 @@
 // Desafio 1
-function compareTrue() {
-  let n1 = true
-  let n2 = true
-  if (n1 == n2 && n2 == n1) {
+
+let n1 = true
+let n2 = true
+function compareTrue(n1,n2) {
+  
+  if (n1 && n2) {
     return true;
   } else {
     return false;
