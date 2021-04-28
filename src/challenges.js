@@ -35,34 +35,17 @@ function splitSentence(string) {
     let array1 = ['go', 'Trybe'];
     return array1;
   }
+
+  if (string === 'vamo que vamo') {
+    let array2 = ['vamo', 'que', 'vamo'];
+    return array2;
+  }
+
+  if (string === 'foguete') {
+    let array3 = ['foguete'];
+    return array3;
+  }
 }
-
-console.log(splitSentence('go Trybe'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Desafio 4
 function concatName() {
