@@ -95,8 +95,17 @@ function fizzBuzz(array) {
   return resultado; 
 }
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let cod=['a',1,'e',2,'i',3,'o',4,'u',5]; 
+  string=string.split("");
+  for(i in string){
+    for(let k=0;k<cod.length*2;k+=2){
+      if(string[i]==cod[k]){
+        string[i]=cod[k+1];
+      }
+  }
+  }
+  return string.join('');
 }
 function decode() {
   // seu código aqui
