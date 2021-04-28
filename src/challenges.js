@@ -23,19 +23,21 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-  let arrayDeStrings = (array[array.length -1] + ',' + ' ' + array[0]);
+  let arrayDeStrings = (array[array.length - 1] + ',' + ' ' + array[0]);
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] === arrayDeStrings) {
       arrayDeStrings = array[index];
     }
-    return arrayDeStrings ;
+    return arrayDeStrings;
   }
 } console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+function footballPoints(wins, ties) {
+  let quantidadeDePontos = (3 * wins) + (1 * ties) + ' ' + 'pontos';
+    return quantidadeDePontos;
+  }
+ console.log(footballPoints(0, 0));
 
 // Desafio 6
 function highestCount() {
