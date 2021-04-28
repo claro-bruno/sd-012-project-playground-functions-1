@@ -10,10 +10,30 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(sentence) {
+  let array = [];
+  let word = '';
+  for(let index = 0; index < sentence.length; index += 1){
+    if(index == sentence.length - 1){
+      word += sentence[index];
+      array.push(word);
+    }
+    else if(sentence[index] != ' '){
+      word += sentence[index];
+    }
+    else{
+      array.push(word);
+      word = '';
+    }
+  }
+  return array;
 }
-
+// let sentence = 'go Trybe';
+// console.log(splitSentence(sentence));
+// let sentence2 = 'vamo que vamo';
+// console.log(splitSentence(sentence2));
+let sentence3 = 'foguete';
+console.log(splitSentence(sentence3));
 // Desafio 4
 function concatName() {
   // seu código aqui
