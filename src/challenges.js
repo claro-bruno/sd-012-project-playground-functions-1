@@ -1,6 +1,10 @@
 // Desafio 1
-function compareTrue() {
-    xablau;
+function compareTrue(bool, boolean) {
+    if (bool == true && boolean == true) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 // Desafio 2
