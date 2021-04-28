@@ -92,6 +92,7 @@ function encode(palavra) {
   return newPalavra;
 }
 
+// Desafio 10
 function decode(palavra) {
   let decodeLetter = ['a', 'e', 'i', 'o', 'u'];
   let decodeNumber = ['1', '2', '3', '4', '5'];
@@ -109,7 +110,6 @@ function decode(palavra) {
   }
   return newPalavra;
 }
-
 
 module.exports = {
   calcArea,
