@@ -82,6 +82,9 @@ function hydrate(string) {
       cont += 9;
     }
   }
+  if (cont == 1){
+    return cont + " copo de água"
+  }
   return cont + " copos de água"
 }
 
