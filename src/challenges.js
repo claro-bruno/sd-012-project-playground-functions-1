@@ -1,11 +1,12 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-}
-
+function compareTrue(boleano1, boleano2) {
+  if (boleano1 === true && boleano2 === true) 
+    return console.log('True');
+    else 
+    return console.log('False');
+};
 // Desafio 2
 function calcArea() {
-  // seu código aqui
 }
 
 // Desafio 3
