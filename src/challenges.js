@@ -1,13 +1,12 @@
 // Desafio 1
 function compareTrue(param1, param2) {
   param1 = true;
-  param2 = true
+  param2 = true;
   if (param1 === true && param2 === true) {
     return true;
   }
 }
 
-console.log(compareTrue(1, 1))
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) / 2;
@@ -33,19 +32,21 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(array) {
-  let contadorNumeroQueMaisSeRepete = 0;
-  for (let varredura2 = 0; varredura2 < array.length; varredura2 += 1) {
-    let contador = 0;
-    for (let varredura1 = 0; varredura1 < array.length; varredura1 += 1) {
-      if (array[varredura2] === array[varredura1]) {
-        contador += 1;
-      }
-      if (contador > contadorNumeroQueMaisSeRepete) {
-        contadorNumeroQueMaisSeRepete = contador;
-      }
+  let maiorNumero = array[0];
+  let contador = 0;
+  
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] > maiorNumero) {
+      maiorNumero = array[index];
     }
   }
-  return contadorNumeroQueMaisSeRepete;
+
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] === maiorNumero) {
+      contador += 1;
+    }
+  }
+  return contador;
 }
 
 // Desafio 7
@@ -68,6 +69,8 @@ function fizzBuzz() {
 function encode() {
   // seu código aqui
 }
+
+// Desafio 10
 function decode() {
   // seu código aqui
 }
