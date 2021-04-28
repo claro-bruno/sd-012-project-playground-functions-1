@@ -9,9 +9,9 @@ function compareTrue(parametro1, parametro2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  return ((base*height)/2);
+  return ((base * height) /2);
 }
-// console.log(calcArea(51,1));
+console.log(calcArea(51,1));
 
 // // Desafio 3
 // function splitSentence() {
