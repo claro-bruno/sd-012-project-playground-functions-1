@@ -99,9 +99,36 @@ function fizzBuzz(arrayFizzBuzz) {
 }
 
 // Desafio 9
-function encode() {
+function encode(stringEncode) {
   // seu código aqui
+
+  let phraseEncode = '';
+
+  for (let index4 = 0; index4 < stringEncode.length; index4 += 1) {
+    switch (stringEncode[index4]) {
+      case 'a': 
+        phraseEncode = phraseEncode + '1';
+        break;
+      case 'e': 
+        phraseEncode = phraseEncode + '2';
+        break;
+      case 'i': 
+        phraseEncode = phraseEncode + '3';
+        break;
+      case 'o': 
+        phraseEncode = phraseEncode + '4';
+        break;
+      case 'u': 
+        phraseEncode = phraseEncode + '5';
+        break;
+      default:
+        phraseEncode = phraseEncode + stringEncode[index4];
+        break;
+    }
+  }
+  return phraseEncode;
 }
+
 function decode() {
   // seu código aqui
 }
