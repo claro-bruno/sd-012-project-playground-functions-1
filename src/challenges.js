@@ -1,7 +1,10 @@
 // Desafio 1
-function compareTrue() {
-    // seu código aqui - VQV
-}
+function compareTrue(booleano1, booleano2) {
+    if (booleano1 && booleano2) {
+        return true;
+    };
+    return false;
+};
 
 // Desafio 2
 function calcArea() {
