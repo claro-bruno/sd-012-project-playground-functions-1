@@ -14,11 +14,10 @@ console.log(resposta);
 // Desafio 2
 let base = 10;
 let height = 50;
-let area = (base * height) / 2;
 function calcArea(base, height) {  
-  return calcArea
+  return (base * height) / 2;
 };
-console.log(area);
+console.log((base * height) / 2);
 
 // Desafio 3
 function splitSentence(string) {
