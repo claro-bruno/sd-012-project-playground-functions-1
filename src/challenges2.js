@@ -9,10 +9,10 @@ function techList(tech, name) {
   };
 
   if (tech.length > 0) {
-    for (let index = 0; index < tech.length; index += 1) {
+    for (let index = 0; index < tech.length; index += 1 ) {
       console.log(`${tecnologias.tecnologia[index]}, ${tecnologias.nome}`);
     }
-  } else {
+  } else if (tech.length === 0) {
     console.log('Vazio!');
   }
 }
