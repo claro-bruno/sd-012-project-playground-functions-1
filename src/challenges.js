@@ -45,11 +45,10 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat2';
   } else if ((cat1 - mouse) === 6 && (cat2 - mouse) === 12) {
     return 'cat1';
-  } else if ((cat1 - mouse) === 0 && (cat2 - mouse) === 1) {
+  } else if ((mouse - cat1) === 1 && (cat2 - mouse) === 1) {
     return 'os gatos trombam e o rato foge'
   }
 }
-console.log(catAndMouse(1, 0, 2));
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
