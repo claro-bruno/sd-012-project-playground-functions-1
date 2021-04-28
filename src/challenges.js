@@ -1,8 +1,13 @@
 // Desafio 1
-// gg wp
 function compareTrue() {
   // seu código aqui
-  let status
+  let valor = 10
+  if (valor < 10 && valor > 4){
+    console.log("true");
+  }else{
+    console.log('false');
+  }
+
 }
 
 // Desafio 2
