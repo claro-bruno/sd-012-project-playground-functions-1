@@ -82,9 +82,26 @@ function highestCount(arrayOfNumbers) {
 console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  /*
+  cat1 e cat2 -> mouse
+  cada animal esta em uma posicao representada por um numero
+  return cat mais perto
+  if/else
+  Retorne a string 'cat2' caso a função catAndMouse receba os parâmetros onde gato cat2 esteja a 2 unidades de distância do rato e cat1 esteja a 3 unidades de distância do rato
+  mouse - cat1 = 2 / mouse - cat2 = 3
+  */
+  let mouseCat1 = mouse - cat1;
+  let mouseCat2 = mouse - cat2;
+  if (mouseCat1 < mouseCat2) {
+    return 'cat1';
+  } else if (mouseCat2 < mouseCat1) {
+    return 'cat2';  
+  } else {
+    return 'os gatos trombam e o rato foge';
+  }
 }
+console.log(catAndMouse(5, 3, 2));
 
 // Desafio 8
 function fizzBuzz() {
