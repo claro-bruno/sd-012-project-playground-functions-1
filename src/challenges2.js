@@ -13,13 +13,26 @@ function techList(tech, name) {
   return `${tech[index]}, ${name}`;
 }
 
-
-console.log(techList(['teste', 'teste', 'teste'], 'daniel'));
-
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(arrayNumbers) {
+  let numeroCorreto = true;
+  if (arrayNumbers.length == 11) {
+    for (let index = 0; index < arrayNumbers.length; index += 1) {
+      if ((arrayNumbers[index] > 9) || (arrayNumbers[index] < 0)) {
+        numeroCorreto = false;
+        return 'não é possível gerar um número de telefone com esses valores';
+      }
+    }
+  } else {
+    numeroCorreto = false;
+    return 'Array com tamanho incorreto.';
+  }
+  if (numeroCorreto === true) {
+    return `(${arrayNumbers[0]}${arrayNumbers[1]}) ${arrayNumbers[2]}${arrayNumbers[3]}${arrayNumbers[4]}${arrayNumbers[5]}${arrayNumbers[6]}-${arrayNumbers[7]}${arrayNumbers[8]}${arrayNumbers[9]}${arrayNumbers[10]}`;
+  }
 }
+
+console.log(generatePhoneNumber(([1, 2, 3, 4, 5, 6, 10, 8, 9, 0, 1])));
 
 // Desafio 12
 function triangleCheck() {

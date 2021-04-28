@@ -51,6 +51,14 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat1ToMouse = mouse - cat1;
   let cat2ToMouse = mouse - cat2;
 
+  if (cat1ToMouse < 0) {
+    cat1ToMouse = cat1ToMouse * (-1);
+  }
+  
+  if (cat2ToMouse < 0) {
+    cat2ToMouse = cat2ToMouse * (-1);
+  }
+
   if (cat1ToMouse > cat2ToMouse) {
     return ('cat1');
   }
@@ -63,6 +71,8 @@ function catAndMouse(mouse, cat1, cat2) {
     return ('os gatos trombam e o rato foge')
   }
 }
+
+console.log(catAndMouse(1,0,2));
 
 // Desafio 8
 function fizzBuzz(arrayToFizzBuzz) {
