@@ -19,8 +19,6 @@ function splitSentence(arraySplitSentence) {
   // seu código aqui
   return arraySplitSentence.split(" "); // retirado https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
 }
-let str = 'go Trybe'
-console.log(splitSentence(str))
 
 // Desafio 4
 function concatName(arrayConcatName) {
@@ -67,13 +65,15 @@ function fizzBuzz(arrayFizzBuzz) {
   // seu código aqui
   let arrayReturn = [];
   for (let indArrayFizzBuzz = 0; indArrayFizzBuzz < arrayFizzBuzz.length; indArrayFizzBuzz += 1) {
-    if (arrayFizzBuzz[indArrayFizzBuzz] % 3 === 0 && arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0) {
+    if (arrayFizzBuzz[indArrayFizzBuzz] % 3 === 0){
+      if (arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0) {
       arrayReturn[indArrayFizzBuzz] = 'fizzBuzz';
-    }
-    if (arrayFizzBuzz[indArrayFizzBuzz] % 3 === 0 && arrayFizzBuzz[indArrayFizzBuzz] % 5 !== 0) {
-      arrayReturn[indArrayFizzBuzz] = 'fizz';
-    }
-    if (arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0 && arrayFizzBuzz[indArrayFizzBuzz] % 3 !== 0) {
+      } 
+      else {
+        arrayReturn[indArrayFizzBuzz] = 'fizz';
+      }  
+    } 
+    else if (arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0 && arrayFizzBuzz[indArrayFizzBuzz] % 3 !== 0) {
       arrayReturn[indArrayFizzBuzz] = 'buzz';
     } 
     else {
@@ -82,6 +82,8 @@ function fizzBuzz(arrayFizzBuzz) {
   }
   return arrayReturn;
 }
+let array = [1, 3, 5, 15]
+console.log(fizzBuzz(array))
 
 // Desafio 9
 function encode() {
