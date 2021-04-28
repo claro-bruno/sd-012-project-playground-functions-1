@@ -28,10 +28,13 @@ function concatName(name) {
   return last +', '+ first;
 }
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  let pontos = wins * 3;
+  let empate = 1 * ties;
+  let soma = pontos + empate;
+  return soma;
 }
-
 // Desafio 6
 function highestCount() {
   // seu código aqui
