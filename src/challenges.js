@@ -41,14 +41,15 @@ console.log(splitSentence('foguete'));
 // Desafio 4
 function concatName(...chosenArray) {
   let response = '';
-  return response.concat(chosenArray[chosenArray.length - 1], ', ', chosenArray[0]);
+  return response.concat(chosenArray[0][chosenArray.length - 1], ', ', chosenArray[0][0]);
 }
-/* let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-console.log(concatName.apply(null, array));
+let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log(concatName(...array));
 array = ['foguete', 'não', 'tem', 'ré'];
-console.log(concatName.apply(null, array));
-array = ['captain', 'my', 'captain'];
-console.log(concatName.apply(null, array)); */
+console.log(concatName(...array));
+array = ['captain', 'hello', 'my', 'captain'];
+console.log(concatName(...array));
+
 // Desafio 5
 function footballPoints(wins, ties) {
   return wins * 3 + ties * 1;
@@ -56,28 +57,22 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(...numbers) {
-  let singleNumbers = new Array();
-  let timesNumberAppear = new Array();
-
+  let singleNumbers = [];
+  let timesNumberAppear = [];
   for (const number of numbers) {
-    if (singleNumbers.indexOf(number) == -1 ) {
+    if (singleNumbers.indexOf(number) === -1) {
       singleNumbers.push(number);
     }
   }
-
-  for (let index = 0; index < singleNumbers.length; index++) {
+  for (let index = 0; index < singleNumbers.length; index += 1) {
     timesNumberAppear.push(0);
-    for (let secondIndex = 0; secondIndex < numbers.length; secondIndex++) {
-      if (singleNumbers[index] == numbers[secondIndex]) {
+    for (let secondIndex = 0; secondIndex < numbers.length; secondIndex += 1) {
+      if (singleNumbers[index] === numbers[secondIndex]) {
         timesNumberAppear[index] += 1;
       }
-      
     }
-  
   }
-
-  return timesNumberAppear[singleNumbers.indexOf( Math.max(...singleNumbers))];
-
+  return timesNumberAppear[singleNumbers.indexOf(Math.max(...singleNumbers))];
 }
 /*
 let array = [9, 1, 2, 3, 9, 5, 7];
@@ -93,14 +88,13 @@ function catAndMouse(mouse, cat1, cat2) {
   cat1 -= mouse;
   cat2 -= mouse;
 
-  if (cat1 == cat2) {
-    return "os gatos trombam e o rato foge";
+  if (cat1 === cat2) {
+    return 'os gatos trombam e o rato foge';
   }
   if (cat1 > cat2) {
-    return 'cat2'
+    return 'cat2';
   }
-  return 'cat1'
-
+  return 'cat1';
 }
 /*
 console.log(catAndMouse(1,7,4));
