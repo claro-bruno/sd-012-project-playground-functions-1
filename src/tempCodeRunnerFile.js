@@ -6,4 +6,4 @@ function compareTrue(bool1,bool2) {
  }  
  }
 
-console.log(compareTrue(false,true));
+console.log(compareTrue(true,true));
