@@ -1,7 +1,7 @@
 // Desafio 1
 function compareTrue(parametOne, parametTwo) {
   // seu código aqui
-  if(parametOne > 0 && parametTwo < 10){
+  if(parametOne === true  && parametTwo === true ){
     return true
   }
   else {
