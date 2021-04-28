@@ -29,9 +29,13 @@ function splitSentence(string) {
 console.log(splitSentence("go Trybe"));
 
 // Desafio 4
-function concatName() {
+function concatName(array) {
   // seu código aqui
+ let positionLastArray = array.length
+  let lastFirst = array [positionLastArray-1]+',' + " " + array [0];
+  return lastFirst;
 }
+console.log(concatName(['foguete', 'nao', 'tem', 're']));
 
 // Desafio 5
 function footballPoints() {
