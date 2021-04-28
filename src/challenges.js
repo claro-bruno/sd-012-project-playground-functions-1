@@ -31,14 +31,18 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(arrayCount) {
-  let repete = 0;
+function getHighestNumber(arrayCount) {
   let maior = arrayCount[0];
-  for (let key in arrayCount){
+  for (let key in arrayCount) {
     if (maior < arrayCount[key]) {
       maior = arrayCount[key];
     }
   }
+  return maior;
+}
+function getNumberRepeater(arrayCount) {
+  let repete = 0;
+  let maior = getHighestNumber(arrayCount);
   for (let key in arrayCount) {
     if (maior === arrayCount[key]) {
       repete += 1;
@@ -46,12 +50,25 @@ function highestCount(arrayCount) {
   }
   return repete;
 }
-
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function highestCount(arrayCount) {
+  // Descobrindo o Maior Numero
+  let maior = getHighestNumber(arrayCount);
+  //Descobrindo quantas vezes se repete
+  let repete = getNumberRepeater(arrayCount);
+  return repete;
 }
 
+// Desafio 7
+function catAndMouse(mouse, cat1, cat2) {
+  if (cat1 === cat2) {
+    return "os gatos trombam e o rato foge"
+  } else if (cat2 < cat1) {
+    return "cat2"
+  } else if (cat1 < cat2) {
+    return "cat1"
+  }
+}
+console.log(catAndMouse())
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
