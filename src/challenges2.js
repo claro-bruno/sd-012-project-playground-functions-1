@@ -118,6 +118,8 @@ function hydrate(order) {
   
 };
 
+//Exercício feito com a ajuda do canal All Things JavaScript, ensinando a usar REGEX.
+
 module.exports = {
   generatePhoneNumber,
   techList,
