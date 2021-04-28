@@ -7,11 +7,13 @@ function compareTrue() {
   if (variavel1 === true && variavel2 === true){
     estadoAtual = true;
   } else {
-      estadoAtual = false;
+     estadoAtual = false;
     }
 
     return estadoAtual;
 }
+
+console.log(compareTrue());
 
 // Desafio 2
 function calcArea(base, height) {
