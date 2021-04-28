@@ -87,10 +87,39 @@ function fizzBuzz(arrayToFizzBuzz) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(stringToEncode) {
+  stringToEncode = stringToEncode.toString().split('');
+
+  for (let index = 0; index < stringToEncode.length; index += 1) {
+    switch(stringToEncode[index]) {
+      case 'a':
+        stringToEncode[index] = 1;
+        break;
+
+      case 'e':
+        stringToEncode[index] = 2;
+        break;
+
+      case 'i':
+        stringToEncode[index] = 3;
+        break;
+
+      case 'o':
+        stringToEncode[index] = 4;
+        break;
+
+      case 'u':
+        stringToEncode[index] = 5;
+        break;
+    }
+  }
+  return stringToEncode.join('');
 }
-function decode() {
+
+console.log(encode(['hi there!']));
+
+
+function decode(stringToDecode) {
   // seu código aqui
 }
 
