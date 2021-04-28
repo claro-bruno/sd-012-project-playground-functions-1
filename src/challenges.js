@@ -33,22 +33,29 @@ return arrays
 // Desafio 4
 function concatName(switchStrings) {
   
-let Conq = [];
+let conq = [];
 
 for(index =0;index < switchStrings.length; index +=1) {
-  Conq = switchStrings[index] + "," + switchStrings[0]
+  conq = switchStrings[index] + "," + switchStrings[0]
 }
-return Conq;
+return conq;
 
 }
 
 //console.log(concatName(['captain', 'my', 'captain']))
 
 // Desafio 5
-function footballPoints() {
-  
+function footballPoints(wins,ties) {
 
+wins = 3 * wins;
+ties = 1 * ties;
+
+let fut = wins + ties;
+
+return fut;
 }
+
+// console.log(footballPoints(14,8))
 
 // Desafio 6
 function highestCount() {
