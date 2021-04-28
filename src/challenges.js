@@ -43,10 +43,8 @@ console.log('==================================================');
 // Desafio 4
 function concatName(array) {
   // seu código aqui
-  let nomes = array[0];
-  for (let index = 1; index < array.length; index += 1) {
-    nomes = nomes + ', ' + array[index];
-  }
+  let nomes = array[array.length-1] + ', ' + array[0];
+
   return nomes;
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
