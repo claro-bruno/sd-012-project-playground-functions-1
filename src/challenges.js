@@ -1,7 +1,19 @@
 // Desafio 1
 function compareTrue() {
   // seu código aqui
+  let cond1;
+  let cond2;
+  let cond3;
+  let cond4;
+  let result;
   
+  if ((cond1 === cond2) && (cond3 === cond4) ) {
+    result = true;
+  } else {
+    result = false;
+  }
+  
+  return result;
 }
 
 // Desafio 2
