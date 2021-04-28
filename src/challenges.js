@@ -6,17 +6,7 @@ function compareTrue(bool1, bool2) {
       return false;
   };
 };
-console.log(compareTrue(true, false);
-
-
-
-
-
-
-
-
-
-
+// console.log(compareTrue(true, false));
 
 
 // Desafio 2
