@@ -2,11 +2,11 @@
 function compareTrue(valor1, valor2) {
   if((valor1 === true) && (valor2 === true)){
     return (true);
-  } 
+  }
   else {
     return (false);
-  }
-}
+  };
+};
 console.log(compareTrue(true, true));
 
 // Desafio 2
@@ -14,13 +14,28 @@ function calcArea(base, height) {
   
   let areaDoTriangulo = (base * height) / 2;
   return (areaDoTriangulo);
-}
+};
 console.log(calcArea(51, 1));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
+function splitSentence(frase) {
+  let sentence = [];
+  let word = frase;
+  let palavra = "";
+  for (let index = 0; index < word.length; index += 1){
+      
+    if (word[index] === " "){
+        sentence.push(palavra);
+        palavra = "";
+      }
+    else {
+        palavra += word[index];
+      };
+  };
+  sentence.push(palavra);
+  return sentence;
+};
+console.log(splitSentence('foguete'));
 
 // Desafio 4
 function concatName() {
