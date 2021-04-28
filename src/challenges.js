@@ -98,8 +98,24 @@ function encode(word) {
   return result;
 }
 
-function decode() {
-  // seu código aqui
+function decode(word) {
+  let vowels = {
+    '1': 'a',
+    '2': 'e',
+    '3': 'i',
+    '4': 'o',
+    '5': 'u',
+  };
+  let result = '';
+  for (let number of word) {
+    for (let key in vowels) {
+      if (number === key) {
+        number = vowels[key];
+      }
+    }
+    result += number;
+  }
+  return result;
 }
 
 module.exports = {
