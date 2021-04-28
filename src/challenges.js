@@ -30,7 +30,7 @@ function concatName(names) {
       concatNames.push(names[index]);
     }
   }
-  return concatNames.reverse();
+  return concatNames.reverse().join(', ');
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 
