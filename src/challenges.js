@@ -20,9 +20,9 @@ function splitSentence() {
 }
 
 // Desafio 4
-function concatName(array) {
+function concatName(arrayConcatName) {
   // seu código aqui
-  let stringReturn = `${array[array.length - 1]}, ${array[0]}`;
+  let stringReturn = `${arrayConcatName[arrayConcatName.length - 1]}, ${arrayConcatName[0]}`;
   return stringReturn;
 }
 
@@ -52,20 +52,36 @@ function highestCount(arrayNum) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let positionCat1Mouse = Math.sqrt(Math.pow(cat1 - mouse, 2));
-  let positionCat2Mouse = Math.sqrt(Math.pow(cat2 - mouse, 2));
+  let positionCat1Mouse = Math.sqrt(cat1 - mouse ** 2);
+  let positionCat2Mouse = Math.sqrt(cat2 - mouse ** 2);
   let cases = 'Os gatos trombam e o rato foge';
   if (positionCat1Mouse < positionCat2Mouse) {
     cases = 'Cat1';
-  } else if  (positionCat2Mouse < positionCat1Mouse) {
+  } else if (positionCat2Mouse < positionCat1Mouse) {
     cases = 'Cat2';
   }
   return cases;
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(arrayFizzBuzz) {
   // seu código aqui
+  let arrayReturn = [];
+  for (let indArrayFizzBuzz = 0; indArrayFizzBuzz < arrayFizzBuzz.length; indArrayFizzBuzz += 1) {
+    if (arrayFizzBuzz[indArrayFizzBuzz] % 3 === 0) {
+      if (arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0) {
+        arrayReturn[indArrayFizzBuzz] = 'fizzBuzz'
+      }
+      else {
+        arrayReturn[indArrayFizzBuzz] = 'fizz';
+      }
+    } else if (arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0 && arrayFizzBuzz[indArrayFizzBuzz] % 3 !== 0) {
+      arrayReturn[indArrayFizzBuzz] = 'buzz';
+    } else {
+      arrayReturn[indArrayFizzBuzz] = 'bug!';
+    }
+  }
+  return arrayReturn;
 }
 
 // Desafio 9
