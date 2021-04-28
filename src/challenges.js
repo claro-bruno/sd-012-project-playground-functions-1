@@ -104,9 +104,30 @@ function fizzBuzz(numbers) {
 };
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
+function encode(word) {
+  let vowels = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  };
+
+  let arrayWord = word.split('');
+  let result = '';
+
+  for (let indexWord = 0; indexWord < word.length; indexWord += 1) {
+    for (let key in vowels) {
+      if (word[indexWord] === key) {
+        arrayWord[indexWord] = vowels[key];
+      };
+    };
+    result += arrayWord[indexWord];
+  };
+
+  return result;
+};
+
 function decode() {
   // seu código aqui
 }
