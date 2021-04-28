@@ -17,12 +17,16 @@ function splitSentence(sentence) {
   let fraseDividida = sentence.split(' ');
   return fraseDividida;
 }
-console.log(splitSentence('foguete'))
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let ultimoElemento = array[array.length - 1];
+  let primeiroElemento = array[0];
+
+  return ultimoElemento + ', ' + primeiroElemento
 }
+
+console.log(concatName(['captain', 'my', 'captain']))
 
 // Desafio 5
 function footballPoints() {
