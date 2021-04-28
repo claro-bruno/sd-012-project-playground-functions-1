@@ -43,7 +43,7 @@ function splitSentence(str) {
 
       arrayDeStrings.push(palavraSozinha);
       palavraSozinha = "";
-      
+
     };
   }
 
@@ -51,9 +51,15 @@ function splitSentence(str) {
 };
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let strResult = "";
+
+  strResult = array[array.length - 1] + ", " + array[0];
+
+  return strResult;
 }
+
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 
 // Desafio 5
 function footballPoints() {
