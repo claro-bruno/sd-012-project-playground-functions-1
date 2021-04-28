@@ -1,18 +1,12 @@
 // Desafio 1
-let numbers = [4, 8, 6, 4, 6];
-
-function compareTrue(parametro) {
+function compareTrue(num1, num2) {
   let check = false;
-  for (let key in numbers) {
-    if (parametro[key] % 2 === 0 && parametro[key] > 2) {
+    if (num1 > num2 && num1 % 2 === 0) {
       check = true;
-    } else {
-      check = false;
     }
-  };
   return check;
 }
-console.log(compareTrue(numbers));
+console.log(compareTrue(12, 10));
 
 // Desafio 2
 function calcArea() {
