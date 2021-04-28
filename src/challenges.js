@@ -1,13 +1,13 @@
 // Desafio 1
-function compareTrue(boolean1 , boolean2) {
+function compareTrue(boolean1, boolean2) {
   // seu código aqui
-  return boolean1 && boolean2 === true ? true : false;
+  return boolean1 && boolean2 ? true : false;
 }
 
 // Desafio 2
-function calcArea(base , height) {
+function calcArea(base, height) {
   // seu código aqui
-  return (base * height)/2;
+  return (base * height) / 2;
 }
 
 // Desafio 3
@@ -34,18 +34,18 @@ function footballPoints(wins, ties) {
 function highestCount(array) {
   // seu código aqui
   let highestNumber = array[0];
-  for (number in array) {
+  for (let number in array) {
     if (array[number] >= highestNumber) {
       let count = 0;
       highestNumber = array[number];
-      for (position in array) {
-        if (array[position] == array[number]) {
+      for (let position in array) {
+        if (array[position] === array[number]) {
           count += 1;
-        };
-      };
+        }
+      }
       return count;
-    };
-  };
+    }
+  }
 }
 
 // Desafio 7
@@ -59,7 +59,7 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat2';
   } else {
     return 'os gatos trombam e o rato foge';
-  };
+  }
 }
 
 // Desafio 8
@@ -67,16 +67,16 @@ function fizzBuzz(array) {
   // seu código aqui
   const newArray = [];
   for (let number = 0; number < array.length; number += 1) {
-    if (array[number] % 3 == 0 && array[number] % 5 != 0) {
+    if (array[number] % 3 === 0 && array[number] % 5 !== 0) {
       newArray.push('fizz');
-    } else if (array[number] % 3 != 0 && array[number] % 5 == 0) {
+    } else if (array[number] % 3 !== 0 && array[number] % 5 === 0) {
       newArray.push('buzz');
-    } else if (array[number] % 3 == 0 && array[number] % 5 == 0) {
+    } else if (array[number] % 3 === 0 && array[number] % 5 === 0) {
       newArray.push('fizzBuzz');
-    } else if (array[number] % 3 != 0 && array[number] % 5 != 0) {
+    } else if (array[number] % 3 !== 0 && array[number] % 5 !== 0) {
       newArray.push('bug!');
-    };
-  };
+    }
+  }
   return newArray;
 }
 
@@ -91,13 +91,13 @@ function encode(string) {
     o: 4,
     u: 5,
   };
-  for (character in string) {
-    if (string[character] == 'a' || string[character] == 'e' || string[character] == 'i' || string[character] == 'o' || string[character] == 'u') {
+  for (let character in string) {
+    if (string[character] === 'a' || string[character] === 'e' || string[character] === 'i' || string[character] === 'o' || string[character] === 'u') {
       encodedMessage += code[string[character]];
     } else {
       encodedMessage += string[character];
-    };
-  };
+    }
+  }
   return encodedMessage;
 }
 
@@ -111,13 +111,13 @@ function decode(string) {
     4: 'o',
     5: 'u',
   };
-  for (character in string) {
-    if (string[character] == '1' || string[character] == '2' || string[character] == '3' || string[character] == '4' || string[character] == '5') {
+  for (let character in string) {
+    if (string[character] === '1' || string[character] === '2' || string[character] === '3' || string[character] === '4' || string[character] === '5') {
       decodedMessage += code[string[character]];
     } else {
       decodedMessage += string[character];
-    };
-  };
+    }
+  }
   return decodedMessage;
 }
 
