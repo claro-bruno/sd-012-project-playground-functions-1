@@ -15,23 +15,32 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(nomes) {
+  let n = nomes.length;
+  return `${nomes[n - 1]}, ${nomes[0]}`;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return (wins * 3) + (ties);
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+// let numerosEmOrdem = numeros.sort();
+function highestCount(numeros) {
+  let maiorNumero = Math.max.apply(null, numeros);
+  let count = 0;
+  for (let i of numeros) {
+    if (i === maiorNumero) {
+      count += 1;
+    }
+  }
+  return count;
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(cat1, cat2, mouse) {
+  
 }
 
 // Desafio 8
