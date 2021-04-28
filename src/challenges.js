@@ -46,20 +46,20 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(matriz) {
   /* matriz = ["Carla","bruna","lucia"]; */
-  resposta = []
+  resposta = [];
   for (let index = 0; index < matriz.length; index += 1) {
     if (matriz[index] % 3) {
-      matriz.push("fizz"); 
-    } 
+      matriz.push('fizz');
+    }
     else if (matriz[index] % 5) {
-      matriz.push("buzz"); 
+      matriz.push('buzz');
     } 
     else {
-        matriz.push("bug!"); 
+        matriz.push('bug!');
     }
   }
- /* console.log(matriz); */
- return(matriz);
+  /* console.log(matriz); */
+  return matriz;
 }
 
 // Desafio 9
