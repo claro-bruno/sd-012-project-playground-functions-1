@@ -1,39 +1,35 @@
 // Desafio 1
-function compareTrue(bolleano1,bolleano2) {
-  if(bulleano1===true && bulleano2===true){
+function compareTrue(bolleano1, bolleano2) {
+
+  if (bolleano1 === true && bolleano2 === true) {
     return true;
-  }
-  else{
-    return false;
-  }
-}
+  };
+  return false;
+};
 
 // Desafio 2
-function calcArea(base,height) {
-  return (base*height/2)
+function calcArea(base, height) {
+  return (base * height / 2)
   
 }
 
 // Desafio 3
 function splitSentence(frase) {
-let marcador=0;
-let palavras=[];
-let ffinal=[];
+let marcador= 0;
+let palavras= [];
+let ffinal= [];
 
-  for(let index=0; index<frase.length; index+=1){
-    if(frase[index]===' '){
-        for(marcador; marcador<index; marcador+=1){
-          palavras+=frase[marcador];
+  for (let index = 0; index < frase.length; index += 1){
+    if (frase[index] === ' '){
+        for (marcador; marcador < index; marcador += 1){
+          palavras += frase[marcador];
         };
         ffinal.push(palavras);
         palavras=[];
         marcador=index+1;
     };
-
   };
-
-
-  for(marcador;marcador<frase.length;marcador+=1){
+  for (marcador;marcador < frase.length;marcador += 1){
     palavras+=frase[marcador];
   };
      ffinal.push(palavras);
@@ -42,25 +38,45 @@ let ffinal=[];
 
 // Desafio 4
 function concatName(array) {
-  ultimo=array.length;
-  return array[ultimo-1] +','+ array[0]+'.'
+  ultimo= array.length;
+  return array[ultimo-1] + ', ' + array[0] + '.'
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 
-// Desafio 5
 function footballPoints(wins,ties) {
-  return wins*3+ties;
+  return wins * 3 + ties;
   
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(inteiros) {
+let maior = inteiro[0];
+let contador;
+  for (index = 0;index < inteiros.length;index += 1){
+    if(inteiros[index]>maior){
+      maior=inteiros[index];
+    }
+  };
+  for (index = 0;index < inteiros.length;index+=1){
+    if (inteiros[index] === maior){
+      contador+=1;
+    }
+  };
+  return contador;
+};
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse,cat1,cat2) {
+  let distancia1= mouse-cat1;
+  let distancia2= mouse-cat2;
+  if(distancia2< distancia1){
+    return "cat2";
+  }
+  if (distancia2> distancia1){
+    return "cat1";
+  }
+  else{
+    return "os gatos trombam e o rato foge"
+  }
 }
 
 // Desafio 8
