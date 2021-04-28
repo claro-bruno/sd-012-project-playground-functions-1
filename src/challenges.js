@@ -2,7 +2,7 @@
 function compareTrue(cond1, cond2, cond3, cond4) {
   // seu código aqui
   let result = false;
-  if ((cond1 === cond2) && (cond3 === cond4)) {
+  if ((cond1 === cond2) || (cond3 === cond4)) {
     result = true;
   } else {
     result = false;
@@ -37,6 +37,7 @@ function footballPoints() {
 // Desafio 6
 function highestCount() {
   // seu código aqui
+
 }
 
 // Desafio 7
@@ -54,16 +55,14 @@ function fizzBuzz() {
 function encode(string) {
   // seu código aqui
   let result = '';
-  for (let letra of string) {
-   
-  }
+  
   return result;
 }
 
 function decode(string) {
   // seu código aqui
   let result = '';
-  
+
   return result;
 }
 
