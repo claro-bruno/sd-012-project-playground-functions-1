@@ -76,9 +76,20 @@ console.log(getHighestNumberFromArray(numberArray1));
 console.log(getHighestNumberFromArray(numberArray2));
 console.log(getHighestNumberFromArray(numberArray3));
 
-function highestCount() {
-  // seu código aqui
+function highestCount(numberArray) {
+  let highestNumber = getHighestNumberFromArray(numberArray);
+
+  let contNumero = 0;
+  for (let index in numberArray) {
+      if (highestNumber === numberArray[index]) {
+        contNumero += 1;
+      }
+  }
+  return contNumero;
 }
+console.log(highestCount(numberArray1));
+console.log(highestCount(numberArray2));
+console.log(highestCount(numberArray3));
 
 // Desafio 7
 let mouse = 0;
