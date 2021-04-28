@@ -59,7 +59,7 @@ function catAndMouse(mouse,cat1,cat2) {
   } else if (Math.abs(cat2 - mouse) < Math.abs (cat1 - mouse)){
     return "cat2"
   } else {
-    return "os gatos trombam e o rato foge."
+    return "os gatos trombam e o rato foge"
   };
   
 }
