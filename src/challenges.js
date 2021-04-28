@@ -43,12 +43,12 @@ function highestCount(arrayNumeros) {
   let repeticoes = 0;
   let maiorNumero = arrayNumeros[0];
   for(let key in arrayNumeros){
-    if(arrayNumeros[key] > maiorNumero) {
+    if (arrayNumeros[key] > maiorNumero) {
       maiorNumero = arrayNumeros[key];
     }
   }
   for(let key in arrayNumeros) {
-    if(maiorNumero === arrayNumeros[key]) {
+    if (maiorNumero === arrayNumeros[key]) {
       repeticoes += 1;
     }
   }
@@ -63,7 +63,7 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat2Distance = Math.abs(mouse - cat2);
   if (cat1Distance > cat2Distance) {
     firstCat = 'cat2';
-  } else if(cat1Distance < cat2Distance) {
+  } else if (cat1Distance < cat2Distance) {
     firstCat = 'cat1';
   } else {
     firstCat = 'os gatos trombam e o rato foge';
@@ -76,11 +76,11 @@ console.log(catAndMouse(8, 0, 20));
 function fizzBuzz(arrayNumeros) {
   let fraseFizzBuzz = [];
   for(let key in arrayNumeros){
-    if((arrayNumeros[key]) % 3 === 0 && (arrayNumeros[key]) % 5 > 0){
+    if ((arrayNumeros[key]) % 3 === 0 && (arrayNumeros[key]) % 5 > 0) {
       fraseFizzBuzz.push ('fizz');
-    } else if((arrayNumeros[key]) % 5 === 0 && (arrayNumeros[key]) % 3 > 0){
+    } else if ((arrayNumeros[key]) % 5 === 0 && (arrayNumeros[key]) % 3 > 0){
       fraseFizzBuzz.push ('buzz');
-    } else if((arrayNumeros[key]) % 3 === 0 && (arrayNumeros[key]) % 5 === 0){
+    } else if ((arrayNumeros[key]) % 3 === 0 && (arrayNumeros[key]) % 5 === 0){
       fraseFizzBuzz.push ('fizzBuzz');
     }else {
       fraseFizzBuzz.push ('bug!');
@@ -146,7 +146,6 @@ function decode(string) {
   return stringDecode;
 }
 console.log(decode('h3 th2r2!'));
-
 
 module.exports = {
   calcArea,
