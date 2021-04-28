@@ -19,7 +19,7 @@ function splitSentence(phrase) {
 
 // Desafio 4
 function concatName(arrayNomes) {
-  let ultPrimeiro = (`${arrayNomes[arrayNomes.length -1]}, ${arrayNomes[0]}`);
+  let ultPrimeiro = (`${arrayNomes[arrayNomes.length - 1]}, ${arrayNomes[0]}`);
   return ultPrimeiro;
 }
 
@@ -29,15 +29,6 @@ function footballPoints(wins, ties) {
   return pontosWins + ties;
 }
 
-// Desafio 6
-function highestCount(numbers) {
-  let maiorNum = 0;
-  for (let i in numbers) {
-    if(numbers[i] > maiorNum) maiorNum = numbers[i];
-  }
-  return contRepeated(numbers, maiorNum);
-}
-
 // Desafio 6.1
 function contRepeated(numbers, maiorNum){
   let contMaiorNum = 0;
@@ -45,6 +36,15 @@ function contRepeated(numbers, maiorNum){
     if (numbers[i] === maiorNum) contMaiorNum += 1;
   }
   return contMaiorNum;
+}
+
+// Desafio 6
+function highestCount(numbers) {
+  let maiorNum = 0;
+  for (let i in numbers) {
+    if (numbers[i] > maiorNum) maiorNum = numbers[i];
+  }
+  return contRepeated(numbers, maiorNum);
 }
 
 // Desafio 7
