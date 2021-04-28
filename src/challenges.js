@@ -1,8 +1,12 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(num1, num2) {
   // seu código aqui
-  
-}
+  if(num1 > 0 && num2 <= 50) {
+    return 'true';
+  }else {
+    return 'false';
+  };
+};
 
 // Desafio 2
 function calcArea() {
