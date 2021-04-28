@@ -40,7 +40,7 @@ function generatePhoneNumber(arrayNumbers) {
         if (index === "0") {
           result += `(${arrayNumbers[index]}`;
         } else if (index === "2") {
-          result += `)${arrayNumbers[index]}`;
+          result += `) ${arrayNumbers[index]}`;
         } else if (index === "7") {
           result += `-${arrayNumbers[index]}`;
         } else {
