@@ -90,13 +90,11 @@ function fizzBuzz(arr) {
     }else if(arr[index] % 3 === 0 && arr[index] % 5 === 0) {
       str.push("fizzBuzz");
     } else {
-      str.push("bug")
+      str.push("bug!");
     };
   };  
   return str;
 };
-let nums = [2, 15, 7, 9, 45];
-console.log(fizzBuzz(nums));
 
 // Desafio 9
 function encode() {
