@@ -9,7 +9,7 @@ function compareTrue(bool1, bool2) {
   }
   return trueOrFalse;
   
-}
+};
 //console.log(compareTrue(true, false));
 
 
@@ -20,14 +20,19 @@ function calcArea(base, height) {
   calc = (base * height) /2;
 
   return calc;
-}
+};
 
 //console.log(calcArea (51, 1));
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(frase) {
   // seu código aqui
-}
+  let separador;
+  separador = frase.split (" ");
+
+  return separador;
+};
+//console.log (splitSentence("foguete"));
 
 // Desafio 4
 function concatName() {
