@@ -40,18 +40,42 @@ function highestCount(numeros) {
 
 // Desafio 7
 function catAndMouse(cat1, cat2, mouse) {
-  
+  let cat1Mouse = Math.abs(cat1 - mouse);
+  let cat2Mouse = Math.abs(cat2 - mouse);
+  let quemPega;
+  if (cat1Mouse < cat2Mouse) {
+    quemPega = 'cat1';
+  } else if (cat1Mouse > cat2Mouse) {
+    quemPega = 'cat2';
+  } else {
+    quemPega = 'os gatos trombam e o rato foge';
+  }
+  return quemPega;
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numeros) {
+  let result = [];
+  for (let i of numeros) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      result.push('fizzBuzz');
+    } else if (i % 3 === 0) {
+      result.push('fizz');
+    } else if (i % 5 === 0) {
+      result.push('buzz');
+    } else {
+      result.push('bug!');
+    }
+  }
+  return result;
 }
+
 
 // Desafio 9
 function encode() {
   // seu código aqui
 }
+
 function decode() {
   // seu código aqui
 }
