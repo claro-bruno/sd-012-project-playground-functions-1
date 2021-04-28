@@ -12,14 +12,13 @@ function calcArea(base, height) {
 }
 // Desafio 3
 function splitSentence(string) {
-  let words = string.split(" ");
+  let words = string.split(" "); //Ref.: https://stackoverflow.com/questions/18473326/javascript-break-sentence-by-words#:~:text=Just%20use%20split%20%3A,%22%2C%20%22sentence.%22%5D
   return words;
 }
-  // Desafio 4
-  function concatName() {
-    // seu código aqui
-  }
-  
+// Desafio 4
+function concatName(array) {
+  return ("'" + array[(array.length - 1)] + ", " + array[0] + "'");
+}
   // Desafio 5
   function footballPoints() {
     // seu código aqui
