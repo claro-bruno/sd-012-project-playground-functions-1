@@ -158,9 +158,41 @@ function fizzBuzz(arrayOfNumbers) {
 };
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
+function encode(str1) {
+
+  let str1Result = "";
+
+  for (let key in str1) {
+    switch (true) {
+      case (str1[key] === "a"):
+        str1Result += "1";
+        break;
+        
+      case (str1[key] === "e"):
+        str1Result += "2";
+        break;
+
+      case (str1[key] === "i"):
+        str1Result += "3";
+        break;
+
+      case (str1[key] === "o"):
+        str1Result += "4";
+        break;
+
+      case (str1[key] === "u"):
+        str1Result += "5";
+        break;
+
+      default:
+        str1Result += str1[key];
+        break;
+    };
+  };
+
+  return str1Result;
+};
+
 function decode() {
   // seu código aqui
 }
