@@ -93,12 +93,37 @@ function fizzBuzz(arrayFizzBuzz) {
   } 
   return resultado;
 }
-console.log(fizzBuzz([2,15,7,9,45]))
+
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(stringVogais) {
+  let resultado;
+  for (vogal of stringVogais){
+    switch(stringVogais) {
+      case "a":
+        resultado = resultado + "1"
+        break;
+      case "e":
+        resultado = resultado + "2"
+        break;
+      case "i":
+        resultado = resultado + "3"
+        break;
+      case "o":
+        resultado = resultado + "4"
+        break;
+      case "u":
+        resultado = resultado + "5"
+        break;
+      default:
+        resultado = resultado;
+
 }
+}
+  return resultado;
+}
+console.log(stringVogais("oi, eu sou o goku"));
+
 function decode() {
   // seu código aqui
 }
