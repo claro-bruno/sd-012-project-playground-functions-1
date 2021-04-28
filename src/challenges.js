@@ -121,12 +121,50 @@ function fizzBuzz(arrNumbers) {
 console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+function encode(str) {
+  
+  let returnString = '';
+  let encode = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5
+  };
+
+  for (let index = 0; index < str.length; index += 1) {
+    if (str[index] === 'a' || str[index] === 'e' || str[index] === 'i' || str[index] === 'o' || str[index] === 'u') {
+      returnString += encode[str[index]];
+    } else {
+      returnString += str[index];
+    };
+  };
+  return returnString;
+};
+
+console.log(encode('hi there!'));
+
+function decode(str) {
+  let returnString = '';
+  let encode = {
+    1: a,
+    2: e,
+    3: i,
+    4: o,
+    5: u
+  };
+
+  for (let index = 0; index < str.length; index += 1) {
+    if (str[index] === '1' || str[index] === '2' || str[index] === '3' || str[index] === '4' || str[index] === '5') {
+      returnString += encode[str[index]];
+    } else {
+      returnString += str[index];
+    };
+  };
+  return returnString;
+};
+
+console.log(encode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
