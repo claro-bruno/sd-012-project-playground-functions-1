@@ -7,74 +7,45 @@ function compareTrue(bool1, bool2) {
   }
 };
 
-
-
-
 // Desafio 2
 function calcArea(base, height) {
   let operationCalcArea = (base * height) / 2
   return operationCalcArea
 }
 
-
-
-
-
 // Desafio 3
-let fraseDesafio3 = 'go trybe';
-
 function splitSentence(fraseDesafio3) {
   let arraySeparada = fraseDesafio3.split(' ');
   return arraySeparada;
 }
 
-console.log(splitSentence(fraseDesafio3));
-
-
-
 // Desafio 4
-let arrayString = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-
 function concatName(arrayString) {
 
   let finalElement = arrayString[arrayString.length - 1] + ', ' + arrayString[0];
 
   return finalElement;
-
 }
 
-console.log(concatName(arrayString));
-
-
-
 // Desafio 5
-let wins = 0;
-let ties = 0;
-
 function footballPoints(wins, ties) {
 
   let points = (wins * 3) + (ties * 1);
 
   return points;
-
 }
 
-console.log(footballPoints(wins, ties));
-
-
-
-
 // Desafio 6
+function highestCount(arrayDesafio6) {
 
-let array = [0, 0, 0];
+  let higherNumber = arrayDesafio6[0];
 
-function highestCount(array) {
-
-  let higherNumber = array[0];
-
-  for (let index = 0; index < array.length; index += 1) {
-    if (array[index] > higherNumber) {
-      higherNumber = array[index];
+  for (let index = 0; index < arrayDesafio6
+.length; index += 1) {
+    if (arrayDesafio6
+  [index] > higherNumber) {
+      higherNumber = arrayDesafio6
+  [index];
     } else {
       higherNumber = higherNumber;
     };
@@ -82,8 +53,10 @@ function highestCount(array) {
 
   let numberOfRepetitions = 0;
 
-  for (let counter = 0; counter < array.length; counter += 1) {
-    if (array[counter] === higherNumber) {
+  for (let counter = 0; counter < arrayDesafio6
+.length; counter += 1) {
+    if (arrayDesafio6
+  [counter] === higherNumber) {
       numberOfRepetitions += 1;
     };
   };
@@ -92,18 +65,8 @@ function highestCount(array) {
 
 }
 
-console.log(highestCount(array));
-
-
-
-
-
 // Desafio 7
-
-let cat1 = 6;
-let cat2 = 2;
-
-function catAndMouse(cat1, cat2) {
+function catAndMouse(mouse, cat1, cat2) {
   if (cat1 < cat2) {
     return 'cat1';
   } else if (cat2 < cat1) {
@@ -112,9 +75,6 @@ function catAndMouse(cat1, cat2) {
     return "os gatos trombam e o rato foge";
   };
 };
-
-console.log(catAndMouse(cat1, cat2))
-
 
 
 
