@@ -22,11 +22,9 @@ function splitSentence(string) {
 function concatName(array) {
   let primeiro = [];
   let ultimo = [];
-  for(let index in array){
   primeiro = array[0];
   ultimo = array[array.length -1];
   return [ultimo, primeiro];
-  }
 }
 
 // Desafio 5
