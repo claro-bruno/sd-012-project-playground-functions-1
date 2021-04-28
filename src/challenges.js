@@ -5,13 +5,15 @@ function compareTrue(boolean1, boolean2) {
     return true;
   }else{
     return false;
-  }
-}
+  };
+};
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
-}
+  let area = (base * height) / 2;
+  return area;
+};
 
 // Desafio 3
 function splitSentence() {
