@@ -1,14 +1,9 @@
 // Desafio 1
 function compareTrue(numero1, numero2) {
   // seu código aqui
-  let par = false;
-
-  if (numero1 % 2 == 0 && numero2 % 2 == 0){
-    return par = "True";
-  } else {
-    return par = "False";
-  };
+  return numero1 % 2 == 0 && numero2 % 2 == 0
 }
+
 
 // Desafio 2
 function calcArea(base, altura) {
@@ -43,9 +38,19 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount() {
   // seu código aqui
+  let numeros = [9, 1, 2, 3, 9, 5, 7];
+  let maiorNumero = Math.max(numeros)
+  let contador = 0
 
-
+  for (let index = 0; index <= numeros.length; index += 1){
+    if (maiorNumero == numeros[index]){
+      contador ++
+    };
+  };
+  return contador;
 }
+
+console.log(highestCount());
 
 // Desafio 7
 function catAndMouse() {
