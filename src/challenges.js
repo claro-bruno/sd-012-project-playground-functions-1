@@ -1,5 +1,5 @@
 // Desafio 1
-/*
+
 let value = true;
 let value2 = true;
 
@@ -31,7 +31,7 @@ console.log(calcArea(base, height));
 
 
 
-// Desafio 3 - FALTA
+// Desafio 3
 let string = 'go trybe';
 
 function splitSentence(string) {
@@ -41,8 +41,7 @@ function splitSentence(string) {
 
 console.log(splitSentence(string));
 
-*/
-/*
+
 
 // Desafio 4
 let arrayString = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
@@ -126,18 +125,66 @@ function catAndMouse(cat1, cat2) {
 console.log(catAndMouse(cat1, cat2))
 
 
-*/
 
-// Desafio 8
+
+// Desafio 8 - FALTA
+
+let array = [2, 15, 7, 9, 45];
+
+let arrayNova = [];
+
+for (let index = 0; index < array.length; index += 1) {
+  if (array[index] % 3 = 0 && array[index] % 5 = 0){
+    arrayNova.push('fizzBuzz');
+  } else if (array[index] % 3 = 0) {
+      arrayNova.push('fizz');
+  } else if (array[index] % 5 = 0) {
+      arrayNova.push('buzz');
+  } else {
+      arrayNova.push('bug!');
+  };
+  console.log(arrayNova);
+};
+
+
+
 function fizzBuzz() {
   // seu código aqui
 }
 
-/*
 
-// Desafio 9
+
+// Desafio 9 FALTA
+
+let string = 'hi there!';
+
+let object = {
+  a: 1,
+  e: 2,
+  i: 3,
+  o: 4,
+  u: 5,
+}
+
+let frase = '';
+
+for (let index = 0; index < string.length; index += 1) {
+  for (let key in object) {
+    if (string[index] === key){
+      frase += object[key];
+    } else {
+      frase += string[index];
+    };
+  };
+};
+
+console.log(frase);
+
+
+
+
 function encode() {
-  // seu código aqui
+ 
 }
 function decode() {
   // seu código aqui
@@ -156,4 +203,4 @@ module.exports = {
   splitSentence,
 };
 
-*/
+
