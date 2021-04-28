@@ -44,8 +44,8 @@ function concatName(arrayString) {
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  wins = wins * 3;
-  let resultado = wins + ties;
+  let wins2 = wins * 3;
+  let resultado = wins2 + ties;
   return resultado;
 }
 
@@ -69,13 +69,15 @@ function highestCount(arrayNumeros) {
 // Desafio 7
 function catAndMouse(cat1, cat2) {
   // seu código aqui
+  let resultado = '';
   if (cat1 > cat2) {
-    return 'cat2';
+    resultado = 'cat2';
   } else if (cat2 > cat1) {
-    return 'cat1';
+    resultado = 'cat1';
   } else if (cat1 === cat2) {
-    return 'os gatos trombam e o rato foge';
+    resultado = 'os gatos trombam e o rato foge';
   }
+  return resultado;
 }
 
 // Desafio 8
