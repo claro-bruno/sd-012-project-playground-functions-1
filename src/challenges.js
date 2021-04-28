@@ -15,8 +15,10 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(matriz) {
-  let resposta = matriz[0] +', ';
-  resposta = resposta + matriz[matriz.length-1] + '.';
+  let resposta = matriz[0] 
+  resposta = resposta +', ';
+  resposta = resposta + matriz[matriz.length-1] 
+  resposta = resposta + '.';
   return resposta;
 }
 
