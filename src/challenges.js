@@ -133,7 +133,7 @@ function encode(string) {
   trocar se a 
   */
 
-  let changeVowel;
+  // let changeVowel;
 
   // for (let index = 0; index < string.length; index += 1) {
   //   return string.replace(/a/, '1');
@@ -144,31 +144,23 @@ function encode(string) {
   //   changeVowel = string[index];
   //   }
 
-  return string.replace(/a/, '1');
-  return string.replace(/e/, '2');
-  return string.replace(/i/, '3');
-  return string.replace(/o/, '4');
-  return string.replace(/u/, '5');
-  
-  changeVowel = 
-  }
+  //   return string.replace(/a/, '1');
+  //   return string.replace(/e/, '2');
+  //   return string.replace(/i/, '3');
+  //   return string.replace(/o/, '4');
+  //   return string.replace(/u/, '5');
+  // console.log(encode('hi there!'));
 
-console.log(encode('hi there!'));
+  // a -> 1
+  // e -> 2
+  // i -> 3
+  // o -> 4
+  // u -> 5
 
-
-a -> 1
-e -> 2
-i -> 3
-o -> 4
-u -> 5
-
-let vogais = 'hae!'
-let vogais2 = vogais.replace(/a/, '1');
-vogais.replace(/e/, '2');
-console.log(vogais2);
-
-
-
+  // let vogais = 'hae!'
+  // let vogais2 = vogais.replace(/a/, '1');
+  // vogais.replace(/e/, '2');
+  // console.log(vogais2);
 
 function decode() {
   /* 
