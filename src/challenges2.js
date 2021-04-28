@@ -4,7 +4,7 @@ function techList(tech, name) {
   for (let indexTech = 0; indexTech < tech.length; indexTech += 1) {
     objects[indexTech] = {
       tech: tech[indexTech],
-      name: name,
+      name,
     };
   }
   objects.sort();
@@ -12,7 +12,7 @@ function techList(tech, name) {
   return objects;
 }
 
-function compare(a,b) {
+function compare(a, b) {
   if (a < b) {
     return -1;
   }
@@ -82,11 +82,11 @@ function hydrate(string) {
     let indexToNumber = Number(array[indexArray]);
     counter += indexToNumber;
   }
+  let result;
   if (counter > 1) {
     result = `${counter} copos de água`;
-  }
-  else {
-    result = `1 copo de água`;
+  } else {
+    result = '1 copo de água';
   }
   return result;
 }
