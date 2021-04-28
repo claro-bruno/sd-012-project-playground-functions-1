@@ -84,7 +84,7 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-  let stringLowerCase = string.toLowerCase().split("");
+  let stringLowerCase = string.split("");
   for (let key in stringLowerCase){
     if (stringLowerCase[key] === 'a') {
       stringLowerCase[key] = '1';
@@ -102,7 +102,7 @@ function encode(string) {
 }
 
 function decode(string) {
-  let stringLowerCase = string.toLowerCase().split("");
+  let stringLowerCase = string.split("");
   for (let key in stringLowerCase){
     if (stringLowerCase[key] === '1') {
       stringLowerCase[key] = 'a';

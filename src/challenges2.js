@@ -8,7 +8,7 @@ function techList(array, string) {
       name: string,
     };
   }
-  if (array.length === 0){
+  if (array.length === 0) {
     list = 'Vazio!';
   }
   return list;
