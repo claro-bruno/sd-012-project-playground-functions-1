@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(param1, param2) {
-  let comparation = false
+  let comparation = false;
   if (param1 === true && param2 === true) {
     comparation = true;
   }
@@ -49,8 +49,16 @@ function highestCount(numbersArray) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let catcher;
+  if ((cat1 - mouse) > (cat2 - mouse)) {
+    catcher = 'cat2';
+  } else if ((cat2 - mouse) > (cat1 - mouse)){
+    catcher = 'cat1';
+  } else if ((cat1 - mouse) == (cat2 - mouse)) {
+    catcher = "os gatos trombam e o rato foge";
+  }
+  return catcher;
 }
 
 // Desafio 8
