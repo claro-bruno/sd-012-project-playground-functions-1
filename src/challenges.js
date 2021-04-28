@@ -5,30 +5,31 @@ function compareTrue(boolean1, boolean2) {
       value = true;
   } else{
       value = false;
-  };
+  }
   return value;
 }
 
 // Desafio 2
-function calcArea(base, height){
-  return (base*height)/2;
+function calcArea(base, height) {
+  return (base * height) / 2;
 }
 
 // Desafio 3
-function splitSentence(string){
+function splitSentence(string) {
   return string.split(' ');
 }
 
 // Desafio 4
-function concatName(arrayName){
-  let novaArray = [];
-  string = arrayName[arrayName.length -1] + ', ' + (arrayName[0]);
+function concatName(arrayName) {
+  let string = '';
+  string = arrayName[arrayName.length - 1] + ', ' + (arrayName[0]);
   return string;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return (wins * 3) + ties;
+  
 }
 
 // Desafio 6
@@ -67,4 +68,4 @@ module.exports = {
   splitSentence,
 };
 
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
+//console.log(footballPoints(14,8));
