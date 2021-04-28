@@ -73,7 +73,7 @@ function checkBuzz(num) {
 // Desafio 8
 function fizzBuzz(numbers) {
   let newArray = [];
-  for (let i in numbers) {
+  for (let i = 0; i < numbers.length; i += 1) {
     newArray.push(checkBuzz(numbers[i]));
   }
   return newArray;
