@@ -36,14 +36,10 @@ function footballPoints(wins, ties) {
 function highestCount(arrayNum) {
   // seu código aqui
   let count = 0;
-  for (let num = 9; num >= 0; num -= 1) {
-    for (let varredura = 0; varredura < arrayNum.length; varredura += 1) {
-      if (arrayNum[varredura] === num) {
-        count += 1;
-      }
-    }
-    if (count !== 0) {
-      break;
+  let maiorNumero = Math.max.apply(null, arrayNum); // retirado https://pt.stackoverflow.com/questions/35202/como-saber-o-maior-valor-de-um-array
+  for (let varredura = 0; varredura < arrayNum.length; varredura += 1) {
+    if (arrayNum[varredura] === maiorNumero) {
+      count += 1;
     }
   }
   return count;
@@ -52,8 +48,8 @@ function highestCount(arrayNum) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let positionCat1Mouse = Math.sqrt((cat1 - mouse) ** 2);
-  let positionCat2Mouse = Math.sqrt((cat2 - mouse) ** 2);
+  let positionCat1Mouse = Math.abs(cat1 - mouse);
+  let positionCat2Mouse = Math.abs(cat2 - mouse);
   let cases = 'Os gatos trombam e o rato foge';
   if (positionCat1Mouse < positionCat2Mouse) {
     cases = 'Cat1';
@@ -87,13 +83,8 @@ function fizzBuzz(arrayFizzBuzz) {
 // Desafio 9
 function encode(strEcode) {
   // seu código aqui
-  for (let key in strEcode) {
-    if () {
-  
-    
-    }
-  }
 }
+
 function decode() {
   // seu código aqui
 }
