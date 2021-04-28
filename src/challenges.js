@@ -21,14 +21,14 @@ function calcArea(base, height) {
 
 
 // Desafio 3
-let string = 'go trybe';
+let fraseDesafio3 = 'go trybe';
 
-function splitSentence(string) {
-  let arraySeparada = string.split(' ');
+function splitSentence(fraseDesafio3) {
+  let arraySeparada = fraseDesafio3.split(' ');
   return arraySeparada;
 }
 
-console.log(splitSentence(string));
+console.log(splitSentence(fraseDesafio3));
 
 
 
@@ -141,9 +141,9 @@ for (let index = 0; index < array8.length; index += 1) {
 
 // Desafio 9 FALTA
 
-let string = 'hi there!';
+let fraseDesafio9 = 'hi there!';
 
-let object = {
+let objetodesafio9 = {
   a: 1,
   e: 2,
   i: 3,
@@ -153,12 +153,12 @@ let object = {
 
 let frase = '';
 
-for (let index = 0; index < string.length; index += 1) {
-  for (let key in object) {
-    if (string[index] === key) {
-      frase += object[key];
+for (let index = 0; index < fraseDesafio9.length; index += 1) {
+  for (let key in objetodesafio9) {
+    if (fraseDesafio9[index] === key) {
+      frase += objetodesafio9[key];
     } else {
-      frase += string[index];
+      frase += fraseDesafio9[index];
     };
   };
 };
