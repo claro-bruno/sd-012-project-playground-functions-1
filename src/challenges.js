@@ -27,15 +27,20 @@ console.log(splitSentence('Vamo que vamo'));
 let array = ['João', 'Maria', 'José', 'Antonio'];
 
 function concatName(procura) {
-  return procura[procura.length -1] + ", " + procura[0];
+  let resultado = procura[procura.length -1] + ', ' + procura[0];
+  return resultado
 };
 
 console.log(concatName(array));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+function footballPoints(wins, ties) {
+  let vitórias = 3 * wins;
+  let resultado2 = vitórias + ties;
+  return resultado2;
+};
+
+console.log(footballPoints(15, 8));
 
 // Desafio 6
 function highestCount() {
