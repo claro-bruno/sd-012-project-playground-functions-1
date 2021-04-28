@@ -1,8 +1,12 @@
 // Desafio 1
 function compareTrue() {
-  /// seu código aquii
-  vqv
+  if (1 < 2 && 2 < 3) {
+    return true
+  } else {
+    return false
+  }
 }
+compareTrue();
 
 // Desafio 2
 function calcArea() {
