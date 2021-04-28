@@ -14,7 +14,6 @@ function calcArea(base, height) {
   let area = (base * height / 2);
   return area;
 };
-console.log(calcArea(5, 2));
 
 // Desafio 3
 function splitSentence(str) {
@@ -33,11 +32,6 @@ function concatName(arr) {
   let together = last + ',' + ' ' + first;
   return together;
 };
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
-
-
-
-
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -46,11 +40,6 @@ function footballPoints(wins, ties) {
   let points = (wins*3) + ties;
   return points;
 }
-console.log(footballPoints(1, 2))
-
-
-
-
 
 // Desafio 6
 function highestCount(arr) {
@@ -69,7 +58,7 @@ function highestCount(arr) {
   }
   return count;
 }
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -85,29 +74,29 @@ function catAndMouse(mouse, cat1, cat2) {
   };
   return;
 };
-console.log(catAndMouse(1, 1, 2));
+
 
 // Desafio 8
-function fizzBuzz(div3, div5, div35, none) {
+function fizzBuzz(arr) {
   // seu código aqui
   let str = [];
-  let nums = Math.random(Math.ceil()*60);
-  // div3 = (nums / 3 % 0);
-  // div5 = (nums / 5 === 0);
-  // div35 = (nums / 3 === 0 && nums / 5 === 0);
-  // none = (nums / 3 !== 0 && nums /5 !== 0);
-  if(nums / 3 % 0 === true) {
-    div3 = ("fizz");
-  // } else if((nums / 5) % 0 === true) {
-  //   str.push("buzz");
-  // }else if(div35 === true) {
-  //   str.push("fizzBuzz");
-  // } else if(none === true) {
-  //   str.push("bug!");
-  };
-  return div3;
-}
-console.log(fizzBuzz(3))
+  for(let index = 0; index < arr.length; index +=1){
+    if(arr[index] % 3 === 0 && arr[index] % 5 === 0) {
+      str.push("fizzBuzz");
+    } else if(arr[index] % 5 === 0) {
+      str.push("buzz");
+    }else if(arr[index] % 3 === 0) {
+      str.push("fizz");  
+    }else if(arr[index] % 3 === 0 && arr[index] % 5 === 0) {
+      str.push("fizzBuzz");
+    } else {
+      str.push("bug")
+    };
+  };  
+  return str;
+};
+let nums = [2, 15, 7, 9, 45];
+console.log(fizzBuzz(nums));
 
 // Desafio 9
 function encode() {
