@@ -1,9 +1,7 @@
-function compareTrue(bool1,bool2) {
-  if ( bool1 == true && bool2 == true) {
-    return true ;
- } else {
-    return false;
- }  
+function calcArea(base,height) {
+  let area = (base * height) / 2;
+  return area;
  }
-
-console.log(compareTrue(true,true));
+console.log(calcArea(10,50));
+console.log(calcArea(5,2));
+console.log(calcArea(51,1));
