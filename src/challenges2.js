@@ -56,7 +56,7 @@ function hydrate(string) {
     sum = Number(string[index]) + sum;
   }
   console.log(string)
-  return sum;
+  return `${sum} copos de água`;
 }
 //console.log(hydrate("3 cachaça, 8cervejas e 1 copo de vinho"));
 module.exports = {
