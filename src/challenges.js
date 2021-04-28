@@ -60,6 +60,7 @@ if  (i % 3 === 0) {
    } else {
      console.log(i);
      }
+     return fizzBuzz;
 }
 
 // Desafio 9
