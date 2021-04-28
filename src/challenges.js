@@ -35,9 +35,18 @@ function splitSentence(frase) {
 //console.log (splitSentence("foguete"));
 
 // Desafio 4
-function concatName() {
+function concatName(array) {
   // seu código aqui
+  let concat;
+  for(let index = 0; index < array.length; index += 1){
+    concat = (array[array.length-1]) + ',' + array[0];
+  }
+  
+  return concat;
 }
+
+//console.log(concatName (['captain', 'my', 'captain']));
+
 
 // Desafio 5
 function footballPoints() {
