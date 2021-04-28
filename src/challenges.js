@@ -3,67 +3,88 @@
 let bool1 = true;
 let bool2 = false;
 
-console.log(compareTrue(bool1, bool2));
+compareTrue(bool1, bool2);
 
 function compareTrue(bool1, bool2) {
   if (bool1 && bool2) {
     return true;
   } else {
     return false;
-  };
-};
+  }
+}
 
 // Desafio 2
-console.log(calcArea(51, 1));
+calcArea(51, 1);
 
 function calcArea(base, height) {
   return (base * height) / 2;
-};
+}
 
 // Desafio 3
 let string = 'go trybe';
 
-console.log(splitSentence(string));
+splitSentence(string);
 
 function splitSentence(string) {
   let stringSplit = string.split(' ');
   return stringSplit;
-};
+}
 
 // Desafio 4
 let arr = ['foguete', 'não', 'tem', 'ré'];
 
-console.log(concatName(arr));
+concatName(arr);
 
 function concatName(arr) {
   let arrSplit = [];
-  for(let index = 0; index<arr.length; index+=1){
+  for (let index = 0; index < arr.length; index += 1) {
     console.log(index);
-    if(index === 0 || index === arr.length-1){
+    if (index === 0 || index === arr.length - 1) {
       arrSplit.unshift(arr[index]);
-    };
-  };
+    }
+  }
   return arrSplit;
-};
+}
 
 // Desafio 5
 let win = 1;
 let tie = 2;
 
-console.log(footballPoints(win, tie));
+footballPoints(win, tie);
 
-function footballPoints() {
-  return ((win * 3) + tie);
-};
+function footballPoints(win, tie) {
+  return win * 3 + tie;
+}
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+arr = [9, 1, 2, 3, 9, 5, 7];
+
+console.log(highestCount(arr));
+
+function highestCount(arr) {
+  let highNum = highestNum(arr);
+  let count = 0;
+  for(let index = 0; index< arr.length; index += 1){
+    if(highNum === arr[index]){
+      count += 1;
+    };
+  };
+  return count;
+};
+
+function highestNum(arr){
+  let bigNum = 0;
+  for(let index = 0; index<arr.length; index+=1){
+    if(arr[index]>=bigNum){
+      bigNum = arr[index];
+    };
+  };
+  return bigNum;
+};
 
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
+  
 }
 
 // Desafio 8
