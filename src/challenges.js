@@ -58,28 +58,21 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   if (distanciaCat2 < distanciaCat1) {
     return 'cat2';
-  } else {
-    return 'os gatos trombam e o rato foge';
-  }
+  } 
+  return 'os gatos trombam e o rato foge';
 }
-
+// Desafio 8.1
+function checkBuzz(num){
+  if (num % 3 == 0) return 'fizz';
+  if (num % 5 == 0) return 'buzz';
+  if (num % 3 == 0 && num % 5 == 0) return 'fizzBuzz';
+  return 'bug!';
+}
 // Desafio 8
 function fizzBuzz(numbers) {
   let newArray=[];
   for (let i in numbers){
-    let divPor3 = false;
-    let divPor5 = false;
-    if(numbers[i] % 3 == 0 ) divPor3 = true;
-    if(numbers[i] % 5 == 0 ) divPor5 = true;
-    if (divPor3 == true && divPor5 == false) {
-      newArray.push("fizz");
-    }else if (divPor3 == false && divPor5 == true){
-      newArray.push("buzz");
-    }else if (divPor3 == true && divPor5 == true){
-      newArray.push("fizzBuzz");
-    } else {
-      newArray.push("bug!");
-    } 
+    newArray.push(checkBuzz(numbers[i]));
   }
   return newArray;
 }
