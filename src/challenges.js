@@ -34,10 +34,10 @@ function concatName(array) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  let quantidadeDePontos = (3 * wins) + (1 * ties) + ' ' + 'pontos';
+  let quantidadeDePontos = (3 * wins) + (1 * ties);
     return quantidadeDePontos;
   }
- console.log(footballPoints(0, 0));
+ console.log(footballPoints(14, 8));
 
 // Desafio 6
 function highestCount() {
