@@ -57,6 +57,7 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat1';
   } if ((mouse - cat1) > (mouse - cat2)) {
     return 'cat2';
+  }
 }
 
 // Desafio 8
@@ -83,4 +84,4 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-};
+}
