@@ -53,9 +53,13 @@ if  (i % 3 === 0) {
 } else if (index % 3 === 0 && i % 5 === 0) {
     console.log("fizzBuzz");
     
-    } else (index % 3 !== 0 && i % 5 !== 0); {
+    } else if (index % 3 !== 0 && i % 5 !== 0) {
       
    console.log("bug");
+   
+   } else {
+     console.log(i);
+     }
 }
 
 // Desafio 9
