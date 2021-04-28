@@ -76,7 +76,7 @@ function fizzBuzz(numbers) {
     }else if (divPor3 == true && divPor5 == true){
       newArray.push("fizzBuzz");
     } else {
-      newArray.push("bug");
+      newArray.push("bug!");
     } 
   }
   return newArray;
