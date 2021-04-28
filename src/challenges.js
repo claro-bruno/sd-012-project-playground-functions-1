@@ -17,15 +17,15 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-  let resposta = []
-  resposta.push(array[array.length - 1])
-  resposta.push(array[0])
-  return resposta
+  let resposta = [];
+  resposta.push(array[array.length - 1]);
+  resposta.push(array[0]);
+  return resposta;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return (wins * 3) + (ties * 1);
 }
 
 // Desafio 6
