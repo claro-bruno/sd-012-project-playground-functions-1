@@ -52,11 +52,11 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat2ToMouse = mouse - cat2;
 
   if (cat1ToMouse > cat2ToMouse) {
-    return ('cat2');
+    return ('cat1');
   }
   
   else if (cat1ToMouse < cat2ToMouse) {
-    return ('cat1');
+    return ('cat2');
   }
 
   else if (cat1ToMouse === cat2ToMouse) {
