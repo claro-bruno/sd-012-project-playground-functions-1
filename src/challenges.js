@@ -1,13 +1,13 @@
 // Desafio 1
 function compareTrue(num1, num2) {
-  let comparacao = 20;
-  if(num1 + num2 >= comparacao && num2  + num1 >= comparacao){
-return true;
-}else{
-  return false;
+  let comparacao = false;
+  if (num1 === num2 && num2 === num1){
+    return comparacao = true;
+  }
+  console.log(comparacao)
 }
-}
-console.log(compareTrue (5,15));
+console.log(compareTrue (5,3));
+
 
 // Desafio 2
 function calcArea() {
