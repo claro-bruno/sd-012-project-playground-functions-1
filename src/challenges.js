@@ -7,8 +7,8 @@ function compareTrue(x, y) {
     return true;
   } else {
     return false;
-  }
-}
+  };
+};
 console.log(resposta);
 
 // Desafio 2
@@ -17,13 +17,14 @@ let height = 50;
 let area = (base * height) / 2;
 function calcArea(base, height) {  
   return calcArea
-}
+};
 console.log(area);
 
 // Desafio 3
 function splitSentence(string) {
-  
-}
+  return string.split(' ');
+};
+console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName() {
