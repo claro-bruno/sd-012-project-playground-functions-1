@@ -26,8 +26,20 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayStrings) {
+  let firstItem;
+  let lastItem;
+  let result = "";
+  for (let index = 0; index < arrayStrings.length; index += 1) {
+    if (index === 0) {
+      firstItem = arrayStrings[index];
+    }
+    if (index === arrayStrings.length - 1) {
+      lastItem = arrayStrings[index];
+    }
+  }
+  result = `${lastItem}, ${firstItem}`;
+  return result;
 }
 
 // Desafio 5
