@@ -9,18 +9,16 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence(){
-  let string = '';
-  let str = string.split(' '); 
-    return str
+function splitSentence(frase) { 
+  return frase.split();
 }
 
 // Desafio 4
-function concatName(inicio, fim) {
-let nomes = [' ', ' '];
+function concatName() {
+let listaNomes = [' ', ' '];
 let inicio = nomes[0];
-let fim = nomes[nomes.length - 1];    
-return fim + ' ' + inicio;
+let fim = listaNomes[listaNomes.length - 1];    
+return (fim + '' + inicio);
     }
 
 // Desafio 5
