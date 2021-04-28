@@ -38,7 +38,7 @@ let ffinal= [];
 // Desafio 4
 function concatName(array) {
   ultimo= array.length;
-  return array[ultimo-1] + ',' + array[0];
+  return array[ultimo-1] + ', ' + array[0];
 }
 
 function footballPoints(wins,ties) {
@@ -65,8 +65,8 @@ let contador = 0;
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let distancia1 = mouse - cat1;
-  let distancia2 = mouse - cat2;
+  let distancia1 = Math.abs(mouse - cat1);
+  let distancia2 = Math.abs(mouse - cat2);
   if (distancia2 < distancia1){
     return 'cat2';
   }
