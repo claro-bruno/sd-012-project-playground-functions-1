@@ -19,13 +19,19 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(nomes) {
+  var itensDaString;
+  for(index = 0; index < nomes; index += 1){
+  
+
+  
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  var points;
+  points = (wins * 3) + ties;
+  return points;
 }
 
 // Desafio 6
