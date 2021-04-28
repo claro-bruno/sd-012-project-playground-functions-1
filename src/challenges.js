@@ -10,7 +10,7 @@ function compareTrue(param1, param2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  
+
   return ((base * height) / 2);
 }
 
@@ -22,7 +22,11 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(nomes) {
+  let strConcatenada = "";
 
+  strConcatenada = nomes[nomes.length-1] + ", " + nomes[0];
+  
+  return strConcatenada;
 }
 
 // Desafio 5
