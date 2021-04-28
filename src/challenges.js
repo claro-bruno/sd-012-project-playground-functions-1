@@ -2,20 +2,24 @@
   let a = true;
   let b = false;
   let answer = a && b;
- function compareTrue(a,b) {
+  function compareTrue(a,b) {
   if (a && b === true) {
     return true;
   } else {
     return false;
   }
  }
- console.log(answer);
-// Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+  console.log(answer);
 
-// Desafio 3
+
+ // Desafio 2
+  let base = 10;
+  let height = 50;
+  let area = (base * height) / 2.
+  function calcArea (base, height) {
+  return area;
+ } console.log(area)
+ // Desafio 3
 function splitSentence() {
   // seu código aqui
 }
