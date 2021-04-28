@@ -12,14 +12,14 @@ function calcArea(base, height) {
 function splitSentence(str) {
   let substr = '';
   let rtn = [];
-  for (let index = 0; index < str.length; index +=1){
-    if (str[index] != ' '){
+  for (let index = 0; index < str.length; index += 1) {
+    if (str[index] !== ' ') {
       substr += str[index];
     } else {
       rtn.push(substr);
       substr = '';
-    };
-  };
+    }
+  }
   return rtn;
 }
 
