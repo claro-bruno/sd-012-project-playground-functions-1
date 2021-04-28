@@ -49,8 +49,12 @@ function encode(string) {
 .replace(/u/g, 5);
 }
 
-function decode() {
-  
+function decode(string) {
+  return string.replace(/1/g, 'a')
+.replace(/2/g, 'e')
+.replace(/3/g, 'i')
+.replace(/4/g, 'o')
+.replace(/5/g, 'u');
 }
 
 module.exports = {
