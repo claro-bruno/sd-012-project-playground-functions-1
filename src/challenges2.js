@@ -31,7 +31,7 @@ function generatePhoneNumber(numeros) {
       for (let j = 0; j < numeros.length; j += 1) {
         if (numeros[i] === numeros[j]) {
           count += 1;
-          if (count > 2) {
+          if (count > 2 || numeros[i] > 9 || numeros[i] < 0) {
             return 'Não é possível gerar um número de telefone com esses valores';
           }
         }
@@ -40,8 +40,6 @@ function generatePhoneNumber(numeros) {
     return `(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`;
   }
 }
-
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 1]));
 
 // Desafio 12
 function triangleCheck() {
