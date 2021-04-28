@@ -29,8 +29,17 @@ function concatName(arrayWord) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let matches = wins + ties;
+  let points = 0;
+  for (let indice = 1; indice <= matches; indice += 1) {
+    if (indice <= wins) {
+      points += 3;
+    } else {
+      points += 1;
+    }
+  }
+  return points;
 }
 
 // Desafio 6
