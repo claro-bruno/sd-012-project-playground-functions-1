@@ -1,12 +1,7 @@
 // Desafio 1
-function compareTrue() {
- let num1 = 10;
- let num2 = 2;
-  
-  if (num1 === 53*2 && num2 === 2) {
-    console.log("true")
-    
-  }else if (num1 === 55*2 && num2 === 4) {
+function compareTrue(num1, num2) {
+
+  if (num1 === 5*2 && num2 === 2) {
     console.log("true")
         
   }else{
@@ -14,32 +9,23 @@ function compareTrue() {
   }
 }
 
-compareTrue(true)
+compareTrue(12, 2)
+compareTrue(1, 22)
+compareTrue(10, 2)
 
 
 // Desafio 2
-function calcArea() {
-  let base = 10;
-  let heigth = 50;
 
+
+function calcArea(base, heigth) {
+ 
   let calculo = (base * heigth) / 2
   console.log(calculo)
 
-  let base1 = 5;
-  let heigth1 = 2;
-
-  let calculo1 = (base1 * heigth1) / 2
-  console.log(calculo1)
-
-
-let base2 = 51;
-let heigth2 = 1;
-
-let calculo2 = (base2* heigth2) / 2
-console.log(calculo2)
-
 }
-calcArea()
+calcArea(10, 50)
+calcArea(5, 2)
+calcArea(51, 1)
 
 
 // Desafio 3
