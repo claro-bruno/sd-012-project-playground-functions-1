@@ -172,6 +172,8 @@ function techList(vetor,name){
   resultado.push(obj)
  
 }
+if(vetor.length == 0)
+return console.log("Vazio!")
 return resultado
 }
 
