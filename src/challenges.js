@@ -13,7 +13,7 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(frase) {
   // seu código aqui
-  return frase.split(" ");
+  return frase.split(' ');
 }
 
 // Desafio 4
@@ -36,7 +36,7 @@ function highestCount(numbers) {
 
   for (let i = 0; i < numbers.length; i += 1) {
     if (maior < numbers[i]) {
-        maior = numbers[i];
+      maior = numbers[i];
     }
   }
 
@@ -51,14 +51,12 @@ function highestCount(numbers) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if (cat1 - mouse < cat2 - mouse) {
-      return 'cat1';
-  }
-  else if (cat1 - mouse > cat2 - mouse) {
-      return 'cat2';
-  }
-  else {
-      return 'os gatos trombam e o rato foge';
+  if (cat1 - mouse < cat2 - mouse){
+      return "cat1";
+  }else if(cat1 - mouse > cat2 - mouse) {
+      return "cat2";
+  }else{
+      return "os gatos trombam e o rato foge"
   }
 }
 
