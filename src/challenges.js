@@ -43,7 +43,7 @@ function splitSentence(string) {
   }
 }
 
-*/
+
 
 
 
@@ -60,17 +60,31 @@ function concatName(arrayString) {
 
 console.log(concatName(arrayString));
 
-/*
+
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+let wins = 0;
+let ties = 0;
+
+function footballPoints(wins, ties) {
+  
+  let points = (wins * 3) + (ties * 1);
+
+  return points;
+  
 }
+
+console.log(footballPoints(wins, ties));
+
+*/
+
 
 // Desafio 6
 function highestCount() {
   // seu código aqui
 }
+
+/*
 
 // Desafio 7
 function catAndMouse() {
