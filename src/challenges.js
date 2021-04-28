@@ -78,9 +78,11 @@ function fizzBuzz(arr) {
 }
 
 // Desafio 9
+
+let strTeste = 'hi there!';
+
 function encode(str) {
   let separatedStr = str.split('');
-  let newStr = separatedStr.join();
   for (let key in separatedStr) {
     if (separatedStr[key] === 'a') {
       separatedStr[key] = 1;
@@ -94,11 +96,10 @@ function encode(str) {
       separatedStr[key] = 5;
     }
   }
-  return newStr;
+  return separatedStr.join();
 }
 function decode(str) {
   let separatedStr = str.split('');
-  let newStr = separatedStr.join();
   for (let key in separatedStr) {
     if (separatedStr[key] === 1) {
       separatedStr[key] = 'a';
@@ -112,7 +113,8 @@ function decode(str) {
       separatedStr[key] = 'u';
     }
   }
-  return newStr;
+  return separatedStr.join();
+  ;
 }
 
 module.exports = {
