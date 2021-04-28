@@ -3,17 +3,18 @@ function compareTrue(value1, value2) {
   if (value1 === true && value2 === true) {
     return true;
   }
-  else 
+}
+ 
     return false;
-};
+
 //  console.log(compareTrue(true, true));
 
 
 // Desafio 2
 
 function calcArea(base, height){
-  return( base * height ) / 2;
-};
+  return (base * height) / 2;
+}
 // console.log(calcArea(10, 50));
 // console.log(calcArea(5, 2));
 // console.log(calcArea(51, 1));
@@ -23,7 +24,7 @@ function calcArea(base, height){
 
 function splitSentence(string){
   return string.split(' ');
-};
+}
 // console.log(splitSentence('go trybe'))
 
 // for (index = 0; index < string.length; index += 1)
