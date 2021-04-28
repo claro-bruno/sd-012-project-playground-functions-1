@@ -20,18 +20,29 @@ function splitSentence(receivedSentence) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(receivedArray) {
+  let { length } = receivedArray;
+  return `${receivedArray[length - 1]}, ${receivedArray[0]}`;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return (wins * 3) + (ties * 1);
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(receivedNumbers) {
+  let highNumber;
+  let count = 0;
+  highNumber = receivedNumbers.reduce(function (a, b) {
+    return Math.max(a, b);
+  });
+  for (let index in receivedNumbers) {
+    if (receivedNumbers[index] === highNumber) {
+      count += 1;
+    }
+  }
+  return count;
 }
 
 // Desafio 7
