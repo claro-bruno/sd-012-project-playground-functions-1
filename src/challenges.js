@@ -28,12 +28,10 @@ function concatName(array) {
   return (segundoItem+', '+primeiroItem+'.');
 }
 
-let x = ['foguete', 'não', 'tem', 'ré']; 
-console.log(concatName(x));
-
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let pontos = (wins*3)+(ties*1);
+  return pontos;
 }
 
 // Desafio 6
