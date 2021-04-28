@@ -1,14 +1,13 @@
 // Desafio 1
 function compareTrue(booleano1, booleano2) {
-  if(booleano1 === false && booleano2 === true){
-    return false
-  } else if(booleano1 === false && booleano2 === false){
-    return false
-  }else{
-    return true
+  if (booleano1 === false && booleano2 === true) {
+    return false;
+  } else if (booleano1 === false && booleano2 === false) {
+    return false;
+  }else {
+    return true;
   }
-} 
-console.log(compareTrue(true,true));
+} console.log(compareTrue(false,true));
 
 // Desafio 2
 function calcArea() {
