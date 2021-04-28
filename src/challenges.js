@@ -20,13 +20,14 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(arrayNomes) {
-  let stringNomes = (arrayNomes[arrayNomes.length -1] + ', ' + arrayNomes[0])
+  let stringNomes = (`${arrayNomes[arrayNomes.length - 1]}, ${arrayNomes[0]}`);
   return stringNomes;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let points = (wins * 3) + ties;
+  return points;
 }
 
 // Desafio 6
