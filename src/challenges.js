@@ -1,20 +1,18 @@
 // Desafio 1
 function compareTrue(num1, num2) {
   if ((num1 + num2) >= 5 && num1 < num2) {
-    return true
-  } else {
-    return false
+    return true;
   }
 }
 
 // Desafio 2
 function calcArea(base, height) {
-  return (base * height) / 2
+  return (base * height) / 2;
 }
 
 // Desafio 3
 function splitSentence(string) {
-  return string.split(' ')
+  return string.split(' ');
 }
 
 // Desafio 4
