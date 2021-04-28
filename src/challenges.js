@@ -2,16 +2,16 @@
 function compareTrue(num1, num2) {
 
   if (num1 === 5*2 && num2 === 2) {
-    console.log("true")
+    return 'true'
         
   }else{
-    console.log("false")
+    return 'false'
   }
 }
 
-compareTrue(12, 2)
-compareTrue(1, 22)
-compareTrue(10, 2)
+console.log(compareTrue(12, 2))
+console.log(compareTrue(1, 22))
+console.log(compareTrue(10, 2))
 
 
 // Desafio 2
