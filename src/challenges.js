@@ -40,9 +40,11 @@ function highestCount(arrN) {
 function catAndMouse(mouse, cat1, cat2) {
   if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
     return 'cat1';
-  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
+  }
+  if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
     return 'cat2';
-  } return 'os gatos trombam e o rato foge';
+  } 
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
@@ -51,14 +53,11 @@ function fizzBuzz(arrN) {
   for (let index = 0; index < arrN.length; index += 1) {
     if (arrN[index] % 3 === 0 && arrN[index] % 5 !== 0) {
       arrS.push('fizz');
-    }
-    else if (arrN[index] % 3 !== 0 && arrN[index] % 5 === 0) {
+    } else if (arrN[index] % 3 !== 0 && arrN[index] % 5 === 0) {
       arrS.push('buzz');
-    }
-    else if (arrN[index] % 3 === 0 && arrN[index] % 5 === 0) {
+    } else if (arrN[index] % 3 === 0 && arrN[index] % 5 === 0) {
       arrS.push('fizzBuzz');
-    }
-    else {
+    } else {
       arrS.push('bug!');
     }
   }
