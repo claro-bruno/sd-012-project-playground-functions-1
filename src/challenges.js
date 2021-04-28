@@ -30,20 +30,21 @@ function concatName(nomeCompleto) {
   let nome = nomeCompleto.split(" ");
   let firstName = nome[0];
   let lastName = nome[nome.length - 1];
-  let printName = lastName + ", " + firstName;
-  return printName;
+  return lastName + ", " + firstName
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
   let pontos = (wins * 3) + ties;
-  return pontos
+  return pontos;
 }
 
 // Desafio 6
 function highestCount() {
   // seu código aqui
+
+
 }
 
 // Desafio 7
