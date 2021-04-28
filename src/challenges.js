@@ -20,25 +20,20 @@ function splitSentence(sentence) {
 // Desafio 4
 function concatName(array) {
   let phrase = '';
-  for(let index = 0; index<array.lenght;index+=1){
-    if(index == 0){
-      console.log(index);
-      phrase+=`${array[array.lenght-1]}, `
-    }else if(index === (array.lenght-1) ){
+  for(let index =0; index< array.length;index+=1){
+    if(index === 0){
+      phrase+=`${array[array.length-1]}, `
+    }else if(index === (array.length-1) ){
       phrase+= array[0];
     };
   };
   return phrase;
 };
 
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
-
 // Desafio 5
 function footballPoints(wins,ties) {
   return (wins*3+ties);
-}
-
-console.log(footballPoints(0,0));
+};
 
 // Desafio 6
 function highestCount() {
