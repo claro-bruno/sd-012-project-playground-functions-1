@@ -35,17 +35,14 @@ console.log(calcArea(base, height));
 let string = 'go trybe';
 
 function splitSentence(string) {
-  for (let index = 0; index < string.length; index += 1) {
-    if (string[index] === ' '){
-      string += ',';
-    }
-    
-  }
+  let arraySeparada = string.split(' ');
+  return arraySeparada;
 }
 
+console.log(splitSentence(string));
 
-
-
+*/
+/*
 
 // Desafio 4
 let arrayString = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
@@ -128,8 +125,8 @@ function catAndMouse(cat1, cat2) {
 
 console.log(catAndMouse(cat1, cat2))
 
-*/
 
+*/
 
 // Desafio 8
 function fizzBuzz() {
