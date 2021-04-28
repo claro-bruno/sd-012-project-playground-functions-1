@@ -82,7 +82,7 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(array) {
   let novoArray = [];
-  for (let index in array) {
+  for (let index = 0; index < array.length; index += 1) {
     if ((array[index] % 3 === 0) && (array[index] % 5 !== 0)) {
       novoArray.push('fizz');
     } else if ((array[index] % 5 === 0) && (array[index] % 3 !== 0)) {
@@ -97,11 +97,43 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let newString = '';
+  let vowelNumber = {
+    a: '1',
+    e: '2',
+    i: '3',
+    o: '4',
+    u: '5',
+  };
+  for (let index = 0; index < string.length; index += 1) {
+    let str = string[index];
+    if (vowelNumber[str] === undefined) {
+      newString += str;
+    } else {
+      newString += vowelNumber[str];
+    }
+  }
+  return newString;
 }
-function decode() {
-  // seu código aqui
+function decode(string) {
+  let newString = '';
+  let vowelNumber = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  };
+  for (let index = 0; index < string.length; index += 1) {
+    let str = string[index];
+    if (vowelNumber[str] === undefined) {
+      newString += str;
+    } else {
+      newString += vowelNumber[str];
+    }
+  }
+  return newString;
 }
 
 module.exports = {
