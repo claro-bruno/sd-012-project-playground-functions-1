@@ -2,21 +2,19 @@
 function techList(name, tech) {
   let objeto = [];
   let lista = {};
-  if (tech === "") {
-    return "Vazio!"
-  } else {
-    tech.sort();
-    for (let key in tech) {
-      lista = {
-        tech: tech[key],
-        name: name
-      };
-      objeto.push(lista);
-    }
+  if (tech === '') {
+    return 'Vazio!';
+  }
+    for (let key in tech.sort()) {
+    lista = {
+      tech: tech[key],
+      name: name
+    };
+    objeto.push(lista);
   }
   return objeto;
 }
-
+// console.log(techList('Lucas', ["React", "Jest", "HTML", "CSS", "JavaScript"]))
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
