@@ -1,7 +1,7 @@
 // Desafio 10
 function techList(techArray, name) {
     let objectArray = [];
-    for (let tech of techArray) {
+    for (let tech of techArray.sort()) {
         let techObject = {
             tech: tech,
             name: name
@@ -13,7 +13,6 @@ function techList(techArray, name) {
     } else {
         return 'Vazio!';
     }
-
 }
 
 // Desafio 11
