@@ -20,11 +20,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(nomes) {
-  var itensDaString;
-  for(index = 0; index < nomes; index += 1){
-  
 
-  
 }
 
 // Desafio 5
@@ -36,7 +32,7 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount() {
-  // seu código aqui
+
 }
 
 // Desafio 7
