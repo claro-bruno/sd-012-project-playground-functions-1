@@ -2,24 +2,21 @@
 function techList(tech, name) {
   let list = [];
   for (let index in tech) {
+    let order = tech.sort();
     let object = {
-      tech: tech[index],
+      tech: order[index],
       name: name
     }
     list.push(object);
   }
-  if (list = []) {
-    return "Vazio!"
+  if (list.length === 0) {
+    return 'Vazio!'
   } else {
-    return list.sort(function(a, b) {
-      if (a.tech.toLowerCase() < b.tech.toLowerCase()) return -1;
-      else if (a.name.toLowerCase() > a.name.toLowerCase()) return 1;
-      return 0;
-    });
+    return list;
   }
 }
 
-console.log(techList([], 'Renan'));
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Renan'));
 
 // Desafio 11
 function generatePhoneNumber() {
