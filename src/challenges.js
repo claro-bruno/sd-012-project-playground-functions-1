@@ -44,40 +44,34 @@ function concatName(separateString) {
   return stringJoin;
 };
 
-console.log(concatName(separateString));
+// Desafio 5
+function footballPoints() {
 
-// console.log(concatName(separateString));
+}
 
-// console.log(concatName(separateString));
+// Desafio 6
+function highestCount() {
 
-// // Desafio 5
-// // function footballPoints() {
-//   // seu código aqui
-// }
+}
 
-// // Desafio 6
-// function highestCount() {
-//   // seu código aqui
-// }
+// Desafio 7
+function catAndMouse() {
 
-// // Desafio 7
-// function catAndMouse() {
-//   // seu código aqui
-// }
+}
 
-// // Desafio 8
-// function fizzBuzz() {
-//   // seu código aqui
-// }
+// Desafio 8
+function fizzBuzz() {
 
-// // Desafio 9
-// function encode() {
-//   // seu código aqui
-// }
+}
 
-// function decode() {
-//   // seu código aqui
-// }
+// Desafio 9
+function encode() {
+
+}
+
+function decode() {
+
+}
 
 module.exports = {
   calcArea,
