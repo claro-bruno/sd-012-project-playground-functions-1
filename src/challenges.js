@@ -10,7 +10,6 @@ function compareTrue(bolleano1, bolleano2) {
 // Desafio 2
 function calcArea(base, height) {
   return (base * height / 2)
-  
 }
 
 // Desafio 3
@@ -34,12 +33,12 @@ let ffinal= [];
   };
      ffinal.push(palavras);
   return ffinal;
-};
+}
 
 // Desafio 4
 function concatName(array) {
   ultimo= array.length;
-  return array[ultimo-1] + ', ' + array[0] + '.'
+  return array[ultimo-1] + ', ' + array[0];
 }
 
 function footballPoints(wins,ties) {
@@ -49,7 +48,7 @@ function footballPoints(wins,ties) {
 
 // Desafio 6
 function highestCount(inteiros) {
-let maior = inteiro[0];
+let maior = inteiros[0];
 let contador;
   for (index = 0;index < inteiros.length;index += 1){
     if(inteiros[index]>maior){
@@ -58,24 +57,24 @@ let contador;
   };
   for (index = 0;index < inteiros.length;index+=1){
     if (inteiros[index] === maior){
-      contador+=1;
+      contador += 1;
     }
   };
   return contador;
-};
+}
 
 // Desafio 7
-function catAndMouse(mouse,cat1,cat2) {
-  let distancia1= mouse-cat1;
-  let distancia2= mouse-cat2;
-  if(distancia2< distancia1){
-    return "cat2";
+function catAndMouse(mouse, cat1, cat2) {
+  let distancia1 = mouse-cat1;
+  let distancia2 = mouse-cat2;
+  if (distancia2 < distancia1){
+    return 'cat2';
   }
-  if (distancia2> distancia1){
-    return "cat1";
+  if (distancia2 > distancia1){
+    return 'cat1';
   }
-  else{
-    return "os gatos trombam e o rato foge"
+  else {
+    return 'os gatos trombam e o rato fogem';
   }
 }
 
