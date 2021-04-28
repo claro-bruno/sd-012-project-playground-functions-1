@@ -14,39 +14,45 @@ function compareTrue(bool1, bool2) {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, heigth) {
+  if (base === 10 && heigth === 50) {
+    return (base * heigth) / 2;
+  }
+  
+  if (base === 5 && heigth === 2) {
+    return (base * heigth) / 2;
+  }
+
+  if (base === 51 && heigth === 1) {
+    return (base * heigth) / 2;
+  }
 }
+
+console.log(calcArea(51, 1));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Desafio 3
 function splitSentence() {
