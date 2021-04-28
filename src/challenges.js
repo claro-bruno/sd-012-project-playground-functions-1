@@ -105,6 +105,7 @@ function decode(string) {
     }
     result = result + letra;
 }
+}
 
 module.exports = {
   calcArea,
@@ -117,4 +118,4 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-};
+}
