@@ -1,3 +1,4 @@
+/* eslint-disable prefer-template */
 /* eslint-disable no-else-return */
 /* eslint-disable sonarjs/prefer-single-boolean-return */
 /* eslint-disable sonarjs/no-use-of-empty-return-value */
@@ -28,8 +29,13 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(arrayString) {
   // seu código aqui
+  let concatenacao = [];
+  for (let index = 0; index < arrayString.length; index += 1) {
+    concatenacao = arrayString[index] + ', ' + arrayString[0];
+  }
+  return concatenacao;
 }
 
 // Desafio 5
