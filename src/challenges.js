@@ -1,12 +1,10 @@
 // Desafio 1
 function compareTrue(boolean1, boolean2) {
   // seu código aqui
-  if (boolean1 === true && boolean2 === true){
+  if (boolean1 === true && boolean2 === true) {
     return true;
-  }
-  else {
-    return false;
-  }
+  } 
+  return false;
 }
 // console.log(compareTrue(true, false));
 // Desafio 2
@@ -30,21 +28,21 @@ function concatName(array) {
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  return (3*wins + ties);
+  return (3 * wins + ties);
 }
 // console.log (footballPoints(14, 8));
 // Desafio 6
 function highestCount(numbers) {
   // seu código aqui
   let max = numbers[0];
-  for (let index = 1; index < numbers.length; index += 1){
-    if(numbers[index] > max){
+  for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] > max) {
       max = numbers[index];
     }
   }
   let accumulator = 0;
-  for (let index = 0; index < numbers.length; index += 1){
-    if(numbers[index] === max){
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] === max) {
       accumulator += 1;
     }
   }
@@ -55,13 +53,13 @@ function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   cat1 = Math.abs(cat1 - mouse);
   cat2 = Math.abs(cat2 - mouse);
-  if(cat1 < cat2){
+  if (cat1 < cat2) {
     return "cat1";
   }
-  else if(cat2 < cat1){
+  else if (cat2 < cat1) {
     return "cat2";
   }
-  else if(cat1 === cat2){
+  else if (cat1 === cat2) {
     return "os gatos trombam e o rato foge";
   }
 }
@@ -71,17 +69,17 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numbers) {
   // seu código aqui
   let strings = [];
-  for (let index = 0; index < numbers.length; index += 1){
-    if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0){
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) {
       strings.push("fizzBuzz");
     }
-    else if (numbers[index] % 3 === 0 && numbers[index] % 5 !== 0){
+    else if (numbers[index] % 3 === 0 && numbers[index] % 5 !== 0) {
       strings.push("fizz");
     }
-    else if (numbers[index] % 3 !== 0 && numbers[index] % 5 === 0){
+    else if (numbers[index] % 3 !== 0 && numbers[index] % 5 === 0) {
       strings.push("buzz");
     }
-    else if (numbers[index] % 3 !== 0 && numbers[index] % 5 !== 0){
+    else if (numbers[index] % 3 !== 0 && numbers[index] % 5 !== 0) {
       strings.push("bug!");
     }
   }
