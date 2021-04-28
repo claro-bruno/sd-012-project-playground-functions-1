@@ -59,32 +59,45 @@ function footballPoints(win, tie) {
 // Desafio 6
 arr = [9, 1, 2, 3, 9, 5, 7];
 
-console.log(highestCount(arr));
+highestCount(arr);
 
 function highestCount(arr) {
   let highNum = highestNum(arr);
   let count = 0;
-  for(let index = 0; index< arr.length; index += 1){
-    if(highNum === arr[index]){
+  for (let index = 0; index < arr.length; index += 1) {
+    if (highNum === arr[index]) {
       count += 1;
-    };
-  };
+    }
+  }
   return count;
-};
+}
 
-function highestNum(arr){
+function highestNum(arr) {
   let bigNum = 0;
-  for(let index = 0; index<arr.length; index+=1){
-    if(arr[index]>=bigNum){
+  for (let index = 0; index < arr.length; index += 1) {
+    if (arr[index] >= bigNum) {
       bigNum = arr[index];
-    };
-  };
+    }
+  }
   return bigNum;
-};
+}
 
 // Desafio 7
-function catAndMouse() {
-  
+let cat1 = 1;
+let cat2 = 3;
+let mouse = 0;
+
+catAndMouse(mouse, cat1, cat2);
+
+function catAndMouse(mouse, cat1, cat2) {
+  cat1 = mouse > cat1 ? mouse - cat1 : cat1 - mouse;
+  cat2 = mouse > cat2 ? mouse - cat2 : cat2 - mouse;
+
+  if (cat1 > cat2) {
+    return 'cat2';
+  } else {
+    return 'cat1';
+  }
 }
 
 // Desafio 8
