@@ -2,9 +2,9 @@
 function compareTrue(param1, param2) {
   // seu código aqui
   if (param1 === true && param2 === true) {
-    return 'true';
+    return true;
   } else {
-    return 'false';
+    return false;
   };
 };
 
