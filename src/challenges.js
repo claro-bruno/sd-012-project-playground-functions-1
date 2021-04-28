@@ -1,7 +1,19 @@
 // Desafio 1
+
+let valor1 = 5;
+let valor2 = 12;
+
 function compareTrue() {
-  // seu código aqui
-}
+  let verificador = false;
+  if (valor1 > 0 && valor2 > 0){
+    verificador = true;
+  } else {
+    verificador = false;
+  }
+  return verificador
+};
+
+
 
 // Desafio 2
 function calcArea() {
