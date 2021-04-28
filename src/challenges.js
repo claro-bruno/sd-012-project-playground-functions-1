@@ -77,7 +77,7 @@ if(Math.abs(cat1-mouse)<Math.abs(cat2-mouse)){
 return 'os gatos tromam e o rato foge';
 
 }
-console.log(catAndMouse(1,0,2))
+
 
 
 // Desafio 8
