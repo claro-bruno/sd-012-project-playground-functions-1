@@ -38,7 +38,7 @@ function highestCount(arrayDeNumeros) {
     }
   }
   for (let i = 0; i < arrayDeNumeros.length; i += 1) {
-    if (arrayDeNumeros[i] == maiorNumero) {
+    if (arrayDeNumeros[i] === maiorNumero) {
       contador += 1;
     }
   }
@@ -46,8 +46,18 @@ function highestCount(arrayDeNumeros) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let winnerCat;
+  let cat1Distance = Math.abs(mouse - cat1);
+  let cat2Distance = Math.abs(mouse - cat2);
+  if (cat1Distance > cat2Distance) {
+    winnerCat = 'cat2';
+  } else if (cat2Distance > cat1Distance) {
+    winnerCat = 'cat1';
+  } else {
+    winnerCat = 'os gatos trombam e o rato foge';
+  }
+  return winnerCat;
 }
 
 // Desafio 8
