@@ -14,9 +14,9 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-  return string.split();
-}
-console.log(splitSentence(Go Trybe));
+  return string.split(' ');
+} 
+console.log(splitSentence('vamo que vamo'));
 
 // Desafio 4
 function concatName() {
