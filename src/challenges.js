@@ -54,7 +54,7 @@ function highestCount(arrayCount) {
   // Descobrindo o Maior Numero
   getHighestNumber(arrayCount);
   // Descobrindo quantas vezes se repete
-  return getNumberRepeater(arrayCount); 
+  return getNumberRepeater(arrayCount);
 }
 
 // Desafio 7
@@ -64,15 +64,26 @@ function catAndMouse(mouse, cat1, cat2) {
   if (cat1Distance < cat2Distance) {
     return 'cat1';
   } else if (cat1Distance > cat2Distance) {
-    return 'cat2'
-  } else {
-    return 'os gatos trombam e o rato foge';
+    return 'cat2';
   }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(arrayBuzz) {
+  let resultado = []
+  for (let key in arrayBuzz){
+    if (arrayBuzz[key] % 3 == 0 && arrayBuzz[key] % 5 !== 0) {
+      resultado.push('fizz');
+    } else if (arrayBuzz[key] % 5 == 0 && arrayBuzz[key] % 3 !== 0) {
+      resultado.push('buzz');
+    } else if (arrayBuzz[key] % 3 == 0 && arrayBuzz[key] % 5 == 0) {
+      resultado.push('fizzBuzz');
+    } else if (arrayBuzz[key] % 3 !== 0 && arrayBuzz[key] % 5 !== 0){
+      resultado.push('bug!')
+    }
+  }
+  return resultado
 }
 
 // Desafio 9
