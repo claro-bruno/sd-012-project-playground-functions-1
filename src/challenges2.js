@@ -1,12 +1,13 @@
 // Desafio 10
 function techList(tech, name) {
   let exit = [];
-  let exit2 = "Vazio!";
+  let exit2 = 'Vazio!';
+  tech.sort();
   if (tech.length !== 0) {
     for(let key in tech){
       let newObject = {
         tech: tech[key],
-        name: name
+        name: name,
       };
       exit.push(newObject);
     }
@@ -16,7 +17,7 @@ function techList(tech, name) {
   }
   return exit;
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Ygor'))
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"))
 
 // Desafio 11
 function generatePhoneNumber() {
