@@ -48,9 +48,15 @@ console.log(concatName(stringsArray2));
 console.log(concatName(stringsArray3));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+let wins = 0;
+let ties = 0;
+
+function footballPoints(wins, ties) {
+  let winPoints = wins * 3;
+  let tiePoints = ties;
+  return winPoints + tiePoints;
 }
+console.log(footballPoints(wins, ties));
 
 // Desafio 6
 function highestCount() {
