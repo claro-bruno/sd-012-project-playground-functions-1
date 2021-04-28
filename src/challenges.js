@@ -5,12 +5,13 @@ function compareTrue(num1, num2) {
     comparador = true;
   } else {
     comparador = false;
-  }
-}
+  } return comparador;
+} 
 
 // Desafio 2
 function calcArea(base, height) {
   let area = (base * height) / 2;
+  return area;
 }
 
 
