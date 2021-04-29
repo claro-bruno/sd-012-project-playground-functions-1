@@ -3,6 +3,7 @@ function techList(tecnologia, nome) {
     // seu código aqui
     
     let objLista = []
+    tecnologia = tecnologia.sort()
 
     for(let i = 0; i < tecnologia.length; i += 1){
       let obj = {
@@ -12,6 +13,7 @@ function techList(tecnologia, nome) {
         obj.tech = tecnologia[i]
         objLista.push(obj)
     }
+
     return objLista
   }
 
