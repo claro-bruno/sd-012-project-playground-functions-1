@@ -1,10 +1,10 @@
 // Desafio 1
 function compareTrue(firstOperator, secondOperator) {
-let comparison = false;
-if (firstOperator === true && secondOperator === true) {
+  let comparison = false;
+  if (firstOperator === true && secondOperator === true) {
     comparison = true;
-}
-return comparison;
+  }
+  return comparison;
 }
 // Desafio 2
 function calcArea(base, height) {
@@ -17,7 +17,7 @@ function splitSentence(string) {
 }
 // Desafio 4
 function concatName(array) {
-  return ((array[(array.length) - 1]) + ', ' + array[0]);
+  return ((array[(array.length) - 1]) + array[0]);
 }
 // Desafio 5
 function footballPoints(wins, ties) {
