@@ -96,13 +96,33 @@ let numberArray4 = [2, 15, 7, 9, 45];
 let numberArray5 = [7, 9];
 let numberArray6 = [9, 25];
 
+function by3NotBy5(stringOfNumbers, stringArray) {
+  if (stringOfNumbers % 3 === 0 && stringOfNumbers % 5 !== 0) stringArray.push('fizz');
+  return stringArray;
+}
+
+function by5NotBy3(stringOfNumbers, stringArray) {
+  if (stringOfNumbers % 3 !== 0 && stringOfNumbers % 5 === 0) stringArray.push('buzz');
+  return stringArray;
+}
+
+function by3AndBy5(stringOfNumbers, stringArray) {
+  if (stringOfNumbers % 3 === 0 && stringOfNumbers % 5 === 0) stringArray.push('fizzBuzz');
+  return stringArray;
+}
+
+function notBy3NotBy5(stringOfNumbers, stringArray) {
+  if (stringOfNumbers % 3 !== 0 && stringOfNumbers % 5 !== 0) stringArray.push('bug!');
+  return stringArray;
+}
+
 function fizzBuzz(numberArray) {
   let stringArray = [];
   for (let index = 0; index < numberArray.length; index += 1) {
-    if (numberArray[index] % 3 === 0 && numberArray[index] % 5 !== 0) stringArray.push('fizz');
-    if (numberArray[index] % 5 === 0 && numberArray[index] % 3 !== 0) stringArray.push('buzz');
-    if (numberArray[index] % 3 === 0 && numberArray[index] % 5 === 0) stringArray.push('fizzBuzz');
-    if (numberArray[index] % 3 !== 0 && numberArray[index] % 5 !== 0) stringArray.push('bug!');
+    stringArray = by3NotBy5(numberArray[index], stringArray);
+    stringArray = by5NotBy3(numberArray[index], stringArray);
+    stringArray = by3AndBy5(numberArray[index], stringArray);
+    stringArray = notBy3NotBy5(numberArray[index], stringArray);
   }
   return stringArray;
 }
