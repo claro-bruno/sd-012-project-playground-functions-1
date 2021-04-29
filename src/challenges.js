@@ -87,7 +87,6 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'os gatos trombaram e o rato foge';
   }
 }
-// Nota explicativa, foi crucial inverter a ordem nas váriaves de distancia, pois manter mouse-cat, invertia o resultado;
 // console.log(catAndMouse(1, 4, 3));
 // console.log(catAndMouse(1, 6, 12));
 // console.log(catAndMouse(1, 3, 3));
@@ -96,9 +95,9 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(array) {
   let arrayNumber = [];
   for(let index in array) {
-    if (array[index] % 3 === 0){
+    if (array[index] % 3 === 0 && array[index] % 5 !== 0){
       arrayNumber.push("fizz");
-    } else if (array[index] % 5 === 0){
+    } else if (array[index] % 5 === 0 && array[index] % 3 !== 0){
       arrayNumber.push("buzz");
     } else if (array[index] % 3 === 0 && array[index] % 5 === 0){
       arrayNumber.push("fizzBuzz");
@@ -115,10 +114,13 @@ function fizzBuzz(array) {
 // console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
+function encode(code) {
+  let arrayCode = [code];
+  for(let index in code) {
+    if
+
+
+function decode(arrayDecode) {
   // seu código aqui
 }
 
