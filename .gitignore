@@ -5,4 +5,4 @@
 node_modules/
 tests/
 .DS_Store
-src/tempCodeRunnerFile.js
+/src/tempCodeRunnerFile.js
