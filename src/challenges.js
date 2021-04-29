@@ -75,14 +75,14 @@ function highestCount(arrayNumbers) {
   return countHight;
 }
 
-// Desafio 7
+// Desafio 7 
 function catAndMouse(mouse, cat1, cat2) {
   let rangeCat1mouse = Math.abs((cat1 > mouse) ? (cat1 - mouse) : (mouse - cat1));
   let rangeCat2mouse = Math.abs((cat2 > mouse) ? (cat2 - mouse) : (mouse - cat2));
 
   return rangeCat1mouse > rangeCat2mouse ? 'cat2' : rangeCat2mouse > rangeCat1mouse ? 'cat1' : 'os gatos trombam e o rato foge';
 }
-  
+//créditos ao amigo Bruno Augusto por me ajudar desenvolver e me explicar como usar esse algoritmo ao invez do if!!! (desafio 7) 
 
 // Desafio 8
 function fizzBuzz(arrayFizzbuzz) {
