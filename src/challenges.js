@@ -7,19 +7,19 @@ function compareTrue(booleano1, booleano2) {
   } else {
     return false;
   }
-} console.log(compareTrue(false, true));
+} //console.log(compareTrue(false, true));
 
 // Desafio 2
 function calcArea(base, height) {
   let resultado = (base * height) / 2;
   return resultado;
-} console.log(calcArea(51, 1));
+} //console.log(calcArea(51, 1));
 
 // Desafio 3
 function splitSentence(string) {
   let arrayDeStrings = string.split(" ",);
   return arrayDeStrings;
-} console.log(splitSentence("foquete"));
+} //console.log(splitSentence("foquete"));
 
 // Desafio 4
 function concatName(array) {
@@ -30,24 +30,35 @@ function concatName(array) {
     }
     return arrayDeStrings;
   }
-} console.log(concatName(['captain', 'my', 'captain']));
+} //console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
   let quantidadeDePontos = (3 * wins) + (1 * ties);
-    return quantidadeDePontos;
-  }
- console.log(footballPoints(14, 8));
+return quantidadeDePontos;
+} //console.log(footballPoints(14, 8));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(array) {
+  let maiorNumero = array[0];
+  let numeroDeVezesDoMaior = 0;
+   for (let index = 0; index < array.length; index += 1) {
+    if (array[index] > maiorNumero) {
+      maiorNumero = array[index];
+    }
+  } 
+  for (let index = 0; index < array.length; index += 1) {
+    if ( array[index] === maiorNumero){
+      numeroDeVezesDoMaior += 1;
+    }
+  }    
+  return numeroDeVezesDoMaior; 
+  } console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+ function catAndMouse() {
+ }
+
 
 // Desafio 8
 function fizzBuzz() {
