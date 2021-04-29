@@ -2,7 +2,8 @@
 function compareTrue(value1, value2) {
   if (value1 === true && value2 === true) {
     return true;
-  }if (value1 === false || value2 === false) {
+  }
+  if (value1 === false || value2 === false) {
     return false;
   }
 }
