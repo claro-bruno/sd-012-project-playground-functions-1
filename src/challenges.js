@@ -49,10 +49,22 @@ let ties = 8
 footballPoints(wins, ties)
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  for (accountant = 0; accountant<array.length; accountant+=1){
+    if (array[accountant] > highNumber) {
+      highNumber = array[accountant]
+    }
+  }
+  for (accountant = 0; accountant<array.length; accountant+=1){
+  if (highNumber === array[accountant]) {
+    repeat +=1
+  }  
 }
-
+return repeat
+}
+let repeat = 0
+let highNumber = 0
+highestCount([0, 0, 0])
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
