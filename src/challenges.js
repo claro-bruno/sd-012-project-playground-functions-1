@@ -73,7 +73,7 @@ for(let index = 0; index < buznumeros.length; index++){
     }else if(buznumeros[index] % 5 == 0){
         arrayFizz.push("buzz");
     }else{
-        arrayFizz.push("bug");  
+        arrayFizz.push("bug!");  
     }
     
   }
