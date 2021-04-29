@@ -28,8 +28,9 @@ console.log(splitSentence('go Trybe'));
 // Desafio 4
 let strings = ['foguete', 'não', 'tem', 'ré'];
 function concatName(strings) {
+  return strings[strings.length-1] + ', ' + strings[0]
 }
-console.log(strings[strings.length-1] + ' ' + strings[0]);
+console.log(strings[strings.length-1] + ', ' + strings[0]);
 
 // Desafio 5
 function footballPoints() {
