@@ -66,23 +66,24 @@ function catAndMouse(mouse,cat1,cat2) {
 
 // Desafio 8
 
-function fizzBuzz(numbersFizzBuzz) {
-
+function fizzBuzz(numbers) {
+  let result = []; 
   
-  for(let index = 0; index < numbersFizzBuzz.length; index += 1) { 
-    let fizzBuzzBug = [""];     
-    if (numbersFizzBuzz[index] % 3 === 0 && numbersFizzBuzz[index] % 5 != 0) {
-      fizzBuzzBug.push('fizz');
-    } else if (numbersFizzBuzz[index] % 3 !== 0 && numbersFizzBuzz[index] % 5 == 0) {
-      fizzBuzzBug.push('buzz');
-    } else if(numbersFizzBuzz[index] % 3 === 0 && numbersFizzBuzz[index] % 5 === 0) {
-      fizzBuzzBug.push('fizzBuzz');   
+  for (let index = 0; index < numbers.length; index += 1) { 
+    
+       
+    if (((numbers[index] % 3) === 0) && ((numbers[index] % 5) !== 0)) {
+      result.push('fizz');
+    } else if (((numbers[index] % 3) !== 0) && ((numbers[index] % 5) === 0)) {
+      result.push('buzz');
+    } else if (((numbers[index] % 3) === 0) && ((numbers[index] % 5) === 0)) {
+      result.push('fizzBuzz');   
     } else {
-      fizzBuzzBug.push('bug!');
+      result.push('bug!');
     }
   }
   
-  return fizzBuzzBug
+  return result;
 }
 
 console.log(fizzBuzz[2, 15, 7, 9, 45]);

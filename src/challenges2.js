@@ -1,6 +1,8 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(techNames) {
+  for(index = 0 ; index < techNames.length ; index+=1){
+    let newList = 
+  }
 }
 
 // Desafio 11
