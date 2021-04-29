@@ -14,7 +14,6 @@ function compareTrue(valor1, valor2) {
   }
 }
 
-console.log
 
 // Desafio 2
 function calcArea(base,height) {
@@ -124,12 +123,61 @@ console.log(fizzBuzz(numbers));
 
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  
+  let stringSeparada = string.split('');//para separar as letras em indices
+  // let stringJunta =stringSeparada.join('');
+  // let letras = [`a`, `e`, `i`, `o`, `u`];
+  // let valor;
+  for (index =0 ; index<stringSeparada.length ; index+=1){
+    // stringSeparada[index] = valor;
+    // valor +=1;
+    if(stringSeparada[index]==='a'){
+      stringSeparada[index] = 1;
+    }
+    else if(stringSeparada[index]==='e'){
+      stringSeparada[index] = 2;
+    }
+    else if(stringSeparada[index]==='i'){
+      stringSeparada[index] = 3;
+    }
+    else if(stringSeparada[index]==='o'){
+      stringSeparada[index] = 4;
+    }
+    else if(stringSeparada[index]==='u'){
+      stringSeparada[index] = 5;
+    }    
+  }
+  return stringSeparada.join('');//usando o join('') os indices somem e não tem vírgula
 }
-function decode() {
-  // seu código aqui
+  console.log(encode(`hi there!`));
+
+
+function decode(string) {
+
+  let stringSeparada = string.split('');//para separar as letras em indices
+  for (index =0 ; index<stringSeparada.length ; index+=1){
+ 
+    if(stringSeparada[index]==='1'){
+      stringSeparada[index] = 'a';
+    }
+    else if(stringSeparada[index]==='2'){
+      stringSeparada[index] = 'e';
+    }
+    else if(stringSeparada[index]==='3'){
+      stringSeparada[index] = 'i';
+    }
+    else if(stringSeparada[index]==='4'){
+      stringSeparada[index] = 'o';
+    }
+    else if(stringSeparada[index]==='5'){
+      stringSeparada[index] = 'u';
+    }
+  }  
+  return stringSeparada.join('');
 }
+  console.log(decode(`h3 th2r2!"`));
+
 
 module.exports = {
   calcArea,
