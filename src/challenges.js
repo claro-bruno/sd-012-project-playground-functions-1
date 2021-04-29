@@ -55,19 +55,23 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-const divisibleBoth = (x) => (x % 3 === 0 && x % 5 === 0);
+const divisibleOrNot = (x) => {
+  let fizz = 'fizz';
+  let buzz = 'buzz';
+  if (x % 3 === 0 && x % 5 === 0) {
+    return fizz + buzz;
+  } if (x % 3 === 0) {
+    return fizz;
+  } if (x % 5 === 0) {
+    return buzz;
+  }
+  return 'bug!';
+};
+
 function fizzBuzz(numeros) {
   let result = [];
   for (let i of numeros) {
-    if (divisibleBoth(i)) {
-      result.push('fizzBuzz');
-    } else if (i % 3 === 0) {
-      result.push('fizz');
-    } else if (i % 5 === 0) {
-      result.push('buzz');
-    } else {
-      result.push('bug!');
-    }
+    result.push(divisibleOrNot(i));
   }
   return result;
 }
