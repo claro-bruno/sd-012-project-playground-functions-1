@@ -1,8 +1,7 @@
 // Desafio 1
 function compareTrue(elemento1, elemento2) {
-  let condicao = false;
-  if (elemento1 === true && elemento2 === true) condicao = true;
-  return condicao;
+  if (elemento1 === true && elemento2 === true) return true;
+  return false;
 }
 
 // Desafio 2
