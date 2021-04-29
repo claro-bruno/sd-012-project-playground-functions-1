@@ -54,7 +54,6 @@ function techList(receivedTechnologies, name) {
 }
 
 // Desafio 11
-
 function verifyRepetition(receivedStringNumber) {
   let occurrence = [];
   let higherOccurrence = -1;
@@ -101,8 +100,6 @@ function generatePhoneNumber(receivedStringNumber) {
   } return generate(receivedStringNumber);
 }
 
-console.log(generatePhoneNumber([1, 2, 3, 4, 3, 6, 7, 8, 2, 0, 1]));
-
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   if ((lineA < lineB + lineC) && (lineA > Math.abs(lineB - lineC))) {
@@ -111,8 +108,22 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(receivedString) {
+  let regularExpression;
+  let drinksString = [];
+  let drinksInteger = [];
+  let drinks;
+  let suggestion = '';
+  regularExpression = /\d+/g;
+  drinksString = receivedString.match(regularExpression);
+  for (let index in drinksString) {
+    drinksInteger.push(parseInt(drinksString[index]));
+  }
+  drinks = drinksInteger.reduce((a, b) => a + b, 0);
+  if (drinks > 1) {
+    suggestion += suggestion.concat(`${drinks} copos de água`);
+  } else suggestion += suggestion.concat(`${drinks} copo de água`);
+  return suggestion;
 }
 
 module.exports = {
