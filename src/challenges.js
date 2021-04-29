@@ -48,16 +48,26 @@ function highestCount(array) {
     }
   } 
   for (let index = 0; index < array.length; index += 1) {
-    if ( array[index] === maiorNumero){
+    if ( array[index] === maiorNumero) {
       numeroDeVezesDoMaior += 1;
     }
   }    
   return numeroDeVezesDoMaior; 
-  } console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+  } //console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
 // Desafio 7
- function catAndMouse() {
- }
+ function catAndMouse(mouse, cat1, cat2) {
+   let distanciaCat1ToMouse = Math.abs(cat1 - mouse);
+   let distanciaCat2ToMouse = Math.abs(cat2 - mouse);
+
+   if (distanciaCat2ToMouse < distanciaCat1ToMouse) {
+     return "cat2";
+   } else if (distanciaCat1ToMouse < distanciaCat2ToMouse) { 
+     return "cat1";
+   } else { 
+     return "os gatos trobam e o rato foge";
+   }
+ } console.log(catAndMouse(0, 6, 12));
 
 
 // Desafio 8
