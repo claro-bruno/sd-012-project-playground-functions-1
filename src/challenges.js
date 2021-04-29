@@ -60,7 +60,7 @@ function highestCount(array) {
   let finalNumbers = duplicatedNumbers.length
   return finalNumbers
 }
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
+// console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 
 
 // Desafio 7
