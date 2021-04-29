@@ -40,9 +40,17 @@ function highestCount(Array) {
 
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  cat1 = cat1 - mouse;
+  cat2 = cat2 - mouse;
+  if(cat1 < cat2) {
+    return "cat2";
+  }else if (cat2 < cat1) {
+    return "cat1";
+  }
+  return "os gatos trombam e o rato foge";
 }
+console.log(catAndMouse(3, 4, 5));
 
 // Desafio 8
 function fizzBuzz() {
