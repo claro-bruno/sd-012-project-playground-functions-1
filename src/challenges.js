@@ -113,7 +113,7 @@ function fizzBuzz(arraynum) {
   for (let indice = 0; indice < arraynum.length; indice += 1) {
 
     if (arraynum[indice] % 3 == 0 && arraynum[indice] % 5 == 0) {
-      arraystring.push('fizzbuzz');
+      arraystring.push('fizzBuzz');
     } 
     else {
 
@@ -132,9 +132,9 @@ function fizzBuzz(arraynum) {
     };
   };
 
-  return arraystring;
+  return console.log(arraystring);
 };
-
+fizzBuzz([2,15,7,9,45])
 
 // Desafio 9
 function encode() {
