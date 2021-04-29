@@ -32,21 +32,32 @@ function footballPoints(wins,ties) {
   let ontos = empate + victory
   return empate
 }
-console.log(footballPoints(14,8))
 // Desafio 6
-function highestCount() {
+function highestCount(array1) {
   // seu código aqui
+  let maiorNum = array1[0];
+  let Count = 1;
+  for(let index = 1; index < array1.length; index += 1){
+    if(array1[index] > maiorNum){
+      maiorNum = array1[index];
+      Count = 1;
+    }
+    else if(array1[index] === maiorNum){
+     Count += 1;
+    }
+  }
+  return Count;
 }
-
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(arrey) {
   // seu código aqui
-}
+  
+};
 
 // Desafio 9
 function encode() {
