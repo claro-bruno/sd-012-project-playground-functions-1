@@ -55,7 +55,7 @@ let numberArray3 = [0, 0, 0];
 
 function getHighestNumberFromArray(array) {
   let highestNumber = 0;
-  for (let index in array) {
+  for (let index = 0; index < array.length; index += 1) {
     if (array[index] > highestNumber) {
       highestNumber = array[index];
     }
@@ -70,7 +70,7 @@ function highestCount(numberArray) {
   let highestNumber = getHighestNumberFromArray(numberArray);
 
   let contNumero = 0;
-  for (let index in numberArray) {
+  for (let index = 0; index < numberArray.length; index += 1) {
     if (highestNumber === numberArray[index]) {
       contNumero += 1;
     }
@@ -98,16 +98,11 @@ let numberArray6 = [9, 25];
 
 function fizzBuzz(numberArray) {
   let stringArray = [];
-  for (let index in numberArray) {
-    if (numberArray[index] % 3 === 0 && numberArray[index] % 5 !== 0) {
-      stringArray.push('fizz');
-    } else if (numberArray[index] % 5 === 0 && numberArray[index] % 3 !== 0) {
-      stringArray.push('buzz');
-    } else if (numberArray[index] % 3 === 0 && numberArray[index] % 5 === 0) {
-      stringArray.push('fizzBuzz');
-    } else {
-      stringArray.push('bug!');
-    }
+  for (let index = 0; index < numberArray.length; index += 1) {
+    if (numberArray[index] % 3 === 0 && numberArray[index] % 5 !== 0) stringArray.push('fizz');
+    if (numberArray[index] % 5 === 0 && numberArray[index] % 3 !== 0) stringArray.push('buzz');
+    if (numberArray[index] % 3 === 0 && numberArray[index] % 5 === 0) stringArray.push('fizzBuzz');
+    if (numberArray[index] % 3 !== 0 && numberArray[index] % 5 !== 0) stringArray.push('bug!');
   }
   return stringArray;
 }
@@ -118,7 +113,7 @@ console.log(fizzBuzz(numberArray6));
 // Desafio 9
 function encode(decodedString) {
   let encodedString = '';
-  for (let index in decodedString) {
+  for (let index = 0; index < decodedString.length; index += 1) {
     switch (decodedString[index]) {
     case 'a':
       encodedString += '1';
@@ -145,7 +140,7 @@ console.log(encode('hi there!'));
 
 function decode(encodedString) {
   let decodedString = '';
-  for (let index in encodedString) {
+  for (let index = 0; index < encodedString.length; index += 1) {
     switch (encodedString[index]) {
     case '1':
       decodedString += 'a';

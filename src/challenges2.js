@@ -27,9 +27,9 @@ function repeats3OrMoreTimes(elevenNumbersArray) {
   let contRepetido = 0;
   let contNumero = 0;
   let indexNumeroRepetido = 0;
-  for (let index in elevenNumbersArray) {
+  for (let index = 0; index < elevenNumbersArray.length; index += 1) {
     let verificaNumero = elevenNumbersArray[index];
-    for (let index2 in elevenNumbersArray) {
+    for (let index2 = 0; index2 < elevenNumbersArray.length; index2 += 1) {
       if (verificaNumero === elevenNumbersArray[index2]) {
         contNumero += 1;
       }
@@ -81,7 +81,7 @@ let string3 = '1 cachaça, 5 cervejas e 1 copo de vinho';
 function hydrate(string) {
   let numbers = string.match(/\d+/g).map(Number); // array.match() retorna um array com os matches da expressão regular dentro dos parênteses. A expressão regular '/\d+/g' seleciona dígitos (números) '/\d+/', em toda a string (flag global) 'g'. O método .map(Number) converte um array de strings para um array de integers.
   let sum = 0;
-  for (let index in numbers) {
+  for (let index = 0; index < numbers.length; index += 1) {
     sum += numbers[index];
   }
   if (sum === 1) {
