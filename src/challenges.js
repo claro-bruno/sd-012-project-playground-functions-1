@@ -18,7 +18,6 @@ function splitSentence(phrase) {
   // seu código aqui
   return phrase.split(' ')
 }
-console.log(splitSentence('foguete'))
 // Desafio 4
 function concatName(string) {
   // seu código aqui
@@ -26,10 +25,14 @@ function concatName(string) {
 };
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins,ties) {
   // seu código aqui
+  let victory = wins * 3
+  let empate = ties
+  let ontos = empate + victory
+  return empate
 }
-
+console.log(footballPoints(14,8))
 // Desafio 6
 function highestCount() {
   // seu código aqui
