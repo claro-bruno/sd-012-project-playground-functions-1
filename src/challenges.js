@@ -72,23 +72,19 @@ function fizzBuzz(numbers) {
   for (let index = 0; index < numbers.length; index += 1) { 
     
        
-    if (((numbers[index] % 3) === 0) && ((numbers[index] % 5) !== 0)) {
+    if ((numbers[index] % 3 === 0) && (numbers[index] % 5 !== 0)) {
       result.push('fizz');
-    } else if (((numbers[index] % 3) !== 0) && ((numbers[index] % 5) === 0)) {
+    } else if ((numbers[index] % 3 !== 0) && (numbers[index] % 5 === 0)) {
       result.push('buzz');
-    } else if (((numbers[index] % 3) === 0) && ((numbers[index] % 5) === 0)) {
+    } else if ((numbers[index] % 3 === 0) && (numbers[index] % 5 === 0)) {
       result.push('fizzBuzz');   
     } else {
       result.push('bug!');
     }
   }
-  
   return result;
 }
 
-console.log(fizzBuzz[2, 15, 7, 9, 45]);
-console.log(fizzBuzz[7, 9]);
-console.log(fizzBuzz[9, 25]);
 
 // Desafio 9
 function encode(string1) {
