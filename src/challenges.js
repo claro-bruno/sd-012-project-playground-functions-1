@@ -1,8 +1,8 @@
 // Desafio 1
 function compareTrue(value1, value2) {
-  if(value1 === true && value2 === true) {
+  if (value1 === true && value2 === true) {
     return true;
-  }else if(value1 === false || value2 === false) {
+  } else if (value1 === false || value2 === false) {
     return false;
   };
 };
@@ -20,8 +20,8 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(list) {
-  let arrayChange =[];
-  arrayChange = list.pop();
+  let arrayChange = [];
+  arrayChange [0] = list.pop();
   arrayChange.push(list[0]);
   String.toString(arrayChange);
   return arrayChange;
