@@ -45,20 +45,20 @@ function catAndMouse(mouse, cat1, cat2) {
   let auxCat1 = cat1 - mouse;
   let auxCat2 = cat2 - mouse;
   
-  if (auxCat1 < auxCat2) {
+  if (Math.abs(auxCat1) < Math.abs(auxCat2)) {
     return 'cat1';
-  } else if (auxCat2 < auxCat1) {
+  } else if (Math.abs(auxCat2) < Math.abs(auxCat1)) {
     return 'cat2';
   } else {
   return 'os gatos trombam e o rato foge';
   }
 }
 let Array = [2, 15, 7, 9, 45];
-// Desafio 8
+let stringResultado = [];
 function fizzBuzz(Array) {
   for (let index = 0; index < Array[length]; index +=1) {
-    if(Array[index]){
-      
+    if(Array[index] % 3 == 0 && Array[index] % 5 != 0){
+
     }
   }
 }
