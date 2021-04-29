@@ -78,9 +78,24 @@ function highestCount(highestCount) {
 console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+function catAndMouse(mouse, cat1, cat2) {
+  let catString1 = "";
+  let catString2 = "";
+  let mousewin = "";
+
+  if (cat1 < cat2){
+    catString1 = 'cat1';
+
+  } else if (cat2 < cat1){
+    catString2 = 'cat2';
+  } else {
+    mousewin = 'os gatos trombam e o rato foge';
+  };
+  let winner = catString1 + catString2 + mousewin;
+
+  return winner;
+};
+console.log(catAndMouse(0, 6, 6));
 
 // Desafio 8
 function fizzBuzz() {
