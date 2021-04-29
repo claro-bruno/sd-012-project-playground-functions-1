@@ -30,7 +30,9 @@ function hydrate(pedido) {
   for (let i = 0; i< numbers.length; i += 1){
     aguas += numbers[i]
   }
+  if ( aguas > 1){
   return aguas + " copos de água"
+  } return aguas + " copo de água"
 }
 
-console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"))
+console.log(hydrate("1 cachaça"))

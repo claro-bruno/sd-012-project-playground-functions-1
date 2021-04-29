@@ -36,7 +36,9 @@ function hydrate(pedido) {
   for (let i = 0; i< numbers.length; i += 1){
     aguas += numbers[i]
   }
+  if ( aguas > 1){
   return aguas + " copos de água"
+  } return aguas + " copo de água"
 }
 
 
