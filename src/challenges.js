@@ -20,6 +20,7 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(list) {
+  let text = "";
   text = text.concat(list[list.length - 1],', ',list[0])
   return text;
 };
