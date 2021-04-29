@@ -114,7 +114,9 @@ function fizzBuzz(arraynum) {
 
     if (arraynum[indice] % 3 == 0 && arraynum[indice] % 5 == 0) {
       arraystring.push('fizzbuzz');
-    } else {
+    } 
+    else {
+
       if (arraynum[indice] % 3 == 0) {
         arraystring.push('fizz');
       }
@@ -122,6 +124,7 @@ function fizzBuzz(arraynum) {
       if (arraynum[indice] % 5 == 0) {
         arraystring.push('buzz');
       }
+
     };
 
     if (arraynum[indice] % 3 !== 0 && arraynum[indice] % 5 !== 0) {
