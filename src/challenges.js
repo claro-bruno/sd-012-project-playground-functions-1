@@ -47,8 +47,8 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz(result) {
-let num;
+function fizzBuzz(num) {
+
 
 for (let index = 0; index < num.length; index+= 1) {
 
@@ -66,7 +66,7 @@ if  (num[index] % 3 === 0) {
    num[index] = 'bug';
    }   
 }
-return result;
+return num;
 }
 
 // Desafio 9
