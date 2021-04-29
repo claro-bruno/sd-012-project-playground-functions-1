@@ -122,4 +122,4 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-}
+};
