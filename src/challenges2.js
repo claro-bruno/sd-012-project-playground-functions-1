@@ -16,31 +16,29 @@ function techList(arrayTecnologias, name) {
 // Desafio 11
 function generatePhoneNumber(numeroTelefone) {
   // seu código aqui
-  let numeroArrumado = [];
-  let repetido = 0;
+  let numeroArrumado = numeroTelefone.join('');
   let numeroRepetido = [];
   let maior = 0;
 
-  for (let i = 0; i < numeroTelefone.length; i += 1) {
-    if (numeroTelefone.length !== 11) {
-      return 'Array com tamanho incorreto.';
-    } else if (numeroTelefone[i] < 0 || numeroTelefone[i] > 9) {
-      return 'não é possível gerar um número de telefone com esses valores';
-    }
-      if (numeroTelefone[i] == numeroTelefone[i - 1]) {
-        repetido += 1;
-      }
-      if (repetido > 2) {
-        return 'não é possível gerar um número de telefone com esses valores';
-      }
+  if (numeroTelefone.length !== 11) {
+    return 'Array com tamanho incorreto.';
   }
 
-  for (let index in numeroTelefone) {
-    numeroArrumado = `(${numeroTelefone[0]}${numeroTelefone[1]})`;
+  for (let number of numeroTelefone) {
+    let contador = 0;
+    for (let checa of numeroTelefone) {
+      if (number === checa) {
+        contador += 1;
+      }
+    }
+    if (number < 0 || number > 9 || contador >= 3) {
+      return 'não é possível gerar um número de telefone com esses valores';
+    }
   }
+  numeroArrumado = `(${numeroTelefone[0]}${numeroTelefone[1]})${numeroTelefone[2]}${numeroTelefone[3]}${numeroTelefone[4]}${numeroTelefone[5]}${numeroTelefone[6]}-${numeroTelefone[7]}${numeroTelefone[8]}${numeroTelefone[9]}${numeroTelefone[10]}`;
+
   return numeroArrumado;
 }
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 1, 7, 8, 0, 9, 1]));
 
 // Desafio 12
 function triangleCheck() {
