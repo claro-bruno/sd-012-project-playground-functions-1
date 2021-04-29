@@ -72,9 +72,9 @@ if  (num[index] % 3 === 0) {
     
     } else (num[index] % 3 !== 0 && num[index] % 5 !== 0); {
       
-   list = 'bug';
+   numbersList = 'bug!';
    }
-   numbersList.push(list); 
+   list.push(numbersList); 
 }
 
 return list;
