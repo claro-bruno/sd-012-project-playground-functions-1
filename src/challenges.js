@@ -76,8 +76,7 @@ function catAndMouse(mouse, cat1, cat2) {
     return "os gatos trombam e o rato foge";
   }
 }
- 
-// console.log(catAndMouse(2,3,4))
+//  console.log(catAndMouse(-8,-12,12))
 
 // Desafio 8
 
@@ -102,7 +101,7 @@ function fizzBuzz(array) {
     }
     else return arrayFinal[index].push(notDivisible)
   }  
-  
+
 }
 
 // console.log(fizzBuzz([7, 9]))
