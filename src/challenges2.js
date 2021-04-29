@@ -2,46 +2,39 @@
 function techList(tecnology,name) {
   //o resultado tem que ser uma LISTA gigante com os itens do objeto
   // as tecnologias precisam ser ordenadas
-  lista = [];
 
-  for (let index=0 ; index<tecnology ; index +=1){
-    let tecnologia{
-      tech: tecnology,
-      name: name,
-    }
-  }lista.push(tecnologia);
-
+  let lista = [];//criar lista vazia para colocar os itens
+  let ordenada = tecnology.sort();//para ordenar a lista logo no início
+  for (let index=0 ; index<ordenada.length ; index +=1){
+    tecnologia = {
+      tech: tecnology [index],//passar de 1 em 1 conteúdo da tecnology
+      nome: name,
+    }    
+    lista.push(tecnologia);//empurra itens dentro da lista vazia
+  }  
+  if(ordenada.length==0){
+    return console.log('Vazio!');
+   }
   return lista;
-
-  // for (let chave in tecnology){
-  //   let tecnologias{
-  //     tech: tecnology,
-  //     nome: name,
-  //   }    
-  // }
-
-  // lista.push()
-
- }
-
+}
+console.log(techList([], 'jose'));
 console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'jose'));
 
 
 // Desafio 11
-function generatePhoneNumber(telefone) {
-  let numeros=11;
-  for (index = 0 ; index <numeros ; index +=1){
-    if(telefone.length<numeros || telefone.length>numeros){
+function generatePhoneNumber(numeros) {
+  let maximoNumeros=11;
+  for (index = 0 ; index <numeros.length ; index +=1){
+    if(numeros.length<maximoNumeros || numeros.length>maximoNumeros){
       return console.log("não é possível gerar um número de telefone com esses valores");
     }
-    else if(telefone[index]<0 || telefone[index]>9){
-
+    else if(numeros[index]<0 || numeros[index]>9){
     }
   }
+  return numeros[index]
 }
-let lista = [1,4,1,45,5,2,1,1];
-let algo = lista[3];
-console.log(lista);
+
+console.log(generatePhoneNumber([1,4,1,4,5,2,1,1,2,1,3]));
 
 
 // Desafio 12
