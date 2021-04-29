@@ -1,7 +1,10 @@
 // Desafio 10
+
+
 function techList(array, name) {
   let listaObjetos = [];
-  for (let i = 0; i < array.length; i += 1) {
+  let arraySort = array.sort();
+  for (let i = 0; i < arraySort.length; i += 1) {
     listaObjetos.push({ tech: array[i], name });
   }
   if (listaObjetos.length === 0) {
@@ -9,7 +12,8 @@ function techList(array, name) {
   }
   return listaObjetos;
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
+
+
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
@@ -23,7 +27,14 @@ function triangleCheck() {
 // Desafio 13
 function hydrate() {
   // seu código aqui
+
 }
+
+console.log('1 cerveja') {
+
+  return `${} copos de água`
+}
+
 
 module.exports = {
   generatePhoneNumber,
