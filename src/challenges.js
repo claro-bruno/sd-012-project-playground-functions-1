@@ -1,10 +1,9 @@
 // Desafio 1
 function compareTrue(boleano1, boleano2) {
-  if (boleano1 === true && boleano2 === true){
-  return true;
+  if (boleano1 === true && boleano2 === true) {
+    return true;
 } return false;
 };
-console.log(compareTrue(1, 1))
 // Desafio 2
 function calcArea(base, height) {
   let area = (base * height) / 2;
@@ -19,7 +18,7 @@ function splitSentence(string) {
 function concatName(string) {
   let ultimaposicao = string[names.lenght -1]
   let primeiraposicao = string[0];
-  return ultimaposicao + ' ' + primeiraposicao;
+  return ultimaposicao + ', ' + primeiraposicao;
 };
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -29,19 +28,17 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(numeros) {
 let maiornumero = 0;
-for (let index in numeros) {
+  for (let index in numeros) {
   if (numeros[maiornumero] < numeros[index]) {
     maiornumero = index;
   }
 }
 return maiornumero;
-};
-
+  };
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
 };
-
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
