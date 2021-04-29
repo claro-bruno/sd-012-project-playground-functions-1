@@ -1,22 +1,14 @@
 // Desafio 11 - ESLint
-function menorZero(numeros) {
+function outLimit(numeros) {
   for (let num of numeros) {
-    if (num < 0) {
+    if (num < 0 || num > 9) {
       return true;
     }
   }
   return false;
 }
 
-function maiorNove(numeros) {
-  for (let num of numeros) {
-    if (num > 9) {
-      return true;
-    }
-  }
-  return false;
-}
-
+// Continuação da função repeatedNumber para respeitar o ESLint;
 function validating(numeros, i) {
   let count = 0;
   for (let j = 0; j < numeros.length; j += 1) {
@@ -36,11 +28,6 @@ function repeatedNumber(numeros) {
     }
   }
   return false;
-}
-
-function generatePhoneAuxiliar(numbers) {
-  numbers = numbers.join('');
-  return `(${numbers.substring(0, 2)}) ${numbers.substring(2, 7)}-${numbers.substring(7)}`;
 }
 
 // Desafio 10
@@ -65,10 +52,11 @@ function generatePhoneNumber(number) {
   if (number.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
-  if (menorZero(number) || maiorNove(number) || repeatedNumber(number)) {
+  if (outLimit(number) || repeatedNumber(number)) {
     return 'não é possível gerar um número de telefone com esses valores';
   }
-  return generatePhoneAuxiliar(number);
+  number = number.join('');
+  return `(${number.substring(0, 2)}) ${number.substring(2, 7)}-${number.substring(7)}`;
 }
 
 // Desafio 12
@@ -82,10 +70,11 @@ function triangleCheck(lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(text) {
   let water = 0;
-  let number = text.match(/\d/g);
-  number = number.join('');
-  for (let i = 0; i < number.length; i += 1) {
-    water += parseInt(number[i], 10);
+  let restrictions = /\d+/g;
+  let loopItem = restrictions.exec(text);
+  while (loopItem != null) {
+    water += parseInt(loopItem[0], 10);
+    loopItem = restrictions.exec(text);
   }
   if (water === 1) {
     return `${water} copo de água`;
