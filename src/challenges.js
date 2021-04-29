@@ -114,7 +114,7 @@ function fizzBuzz(arrayOfNumbers) {
     if (arrayOfNumbers[index] % 3 !== 0 && arrayOfNumbers[index] % 5 !== 0) {
       newArray.push(divNone);
     } else if (arrayOfNumbers[index] % 3 === 0 && arrayOfNumbers[index] % 5 === 0) {
-      newArray.push(div35);        
+      newArray.push(div35);
     } else if (arrayOfNumbers[index] % 3 === 0 && arrayOfNumbers[index] % 5 !== 0) {
       newArray.push(div3);
     } else if (arrayOfNumbers[index] % 3 !== 0 && arrayOfNumbers[index] % 5 === 0) {
@@ -130,10 +130,10 @@ function encode(string) {
   let newString = '';
   for (let index = 0; index < string.length; index += 1) {
     newString += string[index].replace(/a/, '1')
-    .replace(/e/, '2')
-    .replace(/i/, '3')
-    .replace(/o/, '4')
-    .replace(/u/, '5');
+      .replace(/e/, '2')
+      .replace(/i/, '3')
+      .replace(/o/, '4')
+      .replace(/u/, '5');
   }
   return newString;
 }
@@ -143,10 +143,10 @@ function decode(string) {
   let newString = '';
   for (let index = 0; index < string.length; index += 1) {
     newString += string[index].replace(/1/, 'a')
-    .replace(/2/, 'e')
-    .replace(/3/, 'i')
-    .replace(/4/, 'o')
-    .replace(/5/, 'u');
+      .replace(/2/, 'e')
+      .replace(/3/, 'i')
+      .replace(/4/, 'o')
+      .replace(/5/, 'u');
   }
   return newString;
 }
