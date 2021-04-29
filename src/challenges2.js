@@ -54,6 +54,9 @@ function hydrate(string) {
   let numbers = string.match(/\d+/g).map(Number);
   // O código a seguir foi retirado de: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  if (numbers.reduce(reducer) === 1) {
+    return `${numbers.reduce(reducer)} copo de água`;
+  }
   return `${numbers.reduce(reducer)} copos de água`;
 }
 
