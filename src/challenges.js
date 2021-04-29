@@ -99,54 +99,56 @@ function fizzBuzz(inputNumbers) {
 // Desafio 9
 function encode(encodeText) {
   // seu código aqui
-  let minusculo = encodeText.toLowerCase();
+  let frase = encodeText;
   let resultado;
 
-  for (let index = 0; index <= minusculo.length; index += 1){
-    if (minusculo[index] == "a"){
-    resultado = minusculo.replace("a", "1");
-    minusculo = resultado;
-  } else if (minusculo[index] == "e"){
-    resultado = minusculo.replace("e", "2");
-    minusculo = resultado;
-  } else if (minusculo[index] == "i"){
-    resultado = minusculo.replace("i", "3");
-    minusculo = resultado;
-  } else if (minusculo[index] == "o"){
-    resultado = minusculo.replace("o", "4");
-    minusculo = resultado;
-  } else if (minusculo[index] == "u"){
-    resultado = minusculo.replace("u", "5");
-    minusculo = resultado;
+  for (let index = 0; index <= frase.length; index += 1){
+    if (frase[index] === "a"){
+    resultado = frase.replace("a", "1");
+    frase = resultado;
+  } else if (frase[index] === "e"){
+    resultado = frase.replace("e", "2");
+    frase = resultado;
+  } else if (frase[index] === "i"){
+    resultado = frase.replace("i", "3");
+    frase = resultado;
+  } else if (frase[index] === "o"){
+    resultado = frase.replace("o", "4");
+    frase = resultado;
+  } else if (frase[index] === "u"){
+    resultado = frase.replace("u", "5");
+    frase = resultado;
   }
 }
-  return minusculo;
+  return frase;
 }
+
+console.log(encode("How Are you"));
 
 function decode(decodeText) {
   // seu código aqui
-    let minusculo = decodeText.toLowerCase();
+    let frase = decodeText.toLowerCase();
     let resultado;
   
-    for (let index = 0; index <= minusculo.length; index += 1){
-      if (minusculo[index] == "1"){
-      resultado = minusculo.replace("1", "a");
-      minusculo = resultado;
-    } else if (minusculo[index] == "2"){
-      resultado = minusculo.replace("2", "e");
-      minusculo = resultado;
-    } else if (minusculo[index] == "3"){
-      resultado = minusculo.replace("3", "i");
-      minusculo = resultado;
-    } else if (minusculo[index] == "4"){
-      resultado = minusculo.replace("4", "o");
-      minusculo = resultado;
-    } else if (minusculo[index] == "5"){
-      resultado = minusculo.replace("5", "u");
-      minusculo = resultado;
+    for (let index = 0; index <= frase.length; index += 1){
+      if (frase[index] === "1"){
+      resultado = frase.replace("1", "a");
+      frase = resultado;
+    } else if (frase[index] === "2"){
+      resultado = frase.replace("2", "e");
+      frase = resultado;
+    } else if (frase[index] === "3"){
+      resultado = frase.replace("3", "i");
+      frase = resultado;
+    } else if (frase[index] === "4"){
+      resultado = frase.replace("4", "o");
+      frase = resultado;
+    } else if (frase[index] === "5"){
+      resultado = frase.replace("5", "u");
+      frase = resultado;
     }
   }
-    return minusculo;
+    return frase;
 }
 
 module.exports = {
