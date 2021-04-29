@@ -128,12 +128,38 @@ function encode(frase) {
   return result;
 }
 
-console.log(encode('hi there!'))
-
-function decode() {
+function decode(frase) {
   // seu código aqui
+  let array = frase.split('');
+
+  for (let index = 0; index < array.length; index += 1){
+    switch(array[index]){
+      case '1':
+        array[index] = 'a';
+        break;
+
+      case '2':
+        array[index] = 'e';
+        break;
+
+      case '3':
+        array[index] = 'i';
+        break;
+        
+      case '4':
+        array[index] = 'o';
+        break;  
+
+      case '5':
+        array[index] = 'u';
+        break;     
+    }
+  }
+  let result = array.join('');
+  return result;
 }
 
+//Desafio 10
 module.exports = {
   calcArea,
   catAndMouse,
