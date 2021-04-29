@@ -24,12 +24,12 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  
+function highestCount(array, numero, quantidade) {
+  for (let index = 0; index < array.length; i++){
+  if(array[index] === numero) {
+    quantidade++
+  }
 } 
-
-
-
 
 // Desafio 7
 function catAndMouse() {
