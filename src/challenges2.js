@@ -49,8 +49,14 @@ function triangleCheck(lineA, lineB, lineC) {
 };
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(drinks) {
+  let countWater = 0;
+  for (let index = 0; index < drinks.length; index += 1) {
+    if(drinks[index] == Number){
+      countWater += 1;
+    }
+  }
+  return `${countWater} copos de água.`;
 }
 
 module.exports = {
