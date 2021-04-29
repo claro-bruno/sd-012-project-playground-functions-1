@@ -62,10 +62,47 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-  let resultado = [];
+  let caracteresString = [];
+  for (let caracteres of string) {
+    caracteresString.push(caracteres);
+  };
+  for (let index = 0; index < caracteresString.length; index+= 1) {
+    if (caracteresString[index] === "a") {
+      caracteresString[index] = "1";
+    } else if (caracteresString[index] === "e") {
+      caracteresString[index] = "2";
+    } else if (caracteresString[index] === "i") {
+      caracteresString[index] = "3";
+    } else if (caracteresString[index] === "o") {
+      caracteresString[index] = "4";
+    } else if (caracteresString[index] === "u") {
+      caracteresString[index] = "5";
+    };
+  };
+  let novaString = caracteresString.join('');
+  return novaString;
 };
-function decode() {
-  let resultado = [];
+
+function decode(string) {
+  let caracteresString = [];
+  for (let caracteres of string) {
+    caracteresString.push(caracteres);
+  };
+  for (let index = 0; index < caracteresString.length; index+= 1) {
+    if (caracteresString[index] === "1") {
+      caracteresString[index] = "a";
+    } else if (caracteresString[index] === "2") {
+      caracteresString[index] = "e";
+    } else if (caracteresString[index] === "3") {
+      caracteresString[index] = "i";
+    } else if (caracteresString[index] === "4") {
+      caracteresString[index] = "o";
+    } else if (caracteresString[index] === "5") {
+      caracteresString[index] = "u";
+    };
+  };
+  let novaString = caracteresString.join('');
+  return novaString;
 };
 
 module.exports = {
