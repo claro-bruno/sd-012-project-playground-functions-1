@@ -42,11 +42,11 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz(num) {
-
+function fizzBuzz(list) {
+let num = [];
 for (let index = 0; index <= num.length; index+= 1) {
 
-if  (index % 3 === 0) {
+if  (num[index] % 3 === 0) {
   num[index] = 'fizz';
 
   } else if (num[index] % 5 === 0) {
@@ -60,7 +60,7 @@ if  (index % 3 === 0) {
    num[index] = 'bug';
    }   
 }
-return num;
+return list;
 }
 
 // Desafio 9
