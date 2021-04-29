@@ -35,11 +35,11 @@ function generatePhoneNumber(arrayNumbers) {
       if (arrayNumbers[index] < 0 || arrayNumbers[index] > 9 || counter === 3) {
         result = 'não é possível gerar um número de telefone com esses valores';
         break;
-      } else if (index === '0') {
+      } else if (index === 0) {
         result += `(${arrayNumbers[index]}`;
-      } else if (index === '2') {
+      } else if (index === 2) {
         result += `) ${arrayNumbers[index]}`;
-      } else if (index === '7') {
+      } else if (index === 7) {
         result += `-${arrayNumbers[index]}`;
       } else {
         result += arrayNumbers[index];
