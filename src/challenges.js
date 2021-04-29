@@ -6,8 +6,7 @@ function compareTrue(boolean1, boolean2) {
   } else {
     return false;
   }
-}
-console.log(compareTrue(false, true));
+} console.log(compareTrue(false, true));
 
 console.log('==================================================');
 
@@ -15,8 +14,7 @@ console.log('==================================================');
 function calcArea(base, height) {
   // seu código aqui
   return base * height / 2;
-}
-console.log(calcArea(10, 50));
+} console.log(calcArea(10, 50));
 
 console.log('==================================================');
 
@@ -34,9 +32,8 @@ function splitSentence(string) {
     }
   }
   array.push(palavra);
-  return array
-}
-console.log(splitSentence("go Trybe"));
+  return array;
+} console.log(splitSentence("go Trybe"));
 
 console.log('==================================================');
 
@@ -46,8 +43,7 @@ function concatName(array) {
   let nomes = array[array.length-1] + ', ' + array[0];
 
   return nomes;
-}
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+} console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 console.log('==================================================');
 
@@ -55,8 +51,7 @@ console.log('==================================================');
 function footballPoints(wins, ties) {
   // seu código aqui
   return wins * 3 + ties;
-}
-console.log(footballPoints(14, 8));
+} console.log(footballPoints(14, 8));
 
 console.log('==================================================');
 
@@ -65,19 +60,18 @@ function highestCount(array) {
   // seu código aqui
   let maior=array[0];
   let cont = 0;
-  for (let index=0; index<array.length; index+=1) {
+  for (let index=0; index < array.length; index +=1) {
       if (maior<array[index]) {
           maior=array[index];
       }
   }
-  for (let index=0; index<array.length; index+=1) {
+  for (let index=0; index < array.length; index +=1) {
     if (array[index] === maior) {
       cont += 1;
     }
   }
   return cont;
-}
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+} console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 console.log('==================================================');
 
@@ -91,8 +85,7 @@ function catAndMouse(mouse, cat1, cat2) {
   } else {
     return 'cat1';
   }
-}
-console.log(catAndMouse(0, 2, 3));
+} console.log(catAndMouse(0, 2, 3));
 
 console.log('==================================================');
 
@@ -112,8 +105,7 @@ function fizzBuzz(array) {
     }
   }
   return bzz;
-}
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
+} console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 console.log('==================================================');
 
@@ -136,8 +128,8 @@ function encode(string) {
     }
   }
   return encoded;
-}
-console.log(encode('hi there!'));
+} console.log(encode('hi there!'));
+
 function decode(string) {
   // seu código aqui
   let referencia = {
@@ -156,8 +148,7 @@ function decode(string) {
     }
   }
   return decoded;
-}
-console.log(decode('h3 th2r2!'));
+} console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,

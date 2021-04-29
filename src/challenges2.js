@@ -15,41 +15,7 @@ function techList(array, name) {
     }
     return habilidades;
   }
-//   let tecnologies = [
-//     { 
-//         tech: 'React',
-//         name: "Luciano"
-//     },
-//     { 
-//         tech: 'JavaScript',
-//         name: "Luciano"
-//     },
-//     { 
-//         tech: 'Next',
-//         name: "Luciano"
-//     },
-//     { 
-//         tech: 'Node',
-//         name: "Luciano"
-//     },
-//     { 
-//         tech: 'CSS',
-//         name: "Luciano"
-//     }
-// ];
-// if (array.length === 0) {
-//   return 'Vazio!'
-// } else {
-//   for (let key in tecnologies) {
-//     for (let index in array) {
-//       tecnologies[index].tech = array[index];
-//     }
-//     tecnologies[key].name = name;
-//   }
-// }
-// return tecnologies;
-}
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+} console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 console.log('==================================================');
 
@@ -91,8 +57,7 @@ function generatePhoneNumber(array) {
     }
     return numero;
   }
-}
-console.log (generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+} console.log (generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 console.log('==================================================');
 
@@ -106,15 +71,14 @@ function triangleCheck(lineA, lineB, lineC) {
   } else {
     return false;
   }
-}
-console.log (triangleCheck(10, 14, 8));
+} console.log (triangleCheck(10, 14, 8));
 
 console.log('==================================================');
 
 // Desafio 13
 function hydrate(string) {
   // seu código aqui
-  let numeros = string.match(/\d+/g).map(Number)
+  let numeros = string.match(/\d+/g).map(Number);
   let soma = 0;
   for (let index = 0; index < numeros.length; index += 1) {
     soma = soma + numeros[index];
@@ -124,8 +88,7 @@ function hydrate(string) {
   } else {
     return soma + ' copos de água';
   }
-}
-console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
+} console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
