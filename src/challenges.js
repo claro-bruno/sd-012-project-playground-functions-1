@@ -1,7 +1,8 @@
 // Desafio 1
-function compareTrue(idade, altura) {
+let on = false;
+function compareTrue(tv, radio) {
 
-  if (idade > 10 && altura > 2) {
+  if (tv != on && radio != on) {
     return true;
         
   }else{
@@ -9,9 +10,9 @@ function compareTrue(idade, altura) {
   }
 }
 
-console.log(compareTrue(12, 2));
-console.log(compareTrue(1, 22));
-console.log(compareTrue(12, 22));
+console.log(compareTrue(false, true));
+console.log(compareTrue(false, false));
+console.log(compareTrue(true, true));
 
 
 // Desafio 2
