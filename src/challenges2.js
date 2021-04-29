@@ -66,12 +66,21 @@ console.log(generatePhoneNumber(elevenNumbersArray2));
 console.log(generatePhoneNumber(elevenNumbersArray3));
 
 // Desafio 12
-function triangleCheck(lineA, lineB, lineC) {
-  if (lineA > lineB + lineC || lineB > lineA + lineC || lineC > lineA + lineB) return false;
-  if (lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC || lineC < Math.abs(lineA - lineB))) return false;
-  return true;
+function firstCheck(lineA, lineB, lineC) {
+  if (lineA <= lineB + lineC && lineB <= lineA + lineC && lineC <= lineA + lineB) return true;
 }
-console.log(triangleCheck(10, 14, 4));
+
+function secondCheck(lineA, lineB, lineC) {
+  if (lineA >= Math.abs(lineB - lineC) && lineB >= Math.abs(lineA - lineC && lineC >= Math.abs(lineA - lineB))) return true;
+}
+
+function triangleCheck(lineA, lineB, lineC) {
+  if (firstCheck(lineA, lineB, lineC) && secondCheck(lineA, lineB, lineC)) {
+    return true;
+  }
+  return false;
+}
+console.log(triangleCheck(10, 14, 25));
 
 // Desafio 13
 let string1 = '1 cerveja';
