@@ -35,7 +35,7 @@ function concatName(nameList) {
   let lastName = nameList.slice(-1); // Slice() para copiar e adicionar em novo Array.
   let lastAndFirstName = []; // Criar novo array para adicionar o lastName e firstName.
 
-  lastAndFirstName.push(lastName + ' ' + firstName); // Adiciona no array.
+  lastAndFirstName.push(lastName + ', ' +firstName); // Adiciona no array.
 
   return lastAndFirstName;
 }
@@ -115,11 +115,10 @@ function encode(string) {
   let stringCode = '';
 
   for (let index = 0; index < string.length; index += 1) {
-    
     if (vogals.includes(string[index])) {
       stringCode += codes[string[index]];
     }
-    stringCode += string[index]; 
+    stringCode += string[index];
   }
   return stringCode;
 }
@@ -127,6 +126,7 @@ function encode(string) {
 function decode(stringCode) {
   // seu código aqui
   let string = '';
+  let vogals = 'aeiou';
 
   for (let index = 0; index < stringCode.length; index += 1) {
     let number = Number(stringCode[index]);
