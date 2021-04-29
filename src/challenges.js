@@ -37,10 +37,16 @@ for (contador = 0; contador < nomeCompleto.length; contador+=1);{
 return nomeCompleto
 }
 concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']);
+
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  wins = wins * 3;
+  let finalResult = wins + ties;
+  return finalResult
 }
+let wins = 14
+let ties = 8
+footballPoints(wins, ties)
 
 // Desafio 6
 function highestCount() {
