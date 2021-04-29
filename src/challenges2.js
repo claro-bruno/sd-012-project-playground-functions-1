@@ -10,7 +10,7 @@ function techList(tech, name) {
       array.push({
         tech: alfabetica[language],
         name: name,
-      })
+      });
     }
     return array;
   }
@@ -91,7 +91,7 @@ function hydrate(string) {
       soma += 0;
     }
   }
-  if (soma === 1){
+  if (soma === 1) {
     return soma + ' copo de água';
   } else {
     return soma + ' copos de água';
