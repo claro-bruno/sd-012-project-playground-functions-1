@@ -85,11 +85,8 @@ console.log(highestCount(numberArray3));
 function catAndMouse(mouse, cat1, cat2) {
   let distanceCat1 = Math.abs(cat1 - mouse);
   let distanceCat2 = Math.abs(cat2 - mouse);
-  if (distanceCat1 < distanceCat2) {
-    return 'cat1';
-  } else if (distanceCat1 === distanceCat2) {
-    return 'os gatos trombam e o rato foge';
-  }
+  if (distanceCat1 < distanceCat2) return 'cat1';
+  if (distanceCat1 === distanceCat2) return 'os gatos trombam e o rato foge';
   return 'cat2';
 }
 console.log(catAndMouse(0, 12, -12));
