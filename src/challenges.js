@@ -23,6 +23,7 @@ function concatName(nome) {
 function footballPoints(wins, ties) {
   return (wins * 3) + (ties * 1);
 }
+//let array6 = [0, 0, 0];
 // Desafio 6
 function highestCount(Array) {
   let maior = 0;
@@ -36,9 +37,10 @@ function highestCount(Array) {
     if (maior === Array[keyCont]) {
       contador += 1;
     }
-    return contador;
   }
+  return contador;
 }
+//console.log(highestCount(array6));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
