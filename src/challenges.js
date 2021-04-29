@@ -74,24 +74,23 @@ function fizzBuzz(numeros) {
   return result;
 }
 
-
 // Desafio 9.1
 function encode(palavra) {
-  let codeLetter = ['a', 'e', 'i', 'o', 'u'];
-  let codeNumber = ['1', '2', '3', '4', '5'];
-  let newPalavra = '';
-  for (let i = 0; i < palavra.length; i += 1) {
-    if (palavra[i] === 'a' || palavra[i] === 'e' || palavra[i] === 'i' || palavra[i] === 'o' || palavra[i] === 'u') {
-      for (let j = 0; j < codeLetter.length; j += 1) {
-        if (palavra[i] === codeLetter[j]) {
-          newPalavra += codeNumber[j];
-        }
-      }
-    } else {
-      newPalavra += palavra[i];
+  let replace = palavra.replace(/[aeiou]/gi, function (x) {
+    switch (x) {
+    default:
+      return '1';
+    case 'e':
+      return '2';
+    case 'i':
+      return '3';
+    case 'o':
+      return '4';
+    case 'u':
+      return '5';
     }
-  }
-  return newPalavra;
+  });
+  return replace;
 }
 
 // Desafio 9.2
