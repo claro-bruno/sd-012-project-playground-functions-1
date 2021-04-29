@@ -94,7 +94,7 @@ function encode(frase) {
   return frase;
 }
 function decode(frase) {
-    // alterado conforme sugestão de colega para que possa assim atender o lint.
+  // alterado conforme sugestão de colega para que possa assim atender o lint.
   frase = frase.replace(/1/g, 'a');
   frase = frase.replace(/2/g, 'e');
   frase = frase.replace(/3/g, 'i');
