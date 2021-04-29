@@ -93,7 +93,6 @@ function catAndMouse(mouse,cat1,cat2) {
     return console.log("os gatos trombam e o rato foge");
   }
 }
-
 catAndMouse(0,3,2);
 catAndMouse(0,6,12);
 catAndMouse(0,2,2);
