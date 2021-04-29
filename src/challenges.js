@@ -4,21 +4,21 @@ function compareTrue(bloco1, bloco2) {
  return true
   } else {
     return false
-  };
-};
+  }
+}
 
 
 // Desafio 2
 function calcArea(base, height) {
   return( base * height ) / 2;
-};
+}
 
 
 // // Desafio 3
 
 function splitSentence(string) {
   return string.split (' ');
-};
+}
 
 
 // // Desafio 4
