@@ -133,35 +133,34 @@ function encode(string) {
   trocar se a
   */
 
-  // let changeVowel;
+  let changeVowel;
 
-  // for (let index = 0; index < string.length; index += 1) {
-  //   return string.replace(/a/, '1');
-  //   return string.replace(/e/, '2');
-  //   return string.replace(/i/, '3');
-  //   return string.replace(/o/, '4');
-  //   return string.replace(/u/, '5');
-  //   changeVowel = string[index];
-  //   }
-
-  //   return string.replace(/a/, '1');
-  //   return string.replace(/e/, '2');
-  //   return string.replace(/i/, '3');
-  //   return string.replace(/o/, '4');
-  //   return string.replace(/u/, '5');
-  // console.log(encode('hi there!'));
-
-  // a -> 1
-  // e -> 2
-  // i -> 3
-  // o -> 4
-  // u -> 5
-
-  // let vogais = 'hae!'
-  // let vogais2 = vogais.replace(/a/, '1');
-  // vogais.replace(/e/, '2');
-  // console.log(vogais2);
+  for (let index = 0; index < string.length; index += 1) {
+    if (index = "a", "e", "i", "o", "u") {
+      changeVowel = string.replace(/a/, '1', /e/, '2', /i/, '3', /o/, '4', /u/, '5');
+      // return string.replace(/e/, '2');
+      // return string.replace(/i/, '3');
+      // return string.replace(/o/, '4');
+      // return string.replace(/u/, '5');
+      return changeVowel;
+    }
+ }
+  console.log(encode('hai there!'));
 }
+
+// Desafio 9
+function encode(string) {
+  let novaString = '';
+  for (let index = 0; index < string.length; index += 1) {
+    novaString += string[index].replace(/a/, '1')
+    .replace(/e/, '2')
+    .replace(/i/, '3')
+    .replace(/o/, '4')
+    .replace(/u/, '5');
+  }
+  return novaString;
+}
+  console.log(encode('hi there!'));
 
 function decode() {
   /*
