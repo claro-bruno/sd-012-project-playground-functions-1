@@ -45,7 +45,7 @@ function highestCount(highestCount) {
 function catAndMouse(mouse, cat1, cat2) {
   let distanciaCat1 = Math.abs(mouse - cat1)
   let distanciaCat2 = Math.abs(mouse - cat2)
-  if (cat1 === cat2) {
+  if (distanciaCat1 === distanciaCat2) {
     return "os gatos trombam e o rato foge";
   } else if (distanciaCat1 < distanciaCat2) {
     return "cat1";
