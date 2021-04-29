@@ -42,7 +42,7 @@ function generatePhoneNumber(foneNumbers) {
 function triangleCheck(lineA, lineB, lineC) {
   if (lineA > (lineB + lineC) || lineB > (lineA + lineC) || lineC > (lineB + lineA)){
     return false;
-  } else if (lineA > Math.abs(lineB- lineC) || lineB > Math.abs(lineA - LineC) || lineC > Math.abs(lineA - lineB)){
+  } else if (lineA < Math.abs(lineB- lineC) || lineB < Math.abs(lineA - LineC) || lineC < Math.abs(lineA - lineB)){
     return false;
   } else {
     return true;
