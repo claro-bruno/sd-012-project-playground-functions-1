@@ -1,7 +1,7 @@
 // Desafio 1
 function compareTrue(num1, num2) {
 
-  if (num1 === 5*2 && num2 === 2) {
+  if (num1 > 10 && num2 > 2) {
     return true
         
   }else{
@@ -11,7 +11,7 @@ function compareTrue(num1, num2) {
 
 console.log(compareTrue(12, 2))
 console.log(compareTrue(1, 22))
-console.log(compareTrue(10, 2))
+console.log(compareTrue(12, 22))
 
 
 // Desafio 2
