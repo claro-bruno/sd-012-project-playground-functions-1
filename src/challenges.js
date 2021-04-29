@@ -128,9 +128,9 @@ function decode(string) {
     3: 'i',
     4: 'o',
     5: 'u',
-  }
+  };
   for (let index in string) {
-    if (string[index] in codigo){
+    if (string[index] in codigo) {
       resposta += codigo[string[index]];
     } else {
       resposta += string[index];
@@ -138,7 +138,6 @@ function decode(string) {
   }
   return resposta;
 }
-
 
 module.exports = {
   calcArea,
