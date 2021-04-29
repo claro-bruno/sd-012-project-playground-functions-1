@@ -53,19 +53,21 @@ function fizzBuzz(arrN) {
   for (let index = 0; index < arrN.length; index += 1) {
     let divisivel3 = (arrN[index] % 3) === 0;
     let divisivel5 = (arrN[index] % 5) === 0;
-    if (divisivel3) {
-      if (divisivel5) {
-        arrS.push('fizzBuzz');
-      } else {
-        arrS.push('fizz');
-      }
-    } else if (divisivel5) {
-      arrS.push('buzz');
-    } else {
-      arrS.push('bug!');
-    }
+    arrS.push(param(divisivel3, divisivel5));
   }
   return arrS;
+}
+
+function param(divisivel3, divisivel5) {
+  if (divisivel3 && divisivel5) {
+    return 'fizzBuzz';
+  } else if (divisivel3) {
+    return 'fizz';
+  } else if (divisivel5) {
+    return 'buzz';
+  } else {
+    return 'bug!';
+  }
 }
 
 // Desafio 9
