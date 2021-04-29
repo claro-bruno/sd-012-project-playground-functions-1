@@ -1,25 +1,31 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
   return valor1 && valor2;
-   }
+   };
   console.log(compareTrue(true, false));
 
 
 // Desafio 2
 function calcArea(base, height) {
   return base * height / 2;
-}
+};
 console.log(calcArea(51, 1));
+
 
 // Desafio 3
 function splitSentence(string) {
   return string.split(' ');
-}
+};
 console.log(splitSentence('vamo que vamo'));
+
+
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(array) {
+  let primeiro = array[0];
+  let ultimo = array[array.length-1];
+  return  ultimo + ', ' + primeiro;
+};
+
 
 // Desafio 5
 function footballPoints() {
