@@ -35,7 +35,7 @@ function generatePhoneNumber(arr) {
     }
   }
   if (arr.length !== 11) {
-    return 'Array com tamnho incorrento.';
+    return 'Array com tamnho incorreto.';
   }
   for (let index = 0; index < arr.length; index += 1) {
     if (arr[index] < 0 || arr[index] > 9) {
