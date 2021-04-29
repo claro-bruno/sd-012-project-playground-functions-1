@@ -17,8 +17,9 @@ function splitSentence(string) {
 };
 // Desafio 4
 function concatName(string) {
-  let array = (string[string.lenght, -1] + array[0]);
-  return array;
+  let ultimaposicao = string[names.lenght -1]
+  let primeiraposicao = string[0];
+  return ultimaposicao + ' ' + primeiraposicao;
 };
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -26,8 +27,14 @@ function footballPoints(wins, ties) {
 };
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numeros) {
+let maiornumero = 0;
+for (let index in numeros) {
+  if (numeros[maiornumero] < numeros[index]) {
+    maiornumero = index;
+  }
+}
+return maiornumero;
 };
 
 // Desafio 7
