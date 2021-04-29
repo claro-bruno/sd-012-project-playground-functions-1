@@ -99,10 +99,30 @@ function fizzBuzz(inputNumbers) {
 // Desafio 9
 function encode(encodeText) {
   // seu código aqui
-  let minusulo = encodeText.toLowerCase();
-  let teste = minusulo[0];
+  let minusculo = encodeText.toLowerCase();
+  let resultado;
 
-  return teste;
+  for (let index = 0; index <= minusculo.length; index += 1){
+    if (minusculo[index] == "a"){
+    resultado = minusculo.replace("a", "1");
+    minusculo = resultado;
+  } else if (minusculo[index] == "e"){
+    resultado = minusculo.replace("e", "2");
+    minusculo = resultado;
+  } else if (minusculo[index] == "i"){
+    resultado = minusculo.replace("i", "3");
+    minusculo = resultado;
+  } else if (minusculo[index] == "o"){
+    resultado = minusculo.replace("o", "4");
+    minusculo = resultado;
+  } else (minusculo[index] == "u")
+    resultado = minusculo.replace("u", "5");
+    minusculo = resultado;
+  
+  }
+
+  return minusculo;
+
 
 }
 
