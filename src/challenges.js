@@ -84,25 +84,24 @@ function catAndMouse() {
 function fizzBuzz(arrayFizzbuzz) {
   let arrayFinal = [];  
   for (index = 0; index < arrayFizzbuzz.length; index += 1) {
-    if (arrayFizzbuzz[index] % 3 === 0) {
-      arrayFinal.push('fizz');
-    }
-    if (arrayFizzbuzz[index] % 5 === 0) {
-      arrayFinal.push('buzz')
-    }
-    if (((arrayFizzbuzz[index] % 3) === 0) && ((arrayFizzbuzz[index] % 5) === 0)) {
+    
+    if (arrayFizzbuzz[index] % 3 === 0 && arrayFizzbuzz[index] % 5 === 0) {
       arrayFinal.push('fizzBuzz');
     }
-    else {
-      arrayFinal.push('bug!');
+    else if (arrayFizzbuzz[index] % 3 === 0) {
+      arrayFinal.push('fizz');
+    }
+    
+    else if (arrayFizzbuzz[index] % 5 === 0) {
+      arrayFinal.push('buzz')
+    }
+    
+    else { arrayFinal.push('bug!');
     }
   
   }
-  return arrayFinal;
+  return arrayFinal.join();
 }
-
-
-
 
 // Desafio 9
 function encode() {
