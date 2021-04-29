@@ -1,22 +1,21 @@
-// // Desafio 10
-// function techList(arr, name) {
-//   arr.sort();
-//   let finalList = [];
+// Desafio 10
+function techList(arr, name) {
+  arr.sort();
+  let finalList = [];
 
-//   for (let index = 0; index < arr.length; index += 1) {
-//     let objeto = {
-//       tech: arr[index],
-//       name: name
-//     }
-//     finalList.push(objeto);
-//   }
-//   if (arr.length == 0) {
-//     return 'Vazio!'
-//   } else {
-//     return finalList;
-//   };
-// };
-// console.log(techList([], "Lucas"));
+  for (let index = 0; index < arr.length; index += 1) {
+    let objeto = {
+      tech: arr[index],
+      name: name
+    }
+    finalList.push(objeto);
+  }
+  if (arr.length == 0) {
+    return 'Vazio!'
+  } else {
+    return finalList;
+  };
+};
 
 // Desafio 11
 function generatePhoneNumber(arr) {
@@ -44,21 +43,21 @@ function generatePhoneNumber(arr) {
   }
   return `(${arr[0]}${arr[1]}) ${arr[2]}${arr[3]}${arr[4]}${arr[5]}${arr[6]}-${arr[7]}${arr[8]}${arr[9]}${arr[10]}`
 }
-console.log(generatePhoneNumber([1, 9, 2, 3, 3, 6, 7, 8, 8, 2, 9]));
+console.log(generatePhoneNumber([0, 2, 3, 4, 5, 8, 7, 9, 1, 0, 7]));
 
 // // Desafio 12
-// function triangleCheck() {
-//   // seu código aqui
-// }
+function triangleCheck(lineA, lineB, lineC) {
+  // seu código aqui
+}
 
-// // Desafio 13
-// function hydrate() {
-//   // seu código aqui
-// }
+// Desafio 13
+function hydrate() {
+  // seu código aqui
+}
 
-// module.exports = {
-//   generatePhoneNumber,
-//   techList,
-//   hydrate,
-//   triangleCheck,
-// };
+module.exports = {
+  generatePhoneNumber,
+  techList,
+  hydrate,
+  triangleCheck,
+};
