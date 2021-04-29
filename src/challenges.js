@@ -59,15 +59,15 @@ function catAndMouse() {
 function fizzBuzz(num) {
   
   let list = [];
-  for (index = 0; index < num.length; index+= 1) {
+  for (let index = 0; index < num.length; index+= 1) {
   
-    if  (num[index] % 3 === 0) {
+    if  (num[index] % 3 == 0) {
     list.push("fizz");
   
-    } else if (num[index] % 5 === 0) {
+    } else if (num[index] % 5 == 0) {
       list.push("buzz");
       
-    } else if (num[index] % 3 === 0 && num[index] % 5 === 0) {
+    } else if (num[index] % 3 == 0 && num[index] % 5 == 0) {
         list.push("fizzBuzz");
 
     } else {
