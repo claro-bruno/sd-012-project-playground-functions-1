@@ -73,7 +73,7 @@ function catAndMouse(mouse, cat1, cat2) {
 };
 
 // Desafio 8
-function fizzBuzz(numbers) {
+function fizzBuzz(numbers){
   let arrayFizzBuzz = [];
   for (let number of numbers){
     if((number / 3) === 0 && (number / 5) === 0) {
@@ -85,15 +85,44 @@ function fizzBuzz(numbers) {
     } else {
       arrayFizzBuzz.push("bug!");
     };
-    return arrayFizzBuzz;
+    return arrayFizzBuzz
+  };
 };
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
+function encode(stringEncode) {
+  let rule = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5
+  };
+  for(let index = 0; index < stringEncode.length; index += 1) {
+    for(let key in rule) {
+      if(key == stringEncode[index]) {
+        stringEncode = stringEncode.replace(stringEncode[index], rule[key]);
+      };
+    };
+  };
+};
+function decode(stringCode) {
+  let stringDecode = "h3 th2r2!"
+  let rule = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u'
+  };
+  for(let index = 0; index < stringDecode.length; index += 1) {
+    for(let key in rule) {
+      if(key == stringDecode[index]) {
+        stringDecode = stringDecode.replace(stringDecode[index], rule[key]);
+      };
+    };
+  };
+  console.log(stringDecode)
 }
 
 module.exports = {
