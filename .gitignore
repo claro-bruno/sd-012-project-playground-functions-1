@@ -5,3 +5,6 @@
 node_modules/
 tests/
 .DS_Store
+
+project-playground-functions.sublime-project
+project-playground-functions.sublime-workspace
