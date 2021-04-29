@@ -69,7 +69,7 @@ function highestCount(arrayDesafio6) {
 function catAndMouse(mouse, cat1, cat2) {
 };
 
-// Desafio 8 - FALTA
+// Desafio 8
 function fizzBuzz(arrayDesafio8) {
 let arrayNova8 = [];
 for (let a = 0; a < arrayDesafio8.length; a += 1) {
