@@ -2,7 +2,7 @@
 function techList(techName, name) {
   let objeto = [];
   let lista = {};
-    if (techName.length === 0) {
+  if (techName.length === 0) {
     return 'Vazio!';
   } else {
     for (let key in techName.sort()) {
@@ -28,15 +28,15 @@ function triangleCheck() {
 }
 
 // Desafio 13
-function hydrate(hydrante) {
+function hydrate(hydrate) {
   let regRule = /\d+/g;
-  let arrayHydrante = hydrante.match(regRule)
-  let quantia = 0
-  for (let key in arrayHydrante) {
-    quantia += parseInt(arrayHydrante[key])
+  let arrayHydrate = hydrate.match(regRule);
+  let quantia = 0;
+  for (let key in arrayHydrate) {
+    quantia += parseInt(arrayHydrate[key])
   }
-  let result = `${quantia} copos de água`
-return result
+  let result = `${quantia} copos de água`;
+  return result;
 }
 
 module.exports = {
