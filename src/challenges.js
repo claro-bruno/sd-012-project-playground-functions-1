@@ -85,7 +85,7 @@ function fizzBuzz(array) {
 // Desafio 9
 function encode(string) {
   let array = string.split('');
-  for (let char in array) {
+  for (let char = 0; char < array.length ; char += 1) {
     if (array[char] === 'a') {
       array[char] = '1';
     } if (array[char] === 'e') {
@@ -102,7 +102,7 @@ function encode(string) {
 }
 function decode(string) {
   let array = string.split('');
-  for (let char in array) {
+  for (let char = 0; char < array.length ; char += 1) {
     if (array[char] === '1') {
       array[char] = 'a';
     } if (array[char] === '2') {
