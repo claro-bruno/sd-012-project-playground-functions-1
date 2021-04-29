@@ -1,22 +1,22 @@
 // Desafio 1
-function compareTrue(aluno, turma) {
-  let nome = aluno;
-  let tryber = turma;
-  
-  if (nome === aluno && turma === 12) {
+function compareTrue(num1, num2) {
+  let somaPar = num1 + num2;
+  let zero = true;
+
+  if ( somaPar % 2 === 0  && zero === true) {
     resultado = true;
-  } else if (nome === aluno || turma === 12) {
+  } else if (somaPar % 2 === 0 || zero === true) {
     resultado = false;
   } else {
     resultado = false;
-  } 
+  }
   return resultado;
 }
 
 
 // Desafio 2
 function calcArea(base, height) {
-  let resultado = (base * height)/2 
+  let resultado = (base * height)/2
   return resultado;
 };
 
@@ -24,21 +24,21 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(frase) {
   let resultado = frase.split(" ");
-  
+
   return resultado;
 }
 
 
 // Desafio 4
 function concatName(frase1) {
-  
+
   let resultado = frase1[0] + frase1[frase1.length-1];
   return resultado;
 }
 
 
 // Desafio 5
-function footballPoints(wins, ties) { 
+function footballPoints(wins, ties) {
   let vitorias = wins*3;
   let empates = ties*1;
   let resultado = vitorias + empates;
@@ -47,7 +47,7 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(numeros) {
-  
+
   let resultado = 0;
   let maiorNumero = Math.max(...numeros);
   console.log(maiorNumero);
@@ -62,22 +62,22 @@ function highestCount(numeros) {
 
 // Desafio 7
 function catAndMouse() {
-/*   let posicaoGato1 = cat1
-  let posicaoGato2 = cat2
-  let posicaoRato = mouse
-  let resultado;
 
-  if(posicaoGato1 <= posicaoRato && posicaoGato1 < posicaoGato2 + 1 && posicaoGato2 !== posicaoRato){
-    resultado = "cat1"
-  } else { 
-    resultado = "cat2"
-  }
-  return resultado;
+//   let posicaoGato2 = cat2
+//   let posicaoRato = mouse
+//   let resultado;
+
+//   if(posicaoGato1 <= posicaoRato && posicaoGato1 < posicaoGato2 + 1 && posicaoGato2 !== posicaoRato){
+//     resultado = "cat1"
+//   } else {
+//     resultado = "cat2"
+//   }
+//   return resultado;
 }
-  console.log(catAndMouse(1,2,3)); */
+//   console.log(catAndMouse(1,2,3)); */
 // Desafio 8
 function fizzBuzz(arrayFizzBuzz) {
-  
+
   let resultado = [];
 
   for (index = 0; index < arrayFizzBuzz.length; index +=1) {
@@ -90,43 +90,57 @@ function fizzBuzz(arrayFizzBuzz) {
     } else {
       resultado.push("bug!")
     }
-  } 
+  }
   return resultado;
 }
 
 
 // Desafio 9
 function encode(stringVogais) {
-  let resultado;
-  for (vogal of stringVogais){
-    switch(stringVogais) {
-      case "a":
-        resultado = resultado + "1"
-        break;
-      case "e":
-        resultado = resultado + "2"
-        break;
-      case "i":
-        resultado = resultado + "3"
-        break;
-      case "o":
-        resultado = resultado + "4"
-        break;
-      case "u":
-        resultado = resultado + "5"
-        break;
-      default:
-        resultado = resultado;
+  // function trocaLetra(vogal, numeroInteiro){
+  // let fraseEncode = stringVogais
+  // let resultado = fraseEncode.replace(/vogal/g, "numero") 
+  // return resultado;
+  let resultado = stringVogais;
+  for (index = 0; index < stringVogais.length; index +=1){
+    if(stringVogais[index] === "a"){
+      resultado = resultado.replace(/a/g, "1")
+  }   else if (stringVogais[index] === "e"){
+      resultado = resultado.replace(/e/g, "2")
+  }   else if(stringVogais[index] === "i"){
+      resultado = resultado.replace(/i/g, "3")
+  }   else if(stringVogais[index] === "o"){
+      resultado = resultado.replace(/o/g, "4")
+  }   else if(stringVogais[index] === "u"){
+      resultado = resultado.replace(/u/g, "5")
+  }   
+  
+}
+return resultado;
+}
 
-}
-}
-  return resultado;
-}
-console.log(stringVogais("oi, eu sou o goku"));
 
-function decode() {
+function decode(stringVogais) {
   // seu código aqui
+  let resultado = stringVogais;
+  for (index = 0; index < stringVogais.length; index +=1){
+    if(stringVogais[index] === "1"){
+      resultado = resultado.replace(/1/g, "a")
+  }   else if (stringVogais[index] === "2"){
+      resultado = resultado.replace(/2/g, "e")
+  }   else if(stringVogais[index] === "3"){
+      resultado = resultado.replace(/3/g, "i")
+  }   else if(stringVogais[index] === "4"){
+      resultado = resultado.replace(/4/g, "o")
+  }   else if(stringVogais[index] === "5"){
+      resultado = resultado.replace(/5/g, "u")
+  }   
+  
 }
+return resultado;
+}
+
+
 
 module.exports = {
   calcArea,
