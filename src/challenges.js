@@ -65,37 +65,28 @@ function highestCount(arrayDesafio6) {
 
 }
 
-// Desafio 7
+// Desafio 7 - FALTA
 function catAndMouse(mouse, cat1, cat2) {
-  if (cat1 < cat2) {
-    return 'cat1';
-  } else if (cat2 < cat1) {
-    return 'cat2';
-  } else {
-    return "os gatos trombam e o rato foge";
-  };
 };
-
-
 
 // Desafio 8 - FALTA
-function fizzBuzz(array8) {
-
-let arrayNova = [];
-
-for (let index = 0; index < array8.length; index += 1) {
-  if (array8[index] % 3 === 0 && array8[index] % 5 === 0) {
-    arrayNova.push('fizzBuzz');
-  } else if (array8[index] % 3 === 0) {
-    arrayNova.push('fizz');
-  } else if (array8[index] % 5 === 0) {
-    arrayNova.push('buzz');
+function fizzBuzz(arrayDesafio8) {
+let arrayNova8 = [];
+for (let a = 0; a < arrayDesafio8.length; a += 1) {
+  if (arrayDesafio8[a] % 5 == 0 && arrayDesafio8[a] % 3 == 0) {
+    arrayNova8.push("fizzBuzz");
+  } else if (arrayDesafio8[a] % 5 == 0) {
+    arrayNova8.push("buzz");
+  } else if (arrayDesafio8[a] % 3 == 0) {
+    arrayNova8.push("fizz");
   } else {
-    arrayNova.push('bug!');
-  };
-  return arrayNova;
+    arrayNova8.push("bug!");
+  }
+}
+return arrayNova8;
 };
-};
+
+
 
 
 
