@@ -76,9 +76,13 @@ function highestCount(arrayNumbers) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let rangeCat1mouse = Math.abs((cat1 > mouse) ? (cat1 - mouse) : (mouse - cat1));
+  let rangeCat2mouse = Math.abs((cat2 > mouse) ? (cat2 - mouse) : (mouse - cat2));
+
+  return rangeCat1mouse > rangeCat2mouse ? 'cat2' : rangeCat2mouse > rangeCat1mouse ? 'cat1' : 'os gatos trombam e o rato foge';
 }
+  
 
 // Desafio 8
 function fizzBuzz(arrayFizzbuzz) {
@@ -105,10 +109,10 @@ function fizzBuzz(arrayFizzbuzz) {
 
 // Desafio 9
 function encode() {
-  // seu código aqui
+  
 }
 function decode() {
-  // seu código aqui
+  
 }
 
 module.exports = {
