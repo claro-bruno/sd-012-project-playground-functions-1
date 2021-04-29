@@ -59,17 +59,29 @@ function catAndMouse(positionMouse, positionCat1, positionCat2) {
 }
 
 // Desafio 8
+function fizzBuzzAux(resultReceived, receivedIndex) {
+  for (let index in receivedIndex) {
+    if (resultReceived[receivedIndex[index]] % 3 === 0) {
+      resultReceived[receivedIndex[index]] = 'fizz';
+    } else if (resultReceived[receivedIndex[index]] % 5 === 0) {
+      resultReceived[receivedIndex[index]] = 'buzz';
+    } else resultReceived[receivedIndex[index]] = 'bug!';
+  }
+  return resultReceived;
+}
+
 function fizzBuzz(receivedNumbers) {
   let result = [];
+  let indexAux = [];
   for (let index in receivedNumbers) {
     if ((receivedNumbers[index] % 3 === 0) && (receivedNumbers[index] % 5 === 0)) {
       result.push('fizzBuzz');
-    } else if (receivedNumbers[index] % 3 === 0) {
-      result.push('fizz');
-    } else if (receivedNumbers[index] % 5 === 0) {
-      result.push('buzz');
-    } else result.push('bug!');
+    } else {
+      result.push(receivedNumbers[index]);
+      indexAux.push(index);
+    }
   }
+  fizzBuzzAux(result, indexAux);
   return result;
 }
 
