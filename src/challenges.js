@@ -26,7 +26,7 @@ return (fim + ', ' + inicio);
 
 // Desafio 5
 function footballPoints(wins, ties) {
-    if ((wins === 3) + (ties === 1)) {
+    if ((wins * 3) + ties {
 
     } return wins + ties
     
