@@ -38,10 +38,7 @@ function highestCount(numArray) {
   for (let index in numArray) {
     if (numArray[index] > higherNum) {
       higherNum = numArray[index];
-    }
-  }
-  for (let number of numArray) {
-    if (number === higherNum) {
+    } else if (numArray[index] === higherNum) {
       repetitions += 1;
     }
   }
@@ -63,12 +60,12 @@ function catAndMouse(posMouse, posCat1, posCat2) {
 // Desafio 8
 function fizzBuzz(list) {
   let arrayResult = [];
-  for (let index in list) {
-    if (list[index] % 3 === 0 && list[index] % 5 !== 0) {
+  for (let number of list) {
+    if (number % 3 === 0 && number % 5 !== 0) {
       arrayResult.push('fizz');
-    } else if (list[index] % 5 === 0 && list[index] % 3 !== 0) {
+    } else if (number % 5 === 0 && number % 3 !== 0) {
       arrayResult.push('buzz');
-    } else if (list[index] % 3 === 0 && list[index] % 5 === 0) {
+    } else if (number % 3 === 0 && number % 5 === 0) {
       arrayResult.push('fizzBuzz');
     } else {
       arrayResult.push('bug!');

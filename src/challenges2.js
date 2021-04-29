@@ -25,11 +25,10 @@ function isPhoneLength(phone) {
 function repeatNumber(phone) {
   for (let number of phone) {
     let times = 0;
-    for (let index in phone) {
-      if (phone[index] === number) {
+    for (let index of phone) {
+      if (index === number) {
         times += 1;
-      }
-      if (times >= 3) {
+      } if (times >= 3) {
         return true;
       }
     }
