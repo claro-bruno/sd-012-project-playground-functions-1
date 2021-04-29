@@ -1,7 +1,19 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(techArr, name) {
+  let res = [];
+  if(techArr.length === 0) {
+    return 'Vazio!'
+  }
+  for(let index = 0; index < techArr.length; index +=1) {
+    let obj = {
+      tech: techArr[index],
+      name: name,
+    };
+    res.push(obj) 
+  }
+  return res;
 }
+console.log(techList([], 'Gabriel'));
 
 // Desafio 11
 function generatePhoneNumber(array) {
@@ -26,7 +38,6 @@ function generatePhoneNumber(array) {
   }
   return `(${array.slice(0, 2).join('')}) ${array.slice(2, 7).join('')}-${array.slice(7, 11).join('')}`;
 }
-console.log(generatePhoneNumber([]));
 
 // Desafio 12
 function triangleCheck() {
