@@ -42,12 +42,20 @@ function generatePhoneNumber(numbers) {
 function triangleCheck(lineA, lineB, lineC) {
   if (lineA >= lineB + lineC || lineB >= lineA + lineC || lineC >= lineA + lineB) { return false };
   return true;
-};
+}
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(pedido) {
+  let numbers = pedido.match(/\d+/g).map(Number);
+  let soma = 0;
+  let resposta = '';
+  for (let number of numbers) { soma += number };
+  if (soma > 1) { resposta = `${soma} copos de água` } else { resposta = `${soma} copo de água`};
+  return resposta;
 }
+
+console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
+//link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
 
 module.exports = {
   generatePhoneNumber,
