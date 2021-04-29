@@ -1,14 +1,4 @@
-/* eslint-disable guard-for-in */
-/* eslint-disable max-lines-per-function */
-/* eslint-disable sonarjs/cognitive-complexity */
-/* eslint-disable space-before-blocks */
-/* eslint-disable operator-assignment */
-/* eslint-disable no-unused-vars */
-/* eslint-disable prefer-template */
-/* eslint-disable no-else-return */
-/* eslint-disable sonarjs/prefer-single-boolean-return */
-/* eslint-disable sonarjs/no-use-of-empty-return-value */
-/* eslint-disable complexity */
+
 // Desafio 1
 function compareTrue(valor1, valor2) {
   // seu código aquii
