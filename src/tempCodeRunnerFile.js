@@ -1,19 +1,15 @@
-function highestCount(numbers) {
-    let highIndex = 0;
-    let repetitions = 0;
-    for(let index in numbers) {
-      if(numbers[index] > highIndex) {
-        highIndex = numbers[index];
-      }
-    }
-    for(let number of numbers){
-      if( number === highIndex){
-        repetitions += 1;
-      }
-    }
-    return repetitions;
+function catAndMouse(mouse, cat1, cat2) {
+  let distancecat1 = (cat1 - mouse);
+  let distancecat2 = (cat2 - mouse);
+  if (distancecat1 < distancecat2) {
+    return "cat1";
+  } else if (distancecat2 < distancecat1) {
+    return "cat2";
+  } else if (distancecat1 === distancecat2) {
+    return 'os gatos trombaram e o rato foge';
   }
+}
 
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
-console.log(highestCount([0, 0, 0]));
+console.log(catAndMouse(1, 4, 3));
+console.log(catAndMouse(1, 6, 12));
+console.log(catAndMouse(1, 3, 3));
