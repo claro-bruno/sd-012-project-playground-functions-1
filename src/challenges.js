@@ -35,35 +35,41 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(Array) {
   // seu código aqui
-
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  Math.abs
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(Array) {
   // seu código aqui
+  let result = [];
+  for (let index = 0; index < Array.length; index += 1) {
+    if (Array[index] % 3 === 0 && Array[index] % 5 === 0) {
+      result.push ('fizzBuzz');
+    }else if (Array[index] % 5 === 0) {
+      result.push ('buzz');
+    }else if (Array[index] % 3 === 0) {
+      result.push ('fizz');
+    }else{
+      result.push('bug!')
+    }
+  }
+  return result;
 }
 
 // Desafio 9
-// eslint-disable-next-line no-unused-vars
 function encode(string) {
   // seu código aqui
-  let result = '';
-  
-  return result;
 }
 
 function decode(string) {
   // seu código aqui
-  let result = '';
-
-  return result;
 }
 
 module.exports = {
