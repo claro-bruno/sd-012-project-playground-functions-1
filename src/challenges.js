@@ -63,10 +63,10 @@ function catAndMouse(mouse, cat1, cat2) {
     let result;
        
     if (positionCat1 < positionCat2){
-      result = "cat 1";
+      result = "cat1";
     } 
     else if (positionCat1 > positionCat2){
-      result = "cat 2";
+      result = "cat2";
     }
     else {
       result = "os gatos trombam e o rato foge"
