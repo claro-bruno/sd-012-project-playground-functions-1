@@ -76,17 +76,17 @@ function encode(frase) {
   frase = frase.split('')
   for (let i = 0; i<frase.length; i += 1){
     switch (frase[i]) {
-      case 'a': frase[i] = '1'
+    case 'a': frase[i] = '1';
       break;
-      case 'e': frase[i] = '2'
+    case 'e': frase[i] = '2';
       break;
-      case 'i': frase[i] = '3'
+    case 'i': frase[i] = '3';
       break;
-      case 'o': frase[i] = '4'
+    case 'o': frase[i] = '4';
       break;
-      case 'u': frase[i] = '5'
+    case 'u': frase[i] = '5';
       break;
-      default: frase[i] == frase[i]
+    default: frase[i] === frase[i]
     }
   }
   return frase.join('')
@@ -96,20 +96,20 @@ function decode(frase) {
   frase = frase.split('')
   for (let i = 0; i<frase.length; i += 1){
     switch (frase[i]) {
-      case '1': frase[i] = 'a'
+    case '1': frase[i] = 'a';
       break;
-      case '2': frase[i] = 'e'
+    case '2': frase[i] = 'e';
       break;
-      case '3': frase[i] = 'i'
+    case '3': frase[i] = 'i';
       break;
-      case '4': frase[i] = 'o'
+    case '4': frase[i] = 'o';
       break;
-      case '5': frase[i] = 'u'
+    case '5': frase[i] = 'u';
       break;
-      default: frase[i] == frase[i]
+    default: frase[i] === frase[i]; //hummm
     }
   }
-  return frase.join('')
+  return frase.join('');
 }
 
 module.exports = {
