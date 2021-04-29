@@ -1,25 +1,58 @@
 // Desafio 10
 function techList(array, name) {
   // seu código aqui
-  let habilidade = {
-    tech: '',
-    name: '',
-  };
-  let habilidades = [];
-  for (let index = 0; index < array.length; index += 1) {
-    if (array[index] === '') {
-      habilidade.tech = 'Vazio!';
-    } else {
-      habilidade.tech = array[index];
+  // let habilidade = {
+  //   tech: '',
+  //   name: '',
+  // };
+  // let habilidades = [];
+  // for (let index = 0; index < array.length; index += 1) {
+  //   if (array[index] === '') {
+  //     habilidade.tech = 'Vazio!';
+  //   } else {
+  //     habilidade.tech = array[index];
+  //   }
+  //   habilidade.name = name;
+  //   habilidades.push(habilidade);
+  //   habilidade = {
+  //     tech: '',
+  //     name: '',
+  //   };
+  // }
+  //   return habilidades;
+  let tecnologies = [
+    { 
+        tech: 'React',
+        name: "Luciano"
+    },
+    { 
+        tech: 'JavaScript',
+        name: "Luciano"
+    },
+    { 
+        tech: 'Next',
+        name: "Luciano"
+    },
+    { 
+        tech: 'Node',
+        name: "Luciano"
+    },
+    { 
+        tech: 'CSS',
+        name: "Luciano"
     }
-    habilidade.name = name;
-    habilidades.push(habilidade);
-    habilidade = {
-      tech: '',
-      name: '',
-    };
+];
+if (array.length === 0) {
+  return 'Vazio!'
+} else {
+  for (let key in tecnologies) {
+    for (let index in array) {
+      tecnologies[index].tech = array[index];
+    }
+    tecnologies[key].name = name;
   }
-    return habilidades;
+}
+return tecnologies;
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
@@ -88,7 +121,7 @@ function hydrate(string) {
   // seu código aqui
   let numeros = string.match(/\d+/g).map(Number)
   let soma = 0;
-  for (let index = 0; index < numeros.length; index +=1) {
+  for (let index = 0; index < numeros.length; index += 1) {
     soma = soma + numeros[index];
   }
   if (soma === 1) {
