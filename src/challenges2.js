@@ -6,20 +6,20 @@ function techList(array, name) {
     name: '',
   };
   let habilidades = [];
-  if (array.length === 0) {
-    return 'Vazio!';
-  } else {
-    for (let index = 0; index < array.length; index += 1) {
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] === '') {
+      habilidade.tech = 'Vazio!';
+    } else {
       habilidade.tech = array[index];
-      habilidade.name = name;
-      habilidades.push(habilidade);
-      habilidade = {
-        tech: '',
-        name: '',
-      };
     }
-    return habilidades;
+    habilidade.name = name;
+    habilidades.push(habilidade);
+    habilidade = {
+      tech: '',
+      name: '',
+    };
   }
+    return habilidades;
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
