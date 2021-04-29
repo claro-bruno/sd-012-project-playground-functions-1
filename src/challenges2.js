@@ -1,8 +1,8 @@
 // Desafio 10
 function bubbleSort(array){
-  for(let bubble = 0; bubble < array.length - 1; bubble += 1){
-    for(let index = 0; index < array.length - bubble - 1; index += 1){
-        if(array[index] > array[index + 1]){
+  for (let bubble = 0; bubble < array.length - 1; bubble += 1){
+    for (let index = 0; index < array.length - bubble - 1; index += 1){
+        if (array[index] > array[index + 1]){
             [array[index], array[index + 1]] = [array[index + 1], array[index]];
         }
     }
@@ -15,12 +15,12 @@ function bubbleSort(array){
 function techList(technologies, name) {
   let sortedTechnologies = [];
   let objectList = [];
-  if(technologies.length === 0){
+  if (technologies.length === 0){
     return 'Vazio!';
   }
-  else{
+  else {
     sortedTechnologies = bubbleSort(technologies);
-    for(item of sortedTechnologies){
+    for (item of sortedTechnologies){
       let objectInsertion = {"tech": item, "name": name};
       objectList.push(objectInsertion);
     }
@@ -37,14 +37,14 @@ function techList(technologies, name) {
 function mostRepeatedCount(array){
   let maxElement = array[0];
   let maxCount = 1;
-  for(let index = 0; index < array.length - 1; index += 1){
+  for (let index = 0; index < array.length - 1; index += 1){
       let count = 1;
-      for(let pointer = index + 1; pointer < array.length; pointer += 1){
-          if(array[index] === array[pointer]){
+      for (let pointer = index + 1; pointer < array.length; pointer += 1){
+          if (array[index] === array[pointer]){
               count += 1;
           }
       }
-      if(count > maxCount){
+      if (count > maxCount){
           maxCount = count;
           maxElement = array[index];
       }
@@ -56,15 +56,15 @@ function mostRepeatedCount(array){
 
 function containsInvalidDigit(array){
   let isInvalid = 0;
-  for(let number of array){
-    if(number < 0 || number > 9 || mostRepeatedCount(array) >= 3){
+  for (let number of array){
+    if (number < 0 || number > 9 || mostRepeatedCount(array) >= 3){
       isInvalid += 1;
     }
   }
-  if(isInvalid > 0){
+  if (isInvalid > 0){
     return true;
   }
-  else{
+  else {
     return false;
   }
 }
@@ -75,20 +75,20 @@ function containsInvalidDigit(array){
 function generatePhoneNumber(numberArray) {
   let formatedNumber = '';
   let areaCode = firstHalf = secondHalf = '';
-  if(numberArray.length != 11){
+  if (numberArray.length !== 11){
     return 'Array com tamanho incorreto.';
   }
-  else if(containsInvalidDigit(numberArray)){
+  else if (containsInvalidDigit(numberArray)){
     return 'não é possível gerar um número de telefone com esses valores';
   }
-  else{
-    for(let index = 0; index < 2; index += 1){
+  else {
+    for (let index = 0; index < 2; index += 1){
       areaCode += numberArray[index];
     }
-    for(let index = 2; index < 7; index += 1){
+    for (let index = 2; index < 7; index += 1){
       firstHalf += numberArray[index];
     }
-    for(let index = 7; index < 11; index += 1){
+    for (let index = 7; index < 11; index += 1){
       secondHalf += numberArray[index];
     }
   }
@@ -101,10 +101,10 @@ function generatePhoneNumber(numberArray) {
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  if((lineA < (lineB + lineC)) && (lineB < (lineA + lineC)) && (lineC < (lineA + lineB)) && (lineA > Math.abs(lineB - lineC)) && (lineB > Math.abs(lineA - lineC)) && (lineC > Math.abs(lineA - lineB))){
+  if ((lineA < (lineB + lineC)) && (lineB < (lineA + lineC)) && (lineC < (lineA + lineB)) && (lineA > Math.abs(lineB - lineC)) && (lineB > Math.abs(lineA - lineC)) && (lineC > Math.abs(lineA - lineB))){
     return true;
   }
-  else{
+  else {
     return false;
   }
 }
@@ -121,13 +121,14 @@ function triangleCheck(lineA, lineB, lineC) {
 function hydrate(drinks) {
   let drinkList = drinks.match(/\d+/g);
   let glassesOfWater = 0;
-  for(drink in drinkList){
-    glassesOfWater += parseInt(drink);
+  for (drink in drinkList){
+    glassesOfWater += parseInt(drinkList[drink]);
   }
   return glassesOfWater;
 }
 // let drinks = '1 cachaça, 5 cervejas e 1 copo de vinho';
-// // console.log(drinks.match(/\d+/g));
+// console.log(drinks.match(/\d+/g));
+// let drinks = '1 cerveja';
 // console.log(hydrate(drinks));
 
 module.exports = {

@@ -5,7 +5,7 @@ function compareTrue(valueA, valueB) {
 
 // Desafio 2
 function calcArea(base, height) {
-  let area = base * height / 2;
+  let area = (base * height) / 2;
   return area;
 }
 
@@ -13,15 +13,15 @@ function calcArea(base, height) {
 function splitSentence(sentence) {
   let array = [];
   let word = '';
-  for(let index = 0; index < sentence.length; index += 1){
-    if(index == sentence.length - 1){
+  for (let index = 0; index < sentence.length; index += 1){
+    if (index == sentence.length - 1){
       word += sentence[index];
       array.push(word);
     }
-    else if(sentence[index] != ' '){
+    else if (sentence[index] != ' '){
       word += sentence[index];
     }
-    else{
+    else {
       array.push(word);
       word = '';
     }
@@ -40,11 +40,11 @@ function concatName(array) {
   let switched = '';
   let firstWord = array[0];
   let lastWord = array[array.length - 1];
-  for(index = 0; index < lastWord.length; index += 1){
+  for (index = 0; index < lastWord.length; index += 1){
     switched += lastWord[index];
   }
   switched += ', ';
-  for(index = 0; index < firstWord.length; index += 1){
+  for (index = 0; index < firstWord.length; index += 1){
     switched += firstWord[index];
   }
   return switched;
@@ -71,12 +71,12 @@ function footballPoints(wins, ties) {
 function highestCount(array) {
   let highest = array[0];
   let highestCount = 1;
-  for(let index = 1; index < array.length; index += 1){
-    if(array[index] > highest){
+  for (let index = 1; index < array.length; index += 1){
+    if (array[index] > highest){
       highest = array[index];
       highestCount = 1;
     }
-    else if(array[index] === highest){
+    else if (array[index] === highest){
       highestCount += 1;
     }
   }
@@ -93,13 +93,13 @@ function highestCount(array) {
 function catAndMouse(mouse, cat1, cat2) {
   let distanceCat1 = Math.abs(mouse - cat1);
   let distanceCat2 = Math.abs(mouse - cat2);
-  if(distanceCat1 === distanceCat2){
+  if (distanceCat1 === distanceCat2){
     return "os gatos trombam e o rato foge";
   }
-  else if(distanceCat1 < distanceCat2){
+  else if (distanceCat1 < distanceCat2){
     return "cat1";
   }
-  else{
+  else {
     return "cat2";
   }
 }
@@ -113,17 +113,17 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(array) {
   let outputArray = [];
-  for(let number of array){
-    if(number % 3 === 0 && number % 5 === 0){
+  for (let number of array){
+    if (number % 3 === 0 && number % 5 === 0){
       outputArray.push("fizzBuzz");
     }
-    else if(number % 3 === 0){
+    else if (number % 3 === 0){
       outputArray.push("fizz");
     }
-    else if(number % 5 === 0){
+    else if (number % 5 === 0){
       outputArray.push("buzz");
     }
-    else{
+    else {
       outputArray.push("bug!");
     }
   }
@@ -139,8 +139,8 @@ function fizzBuzz(array) {
 // Desafio 9
 function encode(message) {
   let encoded = '';
-  for(let index = 0; index < message.length; index += 1){
-    if(message[index] == 'a' || message[index] == 'e' || message[index] == 'i' || message[index] == 'o' || message[index] == 'u'){
+  for (let index = 0; index < message.length; index += 1){
+    if (message[index] == 'a' || message[index] == 'e' || message[index] == 'i' || message[index] == 'o' || message[index] == 'u'){
       switch(message[index]){
         case 'a':
           encoded += '1';
@@ -159,7 +159,7 @@ function encode(message) {
           break;
       }
     }
-    else{
+    else {
       encoded += message[index];
     }
   }
@@ -170,8 +170,8 @@ function encode(message) {
 
 function decode(message) {
   let decoded = '';
-  for(let index = 0; index < message.length; index += 1){
-    if(message[index] == '1' || message[index] == '2' || message[index] == '3' || message[index] == '4' || message[index] == '5'){
+  for (let index = 0; index < message.length; index += 1){
+    if (message[index] == '1' || message[index] == '2' || message[index] == '3' || message[index] == '4' || message[index] == '5'){
       switch(message[index]){
         case '1':
           decoded += 'a';
@@ -191,7 +191,7 @@ function decode(message) {
         default:break;
       }
     }
-    else{
+    else {
       decoded += message[index];
     }
   }
