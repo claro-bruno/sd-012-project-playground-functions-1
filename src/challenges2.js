@@ -8,7 +8,7 @@ function techList(array, name) {
   for (let objeto in array) {
     respArray[objeto] = { tech: array[objeto], name: name };
   }
-    return respArray;
+  return respArray;
 }
 
 // Saída:))
@@ -39,9 +39,10 @@ function generatePhoneNumber(numbers) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
-}
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA >= lineB + lineC || lineB >= lineA + lineC || lineC >= lineA + lineB) { return false };
+  return true;
+};
 
 // Desafio 13
 function hydrate() {
