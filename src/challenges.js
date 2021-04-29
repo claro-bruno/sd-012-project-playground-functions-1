@@ -33,8 +33,7 @@ console.log(splitSentence("vamo que vamo"));
 // Desafio 4
 let strings = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 function concatName(strings){ 
-  return strings[strings.length -1] + ' ' + strings[0];
-  
+  return strings[strings.length -1] + ', ' + strings[0];
 } 
 console.log(strings[strings.length -1] + ', ' + strings[0]);
   
