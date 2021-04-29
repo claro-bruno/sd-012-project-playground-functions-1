@@ -105,6 +105,7 @@ function encode(stringEncode) {
       };
     };
   };
+  return stringEncode;
 };
 function decode(stringDecode) {
   let rule = {
@@ -121,7 +122,7 @@ function decode(stringDecode) {
       };
     };
   };
-
+  return stringDecode;
 }
 
 module.exports = {
