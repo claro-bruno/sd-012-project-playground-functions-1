@@ -39,8 +39,8 @@ function concatName(nameList) {
 
   return lastAndFirstName;
 }
-// let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-// console.log(concatName(nameList));
+let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log(concatName(nameList));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -80,7 +80,7 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat2Distance = Math.abs(cat2 - mouse);
 
   if (cat1Distance === cat2Distance) {
-    return 'os gatos trombam e o rato foge'; 
+    return 'os gatos trombam e o rato foge';
   }
   if (cat1Distance < cat2Distance) {
     return 'cat1';
@@ -108,11 +108,35 @@ return string;
 }
 
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
+  let codes = { a: '1', e: '2', i: '3', o: '4', u: '5' };
+  let vogals = 'aeiou';
+  let stringCode = '';
+
+  for (let index = 0; index < string.length; index += 1) {
+    
+    if (vogals.includes(string[index])) {
+      stringCode += codes[string[index]];
+    }
+    stringCode += string[index]; 
+  }
+  return stringCode;
 }
-function decode() {
+
+function decode(stringCode) {
   // seu código aqui
+  let string = '';
+
+  for (let index = 0; index < stringCode.length; index += 1) {
+    let number = Number(stringCode[index]);
+
+    if (!Number.isNaN(number) && number > 0) {
+      string += vogals[number - 1];
+    }
+    string += stringCode[index];
+  }
+  return string;
 }
 
 module.exports = {
