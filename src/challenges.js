@@ -35,7 +35,6 @@ function highestCount(array) {
   }
   return contador;
 }
-console.log(highestCount(array));
 
 // Desafio 7
 function catAndMouse() {
