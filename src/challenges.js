@@ -74,19 +74,18 @@ if (gato1 < gato2){
 // Desafio 8
 function fizzBuzz(array) {
   for (let index in array){
-    if (array[index] % 3 === 0 || array[index] % 5 !== 0){
+    if (array[index] % 3 === 0 && array[index] % 5 === 0){
+    array[index] = "fizzbuzz";
+    } else if (array[index] % 3 === 0){
       array[index] = "fizz";
-    }else if (array[index] % 5 === 0 || array[index % 3 !== 0]){
+    }else if (array[index] % 5 === 0){
       array[index] = "buzz";
-    } else if (array[index] % 3 === 0 || array[index] % 5 === 0){
-      array[index] = "fizzbuzz";
     } else {
       array[index] = "bug!";
     }
   }
   return array;
   }
-console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode() {
