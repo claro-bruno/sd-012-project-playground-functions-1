@@ -43,8 +43,9 @@ function hydrate(hydrate) {
     quantia += parseInt(arrayHydrate[key])
   } if (quantia === 1){
     result = `${quantia} copo de água`;
+  } else {
+    result = `${quantia} copos de água`
   }
-  result = `${quantia} copos de água`;
   return result;
 }
 
