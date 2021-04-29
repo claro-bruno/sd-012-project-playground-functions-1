@@ -111,56 +111,72 @@ console.log(fizzBuzz(numberArray5));
 console.log(fizzBuzz(numberArray6));
 
 // Desafio 9
-function encode(decodedString) {
-  let encodedString = '';
+function isVowel(character) {
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  for (let index = 0; index < vowels.length; index += 1) {
+    if (character === vowels[index]) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function encoder(encodedString, decodedString) {
+  let codex = { a: 1, e: 2, i: 3, o: 4, u: 5 };
   for (let index = 0; index < decodedString.length; index += 1) {
-    switch (decodedString[index]) {
-    case 'a':
-      encodedString += '1';
-      break;
-    case 'e':
-      encodedString += '2';
-      break;
-    case 'i':
-      encodedString += '3';
-      break;
-    case 'o':
-      encodedString += '4';
-      break;
-    case 'u':
-      encodedString += '5';
-      break;
-    default:
+    if (isVowel(decodedString[index])) {
+      // let done = false;
+      for (let vowel in codex) {
+        if (decodedString[index] === vowel/* && done === false */) {
+          encodedString += codex[vowel];
+          // done = true;
+        }
+      }
+    } else {
       encodedString += decodedString[index];
     }
   }
   return encodedString;
 }
+
+function encode(decodedString) {
+  let encodedString = '';
+  encodedString = encoder(encodedString, decodedString);
+  return encodedString;
+}
 console.log(encode('hi there!'));
 
-function decode(encodedString) {
-  let decodedString = '';
+function isNumber(character) {
+  let numbers = ['1', '2', '3', '4', '5'];
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (character === numbers[index]) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function decoder(decodedString, encodedString) {
+  let codex = { 1: 'a', 2: 'e', 3: 'i', 4: 'o', 5: 'u' };
   for (let index = 0; index < encodedString.length; index += 1) {
-    switch (encodedString[index]) {
-    case '1':
-      decodedString += 'a';
-      break;
-    case '2':
-      decodedString += 'e';
-      break;
-    case '3':
-      decodedString += 'i';
-      break;
-    case '4':
-      decodedString += 'o';
-      break;
-    case '5':
-      decodedString += 'u';
-      break;
-    default:
+    if (isNumber(encodedString[index])) {
+      // let done = false;
+      for (let number in codex) {
+        if (encodedString[index] === number/* && done === false */) {
+          decodedString += codex[number];
+          // done = true;
+        }
+      }
+    } else {
       decodedString += encodedString[index];
     }
   }
+  return decodedString;
+}
+
+function decode(encodedString) {
+  let decodedString = '';
+  decodedString = decoder(decodedString, encodedString);
   return decodedString;
 }
 console.log(decode('h3 th2r2!'));
