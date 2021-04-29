@@ -112,30 +112,29 @@ function fizzBuzz(arraynum) {
   // seu código aqui
   let arraystring = [];
 
-  for (let indice; indice < arraynum.length; indice += 1) {
+  for (let indice = 0; indice < arraynum.length; indice += 1) {
 
     if (arraynum[indice] % 3 == 0 && arraynum[indice] % 5 == 0) {
       arraystring.push('fizzbuzz');
-    }
-
+    } 
     else {
       if (arraynum[indice] % 3 == 0) {
         arraystring.push('fizz');
-      };
+      }
 
       if (arraynum[indice] % 5 == 0) {
         arraystring.push('buzz');
-      };
+      }
     };
 
-    if (arraynum[indice] % 3 !== 0 || arraynum[indice] % 5 !== 0) {
+    if (arraynum[indice] % 3 !== 0 && arraynum[indice] % 5 !== 0) {
       arraystring.push('bug!');
     };
-    console.log(arraystring);
   };
-  return console.log(arraystring);
+
+return console.log(arraystring);
 };
-fizzBuzz([3, 5, 7])
+fizzBuzz([3,5,7]);
 
 // Desafio 9
 function encode() {
