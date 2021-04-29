@@ -45,7 +45,8 @@ function concatName(nomes){
 let last = nomes[0];
 let first = nomes[nomes.length -1]
 
-return first+ ', ' + last;
+
+return first = first.concat(', ' + last)
  
 }
 
