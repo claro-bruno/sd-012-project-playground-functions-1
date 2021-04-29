@@ -18,9 +18,9 @@ function generatePhoneNumber(foneNumbers) {
   };
   let getErro = false;
   for (let index = 0; index < foneNumbers.length; index += 1) {
-    let countNumber;
+    let countNumber = 0;
     if(foneNumbers[index] > 9 || foneNumbers[index] < 0) {
-      countErro = true;
+      getErro = true;
     };
     for (let number of foneNumbers){
       if(foneNumbers[index] === number){
@@ -28,10 +28,10 @@ function generatePhoneNumber(foneNumbers) {
       };
     };
     if (countNumber > 2) {
-      countErro = true;
+      getErro = true;
     };
   };
-  if (countErro === true){
+  if (getErro === true){
     return "não é possível gerar um número de telefone com esses valores";
   } else {
     return `(${foneNumbers[0]}${foneNumbers[1]})${foneNumbers[2]}${foneNumbers[3]}${foneNumbers[4]}${foneNumbers[5]}${foneNumbers[6]}-${foneNumbers[7]}${foneNumbers[8]}${foneNumbers[9]}${foneNumbers[10]}`
