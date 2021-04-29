@@ -61,11 +61,9 @@ function highestCount(numeros) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  // let gato1 = Math.abs(cat1 - mouse);
-  // let gato2 = Math.abs(cat2 - mouse);
 
-  let gato1 = cat1 - mouse;
-  let gato2 = cat2 - mouse;
+  let gato1 = Math.abs(mouse - cat1);
+  let gato2 = Math.abs(mouse - cat2);
 
   if(gato1 < gato2){
     return "cat1";
@@ -75,6 +73,8 @@ function catAndMouse(mouse, cat1, cat2) {
     return "os gatos trombam e o rato foge";
   };
 }
+
+console.log(catAndMouse(2,1,3));
 
 // Desafio 8
 function fizzBuzz(inputNumbers) {
@@ -97,9 +97,17 @@ function fizzBuzz(inputNumbers) {
 }
 
 // Desafio 9
-function encode() {
+function encode(encodeText) {
   // seu código aqui
+  let minusulo = encodeText.toLowerCase();
+  let teste = minusulo[0];
+
+  return teste;
+
 }
+
+console.log(encode("ANA CAROLINA"));
+
 function decode() {
   // seu código aqui
 }
