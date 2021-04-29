@@ -80,9 +80,21 @@ function highestCount(numbers) {
 //console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let calcCat1 = cat1 - mouse;
+  let calcCat2 = cat2 - mouse;
+  let menorDistancia;
+  if (calcCat1 < calcCat2){
+    menorDistancia = 'cat1';
+  } else if (calcCat1 === calcCat2){
+      menorDistancia = 'os gatos trombaram e o rato foge';
+    } else {
+    menorDistancia = 'cat2';
+  }
+  return menorDistancia
 }
+console.log(catAndMouse(1, 2, 3))
 
 // Desafio 8
 function fizzBuzz() {
