@@ -19,36 +19,32 @@ function techList(tech, name) {
 }
 
 // Desafio 11
-function generatePhoneNumber(array) {
+function generatePhoneNumber(arr) {
   let saida = '';
-  if (array.length - 1 !== 10){
-    saida = 'Array com tamanho incorreto';
+  let ddd = '' + arr[0] + arr[1];
+  let num1 = '' + arr[2] + arr [3] + arr [4] + arr [5] + arr[6];
+  let num2 = '' + arr[7] + arr[8] + arr[9] + arr[10];
+  if (arr.length - 1 !== 10){
+    saida = 'Array com tamanho incorreto.';
   }
-  else {
-    for (let veri = 0; veri < array.length; veri += 1) {
-      if (array[veri] < 0 || array[veri] > 9) {
-        saida = 'não é possível gerar um número de telefone com esses valores';
-        break;
+  for (let veri = 0; veri < arr.length; veri += 1) {
+    let numbersRepeats = 0;
+    for (let index2 = 0; index2 < arr.length; index2 += 1) {
+      if (arr[index2] === arr [veri]) {
+        numbersRepeats += 1
       }
-      for (let index = 0; index < array.length; index += 1) {
-        let numbersRepeats = 0;
-        for (let index2 = 0; index2 < array.length; index2 += 1) {
-          if (array[index2] === array [index]) {
-            numbersRepeats += 1
-          }
-        }
-        if (numbersRepeats >= 3) {
-          saida = 'não é possível gerar um npumero de telefone com esses valores';
-          break;
-        }
-        else {
-          saida = '(' + array[0] + array[1] + ') ' + array[2] + array[3] + array[4] + array[5] + array[6] + '-' + array[7] + array[8] + array[9] + array[10];  
-        }
-      }
+    }
+    if (numbersRepeats >= 3 || arr[veri] < 0 || arr[veri] > 9) {
+    saida = 'não é possível gerar um número de telefone com esses valores';
+    break;
+    }
+    else {
+      saida = '(' + ddd + ') ' + num1 + '-' + num2;  
     }
   }
   return saida;
 }
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
 function triangleCheck() {
