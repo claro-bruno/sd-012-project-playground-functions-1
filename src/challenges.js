@@ -21,8 +21,6 @@ function splitSentence(str) {
   str = str.split(' ');
   return str;
 }
-let sentence = 'go Tybe';
-console.log(splitSentence(sentence));
 
 // Desafio 4
 function concatName(arr) {
@@ -45,8 +43,8 @@ function highestCount(arr) {
   // seu código aqui
   let highest = arr[0];
   let count = 0;
-  for(let index = 0; index < arr.length;index +=1){
-    if(highest < arr[index]) {
+  for (let index = 0; index < arr.length;index +=1){
+    if (highest < arr[index]) {
       highest = arr[index];
     };
   }
@@ -64,33 +62,32 @@ function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   let distCat1 = Math.abs(mouse - cat1);
   let distCat2 = Math.abs(mouse - cat2);
-  if(distCat1 < distCat2) {
+  if (distCat1 < distCat2) {
     return 'cat1';
-  } else if(distCat1 > distCat2) {
+  } else if (distCat1 > distCat2) {
     return 'cat2';
-  } else if(distCat2 === distCat1) {
+  } else if (distCat2 === distCat1) {
     return 'os gatos trombam e o rato foge';
   }
   return;
 }
 
-
 // Desafio 8
 function fizzBuzz(arr) {
   // seu código aqui
   let str = [];
-  for(let index = 0; index < arr.length; index +=1){
-    if(arr[index] % 3 === 0 && arr[index] % 5 === 0) {
+  for (let index = 0; index < arr.length; index +=1){
+    if (arr[index] % 3 === 0 && arr[index] % 5 === 0) {
       str.push("fizzBuzz");
     } else if(arr[index] % 5 === 0) {
       str.push("buzz");
-    }else if(arr[index] % 3 === 0) {
+    } else if(arr[index] % 3 === 0) {
       str.push("fizz");  
-    }else if(arr[index] % 3 === 0 && arr[index] % 5 === 0) {
+    } else if(arr[index] % 3 === 0 && arr[index] % 5 === 0) {
       str.push("fizzBuzz");
     } else {
       str.push("bug!");
-    };
+    }
   }
   return str;
 }
@@ -113,7 +110,7 @@ function encode(str) {
       res += i;
     } else if ('o' === str[index]) {
       res += o;
-    }else if ('u' === str[index]) {
+    } else if ('u' === str[index]) {
       res += u;
     } else {
       res +=(str[index]);
@@ -121,7 +118,6 @@ function encode(str) {
   }
   return res;
 }
-console.log(encode('hi there!'))
 
 function decode(str) {
   // seu código aqui
@@ -140,15 +136,14 @@ function decode(str) {
       res += 'i';
     } else if ('4' === str[index]) {
       res += 'o';
-    }else if ('5' === str[index]) {
+    } else if ('5' === str[index]) {
       res += 'u';
-    }else {
+    } else {
       res += str[index];
     }
   }
   return res;
 }
-console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
