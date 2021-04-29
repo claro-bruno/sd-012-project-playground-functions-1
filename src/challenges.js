@@ -1,15 +1,9 @@
 // Desafio 1
 function compareTrue(num1, num2) {
-  let somaPar = num1 + num2;
-  let zero = (num1+num2)*0
+  let resultado = false;
 
-  if ( somaPar % 2 === 0  && zero === 0 ){
-    resultado = true;
-  } else if (somaPar % 2 === 0 || zero === true) {
-    resultado = false;
-  } else {
-    resultado = false;
-  }
+  if(num1 && num2)
+  resultado = true;
   return resultado;
 }
 
