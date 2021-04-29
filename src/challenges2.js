@@ -41,7 +41,7 @@ function generatePhoneNumber(numbers) {
     }
   }
   if (numbers.length !== 11) {
-    return 'Array com tamanho incorreto'
+    return 'Array com tamanho incorreto.'
   } else {
     return newPhoneNumber
   }
