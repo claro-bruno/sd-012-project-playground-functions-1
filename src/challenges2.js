@@ -35,7 +35,7 @@ function generatePhoneNumber(numeroTelefone) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
-  numeroArrumado = `(${numeroTelefone[0]}${numeroTelefone[1]})${numeroTelefone[2]}${numeroTelefone[3]}${numeroTelefone[4]}${numeroTelefone[5]}${numeroTelefone[6]}-${numeroTelefone[7]}${numeroTelefone[8]}${numeroTelefone[9]}${numeroTelefone[10]}`;
+  numeroArrumado = `(${numeroTelefone[0]}${numeroTelefone[1]}) ${numeroTelefone[2]}${numeroTelefone[3]}${numeroTelefone[4]}${numeroTelefone[5]}${numeroTelefone[6]}-${numeroTelefone[7]}${numeroTelefone[8]}${numeroTelefone[9]}${numeroTelefone[10]}`;
 
   return numeroArrumado;
 }
