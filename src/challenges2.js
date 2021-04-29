@@ -13,7 +13,7 @@ function techList(tecnology,name) {
     lista.push(tecnologia);//empurra itens dentro da lista vazia
   }  
   if(ordenada.length==0){
-    return console.log('Vazio!');
+    return 'Vazio!'; //não pode colocar console.log porque CREIO que o output precisa ser somente o resultado das listas e não uma frase (achei meio estranho mas acredito ser isso)
    }
   return lista;
 }
