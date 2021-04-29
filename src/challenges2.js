@@ -22,7 +22,7 @@ console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Renan'));
 function generatePhoneNumber(numbers) {
   let prefix = `(${numbers[0]}${numbers[1]})`;
   let phoneNumber = `${numbers[2]}${numbers[3]}${numbers[4]}${numbers[5]}${numbers[6]}-${numbers[7]}${numbers[8]}${numbers[9]}${numbers[10]}`
-  let newPhoneNumber = prefix + phoneNumber
+  let newPhoneNumber = `${prefix} ${phoneNumber}`
   let contRepeated = 0;
   let contNumber = 0;
   for (let num in numbers) {
@@ -37,7 +37,7 @@ function generatePhoneNumber(numbers) {
     }
     contNumber = 0;
     if (numbers[num] < 0 || numbers[num] > 9 || contRepeated >= 3) {
-      return 'Não é possível gerar um número de telefone com esses valores';
+      return 'não é possível gerar um número de telefone com esses valores';
     }
   }
   if (numbers.length !== 11) {
