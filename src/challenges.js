@@ -64,9 +64,30 @@ console.log(footballPoints(0, 0));
 
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(maiorNum) {
+    let contador = 0;
+    let maiorNumero = maiorNum[0];
+    //Encontra o maior numero
+    for (let index in maiorNum) {
+      if (maiorNumero < maiorNum[index]) {
+        maiorNumero = maiorNum[index];
+        
+      }
+    }
+    //verifica quantas vezes o maior numero repete
+    for (let index in maiorNum) {
+      if (maiorNumero == maiorNum[index]) {
+        contador +=1;
+        
+      }
+
+    }
+    return contador;
 }
+console.log(highestCount([0, 0, 0]));
+
+
+
 
 // Desafio 7
 function catAndMouse() {
