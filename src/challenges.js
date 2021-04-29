@@ -28,8 +28,8 @@ return (fim + ', ' + inicio);
 function footballPoints(wins, ties) {
     let results;
     results = (wins * 3) + (ties);
-
-    } return results
+    return results;
+    }
 
 // Desafio 6
 function highestCount() {
