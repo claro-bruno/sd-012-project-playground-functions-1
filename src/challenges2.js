@@ -110,17 +110,18 @@ function triangleCheck(lineA, lineB, lineC) {
 function hydrate(drinks) {
   let drinkList = drinks.match(/\d+/g);
   let glassesOfWater = 0;
-  for (let drink of drinkList) {
-    glassesOfWater += parseInt(drinkList[drink], 10);
+  for (let drink in drinkList) {
+    glassesOfWater += parseInt(drinkList[drink]);
   }
   if (glassesOfWater === 1) {
     return `${glassesOfWater} copo de água`;
   } return `${glassesOfWater} copos de água`;
 }
-// let drinks = '1 cachaça, 5 cervejas e 1 copo de vinho';
+let drinks = '1 cachaça, 5 cervejas e 1 copo de vinho';
 // console.log(drinks.match(/\d+/g));
 // let drinks = '1 cerveja';
-// console.log(hydrate(drinks));
+console.log(drinks.match(/\d+/g));
+console.log(hydrate(drinks));
 
 module.exports = {
   generatePhoneNumber,
