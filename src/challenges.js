@@ -33,15 +33,22 @@ console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName(parametro) {
-  let resultado = parametro[0] + ', ' + parametro[parametro.length - 1];
+  let resultado = parametro[parametro.length - 1] + ', ' + parametro[0];
   return resultado;
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let pontosVitorias = wins * 3;
+  let pontosEmpates = ties;
+  return pontosEmpates + pontosVitorias;  
 }
+console.log(footballPoints(14, 8));
+console.log(footballPoints(1, 2));
+console.log(footballPoints(0, 0));
 
 // Desafio 6
 function highestCount() {
