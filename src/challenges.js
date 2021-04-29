@@ -75,20 +75,34 @@ for(let index = 0; index < buznumeros.length; index++){
     }else{
         arrayFizz.push("bug!");  
     }
-    
-  }
+}
   return arrayFizz;
 }
 // let variable = [2, 15, 7, 9, 45];
 // console.log(fizzBuzz(variable));
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+function encode(codeString) {
+  
+  codeString = codeString.replaceAll("a","1");
+  codeString = codeString.replaceAll("e","2");
+  codeString = codeString.replaceAll("i","3");
+  codeString = codeString.replaceAll("o","4");
+  codeString = codeString.replaceAll("u","5");
 
+return codeString;
+}
+// console.log(encode("aeiou uoiea"));
+
+function decode(decodeString) {
+  decodeString = decodeString.replaceAll("1","a");
+  decodeString = decodeString.replaceAll("2","e");
+  decodeString = decodeString.replaceAll("3","i");
+  decodeString = decodeString.replaceAll("4","o");
+  decodeString = decodeString.replaceAll("5","u");
+
+return decodeString;
+}
+// console.log(decode("12345 54321"));
 module.exports = {
   calcArea,
   catAndMouse,
