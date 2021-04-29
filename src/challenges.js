@@ -106,23 +106,8 @@ function encode(stringEncode) {
     };
   };
 };
-function decode(stringCode) {
-  let stringDecode = "h3 th2r2!"
-  let rule = {
-    1: 'a',
-    2: 'e',
-    3: 'i',
-    4: 'o',
-    5: 'u'
-  };
-  for(let index = 0; index < stringDecode.length; index += 1) {
-    for(let key in rule) {
-      if(key == stringDecode[index]) {
-        stringDecode = stringDecode.replace(stringDecode[index], rule[key]);
-      };
-    };
-  };
-  console.log(stringDecode)
+function decode(stringDecode) {
+ 
 }
 
 module.exports = {
