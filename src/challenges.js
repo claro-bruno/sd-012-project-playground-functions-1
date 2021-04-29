@@ -16,7 +16,6 @@ function calcArea(base, height) {
 function splitSentence(string) {
   return resultado = string.split(" ");
 };
-console.log(splitSentence("vamo que vamo"));
 
 // Desafio 4
 function concatName(array) {
@@ -29,9 +28,22 @@ function footballPoints(wins, ties) {
 };
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(maiorNumero) {
+  let maiorValor = maiorNumero[0];
+  let maiorNumeroRepetido = [];
+  for (let index = 0; index < maiorNumero.length; index += 1) {
+    if (maiorNumero[index] > maiorValor) {
+      maiorValor = maiorNumero[index];
+    };
+  };
+  for (let index = 0; index < maiorNumero.length; index += 1) {
+    if (maiorNumero[index] === maiorValor) {
+      maiorNumeroRepetido.push(maiorNumero[index]);
+    };
+  }; 
+  return maiorNumeroRepetido.length;
 };
+console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
