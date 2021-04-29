@@ -80,8 +80,9 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat2Distance = Math.abs(cat2 - mouse);
 
   if (cat1Distance === cat2Distance) {
-    return 'os gatos trombam e o rato foge';  
-  } else if (cat1Distance < cat2Distance) {
+    return 'os gatos trombam e o rato foge'; 
+  }
+  if (cat1Distance < cat2Distance) {
     return 'cat1';
   }
   return 'cat2';
@@ -92,17 +93,15 @@ function fizzBuzz(arrayNumeros) {
   // seu código aqui
   let string = [];
 
-  for (let index = 0; index < arrayNumeros.length; index +=1) {
+  for (let index = 0; index < arrayNumeros.length; index += 1) {
     if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
-      string.push("fizzBuzz");
+      string.push('fizzBuzz');
     } else if (arrayNumeros[index] % 5 === 0) {
-      string.push("buzz");
-    }else if (arrayNumeros[index] % 3 === 0) {
-      string.push("fizz");  
-    }else if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
-      string.push("fizzBuzz");
+      string.push('buzz');
+    } else if (arrayNumeros[index] % 3 === 0) {
+      string.push('fizz');
     } else {
-      string.push("bug!");
+      string.push('bug!');
     }
   }
 return string;
