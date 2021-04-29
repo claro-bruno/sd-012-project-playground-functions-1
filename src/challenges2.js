@@ -3,8 +3,10 @@
 
 function techList(array, name) {
   let listaObjetos = [];
-  let arraySort = array.sort();
-  for (let i = 0; i < arraySort.length; i += 1) {
+  if (typeof(array) === Array){
+    array.sort();
+  }
+  for (let i = 0; i < array.length; i += 1) {
     listaObjetos.push({ tech: array[i], name });
   }
   if (listaObjetos.length === 0) {
@@ -12,6 +14,7 @@ function techList(array, name) {
   }
   return listaObjetos;
 }
+
 
 
 // Desafio 11
@@ -29,12 +32,6 @@ function hydrate() {
   // seu código aqui
 
 }
-
-console.log('1 cerveja') {
-
-  return `${} copos de água`
-}
-
 
 module.exports = {
   generatePhoneNumber,
