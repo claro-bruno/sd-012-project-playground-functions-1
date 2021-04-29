@@ -1,6 +1,7 @@
 // Desafio 10
 function techList(array, name) {
   // seu código aqui
+  array.sort();
   let habilidade = {};
   let habilidades = [];
   if (array.length === 0) {
