@@ -2,9 +2,11 @@
 function compareTrue(num1, num2) {
   if (num1 === true && num2 === true) {
     return true;
+  } else {
+    return false;
   }
 }
-// console.log(compareTrue(false, false));
+// console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, height) {
@@ -44,7 +46,7 @@ function highestCount(arrayNumberInput) {
   }
   return contador;
 }
-console.log(highestCount([1, 2, 7, 7, 4, 4, 4]));
+// console.log(highestCount([1, 2, 7, 7, 4, 4, 4]));
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
