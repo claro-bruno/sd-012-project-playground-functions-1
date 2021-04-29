@@ -17,7 +17,7 @@ function calcArea(base,height) {
 function splitSentence(phrase) {
   // seu código aqui
   return phrase.split(' ')
-}
+};
 // Desafio 4
 function concatName(string) {
   // seu código aqui
@@ -30,7 +30,7 @@ function footballPoints(wins,ties) {
   let empate = ties
   let ontos = empate + victory
   return empate
-}
+};
 // Desafio 6
 function highestCount(array1) {
   // seu código aqui
@@ -46,11 +46,18 @@ function highestCount(array1) {
     }
   }
   return Count;
-}
+};
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse,cat1,cat2) {
   // seu código aqui
-}
+  if (cat1 - mouse < cat2 - mouse) {
+    return 'cat1'
+  }else if (cat1 - mouse > cat2 - mouse) {
+    return 'cat2'
+  }if (cat1 - mouse === cat2 - mouse) {
+    return 'os gatos trombam e o rato foge'
+  }
+};
 
 // Desafio 8
 function fizzBuzz() {
@@ -61,10 +68,10 @@ function fizzBuzz() {
 // Desafio 9
 function encode() {
   // seu código aqui
-}
+};
 function decode() {
   // seu código aqui
-}
+};
 
 module.exports = {
   calcArea,
