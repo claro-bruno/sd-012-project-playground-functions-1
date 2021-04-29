@@ -63,10 +63,9 @@ function footballPoints(wins, ties) {
 
   let maiorV = [0, 0, 0];
   let maior = Math.max(...maiorV);
-  
+  let cont = 0;
 function highestCount(maiorV) {
 
-  let cont = 0;
   for (index = 0; index < maiorV.length; index += 1) {
     if (maior === maiorV[index]) {
       cont += 1;
