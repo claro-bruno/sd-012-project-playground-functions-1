@@ -1,6 +1,6 @@
 // Desafio 1
-function compareTrue(bloco1,bloco2) {
-  if(bloco1 === true && bloco2 === true){
+function compareTrue(bloco1, bloco2) {
+  if ( bloco1 === true && bloco2 === true ){
  return true
   } else {
     return false
@@ -9,19 +9,17 @@ function compareTrue(bloco1,bloco2) {
 
 
 // Desafio 2
-let base = 10;
-let height = 50;
-function calcArea(base,height) {
-  return (base * height) / 2;
+function calcArea(base, height) {
+  return( base * height ) / 2;
 };
-
+console.log(calcArea(10, 50));
 
 // // Desafio 3
-let string = 'go Trybe';
-function splitSentence(string) {
-  return string.split(' ');
-};
 
+function splitSentence(string) {
+  return string.split (' ');
+};
+console.log(splitSentence(go Trybe));
 
 // // Desafio 4
 // function concatName() {
