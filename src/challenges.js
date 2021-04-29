@@ -42,25 +42,26 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz(list) {
-  let num = [];
+function fizzBuzz(num) {
+  let num;
 
-for (index = 0; index <= num.length; index+= 1) {
+for (let index = 0; index <= num.length; index+= 1) {
+
 if  (index % 3 === 0) {
   num[index] = 'fizz';
 
-  } else if (index % 5 === 0) {
+  } else if (num[index] % 5 === 0) {
     num[index] = "buzz";
     
-} else if (index % 3 === 0 && index % 5 === 0) {
+} else if (num[index] % 3 === 0 && num[index] % 5 === 0) {
     num[index] = 'fizzBuzz';
     
-    } else (index % 3 !== 0 && index % 5 !== 0); {
+    } else (num[index] % 3 !== 0 && num[index] % 5 !== 0); {
       
    num[index] = 'bug';
    }   
 }
-return list;
+return num;
 }
 
 // Desafio 9
