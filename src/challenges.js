@@ -30,10 +30,13 @@ function splitSentence(phrase) {
 (splitSentence('vamo que vamo'))
 
 // Desafio 4
-function concatName() {
-  
+function concatName(nomeCompleto) {
+for (contador = 0; contador < nomeCompleto.length; contador+=1);{
+  nomeCompleto =  (nomeCompleto[nomeCompleto.length - 1] + ',') + ' ' + (nomeCompleto[0]);
 }
-
+return nomeCompleto
+}
+concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']);
 // Desafio 5
 function footballPoints() {
   // seu código aqui
