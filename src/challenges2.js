@@ -3,17 +3,18 @@
 
 function techList(array, name) {
   let listaObjetos = [];
-  if (typeof(array) === Array){
-    array.sort();
+  if (typeof (array) === 'object') {
+    let arraySort = array.sort();
+    for (let i = 0; i < arraySort.length; i += 1) {
+      listaObjetos.push({ tech: arraySort[i], name });
+    }
+    return listaObjetos;
   }
-  for (let i = 0; i < array.length; i += 1) {
-    listaObjetos.push({ tech: array[i], name });
-  }
-  if (listaObjetos.length === 0) {
-    return 'Vazio!';
-  }
-  return listaObjetos;
+  return 'Vazio!';
 }
+
+console.log(techList(''))
+
 
 
 
