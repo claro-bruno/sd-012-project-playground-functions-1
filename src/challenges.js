@@ -56,14 +56,12 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 const divisibleOrNot = (x) => {
-  let fizz = 'fizz';
-  let buzz = 'buzz';
   if (x % 3 === 0 && x % 5 === 0) {
-    return fizz + buzz;
+    return 'fizzBuzz';
   } if (x % 3 === 0) {
-    return fizz;
+    return 'fizz';
   } if (x % 5 === 0) {
-    return buzz;
+    return 'buzz';
   }
   return 'bug!';
 };
@@ -75,6 +73,7 @@ function fizzBuzz(numeros) {
   }
   return result;
 }
+
 
 // Desafio 9.1
 function encode(palavra) {
