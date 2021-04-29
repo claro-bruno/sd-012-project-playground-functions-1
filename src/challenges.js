@@ -81,36 +81,61 @@ function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   let distancia1 = cat1 - mouse;
   let distancia2 = cat2 - mouse;
-  if(distancia1<0){
-     distancia1=-distancia1;
+  if (distancia1 < 0) {
+    distancia1 = -distancia1;
   };
-  if(distancia2<0){
-     distancia2=-distancia2;
+  if (distancia2 < 0) {
+    distancia2 = -distancia2;
   };
   let distancia = distancia2 - distancia1;
   let pegarato = '';
- 
-    if(distancia > 0){
-      pegarato = 'cat1';
-      return pegarato;
-    };
-  
-    if(distancia < 0){
-      pegarato = 'cat2';
-      return pegarato;
-    };
-      
-    if(distancia == 0){
-      pegarato = 'os gatos trombam e o rato foge';
-      return pegarato;
-    };
+
+  if (distancia > 0) {
+    pegarato = 'cat1';
+    return pegarato;
+  };
+
+  if (distancia < 0) {
+    pegarato = 'cat2';
+    return pegarato;
+  };
+
+  if (distancia == 0) {
+    pegarato = 'os gatos trombam e o rato foge';
+    return pegarato;
+  };
 
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(arraynum) {
   // seu código aqui
-}
+  let arraystring = [];
+
+  for (let indice; indice < arraynum.length; indice += 1) {
+
+    if (arraynum[indice] % 3 == 0 && arraynum[indice] % 5 == 0) {
+      arraystring.push('fizzbuzz');
+    }
+
+    else {
+      if (arraynum[indice] % 3 == 0) {
+        arraystring.push('fizz');
+      };
+
+      if (arraynum[indice] % 5 == 0) {
+        arraystring.push('buzz');
+      };
+    };
+
+    if (arraynum[indice] % 3 !== 0 || arraynum[indice] % 5 !== 0) {
+      arraystring.push('bug!');
+    };
+    console.log(arraystring);
+  };
+  return console.log(arraystring);
+};
+fizzBuzz([3, 5, 7])
 
 // Desafio 9
 function encode() {
