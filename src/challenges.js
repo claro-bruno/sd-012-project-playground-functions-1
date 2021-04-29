@@ -1,7 +1,7 @@
 // Desafio 1
 function compareTrue(boolean1, boolean2) {
   // seu código aqui
-  return boolean1 && boolean2 ? true : false;
+  return boolean1 && boolean2;
 }
 
 // Desafio 2
@@ -51,15 +51,14 @@ function highestCount(array) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let distance1 = cat1 - mouse;
-  let distance2 = cat2 - mouse;
+  let distance1 = Math.abs(mouse - cat1);
+  let distance2 = Math.abs(mouse - cat2);
   if (distance1 < distance2) {
     return 'cat1';
-  } else if (distance2 < distance1) {
+  } if (distance2 < distance1) {
     return 'cat2';
-  } else {
-    return 'os gatos trombam e o rato foge';
   }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
@@ -92,7 +91,8 @@ function encode(string) {
     u: 5,
   };
   for (let character in string) {
-    if (string[character] === 'a' || string[character] === 'e' || string[character] === 'i' || string[character] === 'o' || string[character] === 'u') {
+    if (string[character] === 'a' || string[character] === 'e'
+    || string[character] === 'i' || string[character] === 'o' || string[character] === 'u') {
       encodedMessage += code[string[character]];
     } else {
       encodedMessage += string[character];
@@ -112,7 +112,8 @@ function decode(string) {
     5: 'u',
   };
   for (let character in string) {
-    if (string[character] === '1' || string[character] === '2' || string[character] === '3' || string[character] === '4' || string[character] === '5') {
+    if (string[character] === '1' || string[character] === '2'
+    || string[character] === '3' || string[character] === '4' || string[character] === '5') {
       decodedMessage += code[string[character]];
     } else {
       decodedMessage += string[character];
