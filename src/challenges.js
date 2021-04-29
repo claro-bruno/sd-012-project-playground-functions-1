@@ -20,9 +20,9 @@ function splitSentence(string) {
   let array = [];
   let palavra = '';
   for (let word in string) {
-    if (string[word] !== ' ') {
-      palavra = palavra + string[word];
-      if ((word === (string.length - 1))) {
+    if (string[word] != ' ') {
+      palavra += string[word];
+      if ((word == (string.length - 1))) {
         array.push(palavra);
       }
     } else {
