@@ -9,16 +9,19 @@ function techList(vetor,name) {
     obj ={
       tech: vetor[each],
       name: name
-    }
+    };
     resultado.push(obj)
   }
 if(vetor.length == 0){
-  return console.log("Vazio!")
+  return "Vazio!"
 }
 else{ 
   return resultado
 }
 }
+let nom = 'Lucas'
+let vet = []
+console.log(techList(vet,nom))
 
 
 // Desafio 11
