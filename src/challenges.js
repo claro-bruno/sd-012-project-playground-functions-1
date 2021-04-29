@@ -33,10 +33,28 @@ function footballPoints(wins, ties) {
 }
 // console.log(footballPoints(0,0));
 
-// // Desafio 6
-// function highestCount() {
-//   // seu código aqui
-// }
+// Desafio 6
+function highestCount(numbersArray) {
+  function highestValue(numbersArray) {
+    let highestValue = 0;
+    for (let index = 0; index < numbersArray.length; index+=1){
+      if (highestValue < numbersArray[index]){
+        highestValue = numbersArray[index];
+      };
+    };
+    return highestValue;
+  }
+
+  let numberOfTimes = 0;
+  let highestValue2 = highestValue(numbersArray);
+  for (let counting = 0; counting < numbersArray.length; counting+=1){
+    if (highestValue2 === numbersArray[counting]){
+      numberOfTimes += 1;
+    };
+  };
+  return (numberOfTimes);
+}
+// console.log(highestCount([0, 0, 0]));
 
 // // Desafio 7
 // function catAndMouse() {
@@ -65,6 +83,6 @@ module.exports = {
   // encode,
   // fizzBuzz,
   footballPoints,
-  // highestCount,
+  highestCount,
   splitSentence,
 };
