@@ -19,12 +19,11 @@ function concatName(strings) {
   let lastAndFirst = strings[strings.length - 1] + ',' + strings[0];
   return lastAndFirst;
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'] ));
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let points = (wins * 3) + ties;
+  return points;
 }
-
 // Desafio 6
 function highestCount() {
   // seu código aqui
