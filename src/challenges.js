@@ -35,11 +35,23 @@ function footballPoints(wins, ties) {
   return soma;
 }
 // Desafio 6
-function highestCount() {
+function highestCount(numbers) {
   // seu código aqui   
+  let contRepet = 0;
+  let bigger = Math.max.apply(null, numbers);// recebe o maior numero da array 
+  /*(solução encontrada no stackoverflow https://pt.stackoverflow.com/questions/35202/como-saber-o-maior-valor-de-um-array)*/
+  
+
+  for( let index in numbers) { // percore array
+      if(numbers[index] >= bigger)
+      contRepet += 1;
+  }
+  return contRepet;
 }
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
+
   // seu código aqui
   if ((cat2 - mouse) === 2 && (cat1 - mouse) === 3) {
     return 'cat2';
@@ -52,6 +64,7 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
+  
 }
 // Desafio 9
 function encode() {
