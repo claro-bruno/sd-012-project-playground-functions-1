@@ -35,7 +35,7 @@ function concatName(array) {
   // seu código aqui
   let inicio = array[0];
   let final = array[array.length - 1];
-  return final + ',' + inicio;
+  return final + ', ' + inicio;
 }
 // console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
