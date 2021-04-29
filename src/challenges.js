@@ -64,20 +64,18 @@ function catAndMouse(mouse,cat1,cat2) {
   
 }
 
-
-
-
-
 // Desafio 8
 
-
 function fizzBuzz(numbersFizzBuzz) {
-  for(let index = 0; index < numbersFizzBuzz.length; index += 1) {       
-    if (numbersFizzBuzz[index] % 3 == 0 & numbersFizzBuzz[index] % 5 != 0) {
+
+  
+  for(let index = 0; index < numbersFizzBuzz.length; index += 1) { 
+    let fizzBuzzBug = [""];     
+    if (numbersFizzBuzz[index] % 3 === 0 && numbersFizzBuzz[index] % 5 != 0) {
       fizzBuzzBug.push('fizz');
-    } else if (numbersFizzBuzz[index] % 3 != 0 & numbersFizzBuzz[index] % 5 == 0) {
+    } else if (numbersFizzBuzz[index] % 3 !== 0 && numbersFizzBuzz[index] % 5 == 0) {
       fizzBuzzBug.push('buzz');
-    } else if(numbersFizzBuzz[index] % 3 == 0 & numbersFizzBuzz[index] % 5 == 0) {
+    } else if(numbersFizzBuzz[index] % 3 === 0 && numbersFizzBuzz[index] % 5 === 0) {
       fizzBuzzBug.push('fizzBuzz');   
     } else {
       fizzBuzzBug.push('bug!');
@@ -92,12 +90,18 @@ console.log(fizzBuzz[7, 9]);
 console.log(fizzBuzz[9, 25]);
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string1) {
+   let encoded = string1.replaceAll("a","1").replaceAll("e","2").replaceAll("i","3").replaceAll("o","4").replaceAll("u","5");
+
+  
+  return encoded
 }
-function decode() {
-  // seu código aqui
+
+function decode(string2) {
+  let decoded = string2.replaceAll("1","a").replaceAll("2","e").replaceAll("3","i").replaceAll("4","o").replaceAll("5","u");
+  return decoded
 }
+
 
 module.exports = {
   calcArea,
