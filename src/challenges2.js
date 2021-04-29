@@ -23,8 +23,8 @@ function generatePhoneNumber() {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, LineC) {
+  if ()
 }
 
 // Desafio 13
@@ -32,10 +32,13 @@ function hydrate(hydrate) {
   let regRule = /\d+/g;
   let arrayHydrate = hydrate.match(regRule);
   let quantia = 0;
+  let result = ''
   for (let key in arrayHydrate) {
     quantia += parseInt(arrayHydrate[key])
+  } if (quantia === 1){
+    result = `${quantia} copo de água`;
   }
-  let result = `${quantia} copos de água`;
+  result = `${quantia} copos de água`;
   return result;
 }
 
