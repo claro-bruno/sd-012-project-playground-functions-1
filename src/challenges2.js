@@ -28,22 +28,19 @@ function validatePhone(phoneNum){
 }
 // Desafio 11
 function generatePhoneNumber(phoneNum) {
-  
-  if(validatePhone(phoneNum)){
+  if(validatePhone(phoneNum)) {
     let string = validatePhone(phoneNum);
     let newString = ['('];
     for (let i = 0; i < string.length; i += 1) {
-      if (i === 2) newString.push(')');
+      if (i === 2) newString.push(') ');
       if (i === 6) newString.push('-');
       newString.push(string[i]);
     }
     newString = newString.toString();
     newString = newString.replace(/,/g, '');
-    return newString
+    return newString;
   }
-  console.log('Foi eu 2');
   return validatePhone(phoneNum);
-  
 }
 // Desafio 12
 function triangleCheck() {
