@@ -25,11 +25,22 @@ function calcArea(base, height) {
 
 // Desafio 3
 let array = [ ];
+let posicaoInicial = 0;
+let posicaoFinal = 1;
+let palavra;
 
 function splitSentence(frase) {
- return
-
+for(index = 0; index < frase.length; index += 1){
+  if(frase[index] = ' ') {
+    palavra.push [index = posicaoInicial;] = posicaoInicial[index]
+    array.push(frase);
+    
   }
+  else {
+    posicaoFinal = posicaoFinal + 1;
+  }
+}
+return array
 }
 console.log(splitSentence('go Trybe'))
 
@@ -73,9 +84,27 @@ for(index = 0; index < a.length; index += 1)
 //console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+let resultado;
+let posicaoCat1;
+let posicaoCat2;
+
+function catAndMouse(mouse, cat1, cat2) {
+  posicaoCat1 = (mouse - cat1) * (mouse - cat1);
+  posicaoCat2 = (mouse - cat2) * (mouse - cat2);
+  if(posicaoCat1 < posicaoCat2){
+    resultado = 'cat1';
+    }
+  else if(posicaoCat2 < posicaoCat1) {
+    resultado = 'cat2';
+    }
+  else {
+    resultado = 'os gatos trombam e o rato foge'
+    }
+return resultado;
 }
+//console.log(catAndMouse(5,1,2));
+//console.log(catAndMouse(5,6,2));
+//console.log(catAndMouse(3,1,5));
 
 // Desafio 8
 function fizzBuzz() {
