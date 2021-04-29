@@ -43,7 +43,6 @@ function catAndMouse() {
 
 // Desafio 8
 function fizzBuzz(num) {
-  let num;
 
 for (let index = 0; index <= num.length; index+= 1) {
 
