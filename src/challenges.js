@@ -19,14 +19,16 @@ function splitSentence(sentence) {
 };
 
 // Desafio 4
-function concatName(list) {
+function concatName(list1) {
+  let list = ["go", "Trybe"]
   let arrayChange = [];
   for(let index = list.length - 1; index >= 0; index -= 1 ){
     if (index === 0 || index === (list.length -1)) {
       arrayChange.push(list[index]);
     }
   }
-  return arrayChange.toString();
+  arrayChange = arrayChange.toString();
+  return arrayChange;
 };
 
 // Desafio 5
