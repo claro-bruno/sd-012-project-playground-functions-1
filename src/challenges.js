@@ -20,9 +20,9 @@ function splitSentence(string) {
   let array = [];
   let palavra = '';
   for (let word in string) {
-    if (string[word] !== ' ') {
+    if (string[word] != ' ') {
       palavra = palavra + string[word];
-      if ((word === (string.length - 1))) {
+      if ((word == (string.length - 1))) {
         array.push(palavra);
       }
     } else {
@@ -54,9 +54,9 @@ function highestCount(array) {
   let maior = array[0];
   let contador = 0;
   for (let index in array){
-      if (array[index] > maior) {
-        maior = array[index];
-      }
+    if (array[index] > maior) {
+      maior = array[index];
+    }
   }
   for (let index2 in array) {
     if (maior === array[index2]) {
@@ -69,14 +69,14 @@ function highestCount(array) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)){
-    return 'cat1'
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+    return 'cat1';
   } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
-    return 'cat2'
+    return 'cat2';
   } else if (Math.abs(cat2 - mouse) === Math.abs(cat1 - mouse)){
-    return "os gatos trombam e o rato foge"
-  };
-};
+    return 'os gatos trombam e o rato foge';
+  }
+}
 
 
 //Função Math.abs - Retornar o valor em módulo de um número - fonte: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
