@@ -132,9 +132,9 @@ function fizzBuzz(arraynum) {
     };
   };
 
-return console.log(arraystring);
+return arraystring;
 };
-fizzBuzz([3,5,7]);
+
 
 // Desafio 9
 function encode() {
