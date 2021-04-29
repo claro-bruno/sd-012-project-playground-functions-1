@@ -54,9 +54,54 @@ function techList(receivedTechnologies, name) {
 }
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+
+function verifyRepetition(receivedStringNumber) {
+  let occurrence = [];
+  let higherOccurrence = -1;
+  for (let index in receivedStringNumber) {
+    occurrence[receivedStringNumber[index]] = 1 + (occurrence[receivedStringNumber[index]] || 0);
+  }
+  for (let index in occurrence) {
+    if (occurrence[index] > higherOccurrence) {
+      higherOccurrence = occurrence[index];
+    }
+  }
+  if (higherOccurrence >= 3) {
+    return true;
+  } return false;
 }
+
+function verifyIncorrectValue(receivedStringNumber) {
+  let repeatThreeTimes = verifyRepetition(receivedStringNumber);
+  for (let index in receivedStringNumber) {
+    if ((receivedStringNumber[index] < 0) || (receivedStringNumber[index] > 9) || (repeatThreeTimes === true)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function generate(receivedStringNumber) {
+  let phoneNumber = '';
+  let ddd = '';
+  let initial = '';
+  let final = '';
+  ddd += ddd.concat(`(${receivedStringNumber[0]}${receivedStringNumber[1]})`);
+  initial += initial.concat(`${receivedStringNumber[2]}${receivedStringNumber[3]}${receivedStringNumber[4]}${receivedStringNumber[5]}${receivedStringNumber[6]}`);
+  final += final.concat(`${receivedStringNumber[7]}${receivedStringNumber[8]}${receivedStringNumber[9]}${receivedStringNumber[10]}`);
+  phoneNumber += phoneNumber.concat(`${ddd} ${initial}-${final}`);
+  return phoneNumber;
+}
+
+function generatePhoneNumber(receivedStringNumber) {
+  if (receivedStringNumber.length !== 11) {
+    return 'Array com tamanho incorreto.';
+  } else if (verifyIncorrectValue(receivedStringNumber) === true) {
+    return 'não é possível gerar um número de telefone com esses valores';
+  } return generate(receivedStringNumber);
+}
+
+console.log(generatePhoneNumber([1, 2, 3, 4, 3, 6, 7, 8, 2, 0, 1]));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
