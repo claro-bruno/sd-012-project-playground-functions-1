@@ -48,8 +48,15 @@ function concatName(nome) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+
+let wins = 14;
+let ties = 8;
+
+function footballPoints(wins, ties) {
+  
+  let venceu = 3;
+  let empatou = 1;
+  return (wins * venceu) + (ties * empatou);
 }
 
 // Desafio 6
