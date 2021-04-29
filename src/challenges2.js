@@ -35,7 +35,7 @@ function generatePhoneNumber(arr) {
     }
   }
   if (arr.length !== 11) {
-    return 'Array com tamnho incorreto.';
+    return 'Array com tamanho incorreto.';
   }
   for (let index = 0; index < arr.length; index += 1) {
     if (arr[index] < 0 || arr[index] > 9) {
@@ -56,7 +56,19 @@ function generatePhoneNumber(arr) {
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  let condicao1 = (lineA < lineB + lineC) && (lineA > Match.abs(lineA - (lineB+lineC)));
+  let lAMenorBC = (lineA < lineB + lineC);
+  let lBMenorAC = (lineB < lineA + lineC);
+  let lCMenorAB = (lineC < lineA + lineB);
+  let lAMaiorDifBC = lineA > Math.abs(lineB - lineC);
+  let lBMaiorDifAC = lineB > Math.abs(lineA - lineC);
+  let lCMaiorDifAB = lineC > Math.abs(lineA - lineB);  
+  let ehTriangulo = false;
+  if ((lAMenorBC === true) && (lBMenorAC === true) && (lCMenorAB === true)) {
+    if ((lAMaiorDifBC === true) && (lBMaiorDifAC === true) && (lCMaiorDifAB === true)) {
+      ehTriangulo = true
+    }
+  }
+  return ehTriangulo;
 }
 
 // Desafio 13
