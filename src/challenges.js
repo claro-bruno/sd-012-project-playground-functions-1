@@ -102,7 +102,7 @@ function fizzBuzzAux(value) {
   }
   if ((value % 3) === 0 && (value % 5) === 0) {
     return 'fizzBuzz';
-  } 
+  }
   if ((value % 3) !== 0 && (value % 5) !== 0) {
     return 'bug!';
   }
@@ -131,7 +131,7 @@ function encodeAux(char) {
     case 'u':
       return '5';
     default:
-      return char;                  
+      return char;
   }
 }
 
@@ -158,7 +158,7 @@ function decodeAux(char) {
     case '5':
       return 'u';
     default:
-      return char;                              
+      return char;
   }
 }
 
