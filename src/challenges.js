@@ -1,7 +1,7 @@
 // Desafio 1
-function compareTrue(num1, num2) {
+function compareTrue(idade, altura) {
 
-  if (num1 > 10 && num2 > 2) {
+  if (idade > 10 && altura > 2 || altura === 10) {
     return true
         
   }else{
@@ -49,7 +49,7 @@ return nomes.concat(nomes2,nomes3)
  
 }
 
-console.log(concatName(0,1))
+console.log(concatName())
 
 
 
