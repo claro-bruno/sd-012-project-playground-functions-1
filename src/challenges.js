@@ -32,7 +32,7 @@ function footballPoints(wins, ties) {
 function highestCount(numbers) {
   // seu código aqui
   let qtd = 0;
-  let maior = Math.max(...numbers)
+  let maior = Math.max(...numbers);
 
   for (let i = 0; i < numbers.length; i += 1) {
     if (numbers[i] === maior) {
@@ -86,6 +86,7 @@ function encode(frase) {
       break;
     case 'u': frase[i] = '5';
       break;
+    default: 
     }
   }
   return frase.join('');
@@ -105,6 +106,7 @@ function decode(frase) {
       break;
     case '5': frase[i] = 'u';
       break;
+    default:
     }
   }
   return frase.join('');
