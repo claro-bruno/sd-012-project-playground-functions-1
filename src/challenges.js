@@ -48,7 +48,6 @@ function highestCount(numbers) {
   }
   return contRepet;
 }
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
 
@@ -67,11 +66,31 @@ function fizzBuzz() {
   
 }
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
+let splitada = string.toLowerCase().split('');
+  for(let verifica in splitada){
+    if (splitada[verifica] === 'a') {
+      splitada[verifica] = 1;
+    }
+    if (splitada[verifica] === 'e') {
+      splitada[verifica] = 2;
+    }
+    if (splitada[verifica] === 'i') {
+      splitada[verifica] = 3;
+    }
+    if (splitada[verifica] === 'o') {
+      splitada[verifica] = 4;
+    }
+    if (splitada[verifica] === 'u') {
+      splitada[verifica] = 5;
+    }
 }
-function decode() {
+return splitada.join('');
+}
+function decode(string) {
   // seu código aqui
+
 }
 
 module.exports = {
