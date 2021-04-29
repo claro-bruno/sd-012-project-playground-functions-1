@@ -26,14 +26,14 @@ function splitSentence(sentence) {
 function concatName(firstLast) {
   let firstArray = firstLast[0];
   let secondArray = firstLast[firstLast.length - 1];
-  let result4 = [];
-  result4.push(firstArray, secondArray);
+  let result4 = [firstArray, secondArray];
   return (result4);
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let result5 = (wins * 3) + (ties * 1);
+  return (result5);
 }
 
 // Desafio 6
