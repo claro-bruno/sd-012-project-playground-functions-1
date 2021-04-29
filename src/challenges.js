@@ -30,8 +30,8 @@ function highestCount(array) {
     if(array[index] === Math.max(...array)) {
     quantidade++
   }
-}
 } return highestCount;
+} 
 
 // Desafio 7
 function catAndMouse() {
