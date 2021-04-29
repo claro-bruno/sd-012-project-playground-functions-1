@@ -1,58 +1,52 @@
 // Desafio 10
 function techList(array, name) {
   // seu código aqui
-  // let habilidade = {
-  //   tech: '',
-  //   name: '',
-  // };
-  // let habilidades = [];
-  // for (let index = 0; index < array.length; index += 1) {
-  //   if (array[index] === '') {
-  //     habilidade.tech = 'Vazio!';
-  //   } else {
-  //     habilidade.tech = array[index];
-  //   }
-  //   habilidade.name = name;
-  //   habilidades.push(habilidade);
-  //   habilidade = {
-  //     tech: '',
-  //     name: '',
-  //   };
-  // }
-  //   return habilidades;
-  let tecnologies = [
-    { 
-        tech: 'React',
-        name: "Luciano"
-    },
-    { 
-        tech: 'JavaScript',
-        name: "Luciano"
-    },
-    { 
-        tech: 'Next',
-        name: "Luciano"
-    },
-    { 
-        tech: 'Node',
-        name: "Luciano"
-    },
-    { 
-        tech: 'CSS',
-        name: "Luciano"
+  let habilidade = {};
+  let habilidades = [];
+  if (array.length === 0) {
+    return 'Vazio!';
+  } else {
+    for (let index = 0; index < array.length; index += 1) {
+      habilidade.tech = array[index];
+      habilidade.name = name;
+      habilidades.push(habilidade);
+      habilidade = {};
     }
-];
-if (array.length === 0) {
-  return 'Vazio!'
-} else {
-  for (let key in tecnologies) {
-    for (let index in array) {
-      tecnologies[index].tech = array[index];
-    }
-    tecnologies[key].name = name;
+    return habilidades;
   }
-}
-return tecnologies;
+//   let tecnologies = [
+//     { 
+//         tech: 'React',
+//         name: "Luciano"
+//     },
+//     { 
+//         tech: 'JavaScript',
+//         name: "Luciano"
+//     },
+//     { 
+//         tech: 'Next',
+//         name: "Luciano"
+//     },
+//     { 
+//         tech: 'Node',
+//         name: "Luciano"
+//     },
+//     { 
+//         tech: 'CSS',
+//         name: "Luciano"
+//     }
+// ];
+// if (array.length === 0) {
+//   return 'Vazio!'
+// } else {
+//   for (let key in tecnologies) {
+//     for (let index in array) {
+//       tecnologies[index].tech = array[index];
+//     }
+//     tecnologies[key].name = name;
+//   }
+// }
+// return tecnologies;
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
