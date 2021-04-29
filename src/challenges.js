@@ -1,4 +1,5 @@
 // Desafio 1
+
 let on = false;
 function compareTrue(tv, radio) {
 
@@ -69,9 +70,21 @@ console.log(footballPoints(1,2))
 console.log(footballPoints(0,0))
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+
+function highestCount(array) {
+  
+  
+ let numM = Math.max(...array);
+ let contagem = 0;
+ for (i = 0; i < array.length; i += 1) {
+   if (numM === array[i]){
+    contagem += 1
+   }
+ }
+ return contagem
 }
+console.log(highestCount([9, 1, 2, 3, 9, 2, 7]))
+
 
 // Desafio 7
 function catAndMouse() {
