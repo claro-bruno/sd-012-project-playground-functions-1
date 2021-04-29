@@ -2,24 +2,27 @@
 function compareTrue(value1, value2) {
   // seu código aqui
   if ((value1 === true) && (value2 === true)) {
+    console.log(value1);
     return true;
   } else {
     return false;
   }
 }
+console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
   let area = (base * height) / 2;
+  console.log(area)
   return area;
 }
+console.log(calcArea(7, 8));
 
 // Desafio 3
-function splitSentence(string) {
-for (let stringList of string)
-return stringList;
-  // seu código aqui
+function splitSentence() {
+    // seu código aqui
+    
 }
 
 // Desafio 4
