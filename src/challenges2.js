@@ -1,10 +1,6 @@
 // Desafio 10
 function techList(tecnologia, nome) {
   // seu código aqui
-  let obj = {
-      tech: "eita",
-      name: nome,
-  }
   let objLista = []
 
   for(let i = 0; i < tecnologia.length; i += 1){
@@ -15,7 +11,11 @@ function techList(tecnologia, nome) {
       obj.tech = tecnologia[i]
       objLista.push(obj)
   }
+  if (tecnologia.length > 0){
   return objLista
+  } {
+    return 'Vazio!'
+  }
 }
 
 // Desafio 11
@@ -35,7 +35,8 @@ function generatePhoneNumber(n) {
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
   return lineA < lineB + lineC && lineC < lineA + lineB && lineB < lineA + lineC
-  && lineA > Math.abs(lineC - lineB) && lineB > Math.abs(lineC - lineA) && lineC > Math.abs(lineB - lineA);
+  && lineA > Math.abs(lineC - lineB) && lineB > Math.abs(lineC - lineA) && 
+  lineC > Math.abs(lineB - lineA);
 }
 
 // Desafio 13
@@ -51,11 +52,10 @@ function hydrate(pedido) {
   for (let i = 0; i < numbers.length; i += 1) {
     aguas += numbers[i];
   }
-  if ( aguas > 1){
-  return aguas + ' copos de água';
+  if (aguas > 1) {
+    return aguas + ' copos de água';
   } return aguas + ' copo de água';
 }
-
 
 module.exports = {
   generatePhoneNumber,
