@@ -54,7 +54,7 @@ function param(divisivel3, divisivel5) {
   }
   if (divisivel3) {
     return 'fizz';
-  } 
+  }
   if (divisivel5) {
     return 'buzz';
   }
