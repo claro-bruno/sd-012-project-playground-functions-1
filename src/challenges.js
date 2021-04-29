@@ -63,22 +63,48 @@ function highestCount(array) {
   let num2 = null;
   for (let indice1 = 0; indice1 < array.length; indice1 += 1) {
     numero2 = array[indice1];
-    if(maiornum>=num2)
-    empty;     
+    if (maiornum >= num2)
+      empty;
     else
-    maiornum=num2;
+      maiornum = num2;
   };
   let cont = null;
-  for(let indice2 = 0; indice2 < array.length; indice2 +=1){
-    if(maiornum==array[indice2])
-    cont = cont +1;
-  }; 
+  for (let indice2 = 0; indice2 < array.length; indice2 += 1) {
+    if (maiornum == array[indice2])
+      cont = cont + 1;
+  };
   return cont;
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let distancia1 = cat1 - mouse;
+  let distancia2 = cat2 - mouse;
+  if(distancia1<0){
+     distancia1=-distancia1;
+  };
+  if(distancia2<0){
+     distancia2=-distancia2;
+  };
+  let distancia = distancia2 - distancia1;
+  let pegarato = '';
+ 
+    if(distancia > 0){
+      pegarato = 'cat1';
+      return pegarato;
+    };
+  
+    if(distancia < 0){
+      pegarato = 'cat2';
+      return pegarato;
+    };
+      
+    if(distancia == 0){
+      pegarato = 'os gatos trombam e o rato foge';
+      return pegarato;
+    };
+
 }
 
 // Desafio 8
