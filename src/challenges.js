@@ -14,12 +14,13 @@ function compareTrue(value1, value2) {
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) / 2;
-}
+};
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
+function splitSentence(sentence) {
+  let arraySentence = sentence.split(" ");
+  return arraySentence;
+};
 
 // Desafio 4
 function concatName() {
