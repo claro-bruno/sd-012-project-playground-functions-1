@@ -60,7 +60,7 @@ function checkNumbers3(numbers) {
         counter += 1;
       }
     }
-    if (counter > 3) {
+    if (counter >= 3) {
       return 2;
     }
     counter = 0;
@@ -110,6 +110,8 @@ function generatePhoneNumber(numbers) {
 
   return number.join('');
 }
+
+console.log(generatePhoneNumber([0, 2, 3, 4, 4, 2, 7, 8, 9, 9, 4]));
 
 // Desafio 12
 function triangleCheckLineA(lineA, lineB, lineC) {
