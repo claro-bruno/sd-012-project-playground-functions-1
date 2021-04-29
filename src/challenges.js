@@ -1,9 +1,9 @@
 // Desafio 1
 function compareTrue(num1, num2) {
   let somaPar = num1 + num2;
-  let zero = true;
+  let zero = (num1+num2)*0
 
-  if ( somaPar % 2 === 0  && zero === true) {
+  if ( somaPar % 2 === 0  && zero === 0 ){
     resultado = true;
   } else if (somaPar % 2 === 0 || zero === true) {
     resultado = false;
@@ -12,6 +12,7 @@ function compareTrue(num1, num2) {
   }
   return resultado;
 }
+
 
 
 // Desafio 2
@@ -32,9 +33,10 @@ function splitSentence(frase) {
 // Desafio 4
 function concatName(frase1) {
 
-  let resultado = frase1[0] + frase1[frase1.length-1];
+  let resultado = frase1[frase1.length-1]+"," + " " + frase1[0];
   return resultado;
 }
+
 
 
 // Desafio 5
