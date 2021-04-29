@@ -9,8 +9,8 @@ function techList(stringArray, name) {
   }
   let sortedArray = stringArray.sort();
   let objectsList = [];
-  for (let index in sortedArray) {
-    let object = { tech: sortedArray[index], name: name };
+  for (let index = 0; index < stringArray.length; index += 1) {
+    let object = { tech: sortedArray[index], name };
     objectsList.push(object);
   }
   return objectsList;
@@ -49,16 +49,22 @@ function repeats3OrMoreTimes(elevenNumbersArray) {
 // console.log(repeats3OrMoreTimes(elevenNumbersArray2));
 // console.log(repeats3OrMoreTimes(elevenNumbersArray3));
 
+function lengthCheck(array) {
+  if (array.length !== 11) return true;
+}
+
+function numbersCheck(array, boolean) {
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] < 0 || array[index] > 9 || boolean === true) return true;
+  }
+}
+
 function generatePhoneNumber(elevenNumbersArray) {
   let tooManyRepeats = repeats3OrMoreTimes(elevenNumbersArray);
-  if (elevenNumbersArray.length !== 11) {
-    return 'Array com tamanho incorreto.';
-  }
-  for (let index in elevenNumbersArray) {
-    if (elevenNumbersArray[index] < 0 || elevenNumbersArray[index] > 9 || tooManyRepeats === true) {
-      return 'não é possível gerar um número de telefone com esses valores';
-    }
-  }
+  let check1 = lengthCheck(elevenNumbersArray);
+  let check2 = numbersCheck(elevenNumbersArray, tooManyRepeats);
+  if (check1) return 'Array com tamanho incorreto.';
+  if (check2) return 'não é possível gerar um número de telefone com esses valores';
   return `(${elevenNumbersArray[0]}${elevenNumbersArray[1]}) ${elevenNumbersArray[2]}${elevenNumbersArray[3]}${elevenNumbersArray[4]}${elevenNumbersArray[5]}${elevenNumbersArray[6]}-${elevenNumbersArray[7]}${elevenNumbersArray[8]}${elevenNumbersArray[9]}${elevenNumbersArray[10]}`;
 }
 console.log(generatePhoneNumber(elevenNumbersArray1));
