@@ -125,12 +125,62 @@ console.log(fizzBuzz([7, 9]));
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+function encode(codificar) {
+  let code = codificar;
+  for (let index = 0; index < codificar.length; index +=1) {
+    switch (code[index]) {
+      case 'a':
+        code = code.replace(/a/gi, '1');  
+        break;
+      case 'e':
+        code = code.replace(/e/gi, '2');
+          break;
+      case 'i':
+        code = code.replace(/i/gi, '3');
+        break;
+      case 'o':
+        code = code.replace(/o/gi, '4');
+        break;
+      case 'u':
+        code = code.replace(/u/gi, '5');
+        break;
+      default:
+        break;
+    };
+  };
+  return code;
+};
+console.log(encode('hi there!'));
+
+function decode(decodificar) {
+  let code = decodificar;
+  for (let index = 0; index < decodificar.length; index +=1) {
+    switch (code[index]) {
+      case '1':
+        code = code.replace(/1/gi, 'a');  
+        break;
+      case '2':
+        code = code.replace(/2/gi, 'e');
+          break;
+      case '3':
+        code = code.replace(/3/gi, 'i');
+        break;
+      case '4':
+        code = code.replace(/4/gi, 'o');
+        break;
+      case '5':
+        code = code.replace(/5/gi, 'u');
+        break;
+      default:
+        break;
+    };
+  };
+  return code;
+};
+
+console.log(decode(encode('hi there!')));
+
+
 
 module.exports = {
   calcArea,
