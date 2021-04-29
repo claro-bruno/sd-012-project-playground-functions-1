@@ -23,15 +23,16 @@ function generatePhoneNumber(phone) {
   }
   for (let number of phone) {
     let times = 0;
-    if (number < 0 || number > 9) {
-      return 'não é possível gerar um número de telefone com esses valores';
-    }
     for (let index in phone) {
       if (phone[index] === number) {
         times += 1;
-      } else if (times >= 3) {
+      }
+      if (times >= 3) {
         return 'não é possível gerar um número de telefone com esses valores';
       }
+    }
+    if (number < 0 || number > 9) {
+      return 'não é possível gerar um número de telefone com esses valores'
     }
   }
   for (let index2 in phone) {
@@ -39,7 +40,7 @@ function generatePhoneNumber(phone) {
       phoneResult = `(${phone[0]}${phone[1]}) `;
     } else if (index2 <= 5) {
       phoneResult += `${phone[index2]}`;
-    } else if (index2 === '6') {
+    } else if (Number(index2) === 6) {
       phoneResult += `${phone[index2]}-`;
     } else if (index2 > 6 && index2 <= 11) {
       phoneResult += `${phone[index2]}`;
