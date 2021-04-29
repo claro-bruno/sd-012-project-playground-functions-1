@@ -95,8 +95,8 @@ function fizzBuzz(numeros) {
       fizzbuzz.push('bug!');
     }
   }
-  return fizzbuzz
-};
+  return fizzbuzz;
+}
 
 // Desafio 9
 function encode(string) {
@@ -107,20 +107,17 @@ function encode(string) {
     e: 2,
     i: 3,
     o: 4,
-    u: 5
-  }
-  for (index in string) {
-    if (string[index] in codigo){
-      resposta = resposta + codigo[string[index]]
+    u: 5,
+  };
+  for (let index in string) {
+    if (string[index] in codigo) {
+      resposta += codigo[string[index]];
     } else {
-      resposta = resposta + string[index]
+      resposta += string[index];
     }
   }
-  return resposta
+  return resposta;
 }
-
-
-
 
 function decode(string) {
   // seu código aqui
@@ -130,17 +127,17 @@ function decode(string) {
     2: 'e',
     3: 'i',
     4: 'o',
-    5: 'u'
+    5: 'u',
   }
-  for (index in string) {
+  for (let index in string) {
     if (string[index] in codigo){
-      resposta = resposta + codigo[string[index]]
+      resposta += codigo[string[index]];
     } else {
-      resposta = resposta + string[index]
-    };
-  };
+      resposta += string[index];
+    }
+  }
   return resposta;
-};
+}
 
 
 module.exports = {
