@@ -67,7 +67,7 @@ console.log(generatePhoneNumber(elevenNumbersArray3));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  if (lineA > lineB + lineC || lineB > lineA + lineC || lineC > lineA + lineB)return false;
+  if (lineA > lineB + lineC || lineB > lineA + lineC || lineC > lineA + lineB) return false;
   if (lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC || lineC < Math.abs(lineA - lineB))) return false;
   return true;
 }
