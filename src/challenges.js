@@ -28,9 +28,9 @@ console.log(splitSentence('go Trybe'));
 // Desafio 4
 let strings = ['foguete', 'não', 'tem', 'ré'];
 function concatName(strings) {
-  return strings[strings.length -1] + ', ' + strings[0];
+  return strings[strings.length -1] + ', ' + [strings[0]];
 }
-console.log(strings[strings.length -1] + ', ' + strings[0]);
+console.log(strings[strings.length -1] + ', ' + [strings[0]]);
 
 // Desafio 5
 let wins = 14;
@@ -41,9 +41,18 @@ function footballPoints(wins, ties) {
 console.log((wins * 3) + (ties * 1));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+let valores = [9, 1, 2, 9, 9, 5, 7];
+let contador = 0;
+
+function highestCount(valores) {
+  for (index = 0; index <= valores.length; index ++) {
+    if (valores[index] === Math.max(...valores)) {
+      contador ++
+    }
+  }
+  return contador;
 }
+console.log(highestCount(valores));
 
 // Desafio 7
 function catAndMouse() {
