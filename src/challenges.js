@@ -74,7 +74,7 @@ function highestCount(maiorV) {
   }
   return cont;
 }
-console.log(highestCount(maiorV))
+
 
 // Desafio 7
 function catAndMouse() {
