@@ -30,9 +30,13 @@
   
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+  let strings = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+  function concatName(strings){ 
+  return strings[strings.length -1] + ' ' + strings[0];
+  
+ } 
+  console.log(strings[strings.length -1] + ', ' + strings[0]);
+  
 
 // Desafio 5
 function footballPoints() {
