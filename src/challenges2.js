@@ -35,7 +35,7 @@ function generatePhoneNumber(arr) {
     }
   }
   if (arr.length !== 11) {
-    return 'Array com Tamnho incorrento.';
+    return 'Array com tamnho incorrento.';
   }
   for (let index = 0; index < arr.length; index += 1) {
     if (arr[index] < 0 || arr[index] > 9) {
@@ -55,8 +55,8 @@ function generatePhoneNumber(arr) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let condicao1 = (lineA < lineB + lineC) && (lineA > Match.abs(lineA - (lineB+lineC)));
 }
 
 // Desafio 13
