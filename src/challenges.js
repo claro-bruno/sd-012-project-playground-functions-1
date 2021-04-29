@@ -16,7 +16,7 @@ function splitSentence(splitString) {
 }
 // Desafio 4
 function concatName(strings) {
-  let lastAndFirst = strings[strings.length - 1] + ',' + strings[0];
+  let lastAndFirst = `${strings[strings.length - 1]}, ${strings[0]};` 
   return lastAndFirst;
 }
 // Desafio 5
