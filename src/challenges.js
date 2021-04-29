@@ -72,8 +72,7 @@ function catAndMouse(mouse, cat1, cat2) {
 };
 
 // Desafio 8
-function fizzBuzz(number){
-  let numbers = [9,25]
+function fizzBuzz(numbers){
   let arrayFizzBuzz = [];
   for (let number of numbers){
     if((number % 3) === 0 && (number % 5) === 0) {
@@ -123,7 +122,7 @@ function decode(stringDecode) {
     };
   };
   return stringDecode;
-  
+
 }
 
 module.exports = {
