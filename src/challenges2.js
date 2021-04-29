@@ -19,14 +19,26 @@ function generatePhoneNumber(n) {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-  return lineA < lineB + lineC && lineC < lineA + lineB && lineB < lineA + lineC 
-  && lineA > Math.abs(lineC - lineB) && lineB > Math.abs(lineC - lineA) && lineC > Math.abs(lineB - lineA)
+  return lineA < lineB + lineC && lineC < lineA + lineB && lineB < lineA + lineC
+  && lineA > Math.abs(lineC - lineB) && lineB > Math.abs(lineC - lineA) && lineC > Math.abs(lineB - lineA);
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(pedido) {
   // seu código aqui
+  let numbers = []
+  let n = pedido.match(/\d/g);
+  let aguas = 0
+
+  for (let i = 0; i<n.length; i += 1){
+    numbers.push(parseInt(n[i]))
+  }
+  for (let i = 0; i< numbers.length; i += 1){
+    aguas += numbers[i]
+  }
+  return aguas + " copos de água"
 }
+
 
 module.exports = {
   generatePhoneNumber,
