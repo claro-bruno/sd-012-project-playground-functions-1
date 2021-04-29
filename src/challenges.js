@@ -25,12 +25,15 @@ function concatName(array) {
   let ultimo = array[array.length-1];
   return  ultimo + ', ' + primeiro;
 };
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return (wins * 3) + ties;
 }
+console.log(footballPoints(0, 0));
+
 
 // Desafio 6
 function highestCount() {
