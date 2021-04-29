@@ -85,7 +85,7 @@ function fizzBuzz(array) {
 // Desafio 9
 function encode(string) {
   let array = string.split('');
-  for (let char = 0; char < array.length ; char += 1) {
+  for (let char = 0; char < array.length; char += 1) {
     if (array[char] === 'a') {
       array[char] = '1';
     } if (array[char] === 'e') {
@@ -98,11 +98,11 @@ function encode(string) {
       array[char] = '5';
     }
   }
-  return array.join(""); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
+  return array.join(''); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
 }
 function decode(string) {
   let array = string.split('');
-  for (let char = 0; char < array.length ; char += 1) {
+  for (let char = 0; char < array.length; char += 1) {
     if (array[char] === '1') {
       array[char] = 'a';
     } if (array[char] === '2') {
