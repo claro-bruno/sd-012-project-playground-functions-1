@@ -23,10 +23,16 @@ function generatePhoneNumber() {
 }
 
 // Desafio 12
-function triangleCheck(lineA, lineB, LineC) {
-  if ()
+function triangleCheck(lineA, lineB, lineC) {
+  let difA = lineA - (lineB + lineC)
+  let difB = lineB - (lineB + lineC)
+  let difC = lineC - (lineB + lineA)
+  if (lineA > Math.abs(difA) || lineB > Math.abs(difB)|| lineC > Math.abs(difC)) {
+    return true
+  }
+  return false
 }
-
+// console.log(triangleCheck(10, 14, 8))
 // Desafio 13
 function hydrate(hydrate) {
   let regRule = /\d+/g;
