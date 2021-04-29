@@ -30,7 +30,8 @@ let maiorNumero = array[0];
 let contagem = 0;
 for (let contador = 0; contador < array.length; contador++) {
   maiorNumero = array[contador] 
-} return contagem
+  return contagem
+} 
 
 // Desafio 7
 function catAndMouse() {
