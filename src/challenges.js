@@ -18,10 +18,10 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(listaNomes) {
-let string;
-let inicio = nomes[0];
+
+let inicio = listaNomes[0];
 let fim = listaNomes[listaNomes.length - 1];    
-return (fim + '' + inicio);
+return (fim + ', ' + inicio);
     }
 
 // Desafio 5
