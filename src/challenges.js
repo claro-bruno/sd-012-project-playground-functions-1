@@ -49,9 +49,9 @@ console.log((wins * 3) + (ties *1))
 // Desafio 6
 
 let contar = [9, 1, 2, 3, 9, 5, 7];
-let quantTimes = 0;
 function highestCount(contar){
-  for(index = 0; index <= contar.length; index +=1){
+  let quantTimes = 0;
+  for(index = 0; index <= contar.length; index +=1 ){
     if (contar[index] === Math.max(...contar)){
      quantTimes +=1
     }  
