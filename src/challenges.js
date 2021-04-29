@@ -1,28 +1,30 @@
 // Desafio 1
 function compareTrue(estaDeNoite, estouComSono) {
   if (estaDeNoite && estouComSono === true) {
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
 }
 
 // Desafio 2
 function calcArea(base, height) {
-  let result = (base*height)/2
-  return result
+  let result = (base*height)/2;
+  return result;
 }
 
 // Desafio 3
 function splitSentence(frase) {
-  return frase.split(" ")
+  return frase.split(" ");
 }
-console.log(splitSentence('go trybe'))
-
 // Desafio 4
-function concatName() {
-  // seu código aqui
+let array = [];
+function concatName(array) {
+    let primeiroItem = array[array.length -1];
+    let ultimoItem = array[0]
+  return `${primeiroItem}, ${ultimoItem}`
 }
+console.log(concatname(array))
 
 // Desafio 5
 function footballPoints() {
