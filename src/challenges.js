@@ -20,14 +20,8 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(list) {
-  let arrayChange = [];
-  for(let index = list.length - 1; index >= 0; index -= 1 ){
-    if (index === 0 || index === (list.length -1)) {
-      arrayChange.push(list[index]);
-    }
-  }
-  arrayChange = arrayChange.toString();
-  return arrayChange;
+  text = text.concat(list[list.length - 1],', ',list[0])
+  return text;
 };
 
 // Desafio 5

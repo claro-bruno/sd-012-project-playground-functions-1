@@ -1,8 +1,11 @@
 // Desafio 10
 function techList(techNames, name) {
   let listObject = [];
+  if(techNames.length === 0){
+    return 'Vazio!';
+  }
   for(let index = 0; index < techNames.length; index += 1) {
-    listObject.push({tech: techNames[index], name: name});
+    listObject.push({ tech: techNames[index], name: name });
   }
   return listObject;
 }
