@@ -26,11 +26,9 @@ return (fim + ', ' + inicio);
 
 // Desafio 5
 function footballPoints(wins, ties) {
-    if ((wins * 3) + ties {
+    let results = ((wins * 3) + ties {
 
-    } return wins + ties
-    
-  }
+    } return results
 
 // Desafio 6
 function highestCount() {
