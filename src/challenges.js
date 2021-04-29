@@ -98,6 +98,8 @@ function fizzBuzz(array) {
     }
     else return arrayFinal[index].push(notDivisible)
   }  
+  
+}
 
 console.log(fizzBuzz([7, 9]))
 
