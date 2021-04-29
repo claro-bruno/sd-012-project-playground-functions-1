@@ -75,7 +75,7 @@ if (gato1 < gato2){
 function fizzBuzz(array) {
   for (let index in array){
     if (array[index] % 3 === 0 && array[index] % 5 === 0){
-    array[index] = "fizzbuzz";
+    array[index] = "fizzBuzz";
     } else if (array[index] % 3 === 0){
       array[index] = "fizz";
     }else if (array[index] % 5 === 0){
