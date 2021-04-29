@@ -50,7 +50,7 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 // Desafio 8
-function fizzBuzz(array) {
+function fizzBuzz() {
   // codigo aqui
 }
 
