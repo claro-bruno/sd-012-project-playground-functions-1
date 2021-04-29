@@ -6,7 +6,7 @@ function techList(array, name) {
   if (array.length === 0) {
     return 'Vazio!';
   } else {
-    for (let index = 0; index < array.length; index += 1) {
+    for (let index in array) {
       habilidade.tech = array[index];
       habilidade.name = name;
       habilidades.push(habilidade);
