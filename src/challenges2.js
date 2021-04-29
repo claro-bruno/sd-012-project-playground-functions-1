@@ -22,10 +22,11 @@ function techList(tech, name) {
 function generatePhoneNumber(arr) {
   let saida = '';
   let ddd = '' + arr[0] + arr[1];
-  let num1 = '' + arr[2] + arr [3] + arr [4] + arr [5] + arr[6];
+  let num1 = '' + arr[2] + arr[3] + arr[4] + arr[5] + arr[6];
   let num2 = '' + arr[7] + arr[8] + arr[9] + arr[10];
   if (arr.length - 1 !== 10){
     saida = 'Array com tamanho incorreto.';
+    return saida;
   }
   for (let veri = 0; veri < arr.length; veri += 1) {
     let numbersRepeats = 0;
@@ -35,16 +36,15 @@ function generatePhoneNumber(arr) {
       }
     }
     if (numbersRepeats >= 3 || arr[veri] < 0 || arr[veri] > 9) {
-    saida = 'não é possível gerar um número de telefone com esses valores';
-    break;
+      saida = 'não é possível gerar um número de telefone com esses valores';
+      break;
     }
     else {
-      saida = '(' + ddd + ') ' + num1 + '-' + num2;  
+      saida = '(' + ddd + ') ' + num1 + '-' + num2;
     }
   }
   return saida;
 }
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
 function triangleCheck() {
