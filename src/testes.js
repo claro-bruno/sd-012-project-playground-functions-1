@@ -1,44 +1,20 @@
-// Desafio 10
-function techList(tecnologia, nome) {
-    // seu código aqui
-    
-    let objLista = []
-    tecnologia = tecnologia.sort()
-
-    for(let i = 0; i < tecnologia.length; i += 1){
-      let obj = {
-        tech: "eita",
-        name: nome,
-    }
-        obj.tech = tecnologia[i]
-        objLista.push(obj)
-    }
-
-    return objLista
-  }
-
-
-
-
-
-  console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Roberto"))
-
-/*// Desafio 13
-function hydrate(pedido) {
+// Desafio 11
+function generatePhoneNumber(n) {
   // seu código aqui
-  let numbers = []
-  let n = pedido.match(/\d/g);
-  let aguas = 0
-
-  for (let i = 0; i<n.length; i += 1){
-    numbers.push(parseInt(n[i]))
+  if (n.length === 11){
+    for (let i = 0; i < 11; i += 1){
+      let count = 0;
+      for ( let j = 0; j < 11; j += 1){
+        if(n[i] === n[j]){
+          count +=1;
+          if (n[j] < 0 || n[j] > 9 || count > 2){
+            return 'não é possível gerar um número de telefone com esses valores'
+          }
+        }
+    }
+    } return `(${n[0]}${n[1]}) ${n[2]}${n[3]}${n[4]}${n[5]}${n[6]}-${n[7]}${n[8]}${n[9]}${n[10]}`
   }
-  for (let i = 0; i< numbers.length; i += 1){
-    aguas += numbers[i]
-  }
-  if ( aguas > 1){
-  return aguas + " copos de água"
-  } return aguas + " copo de água"
+    return 'Array com tamanho incorreto. '
 }
 
-console.log(hydrate("1 cachaça"))*/
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9]))
