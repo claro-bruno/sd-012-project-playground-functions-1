@@ -43,20 +43,23 @@ function footballPoints(wins, ties) {
 function highestCount(numbers) {
   let highNumber = numbers[0];
    for (let index in numbers){
-    if(numbers[index] > numbers[highNumber]){
+    if(numbers[index] >= numbers[highNumber]){
       highNumber = numbers[index];
     };     
-  }; 
+  };
     let indexHigh = [];
     let idx = numbers.indexOf(highNumber);
     while (idx != -1) {
       indexHigh.push(idx);
       idx = numbers.indexOf(highNumber, idx + 1);
     };
-    return indexHigh.length;
-    //também serve para nomes...
+    return indexHigh.length
+    /*
+    return `O maior número é: ${highNumber}, e ele se repete: ${indexHigh.length} vezes.`;
+    também serve para nomes...
+    */
 };
-
+console.log(highestCount([0,4,4,4,9,2,1]))
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
