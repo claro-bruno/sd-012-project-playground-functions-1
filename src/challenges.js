@@ -90,85 +90,31 @@ function fizzBuzz(arrayFizzBuzz) {
 }
 
 // Desafio 9
-// function vogal() {
-//  let objeto = {
-//    1: 'a',
-//    2: 'e',
-//    3: 'i',
-//    4: 'o',
-//    5: 'u'
-//  }
-//  return objeto;
-// }
-// function number () {
-//  let objeto = {
-//    a: '1',
-//    e: '2',
-//    i: '3',
-//    o: '4',
-//    u: '5'
-//  }
-//  return objeto;
-// }
-
-function change (mudChar) {
-  switch (mudChar) {
-    case 'a':
-      mudChar = '1';
-      break;
-    case 'e':
-      mudChar = '2';
-      break;
-    case 'i':
-      mudChar = '3';
-      break;
-    case 'o':
-      mudChar = '4';
-      break;
-    case 'u':
-      mudChar = '5';
-      break;
-    case '1':
-      mudChar = 'a';
-      break;
-    case '2':
-      mudChar = 'e';
-      break;
-    case '3':
-      mudChar = 'i';
-      break;
-    case '4':
-      mudChar = 'o';
-      break;
-    case '5':
-      mudChar = 'u';
-      break;
-    default:
-      break;
-  }
-  return mudChar;
-}
 
 function encode(strEncode) {
   // seu código aqui
-  let separa = strEncode.split('');
-  for (let key = 0; separa.length > key; key += 1) {
-    if (separa[key] === 'a' || strEncode[key] === 'e' || strEncode[key] === 'i' || strEncode[key] === 'o' || strEncode[key] === 'u') {
-      separa[key] = change(strEncode[key]);
-    }
+  let separa = strEncode;
+  for (let key = 0; key < separa.length; key += 1) {
+    separa = separa.replace('a', '1');
+    separa = separa.replace('e', '2');
+    separa = separa.replace('i', '3');
+    separa = separa.replace('o', '4');
+    separa = separa.replace('u', '5');
   }
-  return separa.join('');
+  return separa;
 }
 
 function decode(strDecode) {
   // seu código aqui
-  let separa = strDecode.split('');
-  for (let key in separa) {
-    if (separa[key] === '1' || separa[key] === '2' || separa[key] === '3' || separa[key] === '4' || separa[key] === '5') {
-      separa[key] = change(strDecode[key]);
-    }
+  let separa = strDecode;
+  for (let key = 0; key < separa.length; key += 1) {
+    separa = separa.replace('1', 'a');
+    separa = separa.replace('2', 'e');
+    separa = separa.replace('3', 'i');
+    separa = separa.replace('4', 'o');
+    separa = separa.replace('5', 'u');
   }
-  return separa.join('');
+  return separa;
 }
 
 module.exports = {
