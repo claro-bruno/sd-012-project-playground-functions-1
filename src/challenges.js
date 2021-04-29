@@ -27,10 +27,10 @@ function footballPoints(wins, ties) {
 
 function highestCount(array, incidencia) {
   for (let index = 0; index < array.length; index ++) {
-    if (array[index] === Math.max(...array)) {
-      incidencia ++
+    if (array[index] === Math.max(array)) {
+      incidencia ++;
     }
-  } return incidencia
+  } return incidencia;
 }
 
 // Desafio 7
