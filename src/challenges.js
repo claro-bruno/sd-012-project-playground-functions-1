@@ -51,15 +51,15 @@ footballPoints(wins, ties)
 // Desafio 6
 function highestCount(array) {
   for (accountant = 0; accountant<array.length; accountant+=1){
-    if (array[accountant] > highNumber) {
+    if (array[accountant] > highNumber){
       highNumber = array[accountant]
     }
   }
   for (accountant = 0; accountant<array.length; accountant+=1){
-  if (highNumber === array[accountant]) {
-    repeat +=1
-  }  
-}
+    if (highNumber === array[accountant]){
+      repeat +=1
+    }  
+  }
 return repeat
 }
 let repeat = 0
