@@ -61,19 +61,18 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 
-   let maiorV = [9, 1, 2, 3, 9, 5, 7];
-   let maior = 0;
-
+  let maiorV = [9, 1, 2, 3, 9, 5, 7];
+  let maior = Math.max(...maiorV);
+  
 function highestCount(maiorV) {
-  let maiorV = [9, 10, 2, 3, 9, 5, 7];
-  let maior = maiorV[0];
-  for (index = 0;index < maiorV.length; index += 1) {
-    if (maiorV[index] >= maior) {
-      maior = maiorV[index]
+  
+  let cont = 0;
+  for (let index = 0; index < Math.max(...maiorV); index += 1) {
+    if (maior == maiorV[index]) {
+      cont += 1;
     }
-    
-  console.log(maior);
   }
+  return cont;
 }
 
 // Desafio 7
