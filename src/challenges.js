@@ -51,16 +51,25 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 // Desafio 8
 function fizzBuzz(array) {
+  function dividedBy3(number) {
+    if (number % 3 === 0) {
+      return true;
+    }
+  function dividedBy5(number) {
+    if (number % 5 === 0) {
+      return true;
+    }
+  }
   let arrayReturn = [];
   for (let number in array) {
-    if (((array[number] % 3) === 0
-      && (array[number] % 5) !== 0)) {
+    if (dividedBy3(array[number]) === true
+      && dividedBy5 !== true)) {
       arrayReturn[number] = 'fizz';
-    } else if ((array[number] % 3) !== 0
-    && (array[number] % 5) === 0) {
+    } else if (dividedBy3(array[number]) !== true
+      && dividedBy5 === true)) {
       arrayReturn[number] = 'buzz';
-    } else if ((array[number] % 3) === 0
-    && (array[number] % 5) === 0) {
+    } else if (dividedBy3(array[number]) === true
+      && dividedBy5 === true)) {
       arrayReturn[number] = 'fizzBuzz';
     } else {
       arrayReturn[number] = 'bug!';
