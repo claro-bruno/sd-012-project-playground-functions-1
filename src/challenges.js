@@ -86,7 +86,7 @@ function encode(frase) {
       break;
     case 'u': frase[i] = '5';
       break;
-    default: 
+    default:
     }
   }
   return frase.join('');
