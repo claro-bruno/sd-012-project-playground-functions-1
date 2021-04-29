@@ -75,14 +75,14 @@ function highestCount(numbers) {
   }
   return timesNumberAppear[singleNumbers.indexOf(Math.max(...singleNumbers))];
 }
-
+/*
 let array = [9, 1, 2, 3, 9, 5, 7];
 console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 array = [0, 4, 4, 4, 9, 2, 1];
 console.log(highestCount(array));
 array = [0, 0, 0];
 console.log(highestCount(array));
-
+*/
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -110,9 +110,29 @@ console.log(catAndMouse(1,7,13));
 console.log(catAndMouse(1,3,3));
 */
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numbers) {
+  let message = [];
+  for (const number of numbers) {
+    if ((number % 3) === 0 && (number % 5) === 0) {
+      message.push('fizzBuzz');
+    }
+    if ((number % 3) !== 0 && (number % 5) === 0) {
+      message.push('buzz');
+    }
+    if ((number % 3) === 0 && (number % 5) !== 0) {
+      message.push('fizz');
+    }
+    if ((number % 3) !== 0 && (number % 5) !== 0) {
+      message.push('bug!');
+    }
+  }
+  return message;
 }
+/*
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+console.log(fizzBuzz([7, 9]));
+console.log(fizzBuzz([9, 25]));
+*/
 
 // Desafio 9
 function encode() {
