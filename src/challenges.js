@@ -32,13 +32,7 @@ function footballPoints(wins, ties) {
 function highestCount(numbers) {
   // seu código aqui
   let qtd = 0;
-  let maior = 0;
-
-  for (let i = 0; i < numbers.length; i += 1) {
-    if (maior < numbers[i]) {
-      maior = numbers[i];
-    }
-  }
+  let maior = Math.max(...numbers)
 
   for (let i = 0; i < numbers.length; i += 1) {
     if (numbers[i] === maior) {
@@ -51,11 +45,11 @@ function highestCount(numbers) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)){
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
     return 'cat1';
   } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
     return 'cat2';
-  } else {
+  } {
     return 'os gatos trombam e o rato foge';
   }
 }
@@ -65,19 +59,18 @@ function fizzBuzz(numbers) {
   // seu código aqui
   let resposta = [];
   for (let i = 0; i<numbers.length; i+=1){
-    if (numbers[i] % 3 === 0 && numbers[i] % 5 != 0) {
-      resposta.push('fizz')
-    } else if(numbers[i] % 5 === 0 && numbers[i] % 3 != 0) {
-      resposta.push('buzz')
-    } else if (numbers[i] % 5 != 0 && numbers[i] % 3 != 0){
-      resposta.push('bug!')
+    if (numbers[i] % 3 === 0 && numbers[i] % 5 !== 0) {
+      resposta.push('fizz');
+    } else if(numbers[i] % 5 === 0 && numbers[i] % 3 !== 0) {
+      resposta.push('buzz');
+    } else if (numbers[i] % 5 != 0 && numbers[i] % 3 !== 0){
+      resposta.push('bug!');
     } else {
-      resposta.push('fizzBuzz') 
+      resposta.push('fizzBuzz') ;
     }
   }
   return resposta;
 }
-
 
 // Desafio 9
 function encode() {
