@@ -36,9 +36,9 @@ console.log(strings[strings.length -1] + ', ' + strings[0]);
 let wins = 14;
 let ties = 8;
 function footballPoints(wins, ties) {
-  return pontosMarcados = ((wins * 3) + (ties * 1));
+  return ((wins * 3) + (ties * 1));
 }
-console.log(pontosMarcados);
+console.log((wins * 3) + (ties * 1));
 
 // Desafio 6
 function highestCount() {
