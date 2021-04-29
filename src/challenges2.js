@@ -29,7 +29,7 @@ function generatePhoneNumber(arrayNumbers) {
         }
       }
 
-      if (arrayNumbers[index] > 9 || arrayNumbers[index] < 0 || count >= 5) {
+      if (arrayNumbers[index] > 9 || arrayNumbers[index] < 0 || count >= 3) {
         numeroCorreto = false;
         return 'não é possível gerar um número de telefone com esses valores';
       }
