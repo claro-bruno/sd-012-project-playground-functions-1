@@ -70,12 +70,23 @@ if (gato1 < gato2){
   return foge;
 }
 }
-console.log(catAndMouse(10, -2, -3));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(array) {
+  for (let index in array){
+    if (array[index] % 3 === 0 && array[index] % 5 !== 0){
+      array[index] = "fizz";
+    }else if (array[index] % 5 === 0 && array[index % 3 !== 0]){
+      array[index] = "buzz";
+    } else if (array[index] % 3 === 0 || array[index] % 5 === 0){
+      array[index] = "fizzbuzz";
+    } else {
+      array[index] = "bug!";
+    }
+  }
+  return array;
+  }
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
