@@ -58,7 +58,7 @@ function catAndMouse() {
 // Desafio 8
 function fizzBuzz(num) {
 let list = [];
-for (let index = 0; index <= num.length; index+= 1) {
+for (let index in num) {
 
 if  (num[index] % 3 === 0) {
   list.push('fizz');
