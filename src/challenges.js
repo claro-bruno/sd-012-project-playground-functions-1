@@ -47,7 +47,7 @@ function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
     return 'cat1';
-  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
+  } if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
     return 'cat2';
   } return 'os gatos trombam e o rato foge';
 }
@@ -73,8 +73,8 @@ function fizzBuzz(numbers) {
 // Desafio 9
 function encode(frase) {
   // seu código aqui
-  frase = frase.split('')
-  for (let i = 0; i<frase.length; i += 1){
+  frase = frase.split('');
+  for (let i = 0; i < frase.length; i += 1) {
     switch (frase[i]) {
     case 'a': frase[i] = '1';
       break;
@@ -86,15 +86,14 @@ function encode(frase) {
       break;
     case 'u': frase[i] = '5';
       break;
-    default: frase[i] === frase[i];
     }
   }
   return frase.join('');
 }
 function decode(frase) {
   // seu código aqui
-  frase = frase.split('')
-  for (let i = 0; i<frase.length; i += 1){
+  frase = frase.split('');
+  for (let i = 0; i < frase.length; i += 1) {
     switch (frase[i]) {
     case '1': frase[i] = 'a';
       break;
@@ -106,7 +105,6 @@ function decode(frase) {
       break;
     case '5': frase[i] = 'u';
       break;
-    default: frase[i] === frase[i]; //hummm
     }
   }
   return frase.join('');
