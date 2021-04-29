@@ -26,8 +26,7 @@ function concatName(list) {
       arrayChange.push(list[index]);
     }
   }
-
-  return String.toString(arrayChange);
+  return arrayChange;
 };
 
 // Desafio 5
