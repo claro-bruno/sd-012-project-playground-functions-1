@@ -45,19 +45,49 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+
+function highestCount(array) {
+
+  let maiorNumero = Math.max.apply(null, array);
+  let countNumber = 0;
+  
+  for(let number of array){
+    if(number === maiorNumero){
+      countNumber++;
+    }
+  }
+
+  return countNumber
+
 }
 
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
+  
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+
+//let arrayTeste = [2, 15, 7, 9, 45]
+
+function fizzBuzz(array) {
+
+  let res = []
+
+  for(let number in arrayTeste){
+    if(number % 3 === 0){
+      res.push('fizz')
+    }
+    else if(number % 5 === 0){
+      res.push('buzz')
+    }
+  }
+
+  return res
+
 }
+
+//console.log(fizzBuzz(arrayTeste))
 
 // Desafio 9
 function encode() {
