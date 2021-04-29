@@ -78,7 +78,7 @@ if (Math.abs(distanciaCat1) < Math.abs(distanciaCat2)){
   return "cat2";
 }
 };
-console.log(catAndMouse(0, 12, 12))
+
 
 // Desafio 8
 function fizzBuzz(arrayDesafio8) {
@@ -103,20 +103,11 @@ return arrayNova8;
 
 // Desafio 9 FALTA
 
-let fraseDesafio9 = 'hi there!';
+function encode() {
 
-for (let indexFrase9 = 0; indexFrase9 < fraseDesafio9.length; indexFrase9 += 1) {
-  if (fraseDesafio9[indexFrase9] === 'i'){
-    let fraseNova = fraseDesafio9[indexFrase9] === '3';
-  }
-}
-  
+};
 
-console.log(fraseNova);
-
-function encode(fraseDesafio9) {
-
- 
+function decode() {
   
 };
 
