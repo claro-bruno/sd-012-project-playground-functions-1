@@ -19,9 +19,10 @@ function splitSentence(string) {
 function concatName(array) {
   const item1 = array[(array.length) - 1];
   const item2 = array[0];
-  return item1 + ', ' + item2;
+  const concat = item1 + ', ' + item2;
+  return concat;
 }
-
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 // Desafio 5
 function footballPoints(wins, ties) {
   return (3 * wins) + ties;
@@ -71,10 +72,10 @@ function fizzBuzz(array) {
       && (array[number] % 5) !== 0)) {
       arrayReturn[number] = 'fizz';
     } else if ((array[number] % 3) !== 0
-      && (array[number] % 5) === 0) {
+    && (array[number] % 5) === 0) {
         arrayReturn[number] = 'buzz';
     } else if ((array[number] % 3) === 0
-      && (array[number] % 5) === 0) {
+    && (array[number] % 5) === 0) {
       arrayReturn[number] = 'fizzBuzz';
     } else {
       arrayReturn[number] = 'bug!';
@@ -85,7 +86,7 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-  let array = string.split('');
+let array = string.split('');
     for (let char in array) {
     if (array[char] === 'a') {
       array[char] = '1';
@@ -102,7 +103,7 @@ function encode(string) {
   return array.join(""); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
 }
 function decode(string) {
-  let array = string.split('');
+let array = string.split('');
     for (let char in array) {
     if (array[char] === '1') {
       array[char] = 'a';
