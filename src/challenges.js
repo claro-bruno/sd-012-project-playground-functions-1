@@ -101,7 +101,7 @@ function fizzBuzz(arrayFizzbuzz) {
   return arrayFinal;
 }
 
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
+
 
 
 // Desafio 9
