@@ -53,20 +53,20 @@ function fizzBuzz(arrN) {
   for (let index = 0; index < arrN.length; index += 1) {
     let divisivel3 = (arrN[index] % 3) === 0;
     let divisivel5 = (arrN[index] % 5) === 0;
-    if (divisivel3 && !divisivel5) {
-      arrS.push('fizz');
-    } else if (!divisivel3 && divisivel5) {
+    if (divisivel3) {
+      if (divisivel5) {
+        arrS.push('fizzBuzz');
+      } else {
+        arrS.push('fizz');
+      }
+    } else if (divisivel5) {
       arrS.push('buzz');
-    } else if (divisivel3 && divisivel5) {
-      arrS.push('fizzBuzz');
     } else {
       arrS.push('bug!');
     }
   }
   return arrS;
 }
-let arrN = [2, 15, 7, 9, 45];
-console.log(fizzBuzz(arrN));
 
 // Desafio 9
 function encode(str) {

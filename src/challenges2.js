@@ -1,9 +1,9 @@
 // Desafio 10
 function techList(lista, name) {
   let listaSaida = [];
-  if (lista.length == 0) {
+  if (lista.length === 0) {
     return 'Vazio!';
-  };
+  }
   for (let index = 0; index < lista.length; index += 1) {
     let objeto = {
       tech: lista[index],
