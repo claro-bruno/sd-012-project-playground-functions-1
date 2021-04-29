@@ -15,7 +15,7 @@ function bubbleSort(array){
 function techList(technologies, name) {
   let sortedTechnologies = [];
   let objectList = [];
-  if(array.length === 0){
+  if(technologies.length === 0){
     return 'Vazio!';
   }
   else{
@@ -29,6 +29,7 @@ function techList(technologies, name) {
 }
 // let array = ["React", "Jest", "HTML", "CSS", "JavaScript"];
 // let name = 'Lucas';
+// let array = [];
 // console.log(techList(array,name));
 
 // Desafio 11
@@ -95,8 +96,8 @@ function generatePhoneNumber(numberArray) {
   return formatedNumber;
 }
 // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
-let array = [0, 2, 3, 4, 4, 2, 7, 8, 9, 9, 4];
-console.log(generatePhoneNumber(array));
+// let array = [0, 2, 3, 4, 4, 2, 7, 8, 9, 9, 4];
+// console.log(generatePhoneNumber(array));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
