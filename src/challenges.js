@@ -59,7 +59,7 @@ function highestCount(numbers) {
     também serve para nomes...
     */
 };
-console.log(highestCount([0,4,4,4,9,2,1]))
+
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
