@@ -28,7 +28,7 @@ function splitSentence(string) {
   return arrays
 
 }
-// console.log(splitSentence("foguete"))
+// console.log(splitSentence(""))
 
 // Desafio 4
 
@@ -56,7 +56,7 @@ function footballPoints(wins, ties) {
   return fut;
 }
 
-// console.log(footballPoints(14,8))
+//  console.log(footballPoints(14,8))
 
 // Desafio 6
 
@@ -64,20 +64,20 @@ function highestCount(VezesMaiorNumeroAparece) {
 
   let maiorNumero = 0;
   let vezesAparece = 0;
-  
-  for (let index = 0; index < VezesMaiorNumeroAparece.length; index += 1) {
-     if (VezesMaiorNumeroAparece[index] > maiorNumero ){
-       maiorNumero = VezesMaiorNumeroAparece[index];
-       vezesAparece = 0;
-      } 
-      
-      if (VezesMaiorNumeroAparece[index] === maiorNumero) {
-        
-        vezesAparece +=1;
 
-      }
+  for (let index = 0; index < VezesMaiorNumeroAparece.length; index += 1) {
+    if (VezesMaiorNumeroAparece[index] > maiorNumero) {
+      maiorNumero = VezesMaiorNumeroAparece[index];
+      vezesAparece = 0;
+    }
+
+    if (VezesMaiorNumeroAparece[index] === maiorNumero) {
+
+      vezesAparece += 1;
+
+    }
   }
-  
+
   return vezesAparece;
 
 }
@@ -85,6 +85,7 @@ function highestCount(VezesMaiorNumeroAparece) {
 //  console.log(highestCount([0,0,0]))
 
 // Desafio 7
+
 function catAndMouse(mouse, cat1, cat2) {
 
   let distanciaCat1 = Math.abs(mouse - cat1);
@@ -101,39 +102,72 @@ function catAndMouse(mouse, cat1, cat2) {
 
 }
 
-// console.log(catAndMouse(0,3,2))
+// console.log(catAndMouse(2,3,2))
 
 // Desafio 8
+
 function fizzBuzz(AcrescentaArrays) {
 
-let result = [];
+  let result = [];
 
-for(let index = 0;index < AcrescentaArrays.length; index+=1 ){
-    
-  if(AcrescentaArrays[index] % 3 == 0 && AcrescentaArrays[index] % 5 != 0  ) {
-         result.push("fizz");
-  } else if (AcrescentaArrays[index] % 5 == 0 && AcrescentaArrays[index] % 3 != 0){
-         result.push("buzz");
-  } else if (AcrescentaArrays[index] % 5 == 0 && AcrescentaArrays[index] % 3 == 0 ){
-         result.push("fizzBuzz")
-  } else if (AcrescentaArrays[index] % 5 != 0 && AcrescentaArrays[index] % 3 != 0 ) {
-         result.push("bug!")
+  for (let index = 0; index < AcrescentaArrays.length; index += 1) {
+
+    if (AcrescentaArrays[index] % 3 == 0 && AcrescentaArrays[index] % 5 != 0) {
+      result.push("fizz");
+    } else if (AcrescentaArrays[index] % 5 == 0 && AcrescentaArrays[index] % 3 != 0) {
+      result.push("buzz");
+    } else if (AcrescentaArrays[index] % 5 == 0 && AcrescentaArrays[index] % 3 == 0) {
+      result.push("fizzBuzz")
+    } else if (AcrescentaArrays[index] % 5 != 0 && AcrescentaArrays[index] % 3 != 0) {
+      result.push("bug!")
+    }
   }
-}
-return result;
+  return result;
 
 }
 
 // console.log(fizzBuzz([45]))
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(encodeTest) {
+
+  let arrayEncode = ['a', 1, 'e', 2, 'i', 3, 'o', 4, 'u', 5];
+
+  encodeTest = encodeTest.split('')
+
+  for (encodeIndex in encodeTest) {
+
+    for (arrayIndex = 0; arrayIndex < arrayEncode.length; arrayIndex += 2) {
+      if (encodeTest[encodeIndex] == arrayEncode[arrayIndex]) {
+        encodeTest[encodeIndex] = arrayEncode[arrayIndex + 1]
+      }
+    }
+  }
+  return encodeTest.join('');
+
+}
+// console.log(encode("hi there!"))
+
+function decode(decodeTest) {
+
+  let arrayDecode = [1, 'a', 2, 'e', 3, 'i', 4, 'o', 5, 'u'];
+
+  decodeTest = decodeTest.split('')
+
+  for (decodeIndex in decodeTest) {
+
+    for (arrayIndex = 0; arrayIndex < arrayDecode.length; arrayIndex += 2) {
+      if (decodeTest[decodeIndex] == arrayDecode[arrayIndex]) {
+        decodeTest[decodeIndex] = arrayDecode[arrayIndex + 1]
+      }
+    }
+  }
+  return decodeTest.join('');
+
 }
 
-function decode() {
-  // seu código aqui
-}
+// console.log(decode("h3 th2r2!"))
+
 
 module.exports = {
   calcArea,
