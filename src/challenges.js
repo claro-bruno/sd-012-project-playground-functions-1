@@ -50,7 +50,7 @@ function highestCount(valores) {
       contador ++
     }
   }
-  return highestCount(valores);
+  return contador;
 }
 console.log(highestCount(valores));
 
