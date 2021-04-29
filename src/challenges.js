@@ -25,15 +25,26 @@ function footballPoints(wins, ties) {
 };
 
 // Desafio 6
-function highestCount(numeros) {
-let maiornumero = [0];
-  for (let index =0; index < numeros.length; index +=1) {
-  if (numeros[maiornumero] > numeros[index]) {
-    maiornumero = numeros[index];
+function checkHighestCount(numero, maiorNumero, contagem) {
+  if (numero > maiorNumero) {
+    maiorNumero = numero;
+    contagem = 1;
+  } else if (numero === maiorNumero) {
+    contagem += 1;
   }
+  return [maiorNumero, contagem];
 }
-return maiornumero;
-  };
+function highestCount(numeros) {
+let maiornumero = 0;
+let maiornumerorepetir = 0;
+let resultado = [];
+  for (let index = 0; index < numeros.length; index += 1) {
+    resultado = checkHighestCount(numeros[index], maiornumero, maiornumerorepetir);
+    [maiornumero] = resultado;
+    maiornumerorepetir = resultado[1];
+  }
+  return maiornumerorepetir;
+}
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
