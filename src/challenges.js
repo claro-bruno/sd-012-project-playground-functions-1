@@ -47,7 +47,8 @@ function footballPoints(wins, ties) {
 }
 // console.log(footballPoints(0,0))
 
-// Cliente 6
+// Desafio 6
+
 let duplicatedNumbers = [];
 function highestCount(array) {
   for (index = 0; index < array.length ; index += 1){
@@ -60,18 +61,23 @@ function highestCount(array) {
   let finalNumbers = duplicatedNumbers.length
   return finalNumbers
 }
-// console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if(cat1 > cat2)
-  return 'cat1'
-  else if(cat2 > cat1)
-  return 'cat2' 
-  else return "os gatos trombam e o rato foge"
-}
-// console.log(catAndMouse(1,6,6))
+  let result1 = (cat1 - mouse) 
+  let result2 = (cat2 - mouse) 
+  if (result1 < result2){
+    return 'cat 1';}
+
+  else if (result2 < result1) {
+    return 'cat2';}
+
+    else return "os gatos trombam e o rato foge"
+  }
+  
+// console.log(catAndMouse(1,2,2))
 
 // Desafio 8
 function fizzBuzz() {
