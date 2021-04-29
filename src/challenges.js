@@ -52,31 +52,45 @@ function highestCount(array) {
   return contador;
   }
 
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distMouseCat1 = mouse - cat1;
+  let distMouseCat2 = mouse - cat2;
+  
+  if (distMouseCat1 < 0 || distMouseCat2 < 0){
+    if (distMouseCat1 < 0){
+      distMouseCat1 = Math.abs(distMouseCat1);} 
+    if (distMouseCat2 < 0){
+      distMouseCat2 = Math.abs(distMouseCat2);}
+  }
+  
+  if (distMouseCat1 < distMouseCat2) {
+    return 'cat1';
+  }if (distMouseCat2 < distMouseCat1) {
+    return 'cat2';
+  } if ( distMouseCat1 === distMouseCat2){
+    return 'os gatos trombam e o rato foge';
+  }
 }
 
 // Desafio 8
 function fizzBuzz(arrayNum) {
   
   for (index = 0; index < arrayNum.length; index += 1){
-      if (arrayNum[index]%3 === 0 && arrayNum[index]%5 !== 0) {
+    if ( (arrayNum[index] % 3 === 0 && arrayNum[index] % 5 !== 0) {
       arrayNum[index] = "fizz";
-    } if (arrayNum[index]%3 !== 0 && arrayNum[index]%5 === 0) {
+    } if (arrayNum[index] % 3 !== 0 && arrayNum[index] % 5 === 0) {
       arrayNum[index] = "buzz";
-    } if (arrayNum[index]%3 === 0 && arrayNum[index]%5 === 0) {
+    } if (arrayNum[index] % 3 === 0 && arrayNum[index] % 5 === 0) {
       arrayNum[index] = "fizzBuzz";
-    } else if (arrayNum[index]%3 !== 0 && arrayNum[index]%5 !== 0) {
+    } else if (arrayNum[index] % 3 !== 0 && arrayNum[index] % 5 !== 0) {
       arrayNum[index] = "bug!";
     }
   }
   return arrayNum;
 }
 
-console.log(fizzBuzz([7, 9]));
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
