@@ -31,8 +31,6 @@ function highestCount(array) {
     if (array[number] > highestNumber) {
       highestNumber = array[number];
     }
-  }
-  for (let number in array) {
     if (array[number] === highestNumber) {
       count += 1;
     }
