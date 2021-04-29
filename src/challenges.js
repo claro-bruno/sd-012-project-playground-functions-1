@@ -107,7 +107,21 @@ function encode(stringEncode) {
   };
 };
 function decode(stringDecode) {
- 
+  let rule = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u'
+  };
+  for(let index = 0; index < stringDecode.length; index += 1) {
+    for(let key in rule) {
+      if(key == stringDecode[index]) {
+        stringDecode = stringDecode.replace(stringDecode[index], rule[key]);
+      };
+    };
+  };
+
 }
 
 module.exports = {
