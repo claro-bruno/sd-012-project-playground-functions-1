@@ -45,7 +45,7 @@ function highestCount(numbers) {
     };
   };
   for(let number of numbers) {
-    if(numer === highValue){
+    if(number === highValue){
       count += 1;
     };
   };
