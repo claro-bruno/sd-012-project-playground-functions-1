@@ -76,7 +76,7 @@ function fizzBuzz(numeros) {
 
 // Desafio 9.1
 function encode(palavra) {
-  let replace = palavra.replace(/[aeiou]/gi, function (x) {
+  let replace = palavra.replace(/[aeiou]/gi, (x) => {
     switch (x) {
     default:
       return '1';
@@ -95,21 +95,21 @@ function encode(palavra) {
 
 // Desafio 9.2
 function decode(palavra) {
-  let decodeLetter = ['a', 'e', 'i', 'o', 'u'];
-  let decodeNumber = ['1', '2', '3', '4', '5'];
-  let newPalavra = '';
-  for (let i = 0; i < palavra.length; i += 1) {
-    if (palavra[i] === '1' || palavra[i] === '2' || palavra[i] === '3' || palavra[i] === '4' || palavra[i] === '5') {
-      for (let j = 0; j < decodeNumber.length; j += 1) {
-        if (palavra[i] === decodeNumber[j]) {
-          newPalavra += decodeLetter[j];
-        }
-      }
-    } else {
-      newPalavra += palavra[i];
+  let replace = palavra.replace(/[12345]/gi, (x) => {
+    switch (x) {
+    default:
+      return 'a';
+    case '2':
+      return 'e';
+    case '3':
+      return 'i';
+    case '4':
+      return 'o';
+    case '5':
+      return 'u';
     }
-  }
-  return newPalavra;
+  });
+  return replace;
 }
 
 module.exports = {
