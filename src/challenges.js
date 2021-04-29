@@ -35,10 +35,8 @@ console.log(strings[strings.length -1] + ', ' + strings[0]);
 // Desafio 5
 let wins = 14;
 let ties = 8;
-
 function footballPoints(wins, ties) {
-  let pontosMarcados = ((wins * 3) + (ties * 1));
-  return pontosMarcados;
+  return pontosMarcados = ((wins * 3) + (ties * 1));
 }
 console.log(pontosMarcados);
 
