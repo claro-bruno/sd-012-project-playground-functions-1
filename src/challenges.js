@@ -127,23 +127,28 @@ console.log(fizzBuzz([15, 30, 45]));
 
 // Desafio 9
 function encode(string) {
-  let novaString = '';
+  let newString = '';
   for (let index = 0; index < string.length; index += 1) {
-    novaString += string[index].replace(/a/, '1')
+    newString += string[index].replace(/a/, '1')
     .replace(/e/, '2')
     .replace(/i/, '3')
     .replace(/o/, '4')
     .replace(/u/, '5');
   }
-  return novaString;
+  return newString;
 }
   console.log(encode('hi there!'));
 
-function decode() {
-  /*
-  recebe string contendo numeros no lugar das letras minusculas
-  retorna string com vogais no lugar dos numeros
-  */
+function decode(string) {
+  let newString = '';
+  for (let index = 0; index < string.length; index += 1) {
+    newString += string[index].replace(/1/, 'a')
+    .replace(/2/, 'e')
+    .replace(/3/, 'i')
+    .replace(/4/, 'o')
+    .replace(/5/, 'u');
+  }
+  return newString;
 }
 console.log(decode('h3 th2r2!'));
 
