@@ -1,6 +1,7 @@
 // Desafio 1
 function compareTrue() {
-
+  let a = 1
+return a == 1 && b == 2
 }
 
 // Desafio 2
@@ -10,7 +11,8 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string, frase) { 
-  return string = frase.split();
+  let string = frase.split(' ')
+  return string;
 }
 
 // Desafio 4
@@ -23,7 +25,7 @@ return (fim + '' + inicio);
 
 // Desafio 5
 function footballPoints(wins, ties) {
-    if ((wins * 3) + (ties * 1)) {
+    if ((wins === 3) + (ties === 1)) {
 
     } return wins + ties
     
