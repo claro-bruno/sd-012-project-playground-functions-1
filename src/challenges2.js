@@ -1,25 +1,35 @@
 // Desafio 10
-function techList(tech, name) {
+function createArrayTechList(tech, name) {
   let objects = [];
+  if (objects.length === 0) {
+    return 'Vazio!';
+  }
   for (let indexTech = 0; indexTech < tech.length; indexTech += 1) {
     objects[indexTech] = {
       tech: tech[indexTech],
       name,
     };
   }
-  objects.sort();
 
   return objects;
 }
 
-function compare(a, b) {
-  if (a < b) {
-    return -1;
+function techList(tech, name) {
+  let objects = createArrayTechList(tech, name);
+
+  let change;
+
+  for (let indexArray = 0; indexArray < objects.length; indexArray += 1) {
+    for (let indexArray2 = 0; indexArray2 < objects.length; indexArray2 += 1) {
+      if (objects[indexArray].tech < objects[indexArray2].tech) {
+        change = objects[indexArray].tech;
+        objects[indexArray].tech = objects[indexArray2].tech;
+        objects[indexArray2].tech = change;
+      }
+    }
   }
-  if (a > b) {
-    return 1;
-  }
-  return 0;
+
+  return objects;
 }
 
 // Desafio 11
@@ -90,8 +100,6 @@ function hydrate(string) {
   }
   return result;
 }
-
-console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
