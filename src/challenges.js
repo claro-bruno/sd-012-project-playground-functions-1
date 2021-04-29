@@ -1,12 +1,14 @@
 // Desafio 1
 
-let n1 = true
-let n2 = true
+let n1 = true;
+let n2 = true;
+
 function compareTrue(n1,n2) {
   
   if (n1 && n2) {
     return true;
-  } else {
+  } 
+  else {
     return false;
   }
   
@@ -14,19 +16,21 @@ function compareTrue(n1,n2) {
 
 // Desafio 2
 
-let base = 20
-let height = 100
+let base = 20;
+let height = 100;
 
 function calcArea(base, height) {
-
-  let resultado 
+  
+  let resultado;
     if (resultado = (base * height) / (2)) {
       return resultado;
   }
 }
 
 // Desafio 3
-let Nome = 'Tarcisio Moura'
+
+let Nome = 'Tarcisio Moura';
+
 function splitSentence(Nome) {
   let arrey
   if (arrey = Nome.split(' ',)) {
@@ -35,8 +39,12 @@ function splitSentence(Nome) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+
+let nome = ['Tarcisio, Santos, Oliveira, Moura'];
+
+function concatName(nome) {
+  
+  return nome[nome.length -1] + ', ' + nome[0];
 }
 
 // Desafio 5
