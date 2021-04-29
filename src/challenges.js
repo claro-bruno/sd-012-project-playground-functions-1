@@ -53,7 +53,7 @@ function highestCount(array) {
   // seu código aqui
   let maior = array[0];
   let contador = 0;
-  for (let index in array){
+  for (let index in array) {
     if (array[index] > maior) {
       maior = array[index];
     }
@@ -73,30 +73,28 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat1';
   } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
     return 'cat2';
-  } else if (Math.abs(cat2 - mouse) === Math.abs(cat1 - mouse)){
+  } else if (Math.abs(cat2 - mouse) === Math.abs(cat1 - mouse)) {
     return 'os gatos trombam e o rato foge';
   }
 }
 
-
-//Função Math.abs - Retornar o valor em módulo de um número - fonte: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
-
+// Função Math.abs - Retornar o valor em módulo de um número - fonte: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
 
 // Desafio 8
 function fizzBuzz(numeros) {
   // seu código aqui
   let fizzbuzz = [];
-  for (number in numeros) {
+  for (let number in numeros) {
     if (numeros[number] % 3 === 0 && numeros[number] % 5 === 0) {
-      fizzbuzz.push('fizzBuzz')
+      fizzbuzz.push('fizzBuzz');
     } else if (numeros[number] % 3 === 0) {
-      fizzbuzz.push('fizz')
+      fizzbuzz.push('fizz');
     } else if (numeros[number] % 5 === 0) {
-      fizzbuzz.push('buzz')
+      fizzbuzz.push('buzz');
     } else {
-      fizzbuzz.push('bug!')
-    };
-  };
+      fizzbuzz.push('bug!');
+    }
+  }
   return fizzbuzz
 };
 
