@@ -33,6 +33,15 @@ function repNumero(arrNum, arrNum2) {
   return false;
 }
 
+function valida(arrNum) {
+  for (let index = 0; index < arrNum.length; index += 1) {
+    if (repNumero(arrNum, arrNum[index])) {
+      return true;
+    }
+  }
+  return false;
+}
+
 function msgErro(arrNum) {
   for (let index = 0; index < arrNum.length; index += 1) {
     if (arrNum[index] < 0) {
@@ -53,7 +62,7 @@ function generatePhoneNumber(arrNum) {
   if (arrNum.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
-  if (msgErro(arrNum) || repNumero(arrNum, arrNum[index])) {
+  if (msgErro(arrNum) || valida(arrNum)) {
     return 'não é possível gerar um número de telefone com esses valores';
   }
   return `(${gerNum(arrNum, 0, 2)}) ${gerNum(arrNum, 2, 7)}-${gerNum(arrNum, 7, 11)}`;
