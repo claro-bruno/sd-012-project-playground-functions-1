@@ -21,9 +21,8 @@ function splitSentence(phrase) {
 // Desafio 4
 function concatName(string) {
   // seu código aqui
-  return string[string.length -1] +' ' + string[0]
+  return string[string.length -1] + ' ' + string[0]
 };
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 // Desafio 5
 function footballPoints(wins,ties) {
   // seu código aqui
@@ -54,7 +53,7 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz(arrey) {
+function fizzBuzz() {
   // seu código aqui
   
 };
