@@ -74,7 +74,8 @@ if  (num[index] % 3 === 0) {
       
    numbersList = 'bug!';
    }
-   list.push(numbersList); 
+   list.push(numbersList);
+   numbersList = ''; 
 }
 
 return list;
