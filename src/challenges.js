@@ -82,17 +82,20 @@ function highestCount(numbers) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let calcCat1 = Math.abs(cat1) - mouse;
-  let calcCat2 = Math.abs(cat2) - mouse;
-  let menorDistancia;
-  if (calcCat1 < calcCat2){
-    menorDistancia = 'cat1';
-  } else if (calcCat1 === calcCat2){
-      menorDistancia = 'os gatos trombaram e o rato foge';
-    } else {
-    menorDistancia = 'cat2';
+  let calcCat1 = cat1 - mouse;
+  let calcCat2 = cat2 - mouse;
+  
+  if (Math.abs(calcCat1) < Math.abs(calcCat2)) {
+    return 'cat1';
+
+  } else if (Math.abs(calcCat1) > Math.abs(calcCat2)) {
+    return 'cat2';
+  
+  } else {
+    return 'os gatos trombaram e o rato foge';
+
   }
-  return menorDistancia;
+
 }
 console.log(catAndMouse(1, -2, -2))
 
