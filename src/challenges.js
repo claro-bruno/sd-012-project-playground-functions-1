@@ -2,9 +2,8 @@
 function compareTrue(boolean1, boolean2) {
   if (boolean1 === true && boolean2 === true) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 console.log(compareTrue(false, true));
 
@@ -90,9 +89,8 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat1';
   } else if (distanceCat1 === distanceCat2) {
     return 'os gatos trombam e o rato foge';
-  } else {
-    return 'cat2';
   }
+  return 'cat2';
 }
 console.log(catAndMouse(0, 12, -12));
 

@@ -42,9 +42,8 @@ function repeats3OrMoreTimes(elevenNumbersArray) {
   }
   if (contRepetido >= 3) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 // console.log(repeats3OrMoreTimes(elevenNumbersArray1));
 // console.log(repeats3OrMoreTimes(elevenNumbersArray2));
@@ -72,9 +71,8 @@ function triangleCheck(lineA, lineB, lineC) {
     return false;
   } else if (lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC || lineC < Math.abs(lineA - lineB))) {
     return false;
-  } else {
-    return true;
   }
+  return true;
 }
 console.log(triangleCheck(10, 14, 4));
 
@@ -91,9 +89,8 @@ function hydrate(string) {
   }
   if (sum === 1) {
     return `${sum} copo de água`;
-  } else {
-    return `${sum} copos de água`;
   }
+  return `${sum} copos de água`;
 }
 console.log(hydrate(string1));
 console.log(hydrate(string2));
