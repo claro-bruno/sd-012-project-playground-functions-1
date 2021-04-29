@@ -19,9 +19,13 @@ function splitSentence(sentence) {
 };
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(list) {
+  let arrayChange =[];
+  arrayChange = list.pop();
+  arrayChange.push(list[0]);
+  String.toString(arrayChange);
+  return arrayChange;
+};
 
 // Desafio 5
 function footballPoints() {
