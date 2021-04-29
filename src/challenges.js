@@ -27,10 +27,11 @@ function concatName(arrayStrings) {
 }
 // console.log (concatName(['captain', 'my', 'captain']));
 
-// // Desafio 5
-// function footballPoints() {
-//   // seu código aqui
-// }
+// Desafio 5
+function footballPoints(wins, ties) {
+  return (3*wins + 1*ties);
+}
+// console.log(footballPoints(0,0));
 
 // // Desafio 6
 // function highestCount() {
@@ -63,7 +64,7 @@ module.exports = {
   // decode,
   // encode,
   // fizzBuzz,
-  // footballPoints,
+  footballPoints,
   // highestCount,
   splitSentence,
 };
