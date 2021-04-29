@@ -50,6 +50,9 @@ footballPoints(wins, ties)
 
 // Desafio 6
 function highestCount(array) {
+let repeat = 0;
+let highNumber = 0;
+
   for (accountant = 0; accountant<array.length; accountant+=1){
     if (array[accountant] > highNumber){
       highNumber = array[accountant]
@@ -62,8 +65,6 @@ function highestCount(array) {
   }
 return repeat
 }
-let repeat = 0
-let highNumber = 0
 highestCount([9, 1, 2, 3, 9, 5, 7])
 
 // Desafio 7
