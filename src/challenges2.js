@@ -1,9 +1,11 @@
 // Desafio 10
 function createArrayTechList(tech, name) {
-  let objects = [];
-  if (objects.length === 0) {
+  if (tech.length === 0) {
     return 'Vazio!';
   }
+
+  let objects = [];
+
   for (let indexTech = 0; indexTech < tech.length; indexTech += 1) {
     objects[indexTech] = {
       tech: tech[indexTech],
