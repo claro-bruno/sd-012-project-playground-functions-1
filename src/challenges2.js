@@ -33,24 +33,33 @@ function repNumero(arrNum, arrNum2) {
   return false;
 }
 
-function gerNum(arrNum, n) {
-  let vezes = '';
-  for (let index = 0; index < n; index += 1) {
-    vezes += arrNum[Math.floor(Math.random() * arrNum.length)];
+function msgErro(arrNum) {
+  for (let index = 0; index < arrNum.length; index += 1) {
+    if (arrNum[index] < 0) {
+      return true;
+    }
+    if (arrNum[index] > 9) {
+      return true;
+    }
+    if (repNumero(arrNum, arrNum[index])) {
+      return true;
+    }
   }
-  return vezes;
+  return false;
+}
+
+function gerNum(arrNum, n1, n2) {  
+  return arrNum.slice(n1, n2).join('');
 }
 
 function generatePhoneNumber(arrNum) {
   if (arrNum.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
-  for (let index = 0; index < arrNum.length; index += 1) {
-    if (arrNum[index] < 0 || arrNum[index] > 9 || repNumero(arrNum, arrNum[index]) === true) {
-      return 'não é possível gerar um número de telefone com esses valores';
-    }
+  if (msgErro(arrNum)) {
+    return 'não é possível gerar um número de telefone com esses valores';
   }
-  return `(${gerNum(arrNum, 2)}) ${gerNum(arrNum, 5)}-${gerNum(arrNum, 4)}`;
+  return `(${gerNum(arrNum, 0, 2)}) ${gerNum(arrNum, 2, 7)}-${gerNum(arrNum, 7, 11)}`;
 }
 
 // Desafio 12
