@@ -53,15 +53,17 @@ function catAndMouse(mouse, cat1, cat2) {
 let arrayReturn = [];
 
 function fizzBuzz(array) {
+  let arrayReturn = [];
   for (let number in array) {
-    if (((array[number] % 3) === 0
-      && (array[number] % 5) !== 0)) {
+    let key = array[number];
+    if (((key % 3) === 0
+      && (key % 5) !== 0)) {
       arrayReturn[number] = 'fizz';
-    } else if ((array[number] % 3) !== 0
-    && (array[number] % 5) === 0) {
+    } else if ((key % 3) !== 0
+    && (key % 5) === 0) {
       arrayReturn[number] = 'buzz';
-    } else if ((array[number] % 3) === 0
-    && (array[number] % 5) === 0) {
+    } else if ((key % 3) === 0
+    && (key % 5) === 0) {
       arrayReturn[number] = 'fizzBuzz';
     } else {
       arrayReturn[number] = 'bug!';
