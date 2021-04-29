@@ -23,8 +23,10 @@ function splitSentence(sentence) {
 }
 
 // Desafio 4
-function concatName(firstLast) {
-  let result4 = [firstLast[firstLast.length - 1], firstLast[0]];
+function concatName(array) {
+  let firstArray = array[0];
+  let lastArray = array[(array.length) - 1];
+  let result4 = [lastArray, firstArray];
   return (result4);
 }
 
