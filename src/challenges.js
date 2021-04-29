@@ -28,13 +28,12 @@ function footballPoints(wins, ties) {
 function highestCount(array, maiorNumero) {
   for (let contador = 0; contador < array.length; contador++) {
    maiorNumero = array[contador]
-  } return maiorNumero
+  } 
 }
 
 for (let index = 0; index < array.length; index++) {
   array[index] = maiorNumero
-  return highestCount
-} 
+} return index
 
 // Desafio 7
 function catAndMouse() {
