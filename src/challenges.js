@@ -42,9 +42,9 @@ console.log((wins * 3) + (ties * 1));
 
 // Desafio 6
 let valores = [9, 1, 2, 9, 9, 5, 7];
-let contador = 0;
 
 function highestCount(valores) {
+  let contador = 0;
   for (index = 0; index <= valores.length; index ++) {
     if (valores[index] === Math.max(...valores)) {
       contador ++
