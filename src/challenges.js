@@ -1,14 +1,3 @@
-// Desafio 6 - ESLint
-function mostRepeated(numbers, greater) {
-  let counter = 0;
-  for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] === greater) {
-      counter += 1;
-    }
-  }
-  return counter;
-}
-
 // Desafio 8 - ESLint
 function validation(number) {
   if ((number % 5 === 0) && (number % 3 === 0)) {
@@ -23,7 +12,7 @@ function validation(number) {
   return 'bug!';
 }
 
-// Desafio 9.1 - ESLint
+// Desafio 9 - ESLint
 function challengeNine(characters, word, index) {
   for (let key in characters) {
     if (word[index] === key) {
@@ -65,13 +54,14 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(numbers) {
-  let greater = numbers[0];
+  let greater = Math.max.apply(null, numbers);
+  let counter = 0;
   for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] > greater) {
-      greater = numbers[index];
+    if (numbers[index] === greater) {
+      counter += 1;
     }
   }
-  return mostRepeated(numbers, greater);
+  return counter;
 }
 
 // Desafio 7
@@ -137,3 +127,5 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+
+console.log(highestCount([9, 19, 30, 30, 9, 5, 7]));
