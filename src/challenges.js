@@ -127,29 +127,6 @@ console.log(fizzBuzz([15, 30, 45]));
 
 // Desafio 9
 function encode(string) {
-  /*
-  recebe string e troca vogais minuscula por numero
-  achar as vogais = for
-  trocar se a
-  */
-
-  let changeVowel;
-
-  for (let index = 0; index < string.length; index += 1) {
-    if (index = "a", "e", "i", "o", "u") {
-      changeVowel = string.replace(/a/, '1', /e/, '2', /i/, '3', /o/, '4', /u/, '5');
-      // return string.replace(/e/, '2');
-      // return string.replace(/i/, '3');
-      // return string.replace(/o/, '4');
-      // return string.replace(/u/, '5');
-      return changeVowel;
-    }
- }
-  console.log(encode('hai there!'));
-}
-
-// Desafio 9
-function encode(string) {
   let novaString = '';
   for (let index = 0; index < string.length; index += 1) {
     novaString += string[index].replace(/a/, '1')
