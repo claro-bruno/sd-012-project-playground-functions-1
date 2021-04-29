@@ -10,10 +10,8 @@ function techList(arrayTech, name) {
       name: `${name}`,
     };
   }
-  return arrayObjects.sort((a, b) => ((a.tech > b.tech) ? 1 : -1));
+  return arrayObjects.sort((a, b) => (a.tech > b.tech ? 1 : -1));
 }
-// console.table(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
-// console.log(techList([], "Lucas"));
 
 // Desafio 11
 function generatePhoneNumber() {
