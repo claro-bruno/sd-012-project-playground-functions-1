@@ -71,7 +71,7 @@ if  (num[index] % 3 === 0) {
     
     } else (num[index] % 3 !== 0 && num[index] % 5 !== 0); {
       
-   list.push("bug");
+   list.push("bug!");
    }   
 }
 return list;
