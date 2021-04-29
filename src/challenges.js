@@ -18,10 +18,10 @@ function splitSentence(palavra) {
 // Desafio 4
 function concatName(nome) {
   return (`${nome[nome.length - 1]}, ${nome[0]}`);
-  }
+}
 // Desafio 5
 function footballPoints(wins, ties) {
-  return (wins * 3) + (ties * 1); 
+  return (wins * 3) + (ties * 1);
 }
 // Desafio 6
 function highestCount(Array) {
@@ -32,35 +32,31 @@ function highestCount(Array) {
       maior = Array[index];
     }
   }
-  for (let indexCont in Array){
+  for (let indexCont in Array) {
     if (maior === Array[indexCont]) {
       contador += 1;
-  }
-  return contador;
+    }
+    return contador;
   }
 }
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let auxCat1 = cat1 - mouse;
-  let auxCat2 = cat2 - mouse;
-  
+  let auxCat2 = cat2 - mouse;  
   if (Math.abs(auxCat1) < Math.abs(auxCat2)) {
     return 'cat1';
   } else if (Math.abs(auxCat2) < Math.abs(auxCat1)) {
     return 'cat2';
-  } else {
-  return 'os gatos trombam e o rato foge';
   }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
 function fizzBuzz(Array) {
-
   let stringResultado = [];
-
   for (let index = 0; index < Array.length; index += 1) {
-    if((Array[index] % 3 === 0) && (Array[index] % 5 !== 0)) {
+    if ((Array[index] % 3 === 0) && (Array[index] % 5 !== 0)) {
       stringResultado.push('fizz');
     } else if ((Array[index] % 3 !== 0) && (Array[index] % 5 === 0)) {
       stringResultado.push('buzz');
