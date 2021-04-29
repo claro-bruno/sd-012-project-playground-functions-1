@@ -28,9 +28,15 @@ function triangleCheck() {
 }
 
 // Desafio 13
-function hydrate(string) {
-
-
+function hydrate(hydrante) {
+  let regRule = /\d+/g;
+  let arrayHydrante = hydrante.match(regRule)
+  let quantia = 0
+  for (let key in arrayHydrante) {
+    quantia += parseInt(arrayHydrante[key])
+  }
+  let result = `${quantia} copos de água`
+return result
 }
 
 module.exports = {
