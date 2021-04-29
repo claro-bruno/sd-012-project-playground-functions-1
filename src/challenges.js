@@ -57,8 +57,8 @@ function highestCount(index) {
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   let moreNear = '';
-  let cat1Wins = cat1 - mouse;
-  let cat2Wins = cat2 - mouse;
+  let cat1Wins = Math.abs(cat1 - mouse);
+  let cat2Wins = Math.abs(cat2 - mouse);
 
   if (cat1Wins < cat2Wins) {
     moreNear = 'cat1';
