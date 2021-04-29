@@ -1,7 +1,7 @@
 // Desafio 10
 function techList(arr, name) {
 
-  let result = []
+  let result = [];
   arr = arr.sort();
   if (arr.length == 0) {
     return 'Vazio!';
@@ -23,18 +23,14 @@ function techList(arr, name) {
   return result;
 }
 
-const tecnologias = ["React", "Jest", "HTML", "CSS", "JavaScript"];
-console.log(techList(tecnologias, 'Lucas'));
-
-
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  return (lineA < (lineB + lineC)) && lineA > (Math.abs(lineB - lineC));
 }
 
 // Desafio 13
