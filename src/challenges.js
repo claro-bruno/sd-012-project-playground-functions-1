@@ -18,10 +18,13 @@ console.log(calcArea(51, 1));
 
 // base x altura / 2. Depois só chamar a função //
 // Desafio 3
-
-function splitSentence() {
-
+function splitSentence(frase) {
+  let fraseSeparada = frase.split(" ");
+  return fraseSeparada;
 }
+
+console.log(splitSentence("go Trybe"));
+// Tendo como referência : https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split //
 
 // Desafio 4
 function concatName() {
