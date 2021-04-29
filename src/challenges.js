@@ -1,18 +1,18 @@
 // Desafio 1
 function compareTrue(boolean1, boolean2) {
   // seu código aqui
-    if (boolean1 === true && boolean2 === true) {
-      return true 
-    } else {
-      return false
-    };
-};
+  if (boolean1 === true && boolean2 === true) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // Desafio 2
 function calcArea(base, altura) {
   // seu código aqui
-  return (base * altura / 2)
-};
+  return ((base * altura) / 2);
+}
 
 // Desafio 3
 function splitSentence(string) {
@@ -20,18 +20,18 @@ function splitSentence(string) {
   let array = [];
   let palavra = '';
   for (let word in string) {
-    if (string[word] != ' ') {
-      palavra = palavra + string[word]
-      if ((word == (string.length - 1))) {
-        array.push(palavra)
-      };
-    }  else {
-      array.push(palavra)
-      palavra = ''
-    };
-  };
+    if (string[word] !== ' ') {
+      palavra += string[word];
+      if ((word === (string.length - 1))) {
+        array.push(palavra);
+      }
+    } else {
+      array.push(palavra);
+      palavra = '';
+    }
+  }
   return array;
-};
+}
 
 // Desafio 4
 function concatName(array) {
