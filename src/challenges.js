@@ -123,11 +123,9 @@ function encode(encodeText) {
   return frase;
 }
 
-console.log(encode("How Are you"));
-
 function decode(decodeText) {
   // seu código aqui
-    let frase = decodeText.toLowerCase();
+    let frase = decodeText;
     let resultado;
   
     for (let index = 0; index <= frase.length; index += 1){
