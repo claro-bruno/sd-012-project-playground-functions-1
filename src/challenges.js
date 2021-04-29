@@ -58,25 +58,31 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-let arrayDeNumbers = [1, 2, 3, 4, 4, 1];
+/** Consultei o repositório do Luiz henrique para resolver essa parte.
+Link do repositório: https://github.com/tryber/sd-012-project-playground-functions/pull/117
+*/
+
+let arrayDeNumbers = [0, 0, 0];
 
 let repeticoesMaiorNumero = 0;
 
+let numeroMaisAlto = 0;
+
 function highestCount(arrayDeNumbers) {
   for (let index1Array = 0; index1Array < arrayDeNumbers.length; index1Array +=1) {
-    for (let index2Array = 0; index2Array < arrayDeNumbers.length; index2Array += 1) {
-      if (arrayDeNumbers[index1Array] >= arrayDeNumbers[index2Array]) {
-        if (arrayDeNumbers[index1Array] === arrayDeNumbers[index2Array]) {
-          repeticoesMaiorNumero += 1;
-        }
-      }
+    if(arrayDeNumbers[index1Array] > numeroMaisAlto) {
+      numeroMaisAlto = arrayDeNumbers[index1Array];
     }
   }
+    for (let index2Array = 0; index2Array < arrayDeNumbers.length; index2Array += 1) {
+      if (arrayDeNumbers[index2Array] === numeroMaisAlto) {
+          repeticoesMaiorNumero += 1;
+            
+      } 
+    }
+            
   return repeticoesMaiorNumero;
 }
-
-//highestCount(arrayDeTestes)
-console.log(repeticoesMaiorNumero);
 
 // Desafio 7
 function catAndMouse() {
