@@ -1,7 +1,4 @@
 // Desafio 1
-let boolean1 = false;
-let boolean2 = true;
-
 function compareTrue(boolean1, boolean2) {
   if (boolean1 === true && boolean2 === true) {
     return true;
@@ -9,24 +6,21 @@ function compareTrue(boolean1, boolean2) {
     return false;
   }
 }
-console.log(compareTrue(boolean1, boolean2));
+console.log(compareTrue(false, true));
 
 // Desafio 2
-let base = 51;
-let height = 1;
-
 function calcArea(base, height) {
   return (base * height) / 2;
 }
-console.log(calcArea(base, height));
+console.log(calcArea(51, 1));
 
 // Desafio 3
-let string1 = "go trybe";
-let string2 = "vamo que vamo";
-let string3 = "foguete"
+let string1 = 'go trybe';
+let string2 = 'vamo que vamo';
+let string3 = 'foguete';
 
 function splitSentence(string) {
-  let split = string.split(" ");
+  let split = string.split(' ');
   return split;
 }
 console.log(splitSentence(string1));
@@ -48,15 +42,12 @@ console.log(concatName(stringsArray2));
 console.log(concatName(stringsArray3));
 
 // Desafio 5
-let wins = 0;
-let ties = 0;
-
 function footballPoints(wins, ties) {
   let winPoints = wins * 3;
   let tiePoints = ties;
   return winPoints + tiePoints;
 }
-console.log(footballPoints(wins, ties));
+console.log(footballPoints(0, 0));
 
 // Desafio 6
 let numberArray1 = [9, 1, 2, 3, 9, 5, 7];
@@ -81,9 +72,9 @@ function highestCount(numberArray) {
 
   let contNumero = 0;
   for (let index in numberArray) {
-      if (highestNumber === numberArray[index]) {
-        contNumero += 1;
-      }
+    if (highestNumber === numberArray[index]) {
+      contNumero += 1;
+    }
   }
   return contNumero;
 }
@@ -92,22 +83,18 @@ console.log(highestCount(numberArray2));
 console.log(highestCount(numberArray3));
 
 // Desafio 7
-let mouse = 0;
-let cat1 = 12;
-let cat2 = -12;
-
 function catAndMouse(mouse, cat1, cat2) {
   let distanceCat1 = Math.abs(cat1 - mouse);
   let distanceCat2 = Math.abs(cat2 - mouse);
   if (distanceCat1 < distanceCat2) {
-    return "cat1";
+    return 'cat1';
   } else if (distanceCat1 === distanceCat2) {
-    return "os gatos trombam e o rato foge";
+    return 'os gatos trombam e o rato foge';
   } else {
-    return "cat2";
+    return 'cat2';
   }
 }
-console.log(catAndMouse(mouse, cat1, cat2));
+console.log(catAndMouse(0, 12, -12));
 
 // Desafio 8
 let numberArray4 = [2, 15, 7, 9, 45];
@@ -118,13 +105,13 @@ function fizzBuzz(numberArray) {
   let stringArray = [];
   for (let index in numberArray) {
     if (numberArray[index] % 3 === 0 && numberArray[index] % 5 !== 0) {
-      stringArray.push("fizz");
+      stringArray.push('fizz');
     } else if (numberArray[index] % 5 === 0 && numberArray[index] % 3 !== 0) {
-      stringArray.push("buzz");
+      stringArray.push('buzz');
     } else if (numberArray[index] % 3 === 0 && numberArray[index] % 5 === 0) {
-      stringArray.push("fizzBuzz");
+      stringArray.push('fizzBuzz');
     } else {
-      stringArray.push("bug!");
+      stringArray.push('bug!');
     }
   }
   return stringArray;
@@ -134,61 +121,59 @@ console.log(fizzBuzz(numberArray5));
 console.log(fizzBuzz(numberArray6));
 
 // Desafio 9
-let decodedString = "hi there!";
-let encodedString = "h3 th2r2!";
-
 function encode(decodedString) {
-  let encodedString = "";
+  let encodedString = '';
   for (let index in decodedString) {
     switch (decodedString[index]) {
-      case "a":
-        encodedString += "1";
-        break;
-      case "e":
-        encodedString += "2";
-        break;
-      case "i":
-        encodedString += "3";
-        break;
-      case "o":
-        encodedString += "4";
-        break;
-      case "u":
-        encodedString += "5"
-        break;
-      default:
-        encodedString += decodedString[index];
+    case 'a':
+      encodedString += '1';
+      break;
+    case 'e':
+      encodedString += '2';
+      break;
+    case 'i':
+      encodedString += '3';
+      break;
+    case 'o':
+      encodedString += '4';
+      break;
+    case 'u':
+      encodedString += '5';
+      break;
+    default:
+      encodedString += decodedString[index];
     }
   }
   return encodedString;
 }
-console.log(encode(decodedString));
+console.log(encode('hi there!'));
+
 function decode(encodedString) {
-  let decodedString = "";
+  let decodedString = '';
   for (let index in encodedString) {
     switch (encodedString[index]) {
-      case "1":
-        decodedString += "a";
-        break;
-      case "2":
-        decodedString += "e";
-        break;
-      case "3":
-        decodedString += "i";
-        break;
-      case "4":
-        decodedString += "o";
-        break;
-      case "5":
-        decodedString += "u"
-        break;
-      default:
-        decodedString += encodedString[index];
+    case '1':
+      decodedString += 'a';
+      break;
+    case '2':
+      decodedString += 'e';
+      break;
+    case '3':
+      decodedString += 'i';
+      break;
+    case '4':
+      decodedString += 'o';
+      break;
+    case '5':
+      decodedString += 'u';
+      break;
+    default:
+      decodedString += encodedString[index];
     }
   }
   return decodedString;
 }
-console.log(decode(encodedString));
+console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
