@@ -24,13 +24,13 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(valores, quantidade) {
-  for (let index = 0; index < valores.length; i++){
-  if(valores[index] === Math.max(...valores)) {
+function highestCount(array, quantidade) {
+  for (let index = 0; index < valores.length; i ++){
+    if(array[index] === Math.max(...array)) {
     quantidade++
   }
 }
-}
+} return quantidade;
 
 // Desafio 7
 function catAndMouse() {
