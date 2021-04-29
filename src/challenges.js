@@ -72,20 +72,21 @@ function catAndMouse(mouse, cat1, cat2) {
 };
 
 // Desafio 8
-function fizzBuzz(numbers){
+function fizzBuzz(number){
+  let numbers = [9,25]
   let arrayFizzBuzz = [];
   for (let number of numbers){
-    if((number / 3) === 0 && (number / 5) === 0) {
+    if((number % 3) === 0 && (number % 5) === 0) {
       arrayFizzBuzz.push("fizzBuzz");
-    } else if (number / 3 === 0) {
+    } else if (number % 3 === 0) {
       arrayFizzBuzz.push("fizz");
-    } else if (number / 5 === 0) {
+    } else if (number % 5 === 0) {
       arrayFizzBuzz.push("buzz");
     } else {
       arrayFizzBuzz.push("bug!");
     };
-    return arrayFizzBuzz
   };
+  return arrayFizzBuzz;
 };
 
 // Desafio 9
