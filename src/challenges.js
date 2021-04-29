@@ -13,11 +13,11 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(string) {
   let result = [];
-  let word = "";
+  let word = '';
   for (let index = 0; index <= string.length; index += 1) {
-    if (string[index] === " " || index === string.length) {
+    if (string[index] === ' ' || index === string.length) {
       result.push(word);
-      word = "";
+      word = '';
     } else {
       word += string[index];
     }
@@ -29,7 +29,7 @@ function splitSentence(string) {
 function concatName(arrayStrings) {
   let firstItem;
   let lastItem;
-  let result = "";
+  let result = '';
   for (let index = 0; index < arrayStrings.length; index += 1) {
     if (index === 0) {
       firstItem = arrayStrings[index];
@@ -46,23 +46,23 @@ function concatName(arrayStrings) {
 function footballPoints(wins, ties) {
   let winsPoints = wins * 3;
   let tiesPoints = ties * 1;
-  result = winsPoints + tiesPoints;
+  let result = winsPoints + tiesPoints;
   return result;
 }
 
 // Desafio 6
-function highestCount(highestCount) {
+function highestCount(arrayNumbers) {
   let maior = 0;
-  let result =0;
+  let result = 0;
 
-  for (let index in highestCount) {
-    if (highestCount[index] > maior) {
-      maior = highestCount[index];
+  for (let index in arrayNumbers) {
+    if (arrayNumbers[index] > maior) {
+      maior = arrayNumbers[index];
     }
   }
 
-  for (let index in highestCount) {
-    if (maior === highestCount[index]) {
+  for (let index in arrayNumbers) {
+    if (maior === arrayNumbers[index]) {
       result += 1;
     }
   }
@@ -71,16 +71,16 @@ function highestCount(highestCount) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let result = "";
-  let distCat1 = Math.abs(mouse-cat1);
-  let distCat2 = Math.abs(mouse-cat2);
+  let result = '';
+  let distCat1 = Math.abs(mouse - cat1);
+  let distCat2 = Math.abs(mouse - cat2);
 
   if (distCat1 < distCat2) {
-    result = "cat1";
+    result = 'cat1';
   } else if (distCat2 < distCat1) {
-    result = "cat2";
+    result = 'cat2';
   } else {
-    result = "os gatos trombam e o rato foge";
+    result = 'os gatos trombam e o rato foge';
   }
 
   return result;
@@ -92,13 +92,13 @@ function fizzBuzz(numbersArray) {
 
   for (let index in numbersArray) {
     if (numbersArray[index] % 3 === 0 && numbersArray[index] % 5 === 0) {
-      result.push("fizzBuzz");
+      result.push('fizzBuzz');
     } else if (numbersArray[index] % 3 === 0) {
-      result.push("fizz");
+      result.push('fizz');
     } else if (numbersArray[index] % 5 === 0) {
-      result.push("buzz");
+      result.push('buzz');
     } else {
-      result.push("bug!");
+      result.push('bug!');
     }
   }
   return result;
@@ -106,18 +106,18 @@ function fizzBuzz(numbersArray) {
 
 // Desafio 9
 function encode(string) {
-  let result = "";
+  let result = '';
   for (let index in string) {
-    if (string[index] === "a") {
-      result += "1";
-    } else if (string[index] === "e") {
-      result += "2";
-    } else if (string[index] === "i") {
-      result += "3";
-    } else if (string[index] === "o") {
-      result += "4";
-    } else if (string[index] === "u") {
-      result += "5";
+    if (string[index] === 'a') {
+      result += '1';
+    } else if (string[index] === 'e') {
+      result += '2';
+    } else if (string[index] === 'i') {
+      result += '3';
+    } else if (string[index] === 'o') {
+      result += '4';
+    } else if (string[index] === 'u') {
+      result += '5';
     } else {
       result += string[index];
     }
@@ -126,18 +126,18 @@ function encode(string) {
 }
 
 function decode(string) {
-  let result = "";
+  let result = '';
   for (let index in string) {
-    if (string[index] === "1") {
-      result += "a";
-    } else if (string[index] === "2") {
-      result += "e";
-    } else if (string[index] === "3") {
-      result += "i";
-    } else if (string[index] === "4") {
-      result += "o";
-    } else if (string[index] === "5") {
-      result += "u";
+    if (string[index] === '1') {
+      result += 'a';
+    } else if (string[index] === '2') {
+      result += 'e';
+    } else if (string[index] === '3') {
+      result += 'i';
+    } else if (string[index] === '4') {
+      result += 'o';
+    } else if (string[index] === '5') {
+      result += 'u';
     } else {
       result += string[index];
     }
