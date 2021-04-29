@@ -38,9 +38,15 @@ function generatePhoneNumber(foneNumbers) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
-}
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA > (lineB + lineC) || lineB > (lineA + lineC) || lineC > (lineB + lineA)){
+    return false;
+  } else if (lineA > Math.abs(lineB- lineC) || lineB > Math.abs(lineA - LineC) || lineC > Math.abs(lineA - lineB)){
+    return false;
+  } else {
+    return true;
+  };
+};
 
 // Desafio 13
 function hydrate() {
