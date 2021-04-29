@@ -24,15 +24,15 @@ function generatePhoneNumber() {
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  let difA = lineA - (lineB + lineC)
-  let difB = lineB - (lineB + lineC)
-  let difC = lineC - (lineB + lineA)
+  let difA = (lineB - lineC)
+  let difB = (lineA - lineC)
+  let difC = (lineB - lineA)
   if (Math.abs(lineA) > Math.abs(difA)) {
     if (lineA < (lineB + lineC)){
       return true
     }
   } else if (Math.abs(lineB) > Math.abs(difB)) {
-    if (lineB < (lineB + lineC)) {
+    if (lineB < (lineA + lineC)) {
       return true
     }
   } else if (Math.abs(lineC) > Math.abs(difC)) {
@@ -42,7 +42,7 @@ function triangleCheck(lineA, lineB, lineC) {
   }
   return false
 }
-console.log(triangleCheck(10,13,2))
+console.log(triangleCheck(10, 8, 14))
 // Desafio 13
 function hydrate(hydrate) {
   let regRule = /\d+/g;
