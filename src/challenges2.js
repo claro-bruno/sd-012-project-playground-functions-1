@@ -51,9 +51,8 @@ function hydrate(birita) {
   }
   if (qtdBirita > 1) {
     return `${qtdBirita} copos de água`;
-  } else {
-    return `${qtdBirita} copo de água`;
   }
+  return `${qtdBirita} copo de água`;
 }
 
 module.exports = {
