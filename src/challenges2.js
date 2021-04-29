@@ -3,17 +3,19 @@ function techList(tech, nome) {
   let sortArray = tech.sort();
   let arrayTech = [];
   let techs = {};
-  if (tech === '') {
-    return 'Vazio!';
+  let resultado = arrayTech;
+  if (tech.length === 0) {
+    resultado = 'Vazio!';
+  } else {
+    for (let index = 0; index < sortArray.length; index += 1) {
+      techs = {
+        tech: sortArray[index],
+        name: nome,
+      };
+      arrayTech.push(techs);
+    }
   }
-  for (let index = 0; index < sortArray.length; index += 1) {
-    techs = {
-      tech: sortArray[index],
-      name: nome,
-    };
-    arrayTech.push(techs);
-  }
-  return arrayTech;
+  return resultado;
 }
 
 // Desafio 11
