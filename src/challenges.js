@@ -16,9 +16,8 @@ function splitSentence(string) {
 };
 // Desafio 4
 function concatName(string) {
-  let ultimaposicao = string[names.lenght -1]
-  let primeiraposicao = string[0];
-  return ultimaposicao + ', ' + primeiraposicao;
+  let arrayNomes = (`${string[string.length - 1]}, ${string[0]}`);
+  return arrayNomes;
 };
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -27,10 +26,10 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(numeros) {
-let maiornumero = 0;
-  for (let index in numeros) {
-  if (numeros[maiornumero] < numeros[index]) {
-    maiornumero = index;
+let maiornumero = [0];
+  for (let index =0; index < numeros.length; index +=1) {
+  if (numeros[maiornumero] > numeros[index]) {
+    maiornumero = numeros[index];
   }
 }
 return maiornumero;
@@ -47,13 +46,23 @@ function fizzBuzz() {
 // Desafio 9
 function encode(param1) {
   let Encode = {
-  
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
   };
+  return Encode
 };
 function decode() {
   let Decode = {
-  
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
     };
+    return Decode
 };
 
 module.exports = {
