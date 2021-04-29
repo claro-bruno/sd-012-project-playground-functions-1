@@ -93,8 +93,8 @@ function fizzBuzz(arrayFizzBuzz) {
       arrayAnswer.push('fizzBuzz');
     } else {
       arrayAnswer.push('bug!');
-    }
-  }
+    };
+  };
   return arrayAnswer;
 }
 
@@ -124,13 +124,38 @@ function encode(stringEncode) {
       default:
         phraseEncode = phraseEncode + stringEncode[index4];
         break;
-    }
-  }
+    };
+  };
   return phraseEncode;
 }
 
-function decode() {
+function decode(stringDecode) {
   // seu código aqui
+  let phraseDecode = '';
+
+  for (let index4 = 0; index4 < stringDecode.length; index4 += 1) {
+    switch (stringDecode[index4]) {
+      case '1': 
+        phraseDecode = phraseDecode + 'a';
+        break;
+      case '2': 
+        phraseDecode = phraseDecode + 'e';
+        break;
+      case '3': 
+        phraseDecode = phraseDecode + 'i';
+        break;
+      case '4': 
+        phraseDecode = phraseDecode + 'o';
+        break;
+      case '5': 
+        phraseDecode = phraseDecode + 'u';
+        break;
+      default:
+        phraseDecode = phraseDecode + stringDecode[index4];
+        break;
+    };
+  };
+  return phraseDecode;
 }
 
 module.exports = {
