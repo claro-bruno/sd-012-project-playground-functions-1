@@ -1,23 +1,23 @@
 // Desafio 1
 function compareTrue(firstOperator, secondOperator) {
-  if (firstOperator === true && secondOperator === true) {
-      return true;
-  } else {
-      return false;
-  }
+let comparison = false;
+if (firstOperator === true && secondOperator === true) {
+    comparison = true;
 }
-  // Desafio 2
+return comparison;
+}
+// Desafio 2
 function calcArea(base, height) {
-  return (( base * height ) / 2 );
+  return ((base * height) / 2);
 }
 // Desafio 3
 function splitSentence(string) {
-  let words = string.split(" "); //Ref.: https://stackoverflow.com/questions/18473326/javascript-break-sentence-by-words#:~:text=Just%20use%20split%20%3A,%22%2C%20%22sentence.%22%5D
+  let words = string.split(' '); // Ref.: https://stackoverflow.com/questions/18473326/javascript-break-sentence-by-words#:~:text=Just%20use%20split%20%3A,%22%2C%20%22sentence.%22%5D
   return words;
 }
 // Desafio 4
 function concatName(array) {
-  return (array[(array.length) - 1] + ", " + array[0]);
+  return ((array[(array.length) - 1]) + ', ' + array[0]);
 }
 // Desafio 5
 function footballPoints(wins, ties) {
