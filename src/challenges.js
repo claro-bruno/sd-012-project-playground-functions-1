@@ -17,10 +17,11 @@ function splitSentence(string) {
 }
 // Desafio 4
 function concatName(array) {
-  let item1 = array[(array.length) - 1];
-  let item2 = array[0];
-  return (item1 + ', ' + item2);
+  const item1 = array[(array.length) - 1];
+  const item2 = array[0];
+  return item1 + ', ' + item2;
 }
+
 // Desafio 5
 function footballPoints(wins, ties) {
   return (3 * wins) + ties;
