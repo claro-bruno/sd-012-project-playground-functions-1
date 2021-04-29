@@ -27,13 +27,13 @@ function footballPoints(wins, ties) {
 function highestCount(Array) {
   let maior = 0;
   let contador = 0;
-  for (let index = 0; index < Array.length; index += 1) {
-    if (maior < Array[index]) {
-      maior = Array[index];
+  for (let key = 0; key < Array.length; key += 1) {
+    if (maior < Array[key]) {
+      maior = Array[key];
     }
   }
-  for (let indexCont in Array) {
-    if (maior === Array[indexCont]) {
+  for (let keyCont in Array) {
+    if (maior === Array[keyCont]) {
       contador += 1;
     }
     return contador;
@@ -43,24 +43,25 @@ function highestCount(Array) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let auxCat1 = cat1 - mouse;
-  let auxCat2 = cat2 - mouse;  
+  let auxCat2 = cat2 - mouse;
   if (Math.abs(auxCat1) < Math.abs(auxCat2)) {
     return 'cat1';
   } else if (Math.abs(auxCat2) < Math.abs(auxCat1)) {
     return 'cat2';
-  }
+  } else {
   return 'os gatos trombam e o rato foge';
+  }
 }
 
 // Desafio 8
 function fizzBuzz(Array) {
   let stringResultado = [];
-  for (let index = 0; index < Array.length; index += 1) {
-    if ((Array[index] % 3 === 0) && (Array[index] % 5 !== 0)) {
+  for (let key = 0; key < Array.length; key += 1) {
+    if ((Array[key] % 3 === 0) && (Array[key] % 5 !== 0)) {
       stringResultado.push('fizz');
-    } else if ((Array[index] % 3 !== 0) && (Array[index] % 5 === 0)) {
+    } else if ((Array[key] % 3 !== 0) && (Array[key] % 5 === 0)) {
       stringResultado.push('buzz');
-    } else if ((Array[index] % 3 === 0) && (Array[index] % 5 === 0)) {
+    } else if ((Array[key] % 3 === 0) && (Array[key] % 5 === 0)) {
       stringResultado.push('fizzBuzz');
     } else {
       stringResultado.push('bug!');
@@ -69,14 +70,50 @@ function fizzBuzz(Array) {
   return stringResultado;
 }
 
+//let stringAquiorigin = "hi there!";
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(stringAqui) {
+  let stringRetornoEncode = '';
+  for (let key in stringAqui) {
+    if (stringAqui[key] === 'a') {
+      stringRetornoEncode += '1'; 
+    } else if (stringAqui[key] === 'e') {
+      stringRetornoEncode += '2';
+    } else if (stringAqui[key] === 'i') {
+      stringRetornoEncode += '3'; 
+    } else if (stringAqui[key] === 'o') {
+      stringRetornoEncode += '4'; 
+    } else if (stringAqui[key] === 'u') {
+      stringRetornoEncode += '5'; 
+    } else {
+      stringRetornoEncode += stringAqui[key];
+    }
+  }
+  return stringRetornoEncode;
 }
-function decode() {
-  // seu código aqui
-}
+//console.log(encode(stringAquiorigin));
 
+//let outra = "h3 th2r2!";
+function decode(stringAqui) {
+  let stringRetornoDecode = '';
+  for (let key in stringAqui) {
+    if (stringAqui[key] === '1') {
+      stringRetornoDecode += 'a'; 
+    } else if (stringAqui[key] === '2') {
+      stringRetornoDecode += 'e';
+    } else if (stringAqui[key] === '3') {
+      stringRetornoDecode += 'i'; 
+    } else if (stringAqui[key] === '4') {
+      stringRetornoDecode += 'o'; 
+    } else if (stringAqui[key] === '5') {
+      stringRetornoDecode += 'u'; 
+    } else {
+      stringRetornoDecode += stringAqui[key];
+    }
+  }
+  return stringRetornoDecode;
+}
+//console.log(decode(outra));
 module.exports = {
   calcArea,
   catAndMouse,
