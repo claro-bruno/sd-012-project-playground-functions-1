@@ -76,21 +76,36 @@ function highestCount(arrayNumeros) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let cat1Distance = Math.abs (cat1 - mouse);
-  let cat2Distance = Math.abs (cat2 - mouse);
-  
-  if (cat1Distance < cat2Distance) {
+  let cat1Distance = Math.abs(cat1 - mouse); // Usar Math para obter valor absoluto.
+  let cat2Distance = Math.abs(cat2 - mouse);
+
+  if (cat1Distance === cat2Distance) {
+    return 'os gatos trombam e o rato foge';  
+  } else if (cat1Distance < cat2Distance) {
     return 'cat1';
-  } else if (cat1Distance > cat2Distance) {
-    return 'cat2';
-  } else if (cat2Distance === cat1Distance) {
-    return 'os gatos trombam e o rato foge';
   }
+  return 'cat2';
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(arrayNumeros) {
   // seu código aqui
+  let string = [];
+
+  for (let index = 0; index < arrayNumeros.length; index +=1) {
+    if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
+      string.push("fizzBuzz");
+    } else if (arrayNumeros[index] % 5 === 0) {
+      string.push("buzz");
+    }else if (arrayNumeros[index] % 3 === 0) {
+      string.push("fizz");  
+    }else if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
+      string.push("fizzBuzz");
+    } else {
+      string.push("bug!");
+    }
+  }
+return string;
 }
 
 // Desafio 9
