@@ -42,19 +42,19 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat1diff = (cat1 - mouse);
   let cat2diff = (cat2 - mouse);
 
-    if((cat1 - mouse) < 0) {
-      cat1diff = ((cat1 - mouse) * -1);
-    }
-    if((cat2 - mouse) < 0) {
-      cat2diff = ((cat2 - mouse) * -1);
-    }
+  if((cat1 - mouse) < 0) {
+    cat1diff = ((cat1 - mouse) * -1);
+  }
+  if((cat2 - mouse) < 0) {
+    cat2diff = ((cat2 - mouse) * -1);
+  }
 
   if (cat1diff === cat2diff) {
-    return "os gatos trombam e o rato foge";
-  } else if (cat1diff > cat2diff){
-    return "cat2";
+    return 'os gatos trombam e o rato foge';
+  } if (cat1diff > cat2diff) {
+    return 'cat2';
   } else {
-    return "cat1";
+    return 'cat1';
   }
 }
 
@@ -64,15 +64,15 @@ function fizzBuzz(array) {
   for (let number in array) {
     if (((array[number] % 3) === 0
       && (array[number] % 5) !== 0)) {
-      arrayReturn[number] = "fizz";
+      arrayReturn[number] = 'fizz';
     } else if ((array[number] % 3) !== 0
       && (array[number] % 5) === 0) {
-        arrayReturn[number] = "buzz";
+        arrayReturn[number] = 'buzz';
     } else if ((array[number] % 3) === 0
       && (array[number] % 5) === 0) {
-      arrayReturn[number] = "fizzBuzz";
+      arrayReturn[number] = 'fizzBuzz';
     } else {
-      arrayReturn[number] = "bug!";
+      arrayReturn[number] = 'bug!';
     }
   }
   return arrayReturn;
@@ -80,38 +80,38 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-  array = string.split('');
+  let array = string.split('');
     for (let char in array) {
-      if (array[char] === 'a') {
-        array[char] = '1';
-      } if (array[char] === 'e') {
-        array[char] = '2';
-      } if (array[char] === 'i') {
-        array[char] = '3';
-      } if (array[char] === 'o') {
-        array[char] = '4';
-      } if (array[char] === 'u') {
-        array[char] = '5';
-      }
+    if (array[char] === 'a') {
+      array[char] = '1';
+    } if (array[char] === 'e') {
+      array[char] = '2';
+    } if (array[char] === 'i') {
+      array[char] = '3';
+    } if (array[char] === 'o') {
+      array[char] = '4';
+    } if (array[char] === 'u') {
+      array[char] = '5';
     }
+  }
   return array.join(""); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
 }
 function decode(string) {
-  array = string.split('');
+  let array = string.split('');
     for (let char in array) {
-      if (array[char] === '1') {
-        array[char] = 'a';
-      } if (array[char] === '2') {
-        array[char] = 'e';
-      } if (array[char] === '3') {
-        array[char] = 'i';
-      } if (array[char] === '4') {
-        array[char] = 'o';
-      } if (array[char] === '5') {
-        array[char] = 'u';
-      }
+    if (array[char] === '1') {
+      array[char] = 'a';
+    } if (array[char] === '2') {
+      array[char] = 'e';
+    } if (array[char] === '3') {
+      array[char] = 'i';
+    } if (array[char] === '4') {
+      array[char] = 'o';
+    } if (array[char] === '5') {
+      array[char] = 'u';
     }
-  return array.join(""); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
+  }
+  return array.join(''); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
 }
 
 module.exports = {
