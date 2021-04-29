@@ -86,10 +86,10 @@ function encode(frase) {
       break;
     case 'u': frase[i] = '5';
       break;
-    default: frase[i] === frase[i]
+    default: frase[i] === frase[i];
     }
   }
-  return frase.join('')
+  return frase.join('');
 }
 function decode(frase) {
   // seu código aqui
