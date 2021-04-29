@@ -33,7 +33,8 @@ function highestCount(array, maiorNumero) {
 
 for (let index = 0; index < array.length; index++) {
   array[index] = maiorNumero
-} return highestCount
+  return highestCount
+} 
 
 // Desafio 7
 function catAndMouse() {
