@@ -17,14 +17,14 @@ let height = 50;
 
 function calcArea(base, height) {
   return (base * height) / 2;
-
-
-
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+
+function splitSentence(string) {
+  return string.split(' ');
+  // .split divide uma string em partes.
+  // Evita o uso de expressões regulares.
 }
 
 // Desafio 4
