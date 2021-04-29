@@ -71,7 +71,7 @@ function highestCount(numbers) {
   for (index = 0; index < numbers.length; index += 1){
     if (maior === numbers[index]){
       cont +=1
-    }else if(maior === 0){
+    } else if(maior === 0){
       cont = 3
     };
   };
@@ -87,7 +87,7 @@ function catAndMouse(mouse, cat1, cat2) {
   let menorDistancia;
   if (calcCat1 < calcCat2){
     menorDistancia = 'cat1';
-  } else if (Cat1 === Cat2){
+  } else if (cat1 === cat2){
       menorDistancia = 'os gatos trombaram e o rato foge';
     } else {
     menorDistancia = 'cat2';
