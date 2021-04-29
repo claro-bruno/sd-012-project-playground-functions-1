@@ -39,21 +39,18 @@ function generatePhoneNumber(arrayNumbers) {
     return 'Array com tamanho incorreto.';
   }
   if (numeroCorreto === true) {
-    arrayNumbers = arrayNumbers.toString();
     let numeroFinal = '(';
     for (let indice = 0; indice < 11; indice += 1) {
-      if (indice < 2) {
-        numeroFinal = numeroFinal + arrayNumbers[indice];
-      } else if (indice >= 2 && indice < 6) {
-        numeroFinal = numeroFinal + arrayNumbers[indice];
-      } else if (indice >= 6) {
-        numeroFinal = numeroFinal + arrayNumbers[indice];
+      numeroFinal = numeroFinal + arrayNumbers[indice];
+        if (indice === 1) {
+        numeroFinal = numeroFinal + ')'
+      } else if (indice === 6) {
+        numeroFinal = numeroFinal + '-'
       }
     }
     return numeroFinal;
   }
 }
-console.log(generatePhoneNumber([8, 2, 9, 9, 8, 0, 1, 9, 6, 3, 3]));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
