@@ -50,8 +50,9 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 // Desafio 8
+let arrayReturn = [];
+
 function fizzBuzz(array) {
-  let arrayReturn = [];
   for (let number in array) {
     if (((array[number] % 3) === 0
       && (array[number] % 5) !== 0)) {
@@ -71,38 +72,23 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-  let array = string.split('');
-  for (let char = 0; char < array.length; char += 1) {
-    if (array[char] === 'a') {
-      array[char] = '1';
-    } if (array[char] === 'e') {
-      array[char] = '2';
-    } if (array[char] === 'i') {
-      array[char] = '3';
-    } if (array[char] === 'o') {
-      array[char] = '4';
-    } if (array[char] === 'u') {
-      array[char] = '5';
-    }
-  }
-  return array.join(''); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
+  let text = string;
+  text = text.replace(/a/g, '1');
+  text = text.replace(/e/g, '2');
+  text = text.replace(/i/g, '3');
+  text = text.replace(/o/g, '4');
+  text = text.replace(/u/g, '5');
+  return text;
 }
+
 function decode(string) {
-  let array = string.split('');
-  for (let char = 0; char < array.length; char += 1) {
-    if (array[char] === '1') {
-      array[char] = 'a';
-    } if (array[char] === '2') {
-      array[char] = 'e';
-    } if (array[char] === '3') {
-      array[char] = 'i';
-    } if (array[char] === '4') {
-      array[char] = 'o';
-    } if (array[char] === '5') {
-      array[char] = 'u';
-    }
-  }
-  return array.join(''); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
+  let text = string;
+  text = text.replace(/1/g, 'a');
+  text = text.replace(/2/g, 'e');
+  text = text.replace(/3/g, 'i');
+  text = text.replace(/4/g, 'o');
+  text = text.replace(/5/g, 'u');
+  return text;
 }
 
 module.exports = {
