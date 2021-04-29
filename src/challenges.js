@@ -73,34 +73,6 @@ function fizzBuzz(receivedNumbers) {
   return result;
 }
 
-/* function fizzBuzz2Aux(resultReceived, receivedIndex) {
-  for (let index in receivedIndex) {
-    if (resultReceived[receivedIndex[index]] % 3 === 0) {
-      resultReceived[receivedIndex[index]] = 'fizz';
-    } else if (resultReceived[receivedIndex[index]] % 5 === 0) {
-      resultReceived[receivedIndex[index]] = 'buzz';
-    } else resultReceived[receivedIndex[index]] = 'bug!';
-  }
-  return resultReceived;
-} */
-
-/* function fizzBuzz2(receivedNumbers) {
-  let result = [];
-  let indexAux = [];
-  for (let index in receivedNumbers) {
-    if ((receivedNumbers[index] % 3 === 0) && (receivedNumbers[index] % 5 === 0)) {
-      result.push('fizzBuzz');
-    } else {
-      result.push(receivedNumbers[index]);
-      indexAux.push(index);
-    }
-  }
-  fizzBuzz2Aux(result, indexAux);
-  return result;
-} */
-
-console.log(fizzBuzz2([2, 15, 7, 9, 45, 10, 25]));
-
 // Desafio 9
 function encode(receivedSentence) {
   let encodeSentence;
