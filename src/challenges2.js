@@ -8,7 +8,7 @@ function techList(vetor,name) {
   for(let each in vetor){
     obj ={
       tech: vetor[each],
-      nome: name
+      name: name
     }
     resultado.push(obj)
   }
