@@ -38,7 +38,7 @@ return maiornumero;
 };
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
 };
 
@@ -48,11 +48,15 @@ function fizzBuzz() {
 };
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(param1) {
+  let Encode = {
+  
+  };
 };
 function decode() {
-  // seu código aqui
+  let Decode = {
+  
+    };
 };
 
 module.exports = {
