@@ -1,24 +1,19 @@
-// Desafio 10
+// Desafio 10*
 function techList(tech, name) {
-
-  tech = tech.sort();
-
-  let tecnologias = {
-    tecnologia: tech,
-    nome: name
-  };
-
-  if (tech.length > 0) {
-    for (let index = 0; index < tech.length; index += 1 ) {
-      console.log(`${tecnologias.tecnologia[index]}, ${tecnologias.nome}`);
+  if (tech.length === 0) {
+    return 'Vazio!'
+  } else {
+    for (let index in tech.sort()) {
+      let tecnologias = {
+        tecnologia: tech[index],
+        nome: name
+      };
+      console.log(tecnologias);
     }
-  } else if (tech.length === 0) {
-    return 'Vazio!';
   }
 }
 
-
-// Desafio 11
+// Desafio 11*
 function generatePhoneNumber(arrayNumbers) {
   let numeroCorreto = true;
   let numero;
@@ -32,7 +27,7 @@ function generatePhoneNumber(arrayNumbers) {
         }
       }
 
-      if (arrayNumbers[index] > 9 || arrayNumbers[index] < 0 || count >= 3) {
+      if (arrayNumbers[index] > 9 || arrayNumbers[index] < 0 || count >= 5) {
         numeroCorreto = false;
         return 'não é possível gerar um número de telefone com esses valores';
       }
@@ -42,9 +37,21 @@ function generatePhoneNumber(arrayNumbers) {
     return 'Array com tamanho incorreto.';
   }
   if (numeroCorreto === true) {
-    return `(${arrayNumbers[0]}${arrayNumbers[1]}) ${arrayNumbers[2]}${arrayNumbers[3]}${arrayNumbers[4]}${arrayNumbers[5]}${arrayNumbers[6]}-${arrayNumbers[7]}${arrayNumbers[8]}${arrayNumbers[9]}${arrayNumbers[10]}`;
+    arrayNumbers = arrayNumbers.toString();
+    let numeroFinal = '';
+    for (let indice = 0; indice < 11; indice += 1) {
+      if (indice < 2) {
+        numeroFinal = numeroFinal + arrayNumbers[indice];
+      } else if (indice >= 2 && indice < 6) {
+        numeroFinal = numeroFinal + arrayNumbers[indice];
+      } else if (indice >= 6) {
+        numeroFinal = numeroFinal + arrayNumbers[indice];
+      }
+    }
+    return numeroFinal;
   }
 }
+// console.log(generatePhoneNumber([8, 2, 9, 9, 8, 0, 1, 9, 6, 3, 3]));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
