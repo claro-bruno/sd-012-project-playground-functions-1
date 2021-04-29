@@ -59,7 +59,7 @@ function fizzBuzz() {
 
 // Desafio 9
 function encode() {
-  // seu código aqui
+  // seu código aqui // usar split() // tentar objetos
 }
 function decode() {
   // seu código aqui
