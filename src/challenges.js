@@ -24,7 +24,7 @@ function splitSentence(string) {
 function concatName(Valor) {
 
   let arrayLeng = Valor.length - 1
-  let resultado =  Valor[arrayLeng]  + ", " + Valor[0]
+  let resultado = Valor[arrayLeng] + ", " + Valor[0]
   return resultado
 
 }
@@ -34,8 +34,8 @@ function footballPoints(wins, ties) {
   let pontos = 3
   let pontosEmpate = 1
   let pontosTotal = wins * pontos + pontosEmpate * ties
-  return pontosTotal 
-
+  return pontosTotal
+}
 // Desafio 6
 function highestCount() {
   // seu código aqui
@@ -52,8 +52,8 @@ function catAndMouse(mouse, cat1, cat2) {
     return "cat1"
   } else if (distanciaMouse2 <= 2 && distanciaMouse2 > distanciaMouse) {
     return "cat2"
+  }
 }
-
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
