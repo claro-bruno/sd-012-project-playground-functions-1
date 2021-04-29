@@ -1,7 +1,25 @@
 // Desafio 10
-function techList() {
+function techList(vetor,name) {
   // seu código aqui
+ 
+  let resultado = []
+  vetor.sort()
+  let obj = {};
+  for(let each in vetor){
+    obj ={
+      tech: vetor[each],
+      nome: name
+    }
+    resultado.push(obj)
+  }
+if(vetor.length == 0){
+  return console.log("Vazio!")
 }
+else{ 
+  return resultado
+}
+}
+
 
 // Desafio 11
 function generatePhoneNumber() {

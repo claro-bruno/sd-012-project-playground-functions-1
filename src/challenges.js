@@ -159,25 +159,6 @@ function decode(letras) {
    } 
   return resultado.join('');
 }
-function techList(vetor,name){
-  let resultado = []
-  vetor.sort()
-  let obj = {};
-  for(let each in vetor){
-  
-  obj ={
-    tech: vetor[each],
-    nome: name
-  }
-  resultado.push(obj)
- 
-}
-if(vetor.length == 0)
-return console.log("Vazio!")
-else
-return resultado
-}
-
 
 
 module.exports = {
