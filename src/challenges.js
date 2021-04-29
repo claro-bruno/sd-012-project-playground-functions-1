@@ -26,8 +26,12 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+let Nome = 'Tarcisio Moura'
+function splitSentence(Nome) {
+  let arrey
+  if (arrey = Nome.split(' ',)) {
+    return arrey;
+  }
 }
 
 // Desafio 4
