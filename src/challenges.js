@@ -42,25 +42,25 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  let num= [2, 15, 7, 9, 45];
+function fizzBuzz(num) {
+  let num = [];
+
 for (index = 0; index <= num.length; index+= 1) {
 if  (index % 3 === 0) {
-  console.log("fizz");
+  num[index] = 'fizz';
+
   } else if (index % 5 === 0) {
-    console.log("buzz");
+    num[index] = "buzz";
     
 } else if (index % 3 === 0 && index % 5 === 0) {
-    console.log("fizzBuzz");
+    num[index] = 'fizzBuzz';
     
-    } else if (index % 3 !== 0 && index % 5 !== 0){
+    } else (index % 3 !== 0 && index % 5 !== 0); {
       
-   console.log("bug");
+   num[index] = 'bug';
    
-   } else {
-     console.log(index);
-     }
-     return fizzBuzz();
+   } 
+     return num;
 }
 }
 
