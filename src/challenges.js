@@ -63,13 +63,13 @@ function fizzBuzz(array) {
   let arrayReturn = [];
   for (let number in array) {
     if (dividedBy3(array[number]) === true
-      && dividedBy5 !== true)) {
+      && dividedBy5(array[number]) !== true) {
       arrayReturn[number] = 'fizz';
     } else if (dividedBy3(array[number]) !== true
-      && dividedBy5 === true)) {
+      && dividedBy5(array[number]) === true) {
       arrayReturn[number] = 'buzz';
     } else if (dividedBy3(array[number]) === true
-      && dividedBy5 === true)) {
+      && dividedBy5(array[number]) === true) {
       arrayReturn[number] = 'fizzBuzz';
     } else {
       arrayReturn[number] = 'bug!';
