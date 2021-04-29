@@ -47,22 +47,22 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz(list) {
-let num = [];
+function fizzBuzz(num) {
+let list = [];
 for (let index = 0; index < num.length; index+= 1) {
 
 if  (num[index] % 3 === 0) {
-  list.push = 'fizz';
+  list.push('fizz');
 
   } else if (num[index] % 5 === 0) {
-    list.push = "buzz";
+    list.push("buzz");
     
 } else if (num[index] % 3 === 0 && num[index] % 5 === 0) {
-    list.push = 'fizzBuzz';
+    list.push('fizzBuzz');
     
     } else (num[index] % 3 !== 0 && num[index] % 5 !== 0); {
       
-   list.push = 'bug';
+   list.push('bug');
    }   
 }
 return list;
