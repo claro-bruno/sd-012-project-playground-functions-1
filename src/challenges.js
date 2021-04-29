@@ -11,7 +11,7 @@ function compareTrue(boolean1, boolean2) {
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
-  let area = (base * height / 2);
+  let area = ((base * height) / 2);
   return area;
 }
 
@@ -29,15 +29,14 @@ function concatName(arr) {
   // seu código aqui
   let last = arr[arr.length - 1];
   let first = arr[0];
-  let together = last + ',' + ' ' + first;
+  let together = last + ', ' + first;
   return together;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  
-  let points = (wins*3) + ties;
+  let points = (wins * 3) + ties;
   return points;
 }
 
