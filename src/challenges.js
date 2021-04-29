@@ -81,30 +81,32 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 
 let arrayFinal = [];
-let divisibleBy3 = 'fizz';
-let divisibleBy5 = 'buzz';
-let divisibleByBoth = 'fizzBuzz';
-let notDivisible = 'bug !';
-
 function fizzBuzz(array) {
+
   for (index = 0; index < array.length; index += 1) {
-    if ( (array[index] % 3) === 0 ){
-    return arrayFinal[index].push(divisibleBy3)
+   
+    if((array[index]) % 3 === 0 && (array[index] % 5) === 0 ){
+    arrayFinal.push('fizzBuzz')
+
     }
     
     else if (( array[index] % 5) === 0 ) {
-    return arrayFinal[index].push(divisibleBy5)
+    arrayFinal.push('buzz')
+
     }  
 
-    else if ((array[index] % 3 && array[index] % 5) === 0 ) {
-    return arrayFinal[index].push(divisibleByBoth)
-    }
-    else return arrayFinal[index].push(notDivisible)
-  }  
+    else if ( (array[index] % 3) === 0 ) {
+    arrayFinal.push('fizz')
 
+    }
+
+    else arrayFinal.push('bug !')
+
+  }  
+return arrayFinal
 }
 
-// console.log(fizzBuzz([7, 9]))
+// console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
 function encode() {
