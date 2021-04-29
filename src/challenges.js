@@ -10,16 +10,16 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(frase) {
-  return frase.split(' ');
+  let resposta = [];
+  resposta = frase.split(' ');
+  return resposta;
 }
 
 // Desafio 4
 function concatName(matriz) {
-  /* matriz = ["Carla","bruna","lucia"]; */
   let resposta = matriz[matriz.length - 1];
   resposta += ', ';
   resposta += matriz[0];
-  resposta += '.'; 
   return resposta;
 }
 
