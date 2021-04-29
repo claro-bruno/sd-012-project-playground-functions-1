@@ -2,10 +2,10 @@
 function compareTrue(num1, num2) {
 
   if (num1 === 5*2 && num2 === 2) {
-    return 'true'
+    return true
         
   }else{
-    return 'false'
+    return false
   }
 }
 
@@ -43,15 +43,13 @@ console.log(splitSentence("foguete"))
 function concatName(){
 
 let nomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-nomes.push('foguete', 'não', 'tem', 'ré')
-nomes.push('captain', 'my', 'captain')
-
-return nomes
+let nomes2 = ['foguete', 'não', 'tem', 'ré'];
+let nomes3 = ['captain', 'my', 'captain']
+return nomes.concat(nomes2,nomes3)
+ 
 }
 
-console.log(concatName()[0] +' '+ concatName()[3])
-console.log(concatName()[7] +' '+ concatName()[4])
-console.log(concatName()[8] +' '+ concatName()[10])
+console.log(concatName(0,1))
 
 
 
