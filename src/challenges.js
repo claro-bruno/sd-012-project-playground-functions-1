@@ -67,13 +67,24 @@ function highestCount(array) {
    } else { 
      return "os gatos trombam e o rato foge";
    }
- } console.log(catAndMouse(0, 6, 12));
-
+ }// console.log(catAndMouse(0, 6, 12));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(numeros) {
+  let arrayDeStrings = [];
+  for (let index = 0; index < numeros.length; index += 1) {
+    if (numeros[index] % 3 === 0 ) {
+      arrayDeStrings.push('fizz');  
+    } else if (numeros[index] % 5 === 0) {
+      arrayDeStrings.push('buzz'); 
+    } else if ( numeros[index] % 3 === 0 && numeros[index] % 5 === 0) {
+      arrayDeStrings.push('fizBuzz');
+    } else {
+      arrayDeStrings.push('bug!'); 
+    }
+  }  
+    return arrayDeStrings;
+} console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
