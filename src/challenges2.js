@@ -3,13 +3,15 @@ function techList(tech, name) {
   if (tech.length === 0) {
     return 'Vazio!'
   } else {
+    let arrayTech = [];
     for (let index in tech.sort()) {
       let tecnologias = {
         tecnologia: tech[index],
         nome: name
       };
-      console.log(tecnologias);
+      arrayTech.push(tecnologias);
     }
+    return arrayTech;
   }
 }
 
@@ -38,7 +40,7 @@ function generatePhoneNumber(arrayNumbers) {
   }
   if (numeroCorreto === true) {
     arrayNumbers = arrayNumbers.toString();
-    let numeroFinal = '';
+    let numeroFinal = '(';
     for (let indice = 0; indice < 11; indice += 1) {
       if (indice < 2) {
         numeroFinal = numeroFinal + arrayNumbers[indice];
@@ -51,7 +53,7 @@ function generatePhoneNumber(arrayNumbers) {
     return numeroFinal;
   }
 }
-// console.log(generatePhoneNumber([8, 2, 9, 9, 8, 0, 1, 9, 6, 3, 3]));
+console.log(generatePhoneNumber([8, 2, 9, 9, 8, 0, 1, 9, 6, 3, 3]));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
