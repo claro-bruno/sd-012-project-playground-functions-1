@@ -114,7 +114,7 @@ function fizzBuzz(arrayOfNumbers) {
     if (arrayOfNumbers[index] % 3 !== 0 && arrayOfNumbers[index] % 5 !== 0) {
       newArray.push(divNone);
     } else if (arrayOfNumbers[index] % 3 === 0 && arrayOfNumbers[index] % 5 === 0) {
-      newArray.push(div35);         
+      newArray.push(div35);        
     } else if (arrayOfNumbers[index] % 3 === 0 && arrayOfNumbers[index] % 5 !== 0) {
       newArray.push(div3);
     } else if (arrayOfNumbers[index] % 3 !== 0 && arrayOfNumbers[index] % 5 === 0) {
@@ -127,10 +127,10 @@ console.log(fizzBuzz([15, 30, 45]));
 
 // Desafio 9
 function encode(string) {
-  /* 
+  /*
   recebe string e troca vogais minuscula por numero
   achar as vogais = for
-  trocar se a 
+  trocar se a
   */
 
   // let changeVowel;
@@ -164,7 +164,7 @@ function encode(string) {
 }
 
 function decode() {
-  /* 
+  /*
   recebe string contendo numeros no lugar das letras minusculas
   retorna string com vogais no lugar dos numeros
   */
