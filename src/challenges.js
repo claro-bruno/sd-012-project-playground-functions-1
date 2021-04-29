@@ -48,10 +48,10 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat1diff = (cat1 - mouse);
   let cat2diff = (cat2 - mouse);
 
-  if((cat1 - mouse) < 0) {
+  if ((cat1 - mouse) < 0) {
     cat1diff = ((cat1 - mouse) * -1);
   }
-  if((cat2 - mouse) < 0) {
+  if ((cat2 - mouse) < 0) {
     cat2diff = ((cat2 - mouse) * -1);
   }
 
@@ -59,7 +59,7 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'os gatos trombam e o rato foge';
   } if (cat1diff > cat2diff) {
     return 'cat2';
-  } else {
+  } if (cat1diff < cat2diff) {
     return 'cat1';
   }
 }
@@ -73,7 +73,7 @@ function fizzBuzz(array) {
       arrayReturn[number] = 'fizz';
     } else if ((array[number] % 3) !== 0
     && (array[number] % 5) === 0) {
-        arrayReturn[number] = 'buzz';
+      arrayReturn[number] = 'buzz';
     } else if ((array[number] % 3) === 0
     && (array[number] % 5) === 0) {
       arrayReturn[number] = 'fizzBuzz';
@@ -86,8 +86,8 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-let array = string.split('');
-    for (let char in array) {
+  let array = string.split('');
+  for (let char in array) {
     if (array[char] === 'a') {
       array[char] = '1';
     } if (array[char] === 'e') {
@@ -103,8 +103,8 @@ let array = string.split('');
   return array.join(""); // Ref.: https://stackoverflow.com/questions/12132178/using-join-method-to-convert-array-to-string-without-commas
 }
 function decode(string) {
-let array = string.split('');
-    for (let char in array) {
+  let array = string.split('');
+  for (let char in array) {
     if (array[char] === '1') {
       array[char] = 'a';
     } if (array[char] === '2') {
