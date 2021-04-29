@@ -36,15 +36,14 @@ function generatePhoneNumber(numbers) {
       contRepeated = contNumber;
     }
     contNumber = 0;
-    if (numbers[num] < 0 || numbers[num] > 9 || contRepeated >= 3) {
+    if (numbers.length !== 11) {
+      return 'Array com tamanho incorreto.'
+    }
+    else if (numbers[num] < 0 || numbers[num] > 9 || contRepeated >= 3) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
-  if (numbers.length !== 11) {
-    return 'Array com tamanho incorreto.'
-  } else {
     return newPhoneNumber
-  }
 }
 
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
