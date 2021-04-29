@@ -21,16 +21,18 @@ function splitSentence(sentence) {
 // Desafio 4
 function concatName(list) {
   let arrayChange = [];
-  arrayChange [0] = list.pop();
-  arrayChange.push(list[0]);
-  String.toString(arrayChange);
-  return arrayChange;
+  for(let index = list.length - 1; index >= 0; index -= 1 ){
+    if (index === 0 || index === (list.length -1)) {
+      arrayChange.push(list[index]);
+    }
+  }
+
+  return String.toString(arrayChange);
 };
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  let result = (wins * 3) + (ties);
-  return result;
+  return (wins * 3) + (ties);
 };
 
 // Desafio 6
