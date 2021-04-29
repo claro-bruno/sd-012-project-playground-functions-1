@@ -1,5 +1,6 @@
 // Desafio 10
 function techList(techArr, name) {
+  techArr.sort();
   let res = [];
   for(let index = 0; index < techArr.length; index +=1) {
     let obj = {
@@ -14,7 +15,6 @@ function techList(techArr, name) {
     return res;
   }
 }
-console.log(techList(['CSS', 'JEST'], "Lucas"));
 
 // Desafio 11
 function generatePhoneNumber(array) {
