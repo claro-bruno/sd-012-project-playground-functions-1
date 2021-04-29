@@ -48,6 +48,7 @@ function footballPoints(wins, ties) {
 // console.log(footballPoints(0,0))
 
 // Desafio 6
+
 function highestCount(array){
   let maxNumbers = Math.max(...array);
   let counter = 0;
@@ -58,10 +59,12 @@ function highestCount(array){
   }
    return counter
 }
+
 // console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 
 
 // Desafio 7
+
 function catAndMouse(mouse, cat1, cat2) {
   let result1 = Math.abs(cat1 - mouse) 
   let result2 = Math.abs(cat2 - mouse) 
@@ -77,6 +80,7 @@ function catAndMouse(mouse, cat1, cat2) {
 // console.log(catAndMouse(2,3,4))
 
 // Desafio 8
+
 let arrayFinal = [];
 let divisibleBy3 = 'fizz';
 let divisibleBy5 = 'buzz';
@@ -101,7 +105,7 @@ function fizzBuzz(array) {
   
 }
 
-console.log(fizzBuzz([7, 9]))
+// console.log(fizzBuzz([7, 9]))
 
 // Desafio 9
 function encode() {
