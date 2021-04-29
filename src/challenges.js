@@ -1,17 +1,17 @@
 // Desafio 1
 function compareTrue(idade, altura) {
 
-  if (idade > 10 && altura > 2 || altura === 10) {
-    return true
+  if (idade > 10 && altura > 2) {
+    return true;
         
   }else{
-    return false
+    return false;
   }
 }
 
-console.log(compareTrue(12, 2))
-console.log(compareTrue(1, 22))
-console.log(compareTrue(12, 22))
+console.log(compareTrue(12, 2));
+console.log(compareTrue(1, 22));
+console.log(compareTrue(12, 22));
 
 
 // Desafio 2
