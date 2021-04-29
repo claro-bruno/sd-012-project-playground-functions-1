@@ -47,13 +47,20 @@ function footballPoints(wins, ties) {
 }
 // console.log(footballPoints(0,0))
 
-// Desafio 6
+// Cliente 6
+let duplicatedNumbers = [];
 function highestCount(array) {
-  // for (index = 0; index < array.length ; index += 1){
-  // return Math.max(array)
-  // }
+  for (index = 0; index < array.length ; index += 1){
+    let maxNumbers = Math.max(...array)
+        if (maxNumbers === array[index]){
+      duplicatedNumbers.push(array[index])
+      
+    } 
+  }
+  let finalNumbers = duplicatedNumbers.length
+  return finalNumbers
 }
-// console.log(highestCount([9, 1, 2, 3, 9, 5, 7]))
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 
 
 // Desafio 7
