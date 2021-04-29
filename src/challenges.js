@@ -44,19 +44,20 @@ function highestCount(Array) {
 function catAndMouse(mouse, cat1, cat2) {
   cat1 -= - mouse;
   cat2 -= - mouse;
-  if (cat1 < cat2) {
+  if (Math.abs(cat1) < Math.abs(cat2)) {
     return 'cat2';
-  } else if (cat2 < cat1) {
+  } else if (Math.abs(cat2) < Math.abs(cat1)) {
     return 'cat1';
   } else {
   return 'os gatos trombam e o rato foge';
   }
 }
-
+let Array = [2, 15, 7, 9, 45];
 // Desafio 8
 function fizzBuzz() {
-  
+    
 }
+console.log (fizzBuzz(Array));
 
 // Desafio 9
 function encode() {
