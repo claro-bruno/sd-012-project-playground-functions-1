@@ -62,25 +62,30 @@ function fizzBuzz(matriz) {
 
 // Desafio 9
 function encode(variavel) {
+  let caracter = '';
   let resposta = '';
-  switch (variavel){
-    case 'a':
-      resposta = 1;
-    case 'e':
-      resposta = 2;
-      break;
-    case 'i':
-      resposta = 3;
-      break;
-    case 'o':
-        resposta = 4;
-      break;
-    case 'u':
-      resposta = 5;
-      break;
-    case 'hi there!'
-      resposta = 'h3 th2r2!';
-      break;
+  for (let index = 0; index < variavel.length; index += 1) {
+    switch (variavel.substr(index,1)) {
+      case 'a':
+        caracter = '1';
+        break;
+      case 'e':
+        caracter = '2';
+        break;
+      case 'i':
+        caracter = '3';
+        break;
+      case 'o':
+        caracter = '4';
+        break;
+      case 'u':
+        caracter = '5';
+        break;
+      default:
+        caracter = variavel.substr(index,1);
+    }
+    resposta += caracter;
+  }
 }
 
 function decode() {
