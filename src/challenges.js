@@ -65,7 +65,7 @@ function highestCount(array) {
    } else if (distanciaCat1ToMouse < distanciaCat2ToMouse) { 
      return "cat1";
    } else { 
-     return "os gatos trobam e o rato foge";
+     return "os gatos trombam e o rato foge";
    }
  } console.log(catAndMouse(0, 6, 12));
 
