@@ -123,6 +123,7 @@ function decode(stringDecode) {
     };
   };
   return stringDecode;
+  
 }
 
 module.exports = {
