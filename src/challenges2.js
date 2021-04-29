@@ -1,5 +1,5 @@
 // Desafio 10
-function techList(name, techName) {
+function techList(techName, name) {
   let objeto = [];
   let lista = {};
     if (techName.length === 0) {
@@ -15,7 +15,8 @@ function techList(name, techName) {
     return objeto;
   }
 }
-console.log(techList('Lucas', ["React", "Jest", "HTML", "CSS", "JavaScript"]))
+// console.log(techList([], 'Lucas'))
+
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
@@ -27,8 +28,9 @@ function triangleCheck() {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+
+
 }
 
 module.exports = {
