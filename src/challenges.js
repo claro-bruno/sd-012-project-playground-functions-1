@@ -104,26 +104,45 @@ function encode(string) {
   //console.log(separado);
   let tamanho = string.length;
   for (let index = 0; index < tamanho; index += 1) {
-    if (string[index] == "a") {
+    if (string[index] === "a") {
       separado[index] = "1";
-    } else if (string[index] == "e") {
+    } else if (string[index] === "e") {
       separado[index] = "2";
-    } else if (string[index] == "i") {
+    } else if (string[index] === "i") {
       separado[index] = "3";
-    } else if (string[index] == "o") {
+    } else if (string[index] === "o") {
       separado[index] = "4";
-    } else if (string[index] == "u") {
+    } else if (string[index] === "u") {
       separado[index] = "5";
     };
   };
   separado = separado.join("");
+  //console.log(separado);
   return separado;
 }
-function decode() {
-  // seu código aqui
-}
+
+function decode(string) {
+  let separado = string.split("");
+  let tamanho = string.length;
+  for (let index = 0; index < tamanho; index += 1) {
+    if (string[index] === "1") {
+      separado[index] = "a";
+    } else if (string[index] === "2") {
+      separado[index] = "e";
+    } else if (string[index] === "3") {
+      separado[index] = "i";
+    } else if (string[index] === "4") {
+      separado[index] = "o";
+    } else if (string[index] === "5") {
+      separado[index] = "u";
+    };
+  };
+  separado = separado.join("");
+  return separado;
+} 
 
 console.log(encode("hi there!"));
+console.log(decode("h3 th2r2!"));
 
 module.exports = {
   calcArea,
