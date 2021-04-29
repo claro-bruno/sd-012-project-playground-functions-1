@@ -4,32 +4,24 @@ function techList(tecnologia, nome) {
   let objLista = [];
   tecnologia = tecnologia.sort();
 
-  for(let i = 0; i < tecnologia.length; i += 1){
+  for (let i = 0; i < tecnologia.length; i += 1) {
     let obj = {
-      tech: "eita",
+      tech: 'eita',
       name: nome,
+    }
+    obj.tech = tecnologia[i];
+    objLista.push(obj);
   }
-      obj.tech = tecnologia[i];
-      objLista.push(obj);
-  }
-  if (tecnologia.length > 0){
-  return objLista;
-  } {
-    return 'Vazio!';
-  }
+  if (tecnologia.length > 0) {
+    return objLista;
+  } 
+  return 'Vazio!';
+
 }
 
 // Desafio 11
 function generatePhoneNumber(n) {
   // seu código aqui
-  let qtd = 0;
-  for (let i = 0; i < n.length; i++){
-    
-  }
-  if (n.length === 11) {
-    return '(' + n[0] + n[1] + ') ' + n[2] + n[3] + n[4] + n[5] + n[6] + '-' + n[7] + n[8] + n[9] + n[10];
-  }
-  return 'não é possível gerar um número de telefone com esses valores';
 }
 
 // Desafio 12
