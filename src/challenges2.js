@@ -124,7 +124,12 @@ function hydrate(drinks) {
   for (drink in drinkList){
     glassesOfWater += parseInt(drinkList[drink]);
   }
-  return glassesOfWater;
+  if (glassesOfWater === 1){
+    return glassesOfWater + ' copo de água';
+  }
+  else {
+    return glassesOfWater + ' copos de água';
+  }
 }
 // let drinks = '1 cachaça, 5 cervejas e 1 copo de vinho';
 // console.log(drinks.match(/\d+/g));
