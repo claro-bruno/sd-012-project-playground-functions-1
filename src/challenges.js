@@ -54,11 +54,13 @@ function highestCount(array) {
   // seu código aqui
   let maior = 0;
   let result = 0;
+  // aqui ele verifica qual é o maior
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] > maior) {
       maior = array[index];
     }
   }
+  // aqui ele me mostra quantas vezes ele se repete
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] === maior) {
       result += 1;
@@ -75,20 +77,23 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  //seu código aqui
-  // if (array % 3 === 0) {
-  //   console.log('Fizz');
-  // } else if (array % 3 === 0) {
-  //   console.log('Buzz');
-  // } else if (array % 3 === 0 && array % 3 === 0) {
-  //   console.log('fizzbuzz');
-  // } else {
-  //   console.log('Bug');
-  // }
-  // return array;
+function fizzBuzz(array) {
+  // seu código aqui
+  let arrayFinal = [];
+  for (index = 0; index < array.length; index += 1) {
+    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
+      arrayFinal.push('fizzBuzz');
+    } else if (array[index] % 3 === 0) {
+      arrayFinal.push('Fizz');
+    } else if (array[index] % 5 === 0) {
+      arrayFinal.push('Buzz');
+    } else {
+      arrayFinal.push('bug');
+    }
+  }
+  return arrayFinal;
 }
-// console.log(fizzBuzz([2, 15, 7, 9, 45]));
+// console.log(fizzBuzz([7, 9]));
 
 // Desafio 9
 function encode() {
