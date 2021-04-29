@@ -73,16 +73,16 @@ function highestCount(array) {
 function fizzBuzz(numeros) {
   let arrayDeStrings = [];
   for (let index = 0; index < numeros.length; index += 1) {
-    if (numeros[index] % 3 === 0 ) {
-      arrayDeStrings.push('fizz');  
+    if (numeros[index] % 3 === 0 && numeros[index] % 5 === 0) {
+      arrayDeStrings.push('fizzBuzz');
+    } else if (numeros[index] % 3 === 0) {
+      arrayDeStrings.push('fizz');
     } else if (numeros[index] % 5 === 0) {
-      arrayDeStrings.push('buzz'); 
-    } else if ( numeros[index] % 3 === 0 && numeros[index] % 5 === 0) {
-      arrayDeStrings.push('fizBuzz');
+      arrayDeStrings.push('buzz');
     } else {
-      arrayDeStrings.push('bug!'); 
+      arrayDeStrings.push('bug!');
     }
-  }  
+  }
     return arrayDeStrings;
 } console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
