@@ -37,7 +37,7 @@ function mostRepeatedCount(array){
   let maxElement = array[0];
   let maxCount = 1;
   for(let index = 0; index < array.length - 1; index += 1){
-      let count = 0;
+      let count = 1;
       for(let pointer = index + 1; pointer < array.length; pointer += 1){
           if(array[index] === array[pointer]){
               count += 1;
@@ -50,6 +50,8 @@ function mostRepeatedCount(array){
   }
   return maxCount;
 }
+// let array = [0, 2, 3, 4, 4, 2, 7, 8, 9, 9, 4];
+// console.log(mostRepeatedCount(array));
 
 function containsInvalidDigit(array){
   let isInvalid = 0;
@@ -66,6 +68,7 @@ function containsInvalidDigit(array){
   }
 }
 // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
+// let array = [0, 2, 3, 4, 4, 2, 7, 8, 9, 9, 4];
 // console.log(containsInvalidDigit(array));
 
 function generatePhoneNumber(numberArray) {
@@ -92,7 +95,8 @@ function generatePhoneNumber(numberArray) {
   return formatedNumber;
 }
 // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
-// console.log(generatePhoneNumber(array));
+let array = [0, 2, 3, 4, 4, 2, 7, 8, 9, 9, 4];
+console.log(generatePhoneNumber(array));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
@@ -105,10 +109,25 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 // console.log(triangleCheck(10, 14, 8));
 
+
+
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+
+// Com uso da dica em https://www.encodedna.com/javascript/how-to-get-numbers-from-a-string-in-javascript.htm
+// var tName = 'arun_4874_541';
+// console.log(tName.match(/\d+/g));
+
+function hydrate(drinks) {
+  let drinkList = drinks.match(/\d+/g);
+  let glassesOfWater = 0;
+  for(drink in drinkList){
+    glassesOfWater += parseInt(drink);
+  }
+  return glassesOfWater;
 }
+// let drinks = '1 cachaça, 5 cervejas e 1 copo de vinho';
+// // console.log(drinks.match(/\d+/g));
+// console.log(hydrate(drinks));
 
 module.exports = {
   generatePhoneNumber,
