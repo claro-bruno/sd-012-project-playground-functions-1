@@ -17,12 +17,15 @@ function calcArea(base, height) {
 function splitSentence(string) {
   return (string.split(' '));
 }
-console.log(splitSentence('go Trybe'));
+// console.log(splitSentence('go Trybe'));
 
-// // Desafio 4
-// function concatName() {
-//   // seu código aqui
-// }
+// Desafio 4
+function concatName(arrayStrings) {
+  let firstItem = arrayStrings[0];
+  let lastItem = arrayStrings[arrayStrings.length - 1];
+  return (lastItem + ', ' + firstItem); 
+}
+// console.log (concatName(['captain', 'my', 'captain']));
 
 // // Desafio 5
 // function footballPoints() {
@@ -56,7 +59,7 @@ module.exports = {
   calcArea,
   // catAndMouse,
   compareTrue,
-  // concatName,
+  concatName,
   // decode,
   // encode,
   // fizzBuzz,
