@@ -61,17 +61,17 @@ function fizzBuzz(num) {
 for (let index = 0; index <= num.length; index+= 1) {
 
 if  (num[index] % 3 === 0) {
-  num.push('fizz');
+  num = 'fizz';
 
   } else if (num[index] % 5 === 0) {
-    num.push("buzz");
+    num = 'buzz';
     
 } else if (num[index] % 3 === 0 && num[index] % 5 === 0) {
-    num.push('fizzBuzz');
+    num = 'fizzBuzz';
     
     } else (num[index] % 3 !== 0 && num[index] % 5 !== 0); {
       
-   num.push('bug');
+   num = 'bug';
    }   
 }
 return num;
