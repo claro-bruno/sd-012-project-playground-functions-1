@@ -17,7 +17,7 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(arraySplitSentence) {
   // seu código aqui
-  return arraySplitSentence.split(" "); // retirado https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
+  return arraySplitSentence.split(' '); // retirado https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
 }
 
 // Desafio 4
@@ -61,37 +61,114 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
+function mult3Mult5(numMult3Mult5) {
+  let num = numMult3Mult5;
+  let out = '';
+  if (num % 3 === 0) {
+    if (num % 5 === 0) {
+      out = 'fizzBuzz';
+    } else {
+      out = 'fizz';
+    }
+  } else {
+    out = 'buzz';
+  }
+  return out;
+}
+
 function fizzBuzz(arrayFizzBuzz) {
   // seu código aqui
   let arrayReturn = [];
   for (let indArrayFizzBuzz = 0; indArrayFizzBuzz < arrayFizzBuzz.length; indArrayFizzBuzz += 1) {
-    if (arrayFizzBuzz[indArrayFizzBuzz] % 3 === 0){
-      if (arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0) {
-      arrayReturn[indArrayFizzBuzz] = 'fizzBuzz';
-      } 
-      else {
-        arrayReturn[indArrayFizzBuzz] = 'fizz';
-      }  
-    } 
-    else if (arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0 && arrayFizzBuzz[indArrayFizzBuzz] % 3 !== 0) {
-      arrayReturn[indArrayFizzBuzz] = 'buzz';
-    } 
-    else {
+    if (arrayFizzBuzz[indArrayFizzBuzz] % 3 === 0 || arrayFizzBuzz[indArrayFizzBuzz] % 5 === 0) {
+      arrayReturn[indArrayFizzBuzz] = mult3Mult5(arrayFizzBuzz[indArrayFizzBuzz]);
+    } else {
       arrayReturn[indArrayFizzBuzz] = 'bug!';
     }
   }
   return arrayReturn;
 }
-let array = [1, 3, 5, 15]
-console.log(fizzBuzz(array))
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+// function vogal() {
+//  let objeto = {
+//    1: 'a',
+//    2: 'e',
+//    3: 'i',
+//    4: 'o',
+//    5: 'u'
+//  }
+//  return objeto;
+// }
+// function number () {
+//  let objeto = {
+//    a: '1',
+//    e: '2',
+//    i: '3',
+//    o: '4',
+//    u: '5'
+//  }
+//  return objeto;
+// }
+
+function change (mudChar) {
+  switch (mudChar) {
+    case 'a':
+      mudChar = '1';
+      break;
+    case 'e':
+      mudChar = '2';
+      break;
+    case 'i':
+      mudChar = '3';
+      break;
+    case 'o':
+      mudChar = '4';
+      break;
+    case 'u':
+      mudChar = '5';
+      break;
+    case '1':
+      mudChar = 'a';
+      break;
+    case '2':
+      mudChar = 'e';
+      break;
+    case '3':
+      mudChar = 'i';
+      break;
+    case '4':
+      mudChar = 'o';
+      break;
+    case '5':
+      mudChar = 'u';
+      break;
+    default:
+      break;
+  }
+  return mudChar;
 }
 
-function decode() {
+function encode(strEncode) {
   // seu código aqui
+  let separa = strEncode.split('');
+  for (let key = 0; separa.length > key; key += 1) {
+    if (separa[key] === 'a' || strEncode[key] === 'e' || strEncode[key] === 'i' || strEncode[key] === 'o' || strEncode[key] === 'u') {
+      separa[key] = change(strEncode[key]);
+    }
+  }
+  return separa.join('');
+}
+
+function decode(strDecode) {
+  // seu código aqui
+  let separa = strDecode.split('');
+  for (let key in separa) {
+    if (separa[key] === '1' || separa[key] === '2' || separa[key] === '3' || separa[key] === '4' || separa[key] === '5') {
+      separa[key] = change(strDecode[key]);
+    }
+  }
+  return separa.join('');
 }
 
 module.exports = {
