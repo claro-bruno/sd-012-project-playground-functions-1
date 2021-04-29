@@ -17,8 +17,8 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
-let listaNomes = [' ', ' '];
+function concatName(listaNomes) {
+let string;
 let inicio = nomes[0];
 let fim = listaNomes[listaNomes.length - 1];    
 return (fim + '' + inicio);
