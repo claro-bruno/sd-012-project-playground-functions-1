@@ -45,10 +45,9 @@ let count = 0;
 for (let index = 0; index < numbers.length; index+= 1) {
   
    if (maxNumber === numbers[i]) {
-     count += 1;
-   }
-} return count;
-
+     count += 1;}
+} 
+     return count;
 }
 
 // Desafio 7
@@ -58,24 +57,24 @@ function catAndMouse() {
 
 // Desafio 8
 function fizzBuzz(num) {
-let list = [];
+
 for (let index = 0; index <= num.length; index+= 1) {
 
 if  (num[index] % 3 === 0) {
-  list.push('fizz');
+  num.push('fizz');
 
   } else if (num[index] % 5 === 0) {
-    list.push("buzz");
+    num.push("buzz");
     
 } else if (num[index] % 3 === 0 && num[index] % 5 === 0) {
-    list.push('fizzBuzz');
+    num.push('fizzBuzz');
     
     } else (num[index] % 3 !== 0 && num[index] % 5 !== 0); {
       
-   list.push('bug');
+   num.push('bug');
    }   
 }
-return list;
+return num;
 }
 
 // Desafio 9
