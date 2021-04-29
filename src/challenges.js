@@ -33,15 +33,15 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(numArray) {
-  let hiNum = 0;
+  let higherNum = 0;
   let repetitions = 0;
   for (let index in numArray) {
-    if (numArray[index] > hiNum) {
-      hiNum = numArray[index];
+    if (numArray[index] > higherNum) {
+      higherNum = numArray[index];
     }
   }
   for (let number of numArray) {
-    if (number === hiNum) {
+    if (number === higherNum) {
       repetitions += 1;
     }
   }
@@ -80,11 +80,11 @@ function fizzBuzz(list) {
 // Desafio 9
 function encode(word) {
   let vowels = {
-    'a': '1',
-    'e': '2',
-    'i': '3',
-    'o': '4',
-    'u': '5',
+    a: '1',
+    e: '2',
+    i: '3',
+    o: '4',
+    u: '5',
   };
   let result = '';
   for (let letter of word) {
@@ -100,11 +100,11 @@ function encode(word) {
 
 function decode(word) {
   let vowels = {
-    '1': 'a',
-    '2': 'e',
-    '3': 'i',
-    '4': 'o',
-    '5': 'u',
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
   };
   let result = '';
   for (let number of word) {

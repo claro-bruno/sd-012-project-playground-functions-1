@@ -1,5 +1,6 @@
 // Desafio 10
 function techList(skills, name) {
+  let nome = name;
   if (skills.length === 0) {
     return 'Vazio!';
   }
@@ -7,7 +8,7 @@ function techList(skills, name) {
   for (let skill of skills.sort()) {
     let indice = {
       tech: skill,
-      name: name,
+      name: nome,
     };
     saida.push(indice);
   }
@@ -22,16 +23,15 @@ function generatePhoneNumber(phone) {
   }
   for (let number of phone) {
     let times = 0;
+    if (number < 0 || number > 9) {
+      return 'não é possível gerar um número de telefone com esses valores';
+    }
     for (let index in phone) {
       if (phone[index] === number) {
         times += 1;
-      }
-      if (times >= 3) {
+      } else if (times >= 3) {
         return 'não é possível gerar um número de telefone com esses valores';
       }
-    }
-    if (number < 0 || number > 9) {
-      return 'não é possível gerar um número de telefone com esses valores'
     }
   }
   for (let index2 in phone) {
@@ -39,7 +39,7 @@ function generatePhoneNumber(phone) {
       phoneResult = `(${phone[0]}${phone[1]}) `;
     } else if (index2 <= 5) {
       phoneResult += `${phone[index2]}`;
-    } else if (Number(index2) === 6) {
+    } else if (index2 === '6') {
       phoneResult += `${phone[index2]}-`;
     } else if (index2 > 6 && index2 <= 11) {
       phoneResult += `${phone[index2]}`;
@@ -49,12 +49,12 @@ function generatePhoneNumber(phone) {
 }
 
 // Desafio 12
-function triangleCheck(line1, line2, line3) {
-  if (line1 < line2 + line3 && line1 > Math.abs(line2 - line3)) {
+function triangleCheck(firstSide, secondSide, thirdSide) {
+  if (firstSide < secondSide + thirdSide && firstSide > Math.abs(secondSide - thirdSide)) {
     return true;
-  } else if (line2 < line1 + line3 && line2 > Math.abs(line1 - line3)) {
+  } else if (secondSide < firstSide + thirdSide && secondSide > Math.abs(firstSide - thirdSide)) {
     return true;
-  } else if (line3 < line1 + line2 && line3 > Math.abs(line1 - line2)) {
+  } else if (thirdSide < firstSide + secondSide && thirdSide > Math.abs(firstSide - secondSide)) {
     return true;
   }
   return false;
@@ -68,11 +68,10 @@ function hydrate(frase) {
     quantity += Number(str);
   }
   if (quantity === 1) {
-    return '1 copo de água'
+    return '1 copo de água';
   }
-  return `${quantity} copos de água`
+  return `${quantity} copos de água`;
 }
-console.log(hydrate('1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
