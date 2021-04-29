@@ -15,12 +15,12 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(string) {
-  return `${string[string.length - 1]}, ${string[0]}`
+  return `${string[string.length - 1]}, ${string[0]}`;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return (wins * 3) + ties;
 }
 
 // Desafio 6
