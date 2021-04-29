@@ -17,12 +17,10 @@ function splitSentence(string) {
 }
 // Desafio 4
 function concatName(array) {
-  const item1 = array[(array.length) - 1];
-  const item2 = array[0];
-  const concat = item1 + ', ' + item2;
-  return concat;
+  let item1 = array[(array.length) - 1];
+  let item2 = array[0];
+  return `${item1}, ${item2}`;
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 // Desafio 5
 function footballPoints(wins, ties) {
   return (3 * wins) + ties;
