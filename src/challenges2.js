@@ -1,4 +1,3 @@
-// Desafio 10
 function techList(tech, name) {
   let exit = [];
   let exit2 = 'Vazio!';
@@ -18,7 +17,6 @@ function techList(tech, name) {
   return exit;
 }
 
-// Desafio 11
 function generatePhoneNumber(arr) {
   let saida = '';
   let ddd = '' + arr[0] + arr[1];
@@ -46,14 +44,10 @@ function generatePhoneNumber(arr) {
   return saida;
 }
 
-// Desafio 12
 function triangleCheck() {
-  // seu código aqui
 }
 
-// Desafio 13
 function hydrate() {
-  // seu código aqui
 }
 
 module.exports = {
