@@ -115,21 +115,38 @@ function encode(encodeText) {
   } else if (minusculo[index] == "o"){
     resultado = minusculo.replace("o", "4");
     minusculo = resultado;
-  } else (minusculo[index] == "u")
+  } else if (minusculo[index] == "u"){
     resultado = minusculo.replace("u", "5");
     minusculo = resultado;
-  
   }
-
+}
   return minusculo;
-
-
 }
 
-console.log(encode("ANA CAROLINA"));
-
-function decode() {
+function decode(decodeText) {
   // seu código aqui
+    let minusculo = decodeText.toLowerCase();
+    let resultado;
+  
+    for (let index = 0; index <= minusculo.length; index += 1){
+      if (minusculo[index] == "1"){
+      resultado = minusculo.replace("1", "a");
+      minusculo = resultado;
+    } else if (minusculo[index] == "2"){
+      resultado = minusculo.replace("2", "e");
+      minusculo = resultado;
+    } else if (minusculo[index] == "3"){
+      resultado = minusculo.replace("3", "i");
+      minusculo = resultado;
+    } else if (minusculo[index] == "4"){
+      resultado = minusculo.replace("4", "o");
+      minusculo = resultado;
+    } else if (minusculo[index] == "5"){
+      resultado = minusculo.replace("5", "u");
+      minusculo = resultado;
+    }
+  }
+    return minusculo;
 }
 
 module.exports = {
