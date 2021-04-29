@@ -34,7 +34,7 @@ function generatePhoneNumber(foneNumbers) {
   if (getErro === true){
     return "não é possível gerar um número de telefone com esses valores";
   } else {
-    return `(${foneNumbers[0]}${foneNumbers[1]})${foneNumbers[2]}${foneNumbers[3]}${foneNumbers[4]}${foneNumbers[5]}${foneNumbers[6]}-${foneNumbers[7]}${foneNumbers[8]}${foneNumbers[9]}${foneNumbers[10]}`
+    return `(${foneNumbers[0]}${foneNumbers[1]}) ${foneNumbers[2]}${foneNumbers[3]}${foneNumbers[4]}${foneNumbers[5]}${foneNumbers[6]}-${foneNumbers[7]}${foneNumbers[8]}${foneNumbers[9]}${foneNumbers[10]}`
   }
 }
 
@@ -42,7 +42,7 @@ function generatePhoneNumber(foneNumbers) {
 function triangleCheck(lineA, lineB, lineC) {
   if (lineA > (lineB + lineC) || lineB > (lineA + lineC) || lineC > (lineB + lineA)){
     return false;
-  } else if (lineA < Math.abs(lineB- lineC) || lineB < Math.abs(lineA - LineC) || lineC < Math.abs(lineA - lineB)){
+  } else if (lineA < Math.abs(lineB- lineC) || lineB < Math.abs(lineA - lineC) || lineC < Math.abs(lineA - lineB)){
     return false;
   } else {
     return true;
@@ -51,13 +51,7 @@ function triangleCheck(lineA, lineB, lineC) {
 
 // Desafio 13
 function hydrate(drinks) {
-  let countWater = 0;
-  for (let index = 0; index < drinks.length; index += 1) {
-    if(drinks[index] == Number){
-      countWater += 1;
-    }
-  }
-  return `${countWater} copos de água.`;
+ 
 }
 
 module.exports = {
