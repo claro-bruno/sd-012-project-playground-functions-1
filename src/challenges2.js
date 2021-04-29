@@ -15,12 +15,14 @@ function techList(skills, name) {
   return saida;
 }
 
-// Desafio 11
-function generatePhoneNumber(phone) {
-  let phoneResult = '';
+function isPhoneLength(phone) {
   if (phone.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
+  return false;
+}
+
+function repeatNumber(phone) {
   for (let number of phone) {
     let times = 0;
     for (let index in phone) {
@@ -28,25 +30,42 @@ function generatePhoneNumber(phone) {
         times += 1;
       }
       if (times >= 3) {
-        return 'não é possível gerar um número de telefone com esses valores';
+        return true
       }
     }
+  }
+  return false;
+}
+
+function isValidNumber(phone) {
+  for (let number of phone) {
     if (number < 0 || number > 9) {
-      return 'não é possível gerar um número de telefone com esses valores';
+      return true;
     }
   }
-  for (let index2 in phone) {
-    if (index2 <= 1) {
-      phoneResult = `(${phone[0]}${phone[1]}) `;
-    } else if (index2 <= 5) {
-      phoneResult += `${phone[index2]}`;
-    } else if (Number(index2) === 6) {
-      phoneResult += `${phone[index2]}-`;
-    } else if (index2 > 6 && index2 <= 11) {
-      phoneResult += `${phone[index2]}`;
+  return false;
+}
+
+// Desafio 11
+function generatePhoneNumber(phone) {
+  let phoneResult = ''; let areaNumber = ''; let firstHalf = ''; let secondHalf = '';
+  if (isPhoneLength(phone)) {
+    return 'Array com tamanho incorreto.';
+  } if (repeatNumber(phone)) {
+    return 'não é possível gerar um número de telefone com esses valores';
+  } if (isValidNumber(phone)) {
+    return 'não é possível gerar um número de telefone com esses valores';
+  }
+  for (let index in phone) {
+    if (index <= 1) {
+      areaNumber += phone[index];
+    } else if (index <= 6) {
+      firstHalf += phone[index];
+    } else if (index > 6 && index <= 11) {
+      secondHalf += phone[index];
     }
   }
-  return phoneResult;
+  return phoneResult = `(${areaNumber}) ${firstHalf}-${secondHalf}`;
 }
 
 // Desafio 12
