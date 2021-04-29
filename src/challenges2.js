@@ -27,12 +27,22 @@ function triangleCheck(lineA, lineB, lineC) {
   let difA = lineA - (lineB + lineC)
   let difB = lineB - (lineB + lineC)
   let difC = lineC - (lineB + lineA)
-  if (lineA > Math.abs(difA) || lineB > Math.abs(difB)|| lineC > Math.abs(difC)) {
-    return true
+  if (Math.abs(lineA) > Math.abs(difA)) {
+    if (lineA < (lineB + lineC)){
+      return true
+    }
+  } else if (Math.abs(lineB) > Math.abs(difB)) {
+    if (lineB < (lineB + lineC)) {
+      return true
+    }
+  } else if (Math.abs(lineC) > Math.abs(difC)) {
+    if (lineC < (lineB + lineA)) {
+      return true
+    }
   }
   return false
 }
-// console.log(triangleCheck(10, 14, 8))
+console.log(triangleCheck(10,13,2))
 // Desafio 13
 function hydrate(hydrate) {
   let regRule = /\d+/g;
