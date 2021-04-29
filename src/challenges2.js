@@ -40,7 +40,7 @@ function generatePhoneNumber(phone) {
       phoneResult = `(${phone[0]}${phone[1]}) `;
     } else if (index2 <= 5) {
       phoneResult += `${phone[index2]}`;
-    } else if (index2 === "6") {
+    } else if (Number(index2) === 6) {
       phoneResult += `${phone[index2]}-`;
     } else if (index2 > 6 && index2 <= 11) {
       phoneResult += `${phone[index2]}`;
@@ -53,11 +53,9 @@ function generatePhoneNumber(phone) {
 function triangleCheck(firstSide, secondSide, thirdSide) {
   if (firstSide < secondSide + thirdSide && firstSide > Math.abs(secondSide - thirdSide)) {
     return true;
-  }
-  if (secondSide < firstSide + thirdSide && secondSide > Math.abs(firstSide - thirdSide)) {
+  } if (secondSide < firstSide + thirdSide && secondSide > Math.abs(firstSide - thirdSide)) {
     return true;
-  } 
-  if (thirdSide < firstSide + secondSide && thirdSide > Math.abs(firstSide - secondSide)) {
+  } if (thirdSide < firstSide + secondSide && thirdSide > Math.abs(firstSide - secondSide)) {
     return true;
   }
   return false;
