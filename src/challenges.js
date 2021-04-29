@@ -69,7 +69,7 @@ function catAndMouse(mouse, cat1, cat2) {
   let result1 = Math.abs(cat1 - mouse) 
   let result2 = Math.abs(cat2 - mouse) 
   if (result1 < result2){
-    return 'cat 1';
+    return 'cat1';
   } else if (result2 < result1) {
       return 'cat2';
   } else {
