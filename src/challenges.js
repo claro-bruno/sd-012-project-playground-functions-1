@@ -79,13 +79,13 @@ function fizzBuzz(arrayFizzBuzz) {
 
 // Desafio 9
 function encode(string) {
-  let splittedString = string.split("");
+  let splittedString = string.split('');
   let vogais = {
     1: 'a',
     2: 'e',
     3: 'i',
     4: 'o',
-    5: 'u'
+    5: 'u',
   };
   for (let key in splittedString) {
     if (splittedString[key] === vogais['1']) {
@@ -99,18 +99,18 @@ function encode(string) {
     } else if (splittedString[key] === vogais['5']) {
       splittedString[key] = '5';
     }
-  };
-  return splittedString.join("");
+  }
+  return splittedString.join('');
 }
 
 function decode(string) {
-  let splittedString = string.split("");
+  let splittedString = string.split('');
   let vogais = {
     a: '1',
     e: '2',
     i: '3',
     o: '4',
-    u: '5'
+    u: '5',
   };
   for (let key in splittedString) {
     if (splittedString[key] === vogais['a']) {
@@ -124,8 +124,8 @@ function decode(string) {
     } else if (splittedString[key] === vogais['u']) {
       splittedString[key] = 'u';
     }
-  };
-  return splittedString.join("");
+  }
+  return splittedString.join('');
 }
 
 module.exports = {
