@@ -54,13 +54,12 @@ function catAndMouse(mouse, cat1, cat2) {
   return quemPega;
 }
 
-console.log(catAndMouse(1, 0, 2));
-
 // Desafio 8
+const divisibleBoth = (x) => (x % 3 === 0 && x % 5 === 0);
 function fizzBuzz(numeros) {
   let result = [];
   for (let i of numeros) {
-    if (i % 3 === 0 && i % 5 === 0) {
+    if (divisibleBoth(i)) {
       result.push('fizzBuzz');
     } else if (i % 3 === 0) {
       result.push('fizz');
