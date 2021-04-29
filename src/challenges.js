@@ -100,7 +100,7 @@ function fizzBuzz(arrayFizzbuzz) {
     }
   
   }
-  return arrayFinal.join();
+  return arrayFinal;
 }
 
 // Desafio 9
