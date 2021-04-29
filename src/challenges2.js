@@ -8,7 +8,7 @@ function techList(tecnology,name) {
   for (let index=0 ; index<ordenada.length ; index +=1){
     tecnologia = {
       tech: tecnology [index],//passar de 1 em 1 conteúdo da tecnology
-      nome: name,
+      name: name,
     }    
     lista.push(tecnologia);//empurra itens dentro da lista vazia
   }  
