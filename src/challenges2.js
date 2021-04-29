@@ -43,10 +43,14 @@ function generatePhoneNumber(numbers) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
+  if (numbers.length === 0) {
+    return'Array com tamanho incorreto.'
+  } else {
     return newPhoneNumber
+  }
 }
 
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+console.log(generatePhoneNumber([]));
 
 // Desafio 12
 function triangleCheck() {
