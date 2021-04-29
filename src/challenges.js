@@ -46,21 +46,76 @@ function highestCount(receivedNumbers) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(positionMouse, positionCat1, positionCat2) {
+  let distanceMouseCat1;
+  let distanceMouseCat2;
+  distanceMouseCat1 = Math.abs(positionCat1 - positionMouse);
+  distanceMouseCat2 = Math.abs(positionCat2 - positionMouse);
+  if (distanceMouseCat1 < distanceMouseCat2) {
+    return 'cat1';
+  } if (distanceMouseCat1 > distanceMouseCat2) {
+    return 'cat2';
+  } return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(receivedNumbers) {
+  let result = [];
+  for (let index in receivedNumbers) {
+    if ((receivedNumbers[index] % 3 === 0) && (receivedNumbers[index] % 5 === 0)) {
+      result.push('fizzBuzz');
+    } else if (receivedNumbers[index] % 3 === 0) {
+      result.push('fizz');
+    } else if (receivedNumbers[index] % 5 === 0) {
+      result.push('buzz');
+    } else result.push('bug!');
+  }
+  return result;
 }
 
+/* function fizzBuzz2Aux(resultReceived, receivedIndex) {
+  for (let index in receivedIndex) {
+    if (resultReceived[receivedIndex[index]] % 3 === 0) {
+      resultReceived[receivedIndex[index]] = 'fizz';
+    } else if (resultReceived[receivedIndex[index]] % 5 === 0) {
+      resultReceived[receivedIndex[index]] = 'buzz';
+    } else resultReceived[receivedIndex[index]] = 'bug!';
+  }
+  return resultReceived;
+} */
+
+/* function fizzBuzz2(receivedNumbers) {
+  let result = [];
+  let indexAux = [];
+  for (let index in receivedNumbers) {
+    if ((receivedNumbers[index] % 3 === 0) && (receivedNumbers[index] % 5 === 0)) {
+      result.push('fizzBuzz');
+    } else {
+      result.push(receivedNumbers[index]);
+      indexAux.push(index);
+    }
+  }
+  fizzBuzz2Aux(result, indexAux);
+  return result;
+} */
+
+console.log(fizzBuzz2([2, 15, 7, 9, 45, 10, 25]));
+
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(receivedSentence) {
+  let encodeSentence;
+  encodeSentence = receivedSentence.replace(/a/g, '1').replace(/e/g, '2').replace(/i/g, '3')
+    .replace(/o/g, '4')
+    .replace(/u/g, '5');
+  return encodeSentence;
 }
-function decode() {
-  // seu código aqui
+
+function decode(receivedSentence) {
+  let decodeSentence;
+  decodeSentence = receivedSentence.replace(/1/g, 'a').replace(/2/g, 'e').replace(/3/g, 'i')
+    .replace(/4/g, 'o')
+    .replace(/5/g, 'u');
+  return decodeSentence;
 }
 
 module.exports = {
