@@ -39,13 +39,13 @@ function concatName(array) {
   // seu código aqui
   let concat;
   for(let index = 0; index < array.length; index += 1){
-    concat = (array[array.length-1]) + ',' + array[0];
+    concat = (array[array.length-1]) + ', ' + array[0];
   }
   
   return concat;
 }
 
-//console.log(concatName (['captain', 'my', 'captain']));
+console.log(concatName (['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 
 // Desafio 5
@@ -55,12 +55,29 @@ function footballPoints(wins, ties) {
 
   return calculo;
 }
-console.log(footballPoints(0, 0))
+//console.log(footballPoints(0, 0))
 
 // Desafio 6
-function highestCount() {
+function highestCount(numbers) {
   // seu código aqui
+  let cont = 0;
+  let maior = numbers[0];
+  for (let index = 0; index < numbers.length; index +=1){
+    if (maior < numbers[index]){
+      maior = numbers[index];
+    };
+  };
+  
+  for (index = 0; index < numbers.length; index += 1){
+    if (maior === numbers[index]){
+      cont +=1
+    }else if(maior === 0){
+      cont = 3
+    };
+  };
+  return cont
 }
+//console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 
 // Desafio 7
 function catAndMouse() {
