@@ -71,7 +71,7 @@ function highestCount(numbers) {
   for (index = 0; index < numbers.length; index += 1){
     if (maior === numbers[index]){
       cont +=1
-    } else if(maior === 0){
+    }else if(maior === 0){
       cont = 3
     };
   };
@@ -82,19 +82,19 @@ function highestCount(numbers) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let calcCat1 = cat1 - mouse;
-  let calcCat2 = cat2 - mouse;
+  let calcCat1 = Math.abs(cat1) - Math.abs(mouse);
+  let calcCat2 = Math.abs(cat2) - Math.abs(mouse);
   let menorDistancia;
   if (calcCat1 < calcCat2){
     menorDistancia = 'cat1';
-  } else if (cat1 === cat2){
+  } else if (calcCat1 === calcCat2){
       menorDistancia = 'os gatos trombaram e o rato foge';
     } else {
     menorDistancia = 'cat2';
   }
   return menorDistancia;
 }
-//console.log(catAndMouse(1, 2, 3))
+console.log(catAndMouse(1, 3, 3))
 
 // Desafio 8
 function fizzBuzz() {
