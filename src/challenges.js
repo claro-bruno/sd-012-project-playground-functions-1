@@ -26,7 +26,8 @@ return (fim + ', ' + inicio);
 
 // Desafio 5
 function footballPoints(wins, ties) {
-    let results = ((wins * 3) + ties {
+    let results;
+    results = (wins * 3) + (ties);
 
     } return results
 
