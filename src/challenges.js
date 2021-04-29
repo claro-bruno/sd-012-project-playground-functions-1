@@ -48,6 +48,19 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
+function param(divisivel3, divisivel5) {
+  if (divisivel3 && divisivel5) {
+    return 'fizzBuzz';
+  }
+  if (divisivel3) {
+    return 'fizz';
+  } 
+  if (divisivel5) {
+    return 'buzz';
+  }
+  return 'bug!';
+}
+
 function fizzBuzz(arrN) {
   let arrS = [];
   for (let index = 0; index < arrN.length; index += 1) {
@@ -56,18 +69,6 @@ function fizzBuzz(arrN) {
     arrS.push(param(divisivel3, divisivel5));
   }
   return arrS;
-}
-
-function param(divisivel3, divisivel5) {
-  if (divisivel3 && divisivel5) {
-    return 'fizzBuzz';
-  } else if (divisivel3) {
-    return 'fizz';
-  } else if (divisivel5) {
-    return 'buzz';
-  } else {
-    return 'bug!';
-  }
 }
 
 // Desafio 9
