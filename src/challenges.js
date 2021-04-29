@@ -51,21 +51,19 @@ function highestCount(numbers) {
 function catAndMouse(mouse, cat1, cat2) {
   let distanceCat1 = Math.abs(mouse - cat1);
   let distanceCat2 = Math.abs(mouse - cat2);
-  
   if (distanceCat1 > distanceCat2) {
     return 'cat2';
-  } 
+  }
   if (distanceCat2 > distanceCat1) {
     return 'cat1';
-  } 
+  }
   return 'os gatos trombam e o rato foge';
-  
 }
 
 // Desafio 8
 function fizzBuzz(numbers){
   let arrayFizzBuzz = [];
-  for (let number of numbers){
+  for (let number of numbers) {
     if ((number % 3) === 0 && (number % 5) === 0) {
       arrayFizzBuzz.push('fizzBuzz');
     } else if (number % 3 === 0) {
@@ -86,28 +84,28 @@ function encode(stringEncode) {
     e: 2,
     i: 3,
     o: 4,
-    u: 5
+    u: 5,
   };
   for(let index = 0; index < stringEncode.length; index += 1) {
-    for(let key in rule) {
-      if(key === stringEncode[index]) {
+    for (let key in rule) {
+      if (key === stringEncode[index]) {
         stringEncode = stringEncode.replace(stringEncode[index], rule[key]);
       }
     }
   }
   return stringEncode;
-};
+}
 function decode(stringDecode) {
   let rule = {
     1: 'a',
     2: 'e',
     3: 'i',
     4: 'o',
-    5: 'u'
+    5: 'u',
   };
-  for(let index = 0; index < stringDecode.length; index += 1) {
-    for(let key in rule) {
-      if(key === stringDecode[index]) {
+  for (let index = 0; index < stringDecode.length; index += 1) {
+    for (let key in rule) {
+      if (key === stringDecode[index]) {
         stringDecode = stringDecode.replace(stringDecode[index], rule[key]);
       }
     }
