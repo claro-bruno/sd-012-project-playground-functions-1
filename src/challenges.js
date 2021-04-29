@@ -30,6 +30,7 @@ function highestCount(valores, quantidade) {
     quantidade++
   }
 }
+}
 
 // Desafio 7
 function catAndMouse() {
