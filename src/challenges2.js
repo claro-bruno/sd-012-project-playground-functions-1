@@ -60,14 +60,12 @@ console.log(triangleCheck(10, 14, 8))
 
 // Desafio 13
 function hydrate(str) {
+  
   let glassesOfWater = 0;
-  let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  for (let index = 0; index < str.length; index += 1) {
-    for (let index2 = 0; index2 < numbers.length; index2 += 1) {
-      if (parseInt(str[index]) == numbers[index2]) {
-        glassesOfWater += numbers[index];
-      }
-    }
+  let reg = /\d+/g;
+  let result = str.match(reg);
+  for (let index = 0; index < result.length; index += 1){
+    glassesOfWater += parseInt(result[index]);
   }
   if (glassesOfWater > 1) {
     return `${glassesOfWater} copos de água`;
@@ -75,19 +73,6 @@ function hydrate(str) {
     return `${glassesOfWater} copo de água`;
   }
 }
-console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
-//   let glassesOfWater = 0;
-//   let reg = /\d+/g;
-//   let result = str.match(reg);
-//   for (let index = 0; index < result.length; index += 1){
-//     glassesOfWater += parseInt(result[index]);
-//   }
-//   if (glassesOfWater > 1) {
-//     return `${glassesOfWater} copos de água`;
-//   } else {
-//     return `${glassesOfWater} copo de água`;
-//   }
-// }
 
 module.exports = {
   generatePhoneNumber,
