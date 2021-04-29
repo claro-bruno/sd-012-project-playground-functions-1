@@ -43,12 +43,20 @@ function generatePhoneNumber(arr) {
   }
   return `(${arr[0]}${arr[1]}) ${arr[2]}${arr[3]}${arr[4]}${arr[5]}${arr[6]}-${arr[7]}${arr[8]}${arr[9]}${arr[10]}`
 }
-console.log(generatePhoneNumber([0, 2, 3, 4, 5, 8, 7, 9, 1, 0, 7]));
 
-// // Desafio 12
+// Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  // seu código aqui
+  let sideA = lineA < lineB + lineC && lineA > Math.abs(lineB - lineC);
+  let sideB = lineB < lineA + lineC && lineB > Math.abs(lineA - lineC);
+  let sideC = lineC < lineB + lineA && lineC > Math.abs(lineA - lineB);
+
+  if (sideA == true && sideB == true && sideC == true) {
+    return true;
+  } else {
+    return false;
+  }
 }
+console.log(triangleCheck(10, 14, 8))
 
 // Desafio 13
 function hydrate() {
