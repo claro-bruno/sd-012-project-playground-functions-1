@@ -20,9 +20,13 @@ function splitSentence(frase) {
 };
 // console.log(splitSentence("vamo que vamo"));
 
+
+
+
+
 // Desafio 4
 function concatName() {
-  // seu código aqui
+   // seu código aqui
 }
 
 // Desafio 5
@@ -30,14 +34,6 @@ function footballPoints(wins, ties) {
   return (wins * 3) + ties
 };
 // console.log(footballPoints(0, 0));
-
-
-
-
-
-
-
-
 
 // Desafio 6
 function highestCount(arraynumbers) {
@@ -61,26 +57,30 @@ function highestCount(arraynumbers) {
 }
 // console.log(highestCount([2, 3, 5, 6, 9, 9, 9,]));
 
-
-
-
-
-
-
-
-
-
-
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
+    
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(buznumeros) {
+let arrayFizz =[];
+for(let index = 0; index < buznumeros.length; index++){
+    if((buznumeros[index] % 3 == 0 && buznumeros[index] % 5 == 0)){
+        arrayFizz.push("fizzBuzz");
+    }else if(buznumeros[index] % 3 == 0){
+        arrayFizz.push("fizz");
+    }else if(buznumeros[index] % 5 == 0){
+        arrayFizz.push("buzz");
+    }else{
+        arrayFizz.push("bug");  
+    }
+    
+  }
+  return arrayFizz;
 }
-
+// let variable = [2, 15, 7, 9, 45];
+// console.log(fizzBuzz(variable));
 // Desafio 9
 function encode() {
   // seu código aqui
