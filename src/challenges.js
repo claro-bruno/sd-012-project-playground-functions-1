@@ -1,7 +1,11 @@
 // Desafio 1
-function compareTrue() {
-  let a = 1
-return a == 1 && b == 2
+function compareTrue(a, b) {
+  let compare;
+  if (a == true && b == true) {
+    compare = true;
+  } else {
+    compare = false
+  }
 }
 
 // Desafio 2
@@ -42,9 +46,9 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz(list) {
+function fizzBuzz() {
 let num = [];
-for (let index = 0; index <= num.length; index+= 1) {
+for (let index = 0; index < num.length; index+= 1) {
 
 if  (num[index] % 3 === 0) {
   num[index] = 'fizz';
@@ -60,7 +64,7 @@ if  (num[index] % 3 === 0) {
    num[index] = 'bug';
    }   
 }
-return list;
+return fizzBuzz();
 }
 
 // Desafio 9
