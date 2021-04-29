@@ -105,6 +105,8 @@ function encode(string) {
   return encodeString;
 }
 
+console.log(encode('hello there'));
+
 function decode(string) {
   decodeString = string.split('')
   for (index = 0; index < decodeString.length; index += 1) {
