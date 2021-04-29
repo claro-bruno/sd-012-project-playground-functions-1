@@ -43,7 +43,7 @@ function generatePhoneNumber(arrayNumbers) {
     for (let indice = 0; indice < 11; indice += 1) {
       numeroFinal = numeroFinal + arrayNumbers[indice];
         if (indice === 1) {
-        numeroFinal = numeroFinal + ')'
+        numeroFinal = numeroFinal + ') '
       } else if (indice === 6) {
         numeroFinal = numeroFinal + '-'
       }
