@@ -1,24 +1,25 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
-  let resultado;
+  let resultado1;
 
   if (valor1 === true && valor2 === true) {
-    resultado = true;
+    resultado1 = true;
   } else {
-    resultado = false;
+    resultado1 = false;
   }
-  return resultado;
+  return resultado1;
 }
 
 // Desafio 2
 function calcArea(base, height) {
-  let resultado = (base * height) / 2;
-  return resultado;
+  let resultado2 = (base * height) / 2;
+  return resultado2;
 }
 
-// Desafio 3
-function splitSentence() {
-  // seu código aqui
+// Desafio 3 (Fonte: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_split)
+function splitSentence(sentence) {
+  let resultado = sentence.split(' ');
+  return (resultado);
 }
 
 // Desafio 4
