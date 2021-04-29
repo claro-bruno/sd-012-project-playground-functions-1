@@ -57,7 +57,9 @@ let Array = [2, 15, 7, 9, 45];
 // Desafio 8
 function fizzBuzz(Array) {
   for (let index = 0; index < Array[length]; index +=1) {
-    if(Array[index])
+    if(Array[index]){
+      
+    }
   }
 }
 console.log (fizzBuzz(Array));
