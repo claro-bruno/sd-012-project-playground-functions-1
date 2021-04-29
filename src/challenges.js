@@ -87,14 +87,14 @@ function catAndMouse(mouse, cat1, cat2) {
   let menorDistancia;
   if (calcCat1 < calcCat2){
     menorDistancia = 'cat1';
-  } else if (calcCat1 === calcCat2){
+  } else if (Cat1 === Cat2){
       menorDistancia = 'os gatos trombaram e o rato foge';
     } else {
     menorDistancia = 'cat2';
   }
-  return menorDistancia
+  return menorDistancia;
 }
-console.log(catAndMouse(1, 2, 3))
+//console.log(catAndMouse(1, 2, 3))
 
 // Desafio 8
 function fizzBuzz() {
