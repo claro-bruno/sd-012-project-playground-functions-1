@@ -26,7 +26,7 @@ function splitSentence(string) {
 
   return string;
 }
-console.log(splitSentence('Go trybe'));
+// console.log(splitSentence('Go trybe'));
 
 // Desafio 4
 function concatName(nameList) {
@@ -39,8 +39,8 @@ function concatName(nameList) {
 
   return lastAndFirstName;
 }
-let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-console.log(concatName(nameList));
+// let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+// console.log(concatName(nameList));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -57,25 +57,35 @@ function footballPoints(wins, ties) {
 function highestCount(arrayNumeros) {
   // seu código aqui
   let highNumber = arrayNumeros[0];
-  let counter =0;
+  let counter = 0;
 
-  for(let indexHighNumber = 0; indexHighNumber < arrayNumeros.length; indexHighNumber += 1) {
-    if(highNumber < arrayNumeros[indexHighNumber]){ //For para achar o meior numero.
+  for (let indexHighNumber = 0; indexHighNumber < arrayNumeros.length; indexHighNumber += 1) {
+    if (highNumber < arrayNumeros[indexHighNumber]) { // For para achar o meior numero.
       highNumber = arrayNumeros[indexHighNumber];
     }
   }
-  for(let index of arrayNumeros) {
-    if (index === highNumber){ //For para contagem.
+  for (let index of arrayNumeros) {
+    if (index === highNumber) { // For para contagem.
       counter += 1;
     }
   }
   return counter;
 }
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+// console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let cat1Distance = Math.abs (cat1 - mouse);
+  let cat2Distance = Math.abs (cat2 - mouse);
+  
+  if (cat1Distance < cat2Distance) {
+    return 'cat1';
+  } else if (cat1Distance > cat2Distance) {
+    return 'cat2';
+  } else if (cat2Distance === cat1Distance) {
+    return 'os gatos trombam e o rato foge';
+  }
 }
 
 // Desafio 8
