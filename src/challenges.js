@@ -85,22 +85,22 @@ function fizzBuzz(arrayNum) {
 
 // Desafio 9
 function encode(frase) {
-  // alterado conforme sugestão de colega para que possa assim atender o lint.
-  frase = frase.replace(/a/gi, '1');
-  frase = frase.replace(/e/gi, '2');
-  frase = frase.replace(/i/gi, '3');
-  frase = frase.replace(/o/gi, '4');
-  frase = frase.replace(/u/gi, '5');
-  return frase;
+  // Alterado conforme sugestão do Isaac
+  let object = { a: 1, e: 2, i: 3, o: 4, u: 5 };
+  let array = (frase.split(''));
+  for (let index = 0; index < (array.length); index += 1) {
+    if (object[array[index]]) { array[index] = object[array[index]]; }
+  }
+  return array.join('');
 }
 function decode(frase) {
-  // alterado conforme sugestão de colega para que possa assim atender o lint.
-  frase = frase.replace(/1/g, 'a');
-  frase = frase.replace(/2/g, 'e');
-  frase = frase.replace(/3/g, 'i');
-  frase = frase.replace(/4/g, 'o');
-  frase = frase.replace(/5/g, 'u');
-  return frase;
+  // Alterado conforme sugestão do Isaac
+  let object = { 1: 'a', 2: 'e', 3: 'i', 4: 'o', 5: 'u' };
+  let array = (frase.split(''));
+  for (let index = 0; index < (array.length); index += 1) {
+    if (object[array[index]]) { array[index] = object[array[index]]; }
+  }
+  return array.join('');
 }
 
 module.exports = {
