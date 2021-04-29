@@ -30,7 +30,7 @@ function repeatNumber(phone) {
         times += 1;
       }
       if (times >= 3) {
-        return true
+        return true;
       }
     }
   }
@@ -65,7 +65,8 @@ function generatePhoneNumber(phone) {
       secondHalf += phone[index];
     }
   }
-  return phoneResult = `(${areaNumber}) ${firstHalf}-${secondHalf}`;
+  phoneResult = `(${areaNumber}) ${firstHalf}-${secondHalf}`;
+  return phoneResult;
 }
 
 // Desafio 12
