@@ -89,9 +89,8 @@ console.log(highestCount([0, 0, 0]))
 
 // Desafio 7
 
-function catAndMouse(mouse,cat1,cat2) {
+function catAndMouse(mouse, cat1, cat2) {
 
-mouse = Math.abs(mouse)
 
   let distanceCat1 = Math.abs(cat1 - mouse);
 let distanceCat2 = Math.abs(cat2 - mouse);
@@ -105,7 +104,6 @@ let distanceCat2 = Math.abs(cat2 - mouse);
   }else if (distanceCat1 > distanceCat2){
     return 'cat2';
   }
-  
 }
 console.log(catAndMouse(0,3,2))
 console.log(catAndMouse(0,3,12))
