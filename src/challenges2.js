@@ -1,15 +1,20 @@
 // Desafio 10
 function techList(lista, nome) {
-  let listaObjetos = []
-  let objeto
-  for (let key in lista.sort()) {
-    objeto = {
-      tech: lista[key],
-      name: nome
-    }
+  let retorno;
+  let listaObjetos = [];
+  if (lista.length > 0) {
+    for (let key in lista.sort()) {
+      let objeto = {
+        tech: lista[key],
+        name: nome,
+      };
     listaObjetos.push(objeto);
-  }
-  return listaObjetos.sort();
+    }
+    retorno = listaObjetos;
+  } else {
+    retorno = 'Vazio!';
+  }  
+  return retorno;
 }
 
 // Desafio 11
@@ -34,4 +39,4 @@ module.exports = {
   triangleCheck,
 };
 
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"))
+console.log(techList([], "Lucas"))
