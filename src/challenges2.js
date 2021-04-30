@@ -14,14 +14,75 @@ function techList(array, nome) {
 }
 
 // Desafio 11
-function generatePhoneNumber() {
+function repetiuNumero(numero, array) {
+  let valor = 0;
+  for (let numeros = 0; numeros < array.length; numeros += 1) {
+    if (numero === array[numeros]) {
+      valor += 1;
+    }
+  }
+  return valor;
+}
+function vezesRepetido(array) {
+  let picoRepeticoes = 0;
+  for (let i = 0; i < array.length; i += 1) {
+    let pico = repetiuNumero(array[i], array);
+    if (pico > picoRepeticoes) picoRepeticoes = pico;
+  }
+  return picoRepeticoes;
+}
+
+function errorPhoneNumber(array) {
+  let msgError = 'Não é possível gerar um número de telefone com esses valores';
+  if (array.length !== 11) return 'array com tamanho incorreto';
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] < 0 || array[i] > 9) return msgError;
+  }
+  return false;
+}
+function DDD(num1, num2) {
+  return `(${num1}${num2})`;
+}
+function Numeros(array) {
+  let str = '';
+  for (let i = 2; i < array.length; i += 1) {
+    if (i === 6) {
+      str += `${array[i]}-`;
+    } else {
+      str += array[i];
+    }
+  }
+  return str;
+}
+function generatePhoneNumber(array) {
   // seu código aqui
+  let error = errorPhoneNumber(array);
+  let str = '';
+  let errorMsg = 'Não é possível gerar um número de telefone com esses valores';
+  if (vezesRepetido(array) >= 3) return errorMsg;
+  if (error === false) {
+    str = Numeros(array);
+  } else {
+    return error;
+  }
+  return `${DDD(array[0], array[1])} ${str}`;
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  if (lineA < (lineB + lineC) && Math.abs((lineB + lineC) / 2)) {
+    console.log('sim');
+  }
+  if (lineB < (lineA + lineC) && Math.abs((lineA + lineC) / 2)) {
+    console.log('sim');
+  }
+  if (lineC < (lineB + lineA) && Math.abs((lineB + lineA) / 2)) {
+    console.log('sim');
+  }
 }
+
+console.log(triangleCheck(10, 14, 8))
 
 // Desafio 13
 function hydrate() {
