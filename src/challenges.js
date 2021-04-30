@@ -51,26 +51,87 @@ console.log(footballPoints(1, 2));
 console.log(footballPoints(0, 0));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numeros) {
+  let numeroMaior = 0;
+  let contador = 0;
+  for (index = 0; index < numeros.length; index += 1){
+      if (numeros[index] >= contador){
+          contador = numeros[index];
+        }
+    };
+    for (indexVerify = 0; indexVerify < numeros.length; indexVerify += 1){
+        if (numeros[indexVerify] == contador){
+            numeroMaior += 1;
+        }
+    }
+    return numeroMaior;
 }
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  Math.abs(mouse);
+  Math.abs(cat1);
+  Math.abs(cat2);
+  if ((cat1 - mouse) > (cat2 - mouse)){
+    return 'cat2';
+  } else if ((cat1 - mouse) < (cat2 - mouse)){
+    return 'cat1';
+  } else if ((cat1 - mouse) == (cat2 - mouse)){
+    return 'os gatos trombam e o rato foge';
+  }
 }
+console.log(catAndMouse(1, 4, 3));
+console.log(catAndMouse(1, 7, 13));
+console.log(catAndMouse(1, 4, 4));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(parametro) {
+  let array = [];
+  for (index = 0; index < parametro.length; index += 1){
+    if (parametro[index] % 3 == 0 && parametro[index] % 5 == 0){
+    array.push('fizzBuzz');
+    } else if (parametro[index] % 3 == 0){
+    array.push('fizz');
+    } else if (parametro[index] % 5 == 0){
+    array.push('buzz');
+    } else if (parametro[index] % 3 != 0 || parametro[index] % 5 != 0) {
+    array.push('bug!');
+    }
+  };
+  return array;
 }
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+console.log(fizzBuzz([7, 9]));
+console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(parametro) {
+/*  let substA;
+  let substE;
+  let substI;
+  let substO;
+  let substU;*/
+  for (index = 0; index < parametro.length; index += 1){
+    if(parametro[index] === 'a'){
+      parametro[index] = 1;
+    } else if (parametro[index] === 'e'){
+      parametro[index] = 2;
+    } else if (parametro[index] === 'i'){
+      parametro[index] = 3;
+    } else if (parametro[index] === 'o'){
+      parametro[index] = 4;
+    } else if (parametro[index] === 'u'){
+      parametro[index] = 5;
+    }
+  };
+  return parametro;
 }
-function decode() {
-  // seu código aqui
+console.log(encode("hi there!"));
+
+function decode(parametro) {
 }
 
 module.exports = {
