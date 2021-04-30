@@ -4,16 +4,18 @@ function techList(techPraAprender, name) {
   let arraySaida = [];
   let techList = {};
   techPraAprender.sort();
-  for (let key in techPraAprender) {
-    techList = {
-      tech: techPraAprender[key], 
-      name: name};
-    arraySaida.push(techList);
+  if (techPraAprender.length !== 0){
+    for (let key in techPraAprender) {
+      techList = {
+        tech: techPraAprender[key], 
+        name: name};
+      arraySaida.push(techList);
+    }
+    return arraySaida;
   }
-  return arraySaida;
-}
+    return 'Vazio!';
+  }
 //console.log(techList(array10, "Lucas"));
-
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
