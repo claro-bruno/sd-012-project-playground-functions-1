@@ -15,12 +15,38 @@ function techList(techName, name) {
     return objeto;
   }
 }
-// console.log(techList([], 'Lucas'))
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function getRepetedPhoneNumber(telefone) {
+  let contadorNumero = 0;
+  let valorRepetido = 0;
+  for (let key in telefone) {
+    let verNumero = telefone[key];
+    for (let key2 in telefone) {
+      if (verNumero === telefone[key2]) {
+        contadorNumero += 1;
+      }
+    }
+      valorRepetido = contadorNumero;
+      return valorRepetido
+  }
+  contadorNumero = 0;
 }
+
+function generatePhoneNumber(telefone) {
+  if (telefone.length === 11){
+    for (let key of telefone){
+      if (key < 0 || key > 9 || getRepetedPhoneNumber(telefone) > 2){
+        return 'não é possível gerar um número de telefone com esses valores'
+      } else {
+        return `(${telefone[0]}${telefone[1]}) ${telefone[2]}${telefone[3]}${telefone[4]}${telefone[5]}${telefone[6]}-${telefone[7]}${telefone[8]}${telefone[9]}${telefone[10]}`
+      }
+    }
+  } else {
+    return 'Array com tamanho incorreto.'
+  }
+}
+// console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
@@ -42,7 +68,7 @@ function triangleCheck(lineA, lineB, lineC) {
   }
   return false
 }
-console.log(triangleCheck(10, 8, 14))
+
 // Desafio 13
 function hydrate(hydrate) {
   let regRule = /\d+/g;
