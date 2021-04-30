@@ -21,8 +21,8 @@ function splitSentence(phrase) {
 // Desafio 4
 function concatName(string) {
   // seu código aqui
-  return `${string[string.length - 1]}, ${string[0]}`;
-console.log(concatName()
+  return `${string[string.length -1]}, ${string[0]}`;
+};
 // Desafio 5
 function footballPoints(wins,ties) {
   // seu código aqui
@@ -52,16 +52,19 @@ function catAndMouse(mouse,cat1,cat2) {
   // seu código 
   
   if (cat1 - mouse < cat2 - mouse) {
-    let cat1win = 'cat1'
-    return cat1win
+    return 'cat1'
+  
   }else if (cat1 - mouse > cat2 - mouse) {
-    let cat2win = 'cat2'
-    return cat2win
-  }if (cat1 - mouse === cat2 - mouse) {
-    let catempat = 'os gatos trombam e o rato foge'
-    return catempat
+    return 'cat2'
+   
+  }else if (cat1 - mouse === cat2 - mouse) {
+    return 'os gatos trombam e o rato foge'
+  }
+  else{
+    return'calma la meu parceiro isso aqui não e um desenho animado'
   }
 };
+console.log(catAndMouse(0,3,2))
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
