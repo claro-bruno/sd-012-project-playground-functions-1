@@ -1,12 +1,13 @@
 // Desafio 10
 function techList(lista, nome) {
+  let listaOrdenada = lista.sort();
   let objLista = [];
   if (lista.length === 0) {
     return "Vazio!";
   } else {
-    for (key in lista) {
+    for (key in listaOrdenada) {
       let objetos = {
-        tech: lista[key],
+        tech: listaOrdenada[key],
         name: nome
       };
       objLista.push(objetos);
