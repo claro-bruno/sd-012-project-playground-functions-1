@@ -9,7 +9,11 @@ function techList(array, name) {
     newList.push(object);
     
   }
+  if(newList[0] === undefined){
+    return 'Vazio!';
+  } else {
   return newList;
+  }
 }
 
 // Desafio 11
