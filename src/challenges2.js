@@ -11,7 +11,7 @@ function techList(techNames) {
         name: "Juliana"
       }
     }
-      return secondList;
+    return secondList;
   }
 }
 
