@@ -1,5 +1,5 @@
 // Desafio 10
-function techList(tecnology,name) {
+function techList(tecnology, name) {
   //o resultado tem que ser uma LISTA gigante com os itens do objeto
   // as tecnologias precisam ser ordenadas
 
@@ -13,12 +13,12 @@ function techList(tecnology,name) {
     lista.push(tecnologia);//empurra itens dentro da lista vazia
   }  
   if(ordenada.length==0){
-    return 'Vazio!'; //não pode colocar console.log porque CREIO que o output precisa ser somente o resultado das listas e não uma frase (achei meio estranho mas acredito ser isso)
+    return 'Vazio!';
    }
   return lista;
 }
-console.log(techList([], 'jose'));
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'jose'));
+// console.log(techList([], 'jose'));
+// console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'jose'));
 
 
 // Desafio 11
@@ -43,7 +43,7 @@ function generatePhoneNumber(numeros) {
   return `(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`;
 }
 
-console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1,2]));
+// console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1,2]));
 
 
 // Desafio 12
@@ -59,7 +59,7 @@ function triangleCheck(lineA,lineB,lineC) {
   }
 }
 
-console.log(triangleCheck(10, 14, 18));
+// console.log(triangleCheck(10, 14, 18));
 
 // Desafio 13
 function hydrate(string) {
@@ -75,7 +75,7 @@ function hydrate(string) {
     }return `${somaNumeros} copos de água`;
   }
 
-// console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"));
+// console.log(hydrate("1 cachaça, 5 cervejas e 2 copo de vinho"));
 
 module.exports = {
   generatePhoneNumber,
