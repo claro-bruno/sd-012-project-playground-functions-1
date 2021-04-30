@@ -1,12 +1,25 @@
 // Desafio 10
 function techList(techNames) {
-  for(index = 0 ; index < techNames.length ; index+=1){
-    let newList = 
+  let secondList = [];
+  if(techNames.length === 0){
+    return "Vazio!";
+  } else {
+    let firstlist = techNames.sort();
+    for (let key in firstlist) {
+      secondList.push = {
+        tech: firstlist[key],
+        name: "Juliana"
+      }
+    }
+      return secondList;
   }
 }
 
+
+
 // Desafio 11
-function generatePhoneNumber() {
+function generatePhoneNumber(numbers) {
+for ()
   // seu código aqui
 }
 
