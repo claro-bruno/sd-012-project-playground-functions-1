@@ -7,14 +7,13 @@ function techList(array, name) {
   let newList = [];
   for (let key in array) {
     let object = {};
-    object['techName'] = array[key];
+    object['tech'] = array[key];
     object['name'] = name;
-    newList.push(object);
-    
+    newList.push(object); 
   }
   return newList;
 }
-console.log(techList([],
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
   "Lucas"));
 // Desafio 11
 function generatePhoneNumber() {
