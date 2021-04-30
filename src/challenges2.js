@@ -32,7 +32,9 @@ function generatePhoneNumber(arrayNumber) {
     } else if ( key >= 2 && key < 7 ) {
       foneNumber += arrayNumber[key];
     } else if ( key == 7){
-      foneNumber += '-';
+      foneNumber += '-' + arrayNumber[key];
+    } else if (key >7) {
+      foneNumber += arrayNumber[key];
     }
 
   }
