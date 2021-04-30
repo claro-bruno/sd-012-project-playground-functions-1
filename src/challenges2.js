@@ -46,7 +46,7 @@ function generatePhoneNumber(arrayPhoneNumber) {
   let validNegative = isValidNegative(arrayPhoneNumber);
   let validRep = isValidRep(arrayPhoneNumber);
   if (arrayPhoneNumber.length !== 11) {
-    return 'Array com tamanho incorreto';
+    return 'Array com tamanho incorreto.';
   }
   if (validNegative === true || validRep === true) {
     return 'não é possível gerar um número de telefone com esses valores';
@@ -60,8 +60,7 @@ function generatePhoneNumber(arrayPhoneNumber) {
   number[0] = firstHalf;
   number[1] = secondHalf;
   number = number.join('-');
-  let phoneNumber = `${ddd} ${number}`;
-  return phoneNumber;
+  return `${ddd} ${number}`;
 }
 
 // Desafio 12
