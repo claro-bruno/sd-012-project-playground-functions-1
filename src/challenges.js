@@ -25,9 +25,24 @@ function splitSentence(frase) {
 
 
 // Desafio 4
-function concatName() {
-   // seu código aqui
-}
+function concatName(arrayString) {
+    let arrayReverse = [arrayString[arrayString.length -1]];
+    for(let i = 0; i < arrayString.length -1; i++){
+      arrayReverse.push(arrayString[i]);
+    }
+    return arrayReverse;
+ }
+// let vari = ["Lucas", "Rogerio", "Andre", "Janderson"]
+// concatName(vari);
+
+
+
+
+
+
+
+
+
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -75,12 +90,13 @@ for(let index = 0; index < buznumeros.length; index++){
     }else{
         arrayFizz.push("bug!");  
     }
-}
+  }
   return arrayFizz;
+  // let variable = [2, 15, 7, 9, 45];
+  // console.log(fizzBuzz(variable));
+  // Desafio 9
 }
-// let variable = [2, 15, 7, 9, 45];
-// console.log(fizzBuzz(variable));
-// Desafio 9
+
 function encode(codeString) {
   
   codeString = codeString.replaceAll("a","1");
@@ -90,8 +106,9 @@ function encode(codeString) {
   codeString = codeString.replaceAll("u","5");
 
 return codeString;
-}
 // console.log(encode("aeiou uoiea"));
+}
+
 
 function decode(decodeString) {
   decodeString = decodeString.replaceAll("1","a");
@@ -101,8 +118,9 @@ function decode(decodeString) {
   decodeString = decodeString.replaceAll("5","u");
 
 return decodeString;
-}
 // console.log(decode("12345 54321"));
+}
+
 module.exports = {
   calcArea,
   catAndMouse,
