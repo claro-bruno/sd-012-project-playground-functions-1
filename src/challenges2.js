@@ -60,17 +60,22 @@ function generatePhoneNumber(numeros) {
   return (`(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`);
 }
 
-console.log(generatePhoneNumber([2,1,9,9,0,3,5,3,2,1,8,1]));
-
-
-
-
+console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1,2]));
 
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA,lineB,lineC) {
+  let ladoA = Math.abs(lineA);
+  let ladoB = Math.abs(lineB);
+  let ladoC = Math.abs(lineC);
+  if ((ladoC+ladoB)<ladoA<ladoB+ladoC && (ladoA-ladoC)<ladoB<ladoA+ladoC && ( ladoA-ladoB)<ladoC<ladoA+ladoB){  
+    return true;
+  }else{
+    return false;
+  }
 }
+
+console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate() {
