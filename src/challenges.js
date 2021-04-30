@@ -96,7 +96,7 @@ function encode(string) {
       string[index] = 5;
     }
   }
-  return split;
+  return string;
 }
 
 function decode() {
