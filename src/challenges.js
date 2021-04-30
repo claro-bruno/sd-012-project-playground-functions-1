@@ -1,8 +1,10 @@
 // Desafio 1
 function compareTrue(word1, word2) {
-  if (word1 === true && word2 === true) {
-    return true;
-  
+  if (word1 === true && word2 === true){
+    return true
+  }
+  else {
+    return false
   }
 }
 compareTrue(false, true)
