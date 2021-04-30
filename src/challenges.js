@@ -22,15 +22,15 @@ function splitSentence(phrase) {
 function concatName(string) {
   // seu código aqui
   let result = string[string.length -1] + ' ' + string[0]
+  return result;
 };
-console.log( result )
 // Desafio 5
 function footballPoints(wins,ties) {
   // seu código aqui
   let victory = wins * 3
   let empate = ties
-  let ontos = empate + victory
-  return empate
+  let pontos = empate + victory
+  return pontos
 };
 // Desafio 6
 function highestCount(array1) {
@@ -50,13 +50,17 @@ function highestCount(array1) {
 };
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
-  // seu código aqui
+  // seu código 
+  
   if (cat1 - mouse < cat2 - mouse) {
-    return 'cat1'
+    let cat1win = 'cat1'
+    return cat1win
   }else if (cat1 - mouse > cat2 - mouse) {
-    return 'cat2'
+    let cat2win = 'cat2'
+    return cat2win
   }if (cat1 - mouse === cat2 - mouse) {
-    return 'os gatos trombam e o rato foge'
+    let catempat = 'os gatos trombam e o rato foge'
+    return catempat
   }
 };
 // Desafio 8
