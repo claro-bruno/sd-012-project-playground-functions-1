@@ -79,7 +79,12 @@ function hydrate(string) {
   for(let number of numbers) {
       total += number;
   }
-  return `${total} copos de água`;
+  
+  if (total == 1){
+    return `${total} copo de água`;
+  } else {
+    return `${total} copos de água`;
+  }
 }
 
 module.exports = {
