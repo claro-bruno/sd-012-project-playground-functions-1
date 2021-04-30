@@ -68,7 +68,7 @@ function fizzBuzz() {
 // Desafio 9
 function encode(string) {
   // seu código aqui
-let splitada = string.toLowerCase().split('');
+let splitada = string.split('');
   for(let verifica in splitada){
     if (splitada[verifica] === 'a') {
       splitada[verifica] = 1;
@@ -84,15 +84,14 @@ let splitada = string.toLowerCase().split('');
     }
     if (splitada[verifica] === 'u') {
       splitada[verifica] = 5;
-    }
-}
+    };
+};
 return splitada.join('');
-}
-console.log(encode('How are you today?'));
+};
 
 function decode(string) {
   // seu código aqui
-  let decodifica = string.toLowerCase().split('');
+  let decodifica = string.split('');
   for(let verifica in decodifica){
     if (decodifica[verifica] === '1') {
       decodifica[verifica] = 'a';
