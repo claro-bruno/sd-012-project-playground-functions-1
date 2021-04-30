@@ -141,17 +141,22 @@ function isVowel(character) {
   return false;
 }
 
-function encoder(encodedString, decodedString) {
+function characterChangerEncode(encodedString, decodedString, index) {
   let codex = { a: 1, e: 2, i: 3, o: 4, u: 5 };
+  let done = false;
+  for (let vowel in codex) {
+    if (decodedString[index] === vowel && done === false) {
+      encodedString += codex[vowel];
+      done = true;
+    }
+  }
+  return encodedString;
+}
+
+function encoder(encodedString, decodedString) {
   for (let index = 0; index < decodedString.length; index += 1) {
     if (isVowel(decodedString[index])) {
-      // let done = false;
-      for (let vowel in codex) {
-        if (decodedString[index] === vowel/* && done === false */) {
-          encodedString += codex[vowel];
-          // done = true;
-        }
-      }
+      encodedString = characterChangerEncode(encodedString, decodedString, index);
     } else {
       encodedString += decodedString[index];
     }
@@ -176,17 +181,22 @@ function isNumber(character) {
   return false;
 }
 
-function decoder(decodedString, encodedString) {
+function characterChangerDecode(decodedString, encodedString, index) {
   let codex = { 1: 'a', 2: 'e', 3: 'i', 4: 'o', 5: 'u' };
+  let done = false;
+  for (let number in codex) {
+    if (encodedString[index] === number && done === false) {
+      decodedString += codex[number];
+      done = true;
+    }
+  }
+  return decodedString;
+}
+
+function decoder(decodedString, encodedString) {
   for (let index = 0; index < encodedString.length; index += 1) {
     if (isNumber(encodedString[index])) {
-      // let done = false;
-      for (let number in codex) {
-        if (encodedString[index] === number/* && done === false */) {
-          decodedString += codex[number];
-          // done = true;
-        }
-      }
+      decodedString = characterChangerDecode(decodedString, encodedString, index);
     } else {
       decodedString += encodedString[index];
     }
