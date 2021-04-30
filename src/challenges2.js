@@ -12,6 +12,13 @@ function techList(arrayTec, name) {
   }
   return newList;
 }
+// Desafio 11.1.2
+function validatePhoneAux2(i, phoneNum, contRep) {
+  if (phoneNum[i] < 0 || phoneNum[i] > 9 || contRep > 2) {
+    return 'não é possível gerar um número de telefone com esses valores';
+  }
+  return true;
+}
 // Desafio 11.1.1
 function validatePhoneAux(i, phoneNum) {
   let contRep = 0;
@@ -19,8 +26,8 @@ function validatePhoneAux(i, phoneNum) {
   for (let i2 in phoneNum) {
     if (numCurrent === phoneNum[i2]) contRep += 1;
   }
-  if (phoneNum[i] < 0 || phoneNum[i] > 9 || contRep > 2) {
-    return 'não é possível gerar um número de telefone com esses valores';
+  if (validatePhoneAux2(i, phoneNum, contRep) !== true) {
+    return validatePhoneAux2(i, phoneNum, contRep);
   }
   return true;
 }
@@ -35,7 +42,7 @@ function validatePhone(phoneNum) {
   return true;
 }
 // Desafio 11.2
-function tiraVirgula(newString){
+function tiraVirgula(newString) {
   let string = newString.toString();
   string = string.replace(/,/g, '');
   return string;
