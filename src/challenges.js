@@ -44,9 +44,10 @@ console.log((wins * 3) + (ties * 1));
 let valores = [9, 1, 2, 9, 9, 5, 7];
 
 function highestCount(valores) {
+  let maiorNumero = Math.max(...valores)
   let contador = 0;
   for (index = 0; index <= valores.length; index ++) {
-    if (valores[index] === Math.max(...valores)) {
+    if (valores[index] === maiorNumero) {
       contador ++
     }
   }
@@ -55,9 +56,18 @@ function highestCount(valores) {
 console.log(highestCount(valores));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let menorDistancia;
+  if ((cat1 - mouse) < (cat2 - mouse)) {
+    console.log('cat1');
+  } else if ((cat2 - mouse) < (cat1 - mouse)) {
+    console.log('cat2');
+  } else {
+    console.log('os gatos trombam e o rato foge')
+  }
+return ' ';
 }
+console.log(catAndMouse(1, 3, 6));
 
 // Desafio 8
 function fizzBuzz() {
