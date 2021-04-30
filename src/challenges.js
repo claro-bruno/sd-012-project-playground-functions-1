@@ -27,9 +27,17 @@ console.log(splitSentence('vamo que vamo'));
 console.log(splitSentence('foguete'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayStrings) {
+  let array1 = arrayStrings[0];
+  let arrayLast = arrayStrings[arrayStrings.length - 1];
+  let LastFirst = arrayLast + ',' + ' ' + array1;
+  return LastFirst;
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolilo']));
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+console.log(concatName(['captain', 'my', 'captain']));
+
+
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -40,9 +48,7 @@ console.log(footballPoints(14, 8));
 console.log(footballPoints(1, 2));
 console.log(footballPoints(0, 0));
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount() {}
 
 // Desafio 7
 function catAndMouse() {
