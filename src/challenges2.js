@@ -24,20 +24,23 @@ const telefone = (array) => {
   });
   return fone;
 };
+const invalido = (array) => {
+  let contadores = {};
+  array.forEach((i) => { contadores[i] = (contadores[i] || 0) + 1; });
+  for (let i in contadores) {
+    if (contadores[i] > 2 || i > 9 || i < 0) {
+      return true;
+    }
+  }
+};
 
 function generatePhoneNumber(numeros) {
   if (numeros.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
-
-  let contadores = {};
-  numeros.forEach((i) => { contadores[i] = (contadores[i] || 0) + 1; });
-  for (let i in contadores) {
-    if (contadores[i] > 2) {
-      return 'não é possível gerar um número de telefone com esses valores';
-    }
+  if (invalido(numeros)) {
+    return 'não é possível gerar um número de telefone com esses valores';
   }
-
   return telefone(numeros);
 }
 
