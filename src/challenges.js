@@ -67,13 +67,26 @@ function catAndMouse(mouse,cat1,cat2) {
     return'calma la meu parceiro isso aqui não e um desenho animado'
   }
 };
-console.log(catAndMouse(0,2,2))
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(arrey3) {
   // seu código aqui
-  
-};
+  let array_3 = [];
+  for (let index = 0; index < arrey3.length; index += 1) {
+    array_3[index] = '';
+    if ((arrey3[index] % 3) === 0) {
+      array_3[index] += 'fizz';
+    } 
+    if ((arrey3[index] % 5) === 0) {
+      array_3[index] += 'buzz';
+    } 
+    if ((arrey3[index] % 5) !== 0 && (arrey3[index] % 3) !== 0) {
+      array_3[index] += 'bug!';
+    }
+  }
 
+  return array_3;
+};
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
 // Desafio 9
 function encode() {
   // seu código aqui
