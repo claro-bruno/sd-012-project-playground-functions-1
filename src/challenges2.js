@@ -18,7 +18,6 @@ function techList(techName, name) {
 
 // Desafio 11
 function getRepetedPhoneNumber(telefone) {
-  console.log(telefone)
   let contadorNumero = 0;
   let valorRepetido = 0;
   for (let key in telefone) {
@@ -28,13 +27,12 @@ function getRepetedPhoneNumber(telefone) {
         contadorNumero += 1;
       }
     }
-      contadorNumero < valorRepetido {
-        // precisa passar por todos os valor e ver qual que mais se repete
+      if (contadorNumero > valorRepetido) {
+        valorRepetido = contadorNumero;
       }
-      valorRepetido = contadorNumero;
-      return valorRepetido
-  }
-  contadorNumero = 0;
+      contadorNumero = 0;
+    }
+  return valorRepetido
 }
 function generatePhoneNumber(telefone) {
   let valorRepetido = getRepetedPhoneNumber(telefone);
@@ -50,7 +48,7 @@ function generatePhoneNumber(telefone) {
   }
   return `(${telefone[0]}${telefone[1]}) ${telefone[2]}${telefone[3]}${telefone[4]}${telefone[5]}${telefone[6]}-${telefone[7]}${telefone[8]}${telefone[9]}${telefone[10]}`
 }
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 9, 9, 9, 0, 1]))
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
