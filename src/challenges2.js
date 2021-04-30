@@ -1,5 +1,5 @@
 // Desafio 10
-function techList(techNames) {
+function techList(techNames,name) {
   let secondList = [];
   if(techNames.length === 0){
     return "Vazio!";
@@ -8,7 +8,7 @@ function techList(techNames) {
     for (let key in firstlist) {
       secondList.push = {
         tech: firstlist[key],
-        name: "Juliana"
+        name: name
       }
     }
     return secondList;
