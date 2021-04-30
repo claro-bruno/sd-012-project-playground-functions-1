@@ -93,10 +93,13 @@ function catAndMouse(mouse,cat1,cat2) {
 
 mouse = Math.abs(mouse)
 
-  if (cat1 === cat2){
+  let distanceCat1 = (cat1 - mouse)
+let distanceCat2 = (cat2 - mouse)
+
+  if (distanceCat1 === distanceCat2){
     return 'os gatos trombaram e o rato foge'
 
-  }else if (cat1 - mouse < cat2- mouse){
+  }else if (distanceCat1 < distanceCat2){
     return 'cat1'
 
   }else{
@@ -104,9 +107,9 @@ mouse = Math.abs(mouse)
   }
   
 }
-console.log(catAndMouse(0,3,2))
-console.log(catAndMouse(0,6,12))
-console.log(catAndMouse(0,3,3))
+//console.log(catAndMouse(0,3,2))
+//console.log(catAndMouse(0,3,12))
+//console.log(catAndMouse(0,3,3))
 
 // Desafio 8
 function fizzBuzz() {
