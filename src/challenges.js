@@ -94,12 +94,27 @@ function fizzBuzz(fizzBuzz) {
 console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
+function encode(code) {
   // seu código aqui
-}
-function decode() {
+  codeA = code.replace(/a/gi, 1);
+  codeE = codeA.replace(/e/gi, 2);
+  codeI = codeE.replace(/i/gi, 3);
+  codeO = codeI.replace(/o/gi, 4);
+  codeU = codeO.replace(/u/gi, 5);
+  return codeU;
+};
+console.log(encode('hi there!'));
+
+function decode(decode) {
   // seu código aqui
-}
+  decode1 = decode.replace(/1/gi, 'a');
+  decode2 = decode1.replace(/2/gi, 'e');
+  decode3 = decode2.replace(/3/gi, 'i');
+  decode4 = decode3.replace(/4/gi, 'o');
+  decode5 = decode4.replace(/5/gi, 'u');
+  return decode5;
+};
+console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
