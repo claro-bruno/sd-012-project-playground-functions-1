@@ -82,11 +82,45 @@ function fizzBuzz(numberBuzz) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(codeVowels) {
+  codeVowels = codeVowels.split('');
+  for (let index = 0; index < codeVowels.length; index += 1) {
+    switch (codeVowels[index]) {
+    case 'a': codeVowels[index] = '1';
+      break;
+    case 'e': codeVowels[index] = '2';
+      break;
+    case 'i': codeVowels[index] = '3';
+      break;
+    case 'o': codeVowels[index] = '4';
+      break;
+    case 'u': codeVowels[index] = '5';
+      break;
+    default:
+    }
+  }
+  // Fonte https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+  return (codeVowels.join(''));
 }
-function decode() {
+function decode(codeNumber) {
   // seu código aqui
+  codeNumber = codeNumber.split('');
+  for (let index = 0; index < codeNumber.length; index += 1) {
+    switch (codeNumber[index]) {
+    case '1': codeNumber[index] = 'a';
+      break;
+    case '2': codeNumber[index] = 'e';
+      break;
+    case '3': codeNumber[index] = 'i';
+      break;
+    case '4': codeNumber[index] = 'o';
+      break;
+    case '5': codeNumber[index] = 'u';
+      break;
+    default:
+    }
+  }
+  return codeNumber.join('');
 }
 
 module.exports = {
