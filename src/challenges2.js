@@ -16,7 +16,7 @@ function techList(arrayTec, name) {
 function validatePhoneAux(i, phoneNum) {
   let contRep = 0;
   let numCurrent = phoneNum[i];
-  for (let i2 in phoneNum){
+  for (let i2 in phoneNum) {
     if (numCurrent === phoneNum[i2]) contRep += 1;
   }
   if (phoneNum[i] < 0 || phoneNum[i] > 9 || contRep > 2) {
@@ -35,29 +35,28 @@ function validatePhone(phoneNum) {
   return true;
 }
 // Desafio 11.2
-function tiraVirgula (newString){
+function tiraVirgula(newString){
   let string = newString.toString();
   string = string.replace(/,/g, '');
   return string;
 }
 // Desafio 11.3
-function condicaoFor (i, newString, string){
+function condicaoFor(i, newString, string) {
   if (i === 2) newString.push(') ');
   if (i === 7) newString.push('-');
   return newString.push(string[i]);
-
 }
 // Desafio 11
 function generatePhoneNumber(phoneNum) {
-  if(validatePhone(phoneNum) === true) {
+  if (validatePhone(phoneNum) === true) {
     let string = phoneNum;
     let newString = ['('];
     for (let i = 0; i < string.length; i += 1) {
-      condicaoFor(i,newString, string);
+      condicaoFor(i, newString, string);
     }
-    return tiraVirgula(newString); //Se tudo der certo, retorna aqui
+    return tiraVirgula(newString); // Se tudo der certo, retorna aqui
   }
-  return validatePhone(phoneNum); //Se tiver algum erro, retorna aqui
+  return validatePhone(phoneNum); // Se tiver algum erro, retorna aqui
 }
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
