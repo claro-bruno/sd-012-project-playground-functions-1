@@ -21,21 +21,21 @@ console.log(techList([], 'jose'));
 console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'jose'));
 
 
-// // Desafio 11
-// function generatePhoneNumber(numeros) {
-//   let maximoNumeros=11;
-//   for (index = 0 ; index <numeros.length ; index +=1){
-//     if(numeros.length<maximoNumeros || numeros.length>maximoNumeros){
-//       return ("Array com tamanho incorreto.");
-//     }
-//     else if(numeros[index]<0 || numeros[index]>9) {
-//       return ("não é possível gerar um número de telefone com esses valores");
-//     }
-//   }
-//   return (`(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`);
-// }
+// Desafio 11
+function generatePhoneNumber(numeros) {
+  let maximoNumeros=11;
+  for (index = 0 ; index <numeros.length ; index +=1){
+    if(numeros.length<maximoNumeros || numeros.length>maximoNumeros){
+      return "Array com tamanho incorreto.";
+    }
+    else if(numeros[index]<0 || numeros[index]>9) {
+      return "não é possível gerar um número de telefone com esses valores";
+    }
+  }
+  return (`(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`);
+}
 
-// console.log(generatePhoneNumber([2,1,9,9,0,3,5,3,2,1,9]));
+console.log(generatePhoneNumber([2,1,9,9,0,3,5,3,2,1,9,1]));
 
 
 // Desafio 11
@@ -60,7 +60,7 @@ function generatePhoneNumber(numeros) {
   return (`(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`);
 }
 
-console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1,2]));
+console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1]));
 
 
 // Desafio 12
@@ -68,18 +68,19 @@ function triangleCheck(lineA,lineB,lineC) {
   let ladoA = Math.abs(lineA);
   let ladoB = Math.abs(lineB);
   let ladoC = Math.abs(lineC);
-  if ((ladoC+ladoB)<ladoA<ladoB+ladoC && (ladoA-ladoC)<ladoB<ladoA+ladoC && ( ladoA-ladoB)<ladoC<ladoA+ladoB){  
+  // if ((ladoC-ladoB)<ladoA< (ladoB+ladoC) && (ladoA-ladoC)<ladoB< (ladoA+ladoC) && ( ladoA-ladoB)<ladoC<(ladoA+ladoB))
+  if ((ladoC-ladoB)<ladoA && ladoA < (ladoB+ladoC) && (ladoA-ladoC)<ladoB && ladoB < (ladoA+ladoC) && ( ladoA-ladoB)<ladoC && ladoC<(ladoA+ladoB)){  
     return true;
   }else{
     return false;
   }
 }
 
-console.log(triangleCheck(10, 14, 8));
+console.log(triangleCheck(10, 14, 18));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let stringSeparada = string.split('');
 }
 
 module.exports = {
