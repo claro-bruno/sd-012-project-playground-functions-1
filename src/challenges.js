@@ -103,7 +103,6 @@ function encode(codeVowels) {
   return (codeVowels.join(''));
 }
 function decode(codeNumber) {
-  // seu código aqui
   codeNumber = codeNumber.split('');
   for (let index = 0; index < codeNumber.length; index += 1) {
     switch (codeNumber[index]) {
