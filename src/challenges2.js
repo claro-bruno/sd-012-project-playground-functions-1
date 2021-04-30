@@ -1,6 +1,9 @@
 // Desafio 10
 function techList(theTech, theName) {
   let objectlist = [];
+  if (theTech.length === 0) {
+    return ('Vazio!');
+  }
   for (let index = 0; index < theTech.length; index += 1) {
     let object = {
       tech: '',
