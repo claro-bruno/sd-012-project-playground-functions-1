@@ -78,11 +78,11 @@ function highestCount(valores) {
 }
 console.log(highestCount(lista));
 
-
-// Desafio 7
+// // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
-  let distanciaRatoCat1 = cat1 - mouse;
-  let distanciaRatoCat2 = cat2 - mouse;
+  let distanciaRatoCat1 = Math.abs(cat1 - mouse) ;
+  let distanciaRatoCat2 = Math.abs(cat2- mouse) ;//Math.abs torna os valores positivos sempre
+
 
   // let posicaoRato, posicaoGato1, posicaoGato2;
   if(distanciaRatoCat1 <distanciaRatoCat2){
@@ -93,6 +93,8 @@ function catAndMouse(mouse,cat1,cat2) {
     return console.log("os gatos trombam e o rato foge");
   }
 }
+// catAndMouse(-1,0,1);//ESSE EU NÃO SOUBE FAZER FUNCIONAR
+catAndMouse(1,0,2);//gatos devem se trombar (distância igual do rato)
 catAndMouse(0,3,2);
 catAndMouse(0,6,12);
 catAndMouse(0,2,2);
