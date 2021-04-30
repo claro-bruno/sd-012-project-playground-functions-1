@@ -91,13 +91,13 @@ console.log(highestCount([0, 0, 0]))
 function catAndMouse(mouse,cat1,cat2) {
   
   if (cat1 === cat2){
-    return 'Os gatos trombaram e o rato foge'
+    return 'os gatos trombaram e o rato foge'
 
   }else if (cat1 - mouse < cat2 - mouse){
-    return 'Gato 1 mais próximo'
+    return 'cat1'
 
   }else{
-    return 'Gato 2 mais próximo'
+    return 'cat2'
   }
   
 }
