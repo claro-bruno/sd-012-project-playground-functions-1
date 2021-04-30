@@ -82,7 +82,7 @@ function fizzBuzz(arrey3) {
     if ((arrey3[index] % 5) === 0) {
       array_3[index] += 'buzz';
     } 
-    if (((arrey3[index] % 3) === 0 && (arrey3[index] % 5) === 0 ) {
+    if (((arrey3[index] % 3) === 0 && (arrey3[index] % 5) === 0 )) {
       array_3[index] += 'fizzbuzz';
     }
     if ((arrey3[index] % 5) !== 0 && (arrey3[index] % 3) !== 0) {
@@ -91,7 +91,6 @@ function fizzBuzz(arrey3) {
   }
   return array_3;
 };
-// Desafio 9
 function encode(string) {
   let text = string;
   text = text.replace(/a/g, '1');
@@ -109,7 +108,7 @@ function decode(string) {
   text = text.replace(/4/g, 'o');
   text = text.replace(/5/g, 'u');
   return text;
-  // seu código aqui
+
 };
 module.exports = {
   calcArea,
