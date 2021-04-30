@@ -21,8 +21,9 @@ function splitSentence(phrase) {
 // Desafio 4
 function concatName(string) {
   // seu código aqui
-  return string[string.length -1] + ' ' + string[0]
+  let result = string[string.length -1] + ' ' + string[0]
 };
+console.log( result )
 // Desafio 5
 function footballPoints(wins,ties) {
   // seu código aqui
@@ -58,7 +59,6 @@ function catAndMouse(mouse,cat1,cat2) {
     return 'os gatos trombam e o rato foge'
   }
 };
-
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
