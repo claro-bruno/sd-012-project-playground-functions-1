@@ -1,9 +1,9 @@
 // Desafio 1
 function compareTrue(nun1, nun2) {
-  if (nun1 === true && nun2 === true){
+  if ( nun1 === true && nun2 === true ){
     return true;
   } return false;
-};
+}
 
 // Desafio 2
 function calcArea(base, height) {
@@ -12,8 +12,9 @@ function calcArea(base, height) {
 } 
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  let msg = string.split(' ');
+  return msg; 
 }
 
 // Desafio 4
