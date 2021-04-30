@@ -88,30 +88,28 @@ function fizzBuzz(array) {
   }
 
 // Desafio 9
-function encode() {
-  function encode(string) {
+function encode(string) {
     string = string.split("");
     for (let index = 0; index <= string.length; index += 1){
       switch (string[index]){
-        case "a":
-          string[index] = "1";
+      case "a":
+        string[index] = "1";
         break;
-        case "e":
-          string[index] = "2";
+      case "e":
+        string[index] = "2";
         break;
-        case "i":
-          string[index] = "3";
+      case "i":
+        string[index] = "3";
         break;
-        case "o":
-          string[index] = "4";
+      case "o":
+        string[index] = "4";
         break;
-        case "u":
-          string[index] = "5";
+      case "u":
+        string[index] = "5";
         break;
-      }
     }
-  return string.join("");
   }
+return string.join("");
 }
 console.log(encode("hi there!"));
 
