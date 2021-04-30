@@ -1,7 +1,15 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui XABLAU 
-}
+function compareTrue(value1, value2) {
+  // seu código aqui 
+
+    if (value1 === true && value2 === true) {
+      return true; 
+    } else {
+      return false; 
+    };
+  };
+
+return compareTrue; 
 
 // Desafio 2
 function calcArea() {
