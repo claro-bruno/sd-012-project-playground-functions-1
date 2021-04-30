@@ -94,10 +94,10 @@ function catAndMouse(mouse,cat1,cat2) {
   }
 }
 // catAndMouse(-1,0,1);//ESSE EU NÃO SOUBE FAZER FUNCIONAR
-console.log(catAndMouse(1,0,2));//gatos devem se trombar (distância igual do rato)
-console.log(catAndMouse(0,3,2));
-console.log(catAndMouse(0,6,12));
-console.log(catAndMouse(0,2,2));
+// console.log(catAndMouse(1,0,2));//gatos devem se trombar (distância igual do rato)
+// console.log(catAndMouse(0,3,2));
+// console.log(catAndMouse(0,6,12));
+// console.log(catAndMouse(0,2,2));
 
 // Desafio 8
 function fizzBuzz(lista) {
