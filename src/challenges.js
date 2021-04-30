@@ -125,7 +125,7 @@ function encode(string) {
   // let stringJunta =stringSeparada.join('');
   // let letras = [`a`, `e`, `i`, `o`, `u`];
   // let valor;
-  for (index = 0 ; index < stringSeparada.length; index += 1){
+  for (let index = 0 ; index < stringSeparada.length; index += 1){
     // stringSeparada[index] = valor;
     // valor +=1;
     if (stringSeparada[index] === 'a') {
@@ -151,7 +151,7 @@ function encode(string) {
 function decode(string) {
 
   let stringSeparada = string.split('');//para separar as letras em indices
-  for (index = 0; index < stringSeparada.length; index += 1){
+  for (let index = 0; index < stringSeparada.length; index += 1){
 
     if (stringSeparada[index] === '1'){
       stringSeparada[index] = 'a';

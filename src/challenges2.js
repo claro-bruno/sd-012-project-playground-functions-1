@@ -61,7 +61,7 @@ function hydrate(string) {
   let stringSeparada = string.split('');
   let somaNumeros = 0;
   for (let index = 0; index < stringSeparada.length; index += 1) {
-    if (stringSeparada[index] === '1' || stringSeparada[index] === '2' || stringSeparada[index] === '3' || stringSeparada[index] ===' 4' || stringSeparada[index]==='5' || stringSeparada[index]==='6' || stringSeparada[index]==='7' || stringSeparada[index] === '8' || stringSeparada[index] === '9')
+    if (stringSeparada[index] === '1' || stringSeparada[index] === '2' || stringSeparada[index] === '3' || stringSeparada[index] === '4' || stringSeparada[index] === '5' || stringSeparada[index] === '6' || stringSeparada[index] === '7' || stringSeparada[index] === '8' || stringSeparada[index] === '9')
     {
       // numeros.push(parseInt(stringSeparada[index]));  
       somaNumeros += parseInt(stringSeparada[index]);
@@ -75,7 +75,8 @@ function hydrate(string) {
   }
 }
 
-// console.log(hydrate("1 cachaça, 5 cervejas e 2 copo de vinho"));
+console.log(hydrate("1 cachaça, 5 cervejas e 2 copo de vinho"));
+console.log(hydrate("1 cachaça"));
 
 module.exports = {
   generatePhoneNumber,
