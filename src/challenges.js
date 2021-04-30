@@ -27,9 +27,15 @@ console.log(splitSentence('go Trybe'));
 // Tendo como referência : https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split //
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let concatena = (`${array[array.length - 1]}, ${array[0]}`);
+  return concatena;
 }
+console.log(concatName['captain', 'my', 'captain']);
+
+// https://pt.stackoverflow.com/questions/231359/qual-a-forma-correta-de-concatenar-strings-em-javascript 
+// https://pt.stackoverflow.com/questions/252089/pegar-a-%C3%BAltima-palavra-de-uma-string-e-coloc%C3%A1-la-no-in%C3%ADcio-com-jquery
+
 
 // Desafio 5
 function footballPoints() {
