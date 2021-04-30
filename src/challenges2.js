@@ -61,7 +61,7 @@ function hydrate(botaAlcoolAk) {
     if(glassWaters == 1){
       return glassWaters + " copo de água";
     }else{
-    return glassWaters + " copos de águas";
+    return glassWaters + " copos de água";
     }
 }
 
