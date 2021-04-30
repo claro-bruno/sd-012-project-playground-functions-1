@@ -1,21 +1,20 @@
 // Desafio 10
-function techList(techNames,name) {
-  let secondList = [];
+function techList(techNames,personName) {
+  let secondList = {};
   if(techNames.length === 0){
     return "Vazio!";
   } else {
     let firstlist = techNames.sort();
-    for (let key in firstlist) {
+    for (let index = 0; index < firstlist.length; index +=1) {
       secondList.push = {
-        tech: firstlist[key],
-        name: name
+        tech: firstlist[index],
+        name: personName
       }
     }
     return secondList;
   }
 }
-
-
+ .
 
 // Desafio 11
 function generatePhoneNumber(numbers) {
