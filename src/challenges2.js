@@ -17,14 +17,30 @@ function techList(techPraAprender, name) {
 }
 // console.log(techList(array10, "Lucas"));
 // Desafio 11
-let array11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 9];
+function repeteMais3x(arraycheck) {
+  let contador = 0;
+  let contador2 = 0;
+  for (let key1 in arraycheck) {
+    contador = 0;
+    for (let key2 in arraycheck) {
+      if (arraycheck[key2] === arraycheck[key1]) {
+        contador +=1;
+      }
+      if (contador > contador2){
+        contador2 = contador;
+      }
+    }
+  }
+  return contador;
+}
+// let array11 = [1, 3, 2, 9, 5, 6, 7, 8, 9, 0, 3];
 function generatePhoneNumber(arrayNumber) {
   let foneNumber = '(';
   for (let key in arrayNumber) {
     if (arrayNumber.length !== 11) {
       return "Array com tamanho incorreto.";
-    } else if (arrayNumber[key] < 0 || arrayNumber[key] > 9) { // faltando se repetir mais de 3 vezes
-      return "não é possível gerar um número de telefone com esses valores"; //  (stringAqui[key] === 'e') 
+    } else if (arrayNumber[key] < 0 || arrayNumber[key] > 9 || repeteMais3x(arrayNumber) >= 3) {
+      return "não é possível gerar um número de telefone com esses valores";
     } else if (key < 1 ) {
       foneNumber += arrayNumber[key];
     } else if (key == 1){
@@ -36,7 +52,6 @@ function generatePhoneNumber(arrayNumber) {
     } else if (key >7) {
       foneNumber += arrayNumber[key];
     }
-
   }
   return foneNumber;
 }
