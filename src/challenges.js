@@ -83,10 +83,28 @@ let distanciaCat2 = Math.abs(cat2 - mouse)
 }
 console.log(catAndMouse(5, 11, 11))
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let array1 = [];
+for (let index = 0; index < array.length; index += 1) {
+  
+   if ((array[index] % 3) === 0 && (array[index] % 5) === 0) {
+    array1.push('fizzBuzz')
+  } 
+  else if ((array[index] % 5) === 0) {
+    array1.push('buzz')
+  } 
+  
+  else if ( (array[index] % 3) === 0 ) {
+    array1.push('fizz')
+  }  
+  
+  else {
+    array1.push('bug!')
+  }
+ }
+ return array1;
 }
-
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
 // Desafio 9
 function encode() {
   // seu código aqui
