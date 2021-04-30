@@ -84,12 +84,12 @@ function fizzBuzz(Array) {
     } else if (Array[index] % 5 == 0 ){
       result.push('Buzz');
     } else {
-      result.push('bug');
-    }; 
+      result.push('bug!');
+    };
+ 
   };
   return result;
 };
-console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
 function encode() {
