@@ -21,9 +21,8 @@ function splitSentence(phrase) {
 // Desafio 4
 function concatName(string) {
   // seu código aqui
-  let result = string[string.length -1] + ' ' + string[0]
-  return result;
-};
+  return `${string[string.length - 1]}, ${string[0]}`;
+console.log(concatName()
 // Desafio 5
 function footballPoints(wins,ties) {
   // seu código aqui
