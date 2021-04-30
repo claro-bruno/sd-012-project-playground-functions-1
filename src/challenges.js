@@ -16,7 +16,7 @@ function splitSentence(splitString) {
 }
 // Desafio 4
 function concatName(strings) {
-  let lastAndFirst = `${strings[strings.length - 1]}, ${strings[0]};`
+  let lastAndFirst = `${strings[strings.length - 1]}, ${strings[0]};`;
   return lastAndFirst;
 }
 // Desafio 5
@@ -29,22 +29,31 @@ function highestCount(array) {
   let repeticoes = 0;
   let maiorNum = 0;
   for (let num of array) {
-  if (num > maiorNum) {
-  maiorNum = num;
+    if (num > maiorNum) {
+      maiorNum = num;
     }
   }
   for (let key of array) {
-  if (key === maiorNum) {
-  repeticoes += 1;
+    if (key === maiorNum) {
+      repeticoes += 1;
     }
   }
   return repeticoes;
 }
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
 
+// Desafio 7
+function catAndMouse(mouse, cat1, cat2 ) {
+  let position1 = mouse - cat1
+  let position2 = mouse - cat2
+  if (position1 > position2) {
+    return "cat1";
+  } if (position2 > position1) {
+    return "cat2";
+  } if(position1 = position2) {
+    return "os gatos trombam e o rato foge";
+  }
+}
+console.log(catAndMouse(4,2,6));
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
