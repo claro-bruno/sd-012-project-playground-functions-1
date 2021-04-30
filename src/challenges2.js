@@ -69,7 +69,7 @@ function generatePhoneNumber(array) {
 }
 
 // Desafio 12
-function triangleCheck(lineA, lineB, lineC) {
+function triangleCheck() {
   // seu código aqui
 }
 
