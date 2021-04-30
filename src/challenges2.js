@@ -81,7 +81,19 @@ console.log(triangleCheck(10, 14, 18));
 // Desafio 13
 function hydrate(string) {
   let stringSeparada = string.split('');
-}
+  let numeros =[];
+  let somaNumeros = 0;
+  for (index = 0 ; index<stringSeparada.length ; index+=1){
+    if(stringSeparada[index]==='1' || stringSeparada[index]==='2' || stringSeparada[index]==='3' ||stringSeparada[index]==='4' ||stringSeparada[index]==='5' || stringSeparada[index]==='6' || stringSeparada[index]==='7' || stringSeparada[index]==='8' || stringSeparada[index]==='9')
+    {
+      // numeros.push(parseInt(stringSeparada[index]));  
+      somaNumeros += parseInt(stringSeparada[index]);
+  }
+  
+    }return `${somaNumeros} copos de água`;
+  }
+
+console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"));
 
 module.exports = {
   generatePhoneNumber,
