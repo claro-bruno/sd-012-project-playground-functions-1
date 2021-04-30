@@ -97,14 +97,41 @@ function encode(frase) {
       default: {
         array.push(letras[key]);
       };
-    }
-  }
+    };
+  };
   codificado = array.join("");
   return codificado;
 };
 
-function decode() {
-  // seu código aqui
+function decode(deFrase) {
+  let letras = deFrase.split("");
+  let array = [];
+  let deCodificado = [];
+
+  for (key in letras) {
+    switch (letras[key]) {
+      case "1":
+        array.push("a");
+        break
+      case "2":
+        array.push("e");
+        break
+      case "3":
+        array.push("1");
+        break
+      case "4":
+        array.push("o");
+        break
+      case "5":
+        array.push("u");
+        break
+      default: {
+        array.push(letras[key]);
+      };
+    }
+  }
+  deCodificado = array.join("");
+  return deCodificado;
 }
 
 module.exports = {
