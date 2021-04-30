@@ -132,7 +132,8 @@ function fizzBuzz(number) {
 //  } else if([number] % 3 === 0){
 //    return = "buzz";
  // } else if (array[number] % 5 === 0)
-} return array
+ // rreturn array
+} 
 
 // Desafio 9
 function encode(string) {
