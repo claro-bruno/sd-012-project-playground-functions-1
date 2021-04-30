@@ -64,18 +64,10 @@ function highestCount(array) {
 }
 
 // Desafio 7
-function calcularDistancia(mouse, cat) {
-  let distancia = cat - mouse;
-  if (distancia < 0) {
-    distancia = mouse - cat;
-  }
-  return distancia;
-}
-
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let distanciaRatoGato1 = calcularDistancia(mouse, cat1);
-  let distanciaRatoGato2 = calcularDistancia(mouse, cat2);
+  let distanciaRatoGato1 = Math.abs(cat1 - mouse);
+  let distanciaRatoGato2 = Math.abs(cat2 - mouse);
 
   let string = 'gatos';
   if (distanciaRatoGato1 < distanciaRatoGato2) {
@@ -103,6 +95,7 @@ function buzz(valor) {
   }
   return buz;
 }
+
 function fizzBuzz(array) {
   // seu código aqui
   let arrayFinal = [];

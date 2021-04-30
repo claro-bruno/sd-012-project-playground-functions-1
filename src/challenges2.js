@@ -1,5 +1,5 @@
 // Desafio 10
-function techList(array, nome) {
+function techList(array = [], nome) {
   // seu código aqui
   if (!array.length) return 'Vazio!';
   let arrayFinal = [];
@@ -54,7 +54,8 @@ function Numeros(array) {
   }
   return str;
 }
-function generatePhoneNumber(array) {
+
+function generatePhoneNumber(array = []) {
   // seu código aqui
   let error = errorPhoneNumber(array);
   let str = '';
