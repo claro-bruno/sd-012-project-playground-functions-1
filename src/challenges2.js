@@ -2,7 +2,7 @@
 function techList(array, name) {
   if(array[0] === undefined) {
     return 'Vazio!';
-  } else {
+  }
   array.sort();
   let newList = [];
   for (let key in array) {
@@ -13,11 +13,9 @@ function techList(array, name) {
     
   }
   return newList;
-  }
-  
-  
 }
-
+console.log(techList([],
+  "Lucas"));
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
