@@ -130,13 +130,13 @@ function catAndMouse(mouse, cat1, cat2) {
 
 
 // Desafio 8
-function fizzBuzz(number) {
+function fizzBuzz(number) {}
 //  if([number] / 3 ){
 //    return "fizz";
 //  } else if([number] % 3 === 0){
 //    return = "buzz";
  // } else if (array[number] % 5 === 0)
-} return array
+// } return array
 
 // Desafio 9
 function encode(string) {
