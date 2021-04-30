@@ -64,14 +64,14 @@ function highestCount(valores) {
   let maiorNumero = 0;
   let contador = 1;
   maiorNumero = valores[0];
-  for(let index = 1 ; index < valores.length ; index +=1) {    
-    if (maiorNumero != valores[index] && maiorNumero < valores[index]) {
+  for (let index = 1 ; index < valores.length ; index += 1) {
+    if (maiorNumero !== valores[index] && maiorNumero < valores[index]) {
       contador = 0;
     }
     if (maiorNumero <= valores[index]) {
       maiorNumero = valores[index];
       contador += 1;
-    }    
+    }
   } return contador;
 }
 console.log(highestCount(lista));
@@ -79,7 +79,7 @@ console.log(highestCount(lista));
 // // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let distanciaRatoCat1 = Math.abs(cat1 - mouse);
-  let distanciaRatoCat2 = Math.abs(cat2 - mouse);//Math.abs torna os valores positivos sempre
+  let distanciaRatoCat2 = Math.abs(cat2 - mouse);// Math.abs torna os valores positivos sempre
 
   // let posicaoRato, posicaoGato1, posicaoGato2;
   if (distanciaRatoCat1 < distanciaRatoCat2) {
@@ -98,20 +98,20 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(lista) {
-  
+
   let novaLista = [];
-  for (let index = 0; index<lista.length; index += 1){
-    
-    if (lista[index]%3 == 0 && lista[index]%5 == 0){
+  for (let index = 0; index < lista.length; index += 1){
+
+    if (lista[index] % 3 === 0 && lista[index] % 5 === 0){
       novaLista.push('fizzBuzz');
     }
-    else if (lista[index]%3 == 0){
+    else if (lista[index] % 3 === 0){
       novaLista.push('fizz');
     }
-    else if (lista[index]%5 == 0){
+    else if (lista[index] % 5 === 0){
       novaLista.push('buzz');
     }
-    else if(lista[index]%5 != 0 && lista[index]%3 != 0) {
+    else if (lista[index] % 5 !== 0 && lista[index] % 3 !== 0) {
       novaLista.push(`bug!`);
     }
   }return novaLista;
@@ -121,7 +121,6 @@ console.log(fizzBuzz(numbers));
 
 // Desafio 9
 function encode(string) {
-  
   let stringSeparada = string.split('');//para separar as letras em indices
   // let stringJunta =stringSeparada.join('');
   // let letras = [`a`, `e`, `i`, `o`, `u`];
@@ -143,7 +142,7 @@ function encode(string) {
     }
     else if (stringSeparada[index] === 'u') {
       stringSeparada[index] = 5;
-    }    
+    }
   }
   return stringSeparada.join('');//usando o join('') os indices somem e não tem vírgula
 }
@@ -153,7 +152,7 @@ function decode(string) {
 
   let stringSeparada = string.split('');//para separar as letras em indices
   for (index = 0; index < stringSeparada.length; index += 1){
- 
+
     if (stringSeparada[index] === '1'){
       stringSeparada[index] = 'a';
     }
@@ -169,11 +168,10 @@ function decode(string) {
     else if (stringSeparada[index] === '5'){
       stringSeparada[index] = 'u';
     }
-  }  
+  }
   return stringSeparada.join('');
 }
   console.log(decode(`h3 th2r2!`));
-
 
 module.exports = {
   calcArea,
