@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(nun1, nun2) {
-  if ( nun1 === true && nun2 === true ){
+  if (nun1 === true && nun2 === true) {
     return true;
   } return false;
 }
@@ -9,18 +9,20 @@ function compareTrue(nun1, nun2) {
 function calcArea(base, height) {
   let area = (base * height) / 2;
   return area;
-} 
+}
 
 // Desafio 3
 function splitSentence(string) {
   let msg = string.split(' ');
-  return msg; 
+  return msg;
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(arrayStrings) {
+  let firstName = arrayStrings[0];
+  let lastName = arrayStrings[arrayStrings.length - 1];
+  return lastName + ', ' + firstName;
+} 
 
 // Desafio 5
 function footballPoints() {
