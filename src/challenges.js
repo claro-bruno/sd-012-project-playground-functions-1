@@ -102,14 +102,23 @@ return arrayNova8;
 
 
 // Desafio 9 FALTA
+function encode(frase9) {
+  let novaFrase = frase9.replace(/a/gi, '1')
+  .replace(/e/gi, '2')
+  .replace(/i/gi, '3')
+  .replace(/o/gi, '4')
+  .replace(/u/gi, '5');
+  return novaFrase;
+}
 
-function encode() {
-
-};
-
-function decode() {
-  
-};
+function decode(novaFrase) {
+  let fraseDecodificada = novaFrase.replace(/1/gi, 'a')
+  .replace(/2/gi, 'e')
+  .replace(/3/gi, 'i')
+  .replace(/4/gi, 'o')
+  .replace(/5/gi, 'u');
+  return fraseDecodificada;
+}
 
 
 module.exports = {
