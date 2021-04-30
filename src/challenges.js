@@ -71,11 +71,37 @@ function fizzBuzz(array) {
   return arrayRetorno;
 };
 
-
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
+
+function encode(frase) {
+  let letras = frase.split("");
+  let array = [];
+  let codificado = [];
+  for (key in letras) {
+    switch (letras[key]) {
+      case "a":
+        array.push("1");
+        break
+      case "e":
+        array.push("2");
+        break
+      case "i":
+        array.push("3");
+        break
+      case "o":
+        array.push("4");
+        break
+      case "u":
+        array.push("5");
+        break
+      default: {
+        array.push(letras[key]);
+      };
+    }
+  }
+  codificado = array.join("");
+  return codificado;
+};
 
 function decode() {
   // seu código aqui
