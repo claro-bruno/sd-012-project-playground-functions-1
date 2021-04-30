@@ -1,18 +1,16 @@
 // Desafio 1
 function compareTrue(word1, word2) {
-  if (word1 === true && word2 === true){
-    return true
-  }
-  else {
-    return false
+  if (word1 === true && word2 === true) {
+    return true;
+  
   }
 }
 compareTrue(false, true)
 
 // Desafio 2
 function calcArea(base, height) {
-  let area = base * height / 2
-  return area 
+  let area = (base * height / 2);
+  return area;
 };
 let base = 51;
 let height = 1;
@@ -69,17 +67,20 @@ highestCount([9, 1, 2, 3, 9, 5, 7])
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if (cat1 < cat2){
-    return "cat1" 
-  }
-  else if (cat1 > cat2){
-    return "cat2"
-  }
-  else if (cat1 === cat2){
-    return "os gatos trombam e o rato foge"
-  }
+let cat1position = Math.abs(mouse - cat1)
+let cat2position = Math.abs(mouse - cat2)
+
+if (cat1position === cat2position) {
+  return "os gatos trombam e o rato foge"
 }
-catAndMouse (1,0,0)
+if (cat1position<cat2position) {
+  return "cat1"
+}
+if (cat2position<cat1position) {
+  return "cat2"
+}
+}
+catAndMouse(1,0,2)
 
 // Desafio 8
 function fizzBuzz() {
