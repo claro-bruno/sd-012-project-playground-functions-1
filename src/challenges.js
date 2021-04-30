@@ -117,7 +117,7 @@ function decode(deFrase) {
         array.push("e");
         break
       case "3":
-        array.push("1");
+        array.push("i");
         break
       case "4":
         array.push("o");
@@ -128,8 +128,8 @@ function decode(deFrase) {
       default: {
         array.push(letras[key]);
       };
-    }
-  }
+    };
+  };
   deCodificado = array.join("");
   return deCodificado;
 }
