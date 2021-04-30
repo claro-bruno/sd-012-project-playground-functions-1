@@ -105,24 +105,20 @@ function highestCount(numbers) {
 //console.log(highestCount([-1,-2,-3,-4]));
 
 
-// Desafio 7 -- 
-function catAndMouse(mouse, cat1, cat2) {
-  let distCat1 = Math.abs (mouse - cat1);
-  let distCat2 = Math.abs (mouse - cat2);
-  if (distCat1 > distCat2){
-    return 'cat2';
-  } else if (distCat2 > distCat1){
-    return 'cat1';
-  } else {
-    return 'os gatos trombam e o rato foge';
-  }
-} 
-//console.log(catAndMouse(0, 6, 6));
+// Desafio 7 -- FAZER
+function catAndMouse() {
 
- 
-
-
-
+}
+//  let cat1 = "cat1";
+//  let cat2 = "cat2";
+ // let erro = "os gatos trombam e o rato foge";
+ // let mouse;
+ // let mousePosition;
+ // let cat1Position;
+ // let cat2Position;
+ // let catAndMouse;
+ // existe um metodo para ajudar a nao ter funcao negativa - numeros absolutos
+ // switch case ???
 
 
 
@@ -130,13 +126,13 @@ function catAndMouse(mouse, cat1, cat2) {
 
 
 // Desafio 8
-function fizzBuzz(number) {}
+function fizzBuzz(number) {
 //  if([number] / 3 ){
 //    return "fizz";
 //  } else if([number] % 3 === 0){
 //    return = "buzz";
  // } else if (array[number] % 5 === 0)
-// } return array
+} return array
 
 // Desafio 9
 function encode(string) {
