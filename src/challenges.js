@@ -6,9 +6,10 @@ function compareTrue(nun1, nun2) {
 };
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+function calcArea(base, height) {
+  let area = (base * height) / 2;
+  return area;
+} 
 
 // Desafio 3
 function splitSentence() {
