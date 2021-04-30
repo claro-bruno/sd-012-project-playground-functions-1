@@ -28,7 +28,7 @@ function generatePhoneNumber(arrayNumbers) {
   }
 }  
   for (index = 0; index < arrayNumbers.length; index += 1) {
-    if (repeatCheck >= 3){
+    if (repeatCheck >= 3) {
       break
     } else {
       repeatCheck = 0;
@@ -37,7 +37,7 @@ function generatePhoneNumber(arrayNumbers) {
         if (numbers === arrayNumbers[index2]) {
           repeatCheck += 1;
         }
-      } 
+      }
     }
   }
   if (arrayNumbers.length !== 11) {
@@ -60,8 +60,14 @@ function generatePhoneNumber(arrayNumbers) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA > lineB + lineC || lineB > lineA + lineC || lineC > lineA + lineB) {
+    return false;
+  } else if (lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC) || lineC < Math.abs(lineA - lineB)) {
+    return false;
+  } else {
+    return true;
+  }
 }
 
 // Desafio 13
