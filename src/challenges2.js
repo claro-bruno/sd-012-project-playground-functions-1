@@ -20,12 +20,9 @@ function techList(tecnology, name) {
 // console.log(techList([], 'jose'));
 // console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'jose'));
 
-
 // Desafio 11
 function generatePhoneNumber(numeros) {
 
-
-  
   if (numeros.length !== 11) { // refatorar porque a gisele pediu
     return 'Array com tamanho incorreto.';
   }
@@ -43,9 +40,7 @@ function generatePhoneNumber(numeros) {
   }
   return `(${numeros[0]}${numeros[1]}) ${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`;  
 }
-
 // console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1,2]));
-
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
@@ -59,24 +54,23 @@ function triangleCheck(lineA, lineB, lineC) {
     return false;
   }
 }
-
 // console.log(triangleCheck(10, 14, 18));
 
 // Desafio 13
 function hydrate(string) {
   let stringSeparada = string.split('');
   let somaNumeros = 0;
-  for (index = 0 ; index<stringSeparada.length ; index+=1){
-    if(stringSeparada[index]==='1' || stringSeparada[index]==='2' || stringSeparada[index]==='3' ||stringSeparada[index]==='4' ||stringSeparada[index]==='5' || stringSeparada[index]==='6' || stringSeparada[index]==='7' || stringSeparada[index]==='8' || stringSeparada[index]==='9')
+  for (let index = 0; index < stringSeparada.length; index += 1) {
+    if (stringSeparada[index] === '1' || stringSeparada[index] === '2' || stringSeparada[index] === '3' || stringSeparada[index] ===' 4' || stringSeparada[index]==='5' || stringSeparada[index]==='6' || stringSeparada[index]==='7' || stringSeparada[index] === '8' || stringSeparada[index] === '9')
     {
       // numeros.push(parseInt(stringSeparada[index]));  
       somaNumeros += parseInt(stringSeparada[index]);
-    }  
+    }
   }
-  if(somaNumeros>1){
+  if (somaNumeros > 1) {
     return `${somaNumeros} copos de água`;
   }
-  else if(somaNumeros==1){
+  else if (somaNumeros === 1) {
     return `${somaNumeros} copo de água`;
   }
 }

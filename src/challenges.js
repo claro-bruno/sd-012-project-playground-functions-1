@@ -2,21 +2,20 @@
 function compareTrue (valor1, valor2) {
   if (valor1 === true && valor2 === true) {
     return true;
-    }
+  }
   else if (valor1 === false && valor2 === true) {
     return false;
-    }
+  }
   else if (valor1 === true && valor2 === false) {
     return false;
-    }
+  }
   else {
     return false;
-    }
+  }
 }
 
-
 // Desafio 2
-function calcArea (base, height) {
+function calcArea(base, height) {
   let area = (base * height) / 2;
   return area;
 }
@@ -47,12 +46,11 @@ function concatName(lista) {
 let nomes = ['jose', 'maria', 'joão', 'Ricardo'];
 console.log(concatName(nomes));
 
-
 // Desafio 5
 function footballPoints(wins, ties) {
   let vitoria = 3;
   let empate = 1;
-  
+
   return (wins * vitoria) + (ties * empate);
 }
 
@@ -67,30 +65,29 @@ function highestCount(valores) {
   let contador = 1;
   maiorNumero = valores[0];
   for(let index = 1 ; index < valores.length ; index +=1) {    
-    if(maiorNumero != valores[index] && maiorNumero < valores[index]) {
+    if (maiorNumero != valores[index] && maiorNumero < valores[index]) {
       contador = 0;
     }
-    if (maiorNumero<=valores[index]){
+    if (maiorNumero <= valores[index]) {
       maiorNumero = valores[index];
-      contador +=1;
+      contador += 1;
     }    
-  }return contador;
+  } return contador;
 }
 console.log(highestCount(lista));
 
 // // Desafio 7
-function catAndMouse(mouse,cat1,cat2) {
-  let distanciaRatoCat1 = Math.abs(cat1 - mouse) ;
-  let distanciaRatoCat2 = Math.abs(cat2- mouse) ;//Math.abs torna os valores positivos sempre
-
+function catAndMouse(mouse, cat1, cat2) {
+  let distanciaRatoCat1 = Math.abs(cat1 - mouse);
+  let distanciaRatoCat2 = Math.abs(cat2 - mouse);//Math.abs torna os valores positivos sempre
 
   // let posicaoRato, posicaoGato1, posicaoGato2;
-  if(distanciaRatoCat1 <distanciaRatoCat2){
-    return "cat1";
-  }else if (distanciaRatoCat1 > distanciaRatoCat2){
-    return "cat2";
-  }else{
-    return "os gatos trombam e o rato foge";
+  if (distanciaRatoCat1 < distanciaRatoCat2) {
+    return 'cat1';
+  }else if (distanciaRatoCat1 > distanciaRatoCat2) {
+    return 'cat2';
+  }else {
+    return 'os gatos trombam e o rato foge';
   }
 }
 // catAndMouse(-1,0,1);//ESSE EU NÃO SOUBE FAZER FUNCIONAR
@@ -102,26 +99,25 @@ function catAndMouse(mouse,cat1,cat2) {
 // Desafio 8
 function fizzBuzz(lista) {
   
-  let novaLista=[];
-  for (let index =0 ; index<lista.length ; index +=1){
+  let novaLista = [];
+  for (let index = 0; index<lista.length; index += 1){
     
-    if(lista[index]%3==0 && lista[index]%5==0){
+    if (lista[index]%3 == 0 && lista[index]%5 == 0){
       novaLista.push('fizzBuzz');
     }
-    else if(lista[index]%3==0){
+    else if (lista[index]%3 == 0){
       novaLista.push('fizz');
     }
-    else if(lista[index]%5==0){
+    else if (lista[index]%5 == 0){
       novaLista.push('buzz');
     }
-    else if(lista[index]%5!=0 && lista[index]%3!=0) {
+    else if(lista[index]%5 != 0 && lista[index]%3 != 0) {
       novaLista.push(`bug!`);
     }
   }return novaLista;
 }
 let numbers = [2, 15, 7, 9, 45];
 console.log(fizzBuzz(numbers));
-
 
 // Desafio 9
 function encode(string) {
@@ -130,22 +126,22 @@ function encode(string) {
   // let stringJunta =stringSeparada.join('');
   // let letras = [`a`, `e`, `i`, `o`, `u`];
   // let valor;
-  for (index =0 ; index<stringSeparada.length ; index+=1){
+  for (index = 0 ; index < stringSeparada.length; index += 1){
     // stringSeparada[index] = valor;
     // valor +=1;
-    if(stringSeparada[index]==='a'){
+    if (stringSeparada[index] === 'a') {
       stringSeparada[index] = 1;
     }
-    else if(stringSeparada[index]==='e'){
+    else if (stringSeparada[index] === 'e') {
       stringSeparada[index] = 2;
     }
-    else if(stringSeparada[index]==='i'){
+    else if (stringSeparada[index] === 'i') {
       stringSeparada[index] = 3;
     }
-    else if(stringSeparada[index]==='o'){
+    else if (stringSeparada[index] === 'o') {
       stringSeparada[index] = 4;
     }
-    else if(stringSeparada[index]==='u'){
+    else if (stringSeparada[index] === 'u') {
       stringSeparada[index] = 5;
     }    
   }
@@ -153,31 +149,30 @@ function encode(string) {
 }
   console.log(encode(`hi there!`));
 
-
 function decode(string) {
 
   let stringSeparada = string.split('');//para separar as letras em indices
-  for (index =0 ; index<stringSeparada.length ; index+=1){
+  for (index = 0; index < stringSeparada.length; index += 1){
  
-    if(stringSeparada[index]==='1'){
+    if (stringSeparada[index] === '1'){
       stringSeparada[index] = 'a';
     }
-    else if(stringSeparada[index]==='2'){
+    else if (stringSeparada[index] === '2'){
       stringSeparada[index] = 'e';
     }
-    else if(stringSeparada[index]==='3'){
+    else if (stringSeparada[index] === '3'){
       stringSeparada[index] = 'i';
     }
-    else if(stringSeparada[index]==='4'){
+    else if (stringSeparada[index] === '4'){
       stringSeparada[index] = 'o';
     }
-    else if(stringSeparada[index]==='5'){
+    else if (stringSeparada[index] === '5'){
       stringSeparada[index] = 'u';
     }
   }  
   return stringSeparada.join('');
 }
-  console.log(decode(`h3 th2r2!"`));
+  console.log(decode(`h3 th2r2!`));
 
 
 module.exports = {
