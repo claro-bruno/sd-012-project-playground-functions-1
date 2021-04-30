@@ -62,28 +62,29 @@ function catAndMouse(mouse, cat1, cat2) {
   } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
     return 'cat2';
   } else {
-    return 'os gatos trombam e o rato foge'
+    return 'os gatos trombam e o rato foge';
   }
 }
-console.log(catAndMouse(7, 2, 8));
-
-// function catAndMouse(mouse, cat1, cat2) {
-//   let distanciacat1 = Math.abs(cat1 - mouse);
-//   let distanciacat2 = Math.abs(cat2 - mouse);
-//   if distanciacat1 < distanciacat2 {
-//     return 'cat1';
-//   } else if distanciacat2 < distanciacat1 {
-//     return 'cat2';
-//   } else {
-//     return 'os gatos trombam e o rato foge'
-//   }
-// }
-// console.log(catAndMouse(1, 2, 8));
+console.log(catAndMouse(6, 2, 8));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+
+function fizzBuzz(array) {
+  let resultado = [];
+  for (index = 0; index < array.length; index ++) {
+    if ((array[index] % 3 === 0) && (array[index] % 5 === 0)) {
+       resultado.push('fizzBuzz');
+    } else if (array[index] % 3 === 0) {
+      resultado.push('fizz');
+    } else if (array[index] % 5 === 0) {
+      resultado.push('buzz');
+    } else {
+      resultado.push('bug!');
+    }
+  }
+  return resultado;
 }
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
