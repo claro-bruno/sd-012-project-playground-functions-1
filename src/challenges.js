@@ -22,7 +22,7 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(array) {
-  let palavras = array
+  let palavras = array.reverse()
   return palavras[0] +", "+ palavras[array.length -1]
 }
 
