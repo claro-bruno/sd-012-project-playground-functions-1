@@ -1,5 +1,5 @@
 // Desafio 10
-// let array10 = ["React", "Jest", "HTML", "CSS", "JavaScript"];
+let array10 = ["React", "Jest", "HTML", "CSS", "JavaScript"];
 function techList(techPraAprender, name) {
   let arraySaida = [];
   let techListLearn = {};
@@ -15,7 +15,7 @@ function techList(techPraAprender, name) {
   }
   return 'Vazio!';
 }
-// console.log(techList(array10, "Lucas"));
+console.log(techList(array10, "Lucas"));
 // Desafio 11
 function repeteMais3x(arraycheck) {
   let contador = 0;
@@ -41,22 +41,23 @@ function generatePhoneNumber(arrayNumber) {
       return "Array com tamanho incorreto.";
     } else if (arrayNumber[key] < 0 || arrayNumber[key] > 9 || repeteMais3x(arrayNumber) >= 3) {
       return "não é possível gerar um número de telefone com esses valores";
-    } else if (key < 1 ) {
+    } else if (key < 1) {
       foneNumber += arrayNumber[key];
-    } else if (key == 1){
+    } else if (key == 1) {
       foneNumber += arrayNumber[key] + ') ';
-    } else if ( key >= 2 && key < 7 ) {
+    } else if (key >= 2 && key < 7) {
       foneNumber += arrayNumber[key];
-    } else if ( key == 7){
+    } else if (key === 7) {
       foneNumber += '-' + arrayNumber[key];
-    } else if (key >7) {
+    } else if (key > 7) {
       foneNumber += arrayNumber[key];
     }
   }
   return foneNumber;
 }
-console.log(generatePhoneNumber(array11));
+// console.log(generatePhoneNumber(array11));
 // Desafio 12
+
 function triangleCheck() {
   // seu código aqui
 }
