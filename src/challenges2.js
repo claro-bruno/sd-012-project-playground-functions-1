@@ -65,10 +65,21 @@ function triangleCheck(lineA, lineB, lineC) {
   }
   
 }
-console.log(triangleCheck(10,14,8));
+
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let numbers = [];
+  for (let index = 0; index < string.length; index++) {
+    if(string[index] == 1 || string[index] == 2 || string[index] == 3 || string[index] == 4 || string[index] == 5 || string[index] == 6 || string[index] == 7 || string[index] == 8 || string[index] == 9) {
+       numbers.push(parseInt(string[index]));
+      }   
+  }
+
+  let total = 0;
+  for(let number of numbers) {
+      total += number;
+  }
+  return `${total} copos de água`;
 }
 
 module.exports = {
