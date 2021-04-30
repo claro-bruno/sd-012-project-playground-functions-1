@@ -88,10 +88,30 @@ let splitada = string.toLowerCase().split('');
 }
 return splitada.join('');
 }
+console.log(encode('How are you today?'));
+
 function decode(string) {
   // seu código aqui
-
-}
+  let decodifica = string.toLowerCase().split('');
+  for(let verifica in decodifica){
+    if (decodifica[verifica] === '1') {
+      decodifica[verifica] = 'a';
+    }
+    if (decodifica[verifica] === '2') {
+      decodifica[verifica] = 'e';
+    }
+    if (decodifica[verifica] === '3') {
+      decodifica[verifica] = 'i';
+    }
+    if (decodifica[verifica] === '4') {
+      decodifica[verifica] = 'o';
+    }
+    if (decodifica[verifica] === '5') {
+      decodifica[verifica] = 'u';
+    }
+  }
+return decodifica.join('');
+};
 
 module.exports = {
   calcArea,
