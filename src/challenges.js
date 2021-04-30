@@ -23,7 +23,7 @@ function concatName(nome) {
 function footballPoints(wins, ties) {
   return (wins * 3) + (ties * 1);
 }
-//let array6 = [0, 0, 0];
+// let array6 = [0, 0, 0];
 // Desafio 6
 function highestCount(Array) {
   let maior = 0;
@@ -40,7 +40,7 @@ function highestCount(Array) {
   }
   return contador;
 }
-//console.log(highestCount(array6));
+// console.log(highestCount(array6));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -78,44 +78,44 @@ function encode(stringAqui) {
   let stringRetornoEncode = '';
   for (let key in stringAqui) {
     if (stringAqui[key] === 'a') {
-      stringRetornoEncode += '1'; 
+      stringRetornoEncode += '1';
     } else if (stringAqui[key] === 'e') {
       stringRetornoEncode += '2';
     } else if (stringAqui[key] === 'i') {
-      stringRetornoEncode += '3'; 
+      stringRetornoEncode += '3';
     } else if (stringAqui[key] === 'o') {
-      stringRetornoEncode += '4'; 
+      stringRetornoEncode += '4';
     } else if (stringAqui[key] === 'u') {
-      stringRetornoEncode += '5'; 
+      stringRetornoEncode += '5';
     } else {
       stringRetornoEncode += stringAqui[key];
     }
   }
   return stringRetornoEncode;
 }
-//console.log(encode(stringAquiorigin));
+// console.log(encode(stringAquiorigin));
 
-//let outra = "h3 th2r2!";
+// let outra = "h3 th2r2!";
 function decode(stringAqui) {
   let stringRetornoDecode = '';
   for (let key in stringAqui) {
     if (stringAqui[key] === '1') {
-      stringRetornoDecode += 'a'; 
+      stringRetornoDecode += 'a';
     } else if (stringAqui[key] === '2') {
       stringRetornoDecode += 'e';
     } else if (stringAqui[key] === '3') {
-      stringRetornoDecode += 'i'; 
+      stringRetornoDecode += 'i';
     } else if (stringAqui[key] === '4') {
-      stringRetornoDecode += 'o'; 
+      stringRetornoDecode += 'o';
     } else if (stringAqui[key] === '5') {
-      stringRetornoDecode += 'u'; 
+      stringRetornoDecode += 'u';
     } else {
       stringRetornoDecode += stringAqui[key];
     }
   }
   return stringRetornoDecode;
 }
-//console.log(decode(outra));
+// console.log(decode(outra));
 module.exports = {
   calcArea,
   catAndMouse,
