@@ -58,7 +58,11 @@ function hydrate(botaAlcoolAk) {
       console.log("não soma");
       }
     }
+    if(glassWaters == 1){
+      return glassWaters + " copo de águas";
+    }else{
     return glassWaters + " copos de água";
+    }
 }
 
 hydrate("1 cachaça, 5 cervejas e 1 copo de vinho");
