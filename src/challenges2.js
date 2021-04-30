@@ -71,13 +71,11 @@ function generatePhoneNumber(numberArr) {
     numberArr.unshift('(');
     numberArr.splice(3, 0, ')');
     numberArr.splice(4, 0, ' ')
-    numberArr.splice(9, 0, '-');
+    numberArr.splice(10, 0, '-');
     return numberArr.join('');
   }
 
 }
-
-console.log(generatePhoneNumber([1, 1, 1, 1, 4, 5, 6, 7, 8, 9, 0, 3]))
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
