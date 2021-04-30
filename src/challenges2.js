@@ -1,55 +1,31 @@
 // Desafio 10
 function techList(techs, name) {
-  // let techs = new Object();
+  if (techs.length === 0) {
+    return 'vazio!';
+  };
   let outputArray = [];
-
-  for (let index = 0; index < techs.length; index += 1){
+  for (let index = 0; index < techs.length; index += 1) {
     outputArray.push(new Object());
     outputArray[index].tech = techs[index];
     outputArray[index].name = name;
   }
-  return outputArray;
+  //  essa parte de ordenar foi feita lendo os seguintes artigos:
+  //  https://reactgo.com/javascript-sort-objects-alphabetically/
+  //  https://www.w3docs.com/snippets/javascript/how-to-sort-array-alphabetically-in-javascript.html
+
+  let sortedOutputArray = outputArray.sort (function(a, b) {
+    if (a.tech < b.tech) {
+      return -1;
+    }
+    if (a.tech > b.tech) {
+      return 1;
+    }
+    return 0;
+  });
+
+  return sortedOutputArray;
 }
 console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
-
-
-
-
-
-// let techs = ["React", "Jest", "HTML", "CSS", "JavaScript"];
-// let name = "Lucas";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Desafio 11
