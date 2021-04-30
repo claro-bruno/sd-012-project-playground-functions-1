@@ -79,34 +79,24 @@ function catAndMouse(mouse, cat1, cat2) {
 //  console.log(catAndMouse(8,12,12))
 
 // Desafio 8
-
 let arrayFinal = [];
 function fizzBuzz(array) {
-
   for (index = 0; index < array.length; index += 1) {
-   
-    if((array[index]) % 3 === 0 && (array[index] % 5) === 0 ){
+      if((array[index]) % 3 === 0 && (array[index] % 5) === 0 ){
     arrayFinal.push('fizzBuzz')
-
     }
-    
-    else if (( array[index] % 5) === 0 ) {
+      else if (( array[index] % 5) === 0 ) {
     arrayFinal.push('buzz')
-
     }  
-
-    else if ( (array[index] % 3) === 0 ) {
+      else if ( (array[index] % 3) === 0 ) {
     arrayFinal.push('fizz')
-
     }
-
-    else arrayFinal.push('bug!')
-
+      else { arrayFinal.push('bug!')
+  }
   }  
 return arrayFinal
 }
-
-// console.log(fizzBuzz([2, 15, 7, 9, 45]))
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
 function encode() {
