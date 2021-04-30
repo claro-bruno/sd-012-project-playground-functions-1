@@ -106,9 +106,18 @@ function highestCount(numbers) {
 
 
 // Desafio 7 -- FAZER
-function catAndMouse() {
+  function catAndMouse(mouse, cat1, cat2) {
+    let distCat1 = Math.abs (mouse - cat1);
+    let distCat2 = Math.abs (mouse - cat2);
+    if (distCat1 > distCat2){
+      return 'cat2';
+    } else if (distCat2 > distCat1){
+      return 'cat1';
+    } else {
+      return 'os gatos trombam e o rato foge';
+    }
+  } 
 
-}
 //  let cat1 = "cat1";
 //  let cat2 = "cat2";
  // let erro = "os gatos trombam e o rato foge";
@@ -138,7 +147,7 @@ function fizzBuzz(number) {
 // Desafio 9
 function encode(string) {
   let split = string.split('');
-for (let index = 0; < string.length; index += 1){
+for (let index = 0; index < string.length; index += 1){
   if (string[index] === 'i') {
     string(index) = 3;
   }
