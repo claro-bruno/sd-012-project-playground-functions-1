@@ -76,15 +76,15 @@ function fizzBuzz(arrey3) {
   let array_3 = [];
   for (let index = 0; index < arrey3.length; index += 1) {
     array_3[index] = '';
+    if (((arrey3[index] % 3) === 0 && (arrey3[index] % 5) === 0 )) {
+      array_3[index] += 'fizzbuzz';
+    }
     if ((arrey3[index] % 3) === 0) {
       array_3[index] += 'fizz';
     } 
     if ((arrey3[index] % 5) === 0) {
       array_3[index] += 'buzz';
     } 
-    if (((arrey3[index] % 3) === 0 && (arrey3[index] % 5) === 0 )) {
-      array_3[index] += 'fizzbuzz';
-    }
     if ((arrey3[index] % 5) !== 0 && (arrey3[index] % 3) !== 0) {
       array_3[index] += 'bug!';
     }
