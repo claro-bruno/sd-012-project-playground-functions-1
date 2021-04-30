@@ -88,20 +88,22 @@ console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 console.log(highestCount([0, 0, 0]))
 
 // Desafio 7
-function catAndMouse(cat1,cat2,mouse) {
+function catAndMouse(mouse,cat1,cat2) {
   
-  if (cat1 < cat2){
-    return 'Gato 1 mais próximo'
-  }else if (cat1 > cat2){
-    return 'Gato 2 mais próximo'
-  }else if (cat1 === cat2){
+  if (cat1 === cat2){
     return 'Os gatos trombaram e o rato foge'
-  }
 
+  }else if (cat1 - mouse < cat2 - mouse){
+    return 'Gato 1 mais próximo'
+
+  }else{
+    return 'Gato 2 mais próximo'
+  }
+  
 }
-console.log(catAndMouse(3,2,0))
-console.log(catAndMouse(6,12,0))
-console.log(catAndMouse(3,3,0))
+console.log(catAndMouse(0,3,2))
+console.log(catAndMouse(0,6,12))
+console.log(catAndMouse(0,3,3))
 
 // Desafio 8
 function fizzBuzz() {
