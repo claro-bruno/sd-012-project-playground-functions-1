@@ -1,6 +1,8 @@
 // Desafio 10
 function techList(theTech, theName) {
-  let objectlist = [];
+  theTech = ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'];
+  theName = 'Lucas';
+  let objectList = [];
   if (theTech.length === 0) {
     return ('Vazio!');
   }
@@ -10,9 +12,9 @@ function techList(theTech, theName) {
       name: theName,
     };
     object.tech = theTech[index];
-    objectlist.push(object);
+    objectList.push(object);
   }
-  return (objectlist);
+  return (objectList);
 }
 
 // Desafio 11
