@@ -32,7 +32,7 @@ function generatePhoneNumber(numeros) {
 
   for (let index = 0; index < numeros.length; index += 1) {
     let contadorNumeroRepetido = 0;
-    for (index2 = 1; index2 < numeros.length; index2 += 1) {
+    for (let index2 = 1; index2 < numeros.length; index2 += 1) {
       if (numeros[index] === numeros[index2]) {
         contadorNumeroRepetido += 1;
       }
@@ -40,22 +40,22 @@ function generatePhoneNumber(numeros) {
     if (numeros[index] < 0 || numeros[index] > 9 || contadorNumeroRepetido >= 3) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
-  }  
-  return `(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`;  
+  }
+  return `(${numeros[0]}${numeros[1]}) ${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`;  
 }
 
 // console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1,2]));
 
 
 // Desafio 12
-function triangleCheck(lineA,lineB,lineC) {
+function triangleCheck(lineA, lineB, lineC) {
   let ladoA = Math.abs(lineA);
   let ladoB = Math.abs(lineB);
   let ladoC = Math.abs(lineC);
   // if ((ladoC-ladoB)<ladoA< (ladoB+ladoC) && (ladoA-ladoC)<ladoB< (ladoA+ladoC) && ( ladoA-ladoB)<ladoC<(ladoA+ladoB))
-  if ((ladoC-ladoB)<ladoA && ladoA < (ladoB+ladoC) && (ladoA-ladoC)<ladoB && ladoB < (ladoA+ladoC) && ( ladoA-ladoB)<ladoC && ladoC<(ladoA+ladoB)){  
+  if ((ladoC - ladoB) < ladoA && ladoA < (ladoB + ladoC) && (ladoA - ladoC) < ladoB && ladoB < (ladoA + ladoC) && ( ladoA - ladoB) < ladoC && ladoC <( ladoA + ladoB)) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
