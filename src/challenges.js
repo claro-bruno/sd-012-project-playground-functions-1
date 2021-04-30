@@ -93,28 +93,47 @@ function catAndMouse(mouse,cat1,cat2) {
 
 mouse = Math.abs(mouse)
 
-  let distanceCat1 = (cat1 - mouse)
-let distanceCat2 = (cat2 - mouse)
+  let distanceCat1 = cat1 - mouse;
+let distanceCat2 = cat2 - mouse;
 
   if (distanceCat1 === distanceCat2){
-    return 'os gatos trombaram e o rato foge'
+    return 'os gatos trombaram e o rato foge';
 
   }else if (distanceCat1 < distanceCat2){
-    return 'cat1'
+    return 'cat1';
 
-  }else{
-    return 'cat2'
+  }else if (distanceCat1 > distanceCat2){
+    return 'cat2';
   }
   
 }
-//console.log(catAndMouse(0,3,2))
-//console.log(catAndMouse(0,3,12))
-//console.log(catAndMouse(0,3,3))
+console.log(catAndMouse(0,3,2))
+console.log(catAndMouse(0,3,12))
+console.log(catAndMouse(0,3,3))
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+ result = 0;
+  array = [];
+  for (index = 0; index < array; index +=1 ){
+  if(array % 3 === 0 && array % 5 === 0){
+    return  'FizzBuzz'
+  }else if(array % 5 == 0){
+    return  'Buzz'
+  }else if(array % 3 == 0){
+    return  'Fizz'
+  }else{
+    return 'Bug'
+  }
+  return result
 }
+}
+
+
+console.log(fizzBuzz([21, 15, 7, 9, 45]))
+console.log(fizzBuzz([7, 9]))
+console.log(fizzBuzz([9, 25]))
+
 
 // Desafio 9
 function encode() {
