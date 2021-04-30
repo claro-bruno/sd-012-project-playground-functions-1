@@ -1,7 +1,7 @@
 // Desafio 10
 function techList(techs, name) {
   if (techs.length === 0) {
-    return 'vazio!';
+    return 'Vazio!';
   };
   let outputArray = [];
   for (let index = 0; index < techs.length; index += 1) {
