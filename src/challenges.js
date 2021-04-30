@@ -39,19 +39,29 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(highestNumber) {
   let orderNumber = highestNumber.sort();
-  let resultado = [];
+  let result6 = [];
 
   for (let index = 0; index < orderNumber.length; index += 1) {
     if (orderNumber[index] === orderNumber[(orderNumber.length - 1)]) {
-      resultado.push(orderNumber[index]);
+      result6.push(orderNumber[index]);
     }
   }
-  return (resultado.length);
+  return (result6.length);
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  // https://www.w3schools.com/jsref/jsref_abs.asp + Trybe
+  let cat1Distance = Math.abs(cat1 - mouse);
+  let cat2Distance = Math.abs(cat2 - mouse);
+
+  if (cat1Distance > cat2Distance) {
+    return (cat2);
+  } if (cat2Distance > cat1Distance) {
+    return (cat1);
+  } if (cat1Distance === cat2Distance) {
+    return 'os gatos trombam e o rato foge';
+  }
 }
 
 // Desafio 8
