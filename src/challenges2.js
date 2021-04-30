@@ -9,7 +9,7 @@ function techList() {
 function generatePhoneNumber(n) {
   // let outputNumber = [];
   let contador = 0;
-  let number = [];
+  let nnumero = [];
 
   for(let i = 0; i < n.length; i++);{
       if(n[i] !== number){
@@ -26,21 +26,44 @@ function generatePhoneNumber(n) {
     //   outputNumber = "("+n[0]+n[1]+")"+" "+n[2]+n[3]+n[4]+n[5]+"-"+n[6]+n[7]+n[8]+n[9];
     // }    
     //  return outputNumber; 
-}
+  }
 let nu = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
 generatePhoneNumber(nu);
 console.log(result);
-
+}
 
 // Desafio 12
 function triangleCheck() {
   // seu código aqui
 }
 
-// Desafio 13
-function hydrate() {
-  // seu código aqui
+//Desafio 13
+
+function hydrate(botaAlcoolAk) {
+  // Separada a string em array
+  let arrayHy = botaAlcoolAk.split(" ");
+   console.log(arrayHy);
+  //Empurrar numeros para arrayN
+  let arrayN = [];
+  for(let indexH = 0; indexH < arrayHy.length; indexH++){
+   arrayN.push(Number(arrayHy[indexH]));
+  }
+  console.log(arrayN);
+  //Soma numeros da ArrayN e joga em glassWaters, mas não funciona 8'(
+  let glassWaters = 0;
+ for(let iN = 0; iN < arrayN.length; iN++){
+    if(arrayN[iN] > 0){
+      glassWaters = glassWaters + arrayN[iN];
+      } else {
+      console.log("não soma");
+      }
+      return glassWaters;
+  }
 }
+
+hydrate("1 cachaça, 5 cervejas e 1 copo de vinho");
+
+  
 
 module.exports = {
   generatePhoneNumber,
