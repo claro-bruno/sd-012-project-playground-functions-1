@@ -16,17 +16,37 @@ function techList(array, name) {
 
 // Desafio 11
 function generatePhoneNumber(arr) {
+
   if (arr.length !== 11){
     return 'Array com tamanho incorreto.';
   }
+
   for (let number of arr) {
     if (number < 0 || number > 9) {
       return 'não é possível gerar um número de telefone com esses valores';
-    } 
+    }
   }
 
-}
+  let repeatTimes = 0;
+  let count = 0;
+  for (let number of arr) { 
+    let compareNuber = number;
+      for (let number2 of arr){
+      if(compareNuber === number2) {
+        count += 1;
+    }
+    }
+    if (count >= repeatTimes) {
+      repeatTimes = count;
+    }
 
+    count = 0;
+  } 
+  if (repeatTimes >= 3) {
+    return 'não é possível gerar um número de telefone com esses valores';
+  }
+}
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   let triangleLine = [lineA, lineB, lineC];
