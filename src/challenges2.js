@@ -71,18 +71,7 @@ function generatePhoneNumber(array) {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-  if (lineA < (lineB + lineC) && Math.abs((lineB + lineC) / 2)) {
-    console.log('sim');
-  }
-  if (lineB < (lineA + lineC) && Math.abs((lineA + lineC) / 2)) {
-    console.log('sim');
-  }
-  if (lineC < (lineB + lineA) && Math.abs((lineB + lineA) / 2)) {
-    console.log('sim');
-  }
 }
-
-console.log(triangleCheck(10, 14, 8))
 
 // Desafio 13
 function hydrate() {
