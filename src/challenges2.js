@@ -13,8 +13,8 @@ function techList(tech, name) {
     return 'Vazio!'
   } else {
     return list;
-  }
-}
+  };
+};
 
 console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Renan'));
 
@@ -46,9 +46,9 @@ function generatePhoneNumber(numbers) {
   if (numbers.length === 0) {
     return'Array com tamanho incorreto.'
   } else {
-    return newPhoneNumber
-  }
-}
+    return newPhoneNumber;
+  };
+};
 
 console.log(generatePhoneNumber([]));
 
@@ -60,16 +60,34 @@ function triangleCheck(lineA, lineB, lineC) {
   }
   if (lineA > Math.abs((lineB - lineC)) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB)) {
     isPossible = true;
-  }
+  };
   return isPossible;
-}
+};
 
 console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let takeNum = /\d+/g;
+  let total = 0;
+  let match = string.match(takeNum);
+  for (let index = 0; index < match.length; index += 1) {
+    total += parseInt(match[index]);
+  }
+  if (total > 1) {
+    return `${total} copos de água`
+  } else {
+    return `${total} copo de água`
+  }
 }
+
+console.log(hydrate('1 cerveja'));
+console.log(hydrate('1 cachaça, 5 cervajas e 1 copo de vinho'));
+console.log(hydrate('1 tequila e 3 vodkas'));
+
+var regex = /\d+/g;
+var string = "you can enter maximum 500 choices";
+var matches = string.match(regex);
 
 module.exports = {
   generatePhoneNumber,

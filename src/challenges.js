@@ -2,16 +2,14 @@
 function compareTrue(value1, value2) {
   if (value1 && value2) {
     return true;
-  } else {
-    return false;
   }
-}
+};
 console.log(compareTrue(0, 1));
 
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) / 2
-}
+};
 
 console.log(calcArea(51, 1));
 
@@ -32,7 +30,7 @@ function concatName(names) {
   }
   return concatNames.reverse().join(', ');
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -44,7 +42,7 @@ function footballPoints(wins, ties) {
   }
   let totalPoints = wins + ties
   return totalPoints;
-}
+};
 console.log(footballPoints(14, 8));
 console.log(footballPoints(1, 2));
 console.log(footballPoints(0, 0));
@@ -56,15 +54,15 @@ function highestCount(numbers) {
     if (numbers[index] > highNumber) {
       highNumber = numbers[index];
     }
-  }
+  };
   let repeatedCount = 0;
   for (let num in numbers) {
     if (highNumber === numbers[num]) {
       repeatedCount += 1
     }
-  }
-  return repeatedCount
-}
+  };
+  return repeatedCount;
+};
 
 console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
@@ -79,10 +77,10 @@ function catAndMouse(mouse, cat1, cat2) {
     whichCat = 'cat1';
   } else {
       whichCat = 'os gatos trombam e o rato foge'
-  }
+  };
 
   return whichCat;
-}
+};
 
 console.log(catAndMouse(1, -1, 1));
 
@@ -100,9 +98,9 @@ function fizzBuzz(numbers) {
       numbers[index] = 'bug!'
     }
     array.push(numbers[index]);
-  }
+  };
   return array;
-}
+};
 
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
 console.log(fizzBuzz([7, 9]));
@@ -129,9 +127,9 @@ function encode(string) {
       splitedString[letter] = '5';
     }
     encodeName.push(splitedString[letter])
-  }
+  };
   return encodeName.join('');
-}
+};
 
 console.log(encode('hi there!'));
 
@@ -155,9 +153,9 @@ function decode(string) {
       splitedString[letter] = 'u';
     }
     encodeName.push(splitedString[letter])
-  }
+  };
   return encodeName.join('');
-}
+};
 
 console.log(decode('h3 th2r2!'));
 
