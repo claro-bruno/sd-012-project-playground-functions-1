@@ -1,7 +1,9 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-}
+function compareTrue(nun1, nun2) {
+  if (nun1 === true && nun2 === true){
+    return true;
+  } return false;
+};
 
 // Desafio 2
 function calcArea() {
@@ -29,17 +31,9 @@ function highestCount() {
 }
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
-  let distCat1 = Math.abs (mouse - cat1);
-  let distCat2 = Math.abs (mouse - cat2);
-  if (distCat1 > distCat2){
-    return 'cat2';
-  } else if (distCat2 > distCat1){
-    return 'cat1';
-  } else {
-    return 'os gatos trombam e o rato foge';
-  }
-} 
+function catAndMouse() {
+  // seu código aqui
+}
 
 // Desafio 8
 function fizzBuzz() {
