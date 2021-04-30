@@ -26,11 +26,16 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(arrayString) {
-    let arrayReverse = [arrayString[arrayString.length -1]];
-    for(let i = 0; i < arrayString.length -1; i++){
-      arrayReverse.push(arrayString[i]);
-    }
-    return arrayReverse;
+
+    let reverS = arrayString[arrayString.length -1] + ", " + arrayString[0];
+
+    
+    // let arrayReverse = [arrayString[arrayString.length -1]];
+    // for(let i = 0; i < arrayString.length -1; i++){
+    //   arrayReverse.push(arrayString[i]);
+    // }
+    return reverS;
+    // console.log(reverS);
  }
 // let vari = ["Lucas", "Rogerio", "Andre", "Janderson"]
 // concatName(vari);
