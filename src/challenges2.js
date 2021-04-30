@@ -18,6 +18,7 @@ function techList(techName, name) {
 
 // Desafio 11
 function getRepetedPhoneNumber(telefone) {
+  console.log(telefone)
   let contadorNumero = 0;
   let valorRepetido = 0;
   for (let key in telefone) {
@@ -27,26 +28,29 @@ function getRepetedPhoneNumber(telefone) {
         contadorNumero += 1;
       }
     }
+      contadorNumero < valorRepetido {
+        // precisa passar por todos os valor e ver qual que mais se repete
+      }
       valorRepetido = contadorNumero;
       return valorRepetido
   }
   contadorNumero = 0;
 }
-
 function generatePhoneNumber(telefone) {
-  if (telefone.length === 11){
-    for (let key of telefone){
-      if (key < 0 || key > 9 || getRepetedPhoneNumber(telefone) > 2){
+  let valorRepetido = getRepetedPhoneNumber(telefone);
+  console.log(valorRepetido)
+  if (telefone.length > 11 || telefone.length < 11){
+    return 'Array com tamanho incorreto.'
+  } else {
+    for (let key of telefone) {
+      if (valorRepetido >= 3 || key < 0 || key > 9) {
         return 'não é possível gerar um número de telefone com esses valores'
-      } else {
-        return `(${telefone[0]}${telefone[1]}) ${telefone[2]}${telefone[3]}${telefone[4]}${telefone[5]}${telefone[6]}-${telefone[7]}${telefone[8]}${telefone[9]}${telefone[10]}`
       }
     }
-  } else {
-    return 'Array com tamanho incorreto.'
   }
+  return `(${telefone[0]}${telefone[1]}) ${telefone[2]}${telefone[3]}${telefone[4]}${telefone[5]}${telefone[6]}-${telefone[7]}${telefone[8]}${telefone[9]}${telefone[10]}`
 }
-// console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 9, 9, 9, 0, 1]))
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
