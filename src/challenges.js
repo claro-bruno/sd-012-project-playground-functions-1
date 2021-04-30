@@ -1,11 +1,13 @@
 // Desafio 1
 function compareTrue(cond1, cond2) {
   // seu código aqui
+  let result;
   if ((cond1 === true && cond2 === true)) {
-    return true;
+    result = true;
   } else {
-    return false;
+    result = false;
   }
+  return result;
 }
 
 // Desafio 2
@@ -25,7 +27,7 @@ function concatName(Array) {
   // seu código aqui
  let position1 = Array[0];
  let position2 = Array[Array.length -1];
- return position2 + ', ' + position1
+ return position2 + ', ' + position1;
 }
 
 // Desafio 5
@@ -44,13 +46,23 @@ function highestCount(Array) {
     }
   
   }
-  return numberofTimes
+  return numberofTimes;
 }
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  Math.abs
+  let distanciaCat1 = cat1 - mouse;
+  let distanciaCat2 = cat2 - mouse;
+  let maisProximo;
+  if (Math.abs(distanciaCat1) < Math.abs(distanciaCat2)) {
+    maisProximo = 'cat1'
+  }else if (Math.abs(distanciaCat1) === Math.abs(distanciaCat2)) {
+    maisProximo = 'os gatos trombam e o rato foge'
+  }else if (Math.abs(distanciaCat1) > Math.abs(distanciaCat2)) {
+    maisProximo = 'cat2'
+  }
+return maisProximo;
 }
 
 // Desafio 8
