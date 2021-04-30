@@ -76,10 +76,25 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 console.log(catAndMouse(10,8,13));
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+numeroArray = [2, 15, 7, 9, 45]
 
+function fizzBuzz(array) {
+  for(let index = 0; index < array.length; index +=1){
+    if(index % 3 === 0 && index % 5 === 0) {
+      return 'fizzBuzz';
+    }
+    else if (index % 3 === 0){
+      return 'fizz';
+    }
+    else if (index % 5 === 0){
+      return 'buzz';
+    }
+    else {
+      return 'bug!'
+    };
+  };
+};
+console.log(fizzBuzz(numeroArray))
 // Desafio 9
 function encode() {
   // seu código aqui
