@@ -82,11 +82,13 @@ function fizzBuzz(arrey3) {
     if ((arrey3[index] % 5) === 0) {
       array_3[index] += 'buzz';
     } 
+    if (((arrey3[index] % 3) === 0 && (arrey3[index] % 5) === 0 ) {
+      array_3[index] += 'fizzbuzz';
+    }
     if ((arrey3[index] % 5) !== 0 && (arrey3[index] % 3) !== 0) {
       array_3[index] += 'bug!';
     }
   }
-
   return array_3;
 };
 // Desafio 9
@@ -109,7 +111,6 @@ function decode(string) {
   return text;
   // seu código aqui
 };
-
 module.exports = {
   calcArea,
   catAndMouse,
