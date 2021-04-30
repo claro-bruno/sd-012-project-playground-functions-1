@@ -13,11 +13,13 @@ function techList(array, name) {
   }
   return newList;
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
-  "Lucas"));
+
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(arr) {
+  if (arr.length !== 11){
+    return 'Array com tamanho incorreto.'
+  }
+  
 }
 
 // Desafio 12
