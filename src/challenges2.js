@@ -18,7 +18,7 @@ function techList(tech, name) {
   return objLista;
   };
 };
-console.log(techList(['React', 'Jest', 'HTML', 'CSS'], 'Artur'));
+//console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Artur'));
 
 // Desafio 11
 function generatePhoneNumber() {
