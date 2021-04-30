@@ -53,14 +53,13 @@ function catAndMouse(mouse, cat1, cat2) {
   let dist2 = cat2 - mouse;
   if (dist1 < dist2) {
     return 'cat1';
-  } else {
+  } else if (dist1 > dist2) {
     return 'cat2';
-  }
-  if (dist1 === dist2) {
-    return "os gatos trombam e o rato foge."
-  }
+  } else if (dist1 === dist2) {
+    return 'os gatos trombam e o rato foge.';
+  };
 }
-console.log(catAndMouse(0, 1, 2));
+console.log(catAndMouse(0, 3, 2));
 
 // Desafio 8
 function fizzBuzz() {
