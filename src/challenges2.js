@@ -24,9 +24,14 @@ function isValidNegative(arrayPhoneNumber) {
 }
 
 function isValidRep(arrayPhoneNumber) {
-  let sorted = arrayPhoneNumber.sort();
+  let sorted = arrayPhoneNumber.concat();
+  // :thinking_emoji:
+  sorted.sort();
   for (let index = 0; index < sorted.length; index += 1) {
-    if (sorted[index] === sorted[index + 1] && sorted[index] === sorted[index + 2]) {
+    if (
+      sorted[index] === sorted[index + 1]
+      && sorted[index] === sorted[index + 2]
+    ) {
       return true;
     }
   }
