@@ -85,9 +85,26 @@ if (cat2position<cat1position) {
 catAndMouse(1,0,2)
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let finalvalue = [];   
+  for (let accountant = 0; accountant < array.length; accountant+=1){
+
+    if(array[accountant] % 3 === 0 && array[accountant] % 5 === 0){
+      finalvalue.push("fizzBuzz")
+    }
+    else if(array [accountant] % 3 === 0){
+      finalvalue.push("fizz") 
+    }
+    else if(array[accountant] % 5 === 0){
+      finalvalue.push("buzz")
+    }
+    else {
+      finalvalue.push("bug!");
+    }
+  }
+return finalvalue
 }
+fizzBuzz([9, 25])
 
 // Desafio 9
 function encode() {
