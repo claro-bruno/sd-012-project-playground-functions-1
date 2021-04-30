@@ -98,7 +98,7 @@ function encode(string) {
   text = text.replace(/o/g, '4');
   text = text.replace(/u/g, '5');
   return text;
-}
+};
 function decode(string) {
   let text = string;
   text = text.replace(/1/g, 'a');
