@@ -61,19 +61,33 @@ function triangleCheck(lineA, lineB, lineC) {
   let lCMenorAB = (lineC < lineA + lineB);
   let lAMaiorDifBC = lineA > Math.abs(lineB - lineC);
   let lBMaiorDifAC = lineB > Math.abs(lineA - lineC);
-  let lCMaiorDifAB = lineC > Math.abs(lineA - lineB);  
-  let ehTriangulo = false;
-  if ((lAMenorBC === true) && (lBMenorAC === true) && (lCMenorAB === true)) {
-    if ((lAMaiorDifBC === true) && (lBMaiorDifAC === true) && (lCMaiorDifAB === true)) {
-      ehTriangulo = true
+  let lCMaiorDifAB = lineC > Math.abs(lineA - lineB);
+  let menorQueSoma = (lAMenorBC === true) && (lBMenorAC === true) && (lCMenorAB === true);
+  let maiorQueDif = lAMaiorDifBC && lBMaiorDifAC && lCMaiorDifAB;
+  if (menorQueSoma === true) {
+    switch (maiorQueDif) {
+    case true:
+      return true;
+    default:
+      return false;
     }
+  } else {
+    return false;
   }
-  return ehTriangulo;
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(strQtdBebida) {
+  let numbers = strQtdBebida.match(/\d+/g);
+  let resultado = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    let parcial = parseInt(numbers[index], 0);
+    resultado += parcial;
+  }
+  if (resultado === 1) {
+    return `${resultado} copo de água`;
+  }
+  return `${resultado} copos de água`;
 }
 
 module.exports = {
@@ -82,3 +96,4 @@ module.exports = {
   hydrate,
   triangleCheck,
 };
+
