@@ -88,13 +88,57 @@ function fizzBuzz(array) {
   }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+let codificado = [];
+function encode(string) {
+  string = string.split("");
+  for (let index = 0; index <= string.length; index += 1){
+    switch (string[index]){
+      case "a":
+        string[index] = "1";
+      break;
+      case "e":
+        string[index] = "2";
+      break;
+      case "i":
+        string[index] = "3";
+      break;
+      case "o":
+        string[index] = "4";
+      break;
+      case "u":
+        string[index] = "5";
+      break;
+        
+    }
+  }
+return string.join("");
 }
-function decode() {
-  // seu código aqui
-}
+console.log(encode("hi there!"));
 
+function decode(string) {
+string = string.split('');
+  for (let index = 0; index < string.length; index += 1){
+    switch (string[index]){
+      case "1":
+        string[index] = "a";
+        break;
+      case "2":
+        string[index] = "e";
+        break;
+      case "3":
+        string[index] = "i";
+        break;
+      case "4":
+        string[index] = "o";
+        break;
+      case "5":
+        string[index] + "u";
+        break;
+    }
+  }
+return string.join('');
+}
+console.log(decode(string));
 module.exports = {
   calcArea,
   catAndMouse,
