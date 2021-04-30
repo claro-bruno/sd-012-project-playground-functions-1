@@ -88,7 +88,6 @@ function fizzBuzz(array) {
   }
 
 // Desafio 9
-let codificado = [];
 function encode(string) {
   string = string.split("");
   for (let index = 0; index <= string.length; index += 1){
@@ -108,7 +107,6 @@ function encode(string) {
       case "u":
         string[index] = "5";
       break;
-        
     }
   }
 return string.join("");
@@ -121,6 +119,7 @@ string = string.split('');
     switch (string[index]){
       case "1":
         string[index] = "a";
+
         break;
       case "2":
         string[index] = "e";
@@ -139,6 +138,7 @@ string = string.split('');
 return string.join('');
 }
 console.log(decode(string));
+
 module.exports = {
   calcArea,
   catAndMouse,
