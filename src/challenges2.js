@@ -64,13 +64,36 @@ function numbersCheck(array, boolean) {
   }
 }
 
-function generatePhoneNumber(a) {
-  let tooManyRepeats = repeatCheck(a);
-  let check1 = lengthCheck(a);
-  let check2 = numbersCheck(a, tooManyRepeats);
+function buildString(array) {
+  let phoneNumber = '(';
+  for (let index = 0; index < array.length; index += 1) {
+    switch (index) {
+    case 2:
+      phoneNumber += `) ${array[index]}`;
+      break;
+    case 3:
+      phoneNumber += `${array[index]}`;
+      break;
+    case 7:
+      phoneNumber += `-${array[index]}`;
+      break;
+    default:
+      phoneNumber += array[index];
+    }
+  }
+  return phoneNumber;
+}
+// 3, 1, 9, 9, 6, 7, 9, 0, 2, 5, 5
+// (31) 99679-0255
+
+function generatePhoneNumber(array) {
+  let tooManyRepeats = repeatCheck(array);
+  let check1 = lengthCheck(array);
+  let check2 = numbersCheck(array, tooManyRepeats);
   if (check1) return 'Array com tamanho incorreto.';
   if (check2) return 'não é possível gerar um número de telefone com esses valores';
-  return `(${a[0]}${a[1]}) ${a[2]}${a[3]}${a[4]}${a[5]}${a[6]}-${a[7]}${a[8]}${a[9]}${a[10]}`;
+  // return `(${array[0]}${array[1]}) ${array[2]}${array[3]}${array[4]}${array[5]}${array[6]}-${array[7]}${array[8]}${array[9]}${array[10]}`;
+  return buildString(array);
 }
 console.log(generatePhoneNumber(elevenNumbersArray1));
 console.log(generatePhoneNumber(elevenNumbersArray2));
