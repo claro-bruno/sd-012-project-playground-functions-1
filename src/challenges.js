@@ -82,44 +82,24 @@ function fizzBuzz(numberBuzz) {
 }
 
 // Desafio 9
-function encode(codeVowels) {
-  codeVowels = codeVowels.split('');
-  for (let index = 0; index < codeVowels.length; index += 1) {
-    switch (codeVowels[index]) {
-    case 'a': codeVowels[index] = '1';
-      break;
-    case 'e': codeVowels[index] = '2';
-      break;
-    case 'i': codeVowels[index] = '3';
-      break;
-    case 'o': codeVowels[index] = '4';
-      break;
-    case 'u': codeVowels[index] = '5';
-      break;
-    default:
-    }
-  }
-  // Fonte https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
-  return (codeVowels.join(''));
+function encode(codeVowel) {
+  // https://www.w3schools.com/jsref/jsref_replace.asp
+  codeVowel = codeVowel.replace(/a/g, '1');
+  codeVowel = codeVowel.replace(/e/g, '2');
+  codeVowel = codeVowel.replace(/i/g, '3');
+  codeVowel = codeVowel.replace(/o/g, '4');
+  codeVowel = codeVowel.replace(/u/g, '5');
+  return codeVowel;
 }
+
 function decode(codeNumber) {
-  codeNumber = codeNumber.split('');
-  for (let index = 0; index < codeNumber.length; index += 1) {
-    switch (codeNumber[index]) {
-    case '1': codeNumber[index] = 'a';
-      break;
-    case '2': codeNumber[index] = 'e';
-      break;
-    case '3': codeNumber[index] = 'i';
-      break;
-    case '4': codeNumber[index] = 'o';
-      break;
-    case '5': codeNumber[index] = 'u';
-      break;
-    default:
-    }
-  }
-  return codeNumber.join('');
+  // https://www.w3schools.com/jsref/jsref_replace.asp
+  codeNumber = codeNumber.replace(/1/g, 'a');
+  codeNumber = codeNumber.replace(/2/g, 'e');
+  codeNumber = codeNumber.replace(/3/g, 'i');
+  codeNumber = codeNumber.replace(/4/g, 'o');
+  codeNumber = codeNumber.replace(/5/g, 'u');
+  return codeNumber;
 }
 
 module.exports = {
