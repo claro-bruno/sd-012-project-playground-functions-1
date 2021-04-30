@@ -23,31 +23,36 @@ let elevenNumbersArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 1];
 let elevenNumbersArray2 = [1, 3, 3, 4, 5, 6, 7, 8, 3, 0, 1];
 let elevenNumbersArray3 = [1, 2, 2, 4, 5, 5, 7, 8, 9, 0, 1];
 
-function repeats3OrMoreTimes(elevenNumbersArray) {
-  let contRepetido = 0;
-  let contNumero = 0;
-  let indexNumeroRepetido = 0;
-  for (let index = 0; index < elevenNumbersArray.length; index += 1) {
-    let verificaNumero = elevenNumbersArray[index];
-    for (let index2 = 0; index2 < elevenNumbersArray.length; index2 += 1) {
-      if (verificaNumero === elevenNumbersArray[index2]) {
-        contNumero += 1;
-      }
+function repeatCountBuilder(array, verificaNumero, contNumero) {
+  for (let index = 0; index < array.length; index += 1) {
+    if (verificaNumero === array[index]) {
+      contNumero += 1;
     }
+  }
+  return contNumero;
+}
+
+function repeatCounter(array, contRepetido) {
+  let contNumero = 0;
+  for (let index = 0; index < array.length; index += 1) {
+    let verificaNumero = array[index];
+    contNumero = repeatCountBuilder(array, verificaNumero, contNumero);
     if (contNumero > contRepetido) {
       contRepetido = contNumero;
-      indexNumeroRepetido = index;
     }
     contNumero = 0;
   }
+  return contRepetido;
+}
+
+function repeatCheck(elevenNumbersArray) {
+  let contRepetido = 0;
+  contRepetido = repeatCounter(elevenNumbersArray, contRepetido);
   if (contRepetido >= 3) {
     return true;
   }
   return false;
 }
-// console.log(repeats3OrMoreTimes(elevenNumbersArray1));
-// console.log(repeats3OrMoreTimes(elevenNumbersArray2));
-// console.log(repeats3OrMoreTimes(elevenNumbersArray3));
 
 function lengthCheck(array) {
   if (array.length !== 11) return true;
@@ -59,13 +64,13 @@ function numbersCheck(array, boolean) {
   }
 }
 
-function generatePhoneNumber(elevenNumbersArray) {
-  let tooManyRepeats = repeats3OrMoreTimes(elevenNumbersArray);
-  let check1 = lengthCheck(elevenNumbersArray);
-  let check2 = numbersCheck(elevenNumbersArray, tooManyRepeats);
+function generatePhoneNumber(a) {
+  let tooManyRepeats = repeatCheck(a);
+  let check1 = lengthCheck(a);
+  let check2 = numbersCheck(a, tooManyRepeats);
   if (check1) return 'Array com tamanho incorreto.';
   if (check2) return 'não é possível gerar um número de telefone com esses valores';
-  return `(${elevenNumbersArray[0]}${elevenNumbersArray[1]}) ${elevenNumbersArray[2]}${elevenNumbersArray[3]}${elevenNumbersArray[4]}${elevenNumbersArray[5]}${elevenNumbersArray[6]}-${elevenNumbersArray[7]}${elevenNumbersArray[8]}${elevenNumbersArray[9]}${elevenNumbersArray[10]}`;
+  return `(${a[0]}${a[1]}) ${a[2]}${a[3]}${a[4]}${a[5]}${a[6]}-${a[7]}${a[8]}${a[9]}${a[10]}`;
 }
 console.log(generatePhoneNumber(elevenNumbersArray1));
 console.log(generatePhoneNumber(elevenNumbersArray2));
@@ -76,8 +81,20 @@ function firstCheck(lineA, lineB, lineC) {
   if (lineA <= lineB + lineC && lineB <= lineA + lineC && lineC <= lineA + lineB) return true;
 }
 
+function a(lineB, lineC) {
+  return Math.abs(lineB - lineC);
+}
+
+function b(lineA, lineC) {
+  return Math.abs(lineA - lineC);
+}
+
+function c(lineA, lineB) {
+  return Math.abs(lineA - lineB);
+}
+
 function secondCheck(lineA, lineB, lineC) {
-  if (lineA >= Math.abs(lineB - lineC) && lineB >= Math.abs(lineA - lineC && lineC >= Math.abs(lineA - lineB))) return true;
+  if (lineA >= a(lineB, lineC) && lineB >= b(lineA, lineC) && lineC >= c(lineA, lineB)) return true;
 }
 
 function triangleCheck(lineA, lineB, lineC) {
