@@ -4,7 +4,7 @@ function techList(tech, name) {
   techs = tech.sort();
   let objLista = [];
   let empty = 'Vazio!';
-  if (tech.length === 0 || tech.length > 5) {
+  if (tech.length === 0 || tech.length > 5 || tech.length < 5) {
     return empty;
   } else {
     for (let indexTech = 0; indexTech < techs.length; indexTech += 1) {
@@ -18,7 +18,7 @@ function techList(tech, name) {
   return objLista;
   };
 };
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript', 'Git & Github'], 'Artur'));
+console.log(techList(['React', 'Jest', 'HTML', 'CSS'], 'Artur'));
 
 // Desafio 11
 function generatePhoneNumber() {
