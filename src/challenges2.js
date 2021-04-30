@@ -3,22 +3,21 @@ function techList(tech, name) {
   // seu código aqui
   techs = tech.sort();
   let objLista = [];
-  let empty = 'Vazio!';
-  if (tech.length === 0 || tech.length > 5 || tech.length < 5) {
+  let empty = "Vazio!";
+  if (tech.length === 0) {
     return empty;
   } else {
     for (let indexTech = 0; indexTech < techs.length; indexTech += 1) {
     let obj = {
-    techLearn: 'NomeTech',
-    nome: name,
+    tech: techs[indexTech],
+    name,
     };
-    obj.techLearn = [techs[indexTech]];
     objLista.push(obj);
     };
   return objLista;
   };
 };
-//console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Artur'));
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Artur"));
 
 // Desafio 11
 function generatePhoneNumber() {
