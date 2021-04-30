@@ -82,11 +82,10 @@ function fizzBuzz(Array) {
     } else if (Array[index] % 3 == 0){
       result.push('fizz');
     } else if (Array[index] % 5 == 0 ){
-      result.push('Buzz');
+      result.push('buzz');
     } else {
       result.push('bug!');
     };
- 
   };
   return result;
 };
