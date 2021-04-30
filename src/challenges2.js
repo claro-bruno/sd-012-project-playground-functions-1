@@ -22,20 +22,20 @@ console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'jose'));
 
 
 // Desafio 11
-function generatePhoneNumber(numeros) {
-  let maximoNumeros=11;
-  for (index = 0 ; index <numeros.length ; index +=1){
-    if(numeros.length<maximoNumeros || numeros.length>maximoNumeros){
-      return "Array com tamanho incorreto.";
-    }
-    else if(numeros[index]<0 || numeros[index]>9) {
-      return "não é possível gerar um número de telefone com esses valores";
-    }
-  }
-  return (`(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`);
-}
+// function generatePhoneNumber(numeros) {
+//   let maximoNumeros=11;
+//   for (index = 0 ; index <numeros.length ; index +=1){
+//     if(numeros.length<maximoNumeros || numeros.length>maximoNumeros){
+//       return "Array com tamanho incorreto.";
+//     }
+//     else if(numeros[index]<0 || numeros[index]>9) {
+//       return "não é possível gerar um número de telefone com esses valores";
+//     }
+//   }
+//   return (`(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`);
+// }
 
-console.log(generatePhoneNumber([2,1,9,9,0,3,5,3,2,1,9,1]));
+// console.log(generatePhoneNumber([2,1,9,9,0,3,5,3,2,1,9,1]));
 
 
 // Desafio 11
@@ -60,7 +60,7 @@ function generatePhoneNumber(numeros) {
   return (`(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`);
 }
 
-console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1]));
+// console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1]));
 
 
 // Desafio 12
@@ -81,7 +81,6 @@ console.log(triangleCheck(10, 14, 18));
 // Desafio 13
 function hydrate(string) {
   let stringSeparada = string.split('');
-  let numeros =[];
   let somaNumeros = 0;
   for (index = 0 ; index<stringSeparada.length ; index+=1){
     if(stringSeparada[index]==='1' || stringSeparada[index]==='2' || stringSeparada[index]==='3' ||stringSeparada[index]==='4' ||stringSeparada[index]==='5' || stringSeparada[index]==='6' || stringSeparada[index]==='7' || stringSeparada[index]==='8' || stringSeparada[index]==='9')
