@@ -59,11 +59,11 @@ function fizzBuzz(numbers) {
   for (let num in numbers) {
     if(numbers[num] % 3 === 0 && numbers[num] % 5 !== 0) {
       output.push('fizz');
-    } else if(numbers[num] % 3 !== 0 && numbers[num] % 5 === 0) {
+    } else if (numbers[num] % 3 !== 0 && numbers[num] % 5 === 0) {
       output.push('buzz');
-    } else if(numbers[num] % 3 === 0 && numbers[num] % 5 === 0) {
+    } else if (numbers[num] % 3 === 0 && numbers[num] % 5 === 0) {
       output.push('fizzBuzz');
-    } else if(numbers[num] % 3 !== 0 && numbers[num] % 5 !== 0) {
+    } else if (numbers[num] % 3 !== 0 && numbers[num] % 5 !== 0) {
       output.push('bug!');
     }
   }
