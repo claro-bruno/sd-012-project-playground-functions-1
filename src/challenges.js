@@ -31,14 +31,16 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(nameList) {
   // seu código aqui
-  let firstName = nameList[0];
-  let lastName = nameList.slice(-1); // Slice() para copiar e adicionar em novo Array.
-  let lastAndFirstName = []; // Criar novo array para adicionar o lastName e firstName.
+  // let firstName = nameList[0];
+  // let lastName = nameList.slice(-1); // Slice() para copiar e adicionar em novo Array.
+  // let lastAndFirstName = []; // Criar novo array para adicionar o lastName e firstName.
 
-  //lastAndFirstName.push(lastName + ',' +firstName); // Adiciona no array.
+  // lastAndFirstName.push(lastName + ',' +firstName); // Adiciona no array.
 
-  //return lastAndFirstName;
-  return nameList[nameList.length -1] +','+ nameList[0];
+  // return lastAndFirstName;
+  return`${nameList[nameList.length - 1]}, ${nameList[0]}`;
+  // let concatName = nameList[nameList.length - 1] + nameList[0];
+  // return concatName;
 }
 let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 console.log(concatName(nameList));
