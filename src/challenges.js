@@ -86,18 +86,18 @@ function catAndMouse(mouse,cat1,cat2) {
 
   // let posicaoRato, posicaoGato1, posicaoGato2;
   if(distanciaRatoCat1 <distanciaRatoCat2){
-    return console.log("cat1");
+    return "cat1";
   }else if (distanciaRatoCat1 > distanciaRatoCat2){
-    return console.log("cat2");
+    return "cat2";
   }else{
-    return console.log("os gatos trombam e o rato foge");
+    return "os gatos trombam e o rato foge";
   }
 }
 // catAndMouse(-1,0,1);//ESSE EU NÃO SOUBE FAZER FUNCIONAR
-catAndMouse(1,0,2);//gatos devem se trombar (distância igual do rato)
-catAndMouse(0,3,2);
-catAndMouse(0,6,12);
-catAndMouse(0,2,2);
+console.log(catAndMouse(1,0,2));//gatos devem se trombar (distância igual do rato)
+console.log(catAndMouse(0,3,2));
+console.log(catAndMouse(0,6,12));
+console.log(catAndMouse(0,2,2));
 
 // Desafio 8
 function fizzBuzz(lista) {

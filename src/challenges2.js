@@ -51,16 +51,16 @@ function generatePhoneNumber(numeros) {
       }
     }
     if(numeros.length<maximoNumeros || numeros.length>maximoNumeros){
-      return ("Array com tamanho incorreto.");
+      return "Array com tamanho incorreto.";
     }
     else if(numeros[index]<0 || numeros[index]>9 || contadorNumeroRepetido>=3) {
-      return ("não é possível gerar um número de telefone com esses valores");
+      return "não é possível gerar um número de telefone com esses valores";
     }
   }
   return (`(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`);
 }
 
-console.log(generatePhoneNumber([2,1,9,9,0,3,5,3,2,1,8]));
+console.log(generatePhoneNumber([2,1,9,9,0,3,5,3,2,1,8,1]));
 
 
 
