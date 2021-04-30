@@ -24,23 +24,30 @@ function isValidNegative(arrayPhoneNumber) {
 }
 
 function isValidRep(arrayPhoneNumber) {
-  for (let index = 0; index < arrayPhoneNumber.length; index += 1) {
-    let count = 0;
-    for (
-      let indexComp = 0;
-      indexComp < arrayPhoneNumber.length;
-      indexComp += 1
-    ) {
-      if (arrayPhoneNumber[indexComp] === arrayPhoneNumber[index]) {
-        count += 1;
-      }
-      if (count > 2) {
-        return true;
-      }
+  let sorted = arrayPhoneNumber.sort();
+  for (let index = 0; index < sorted.length; index += 1) {
+    if (sorted[index] === sorted[index + 1] && sorted[index] === sorted[index + 2]) {
+      return true;
     }
   }
   return false;
 }
+// for (let index = 0; index < arrayPhoneNumber.length; index += 1) {
+//   let count = 0;
+//   for (
+//     let indexComp = 0;
+//     indexComp < arrayPhoneNumber.length;
+//     indexComp += 1
+//   ) {
+//     if (arrayPhoneNumber[indexComp] === arrayPhoneNumber[index]) {
+//       count += 1;
+//     }
+//     if (count > 2) {
+//       return true;
+//     }
+//   }
+// }
+// return false;
 
 function generatePhoneNumber(arrayPhoneNumber) {
   let validNegative = isValidNegative(arrayPhoneNumber);
