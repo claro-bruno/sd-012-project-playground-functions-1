@@ -46,17 +46,18 @@ console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 16, 12]));
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   let isTriangle = false;
-  if((lineA < lineB + lineC) && (lineA > Math.abs(lineB - lineC))) {
+  if((lineA < (lineB + lineC)) && (lineA > Math.abs(lineB - lineC))) {
     isTriangle = true;
-  } else if ((lineB < lineA + lineC ) && (lineB > Math.abs(lineB - lineA))){
+  } else if ((lineB < (lineA + lineC)) && (lineB > Math.abs(lineC - lineA))){
     isTriangle = true;
-  } else if ((lineC < lineB + lineA ) && (lineC > Math.abs(lineA - lineB))){
+  } else if ((lineC < (lineB + lineA)) && (lineC > Math.abs(lineA - lineB))){
     isTriangle = true;
   } else {
     isTriangle = false;
   }
   return isTriangle;
 }
+
 
 
 
