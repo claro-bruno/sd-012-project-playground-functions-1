@@ -65,21 +65,21 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(numbersBuzz) {
+function fizzBuzz(numberBuzz) {
+  // Consultei o codigo do colega pra ver como poderia reduzir a complexidade, exigida pelo lint
+  // https://github.com/tryber/sd-012-project-playground-functions/blob/jose-reginaldo-playground-functions/src/challenges.js
+  // Entendi a Logica utilizada para reduzir a complexidade
   let answer = [];
-  for (let index = 0; index < numbersBuzz.length; index += 1) {
-    if (numbersBuzz[index] % 3 === 0 && numbersBuzz[index] % 5 === 0) {
-      answer.push('fizzBuzz');
-    } else if (numbersBuzz[index] % 3 === 0) {
-      answer.push('fizz');
-    } else if (numbersBuzz[index] % 5 === 0) {
-      answer.push('buzz');
-    } else {
-      answer.push('bug!');
-    }
+  for (let index = 0; index < numberBuzz.length; index += 1) {
+    answer[index] = 'bug!';
+    if (numberBuzz[index] % 15 === 0) {
+      answer[index] = 'fizzBuzz';
+    } else if (numberBuzz[index] % 5 === 0) {
+      answer[index] = 'buzz';
+    } else if (numberBuzz[index] % 3 === 0) { answer[index] = 'fizz'; }
   }
-return (answer);
-};
+  return answer;
+}
 
 // Desafio 9
 function encode() {
