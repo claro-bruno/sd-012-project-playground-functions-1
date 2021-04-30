@@ -45,7 +45,7 @@ function concatName(array) {
   return concat;
 }
 
-console.log(concatName (['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+//console.log(concatName (['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 
 // Desafio 5
@@ -97,12 +97,26 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 
 }
-console.log(catAndMouse(0, -3, -3))
+//console.log(catAndMouse(0, -3, -3))
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(numbersFizzBuzz) {
   // seu código aqui
+  let arrayComplete = [];
+  for (let index = 0; index < numbersFizzBuzz.length; index += 1) {
+    if (numbersFizzBuzz[index] % 3 === 0 && numbersFizzBuzz[index] % 5 === 0) {
+      arrayComplete.push ('fizzBuzz');
+    } else if (numbersFizzBuzz[index] % 3 === 0) {
+      arrayComplete.push ('fizz');
+    } else if (numbersFizzBuzz[index] % 5 === 0) {
+      arrayComplete.push('buzz');
+    } else {
+      arrayComplete.push('bug!')
+    }
+  } 
+  return arrayComplete
 }
+console.log (fizzBuzz([9, 25]))
 
 // Desafio 9
 function encode() {
