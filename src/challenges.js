@@ -21,8 +21,9 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let palavras = array
+  return palavras[0] +", "+ palavras[array.length -1]
 }
 
 // Desafio 5
@@ -38,7 +39,7 @@ function highestCount() {
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
 }
 
