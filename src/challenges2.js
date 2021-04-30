@@ -5,12 +5,12 @@ function techList(tecnology, name) {
 
   let lista = [];// criar lista vazia para colocar os itens
   let ordenada = tecnology.sort();// para ordenar a lista logo no início
-  for(let index = 0 ; index < ordenada.length ; index += 1) {
+  for (let index = 0; index < ordenada.length; index += 1) {
     let tecnologia = {
-      tech: tecnology[index], //passar de 1 em 1 conteúdo da tecnology
-      name: name
+      tech: tecnology[index], // passar de 1 em 1 conteúdo da tecnology
+      name: name,
     };
-    lista.push(tecnologia); //empurra itens dentro da lista vazia
+    lista.push(tecnologia); // empurra itens dentro da lista vazia
   }
   if (ordenada.length == 0) {
     return 'Vazio!';
@@ -33,7 +33,7 @@ function generatePhoneNumber(numeros) {
         contadorNumeroRepetido +=1;
       }
     }
-    if(numeros.length!=maximoNumeros){ //refatorar porque a gisele pediu
+    if(numeros.length!=11){ //refatorar porque a gisele pediu
       return "Array com tamanho incorreto.";
     }
     else if(numeros[index]<0 || numeros[index]>9 || contadorNumeroRepetido>=3) {
@@ -43,7 +43,7 @@ function generatePhoneNumber(numeros) {
   return `(${numeros[0]}${numeros[1]})${numeros[2]}${numeros[3]}${numeros[4]}${numeros[5]}${numeros[6]}-${numeros[7]}${numeros[8]}${numeros[9]}${numeros[10]}`;
 }
 
-// console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1,2]));
+// console.log(generatePhoneNumber([1,2,3,4,5,6,7,8,9,1]));
 
 
 // Desafio 12
