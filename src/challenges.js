@@ -35,9 +35,10 @@ function concatName(nameList) {
   let lastName = nameList.slice(-1); // Slice() para copiar e adicionar em novo Array.
   let lastAndFirstName = []; // Criar novo array para adicionar o lastName e firstName.
 
-  lastAndFirstName.push(lastName + ', ' +firstName); // Adiciona no array.
+  //lastAndFirstName.push(lastName + ',' +firstName); // Adiciona no array.
 
-  return lastAndFirstName;
+  //return lastAndFirstName;
+  return nameList[nameList.length -1] +','+ nameList[0];
 }
 let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 console.log(concatName(nameList));
@@ -104,14 +105,14 @@ function fizzBuzz(arrayNumeros) {
       string.push('bug!');
     }
   }
-return string;
+  return string;
 }
 
 // Desafio 9
 function encode(string) {
   // seu código aqui
-  let codes = { a: '1', e: '2', i: '3', o: '4', u: '5' };
-  let vogals = 'aeiou';
+  const codes = { a: '1', e: '2', i: '3', o: '4', u: '5' };
+  const vogals = 'aeiou';
   let stringCode = '';
 
   for (let index = 0; index < string.length; index += 1) {
@@ -126,7 +127,7 @@ function encode(string) {
 function decode(stringCode) {
   // seu código aqui
   let string = '';
-  let vogals = 'aeiou';
+  //let vogals = 'aeiou';
 
   for (let index = 0; index < stringCode.length; index += 1) {
     let number = Number(stringCode[index]);
@@ -138,7 +139,7 @@ function decode(stringCode) {
   }
   return string;
 }
-
+console.log(encode('hello'));
 module.exports = {
   calcArea,
   catAndMouse,
