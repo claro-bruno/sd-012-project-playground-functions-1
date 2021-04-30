@@ -45,6 +45,13 @@ function generatePhoneNumber(arr) {
   if (repeatTimes >= 3) {
     return 'não é possível gerar um número de telefone com esses valores';
   }
+
+  arr.splice(0, 0, '(');
+  arr.splice(3, 0, ')');
+  arr.splice(4, 0, ' ');
+  arr.splice(10, 0, '-');
+
+  return arr.join('');
 }
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 // Desafio 12
