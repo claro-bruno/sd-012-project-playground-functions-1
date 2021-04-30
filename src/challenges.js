@@ -110,5 +110,3 @@ module.exports = {
   highestCount,
   splitSentence,
 };
-
-//console.log(decode(encode('andre moreno')));
