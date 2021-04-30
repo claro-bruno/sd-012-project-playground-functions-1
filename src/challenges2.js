@@ -1,12 +1,36 @@
-//função auxiliar para o desafio 11:
+//funções auxiliares para o desafio 11:
 
-const quantidadeDeRepeticao = (arr) => {
-  arr.forEach(element => {
-    const repetition = 0;
-    arr.forEach(item => {
-      repetition++
-    })
-  })
+const checkRepetedNumbers = (arr) => {
+  let result = 'ok';
+  for (let j = 0; j < arr.length; j++) {
+    let repetition = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[j] == arr[i]) {
+        repetition++;
+        if (repetition >= 3) {
+          result = 'não é possível gerar um número de telefone com esses valores';
+          break;
+        }
+      }
+    }
+    if (result === 'não é possível gerar um número de telefone com esses valores') {
+      break;
+    }
+  }
+
+  return result;
+}
+
+
+const checkNumber = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      return 'não é possível gerar um número de telefone com esses valores';
+    }
+    if (arr[i] > 9) {
+      return 'não é possível gerar um número de telefone com esses valores';
+    }
+  }
 }
 
 // Desafio 10
@@ -39,27 +63,21 @@ function generatePhoneNumber(numberArr) {
 
   if (numberArr.length != 11) {
     return 'Array com tamanho incorreto.';
-  };
-
-  numberArr.forEach(element => {
-    let repetition = 0;
-    numberArr.forEach(number => {
-      if (element === number) {
-        repetition++;
-      } if (repetition === 3 || ((element || number) < 0) || ((element || number) > 9))
-        return 'não é possível gerar um número de telefone com esses valores';
-    });
-  });
-
-  numberArr.unshift('(');
-  numberArr.splice(3, 0, ')');
-  numberArr.splice(4, 0, ' ')
-  numberArr.splice(9, 0, '-');
-  return numberArr.join('');
+  } else if (checkNumber(numberArr)) {
+    return (checkNumber(numberArr));
+  } else if (checkRepetedNumbers(numberArr) != 'ok') {
+    return checkRepetedNumbers(numberArr);
+  } else {
+    numberArr.unshift('(');
+    numberArr.splice(3, 0, ')');
+    numberArr.splice(4, 0, ' ')
+    numberArr.splice(9, 0, '-');
+    return numberArr.join('');
+  }
 
 }
 
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+console.log(generatePhoneNumber([1, 1, 1, 1, 4, 5, 6, 7, 8, 9, 0, 3]))
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
