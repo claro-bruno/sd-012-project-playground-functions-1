@@ -90,10 +90,23 @@ function fizzBuzz(arrey3) {
   return array_3;
 };
 // Desafio 9
-function encode() {
-  // seu código aqui
-};
-function decode() {
+function encode(string) {
+  let text = string;
+  text = text.replace(/a/g, '1');
+  text = text.replace(/e/g, '2');
+  text = text.replace(/i/g, '3');
+  text = text.replace(/o/g, '4');
+  text = text.replace(/u/g, '5');
+  return text;
+}
+function decode(string) {
+  let text = string;
+  text = text.replace(/1/g, 'a');
+  text = text.replace(/2/g, 'e');
+  text = text.replace(/3/g, 'i');
+  text = text.replace(/4/g, 'o');
+  text = text.replace(/5/g, 'u');
+  return text;
   // seu código aqui
 };
 
