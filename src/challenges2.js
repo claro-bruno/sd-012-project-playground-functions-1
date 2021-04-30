@@ -33,6 +33,23 @@ const checkNumber = (arr) => {
   }
 }
 
+//Função auxiliar para o desafio 13:
+function checkNumerical(str) {
+  const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const allNumbers = [];
+
+  for (let i = 0; i < str.length; i++) {
+    numbers.forEach(number => {
+      if (number == parseInt(str[i], 10)) {
+        allNumbers.push(parseInt(str[i], 10));
+
+      }
+    })
+  }
+  return allNumbers;
+}
+
+
 // Desafio 10
 function techList(arr, name) {
 
@@ -83,9 +100,20 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(str) {
+  let numbers = checkNumerical(str);
+  let coposDeAgua = 0;
+  let message = ''
+  numbers.forEach(number => {
+    coposDeAgua += number;
+  })
+  coposDeAgua == 1 ? message = `${coposDeAgua} copo de água` :
+    message = `${coposDeAgua} copos de água`
+
+  return message;
 }
+
+console.log(hydrate("1 cerveja"));
 
 module.exports = {
   generatePhoneNumber,
