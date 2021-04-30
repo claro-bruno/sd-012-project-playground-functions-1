@@ -56,11 +56,21 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(numbers) {
   let output = [];
-  for (let key of numbers){
-    switch (numbers)
+  for (let num in numbers){
+    if(numbers[num] % 3 === 0 && numbers[num] % 5 !== 0){
+      output.push('fizz');
+    } else if(numbers[num] % 3 !== 0 && numbers[num] % 5 === 0) {
+      output.push('buzz');
+    } else if(numbers[num] % 3 === 0 && numbers[num] % 5 === 0) {
+      output.push('fizzBuzz');
+    } else if(numbers[num] % 3 !== 0 && numbers[num] % 5 !== 0){
+      output.push('bug!');
+    }
   }
+  return output;
 }
 
+console.log(fizzBuzz([7, 9]));
 // Desafio 9
 function encode() {
   // seu código aqui
