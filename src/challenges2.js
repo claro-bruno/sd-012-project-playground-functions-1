@@ -45,9 +45,11 @@ function generatePhoneNumber(numeros) {
 }
 
 // Desafio 12
-function triangleCheck(a, b, c) {
-  return !!(a + b > c && a + c > b && b + c > a && Math.abs(a - b) < c && Math.abs(a - c) < b && Math.abs(b - c) < a);
-}
+const checkLados1 = (a, b, c) => a + b > c && a + c > b && b + c > a;
+
+const checkLados2 = (a, b, c) => Math.abs(a - b) < c && Math.abs(a - c) < b && Math.abs(b - c) < a;
+
+const triangleCheck = (a, b, c) => checkLados1(a, b, c) && checkLados2(a, b, c);
 
 // Desafio 13
 function hydrate(birita) {
