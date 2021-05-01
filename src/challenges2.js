@@ -63,7 +63,7 @@ function hydrate(pints) {
   // https://stackoverflow.com/questions/41446833/what-is-the-difference-between-i-i-1-and-i-1-in-a-for-loop
     water += numberOf[index];
   } if (water === 1) {
-    return ('1 copo de água');
+    return (`${water} copo de agua`);
   }
   return (`${water} copos de agua`);
 }
