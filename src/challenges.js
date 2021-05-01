@@ -82,7 +82,7 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   return pega;
 }
-//console.log(catAndMouse(1, 1, 1));
+//console.log(catAndMouse(1, 2, 3));
 
 // Desafio 8
 function fizzBuzz() {
