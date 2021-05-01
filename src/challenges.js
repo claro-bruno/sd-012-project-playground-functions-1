@@ -69,8 +69,8 @@ function highestCount(maiorNumero) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let position1 = mouse - cat1;
-  let position2 = mouse - cat2;
+  let position1 = Math.abs(mouse - cat1);
+  let position2 = Math.abs(mouse - cat2);
 
   if (position1 === position2) {
     return 'Os catos trombam';
@@ -80,7 +80,7 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat2';
   }
 }
-//console.log(catAndMouse(10, 4, 3));
+console.log(catAndMouse(1, 4, 3));
 
 // Desafio 8
 function fizzBuzz() {
