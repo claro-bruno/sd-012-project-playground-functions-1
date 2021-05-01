@@ -1,8 +1,21 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, name) {
+  array.sort();
+  let juncao = [];
+  if (array.length < 0){
+    return "Vazio!";
+  }
+  for (let index in array) {
+  let objetoCoisas = {
+      tech: array[index],
+      name: name,
+    };
+juncao.push(objetoCoisas);
+  }
+  return juncao;
 }
-
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
+"Lucas"))
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
@@ -23,7 +36,6 @@ if (lineA > somaLados || lineB > somaLados || lineC > somaLados){
 }
 return eTringulo;
 }
-
 
 // Desafio 13
 function hydrate(string) {
