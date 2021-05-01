@@ -76,7 +76,7 @@ function fizzBuzzRules(number) {
     return 'fizz';
   } if (number % 5 === 0) {
     return 'buzz';
-  } 
+  }
   return 'bug!';
 }
 
@@ -89,52 +89,62 @@ function fizzBuzz(list) {
 }
 
 // Desafio 9
-function encodeExec(word, law) {
+
+function encodeRule(letter, rule) {
+  for (let key in rule) {
+    if (letter === key) {
+      letter = rule[key];
+    }
+  }
+  return letter;
+}
+
+function encodeExec(word, rule) {
   let result = '';
   for (let letter of word) {
-    for (let key in law) {
-      if (letter === key) {
-        letter = law[key];
-      }
-    }
-    result += letter;
+    result += encodeRule(letter, rule);
   }
   return result;
 }
 
 function encode(word) {
-  let vowels = {
+  let rules = {
     a: '1',
     e: '2',
     i: '3',
     o: '4',
     u: '5',
   };
-  return encodeExec(word, vowels);
+  return encodeExec(word, rules);
 }
 
-function decodeExec(word, law) {
+//  função de decifrar;
+function decodeRule(number, rule) {
+  for (let key in rule) {
+    if (number === key) {
+      number = rule[key];
+    }
+  }
+  return number;
+}
+
+function decodeExec(word, rule) {
   let result = '';
   for (let number of word) {
-    for (let key in law) {
-      if (number === key) {
-        number = law[key];
-      }
-    }
-    result += number;
+    result += decodeRule(number, rule);
   }
   return result;
 }
 
 function decode(word) {
-  let vowels = {
+  let rules = {
     1: 'a',
     2: 'e',
     3: 'i',
     4: 'o',
     5: 'u',
-  };
-  return decodeExec(word,vowels);
+  }; 
+  return decodeExec(word, rules); 
 }
 
 module.exports = {

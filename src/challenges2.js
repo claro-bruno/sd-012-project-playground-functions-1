@@ -16,8 +16,7 @@ function techList(skills, name) {
 }
 
 // Desafio 11
-
-// verifica se o tamanho do array é valido para formar um número de telefone de 11 dígitos;
+//  verifica se o tamanho do array é valido para formar um número de telefone de 11 dígitos;
 function isPhoneLength(phone) {
   if (phone.length !== 11) {
     return true;
@@ -25,7 +24,7 @@ function isPhoneLength(phone) {
   return false;
 }
 
-// verifica se o numero se repete mais de três vezes.
+//  verifica se o numero se repete mais de três vezes.
 function maxRepetition(phone, number) {
   let times = 0;
   for (let index of phone) {
@@ -38,7 +37,7 @@ function maxRepetition(phone, number) {
   return false;
 }
 
-//verifica se o numero repete mais que as vezes necessárias.
+//  verifica se o numero repete mais que as vezes necessárias.
 function repeatNumber(phone) {
   for (let number of phone) {
     if (maxRepetition(phone, number)) {
@@ -48,7 +47,7 @@ function repeatNumber(phone) {
   return false;
 }
 
-//verifica se o número é valido, sendo menor que 9 e mair que 0;
+//  verifica se o número é valido, sendo menor que 9 e mair que 0;
 function isValidNumber(phone) {
   for (let number of phone) {
     if (number < 0 || number > 9) {
@@ -58,9 +57,7 @@ function isValidNumber(phone) {
   return false;
 }
 
-//imprime um numero de telefone a partir de um array os números:: (DDD) 00000-0000;
-function printNumberFormat(phone) {
-  let phoneResult = '';
+function printInFormat(phone) {
   let areaNumber = ''; 
   let firstHalf = ''; 
   let secondHalf = '';
@@ -73,11 +70,20 @@ function printNumberFormat(phone) {
       secondHalf += phone[index];
     }
   }
-  phoneResult = `(${areaNumber}) ${firstHalf}-${secondHalf}`;
+  return [areaNumber, firstHalf, secondHalf];
+}
+
+//  imprime um numero de telefone a partir de um array os números:: (DDD) 00000-0000;
+function printNumber(phone) {
+  let number = printInFormat(phone);
+  let areaNumber = number[0];
+  let firstHalf = number[1];
+  let secondHalf = number[2];
+  let phoneResult = `(${areaNumber}) ${firstHalf}-${secondHalf}`;
   return phoneResult;
 }
 
-//verifica a partir das funções acima se é possível gerar o numero, se imprime no formato correto;
+//  verifica a partir das funções acima se é possível gerar o numero, se imprime no formato correto;
 function generatePhoneNumber(phone) {
   if (isPhoneLength(phone)) {
     return 'Array com tamanho incorreto.';
@@ -86,12 +92,12 @@ function generatePhoneNumber(phone) {
   } if (isValidNumber(phone)) {
     return 'não é possível gerar um número de telefone com esses valores';
   }
-  return printNumberFormat(phone);
+  return printNumber(phone);
 }
 
 // Desafio 12
 
-//compara se um lado é menor que a soma dos outros dois;
+//  compara se um lado é menor que a soma dos outros dois;
 function compareSides(side1, side2, side3) {
   if (side1 < side2 + side3) {
     return true;
@@ -99,7 +105,7 @@ function compareSides(side1, side2, side3) {
   return false;
 }
 
-//compara se um lado é maior que a diferença absoluta entre outros dois;
+//  compara se um lado é maior que a diferença absoluta entre outros dois;
 function isHigherAsolut(side1, side2, side3) {
   if (side1 > Math.abs(side2 - side3)) {
     return true;
@@ -107,7 +113,7 @@ function isHigherAsolut(side1, side2, side3) {
   return false;
 }
 
-//verifica se é possivel formar um triangulo;
+//  verifica se é possivel formar um triangulo;
 function isTrianglePossible(side1, side2, side3) {
   if (compareSides(side1, side2, side3) && isHigherAsolut(side1, side2, side3)) {
     return true;
