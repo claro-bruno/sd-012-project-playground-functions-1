@@ -159,7 +159,6 @@ function decode(frase) {
   return result;
 }
 
-//Desafio 10
 module.exports = {
   calcArea,
   catAndMouse,
