@@ -1,10 +1,15 @@
 // Desafio 1
 function compareTrue(first, second) {
-  // seu código aqui
-  if(first === true && second === true )
-    return true;
+  let retorno;
+  if (first === true && second === true)
+  {
+    retorno = true;
+  }
   else
-    return false;
+  {
+    retorno = false;
+  }
+  return retono;
 }
 
 // Desafio 2
@@ -23,10 +28,10 @@ function splitSentence(sentence) {
 function concatName(arrStrings) {
   // seu código aqui
 
-if(arrStrings.length >= 1)
-  return `${arrStrings[arrStrings.length -1]}`;
-else
-  return `${arrStrings[0]}`;
+  if(arrStrings.length >= 1)
+    return `${arrStrings[arrStrings.length -1]}`;
+  else
+    return `${arrStrings[0]}`;
 }
 
 // Desafio 5
