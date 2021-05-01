@@ -55,8 +55,17 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(pints) {
+  // https://codereview.stackexchange.com/questions/115885/extract-numbers-from-a-string-javascript
+  let numberOf = pints.match(/\d+/g).map(Number);
+  let water = 0;
+  for (let index = 0; index < numberOf.length; index += 1) {
+  // https://stackoverflow.com/questions/41446833/what-is-the-difference-between-i-i-1-and-i-1-in-a-for-loop
+    water += numberOf[index];
+  } if (water === 1) {
+    return ('1 copo de água');
+  }
+  return (`${water} copos de agua`);
 }
 
 module.exports = {
