@@ -25,13 +25,14 @@ function triangleCheck() {
 
 // Desafio 13
 function hydrate(stringRecebida) {
-  let counter = 0;
+  let ct = 0;
   let patt1 = /[1-9]/g;
   let result = stringRecebida.match(patt1);
   for (let indexSecond = 0; indexSecond < result.length; indexSecond += 1) {
-    counter += Number(result[indexSecond]);
+    ct += Number(result[indexSecond]);
   }
-  return counter > 0 && counter > 1 && `${counter} copos de água`;
+
+  return ct === 1 ? `${ct} copo de água` : ct > 0 && ct > 1 && `${ct} copos de água`;
 }
 
 module.exports = {
