@@ -41,6 +41,7 @@ function highestCount(numbers) {
       higherNumber = numbers[index];
     }
   }
+}  
   for (let key in numbers) {
     if (numbers[key] === higherNumber) {
       repeat += 1; 
