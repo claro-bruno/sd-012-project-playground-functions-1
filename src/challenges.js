@@ -55,12 +55,10 @@ function catAndMouse(mouse, cat1, cat2) {
     ret = 'cat2';
   }
   else if (rgC2M > rgC1M) {
-      ret = 'cat1';
-    } else
-    {
-      ret = 'os gatos trombam e o rato foge';
-    }
-
+    ret = 'cat1';
+  } else {
+    ret = 'os gatos trombam e o rato foge';
+  }
   return ret;
 }
 
