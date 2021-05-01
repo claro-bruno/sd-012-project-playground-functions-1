@@ -66,7 +66,7 @@ function catAndMouse(mouse, cat1, cat2) {
   
   if (distMouseCat1 < distMouseCat2) {
     return 'cat1';
-  }if (distMouseCat2 < distMouseCat1) {
+  } if (distMouseCat2 < distMouseCat1) {
     return 'cat2';
   } if ( distMouseCat1 === distMouseCat2){
     return 'os gatos trombam e o rato foge';
@@ -108,9 +108,8 @@ function decode(fraseCodificada) {
   let decodedAEIO = decodedAEI.replaceAll('4', 'o');
   let decodedAEIOU = decodedAEIO.replaceAll('5', 'u');
 
-  return decodedAEIOU
+  return decodedAEIOU;
 }
-console.log(decode('h3 th2r2!'))
 
 module.exports = {
   calcArea,
