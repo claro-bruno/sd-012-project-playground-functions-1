@@ -26,11 +26,21 @@ function splitSentence(string) {
   // .split divide uma string em partes.
   // Evita o uso de expressões regulares.
 }
-
+//console.log(splitSentence('Waltton Coelho'));
 // Desafio 4
-function concatName() {
-  // seu código aqui
+
+
+function concatName(palavra) {
+
+ //return string.split(' ').reverse(); => A função inverte a frase
+
+return `${palavra[palavra.length - 1]}, ${palavra[0]}`; // A função está retornando apenas a primeira letra das palavras.
+
 }
+
+//console.log(concatName('Waltton Clayton Coelho Santos'));
+
+
 
 // Desafio 5
 function footballPoints() {
