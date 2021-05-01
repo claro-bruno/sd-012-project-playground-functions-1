@@ -24,9 +24,9 @@ function concatName(arrStrings) {
   // seu código aqui
 
 if(arrStrings.length >= 1)
-  return `${arrStrings[arrStrings.length -1]};
+  return `${arrStrings[arrStrings.length -1]}`;
 else
-  return ${arrStrings[0]};
+  return `${arrStrings[0]}`;
 }
 
 // Desafio 5
