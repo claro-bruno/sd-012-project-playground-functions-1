@@ -70,13 +70,45 @@ function fizzBuzz(numbers) {
   return output;
 }
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
+function encode(imputCode) {
+  let imputLetter = {
+    a: '1',
+    e: '2',
+    i: '3',
+    o: '4',
+    u: '5',
+  };
+  let output = '';
+  for(let bit of imputCode){
+    for(let key in imputLetter){
+      if(bit === key){
+        bit = imputLetter[key]; 
+      }
+    }
+    output += bit;
+  }
+  return output;
 }
 
+function decode(imputCode) {
+  let imputLetter = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  };
+  let output = '';
+  for(let num of imputCode){
+    for(let key in imputLetter){
+      if(num === key){
+        num = imputLetter[key]; 
+      }
+    }
+    output += num;
+  }
+  return output;
+}
 module.exports = {
   calcArea,
   catAndMouse,
