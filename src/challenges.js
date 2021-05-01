@@ -61,12 +61,12 @@ function catAndMouse(mouse, cat1, cat2) {
   return ret;
 }
 // Desafio 8
-function fizzBuzz(arrNumbers) {
-  let arrRetorno = [];
-  for(let value of arrNumbers) {
-    arrRetorno.push((value % 3 === 0) && (value % 5 === 0) ? 'fizzBuzz' : (value % 3 === 0) ? 'fizz' : (value % 5 === 0) ? 'buzz' : 'bug!');
+function fizzBuzz(arFiz) {
+  let arRet = [];
+  for (let value of arFiz) {
+    arRet.push((value % 3 === 0) && (value % 5 === 0) ? 'fizzBuzz' : (value % 3 === 0) ? 'fizz' : (value % 5 === 0) ? 'buzz' : 'bug!');
   }
-  return arrRetorno;
+  return arRet;
 }
 
 // Desafio 9
