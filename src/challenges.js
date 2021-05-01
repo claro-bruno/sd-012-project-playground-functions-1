@@ -90,9 +90,24 @@ function fizzBuzz() {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(convert) {
+  let palavra = convert.replace(/[aeiou]/gi, (x) => {
+    switch (x) {
+      default:
+        return '1';
+      case 'e':
+        return '2';
+      case 'i':
+        return '3';
+      case 'o':
+        return '4';
+      case 'u':
+        return '5';
+    }
+  });
+  return palavra;
 }
+console.log(encode('waltton'));
 
 function decode() {
   // seu código aqui
