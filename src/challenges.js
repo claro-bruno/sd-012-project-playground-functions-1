@@ -56,24 +56,32 @@ function highestCount(maiorNumero) {
 
   let maior = Math.max.apply(null, maiorNumero);
   let repet = 0;
-  for (let index = 0; index < maiorNumero.length; index +=1)
-  {
-    if (maiorNumero[index] === maior)
-    {
-      repet +=1;
+  for (let index = 0; index < maiorNumero.length; index += 1) {
+    if (maiorNumero[index] === maior) {
+      repet += 1;
     }
 
   }
   return repet;
-
 }
-console.log(highestCount([9,1,2,3,9,5,7, 9]));
+  // console.log(highestCount([9,1,2,3,9,5,7, 9]));
 
 
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
+  // Desafio 7
+function catAndMouse(cat1,cat2) {
+
+  if (cat1 === cat2)
+  {
+    return 'Os catos trombam';
+  } else if (cat1 < cat2)
+  {
+    return 'Cat1';
+  } else
+  {
+    return 'cat2'
+  }
 }
+//console.log(catAndMouse(5, 5));
 
 // Desafio 8
 function fizzBuzz() {
