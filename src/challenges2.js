@@ -1,5 +1,5 @@
 // Desafio 10
-let array10 = ["React", "Jest", "HTML", "CSS", "JavaScript"];
+// let array10 = ["React", "Jest", "HTML", "CSS", "JavaScript"];
 function techList(techPraAprender, name) {
   let arraySaida = [];
   let techListLearn = {};
@@ -15,7 +15,7 @@ function techList(techPraAprender, name) {
   }
   return 'Vazio!';
 }
-console.log(techList(array10, "Lucas"));
+// console.log(techList(array10, "Lucas"));
 // Desafio 11
 function repeteMais3x(arraycheck) {
   let contador = 0;
@@ -47,9 +47,9 @@ function generatePhoneNumber(arrayNumber) {
       foneNumber += arrayNumber[key] + ') ';
     } else if (key >= 2 && key < 7) {
       foneNumber += arrayNumber[key];
-    } else if (key === 7) {
+    } else if (key == 7) {
       foneNumber += '-' + arrayNumber[key];
-    } else if (key > 7) {
+    }else if (key > 7) {
       foneNumber += arrayNumber[key];
     }
   }
@@ -57,8 +57,7 @@ function generatePhoneNumber(arrayNumber) {
 }
 // console.log(generatePhoneNumber(array11));
 // Desafio 12
-
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
 }
 
