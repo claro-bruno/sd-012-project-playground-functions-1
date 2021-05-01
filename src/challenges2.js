@@ -41,10 +41,18 @@ function generatePhoneNumber(numeroTelefone) {
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-}
+  let ladoA = lineA < (lineB + lineC) && lineA > Math.abs(lineB - lineC);
+  let ladoB = lineB < (lineA + lineC) && lineB > Math.abs(lineA - lineC);
+  let ladoC = lineC < (lineA + lineB) && lineC > Math.abs(lineA - lineB);
+  if (ladoA == true && ladoB == true && ladoC == true) {
+    return true;
+  } 
+    return false;
+  }
 
+console.log(triangleCheck(10, 14, 8));
 // Desafio 13
 function hydrate() {
   // seu código aqui
