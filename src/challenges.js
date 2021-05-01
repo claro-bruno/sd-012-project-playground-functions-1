@@ -20,7 +20,7 @@ function concatName(arStr) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return Number(wins) && Number(ties) && `${(wins*3) + (ties*1)} pontos`;
+  return Number(wins) && Number(ties) ? `${(wins * 3) + (ties * 1)} pontos` : '';
 }
 
 // Desafio 6
