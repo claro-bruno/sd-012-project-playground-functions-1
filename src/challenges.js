@@ -15,7 +15,7 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(arStr) {
-  return arStr.length >= 1 ? `${arStr[arStr.length-1]}, ${arStr[0]}` : "array too short";
+  return arStr.length >= 1 && `${arStr[arStr.length-1]}, ${arStr[0]}`;
 }
 
 // Desafio 5
