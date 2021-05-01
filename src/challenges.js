@@ -54,7 +54,7 @@ function highestCount(array) {
   }
   let numerosRepetidos = array.filter(buscaRepetidos);
   
-  return numerosRepetidos;
+  return numerosRepetidos.length;
 }
 
 // Desafio 7
