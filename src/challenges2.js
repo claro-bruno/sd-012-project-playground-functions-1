@@ -69,16 +69,19 @@ function generatePhoneNumber(arrNum) {
 }
 
 // Desafio 12
-function p1IsValid (lineA, lineB, lineC) {
-  if (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB){
+function p1IsValid(lineA, lineB, lineC) {
+  if (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB) {
     return true;
   }
   return false;
 }
 
-function p2IsValid (lineA, lineB, lineC) {
-  if (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB)) {
-    return true;
+function p2IsValid(lineA, lineB, lineC) {
+  if (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC)) {
+    if (lineC > Math.abs(lineA - lineB)) {
+      return true;
+    }
+    return false;
   }
   return false;
 }
