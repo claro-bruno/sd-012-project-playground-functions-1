@@ -14,8 +14,45 @@ function techList(tech, nome) {
 }
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(arrayTelefone) {
+  let phoneFormated = '';
+    let errorMessage = '';
+    let numberHistoric = 0;
+    let counter = 0;
+    if(arrayTelefone.length === 11)
+    {
+        for(let index = 0; index < arrayTelefone.length; index+= 1)
+        {
+            if(errorMessage.length === 0)
+            {
+                errorMessage = arrayTelefone[index] < 0 || arrayTelefone[index] > 9 ? errorMessage = 'não é possível gerar um número de telefone com esses valores' : '';
+                if(errorMessage.length === 0)
+                {
+                    phoneFormated += index === 0 ? `(${arrayTelefone[index]}` : index === 1 ? `${arrayTelefone[index]}) ` : index === 6 ? `${arrayTelefone[index]}-` : `${arrayTelefone[index]}`;
+                    if(numberHistoric === arrayTelefone[index])
+                        counter += 1;
+                    else
+                        counter = 0;
+                    errorMessage = counter > 2 ? 'não é possível gerar um número de telefone com esses valores': '';
+                    numberHistoric = arrayTelefone[index];
+                }
+                else{
+                    break;
+                }
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+    else
+    {
+        errorMessage = 'Array com tamanho incorreto.';
+    }
+
+
+    return errorMessage.length ===0 ? phoneFormated : errorMessage ;
 }
 
 // Desafio 12
