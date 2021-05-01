@@ -20,13 +20,34 @@ function concatName(arStr) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return Number(wins) && Number(ties) ? `${(wins * 3) + (ties * 1)}` : '';
+  return Number(wins) && Number(ties) ? ((wins * 3) + (ties * 1)) : 'invalid arguments';
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(arrHighest) {
+  let maior = retornaMaior(arrHighest);
+  return countHighest(arrHighest, maior);
 }
+
+function retornaMaior(arrHighest)
+{
+    let maior = 0;
+    for(let index = 0; index < arrHighest.length; index += 1)
+    {
+        maior = arrHighest[index] > maior ? arrHighest[index] : maior;
+    }
+    return maior;
+}
+
+function countHighest(arrHighest, valueHight)
+{
+    let count = 0 ;
+    for(let index=0;index < arrHighest.length; index += 1)
+    {
+        count += (valueHight === arrHighest[index]) ? 1 : 0;
+    }
+    return count;
+};
 
 // Desafio 7
 function catAndMouse() {
@@ -57,4 +78,6 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
+  retornaMaior,
+  countHighest,
 };
