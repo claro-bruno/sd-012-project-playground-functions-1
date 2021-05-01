@@ -64,24 +64,25 @@ function highestCount(maiorNumero) {
   }
   return repet;
 }
-  // console.log(highestCount([9,1,2,3,9,5,7, 9]));
+// console.log(highestCount([9,1,2,3,9,5,7, 9]));
 
 
-  // Desafio 7
-function catAndMouse(cat1,cat2) {
+// Desafio 7
+function catAndMouse(mouse, cat1, cat2) {
+  let position1 = cat1;
+  let position2 = cat2;
+  position1 = mouse - cat1;
+  position2 = mouse - cat2;
 
-  if (cat1 === cat2)
-  {
+  if (position1 === position2) {
     return 'Os catos trombam';
-  } else if (cat1 < cat2)
-  {
+  } else if (position1 < position2) {
     return 'Cat1';
-  } else
-  {
+  } else {
     return 'cat2'
   }
 }
-//console.log(catAndMouse(5, 5));
+console.log(catAndMouse(10, 15, 25));
 
 // Desafio 8
 function fizzBuzz() {
