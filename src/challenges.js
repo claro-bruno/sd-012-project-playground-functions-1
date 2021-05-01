@@ -47,9 +47,11 @@ function highestCount(arrHighest) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
+  let ret = '';
   let rgC1M = Math.abs((cat1 > mouse) ? (cat1 - mouse) : (mouse - cat1));
   let rgC2M = Math.abs((cat2 > mouse) ? (cat2 - mouse) : (mouse - cat2));
-  if(rgC1M > rgC2M){
+
+  if (rgC1M > rgC2M) {
     ret = 'cat2';
   } else {
     if(rgC2M > rgC1M) {
