@@ -59,14 +59,17 @@ function highestCount(arrayNumeros) {
 }
 
 // Desafio 7
-function catAndMouse(cat1, cat2) {
-  if (cat1 === cat2) {
-    return 'os gatos trombam e o rato foge';
-  } else if (cat1 < cat2) {
-    return 'cat1';
-  }
+function catAndMouse(mouse, cat1, cat2) {
+  let distanciaCat1 = Math.abs(mouse - cat1);
+  let distanciaCat2 = Math.abs(mouse - cat2);
 
-  return 'cat2';
+  if (distanciaCat1 === distanciaCat2) {
+    return 'os gatos trombam e o rato foge';
+  } else if (distanciaCat1 < distanciaCat2) {
+    return 'cat1';
+  } else {
+    return 'cat2';
+  }
 }
 
 // Desafio 8
@@ -74,64 +77,61 @@ function fizzBuzz(arrayNumeros) {
   let resultadosFizzBuzz = [];
 
   for (let numero of arrayNumeros) {
-    resultadosFizzBuzz.push(!(numero % 15) ? "fizzBuzz" : !(numero % 3) ? "fizz" : !(numero % 5) ? "buzz" : "bug!");
+    if (!(numero % 15)) {
+      resultadosFizzBuzz.push('fizzBuzz');
+    } else if (!(numero % 3)) {
+      resultadosFizzBuzz.push('fizz');
+    } else if (!(numero % 5)) {
+      resultadosFizzBuzz.push('buzz');
+    } else {
+      resultadosFizzBuzz.push('bug!');
+    }
   }
 
   return resultadosFizzBuzz;
-};
+}
 
 // Desafio 9
 function encode(mensagem) {
   let transformacao = {
-    a: 1,
-    e: 2,
-    i: 3,
-    o: 4,
-    u: 5
-  };
-
+    a: 1, e: 2, i: 3, o: 4, u: 5
+  }
   let mensagemCodificada = '';
 
   for (let indiceMensagem in mensagem) {
     for (let chave in transformacao) {
-      if (mensagem[indiceMensagem] == chave) {
+      if (mensagem[indiceMensagem] === chave) {
         mensagemCodificada += transformacao[chave];
         break;
-      };
-    };
-    if ((mensagemCodificada.length - 1) != indiceMensagem) {
+      }
+    }
+    if ((mensagemCodificada.length - 1) !== indiceMensagem) {
       mensagemCodificada += mensagem[indiceMensagem];
-    };
-  };
-
-  return mensagemCodificada;;
-};
+    }
+  }
+  return mensagemCodificada;
+}
 
 function decode(mensagemCodificada) {
   let transformacao = {
-    a: 1,
-    e: 2,
-    i: 3,
-    o: 4,
-    u: 5
-  };
-
+    a: 1, e: 2, i: 3, o: 4, u: 5
+  }
   let mensagemDecodificada = '';
 
   for (let indiceMensagem in mensagemCodificada) {
     for (let chave in transformacao) {
-      if (mensagemCodificada[indiceMensagem] == transformacao[chave]) {
+      if (mensagemCodificada[indiceMensagem] === transformacao[chave]) {
         mensagemDecodificada += chave;
         break;
-      };
-    };
-    if ((mensagemDecodificada.length - 1) != indiceMensagem) {
+      }
+    }
+    if ((mensagemDecodificada.length - 1) !== indiceMensagem) {
       mensagemDecodificada += mensagemCodificada[indiceMensagem];
-    };
-  };
+    }
+  }
 
   return mensagemDecodificada;
-};
+}
 
 module.exports = {
   calcArea,
