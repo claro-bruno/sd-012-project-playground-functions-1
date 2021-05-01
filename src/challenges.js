@@ -88,21 +88,29 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(arrNumbers) {
+function divisible(n) {
+let result = '';
+  if (n % 3 === 0 && n % 5 === 0) {
+    result += 'fizzBuzz';
+  } else if (n % 3 === 0) {
+    result += 'fizz';
+  } else if (n % 5 === 0) {
+    result += 'buzz';
+  } else {
+    result += 'bug!';
+  }
+  return result;
+}
+
+function fizzBuzz(numeros) {
   let arr = [];
-  for (let index = 0; index < arrNumbers.length; index += 1) {
-    if (arrNumbers[index] % 3 === 0 && arrNumbers[index] % 5 === 0) {
-      arr.push('fizzBuzz');
-    } else if (arrNumbers[index] % 3 === 0) {
-      arr.push('fizz');
-    } else if (arrNumbers[index] % 5 === 0) {
-      arr.push('buzz');
-    } else {
-      arr.push('bug!');
-    }
+  for (let n of numeros) {
+    arr.push(divisible(n));
   }
   return arr;
 }
+
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode(str) {
