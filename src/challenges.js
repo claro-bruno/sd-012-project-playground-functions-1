@@ -1,6 +1,6 @@
 // Desafio 1
-let numero1 = true;
-let numero2 = false;
+// let numero1 = true;
+// let numero2 = false;
 
 function compareTrue(numero1, numero2) {
   if (numero1 === true && numero2 === true) {
@@ -32,13 +32,14 @@ function splitSentence(string) {
 
 function concatName(palavra) {
 
-  //return string.split(' ').reverse(); => A função inverte a frase
+  // return string.split(' ').reverse(); => A função inverte a frase
 
-  return `${palavra[palavra.length - 1]}, ${palavra[0]}`; // A função está retornando apenas a primeira letra das palavras.
+  return `${ palavra[palavra.length - 1] }, ${ palavra[0] }`;
+  // A função está retornando apenas a primeira letra das palavras.
 
 }
 
-//console.log(concatName('Waltton Clayton Coelho Santos'));
+// console.log(concatName('Waltton Clayton Coelho Santos'));
 
 
 
@@ -46,7 +47,7 @@ function concatName(palavra) {
 function footballPoints(wins, ties) {
   return wins * 3 + ties;
 }
-//console.log(footballPoints(1, 2));
+// console.log(footballPoints(1, 2));
 
 // Desafio 6
 function highestCount() {
