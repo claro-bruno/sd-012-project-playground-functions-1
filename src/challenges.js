@@ -107,7 +107,7 @@ function encode(mensagem) {
         break;
       }
     }
-    if ((mensagemCodificada.length - 1) !== indiceMensagem) {
+    if ((mensagemCodificada.length - 1) != indiceMensagem) {
       mensagemCodificada += mensagem[indiceMensagem];
     }
   }

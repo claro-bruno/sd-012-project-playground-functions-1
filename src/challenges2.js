@@ -19,7 +19,7 @@ function techList(arrayTeconologias, nome) {
       }
     }
 
-    if (tecnologia === objetosTecnologiaOrdenados.length) {
+    if (tecnologia == objetosTecnologiaOrdenados.length) {
       objetosTecnologiaOrdenados.push(objetoTecnologia);
     }
   }
@@ -91,9 +91,9 @@ function hydrate(string) {
 
   if (contagem > 1) {
     return contagem + ' copos de água';
-  } else {
-    return contagem + ' copo de água';
   }
+
+  return contagem + ' copo de água';
 }
 
 module.exports = {
