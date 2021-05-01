@@ -44,9 +44,6 @@ function generatePhoneNumber(tel) {
 return '('+tel[0]+tel[1]+') '+tel[2]+tel[3]+tel[4]+tel[5]+tel[6]+'-'+tel[7]+tel[8]+tel[9]+tel[10];
 }
 
-let test = [9, 2, 3, 0, 5, -6, 7, 8, -7, 0, 1];
-console.log(generatePhoneNumber(test));
-
 // Desafio 12
 function triangleCheck() {
   // seu código aqui
