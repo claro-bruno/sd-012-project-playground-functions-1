@@ -85,11 +85,23 @@ function fizzBuzz(arFiz) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(str) {
+  let strReturn = '';
+  strReturn = str.split('a').join('1');
+  strReturn = strReturn.split('e').join('2');
+  strReturn = strReturn.split('i').join('3');
+  strReturn = strReturn.split('o').join('4');
+  strReturn = strReturn.split('u').join('5');
+  return strReturn;
 }
-function decode() {
-  // seu código aqui
+function decode(str) {
+  let strReturn = '';
+  strReturn = str.split('1').join('a');
+  strReturn = strReturn.split('2').join('e');
+  strReturn = strReturn.split('3').join('i');
+  strReturn = strReturn.split('4').join('o');
+  strReturn = strReturn.split('5').join('u');
+  return strReturn;
 }
 
 module.exports = {
