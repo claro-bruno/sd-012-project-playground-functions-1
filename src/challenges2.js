@@ -14,10 +14,16 @@ function triangleCheck() {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+let soma = 0;
+function hydrate(string) {
+let numeros = /\d+/g;
+let resultado = string.match(numeros);
+  for (let index = 0; index < resultado.length; index += 1){
+    soma += resultado[index];
+  }
+return (soma + "copos de água");
 }
-
+console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"))
 module.exports = {
   generatePhoneNumber,
   techList,
