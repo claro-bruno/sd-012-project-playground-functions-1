@@ -38,12 +38,12 @@ function splitSentence(frase) {
 function concatName(array) {
   // seu código aqui
   let concat;
-  for(let index = 0; index < array.length; index += 1){
+  for (let index = 0; index < array.length; index += 1){
     concat = (array[array.length-1]) + ', ' + array[0];
-  }
+  };
   
   return concat;
-}
+};
 
 //console.log(concatName (['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
@@ -54,7 +54,7 @@ function footballPoints(wins, ties) {
   let calculo = (wins * 3) + (ties * 1);
 
   return calculo;
-}
+};
 //console.log(footballPoints(0, 0))
 
 // Desafio 6
@@ -70,13 +70,13 @@ function highestCount(numbers) {
   
   for (index = 0; index < numbers.length; index += 1){
     if (maior === numbers[index]){
-      cont +=1
-    }else if(maior === 0){
-      cont = 3
+      cont += 1;
+    } else if (maior === 0){
+      cont = 3;
     };
   };
-  return cont
-}
+  return cont;
+};
 //console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 
 // Desafio 7
@@ -94,9 +94,9 @@ function catAndMouse(mouse, cat1, cat2) {
   } else {
     return 'os gatos trombam e o rato foge';
 
-  }
+  };
 
-}
+};
 //console.log(catAndMouse(0, -3, -3))
 
 // Desafio 8
@@ -111,20 +111,20 @@ function fizzBuzz(numbersFizzBuzz) {
     } else if (numbersFizzBuzz[index] % 5 === 0) {
       arrayComplete.push('buzz');
     } else {
-      arrayComplete.push('bug!')
-    }
-  } 
-  return arrayComplete
-}
+      arrayComplete.push('bug!');
+    };
+  }; 
+  return arrayComplete;
+};
 //console.log (fizzBuzz([9, 25]))
 
 // Desafio 9
 function encode() {
   // seu código aqui
-}
+};
 function decode() {
   // seu código aqui
-}
+};
 
 module.exports = {
   calcArea,
