@@ -75,12 +75,12 @@ function catAndMouse(mouse, cat1, cat2) {
   if (position1 === position2) {
     return 'Os catos trombam';
   } else if (position1 < position2) {
-    return 'Cat1';
+    return 'cat1';
   } else {
     return 'cat2';
   }
 }
-console.log(catAndMouse(1, 4, 3));
+//console.log(catAndMouse(10, 4, 3));
 
 // Desafio 8
 function fizzBuzz() {
