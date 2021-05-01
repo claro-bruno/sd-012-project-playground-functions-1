@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(bool1, bool2) {
-  if (bool1 === true && bool2 === true){
+  if (bool1 === true && bool2 === true) {
     return true;
   } else {
     return false;
@@ -41,11 +41,9 @@ function highestCount(arrayDesafio6) {
   let higherNumber = arrayDesafio6[0];
 
   for (let index = 0; index < arrayDesafio6
-.length; index += 1) {
-    if (arrayDesafio6
-  [index] > higherNumber) {
-      higherNumber = arrayDesafio6
-  [index];
+    .length; index += 1) {
+    if (arrayDesafio6[index] > higherNumber) {
+      higherNumber = arrayDesafio6[index];
     } else {
       higherNumber = higherNumber;
     };
@@ -54,9 +52,8 @@ function highestCount(arrayDesafio6) {
   let numberOfRepetitions = 0;
 
   for (let counter = 0; counter < arrayDesafio6
-.length; counter += 1) {
-    if (arrayDesafio6
-  [counter] === higherNumber) {
+    .length; counter += 1) {
+    if (arrayDesafio6[counter] === higherNumber) {
       numberOfRepetitions += 1;
     };
   };
@@ -67,73 +64,58 @@ function highestCount(arrayDesafio6) {
 
 // Desafio 7 - FALTA
 function catAndMouse(mouse, cat1, cat2) {
-let distanciaCat1 =  mouse - cat1;
-let distanciaCat2 =  mouse - cat2;
+  let distanciaCat1 = mouse - cat1;
+  let distanciaCat2 = mouse - cat2;
 
-if (Math.abs(distanciaCat1) < Math.abs(distanciaCat2)){
-  return "cat1";
-} else if (Math.abs(distanciaCat1) === Math.abs(distanciaCat2)){
-  return "os gatos trombam e o rato foge";
-} else {
-  return "cat2";
-}
+  if (Math.abs(distanciaCat1) < Math.abs(distanciaCat2)) {
+    return "cat1";
+  } else if (Math.abs(distanciaCat1) === Math.abs(distanciaCat2)) {
+    return "os gatos trombam e o rato foge";
+  } else {
+    return "cat2";
+  }
 };
 
 
 // Desafio 8
 function fizzBuzz(arrayDesafio8) {
-let arrayNova8 = [];
-for (let a = 0; a < arrayDesafio8.length; a += 1) {
-  if (arrayDesafio8[a] % 5 == 0 && arrayDesafio8[a] % 3 == 0) {
-    arrayNova8.push("fizzBuzz");
-  } else if (arrayDesafio8[a] % 5 == 0) {
-    arrayNova8.push("buzz");
-  } else if (arrayDesafio8[a] % 3 == 0) {
-    arrayNova8.push("fizz");
-  } else {
-    arrayNova8.push("bug!");
+  let arrayNova8 = [];
+  for (let a = 0; a < arrayDesafio8.length; a += 1) {
+    if (arrayDesafio8[a] % 5 == 0 && arrayDesafio8[a] % 3 == 0) {
+      arrayNova8.push("fizzBuzz");
+    } else if (arrayDesafio8[a] % 5 == 0) {
+      arrayNova8.push("buzz");
+    } else if (arrayDesafio8[a] % 3 == 0) {
+      arrayNova8.push("fizz");
+    } else {
+      arrayNova8.push("bug!");
+    }
   }
-}
-return arrayNova8;
+  return arrayNova8;
 };
-
 
 
 
 
 // Desafio 9 FALTA
 function encode(frase9) {
-  let novaFrase = frase9.replace(/[aeiou]/gi, '[12345]')
-  return novaFrase;
+  let fraseCodificada = frase9.replace(/a/gi, '1')
+    .replace(/e/gi, '2')
+    .replace(/i/gi, '3')
+    .replace(/o/gi, '4')
+    .replace(/u/gi, '5');
+  return fraseCodificada;
 }
-console.log(encode('hi there'))
+console.log(encode(frase9))
 
 function decode(novaFrase) {
   let fraseDecodificada = novaFrase.replace(/1/gi, 'a')
-  .replace(/2/gi, 'e')
-  .replace(/3/gi, 'i')
-  .replace(/4/gi, 'o')
-  .replace(/5/gi, 'u');
+    .replace(/2/gi, 'e')
+    .replace(/3/gi, 'i')
+    .replace(/4/gi, 'o')
+    .replace(/5/gi, 'u');
   return fraseDecodificada;
 }
-
-let frase9 = 'hi there!';
-
-for (let index9 = 0; index9 < frase9.length; index9 += 1){
-  if (frase9[index9] === 'a'){
-    frase9[index9] = '1';
-  } else  if (frase9[index9] === 'e'){
-    frase9[index9] = '2';
-  } else  if (frase9[index9] === 'i'){
-    frase9[index9] = '3';
-  } else  if (frase9[index9] === 'o'){
-    frase9[index9] = '4';
-  } else  if (frase9[index9] === 'u'){
-    frase9[index9] = '5';
-  }
-}
-
-console.log()
 
 module.exports = {
   calcArea,
