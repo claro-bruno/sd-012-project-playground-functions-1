@@ -46,13 +46,12 @@ function highestCount(arrHighest) {
 }
 
 // Desafio 7
-function catAndMouse(ouse, cat1 , cat2) {
+function catAndMouse(mouse, cat1, cat2) {
   let rgC1M = Math.abs((cat1 > mouse) ? (cat1 - mouse) : (mouse - cat1));
   let rgC2M = Math.abs((cat2 > mouse) ? (cat2 - mouse) : (mouse - cat2));
 
-  return rgC1M > rgC2M ? "cat2" : rgC2M > rgC1M ? "cat1" : "os gatos trombam e o rato foge";
+  return rgC1M > rgC2M ? 'cat2' : rgC2M > rgC1M ? 'cat1' : 'os gatos trombam e o rato foge';
 }
-
 
 // Desafio 8
 function fizzBuzz() {
