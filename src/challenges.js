@@ -34,7 +34,9 @@ function splitSentence(str) {
 // Desafio 4
 function concatName(arrayOfStrings) {
   let finalString = '';
-  finalString = `${(arrayOfStrings[arrayOfStrings.length - 1])}, ${(arrayOfStrings[0])}`;
+  finalString = `${arrayOfStrings[arrayOfStrings.length - 1]}, ${
+    arrayOfStrings[0]
+  }`;
   return finalString;
 }
 
@@ -111,7 +113,7 @@ function fizzBuzz(numeros) {
 }
 
 // Desafio 9
-function checkVowel (v) {
+function checkVowel(v) {
   let arrayVowels = ['a', 'e', 'i', 'o', 'u'];
   for (let index2 = 0; index2 < arrayVowels.length; index2 += 1) {
     if (arrayVowels[index2] === v) {
@@ -129,7 +131,7 @@ function encode(str) {
     i: '3',
     o: '4',
     u: '5',
-  }
+  };
   for (let index = 0; index < str.length; index += 1) {
     if (checkVowel(str[index])) {
       returnString += encoder[str[index]];
@@ -148,8 +150,8 @@ function decode(str) {
     3: 'i',
     4: 'o',
     5: 'u',
-  }
-  function checkNumber (n) {
+  };
+  function checkNumber(n) {
     let arrayNumbers = ['1', '2', '3', '4', '5'];
     for (let index2 = 0; index2 < arrayNumbers.length; index2 += 1) {
       if (arrayNumbers[index2] === n) {
@@ -168,7 +170,7 @@ function decode(str) {
   return returnString;
 }
 
-console.log(decode("h3 th2r2!"));
+function ronaldo() {}
 
 module.exports = {
   calcArea,
