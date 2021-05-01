@@ -32,20 +32,28 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(numArray) {
-  let higherNum = 0;
-  let repetitions = 0;
-  for (let num of numArray) {
-    if (num > higherNum) {
-      higherNum = num;
+function findHighest(numberArray) {
+  let higherNumber = 0;
+  for (let number of numberArray) {
+    if (number > higherNumber) {
+      higherNumber = number;
     }
   }
-  for (let index of numArray) {
-    if (index === higherNum) {
+  return higherNumber;
+}
+
+function repetions(numberArray, higherNumber) {
+  let repetitions = 0;
+  for (let index of numberArray) {
+    if (index === higherNumber) {
       repetitions += 1;
     }
   }
   return repetitions;
+}
+
+function highestCount(numberArray) {
+  return repetions(numberArray, findHighest(numberArray));
 }
 
 // Desafio 7
@@ -61,23 +69,39 @@ function catAndMouse(posMouse, posCat1, posCat2) {
 }
 
 // Desafio 8
+function fizzBuzzRules(number) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return 'fizzBuzz';
+  } if (number % 3 === 0) {
+    return 'fizz';
+  } if (number % 5 === 0) {
+    return 'buzz';
+  } 
+  return 'bug!';
+}
+
 function fizzBuzz(list) {
   let arrayResult = [];
   for (let number of list) {
-    if (number % 3 === 0 && number % 5 !== 0) {
-      arrayResult.push('fizz');
-    } else if (number % 5 === 0 && number % 3 !== 0) {
-      arrayResult.push('buzz');
-    } else if (number % 3 === 0 && number % 5 === 0) {
-      arrayResult.push('fizzBuzz');
-    } else {
-      arrayResult.push('bug!');
-    }
+    arrayResult.push(fizzBuzzRules(number));
   }
   return arrayResult;
 }
 
 // Desafio 9
+function encodeExec(word, law) {
+  let result = '';
+  for (let letter of word) {
+    for (let key in law) {
+      if (letter === key) {
+        letter = law[key];
+      }
+    }
+    result += letter;
+  }
+  return result;
+}
+
 function encode(word) {
   let vowels = {
     a: '1',
@@ -86,14 +110,18 @@ function encode(word) {
     o: '4',
     u: '5',
   };
+  return encodeExec(word, vowels);
+}
+
+function decodeExec(word, law) {
   let result = '';
-  for (let letter of word) {
-    for (let key in vowels) {
-      if (letter === key) {
-        letter = vowels[key];
+  for (let number of word) {
+    for (let key in law) {
+      if (number === key) {
+        number = law[key];
       }
     }
-    result += letter;
+    result += number;
   }
   return result;
 }
@@ -106,16 +134,7 @@ function decode(word) {
     4: 'o',
     5: 'u',
   };
-  let result = '';
-  for (let number of word) {
-    for (let key in vowels) {
-      if (number === key) {
-        number = vowels[key];
-      }
-    }
-    result += number;
-  }
-  return result;
+  return decodeExec(word,vowels);
 }
 
 module.exports = {
