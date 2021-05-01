@@ -70,7 +70,7 @@ function fizzBuzz(arrNumeros) {
     } else if ((arrNumeros[index]) % 3 === 0){
       saida.push ('fizz');
     } else if ((arrNumeros[index]) % 5 === 0){
-      saida.push ('Buzz');
+      saida.push ('buzz');
     } else {
       saida.push('bug!');
     };
