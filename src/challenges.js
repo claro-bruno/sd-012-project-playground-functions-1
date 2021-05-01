@@ -69,20 +69,18 @@ function highestCount(maiorNumero) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let position1 = cat1;
-  let position2 = cat2;
-  position1 = mouse - cat1;
-  position2 = mouse - cat2;
+  let position1 = mouse - cat1;
+  let position2 = mouse - cat2;
 
   if (position1 === position2) {
     return 'Os catos trombam';
   } else if (position1 < position2) {
     return 'Cat1';
   } else {
-    return 'cat2'
+    return 'cat2';
   }
 }
-console.log(catAndMouse(10, 15, 25));
+console.log(catAndMouse(1, 4, 3));
 
 // Desafio 8
 function fizzBuzz() {
