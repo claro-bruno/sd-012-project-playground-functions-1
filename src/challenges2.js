@@ -28,10 +28,7 @@ function isValidRep(arrayPhoneNumber) {
   // :thinking_emoji:
   sorted.sort();
   for (let index = 0; index < sorted.length; index += 1) {
-    if (
-      sorted[index] === sorted[index + 1]
-      && sorted[index] === sorted[index + 2]
-    ) {
+    if (sorted[index] === sorted[index + 1] && sorted[index] === sorted[index + 2]) {
       return true;
     }
   }
@@ -104,11 +101,16 @@ function triangleCheck(lineA, lineB, lineC) {
   let c = checkC(lineA, lineB, lineC);
   return a && b && c;
 }
-console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(bebidas) {
+  let reg = /\d+/g;
+  let numerosString = bebidas.match(reg);
+  let coposAgua = 0;
+  for (let index = 0; index < numerosString.length; index += 1) {
+    coposAgua += Number(numerosString[index]);
+  }
+  return coposAgua;
 }
 
 module.exports = {
