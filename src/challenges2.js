@@ -72,7 +72,10 @@ function hydrate(beer, water) {
   for (let indexDrink = 0; indexDrink < drinkArray.length; indexDrink += 1) {
     totalDrinks += drinkArray[indexDrink];
   }
-  if (totalDrinks !== 0) {
+  if (totalDrinks === 0 || totalDrinks === 1) {
+    water = totalDrinks;
+    return `${water} copo de água`;
+  } else {
     water = totalDrinks;
     return `${water} copos de água`;
   }
