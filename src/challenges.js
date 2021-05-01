@@ -101,7 +101,7 @@ function conditionsFizzBuzz(number) {
   if (number % 5 === 0) {
     return 'buzz';
   }
-  return 'bug';
+  return 'bug!';
 }
 
 function fizzBuzz(numbers) {
