@@ -94,8 +94,13 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let numBebidas = string.match(/[0-9]+/g);
+  let count = 0;
+  for (let index = 0; index < numBebidas.length; index += 1) {
+    count += parseFloat(numBebidas[index]);
+  }
+  return `${count} copos de água`;
 }
 
 module.exports = {
