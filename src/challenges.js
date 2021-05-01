@@ -130,7 +130,7 @@ function encode(word) {
   }
 return encriptword;
 }
-encode('hi there!');
+console.log(encode('hi there!'));
 
 function decode(word) {
   let encriptword = ''
@@ -154,9 +154,9 @@ function decode(word) {
       encriptword += word[accountant];
     }
   }
-  console.log(encriptword);
+  return encriptword
 }
-decode('h3 th2r2!');
+console.log((decode('h2ll4'))
 
 module.exports = {
   calcArea,
