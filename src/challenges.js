@@ -1,10 +1,12 @@
 // Desafio 1
 function compareTrue(bool, bool2) {
+  let success = true;
   if (bool === true && bool2 === true) {
-    return true;
+    success = true;
   } else {
-    return false;
+    success = false;
   }
+  return success;
 }
 
 // Desafio 2
