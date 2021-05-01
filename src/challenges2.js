@@ -64,11 +64,17 @@ function generatePhoneNumber(arrayNumber) {
 // console.log(generatePhoneNumber(array11));
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  if (lineA < lineB + lineC || lineC < lineA + lineB || lineB < lineC + lineA) {
+  if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
     return true;
-  }
+  } else if (lineC < lineA + lineB && lineC > Math.abs(lineB - lineA)) {
+    return true;
+  } else if (lineB < lineC + lineA && lineB > Math.abs(lineA - lineC)) {
+    return true;
+  } else{
   return false;
+  }
 }
+//console.log(triangleCheck(40, 10, 10));
 
 // Desafio 13
 function hydrate() {
