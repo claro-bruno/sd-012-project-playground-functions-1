@@ -8,7 +8,7 @@ function compareTrue(valor1, valor2) {
 }
 // Desafio 2
 function calcArea(base, height) {
-  let area = (base * eight) / 2;
+  let area = (base * height) / 2;
   return area;
 }
 
@@ -56,7 +56,7 @@ function catAndMouse(mouse, cat1, cat2) {
   let distMouseCat1 = mouse - cat1;
   let distMouseCat2 = mouse - cat2;
   
-  if (distMouseCat1 < 0 || distMouseCat2 < 0){
+  if (distMouseCat1 < 0 || distMouseCat2 < 0) {
     if (distMouseCat1 < 0){
       distMouseCat1 = Math.abs(distMouseCat1)}; 
     if (distMouseCat2 < 0){
@@ -74,16 +74,16 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(arrayNum) {
-  
-  for (let index = 0; index < arrayNum.length; index += 1){
+
+  for (let index = 0; index < arrayNum.length; index += 1) {
     if (arrayNum[index] % 3 === 0 && arrayNum[index] % 5 !== 0) {
-      arrayNum[index] = "fizz";
-    }else if (arrayNum[index] % 3 !== 0 && arrayNum[index] % 5 === 0) {
-      arrayNum[index] = "buzz";
-    }else if (arrayNum[index] % 3 === 0 && arrayNum[index] % 5 === 0) {
-      arrayNum[index] = "fizzBuzz";
-    }else if (arrayNum[index] % 3 !== 0 && arrayNum[index] % 5 !== 0) {
-      arrayNum[index] = "bug!";
+      arrayNum[index] = 'fizz';
+    } else if (arrayNum[index] % 3 !== 0 && arrayNum[index] % 5 === 0) {
+      arrayNum[index] = 'buzz';
+    } else if (arrayNum[index] % 3 === 0 && arrayNum[index] % 5 === 0) {
+      arrayNum[index] = 'fizzBuzz';
+    } else if (arrayNum[index] % 3 !== 0 && arrayNum[index] % 5 !== 0) {
+      arrayNum[index] = 'bug!';
     }
   }
   return arrayNum;
