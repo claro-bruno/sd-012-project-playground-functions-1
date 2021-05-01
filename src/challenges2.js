@@ -61,10 +61,13 @@ function generatePhoneNumber(arrayNumber) {
   return `(${arrayNumber[0]}${arrayNumber[1]}) ${arrayNumber[2]}${arrayNumber[3]}${arrayNumber[4]}${arrayNumber[5]}${arrayNumber[6]}-${arrayNumber[7]}${arrayNumber[8]}${arrayNumber[9]}${arrayNumber[10]}`;
   //return foneNumber;
 }
-console.log(generatePhoneNumber(array11));
+// console.log(generatePhoneNumber(array11));
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  
+  if (lineA < lineB + lineC || lineC < lineA + lineB || lineB < lineC + lineA) {
+    return true;
+  }
+  return false;
 }
 
 // Desafio 13
