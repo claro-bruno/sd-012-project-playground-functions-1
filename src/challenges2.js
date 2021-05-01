@@ -37,6 +37,7 @@ function isValidRep(arrayPhoneNumber) {
   }
   return false;
 }
+
 // for (let index = 0; index < arrayPhoneNumber.length; index += 1) {
 //   let count = 0;
 //   for (
@@ -76,9 +77,34 @@ function generatePhoneNumber(arrayPhoneNumber) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function checkA(lineA, lineB, lineC) {
+  if (lineA > lineB + lineC || lineA < Math.abs(lineB - lineC)) {
+    return false;
+  }
+  return true;
 }
+
+function checkB(lineA, lineB, lineC) {
+  if (lineB > lineC + lineA || lineB < Math.abs(lineC - lineA)) {
+    return false;
+  }
+  return true;
+}
+
+function checkC(lineA, lineB, lineC) {
+  if (lineC > lineA + lineB || lineC < Math.abs(lineA - lineB)) {
+    return false;
+  }
+  return true;
+}
+
+function triangleCheck(lineA, lineB, lineC) {
+  let a = checkA(lineA, lineB, lineC);
+  let b = checkB(lineA, lineB, lineC);
+  let c = checkC(lineA, lineB, lineC);
+  return a && b && c;
+}
+console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate() {
