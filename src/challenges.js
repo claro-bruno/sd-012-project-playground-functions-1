@@ -122,7 +122,7 @@ function decode(mensagemCodificada) {
 
   for (let indiceMensagem in mensagemCodificada) {
     for (let chave in transformacao) {
-      if (mensagemCodificada[indiceMensagem] === transformacao[chave]) {
+      if (mensagemCodificada[indiceMensagem] == transformacao[chave]) {
         mensagemDecodificada += chave;
         break;
       }
