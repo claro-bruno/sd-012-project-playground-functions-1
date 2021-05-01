@@ -16,7 +16,7 @@ function splitSentence(splitString) {
 }
 // Desafio 4
 function concatName(strings) {
-  let lastAndFirst = strings[strings.length - 1]+ ' , ' + strings[0];
+  let lastAndFirst = `${strings[strings.length - 1]}, ${strings[0]}`;
   return lastAndFirst;
 }
 // Desafio 5
@@ -79,10 +79,10 @@ function encode(imputCode) {
     u: '5',
   };
   let output = '';
-  for (let bit of imputCode){
-    for (let key in imputLetter){
-      if(bit === key){
-        bit = imputLetter[key]; 
+  for (let bit of imputCode) {
+    for (let key in imputLetter) {
+      if (bit === key) {
+      bit = imputLetter[key]; 
       }
     }
     output += bit;
@@ -99,10 +99,10 @@ function decode(imputCode) {
     5: 'u',
   };
   let output = '';
-  for(let num of imputCode){
-    for(let key in imputLetter){
-      if(num === key){
-        num = imputLetter[key]; 
+  for (let num of imputCode) {
+    for (let key in imputLetter) {
+      if (num === key) {
+      num = imputLetter[key]; 
       }
     }
     output += num;
