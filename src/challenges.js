@@ -111,12 +111,12 @@ console.log(catAndMouse(0,0,0))
 function fizzBuzz(array) {
   let lastArray = [];
 
- for(index = 0; index < array.length; index +=1) {
-   if((array[index]) %3 === 0 && (array[index] %5) ===0){
+ for (index = 0; index < array.length; index +=1) {
+   if ((array[index]) %3 === 0 && (array[index] %5) ===0){
     lastArray.push('FizzBuzz')
-   }else if((array[index] % 5)===0){
+   }else if ((array[index] % 5)===0){
     lastArray.push('Buzz')
-   }else if((array[index] % 3) ===0){
+   }else if ((array[index] % 3) ===0){
     lastArray.push('Fizz')
    }else lastArray.push('Bug!')
     
