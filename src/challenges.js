@@ -17,9 +17,9 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-  let arrayDeStrings = string.split(" ",);
+  let arrayDeStrings = string.split(' ',);
   return arrayDeStrings;
-} console.log(splitSentence("foquete"));
+} console.log(splitSentence('foquete'));
 
 // Desafio 4
 function concatName(array) {
@@ -35,39 +35,36 @@ function concatName(array) {
 // Desafio 5
 function footballPoints(wins, ties) {
   let quantidadeDePontos = (3 * wins) + (1 * ties);
-return quantidadeDePontos;
+  return quantidadeDePontos;
 } console.log(footballPoints(14, 8));
 
 // Desafio 6
 function highestCount(array) {
   let maiorNumero = array[0];
   let numeroDeVezesDoMaior = 0;
-   for (let index = 0; index < array.length; index += 1) {
+  for (let index = 0; index < array.length; index += 1) {
     if (array[index] > maiorNumero) {
       maiorNumero = array[index];
     }
-  } 
-  for (let index = 0; index < array.length; index += 1) {
-    if ( array[index] === maiorNumero) {
+  } for (let index = 0; index < array.length; index += 1) {
+    if (array[index] === maiorNumero) {
       numeroDeVezesDoMaior += 1;
     }
-  }    
-  return numeroDeVezesDoMaior; 
-  } console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+  } return numeroDeVezesDoMaior; 
+} console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
 // Desafio 7
- function catAndMouse(mouse, cat1, cat2) {
-   let distanciaCat1ToMouse = Math.abs(cat1 - mouse);
-   let distanciaCat2ToMouse = Math.abs(cat2 - mouse);
-
-   if (distanciaCat2ToMouse < distanciaCat1ToMouse) {
-     return "cat2";
+function catAndMouse(mouse, cat1, cat2) {
+  let distanciaCat1ToMouse = Math.abs(cat1 - mouse);
+  let distanciaCat2ToMouse = Math.abs(cat2 - mouse);
+  if (distanciaCat2ToMouse < distanciaCat1ToMouse) {
+    return 'cat2';
    } else if (distanciaCat1ToMouse < distanciaCat2ToMouse) { 
-     return "cat1";
+    return 'cat1';
    } else { 
-     return "os gatos trombam e o rato foge";
-   }
- } console.log(catAndMouse(0, 6, 12));
+  return 'os gatos trombam e o rato foge';
+  }
+} console.log(catAndMouse(0, 6, 12));
 
 // Desafio 8
 function fizzBuzz(numeros) {
@@ -90,23 +87,23 @@ function fizzBuzz(numeros) {
 function encode(string1) {
   let vogal = string1.split('');
   for (let index = 0; index < vogal.length; index += 1) {
-      if (vogal[index] === 'a'){
+    if (vogal[index] === 'a') {
         vogal[index] = 1;
-      } else if (vogal [index] === 'e') {
+    } else if (vogal [index] === 'e') {
         vogal[index] = 2;
-      } else if (vogal[index] === 'i') {
+    } else if (vogal[index] === 'i') {
         vogal[index] = 3;
-      } else if (vogal[index] === 'o') {
+    } else if (vogal[index] === 'o') {
         vogal[index] = 4;
-      } else if (vogal[index] === 'u') {
+    } else if (vogal[index] === 'u') {
         vogal[index] = 5;
-      }
-    } return vogal.join('');
+    }
+  } return vogal.join('');
 }
  console.log(encode('hi there!'));  
 
 function decode(string2) {
-  numero = string2.split('');
+  let numero = string2.split('');
   for (let index = 0; index < numero.length; index +=1) {
     if (numero[index] === '1') {
       numero[index] = 'a';
