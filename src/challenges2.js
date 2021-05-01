@@ -101,11 +101,10 @@ function hydrate(string) {
     count += parseFloat(numBebidas[index]);
   }
   if (count === 1) {
-    return `${count} copo de água`
+    return `${count} copo de água`;
   }
   return `${count} copos de água`;
 }
-console.log(hydrate('1 cerveja'));
 
 module.exports = {
   generatePhoneNumber,
