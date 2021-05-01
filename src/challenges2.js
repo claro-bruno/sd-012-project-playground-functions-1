@@ -1,7 +1,7 @@
-// Desafio 10 - POR FAZER
+// Desafio 10 - POR FINALIZAR
 function techList(arrayNomeTech, name) {
-  if (arrayNomeTech === []) {
-    return 'Vazio!';
+  if (arrayNomeTech === '') {
+    return "Vazio!";
   }
 
   let lista = [];
@@ -20,12 +20,19 @@ function techList(arrayNomeTech, name) {
 
   return lista;
 
-} console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(numbers){
+  let format = "(xx) xxxxx-xxxx";
+  
+  for(let index = 0; index < numbers.length; index += 1)
+  {
+    format = format.replace('x', numbers[index]);
+  }
+  
+  return format;
 }
+
 
 // Desafio 12
 function triangleCheck() {
