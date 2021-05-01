@@ -40,13 +40,44 @@ function generatePhoneNumber(array) {
 }
 
 
-console.log(generatePhoneNumber([]))
-
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA,lineB,lineC) {
+  let saida=Boolean;
+  let validaA=Boolean;
+  let validaB=Boolean;
+  let validaC=Boolean;
+  if(lineA<lineB+lineC && lineA>Math.abs(lineB-lineC)){
+    validaA=true;
+  }
+  else{
+    validaA=false;
+  }
+  console.log(validaA)
+  if(lineB<lineA+lineC && lineB>Math.abs(lineA-lineC)){
+    validaB=true;
+  }
+  else{
+    validaB=false;
+  }
+    console.log(validaB)
+   if(lineC<lineB+lineA && lineC>Math.abs(lineA-lineC)){
+    validaC=true;
+  }
+  else{
+    validaC=false;
+  }
+    console.log(validaC)
+  if(validaA==true && validaA==validaC){
+    saida=true;
+  }
+  else{
+    saida=false;
+  }
+  return saida;
 }
+console.log(triangleCheck(10, 14, 8))
+
 
 // Desafio 13
 function hydrate() {
