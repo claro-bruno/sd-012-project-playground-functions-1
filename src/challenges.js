@@ -16,7 +16,7 @@ function splitSentence(splitString) {
 }
 // Desafio 4
 function concatName(strings) {
-  let lastAndFirst = `${strings[strings.length - 1]}, ${strings[0]};`;
+  let lastAndFirst = strings[strings.length - 1]+ ' , ' + strings[0];
   return lastAndFirst;
 }
 // Desafio 5
@@ -57,7 +57,7 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numbers) {
   let output = [];
   for (let num in numbers) {
-    if(numbers[num] % 3 === 0 && numbers[num] % 5 !== 0) {
+    if (numbers[num] % 3 === 0 && numbers[num] % 5 !== 0) {
       output.push('fizz');
     } else if (numbers[num] % 3 !== 0 && numbers[num] % 5 === 0) {
       output.push('buzz');
@@ -79,8 +79,8 @@ function encode(imputCode) {
     u: '5',
   };
   let output = '';
-  for(let bit of imputCode){
-    for(let key in imputLetter){
+  for (let bit of imputCode){
+    for (let key in imputLetter){
       if(bit === key){
         bit = imputLetter[key]; 
       }
