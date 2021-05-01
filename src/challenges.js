@@ -103,10 +103,39 @@ function catAndMouse(mouse, cat1, cat2) {
   
   // Desafio 8
   function fizzBuzz() {
+    let array4 = [2, 15, 7, 9, 45];
+    let array5 = [];
+     
+    function fizzBuzz() {
+     for (let index3Array = 0; index3Array < array4.length; index3Array += 1){
+       let possiveisCasos = [((array4[index3Array]) % 3) == 0, ((array4[index3Array]) % 5),((array4[index3Array]) % 3) == 0 && ((array4[index3Array]) % 5) == 0, ((array4[index3Array]) % 3) != 0 && ((array4[index3Array]) % 5) != 0];
+       switch (possiveisCasos.indexOf(true)) {
+         case 0:
+           array5.push("fizz");
+         break
+         case 1:
+           array5.push("buzz");
+         break
+         case 2:
+           array5.push("fizzBuzz");
+         break
+         case 3:
+           array5.push("bug!");
+         break
+              
+         }
+      
+     }
+     return array5;
+    }
+     
+    fizzBuzz(array4)
+    console.log(array5);
     // seu código aqui
   }
   // Desafio 9
   function encode() {
+      for (indice=0; indice<frase2; indice+=1)
     // seu código aqui
   }
   function decode() {
