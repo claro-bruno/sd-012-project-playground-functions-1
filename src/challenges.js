@@ -154,7 +154,7 @@ function decode(word) {
       encriptword += word[accountant];
     }
   }
-  return encriptword;
+  console.log(encriptword);
 }
 decode('h3 th2r2!');
 
