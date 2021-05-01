@@ -47,21 +47,32 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(arrayNumbers) {
+function higherNumber(arrayNumbers) {
   let numbers = arrayNumbers;
-  let maiorNumero = numbers[0];
-  let repeticoes = 0;
-  for (let index1 in numbers) {
-    if (numbers[index1] > maiorNumero) {
-      maiorNumero = numbers[index1];
+  let higherNum = numbers[0];
+  for (let index in numbers) {
+    if (numbers[index] > higherNum) {
+      higherNum = numbers[index];
     }
   }
-  for (let index2 in numbers) {
-    if (maiorNumero === numbers[index2]) {
-      repeticoes += 1;
+  return higherNum;
+}
+
+function numRepetitions(arrayNumbers, number) {
+  let amountRepet = 0;
+
+  for (let index in arrayNumbers) {
+    if (number === arrayNumbers[index]) {
+      amountRepet += 1;
     }
   }
-  return repeticoes;
+  return amountRepet;
+}
+
+function highestCount(arrayNumbers) {
+  let biggerNum = higherNumber(arrayNumbers);
+  let repetitions = numRepetitions(arrayNumbers, biggerNum);
+  return repetitions;
 }
 
 // Desafio 7
