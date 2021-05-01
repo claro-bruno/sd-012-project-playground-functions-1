@@ -69,6 +69,7 @@ console.log(highestCount([0, 0, 0]));
 function catAndMouse(mouse, cat1, cat2) {
   let distanceCat1 = mouse - cat1;
   let distanceCat2 = mouse - cat2;
+  let catWinner = '';
 
   if (distanceCat1 < 0) {
     distanceCat1 *= -1;
@@ -77,12 +78,13 @@ function catAndMouse(mouse, cat1, cat2) {
     distanceCat2 *= -1;
   }
   if (distanceCat1 < distanceCat2) {
-    return 'cat1';
+    catWinner = 'cat1';
   } else if (distanceCat2 < distanceCat1) {
-    return 'cat2';
+    catWinner = 'cat2';
   } else {
-    return 'os gatos trombam e o rato foge';
+    catWinners = 'os gatos trombam e o rato foge';
   }
+  return catWinner;
 }
 
 // Desafio 8
