@@ -33,7 +33,7 @@ function repeteMais3x(arraycheck) {
   }
   return contador;
 }
-// let array11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
+//let array11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
 function generatePhoneNumber(arrayNumber) {
   let foneNumber = '(';
   for (let key in arrayNumber) {
@@ -45,7 +45,8 @@ function generatePhoneNumber(arrayNumber) {
       //foneNumber += arrayNumber[key];
       foneNumber = foneNumber.concat(arrayNumber[key])
     } else if (key == 1) {
-      foneNumber += arrayNumber[key] + ') ';
+      foneNumber = `${foneNumber}${arrayNumber[key]}) `;
+      //foneNumber += arrayNumber[key] + ') ';
     } else if (key >= 2 && key < 7) {
       //foneNumber += arrayNumber[key];
       foneNumber = foneNumber.concat(arrayNumber[key])
