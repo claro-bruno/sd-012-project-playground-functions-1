@@ -114,12 +114,18 @@ function fizzBuzz(array) {
  for (index = 0; index < array.length; index +=1) {
     if ((array[index]) %3 === 0 && (array[index] %5) === 0){
     lastArray.push('FizzBuzz')
-   }if ((array[index] % 5)=== 0){
+
+   }
+   if ((array[index] % 5)=== 0){
     lastArray.push('Buzz')
-   }else if ((array[index] % 3) === 0){
+
+   }
+   else if ((array[index] % 3) === 0){
     lastArray.push('Fizz')
-   }else lastArray.push('Bug!')
-    
+
+   }
+   else lastArray.push('Bug!')
+   
    }
    return lastArray
  }
