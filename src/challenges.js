@@ -91,8 +91,8 @@ function fizzBuzz() {
 
 // Desafio 9
 function encode(convert) {
-  let palavra = convert.replace(/[aeiou]/gi, (x) => {
-    switch (x) {
+  let vogais = convert.replace(/[aeiou]/g, (letra) => {
+    switch (letra) {
       default:
         return '1';
       case 'e':
@@ -105,13 +105,29 @@ function encode(convert) {
         return '5';
     }
   });
-  return palavra;
+  return vogais;
 }
-console.log(encode('waltton'));
+console.log(encode('aeiou'));
 
-function decode() {
-  // seu código aqui
+function decode(convert) {
+  let numeros = convert.replace(/[12345]/g, (vogais) => {
+    switch (vogais) {
+      default:
+        return 'a';
+      case '2':
+        return 'e';
+      case '3':
+        return 'i';
+      case '4':
+        return 'o';
+      case '5':
+        return 'u';
+    }
+  });
+  return numeros;
+
 }
+console.log(decode('12345'));
 
 module.exports = {
   calcArea,
