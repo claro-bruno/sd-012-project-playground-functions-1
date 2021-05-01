@@ -61,11 +61,26 @@ function catAndMouse(mouse, cat1, cat2) {
   return ret;
 }
 // Desafio 8
-function fizzBuzz(arFiz) {
-  let arRet = [];
-  for (let value of arFiz) {
-    arRet.push((value % 3 === 0) && (value % 5 === 0) ? 'fizzBuzz' : (value % 3 === 0) ? 'fizz' : (value % 5 === 0) ? 'buzz' : 'bug!');
+function retFB(value) {
+  let retorno = '';
+  retorno = value % 3 === 0 ? 'fizz' : '';
+  retorno = value % 5 === 0 ? 'buzz' : '';
+  retorno = (value % 3 === 0 && value % 5 === 0) ? 'fizzBuzz' : '';
+  return retorno;
+}
+
+function setFizzBuss(arrfizzBuzz) {
+  let arrRet = [];
+  let rtFB = '';
+  for (let index = 0; index < arrfizzBuzz.length; index += 1) {
+    rtFB = retFB(arrfizzBuzz[index]);
+    arrRet.push(rtFB.length === 0 ? 'bug!' : rtFB);
   }
+  return arrRet;
+}
+
+function fizzBuzz(arFiz) {
+  let arRet = setFizzBuss(arFiz);
   return arRet;
 }
 
@@ -90,4 +105,6 @@ module.exports = {
   splitSentence,
   retornaMaior,
   countHighest,
+  retFB,
+  setFizzBuss,
 };
