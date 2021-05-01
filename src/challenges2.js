@@ -24,6 +24,9 @@ function generatePhoneNumber(phoneNumber) {
   // seu código aqui
   let result = 0;
   let stringFinal = '';
+  if (phoneNumber.length === 0) {
+    return 'Array com tamanho incorreto.'
+  }
   for (key1 in phoneNumber) {
       result = 0;
       stringFinal = stringFinal.concat(phoneNumber[key1]);
@@ -40,7 +43,7 @@ function generatePhoneNumber(phoneNumber) {
     };
     return stringFinal.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
 };
-// console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+console.log(generatePhoneNumber([]));
 
 // Desafio 12
 function triangleCheck() {
