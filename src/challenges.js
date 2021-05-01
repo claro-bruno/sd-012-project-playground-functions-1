@@ -77,10 +77,37 @@ function fizzBuzz(array) {
   } return arrayResposta;
 }
 
-// Desafio 9
-function encode() {
-  // seu código aqui
+// Desafio 9 - POR FAZER
+function encode(array) {
+  let vogais = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  };
+
+  let arrayNumbers = [];
+  let result = 0;
+
+  for (let index in array) {
+    for (let indexSub in vogais) {
+      if (array[index] === indexSub){
+        
+      }
+    }
+    if (array[index] == vogais.toLowerCase()){
+      alert ('lower case true');
+     }
+  }
+  
+
+  return result;
 }
+
+
+
+
 function decode() {
   // seu código aqui
 }
