@@ -1,44 +1,38 @@
 // Desafio 1
 function compareTrue(bool1, bool2) {
-  if (bool1 == true && bool2 == true) {
-    return true;
-  }
-  else {
-    return false;
-  };
-};
+  return (bool1 && bool2);
+}
 
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) / 2;
-};
-
+}
 
 // Desafio 3
 function splitSentence(string) {
   let splitWords = [];
-  let word = "";
+  let word = '';
 
   for (let letter of string) {
-    if (letter != " ") {
+    if (letter !== ' ') {
       word += letter;
     }
     else {
       splitWords.push(word);
-      word = "";
+      word = '';
     };
   };
 
-  if (word != "") {
+  if (word !== '') {
     splitWords.push(word);
-  }
+  };
 
   return splitWords;
-};
+}
 
 // Desafio 4
 function concatName(arr) {
-  return arr[arr.length - 1] + ", " + arr[0];
+  return arr[arr.length - 1] + ', ' + arr[0];
 };
 
 // Desafio 5
@@ -67,13 +61,13 @@ function highestCount(arrayNumeros) {
 // Desafio 7
 function catAndMouse(cat1, cat2) {
   if (cat1 === cat2) {
-    return "os gatos trombam e o rato foge";
+    return 'os gatos trombam e o rato foge';
   }
   else if (cat1 < cat2) {
-    return "cat1";
+    return 'cat1';
   }
   else {
-    return "cat2";
+    return 'cat2';
   };
 };
 
@@ -83,16 +77,16 @@ function fizzBuzz(arrayNumeros) {
 
   for (let numero of arrayNumeros) {
     if (numero % 3 === 0 && numero % 5 === 0) {
-      resultadosFizzBuzz.push("fizzBuzz");
+      resultadosFizzBuzz.push('fizzBuzz');
     }
     else if (numero % 3 === 0) {
-      resultadosFizzBuzz.push("fizz");
+      resultadosFizzBuzz.push('fizz');
     }
     else if (numero % 5 === 0) {
-      resultadosFizzBuzz.push("buzz");
+      resultadosFizzBuzz.push('buzz');
     }
     else {
-      resultadosFizzBuzz.push("bug!");
+      resultadosFizzBuzz.push('bug!');
     };
   };
 
@@ -109,7 +103,7 @@ function encode(mensagem) {
     u: 5
   };
 
-  let mensagemCodificada = "";
+  let mensagemCodificada = '';
 
   for (let indiceMensagem in mensagem) {
     for (let chave in transformacao) {
@@ -126,7 +120,7 @@ function encode(mensagem) {
   return mensagemCodificada;;
 };
 
-console.log(encode("Retorne uma string codificada"));
+console.log(encode('Retorne uma string codificada'));
 
 function decode(mensagemCodificada) {
   let transformacao = {
@@ -137,7 +131,7 @@ function decode(mensagemCodificada) {
     u: 5
   };
 
-  let mensagemDecodificada = "";
+  let mensagemDecodificada = '';
 
   for (let indiceMensagem in mensagemCodificada) {
     for (let chave in transformacao) {
