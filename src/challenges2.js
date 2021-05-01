@@ -15,7 +15,6 @@ function techList(tech, name) {
   return emptylist
 }
 console.log(techList(['React', 'Javascript', 'CSS', 'Ruby'], 'Luiz'));
-
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
@@ -27,7 +26,7 @@ function triangleCheck() {
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate()  {
   // seu código aqui
 }
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable sonarjs/cognitive-complexity */
 /* eslint-disable complexity */
 /* eslint-disable max-lines-per-function */
@@ -18,18 +19,13 @@ function calcArea(base, height) {
 };
 let base = 51;
 let height = 1;
-
-calcArea(base, height)
-
-
+calcArea(base, height);
 // Desafio 3
 function splitSentence(phrase) {
   let result = phrase.split(' ');
   return result;
 }
-
-
-(splitSentence('vamo que vamo'))
+(splitSentence('vamo que vamo'));
 
 // Desafio 4
 function concatName(nomeCompleto) {
@@ -39,7 +35,6 @@ function concatName(nomeCompleto) {
   return nomeCompleto
 }
 concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']);
-
 // Desafio 5
 function footballPoints(wins, ties) {
   wins = wins * 3;
@@ -48,13 +43,12 @@ function footballPoints(wins, ties) {
 }
 let wins = 14
 let ties = 8
-footballPoints(wins, ties)
+footballPoints(wins, ties);
 
 // Desafio 6
 function highestCount(array) {
   let repeat = 0;
   let highNumber = 0;
-
   for (accountant = 0; accountant < array.length; accountant += 1) {
     if (array[accountant] > highNumber) {
       highNumber = array[accountant]
@@ -67,13 +61,12 @@ function highestCount(array) {
   }
   return repeat
 }
-highestCount([9, 1, 2, 3, 9, 5, 7])
+highestCount([9, 1, 2, 3, 9, 5, 7]);
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let cat1position = Math.abs(mouse - cat1)
   let cat2position = Math.abs(mouse - cat2)
-
   if (cat1position === cat2position) {
     return "os gatos trombam e o rato foge"
   }
@@ -84,13 +77,11 @@ function catAndMouse(mouse, cat1, cat2) {
     return "cat2"
   }
 }
-catAndMouse(1, 0, 2)
-
+catAndMouse(1, 0, 2);
 // Desafio 8
 function fizzBuzz(array) {
   let finalvalue = [];
   for (let accountant = 0; accountant < array.length; accountant += 1) {
-
     if (array[accountant] % 3 === 0 && array[accountant] % 5 === 0) {
       finalvalue.push("fizzBuzz")
     } else if (array[accountant] % 3 === 0) {
@@ -128,12 +119,12 @@ function encode(word) {
       encriptword += word[accountant];
     }
   }
-return encriptword;
+  return encriptword;
 }
-console.log(encode('hi there!'));
+encode('hi there!');
 
 function decode(word) {
-  let encriptword = ''
+  let encriptword = '';
   let yesno = true;
   let encript = {
     1: 'a',
@@ -154,9 +145,9 @@ function decode(word) {
       encriptword += word[accountant];
     }
   }
-  return encriptword
+  return encriptword;
 }
-console.log((decode('h2ll4'))
+decode('h2ll4');
 
 module.exports = {
   calcArea,
