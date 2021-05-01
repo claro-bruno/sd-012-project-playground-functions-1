@@ -33,9 +33,8 @@ function concatName(array) {
 }
 console.log(concatName['captain', 'my', 'captain']);
 
-// https://pt.stackoverflow.com/questions/231359/qual-a-forma-correta-de-concatenar-strings-em-javascript 
+// https://pt.stackoverflow.com/questions/231359/qual-a-forma-correta-de-concatenar-strings-em-javascript
 // https://pt.stackoverflow.com/questions/252089/pegar-a-%C3%BAltima-palavra-de-uma-string-e-coloc%C3%A1-la-no-in%C3%ADcio-com-jquery
-
 
 // Desafio 5
 function footballPoints() {
