@@ -90,16 +90,16 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function divisible(n) {
   let result = '';
-    if (n % 3 === 0 && n % 5 === 0) {
-      result += 'fizzBuzz';
-    } else if (n % 3 === 0) {
-      result += 'fizz';
-    } else if (n % 5 === 0) {
-      result += 'buzz';
-    } else {
-      result += 'bug!';
-    }
-    return result;
+  if (n % 3 === 0 && n % 5 === 0) {
+    result += 'fizzBuzz';
+  } else if (n % 3 === 0) {
+    result += 'fizz';
+  } else if (n % 5 === 0) {
+    result += 'buzz';
+  } else {
+    result += 'bug!';
+  }
+  return result;
 }
 
 function fizzBuzz(numeros) {
