@@ -24,7 +24,6 @@ function concatName(array) {
     let ultimoItem = array[0]
   return `${primeiroItem}, ${ultimoItem}`
 }
-console.log(concatname(array))
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -36,7 +35,7 @@ function footballPoints(wins, ties) {
 let array2 = [1, 2, 3, 4, 9, 7, 8, 9, 2]
 function highestCount(array2) {
   let contador = 0
-  array2.sort()
+  array2.sort();
   for (let index = 0; index > array2.length; index += 1) {
     if (array2[index] === array2[array2.length -1]) {
       contador +=1
