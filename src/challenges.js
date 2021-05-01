@@ -107,25 +107,24 @@ console.log(catAndMouse(0,6,12))
 console.log(catAndMouse(0,0,0))
 
 // Desafio 8
+
 function fizzBuzz(array) {
- result = 0;
-  array = [];
-  for (index = 0; index < array; index +=1 ){
-  if(array % 3 === 0 && array % 5 === 0){
-    return  'FizzBuzz'
-  }else if(array % 5 == 0){
-    return  'Buzz'
-  }else if(array % 3 == 0){
-    return  'Fizz'
-  }else{
-    return 'Bug'
-  }
-  return result
-}
-}
+  let lastArray = [];
 
+ for(index = 0; index < array.length; index +=1) {
+   if((array[index]) %3 === 0 && (array[index] %5) ===0){
+    lastArray.push('FizzBuzz')
+   }else if((array[index] % 5)===0){
+    lastArray.push('Buzz')
+   }else if((array[index] % 3) ===0){
+    lastArray.push('Fizz')
+   }else lastArray.push('Bug!')
+    
+   }
+   return lastArray
+ }
 
-console.log(fizzBuzz([21, 15, 7, 9, 45]))
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
 console.log(fizzBuzz([7, 9]))
 console.log(fizzBuzz([9, 25]))
 
