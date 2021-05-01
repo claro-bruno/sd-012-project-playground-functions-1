@@ -56,14 +56,28 @@ function triangleCheck(lineA, lineB, lineC) {
     return false;
   } else {
     return true;
-  }
-}
-console.log(triangleCheck(10, 14, 8));
+  };
+};
+// console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
+function hydrate(beer, water) {
   // seu código aqui
-}
+  drink = beer.replace(/[^0-9]/g, "");
+  drinkNumber = parseInt(drink);
+  drinkArray = Array.from(String(drinkNumber), Number);
+  totalDrinks = 0;
+  water = 0;
+
+  for (let indexDrink = 0; indexDrink < drinkArray.length; indexDrink += 1) {
+    totalDrinks += drinkArray[indexDrink];
+  }
+  if (totalDrinks !== 0) {
+    water = totalDrinks;
+    return `${water} copos de água`;
+  }
+};
+// console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
