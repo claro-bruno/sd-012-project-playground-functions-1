@@ -86,9 +86,8 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat1';
   } if (distanciaRatoCat1 > distanciaRatoCat2) {
     return 'cat2';
-  } else {
-    return 'os gatos trombam e o rato foge';
   }
+    return 'os gatos trombam e o rato foge';
 }
 // catAndMouse(-1,0,1);//ESSE EU NÃO SOUBE FAZER FUNCIONAR
 console.log(catAndMouse(1,0,2));//gatos devem se trombar (distância igual do rato)
