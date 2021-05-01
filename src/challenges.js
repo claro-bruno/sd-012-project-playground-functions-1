@@ -26,7 +26,7 @@ function footballPoints(wins, ties) {
 function retornaMaior(arrHighest)
 {
   let maior = 0;
-  for(let index = 0; index < arrHighest.length; index += 1)
+  for (let index = 0; index < arrHighest.length; index += 1)
   {
     maior = arrHighest[index] > maior ? arrHighest[index] : maior;
   }
@@ -35,8 +35,8 @@ function retornaMaior(arrHighest)
 
 function countHighest(arrHighest, valueHight)
 {
-  let count = 0 ;
-  for(let index = 0;index < arrHighest.length; index += 1)
+  let count = 0;
+  for (let index = 0; index < arrHighest.length; index += 1)
   {
     count += (valueHight === arrHighest[index]) ? 1 : 0;
   }
