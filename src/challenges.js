@@ -1,15 +1,6 @@
 // Desafio 1
 function compareTrue(first, second) {
-  let retorno;
-  if (first === true && second === true)
-  {
-    retorno = true;
-  }
-  else
-  {
-    retorno = false;
-  }
-  return retono;
+  return (first === true && second === true) ? true : false;
 }
 
 // Desafio 2
@@ -29,9 +20,14 @@ function concatName(arrStrings) {
   // seu código aqui
 
   if(arrStrings.length >= 1)
-    return `${arrStrings[arrStrings.length -1]}`;
+  {
+    return `${arrStrings[arrStrings.length - 1]}`;
+  }
   else
+  {
     return `${arrStrings[0]}`;
+  }
+
 }
 
 // Desafio 5
