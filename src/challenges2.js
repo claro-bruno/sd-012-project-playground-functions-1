@@ -1,5 +1,5 @@
 // Desafio 10
-function techList(arraytec,name) {
+function techList(tech, nome) {
   // seu código aqui
   let objTech = [];
   if (tech.length > 0) {
