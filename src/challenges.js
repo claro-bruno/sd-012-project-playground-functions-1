@@ -89,7 +89,7 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-    string = string.split("");
+  string = string.split('');
     for (let index = 0; index <= string.length; index += 1){
       switch (string[index]){
       case "a":
@@ -109,15 +109,34 @@ function encode(string) {
         break;
     }
   }
-return string.join("");
+return string.join('');
 }
 console.log(encode("hi there!"));
 
-function decode() {
-  // seu código aqui
-
+function decode(string) {
+  string = string.split('');
+  for (let index = 0; index <= string.length; index += 1){
+    switch (string[index]){
+      case "1":
+        string[index] = "a";
+        break;
+      case "2":
+        string[index] = "e";
+        break;
+      case "3":
+        string[index] = "i";
+        break;
+      case "4":
+        string[index] = "o";
+        break;
+      case "5":
+        string[index] = "u";
+        break;
+    }
+  }
+return string.join('');
 }
-
+console.log(decode("h3 th2r2!"));
 module.exports = {
   calcArea,
   catAndMouse,
