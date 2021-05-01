@@ -20,7 +20,7 @@ function techList(tech, name) {
 // Desafio 11
 function generatePhoneNumber(phoneNumber) {
   let repeatNumber = 0;
-  if(phoneNumber.length > 11) {
+  if(phoneNumber.length > 11 || phoneNumber.length < 11) {
     return 'Array com tamanho incorreto.';
   }
   let verifiedNumber = [];
