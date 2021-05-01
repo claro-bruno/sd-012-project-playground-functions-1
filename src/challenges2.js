@@ -18,17 +18,17 @@ let arrayOrdenado=array.sort()
 // Desafio 11
 function generatePhoneNumber(array) {
   let saida='';
-  if(array.length!=11 || array==[]){
-    saida='Array com tamanho incorreto.';
-  }
-      for (let n of array) {
-        let contador = 0;
-          for (let c of array) {
-            if (n === c) {
-              contador += 1;
-            }
-          }          
-          if(n>9 || n<0 || contador>=3){
+  for (let n of array) {
+    let contador = 0;
+    for (let c of array) {
+      if (n === c) {
+        contador += 1;
+      }
+      }          
+          if(array.length!=11 || array==[]){
+            saida='Array com tamanho incorreto.';
+          }
+          else if(n>9 || n<0 || contador>=3){
             saida='não é possível gerar um número de telefone com esses valores';
           }
           else{
@@ -38,6 +38,7 @@ function generatePhoneNumber(array) {
       }
   return saida; 
 }
+console.log(generatePhoneNumber([0, 1, 6]))
 
 
 
@@ -76,7 +77,6 @@ function triangleCheck(lineA,lineB,lineC) {
   }
   return saida;
 }
-console.log(triangleCheck(10, 14, 8))
 
 
 // Desafio 13
