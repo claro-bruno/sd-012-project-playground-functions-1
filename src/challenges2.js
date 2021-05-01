@@ -14,14 +14,19 @@ function triangleCheck() {
 }
 
 // Desafio 13
-let soma = 0;
 function hydrate(string) {
+let somaNum = 0;
 let numeros = /\d+/g;
 let resultado = string.match(numeros);
   for (let index = 0; index < resultado.length; index += 1){
-    soma += resultado[index];
+    somaNum += parseInt(resultado[index]);
   }
-return (soma + "copos de água");
+  if (somaNum !== 1){
+    return (somaNum + " copos de água");
+  } else {
+    return (somaNum + " copo de água")
+  }
+
 }
 console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"))
 module.exports = {
