@@ -18,7 +18,7 @@ function techList(theTech, theName) {
 
 // Desafio 11 (Part1)
 function noNumber(pNumber) {
-  if (pNumber.length > 11) {
+  if (pNumber.length !== 11) {
     return (true);
   }
 }
