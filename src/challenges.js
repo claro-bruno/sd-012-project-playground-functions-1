@@ -45,13 +45,33 @@ function highestCount(array2) {
 }
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-
-  if ((cat1 - mouse) > (cat2 - mouse)) {
-    return 'cat2';
-  } else if ((cat1 - mouse) < (cat2 - mouse)) {
-    return 'cat1';
-  } else {
-    return 'os gatos trombam e o rato foge';
+  switch (mouse,cat1,cat2) {
+    case mouse <= cat1 && mouse <= cat2 && (cat1 - mouse) > (cat2 - mouse) :
+      return 'cat2';
+      break;
+      case mouse >= cat1 && mouse <= cat2 && (mouse - cat1) > (cat2 - mouse) :
+        return 'cat2';
+        break;
+        case mouse >= cat1 && mouse >= cat2 && (mouse - cat1) > (mouse - cat2) :
+          return 'cat2';
+          break;
+          case mouse <= cat1 && mouse >= cat2 && (cat1 - mouse) > (mouse - cat2) :
+            return 'cat2';
+            break;
+          case mouse <= cat1 && mouse <= cat2 && (cat1 - mouse) < (cat2 - mouse) :
+            return 'cat1';
+            break;
+            case mouse >= cat1 && mouse <= cat2 && (mouse - cat1) < (cat2 - mouse) :
+              return 'cat1'
+              break;
+              case mouse >= cat1 && mouse >= cat2 && (mouse - cat1) < (mouse - cat2) :
+                return 'cat1';
+                break;
+                case mouse <= cat1 && mouse >= cat2 && (cat1 - mouse) < (mouse - cat2) :
+                return 'cat1';
+                break;
+                default : return 'os gatos trombam e o rato foge'
+                
   }
 }
 // Desafio 8
