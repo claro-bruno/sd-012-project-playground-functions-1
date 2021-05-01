@@ -71,9 +71,6 @@ function hydrate(bebida) {
     return `${soma} copos de água`;
   }
 } 
-let x = "1 cachaça, 5 cervejas e 1 copo de vinho";
-console.log(hydrate(x));
-
 
 module.exports = {
   generatePhoneNumber,
