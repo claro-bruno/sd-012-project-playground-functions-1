@@ -127,7 +127,7 @@ function decode(mensagemCodificada) {
         break;
       }
     }
-    if ((mensagemDecodificada.length - 1) !== indiceMensagem) {
+    if ((mensagemDecodificada.length - 1) != indiceMensagem) {
       mensagemDecodificada += mensagemCodificada[indiceMensagem];
     }
   }
