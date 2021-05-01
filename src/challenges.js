@@ -63,9 +63,9 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function retFB(value) {
   let retorno = '';
-  retorno = value % 3 === 0 ? 'fizz' : '';
-  retorno = value % 5 === 0 ? 'buzz' : '';
-  retorno = (value % 3 === 0 && value % 5 === 0) ? 'fizzBuzz' : '';
+  retorno = value % 3 === 0 ? 'fizz' : retorno;
+  retorno = value % 5 === 0 ? 'buzz' : retorno;
+  retorno = (value % 3 === 0 && value % 5 === 0) ? 'fizzBuzz' : retorno;
   return retorno;
 }
 
