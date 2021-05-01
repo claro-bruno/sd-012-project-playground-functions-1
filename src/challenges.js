@@ -25,22 +25,22 @@ function footballPoints(wins, ties) {
 
 function retornaMaior(arrHighest)
 {
-    let maior = 0;
-    for(let index = 0; index < arrHighest.length; index += 1)
-    {
-        maior = arrHighest[index] > maior ? arrHighest[index] : maior;
-    }
-    return maior;
+  let maior = 0;
+  for(let index = 0; index < arrHighest.length; index += 1)
+  {
+    maior = arrHighest[index] > maior ? arrHighest[index] : maior;
+  }
+  return maior;
 }
 
 function countHighest(arrHighest, valueHight)
 {
-    let count = 0 ;
-    for(let index=0;index < arrHighest.length; index += 1)
-    {
-        count += (valueHight === arrHighest[index]) ? 1 : 0;
-    }
-    return count;
+  let count = 0 ;
+  for(let index = 0;index < arrHighest.length; index += 1)
+  {
+    count += (valueHight === arrHighest[index]) ? 1 : 0;
+  }
+  return count;
 }
 
 // Desafio 6
