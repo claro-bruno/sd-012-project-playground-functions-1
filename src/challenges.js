@@ -40,14 +40,14 @@ function highestCount(numbers) {
     if (numbers[index] > higherNumber) {
       higherNumber = numbers[index];
     }
-  }  
+  }
   for (let key in numbers) {
     if (numbers[key] === higherNumber) {
-      repeat += 1; 
-      
-  } return repeat;
- }
+      repeat += 1;    
+  }
+ } return repeat;
 }
+
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
