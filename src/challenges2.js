@@ -31,26 +31,23 @@ function wrongNumber(pNumber) {
   }
 }
 
-function countTriplicate1(pNumber) {
-// https://dev.to/huyddo/find-duplicate-or-repeat-elements-in-js-array-3cl3
-  let countNumber = {};
-  for (let index = 0; index < pNumber.length; index += 1) {
-    if (countNumber[pNumber[index]]) {
-      countNumber[pNumber[index]] += 1;
-    } else {
-      countNumber[pNumber[index]] = 1;
-    } for (let xTimes in countNumber) {
-      if (countNumber[xTimes] >= 3) {
-        return (true);
-      }
+function countTriplicate(pNumber) {
+  // https://flaviocopes.com/how-to-find-duplicates-array-javascript/
+  let triplicates = [];
+  const tempArray = [...pNumber].sort();
+  for (let index = 0; index < tempArray.length; index += 1) {
+    if (tempArray[index + 2] === tempArray[index]) {
+      triplicates.push(tempArray[index]);
+    } if (triplicates.length > 0) {
+      return (true);
     }
   }
 }
 
 function formatNumber(pNumber) {
-  // Quebrei a cabeca tentand achar um comando que desse certo no lint.
+  // Quebrei a cabeca tentand achar um comando que desse certo.
   // Olhei como o colega fez: https://github.com/tryber/sd-012-project-playground-functions/blob/eric-kreis-playground-functions/src/challenges2.js
-  // Entendi a logica e apliquei no meu requisito.
+  // Entendi a logica, gostei e apliquei no meu requisito.
   let firstPart = `${pNumber[0]}${pNumber[1]}`;
   let secondPart = `${pNumber[2]}${pNumber[3]}${pNumber[4]}${pNumber[5]}${pNumber[6]}`;
   let tirdPart = `${pNumber[7]}${pNumber[8]}${pNumber[9]}${pNumber[10]}`;
@@ -62,7 +59,7 @@ function formatNumber(pNumber) {
 function generatePhoneNumber(pNumber) {
   if (noNumber(pNumber) === true) {
     return ('Array com tamanho incorreto.');
-  } if ((wrongNumber(pNumber)) || countTriplicate1(pNumber) === true) {
+  } if ((wrongNumber(pNumber)) || countTriplicate(pNumber) === true) {
     return ('não é possível gerar um número de telefone com esses valores');
   }
   return (formatNumber(pNumber));
