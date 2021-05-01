@@ -43,12 +43,22 @@ function generatePhoneNumber(phoneNumber) {
     };
     return stringFinal.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
 };
-console.log(generatePhoneNumber([]));
+// console.log(generatePhoneNumber([]));
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  if (lineA > (lineB + lineC) || lineA < Math.abs(lineB - lineC)) {
+    return false;
+  } else if (lineB > (lineA + lineC) || lineB < Math.abs(lineA - lineC)) {
+    return false;
+  } else if (lineC > (lineB + lineA) || lineC < Math.abs(lineB - lineA)) {
+    return false;
+  } else {
+    return true;
+  }
 }
+console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate() {
