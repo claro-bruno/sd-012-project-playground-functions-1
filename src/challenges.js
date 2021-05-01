@@ -1,19 +1,19 @@
 // Desafio 1
-function compareTrue(first , second) {
+function compareTrue(first, second) {
   // seu código aqui
-  return (first == true && second == true) ? true : false;
+  return (first === true && second === true) ? true : false;
 }
 
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
-  return (!isNaN(base) && !isNaN(height)) ? ((base*height)/2) : "Not a Number";
-
+  return (!Number(base) && !Number(height)) ? ((base * height) /2 ) : 'Not a Number';
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(sentence) {
   // seu código aqui
+  return sentence.length > 0 ? sentence.split(' ') : 'string empyt';
 }
 
 // Desafio 4
