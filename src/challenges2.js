@@ -9,8 +9,8 @@ function techList(arrayTeconologias, nome) {
   for (let tecnologia in arrayTeconologias) {
     let objetoTecnologia = {
       tech: arrayTeconologias[tecnologia],
-      name: nome
-    }
+      name: nome,
+    };
 
     for (let objeto in objetosTecnologiaOrdenados) {
       if (arrayTeconologias[tecnologia] < objetosTecnologiaOrdenados[objeto].tech) {
@@ -61,13 +61,16 @@ function generatePhoneNumber(arrayNumeroTelefone) {
     return 'não é possível gerar um número de telefone com esses valores';
   }
 
-  return '(' + arrayNumeroTelefone.slice(0, 2).join('') + ') ' + arrayNumeroTelefone.slice(2, 7).join('') + '-' + arrayNumeroTelefone.slice(7, 11).join('');
+  let prefixo = arrayNumeroTelefone.slice(0, 2).join('');
+  let numero = arrayNumeroTelefone.slice(2, 7).join('') + '-' + arrayNumeroTelefone.slice(7, 11).join('');
+
+  return '(' + prefixo + ') ' + numero;
 }
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  if (lineA > (lineB + lineC) || lineB > (lineA + lineC) || lineC > (lineA + lineB) ||
-    lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC) || lineC < Math.abs(lineA - lineB)) {
+  if (lineA > (lineB + lineC) || lineB > (lineA + lineC) || lineC > (lineA + lineB)
+    || lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC) || lineC < Math.abs(lineA - lineB)) {
     return false;
   }
 
@@ -89,7 +92,7 @@ function hydrate(string) {
   if (contagem > 1) {
     return contagem + ' copos de água';
   } else {
-    return contagem + ' copo de água'
+    return contagem + ' copo de água';
   }
 }
 
@@ -98,4 +101,4 @@ module.exports = {
   techList,
   hydrate,
   triangleCheck,
-}
+};

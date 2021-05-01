@@ -31,7 +31,9 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(arr) {
-  let stringConcatenada = arr[arr.length - 1] + ', ' + arr[0];
+  let lastName = arr[arr.length - 1];
+  let firstName = arr[0];
+  let stringConcatenada = lastName + ', ' + firstName;
 
   return stringConcatenada;
 }
@@ -67,9 +69,9 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'os gatos trombam e o rato foge';
   } else if (distanciaCat1 < distanciaCat2) {
     return 'cat1';
-  } else {
-    return 'cat2';
   }
+
+  return 'cat2';
 }
 
 // Desafio 8
@@ -94,8 +96,8 @@ function fizzBuzz(arrayNumeros) {
 // Desafio 9
 function encode(mensagem) {
   let transformacao = {
-    a: 1, e: 2, i: 3, o: 4, u: 5
-  }
+    a: 1, e: 2, i: 3, o: 4, u: 5,
+  };
   let mensagemCodificada = '';
 
   for (let indiceMensagem in mensagem) {
@@ -114,8 +116,8 @@ function encode(mensagem) {
 
 function decode(mensagemCodificada) {
   let transformacao = {
-    a: 1, e: 2, i: 3, o: 4, u: 5
-  }
+    a: 1, e: 2, i: 3, o: 4, u: 5,
+  };
   let mensagemDecodificada = '';
 
   for (let indiceMensagem in mensagemCodificada) {
