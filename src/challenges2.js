@@ -19,28 +19,25 @@ let arrayOrdenado=array.sort()
 function generatePhoneNumber(array) {
   let saida='';
   if(array.length!=11){
-    saida='Array com tamanho incorreto.';
+    return 'Array com tamanho incorreto.';
   }
   else{
-         for (let n of array) {
+        for (let n of array) {
         let contador = 0;
           for (let c of array) {
             if (n === c) {
               contador += 1;
             }
           }          
-          if(n>9 || n<0 || contador>=3){
-            saida='não é possível gerar um número de telefone com esses valores';
+          if(n<0 || n>9 || contador>=3){
+            return 'não é possível gerar um número de telefone com esses valores';
           }
-          else{
-            saida='('+array[0]+array[1]+') '+array[2]+array[3]+array[4]+array[5]+array[6]+'-'+array[7]+array[8]+array[9]+array[10];
-          }
-     
+        }
+        saida='('+array[0]+array[1]+') '+array[2]+array[3]+array[4]+array[5]+array[6]+'-'+array[7]+array[8]+array[9]+array[10];
+        return saida;
       }
-    }
-  return saida; 
+
 }
-console.log(generatePhoneNumber([6,1,2]))
 
 
 // Desafio 12
@@ -78,7 +75,6 @@ function triangleCheck(lineA,lineB,lineC) {
   }
   return saida;
 }
-console.log(triangleCheck(10, 14, 8))
 
 
 // Desafio 13
