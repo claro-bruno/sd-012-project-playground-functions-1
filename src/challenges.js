@@ -37,9 +37,11 @@ console.log(concatName['captain', 'my', 'captain']);
 // https://pt.stackoverflow.com/questions/252089/pegar-a-%C3%BAltima-palavra-de-uma-string-e-coloc%C3%A1-la-no-in%C3%ADcio-com-jquery
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins,ties) {
+  let jogo = (3 * wins) + ties;
+  return jogo;
 }
+console.log (footballPoints(1,2))
 
 // Desafio 6
 function highestCount() {
