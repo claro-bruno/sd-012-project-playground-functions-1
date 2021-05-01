@@ -113,64 +113,53 @@ function fizzBuzz(numeros) {
 }
 
 // Desafio 9
-function checkVowel(v) {
-  let arrayVowels = ['a', 'e', 'i', 'o', 'u'];
-  for (let index2 = 0; index2 < arrayVowels.length; index2 += 1) {
-    if (arrayVowels[index2] === v) {
-      return true;
-    }
-  }
-  return false;
-}
+const encoder = {
+  a: '1',
+  e: '2',
+  i: '3',
+  o: '4',
+  u: '5',
+};
+
+const vowels = 'aeiou';
 
 function encode(str) {
   let returnString = '';
-  let encoder = {
-    a: '1',
-    e: '2',
-    i: '3',
-    o: '4',
-    u: '5',
-  };
-  for (let index = 0; index < str.length; index += 1) {
-    if (checkVowel(str[index])) {
-      returnString += encoder[str[index]];
-      continue;
+
+  for (let index = 0; i < str.length; i += 1) {
+    if (vowels.includes(string[index])) {
+      returnString += encoder[string[index]];
+    } else {
+      returnString += string[index];
     }
-    returnString += str[index];
   }
+
   return returnString;
 }
+
+const encoder = {
+  1: 'a',
+  2: 'e',
+  3: 'i',
+  4: 'o',
+  5: 'u',
+};
+
+const numbers = '12345';
 
 function decode(str) {
   let returnString = '';
-  let encoder = {
-    1: 'a',
-    2: 'e',
-    3: 'i',
-    4: 'o',
-    5: 'u',
-  };
-  function checkNumber(n) {
-    let arrayNumbers = ['1', '2', '3', '4', '5'];
-    for (let index2 = 0; index2 < arrayNumbers.length; index2 += 1) {
-      if (arrayNumbers[index2] === n) {
-        return true;
-      }
-    }
-    return false;
-  }
+
   for (let index = 0; index < str.length; index += 1) {
-    if (checkNumber(str[index])) {
-      returnString += encoder[str[index]];
-      continue;
+    if (numbers.includes(string[index])) {
+      returnString += encoder[string[index]];
+    } else {
+      returnString += string[index];
     }
-    returnString += str[index];
   }
+
   return returnString;
 }
-
-function ronaldo() {}
 
 module.exports = {
   calcArea,
