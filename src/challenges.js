@@ -39,17 +39,23 @@ function highestCount(array2) {
   for (let index = 0; index < array2.length; index += 1) {
     if (array2[index] === array2[array2.length -1]) {
       contador +=1
-      let result6 = contador 
     }
   }
-  return result6
+  return contador
 }
 console.log(highestCount(array2))
 
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+
+  if ((cat1 - mouse) > (cat2 - mouse)) {
+    return 'cat2';
+  } else if ((cat1 - mouse) < (cat2 - mouse)) {
+    return 'cat1';
+  } else {
+    return 'os gatos trombam e o rato foge';
+  }
 }
 
 // Desafio 8
