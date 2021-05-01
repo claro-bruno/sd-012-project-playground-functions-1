@@ -4,25 +4,25 @@ let variavel2 = true;
 let estadoAtual = false;
 
 function compareTrue() {
-  // seu código aqui
-  if (variavel1 === true && variavel2 === true) {
-    estadoAtual = true;
-  } else {
-    estadoAtual = false;
+    // seu código aqui
+    if (variavel1 === true && variavel2 === true) {
+      estadoAtual = true;
+    } else {
+      estadoAtual = false;
+    }
+  
+    return estadoAtual;
   }
-
-  return estadoAtual;
-}
-
-// Desafio 2
-function calcArea(base, height) {
-  // seu código aqui
-  let Area = (base * height) / 2;
-  return Area;
-}
-
-// Desafio 3
-let phraseSplited = [];
+  
+  // Desafio 2
+  function calcArea(base, height) {
+    // seu código aqui
+    let Area = (base * height) / 2;
+    return Area;
+  }
+  
+  // Desafio 3
+  let phraseSplited = [];
 
 function splitSentence(frase) {
   // seu código aqui
@@ -52,13 +52,13 @@ return (array3);
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  // seu código aqui
-  let Points = wins * 3 + ties;
-  return Points;
-}
-
-// Desafio 6
-/** Consultei o repositório do Luiz henrique para resolver essa parte.
+    // seu código aqui
+    let Points = wins * 3 + ties;
+    return Points;
+  }
+  
+  // Desafio 6
+  /** Consultei o repositório do Luiz henrique para resolver essa parte.
 Link do repositório: https://github.com/tryber/sd-012-project-playground-functions/pull/117
 */
 
@@ -77,52 +77,48 @@ function highestCount(arrayDeNumbers) {
     for (let index2Array = 0; index2Array < arrayDeNumbers.length; index2Array += 1) {
       if (arrayDeNumbers[index2Array] === numeroMaisAlto) {
           repeticoesMaiorNumero += 1;
-            
+
       } 
     }
-            
+
   return repeticoesMaiorNumero;
 }
 
 // Desafio 7
 
 function catAndMouse(mouse, cat1, cat2) {
-  // seu código aqui
-  if (cat1 > cat2) {
-    conclusao = "cat2";
-  } else if (cat2 > cat1) {
-      conclusao = "cat1";
-    } else {
-      conclusao = "os gatos trombam e o rato foge";
-      }
-  return conclusao;
-}
-
-//catAndMouse(0, 12, 12)
-//console.log(conclusao);
-
-// Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
-
-// Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
-
-module.exports = {
-  calcArea,
-  catAndMouse,
-  compareTrue,
-  concatName,
-  decode,
-  encode,
-  fizzBuzz,
-  footballPoints,
-  highestCount,
-  splitSentence,
-};
+    // seu código aqui
+    if (cat1 > cat2) {
+      conclusao = "cat2";
+    } else if (cat2 > cat1) {
+        conclusao = "cat1";
+      } else {
+        conclusao = "os gatos trombam e o rato foge";
+        }
+    return conclusao;
+  }
+  
+  //catAndMouse(0, 12, 12)
+  //console.log(conclusao);
+  
+  // Desafio 8
+  function fizzBuzz() {
+    // seu código aqui
+  }
+  // Desafio 9
+  function encode() {
+    // seu código aqui
+  }
+  function decode() {
+    // seu código aqui
+  }
+  module.exports = {
+    calcArea,
+    catAndMouse,
+    compareTrue,
+    concatName,
+    decode,
+    encode,
+    fizzBuzz,
+    footballPoints,
+    highestCount,
