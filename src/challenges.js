@@ -126,18 +126,18 @@ const vowels = 'aeiou';
 function encode(str) {
   let returnString = '';
 
-  for (let index = 0; i < str.length; i += 1) {
-    if (vowels.includes(string[index])) {
-      returnString += encoder[string[index]];
+  for (let index = 0; index < str.length; index += 1) {
+    if (vowels.includes(str[index])) {
+      returnString += encoder[str[index]];
     } else {
-      returnString += string[index];
+      returnString += str[index];
     }
   }
 
   return returnString;
 }
 
-const encoder = {
+const encoder2 = {
   1: 'a',
   2: 'e',
   3: 'i',
@@ -151,10 +151,10 @@ function decode(str) {
   let returnString = '';
 
   for (let index = 0; index < str.length; index += 1) {
-    if (numbers.includes(string[index])) {
-      returnString += encoder[string[index]];
+    if (numbers.includes(str[index])) {
+      returnString += encoder2[str[index]];
     } else {
-      returnString += string[index];
+      returnString += str[index];
     }
   }
 
