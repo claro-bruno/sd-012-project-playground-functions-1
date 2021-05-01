@@ -17,8 +17,9 @@ function splitSentence(sentence) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(arrStrings) {
   // seu código aqui
+  return arrStrings.length >= 1 ? `${arrStrings[arrStrings.length-1]}, ${arrStrings[0]}` : 'array too short';
 }
 
 // Desafio 5
