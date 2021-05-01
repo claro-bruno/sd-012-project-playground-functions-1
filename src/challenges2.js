@@ -45,8 +45,14 @@ return '('+tel[0]+tel[1]+') '+tel[2]+tel[3]+tel[4]+tel[5]+tel[6]+'-'+tel[7]+tel[
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB) {
+    if (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB)) {
+      return true;
+    }
+  } else {
+    return false;
+  }
 }
 
 // Desafio 13
