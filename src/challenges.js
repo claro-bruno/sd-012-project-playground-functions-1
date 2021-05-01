@@ -7,19 +7,19 @@ function compareTrue(booleano1, booleano2) {
   } else {
     return false;
   }
-} //console.log(compareTrue(false, true));
+} console.log(compareTrue(false, true));
 
 // Desafio 2
 function calcArea(base, height) {
   let resultado = (base * height) / 2;
   return resultado;
-} //console.log(calcArea(51, 1));
+} console.log(calcArea(51, 1));
 
 // Desafio 3
 function splitSentence(string) {
   let arrayDeStrings = string.split(" ",);
   return arrayDeStrings;
-} //console.log(splitSentence("foquete"));
+} console.log(splitSentence("foquete"));
 
 // Desafio 4
 function concatName(array) {
@@ -30,13 +30,13 @@ function concatName(array) {
     }
     return arrayDeStrings;
   }
-} //console.log(concatName(['captain', 'my', 'captain']));
+} console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
   let quantidadeDePontos = (3 * wins) + (1 * ties);
 return quantidadeDePontos;
-} //console.log(footballPoints(14, 8));
+} console.log(footballPoints(14, 8));
 
 // Desafio 6
 function highestCount(array) {
@@ -53,7 +53,7 @@ function highestCount(array) {
     }
   }    
   return numeroDeVezesDoMaior; 
-  } //console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+  } console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
 // Desafio 7
  function catAndMouse(mouse, cat1, cat2) {
@@ -67,7 +67,7 @@ function highestCount(array) {
    } else { 
      return "os gatos trombam e o rato foge";
    }
- }// console.log(catAndMouse(0, 6, 12));
+ } console.log(catAndMouse(0, 6, 12));
 
 // Desafio 8
 function fizzBuzz(numeros) {
@@ -87,7 +87,7 @@ function fizzBuzz(numeros) {
 } console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
-/* function encode(string1) {
+function encode(string1) {
   let vogal = string1.split('');
   for (let index = 0; index < vogal.length; index += 1) {
       if (vogal[index] === 'a'){
@@ -103,7 +103,7 @@ function fizzBuzz(numeros) {
       }
     } return vogal.join('');
 }
- console.log(encode('hi there!'));  */
+ console.log(encode('hi there!'));  
 
 function decode(string2) {
   numero = string2.split('');
