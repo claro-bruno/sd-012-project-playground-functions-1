@@ -2,8 +2,8 @@
 function techList(array, name) {
   array.sort();
   let juncao = [];
-  if (array.length < 0){
-    return juncao.push("Vazio!") ;
+  if (array.length == 0){
+    return "Vazio!";
   }
   for (let index in array) {
   let objetoCoisas = {
@@ -14,8 +14,7 @@ juncao.push(objetoCoisas);
   }
   return juncao;
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
-"Lucas"))
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"))
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
