@@ -25,7 +25,7 @@ function isPhoneLength(phone) {
 }
 
 //  verifica se o numero se repete mais de três vezes.
-function maxRepetition(phone, number) {
+function repetition(phone, number) {
   let times = 0;
   for (let index of phone) {
     if (index === number) {
@@ -40,7 +40,7 @@ function maxRepetition(phone, number) {
 //  verifica se o numero repete mais que as vezes necessárias.
 function repeatNumber(phone) {
   for (let number of phone) {
-    if (maxRepetition(phone, number)) {
+    if (repetition(phone, number)) {
       return true;
     }
   }
@@ -57,28 +57,11 @@ function isValidNumber(phone) {
   return false;
 }
 
-function printInFormat(phone) {
-  let areaNumber = ''; 
-  let firstHalf = ''; 
-  let secondHalf = '';
-  for (let index in phone) {
-    if (index <= 1) {
-      areaNumber += phone[index];
-    } else if (index <= 6) {
-      firstHalf += phone[index];
-    } else if (index > 6 && index <= 11) {
-      secondHalf += phone[index];
-    }
-  }
-  return [areaNumber, firstHalf, secondHalf];
-}
-
 //  imprime um numero de telefone a partir de um array os números:: (DDD) 00000-0000;
 function printNumber(phone) {
-  let number = printInFormat(phone);
-  let areaNumber = number[0];
-  let firstHalf = number[1];
-  let secondHalf = number[2];
+  let areaNumber = `${phone[0]}${phone[1]}`;
+  let firstHalf = `${phone[2]}${phone[3]}${phone[4]}${phone[5]}${phone[6]}`;
+  let secondHalf = `${phone[7]}${phone[8]}${phone[9]}${phone[10]}`;
   let phoneResult = `(${areaNumber}) ${firstHalf}-${secondHalf}`;
   return phoneResult;
 }
@@ -96,7 +79,6 @@ function generatePhoneNumber(phone) {
 }
 
 // Desafio 12
-
 //  compara se um lado é menor que a soma dos outros dois;
 function compareSides(side1, side2, side3) {
   if (side1 < side2 + side3) {

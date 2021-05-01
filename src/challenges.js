@@ -143,8 +143,8 @@ function decode(word) {
     3: 'i',
     4: 'o',
     5: 'u',
-  }; 
-  return decodeExec(word, rules); 
+  };
+  return decodeExec(word, rules);
 }
 
 module.exports = {
