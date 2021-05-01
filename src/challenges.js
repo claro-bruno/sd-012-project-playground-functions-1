@@ -87,12 +87,40 @@ function fizzBuzz(numeros) {
 } console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+/* function encode(string1) {
+  let vogal = string1.split('');
+  for (let index = 0; index < vogal.length; index += 1) {
+      if (vogal[index] === 'a'){
+        vogal[index] = 1;
+      } else if (vogal [index] === 'e') {
+        vogal[index] = 2;
+      } else if (vogal[index] === 'i') {
+        vogal[index] = 3;
+      } else if (vogal[index] === 'o') {
+        vogal[index] = 4;
+      } else if (vogal[index] === 'u') {
+        vogal[index] = 5;
+      }
+    } return vogal.join('');
 }
-function decode() {
-  // seu código aqui
-}
+ console.log(encode('hi there!'));  */
+
+function decode(string2) {
+  numero = string2.split('');
+  for (let index = 0; index < numero.length; index +=1) {
+    if (numero[index] === '1') {
+      numero[index] = 'a';
+    } else if (numero[index] === '2') { 
+      numero[index] = 'e';
+    } else if (numero[index] === '3') {
+      numero[index] = 'i';
+    } else if (numero[index] === '4') {
+      numero[index] = 'o';
+    } else if (numero[index] === '5') {
+      numero[index] = 'u';
+    }
+  } return numero.join('');  
+} console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
