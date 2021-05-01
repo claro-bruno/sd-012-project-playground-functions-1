@@ -90,27 +90,27 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'os gatos trombam e o rato foge';
 }
 // catAndMouse(-1,0,1);//ESSE EU NÃO SOUBE FAZER FUNCIONAR
-console.log(catAndMouse(1,0,2));//gatos devem se trombar (distância igual do rato)
-console.log(catAndMouse(0,3,2));
-console.log(catAndMouse(0,6,12));
-console.log(catAndMouse(0,2,2));
+// console.log(catAndMouse(1, 0, 2));// gatos devem se trombar (distância igual do rato)
+// console.log(catAndMouse(0, 3, 2));
+// console.log(catAndMouse(0, 6, 12));
+// console.log(catAndMouse(0, 2, 2));
 
 // Desafio 8
-function fizzBuzz(lista) {
+function fizzBuzz(numeros) {
 
   let novaLista = [];
-  for (let index = 0; index < lista.length; index += 1){
+  for (let index = 0; index < numeros.length; index += 1) {
 
-    if (lista[index] % 3 === 0 && lista[index] % 5 === 0){
+    if (numeros[index] % 3 === 0 && numeros[index] % 5 === 0) {
       novaLista.push('fizzBuzz');
     }
-    else if (lista[index] % 3 === 0){
+    else if (numeros[index] % 3 === 0) {
       novaLista.push('fizz');
     }
-    else if (lista[index] % 5 === 0){
+    else if (numeros[index] % 5 === 0) {
       novaLista.push('buzz');
     }
-    else if (lista[index] % 5 !== 0 && lista[index] % 3 !== 0) {
+    else if (numeros[index] % 5 !== 0 && numeros[index] % 3 !== 0) {
       novaLista.push(`bug!`);
     }
   }return novaLista;
@@ -124,7 +124,7 @@ function encode(string) {
   // let stringJunta =stringSeparada.join('');
   // let letras = [`a`, `e`, `i`, `o`, `u`];
   // let valor;
-  for (let index = 0 ; index < stringSeparada.length; index += 1){
+  for (let index = 0 ; index < stringSeparada.length; index += 1) {
     // stringSeparada[index] = valor;
     // valor +=1;
     if (stringSeparada[index] === 'a') {
@@ -150,21 +150,20 @@ function encode(string) {
 function decode(string) {
 
   let stringSeparada = string.split('');//para separar as letras em indices
-  for (let index = 0; index < stringSeparada.length; index += 1){
-
-    if (stringSeparada[index] === '1'){
+  for (let index = 0; index < stringSeparada.length; index += 1) {
+    if (stringSeparada[index] === '1') {
       stringSeparada[index] = 'a';
     }
-    else if (stringSeparada[index] === '2'){
+    else if (stringSeparada[index] === '2') {
       stringSeparada[index] = 'e';
     }
-    else if (stringSeparada[index] === '3'){
+    else if (stringSeparada[index] === '3') {
       stringSeparada[index] = 'i';
     }
-    else if (stringSeparada[index] === '4'){
+    else if (stringSeparada[index] === '4') {
       stringSeparada[index] = 'o';
     }
-    else if (stringSeparada[index] === '5'){
+    else if (stringSeparada[index] === '5') {
       stringSeparada[index] = 'u';
     }
   }
