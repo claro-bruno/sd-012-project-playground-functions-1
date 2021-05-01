@@ -12,8 +12,8 @@ function compareTrue(numero1, numero2) {
 
 // Desafio 2
 
-let base = 10;
-let height = 50;
+// let base = 10;
+// let height = 50;
 
 function calcArea(base, height) {
   return (base * height) / 2;
@@ -26,9 +26,11 @@ function splitSentence(string) {
   // .split divide uma string em partes.
   // Evita o uso de expressões regulares.
 }
-//console.log(splitSentence('Waltton Coelho'));
-// Desafio 4
+// console.log(splitSentence('Waltton Coelho'));
 
+
+
+// Desafio 4
 
 function concatName(palavra) {
 
@@ -50,9 +52,23 @@ function footballPoints(wins, ties) {
 // console.log(footballPoints(1, 2));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(maiorNumero) {
+
+  let maior = Math.max.apply(null, maiorNumero);
+  let repet = 0;
+  for (let index = 0; index < maiorNumero.length; index +=1)
+  {
+    if (maiorNumero[index] === maior)
+    {
+      repet +=1;
+    }
+
+  }
+  return repet;
+
 }
+console.log(highestCount([9,1,2,3,9,5,7, 9]));
+
 
 // Desafio 7
 function catAndMouse() {
