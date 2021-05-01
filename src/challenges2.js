@@ -13,15 +13,7 @@ function techList(tech, nome) {
   return objTech.length > 0 ? objTech : 'Vazio!';
 }
 
-function returnCountNumber(arrayTelefone, valor) {
-  let countNumber = 0;
-  for (let index = 0; index < arrayTelefone.length; index += 1) {
-    countNumber += arrayTelefone[index] === valor ? 1 : 0;
-  }
-  return countNumber;
-
-}
-
+// Desafio 11
 console.log(generatePhoneNumber([1, 5, 9, 9, 1, 6, 3, 1, 4, 0, 8]));
 function countNumber(arrayTelefone,value) {
     let counter = 0;
@@ -61,8 +53,6 @@ function generatePhoneNumber (arrayTelefone) {
 }
 
 // Desafio 12
-console.log(triangleCheck(12, 17, 4));
-
 function triangleCheck(lineA, lineB, lineC) {
     let checklineA = lineA < (lineB+lineC) && lineA > Math.abs(lineB - lineC) ?  true: false;
     let checklineB = lineB < (lineA+lineC) && lineB > Math.abs(lineA - lineC) ?  true: false;
