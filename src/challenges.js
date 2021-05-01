@@ -55,23 +55,21 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 // Desafio 8
-let arrayFizzBuzz = [2, 15, 7, 9, 45]
 function fizzBuzz(arrayFizzBuzz) {
-  let returnFizzBuzz = [];
-  for (let indexFizzBuzz in arrayFizzBuzz) {
+  for (let indexFizzBuzz = 0; indexFizzBuzz < arrayFizzBuzz.length; indexFizzBuzz += 1) {
     if (arrayFizzBuzz[indexFizzBuzz] % 3 === 0 && arrayFizzBuzz[indexFizzBuzz] % 5 !==0) {
-      returnFizzBuzz.push('fizz');
+      arrayFizzBuzz[indexFizzBuzz] = 'fizz';
     } else if (arrayFizzBuzz[indexFizzBuzz] % 3 !== 0 && arrayFizzBuzz[indexFizzBuzz] % 5 === 0) {
-      returnFizzBuzz.push('buzz');
+      arrayFizzBuzz[indexFizzBuzz] = 'buzz'
     } else if (arrayFizzBuzz[indexFizzBuzz] % 3 === 0 && arrayFizzBuzz[indexFizzBuzz] % 5 === 0) {
-      returnFizzBuzz.push('fizzBuzz');
+      arrayFizzBuzz[indexFizzBuzz] = 'fizzBuzz';
     } else {
-      returnFizzBuzz.push('bug!');
+      arrayFizzBuzz[indexFizzBuzz] = 'bug!';
     }
-    return returnFizzBuzz
-  } 
+  }
+  return arrayFizzBuzz 
 }
-console.log(fizzBuzz(arrayFizzBuzz))
+
 // Desafio 9
 function encode() {
   // seu código aqui
