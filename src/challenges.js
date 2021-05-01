@@ -74,19 +74,8 @@ function fizzBuzz(arrayNumeros) {
   let resultadosFizzBuzz = [];
 
   for (let numero of arrayNumeros) {
-    if (!(numero % 15)) {
-      resultadosFizzBuzz.push('fizzBuzz');
-    }
-    else if (!(numero % 3)) {
-      resultadosFizzBuzz.push('fizz');
-    }
-    else if (!(numero % 5)) {
-      resultadosFizzBuzz.push('buzz');
-    }
-    else {
-      resultadosFizzBuzz.push('bug!');
-    };
-  };
+    resultadosFizzBuzz.push(!(numero % 15) ? "fizzBuzz" : !(numero % 3) ? "fizz" : !(numero % 5) ? "buzz" : "bug!");
+  }
 
   return resultadosFizzBuzz;
 };
