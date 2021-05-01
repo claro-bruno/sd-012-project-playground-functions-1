@@ -103,13 +103,10 @@ return arrayNova8;
 
 // Desafio 9 FALTA
 function encode(frase9) {
-  let novaFrase = frase9.replace(/a/gi, '1')
-  .replace(/e/gi, '2')
-  .replace(/i/gi, '3')
-  .replace(/o/gi, '4')
-  .replace(/u/gi, '5');
+  let novaFrase = frase9.replace(/[aeiou]/gi, '[12345]')
   return novaFrase;
 }
+console.log(encode('hi there'))
 
 function decode(novaFrase) {
   let fraseDecodificada = novaFrase.replace(/1/gi, 'a')
@@ -120,6 +117,23 @@ function decode(novaFrase) {
   return fraseDecodificada;
 }
 
+let frase9 = 'hi there!';
+
+for (let index9 = 0; index9 < frase9.length; index9 += 1){
+  if (frase9[index9] === 'a'){
+    frase9[index9] = '1';
+  } else  if (frase9[index9] === 'e'){
+    frase9[index9] = '2';
+  } else  if (frase9[index9] === 'i'){
+    frase9[index9] = '3';
+  } else  if (frase9[index9] === 'o'){
+    frase9[index9] = '4';
+  } else  if (frase9[index9] === 'u'){
+    frase9[index9] = '5';
+  }
+}
+
+console.log()
 
 module.exports = {
   calcArea,
