@@ -3,7 +3,7 @@ function techList(array, name) {
   array.sort();
   let juncao = [];
   if (array.length < 0){
-    return "Vazio!";
+    return juncao.push("Vazio!") ;
   }
   for (let index in array) {
   let objetoCoisas = {
