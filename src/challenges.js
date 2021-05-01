@@ -90,18 +90,27 @@ function fizzBuzz(arrayNum) {
   return arrayNum;
 }
 
-console.log(fizzBuzz([5, 15, 7, 9, 45]));
-
 // Desafio 9
-function encode() {
-  // seu código aqui
-  // 1-verificar se existe vogal com o includes()
-  // 2-
-  // 3-loop para verificar presença 
+function encode(frase) {
+  let encodedA = frase.replaceAll('a', '1');
+  let encodedAE = encodedA.replaceAll('e', '2');
+  let encodedAEI = encodedAE.replaceAll('i', '3');
+  let encodedAEIO = encodedAEI.replaceAll('o', '4');
+  let encodedAEIOU = encodedAEIO.replaceAll('u', '5');
+
+  return encodedAEIOU;
 }
-function decode() {
-  // seu código aqui
+
+function decode(fraseCodificada) {
+  let decodedA = fraseCodificada.replaceAll('1', 'a');
+  let decodedAE = decodedA.replaceAll('2', 'e');
+  let decodedAEI = decodedAE.replaceAll('3', 'i');
+  let decodedAEIO = decodedAEI.replaceAll('4', 'o');
+  let decodedAEIOU = decodedAEIO.replaceAll('5', 'u');
+
+  return decodedAEIOU
 }
+console.log(decode('h3 th2r2!'))
 
 module.exports = {
   calcArea,
