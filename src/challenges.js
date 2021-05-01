@@ -49,7 +49,16 @@ function highestCount(arrHighest) {
 function catAndMouse(mouse, cat1, cat2) {
   let rgC1M = Math.abs((cat1 > mouse) ? (cat1 - mouse) : (mouse - cat1));
   let rgC2M = Math.abs((cat2 > mouse) ? (cat2 - mouse) : (mouse - cat2));
-  let ret = rgC1M > rgC2M ? 'cat2' : rgC2M > rgC1M ? 'cat1' : 'os gatos trombam e o rato foge'
+  if(rgC1M > rgC2M){
+    ret = 'cat2';
+  } else {
+    if(rgC2M > rgC1M) {
+      ret = 'cat1';
+    } else {
+      ret = 'os gatos trombam e o rato foge';
+    }
+
+  }
   return ret;
 }
 
