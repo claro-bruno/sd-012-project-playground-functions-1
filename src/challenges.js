@@ -20,13 +20,7 @@ function concatName(arStr) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return Number(wins) && Number(ties) ? ((wins * 3) + (ties * 1)) : 'invalid arguments';
-}
-
-// Desafio 6
-function highestCount(arrHighest) {
-  let maior = retornaMaior(arrHighest);
-  return countHighest(arrHighest, maior);
+  return Number(wins) && Number(ties) && ((wins * 3) + (ties * 1));
 }
 
 function retornaMaior(arrHighest)
@@ -47,7 +41,13 @@ function countHighest(arrHighest, valueHight)
         count += (valueHight === arrHighest[index]) ? 1 : 0;
     }
     return count;
-};
+}
+
+// Desafio 6
+function highestCount(arrHighest) {
+  let maior = retornaMaior(arrHighest);
+  return countHighest(arrHighest, maior);
+}
 
 // Desafio 7
 function catAndMouse() {
