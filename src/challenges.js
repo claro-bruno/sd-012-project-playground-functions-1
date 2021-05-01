@@ -5,29 +5,17 @@ function compareTrue(first, second) {
 
 // Desafio 2
 function calcArea(base, height) {
-  // seu código aqui
   return (Number(base) && Number(height)) ? ((base * height) / 2) : 'Not a Number';
 }
 
 // Desafio 3
 function splitSentence(sentence) {
-  // seu código aqui
   return sentence.length > 0 ? sentence.split(' ') : 'string empyt';
 }
 
 // Desafio 4
-function concatName(arrStrings) {
-  // seu código aqui
-
-  if(arrStrings.length >= 1)
-  {
-    return `${arrStrings[arrStrings.length - 1]}`;
-  }
-  else
-  {
-    return `${arrStrings[0]}`;
-  }
-
+function concatName(arStr) {
+  return arStr.length >= 1 ? `${arStr[arStr.length-1]}, ${arStr[0]}` : "array too short";
 }
 
 // Desafio 5
