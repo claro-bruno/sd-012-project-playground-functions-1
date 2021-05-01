@@ -110,7 +110,10 @@ function hydrate(bebidas) {
   for (let index = 0; index < numerosString.length; index += 1) {
     coposAgua += Number(numerosString[index]);
   }
-  return coposAgua;
+  if (coposAgua === 1) {
+    return `${coposAgua} copo de água`;
+  }
+  return `${coposAgua} copos de água`;
 }
 
 module.exports = {
