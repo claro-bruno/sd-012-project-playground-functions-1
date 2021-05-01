@@ -88,13 +88,6 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(numeros) {
-  let arr = [];
-  for (let n of numeros) {
-    arr.push(divisible(n));
-  }
-  return arr;
-}
 function divisible(n) {
   let result = '';
     if (n % 3 === 0 && n % 5 === 0) {
@@ -109,7 +102,13 @@ function divisible(n) {
     return result;
 }
 
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
+function fizzBuzz(numeros) {
+  let arr = [];
+  for (let n of numeros) {
+    arr.push(divisible(n));
+  }
+  return arr;
+}
 
 // Desafio 9
 function encode(str) {
