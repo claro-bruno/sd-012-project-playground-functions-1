@@ -33,15 +33,15 @@ function repeteMais3x(arraycheck) {
   }
   return contador;
 }
-//let array11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
+let array11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
 function generatePhoneNumber(arrayNumber) {
-  let foneNumber = '(';
+  //let foneNumber = '(';
   for (let key in arrayNumber) {
     if (arrayNumber.length !== 11) {
       return 'Array com tamanho incorreto.';
     } else if (arrayNumber[key] < 0 || arrayNumber[key] > 9 || repeteMais3x(arrayNumber) >= 3) {
       return 'não é possível gerar um número de arrayNumber com esses valores';
-    }else if (key < 1) {
+    }/*else if (key < 1) {
       //foneNumber += arrayNumber[key];
       foneNumber = foneNumber.concat(arrayNumber[key])
     } else if (key == 1) {
@@ -56,11 +56,12 @@ function generatePhoneNumber(arrayNumber) {
     }else if (key > 7) {
       foneNumber = foneNumber.concat(arrayNumber[key])
       //foneNumber += arrayNumber[key];
-    }
+    }*/
   }
-  return foneNumber;
+  return `(${arrayNumber[0]}${arrayNumber[1]}) ${arrayNumber[2]}${arrayNumber[3]}${arrayNumber[4]}${arrayNumber[5]}${arrayNumber[6]}-${arrayNumber[7]}${arrayNumber[8]}${arrayNumber[9]}${arrayNumber[10]}`;
+  //return foneNumber;
 }
-//console.log(generatePhoneNumber(array11));
+console.log(generatePhoneNumber(array11));
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   
