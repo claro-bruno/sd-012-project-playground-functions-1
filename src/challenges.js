@@ -32,9 +32,9 @@ function splitSentence(string) {
 
 function concatName(palavra) {
 
- //return string.split(' ').reverse(); => A função inverte a frase
+  //return string.split(' ').reverse(); => A função inverte a frase
 
-return `${palavra[palavra.length - 1]}, ${palavra[0]}`; // A função está retornando apenas a primeira letra das palavras.
+  return `${palavra[palavra.length - 1]}, ${palavra[0]}`; // A função está retornando apenas a primeira letra das palavras.
 
 }
 
@@ -43,9 +43,10 @@ return `${palavra[palavra.length - 1]}, ${palavra[0]}`; // A função está reto
 
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return wins * 3 + ties;
 }
+//console.log(footballPoints(1, 2));
 
 // Desafio 6
 function highestCount() {
