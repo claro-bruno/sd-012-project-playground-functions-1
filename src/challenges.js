@@ -66,7 +66,7 @@ function fizzBuzz(arrayNum) {
     status = 0;
     if ((arrayNum[index] % 3) === 0) { status += 1; }
     if ((arrayNum[index] % 5) === 0) { status += 10; }
-    arrayNum[index] = object(status);
+    arrayNum[index] = object[status];
   }
   return arrayNum;
 }
