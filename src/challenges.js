@@ -73,6 +73,9 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 
+// https://www.youtube.com/watch?v=8xqU_hXb-9k
+// https://www.javascriptprogressivo.net/2019/01/Tutorial-Objeto-Math-Trabalhando-Matematica-JS.html
+
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
