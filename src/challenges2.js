@@ -24,7 +24,7 @@ function formatNumberPhone(indexArray, value) {
     retornoFormato = `${value})`;
     break;
   case 6:
-    retornoFormato = `${value} - )`;
+    retornoFormato = `${value}-`;
     break;
   default:
     retornoFormato = `${value}`;
@@ -40,10 +40,11 @@ function countNumber(arrayTelefone, value) {
   }
   return counter;
 }
+
 function checkErrorPhone(arrayTelefone, value) {
   let errorMessage = '';
 
-  if (arrayTelefone.length > 11) {
+  if (arrayTelefone.length != 11) {
     errorMessage = 'Array com tamanho incorreto.';
   } else if (countNumber(arrayTelefone, value) > 2 || value < 0 || value > 9) {
     errorMessage = 'não é possível gerar um número de telefone com esses valores';
