@@ -22,7 +22,6 @@ function concatName(array) {
 // Desafio 5
 function footballPoints(wins, ties) {
   let winPoints = 3;
-  
   return (winPoints * wins) + ties;
 }
 
@@ -85,7 +84,7 @@ function encode(string) {
       stringToArray[index] = 5;
     }
   }
-return stringToArray.join('');  
+  return stringToArray.join('');  
 }
 
 function decode(string) {
