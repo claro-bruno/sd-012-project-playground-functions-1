@@ -4,22 +4,21 @@ let variavel2 = true;
 let estadoAtual = false;
 
 function compareTrue() {
-    // seu código aqui
-    if (variavel1 === true && variavel2 === true) {
-      estadoAtual = true;
-    } else {
+  // seu código aqui
+  if (variavel1 === true && variavel2 === true) {
+    estadoAtual = true;
+  } else {
       estadoAtual = false;
     }
+  return estadoAtual;
+}
   
-    return estadoAtual;
-  }
-  
-  // Desafio 2
-  function calcArea(base, height) {
-    // seu código aqui
-    let Area = (base * height) / 2;
-    return Area;
-  }
+// Desafio 2
+function calcArea(base, height) {
+// seu código aqui
+  let Area = (base * height) / 2;
+  return Area;
+}
   
   // Desafio 3
   let phraseSplited = [];
@@ -47,7 +46,7 @@ function concatName(arrayDeStrings) {
   // seu código aqui
   n = arrayDeStrings.length - 1;
   array3 = arrayDeStrings[n]+ ', ' + arrayDeStrings[0];
-return (array3);
+  return (array3);
 }
 
 // Desafio 5
@@ -107,32 +106,33 @@ function catAndMouse(mouse, cat1, cat2) {
     let array5 = [];
      
     function fizzBuzz() {
-     for (let index3Array = 0; index3Array < array4.length; index3Array += 1){
-       let possiveisCasos = [((array4[index3Array]) % 3) == 0, ((array4[index3Array]) % 5),((array4[index3Array]) % 3) == 0 && ((array4[index3Array]) % 5) == 0, ((array4[index3Array]) % 3) != 0 && ((array4[index3Array]) % 5) != 0];
-       switch (possiveisCasos.indexOf(true)) {
-         case 0:
-           array5.push("fizz");
-         break
-         case 1:
-           array5.push("buzz");
-         break
-         case 2:
-           array5.push("fizzBuzz");
-         break
-         case 3:
-           array5.push("bug!");
-         break
+      for (let index3Array = 0; index3Array < array4.length; index3Array += 1){
+        let possiveisCasos = [((array4[index3Array]) % 3) == 0, ((array4[index3Array]) % 5),((array4[index3Array]) % 3) == 0 && ((array4[index3Array]) % 5) == 0, ((array4[index3Array]) % 3) != 0 && ((array4[index3Array]) % 5) != 0];
+        switch (possiveisCasos.indexOf(true)) {
+          case 0:
+            array5.push("fizz");
+        break
+        case 1:
+          array5.push("buzz");
+        break
+        case 2:
+          array5.push("fizzBuzz");
+        break
+        case 3:
+          array5.push("bug!");
+        break
               
-         }
-      
-     }
-     return array5;
+      }
+    }
+      return array5;
     }
      
     fizzBuzz(array4)
     console.log(array5);
-    // seu código aqui
+
+    
   }
+  
   // Desafio 9
   string1 = "aeiou";
   string2 = "12345"
