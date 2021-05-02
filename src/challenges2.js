@@ -52,12 +52,34 @@ function triangleCheck(lineA, lineB, lineC) {
   }
   return result
 }
-console.log(triangleCheck(10, 140, 8));
-// Desafio 13
-function hydrate() {
-  // seu código aqui
-}
+console.log(triangleCheck(10, 14, 8));
 
+// Desafio 13
+// eslint-disable-next-line max-lines-per-function
+function hydrate(drink1, drink2, drink3) {
+  let drinks = {
+    0: drink1,
+    1: drink2,
+    2: drink3,
+  };
+  let cupOfWater = 0;
+  let regex = /\d+/g;
+  for (value of Object.values(drinks)) {
+    if (value.match(regex)) {
+      cupOfWater += parseInt (value.match(regex));
+    }
+  }
+  if (cupOfWater === 0) {
+    return 'Comece a se embebedar!';     
+  }
+  else if (cupOfWater === 1) {
+    return 'Beba um copo de água'
+  }
+  else {
+    return 'Beba' + ' ' + cupOfWater + ' ' + 'copos de água'
+  }
+}
+console.log (hydrate (5 + ' ' + 'wine', 9 + ' ' + 'cachaça', 8 + ' ' + 'beer'));
 module.exports = {
   generatePhoneNumber,
   techList,
