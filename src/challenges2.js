@@ -2,21 +2,16 @@
 function techList(arrayTech, name) {
   // seu código aqui
    let saida = [];
-   let result = [];
 
+   if (arrayTech.length > 0){
    for (let index = 0; index < arrayTech.length; index += 1){
-     saida.push(index);
-     index['tech'] = arrayTech[index];
-     index['name'] = name;
-   }
-   
-   for (let key in saida){
-     result.push(key, saida[key]);
-   } 
-   return result;
+     saida.push({'tech':arrayTech[index],'name':name});
+    }
+  } else {
+    saida = 'Vazio!';
   }
-
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Luciano'));
+   return saida;
+  }
 
 // Desafio 11
 function generatePhoneNumber(number) {
@@ -26,10 +21,12 @@ function generatePhoneNumber(number) {
 
   if (number.length > 11 || number.length < 11){
     message= "Array com tamanho incorreto."
+    phonenumber = message;
   } else {
     for (let index = 0; index < number.length; index += 1){
       if (number[index] < 0 || number[index] > 9) {
         message = "não é possível gerar um número de telefone com esses valores";
+        phonenumber = message;
       } else {
         phone.push(number[index]);
       }
