@@ -90,9 +90,9 @@ function fizzBuzz(arrayDiv) {
   for (let index = 0; index < arrayDiv.length; index += 1) {
     if (arrayDiv[index] % 3 === 0 && arrayDiv[index] % 5 === 0) {
       arrayDiv[index] = 'fizzBuzz';
-    } else if (arrayDiv[index] % 3 === 0) {
+    } else if (arrayDiv[index] % 3 === 0 && arrayDiv[index] % 5 != 0) {
       arrayDiv[index] = 'fizz';
-    } else if (arrayDiv[index] % 5 === 0) {
+    } else if (arrayDiv[index] % 5 === 0 && arrayDiv[index] % 3 != 0) {
       arrayDiv[index] = 'buzz';
     } else {
       arrayDiv[index] = 'bug';
