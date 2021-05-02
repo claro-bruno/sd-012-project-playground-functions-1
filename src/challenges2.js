@@ -5,7 +5,7 @@ function techList(name, array7) {
   for (let indiceDaArray7 = 0; indiceDaArray7 < array7.length; indiceDaArray7 += 1) {
     let saidaFuncao = {
       tech: array7[indiceDaArray7],
-      nome: name
+      nome: name,
     };
     novaArray.push(saidaFuncao);
   }
