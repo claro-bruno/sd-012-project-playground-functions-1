@@ -78,9 +78,24 @@ function highestCount(arraynumbers) {
 // console.log(highestCount([2, 3, 5, 6, 9, 9, 9,]));
 
 // Desafio 7
-function catAndMouse() {
-    
+function catAndMouse(mouse, cat1, cat2) {
+  if (mouse + cat1 < mouse + cat2) {
+    return "cat1";
+  } else if (mouse +cat1 == mouse + cat2) {
+    return "os gatos trombam e o rato foge";
+  } else {
+    return "cat2";
+  }    
 }
+
+catAndMouse(0, 3, 2);
+
+
+
+
+
+
+
 
 // Desafio 8
 function fizzBuzz(buznumeros) {
