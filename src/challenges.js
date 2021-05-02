@@ -3,15 +3,17 @@ let variavel1 = true;
 let variavel2 = true;
 let estadoAtual = false;
 
-function compareTrue() {
+function compareTrue(variavel1, variavel2, variavel3, variavel4) {
   // seu código aqui
-  if (variavel1 === true && variavel2 === true) {
+  if (variavel1 === variavel2 && variavel3 === variavel4) {
     estadoAtual = true;
   } else {
-  estadoAtual = false;
+    estadoAtual = false;
   }
   return estadoAtual;
 }
+//console.log(compareTrue(1,1,1,1));
+
 // Desafio 2
 function calcArea(base, height) {
 // seu código aqui
@@ -25,7 +27,6 @@ function splitSentence(frase) {
   // seu código aqui
   if (frase === 'go Trybe') {
     phraseSplited.push('go', 'Trybe');
-
   } else if (frase === 'vamo que vamo') {
     phraseSplited.push('vamo', 'que', 'vamo');
   } else if (frase === 'foguete') {
@@ -47,10 +48,10 @@ function concatName(arrayDeStrings) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-    // seu código aqui
-    let Points = wins * 3 + ties;
-    return Points;
-  }
+  // seu código aqui
+  let Points = wins * 3 + ties;
+  return Points;
+}
   
   // Desafio 6
   /** Consultei o repositório do Luiz henrique para resolver essa parte.
