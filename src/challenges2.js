@@ -68,7 +68,7 @@ function hydrate(bebida) {
   let cupOfWater = 0;
   let regex = /\d+/g; 
     for (let value of Object.values(bebidas)) {
-      is (value.match(regex)) {
+      if (value.match(regex)) {
         cupOfWater += parseInt(value.match(regex));
       }
     }
