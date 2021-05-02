@@ -62,13 +62,10 @@ function footballPoints(wins, ties) {
 Link do repositório: https://github.com/tryber/sd-012-project-playground-functions/pull/117
 */
 
-let arrayDeNumbers = [0, 0, 0];
-
-let repeticoesMaiorNumero = 0;
-
-let numeroMaisAlto = 0;
-
 function highestCount(arrayDeNumbers) {
+  let arrayDeNumbers = [0, 0, 0];
+  let repeticoesMaiorNumero = 0;
+  let numeroMaisAlto = 0;
   for (let index1Array = 0; index1Array < arrayDeNumbers.length; index1Array +=1) {
     if(arrayDeNumbers[index1Array] > numeroMaisAlto) {
       numeroMaisAlto = arrayDeNumbers[index1Array];
