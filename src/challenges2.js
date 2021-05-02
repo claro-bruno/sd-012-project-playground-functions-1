@@ -41,14 +41,11 @@ function generatePhoneNumber(numero) {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   let resposta = false;
-  if (linea > (lineb + linec)) {
+  if ( (linea > (lineB + lineC)) && (lineA > Math.abs(lineB - lineC)) ) {
     resposta = true;
   }
-
-   /* é necessário que a medida de qualquer um dos lados seja 
-   menor que a soma das medidas dos outros dois e 
-   maior que o valor absoluto da diferença entre essas medidas.
-} */
+  return(resposta);
+}
 
 // Desafio 13
 function hydrate() {
