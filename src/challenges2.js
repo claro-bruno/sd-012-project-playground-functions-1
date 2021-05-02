@@ -5,14 +5,15 @@ function techList(receiveArray, name) {
   let objTechOrdened = receiveArray.sort();
   let objTechList = [];
   
-  if (receiveArray.length === 0) {
-    return 'Vazio!';
-  }
-
+  
   for (let index = 0; index < objTechOrdened.length; index += 1) {
     objTechList.push({tec: objTechOrdened[index], name: name});
   }
-  return objTechList;
+  if (receiveArray.length === 0) {
+    return 'Vazio!';
+  } {
+    return objTechList;
+  }
 
 }
 
