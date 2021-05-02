@@ -105,9 +105,6 @@ function one2five(bebidas) {
   if (bebidas === '4') {
     return 4;
   }
-  if (bebidas === '5') {
-    return 5;
-  }
 }
 
 function six2nine(bebidas) {
@@ -126,7 +123,7 @@ function six2nine(bebidas) {
 }
 
 function switchNum(bebidas) {
-  if (bebidas < '6' && bebidas > '1') {
+  if (bebidas < '5' && bebidas > '0') {
     return one2five(bebidas);
   }
   if (bebidas > '5' && bebidas <= '9') {
@@ -140,7 +137,11 @@ function hydrate(bebidas) {
   let agua = 0;
   let arrayBebidas = bebidas.split();
   for (let key; key < arrayBebidas.length; key += 1) {
-    agua += switchNum(arrayBebidas[key]);
+    if (arrayBebidas[key] === '5') {
+      agua += 5;
+    } else {
+      agua += switchNum(arrayBebidas[key]);
+    }
   }
   if (agua !== 1) {
     return `${agua} copos de água`;
