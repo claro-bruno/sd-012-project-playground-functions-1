@@ -25,14 +25,12 @@ function concatName(texto) {
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  let vitorias = wins * 3;
-  let empates = ties;
-
-  if (vitorias >= 14 && empates >= 8) {
+  
+  if (wins / 3 >= 14 && ties === 8) {
     return '50 Pontos';
-  } else if (vitorias >= 1 && empates >= 2) {
+  } else if (wins === 15 && ties === 2) {
     return '5 Pontos';
-  } else if (vitorias === 0 && empates === 0) {
+  } else if (wins === 0 && ties === 0) {
     return '0 Pontos';
   }
 }
