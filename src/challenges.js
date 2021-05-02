@@ -132,12 +132,84 @@ function fizzBuzz(numeros) {
 
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+//https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+function encode(code) {
+  //separa os elementos e coloca em um array
+  let codigo = code.split('');
+
+  for (let index in codigo){
+    //switch pega o elemento atraves do indice e compara
+    switch(codigo[index]){
+      case 'a':
+        codigo[index] = '1';
+
+        break;
+      case 'e':
+        codigo[index] = '2';
+
+        break;
+      case 'i':
+        codigo[index] = '3';
+
+        break;
+      case 'o':
+        codigo[index] = '4';
+
+        break;
+      case 'u':
+        codigo[index] = '5';
+
+        break;
+       
+      default:  
+    }
+  }
+  //.join junta os elementos do array em uma string
+
+  return codigo.join('');
 }
-function decode() {
-  // seu código aqui
+
+console.log(encode('hi there!'));
+
+
+
+function decode(deCode) {
+  //separa os elementos e coloca em um array
+  let deCodigo = deCode.split('');
+
+  for (let index in deCodigo){
+    //switch pega o elemento atraves do indice e compara
+    switch(deCodigo[index]){
+      case '1':
+        deCodigo[index] = 'a';
+
+        break;
+      case '2':
+        deCodigo[index] = 'e';
+
+        break;
+      case '3':
+        deCodigo[index] = 'i';
+
+        break;
+      case '4':
+        deCodigo[index] = 'o';
+
+        break;
+      case '5':
+        deCodigo[index] = 'u';
+
+        break;
+       
+      default:  
+    }
+  }
+  //.join junta os elementos do array em uma string
+  return deCodigo.join('');
 }
+
+console.log(decode(encode('hi there!')));
+
 
 module.exports = {
   calcArea,
