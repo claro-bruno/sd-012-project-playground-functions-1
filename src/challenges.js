@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(value1, value2) {
-  if (value1 && value2 === true) {
+  if (value1 === true && value2 === true) {
     return true;
   } else {
     return false;
@@ -61,8 +61,7 @@ function catAndMouse(mouse, cat1, cat2) {
   console.log(cat1Distance, cat2Distance);
   if (cat1Distance === cat2Distance) {
     return 'os gatos trombam e o rato foge';
-  } 
-
+  }
   if (cat1Distance < cat2Distance) {
     return 'cat1';
   } else {
