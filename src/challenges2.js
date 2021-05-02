@@ -64,9 +64,10 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(drink1, drink2, drink3) {
+  return whater = drink1 + drink2 + drink3;
 }
+console.log(hydrate(1, 5, 1));
 
 module.exports = {
   generatePhoneNumber,
