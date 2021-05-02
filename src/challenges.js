@@ -152,25 +152,23 @@ return frase3;
 
 
 function decode(frase4) {
-  string3 = "aeiou";
-  string4 = "12345"
+  let string3 = 'aeiou';
+  let string4 = '12345';
   let indice3 = 0;
-  let frase5 = ""; 
-  for (let indice4 = 0; indice4 < frase4.length; indice4 +=1){
-    if (indice3 < frase4.length){
+  let frase5 = '';
+  for (let indice4 = 0; indice4 < frase4.length; indice4 += 1) {
+    if (indice3 < frase4.length) {
       frase5 = frase4.replace(string4[indice3], string3[indice3]);
-      frase4 = frase5; 
+      frase4 = frase5;
       indice3 += 1;
-      if (indice3 > string3.length){
+      if (indice3 > string3.length) {
         indice3 = 0;
-      }    
-    }  
+      }
+    }
   }
-return frase4;
+  return frase4;
 }
-  
 // console.log(decode("h3 th2r2"));
-  
 module.exports = {
   calcArea,
   catAndMouse,
