@@ -1,19 +1,6 @@
 // Desafio 10
-function techList(arrayTechName, name) {
-  if (arrayTechName.length === 0) {
-    return 'Vazio!';
-  }
-  let lista = [];
-  let arrayTechNameSort = arrayTechName.sort();
-   for (let key in arrayTechNameSort) {
-      lista.push(
-      {
-        tech: arrayTechName[key],
-        name: name,
-      };
-      )
-   }
-   return lista;
+function techList() {
+  // seu código aqui
 }
 
 // Desafio 11
