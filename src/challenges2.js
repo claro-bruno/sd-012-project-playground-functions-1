@@ -1,28 +1,35 @@
 // Desafio 10
 function techList(arrTech, nome1) {
   if (arrTech.length === 0) {
-    return 'Vazio!'
-  }else {
-    let arrTechSorted = arrTech.sort();
-    let arrObjTech = []; 
-    
-    for (let index = 0; index < arrTechSorted.length; index += 1) { 
-      let objTech = {};
-      objTech = {
+    return 'Vazio!'}
+
+  let arrTechSorted = arrTech.sort();
+  let arrObjTech = []; 
+  for (let index = 0; index < arrTechSorted.length; index += 1) { 
+    let objTech = {};
+    objTech = {
       tech: arrTechSorted[index],
-      nome: nome1
-      }
-      arrObjTech.push(objTech);  
+      nome: nome1,
+      };
+    arrObjTech.push(objTech);  
     }
-    return arrObjTech;
-    }
-  }
+  return arrObjTech;
+}
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"))
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
-}
+function generatePhoneNumber(numeros) {
 
+  let doisPrimeirosNum = '(' + `${numeros[0]}` + `${numeros[1] }`+ ')';
+  let noveNum = ''
+
+  for(let index = 2; index < numeros.length; index += 1){
+      noveNum += `${numeros[index]}`;
+    }
+  let numTelefone = doisPrimeirosNum + noveNum;
+  return numTelefone;
+}
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
 // Desafio 12
 function triangleCheck() {
   // seu código aqui
