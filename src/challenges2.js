@@ -6,7 +6,15 @@ function techList(arrayTech, name) {
   if (arrayTech.length > 0){
     for (let index = 0; index < arrayTech.length; index += 1){
      saida.push({'tech':arrayTech[index],'name':name});
-     saida.sort();
+     saida.sort(function (key1, key2){
+       if (key1.tech < key2.tech){
+         return -1;
+       } else if (key1.tech > key2.tech){
+         return +1;
+       } else {
+         return 0;
+       }
+     });
       } 
   } else {
       saida = 'Vazio!';
