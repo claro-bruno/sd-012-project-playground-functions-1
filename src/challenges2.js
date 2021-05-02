@@ -47,7 +47,7 @@ function generatePhoneNumber(array) {
   for (let index = 0; index <= 1; index += 1){
     ddd += numero[index];
 }
-  for (let index = 2; index <= 5; index += 1){
+  for (let index = 2; index <= 6; index += 1){
     primeiraPart += numero[index]; 
   }
   for(let index = 7; index < 11; index += 1){
