@@ -41,7 +41,7 @@ function generatePhoneNumber(telefone) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
-  let outputNumber = '(' + repeatNumber[0] + repeatNumber[1] + ')' + ' ' + repeatNumber [2] + repeatNumber [3] + repeatNumber [4] + repeatNumber [5] + '-' +  repeatNumber [6] + repeatNumber[7] + repeatNumber[8] + repeatNumber[9] + repeatNumber[10];
+  let outputNumber = '(' + repeatNumber[0] + repeatNumber[1] + ')' + ' ' + repeatNumber [2] + repeatNumber [3] + repeatNumber [4] + repeatNumber [5] +   repeatNumber [6] + '-' + repeatNumber[7] + repeatNumber[8] + repeatNumber[9] + repeatNumber[10];
 
   return outputNumber;
 }
