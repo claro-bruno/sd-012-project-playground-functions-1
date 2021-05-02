@@ -46,7 +46,6 @@ console.log(footballPoints(7, 3));
 
 // Desafio 6
 function highestCount(maiorInteiro) {
-  let tamanho = maiorInteiro.length;
   let maior = -999;
   let conta = 0;
   for (let index in maiorInteiro) {
