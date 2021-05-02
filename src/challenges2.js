@@ -60,16 +60,22 @@ function triangleCheck(lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(drink) {
   // seu código aqui
+  // RegEx utilizado para extrair números da String visto no link https://bit.ly/3eMQPiW, onde utiiza-se a função .replace para localizar todos caracteres que não sejam números inteiros de 1 a 9 (\D), procurando "globalmente" na string inteira (/g), então substituindo por espaços vazios.
   let cups = drink.replace(/\D/g, '');
   let array = cups.split('')
   let soma = 0;
+  let result;
 
   for (index = 0; index < array.length; index += 1){
     let inteiro = parseInt(array[index]);
     soma += inteiro;
   }
 
-  let result = `${soma} copos de água `;
+  if (soma === 1){
+  result = '1 copo de água';
+  } else {
+  result = `${soma} copos de água`
+  }
 
   return result;
 }
