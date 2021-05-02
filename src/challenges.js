@@ -134,29 +134,30 @@ function catAndMouse(mouse, cat1, cat2) {
     // seu código aqui
   }
   // Desafio 9
-  let frase2 = "a e i o u a e i o u testando para não ter alguns problema nos testes";
+  string1 = "aeiou";
+  string2 = "12345"
+  let indice1 = 0;
   let frase3 = ""; 
-  function encode() {
-    for (let indice1 = 0; indice1 < frase2.length; indice1 +=1){
-        frase3 = frase2.replace("a","1");
+  
+  function encode(frase2) {
+    for (let indice2 = 0; indice2 < frase2.length; indice2 +=1){
+       
+      if (indice1 < frase2.length){
+        frase3 = frase2.replace(string1[indice1], string2[indice1]);
         frase2 = frase3; 
-        frase3 = frase2.replace("e","2");
-        frase2 = frase3;
-        frase3 = frase2.replace("i","3");
-        frase2 = frase3;  
-        frase3 = frase2.replace("o","4");
-        frase2 = frase3;  
-        frase3 = frase2.replace("u","5");
-        frase2 = frase3;      
-        
+        indice1 += 1;
+      
+        if (indice1 > string1.length){
+          indice1 = 0;
+        }    
+      }  
     }
                   
-  return frase2;
+  return frase3;
        
     }
 
-    encode(frase2);
-    console.log(frase3);
+  //  console.log(encode("hi there!"));
   
 
   function decode() {
