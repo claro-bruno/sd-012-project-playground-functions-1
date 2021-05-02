@@ -92,12 +92,13 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function reducao(arrayAgua, numeroBebida, arrayBebidas) {
-  for (let key in numeroBebida) {
-    if (arrayBebidas === numeroBebida[key]) {
-      return arrayAgua[key - 1];
+function reducao(arrayAgua, numeroBebida, objetoBebida) {
+  for (let numeroAgua = 1; numeroAgua <= arrayAgua.length; numeroAgua += 1) {
+    if (objetoBebida[numeroAgua] === numeroBebida) {
+      return arrayAgua[numeroAgua - 1];
     }
   }
+  return 0;
 }
 
 function chamaObjeto() {
@@ -122,12 +123,12 @@ function hydrate(bebidas) {
   let arrayAgua = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   let numeroBebida = chamaObjeto();
   for (let charBebida = 0; charBebida < arrayBebidas.length; charBebida += 1) {
-    agua += reducao(arrayAgua[charBebida], numeroBebida, arrayBebidas);
+    agua += reducao(arrayAgua, arrayBebidas[charBebida], numeroBebida);
   }
-  if (agua !== 1) {
-    return `${agua} copos de água`;
+  if (agua === 1) {
+    return '1 copo de água';
   }
-  return '1 copo de água';
+  return `${agua} copos de água`;
 }
 
 module.exports = {
