@@ -43,16 +43,8 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(contador) {
-  let quantos = Math.max.apply(null, contador);
-  let teste = 0;
-  for (let value of quantos) {
-    if (value === quantos) {
-      teste += 1;
-    }
-  }
-  return teste;
-}
-  console.log(contador([15,10,45,55,55]));
+  fasd;
+
 
   // Desafio 7
 function catAndMouse() {
@@ -84,3 +76,4 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+}
