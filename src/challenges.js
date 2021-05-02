@@ -87,7 +87,7 @@ function catAndMouse(mouse, cat1, cat2) {
   return conclusao;
 }
 
-//console.log(catAndMouse(11, 10, 30));
+// console.log(catAndMouse(11, 10, 30));
 
 // Desafio 8
 function fizzBuzz(array5) {
@@ -129,7 +129,7 @@ function encode(frase2) {
   return frase3;
 }
 
-//console.log(encode("hi there!"));
+// console.log(encode("hi there!"));
 
 function decode(frase4) {
   let string3 = 'aeiou';
