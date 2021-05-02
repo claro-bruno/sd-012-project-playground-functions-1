@@ -18,18 +18,18 @@ console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 //console.log(techList([]));
 
 // Desafio 11
-function generatePhoneNumber(cpf) {
-  cpfFormat = "(xx) xxxxx-xxxx";
+function generatePhoneNumber(phone) {
+  phoneFormat = "(xx) xxxxx-xxxx";
 
-  for (let index = 0; index > cpf.length; index += 1) {
-    if (cpf[index] < 0 || cpf[index] > 9) {
+  for (let index = 0; index < phone.length; index += 1) {
+    if (phone[index] < 0 || phone[index] > 9) {
       return "não é possível gerar um número de telefone com esses valores";
     }
   }
   count = 0;
-  for (let index in cpf) {
-    for (let index2 in cpf) {
-      if (cpf[index] === cpf[index2]) {
+  for (let index in phone) {
+    for (let index2 in phone) {
+      if (phone[index] === phone[index2]) {
         count += 1;
       }
     }
@@ -38,14 +38,14 @@ function generatePhoneNumber(cpf) {
     }
     count = 0;
   }
-  for (let index = 0; index < cpf.length; index += 1) {
-    cpfFormat = cpfFormat.replace('x', cpf[index]);
+  for (let index = 0; index < phone.length; index += 1) {
+    phoneFormat = phoneFormat.replace('x', phone[index]);
   }
-  if (cpf.length !== 11) {
+  if (phone.length !== 11) {
     return "Array com tamanho incorreto.";
   }
 
-  return cpfFormat;
+  return phoneFormat;
 }
 
 console.log(generatePhoneNumber([1, 2, 3, 2, 4, 3, 6, 7, 8, 9, 7]));
