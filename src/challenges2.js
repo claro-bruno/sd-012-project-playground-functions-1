@@ -14,7 +14,8 @@ function techList(tech, nome) {
 }
 
 // Desafio 11
-console.log(generatePhoneNumber([]));
+console.log(generatePhoneNumber([9, 2, 3, 0, 5, -6, 7, 8, -7, 0, 1, 10]));
+
 function formatNumberPhone(indexArray, value) {
   let retornoFormato = '';
   switch (indexArray) {
@@ -22,7 +23,7 @@ function formatNumberPhone(indexArray, value) {
     retornoFormato = `(${value}`;
     break;
   case 1:
-    retornoFormato = `${value})`;
+    retornoFormato = `${value}) `;
     break;
   case 6:
     retornoFormato = `${value}-`;
