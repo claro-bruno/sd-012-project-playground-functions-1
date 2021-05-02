@@ -83,7 +83,7 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   return resposta;
 }
-console.log(catAndMouse(0, 6, 12));
+// console.log(catAndMouse(0, 6, 12));
 
 // Desafio 8
 function fizzBuzz(array) {
@@ -105,13 +105,62 @@ function fizzBuzz(array) {
 // console.log(fizzBuzz([7, 9]));
 
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
-  let vowelsNumbers = [];
+  let newString = '';
+  let consonant = '';
+  // a -> 1
+  // e -> 2
+  // i -> 3
+  // o -> 4
+  // u -> 5
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index] === 'a') {
+      newString += '1';
+    } else if (string[index] === 'e') {
+      newString += '2';
+    } else if (string[index] === 'i') {
+      newString += '3';
+    } else if (string[index] === 'o') {
+      newString += '4';
+    } else if (string[index] === 'u') {
+      newString += '5';
+    } else {
+      consonant = string[index];
+      newString += consonant;
+    }
+  }
+  return newString;
 }
-function decode() {
+// console.log(encode('hi there!'));
+function decode(string) {
   // seu código aqui
+  // a -> 1
+  // e -> 2
+  // i -> 3
+  // o -> 4
+  // u -> 5
+  let newString = '';
+  let constant = '';
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index === '1']) {
+      newString += 'a';
+    } else if (string[index] === '2') {
+      newString += 'e';
+    } else if (string[index] === '3') {
+      newString += 'i';
+    } else if (string[index] === '4') {
+      newString += 'o';
+    } else if (string[index] === '5') {
+      newString += 'u';
+    } else {
+      constant = string[index];
+      newString += constant;
+    }
+  }
+  return newString;
 }
+// console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
