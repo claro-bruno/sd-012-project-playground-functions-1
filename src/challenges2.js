@@ -9,11 +9,12 @@ function techList(techs, name) {
     outputArray[index].tech = techs[index];
     outputArray[index].name = name;
   }
+
   //  essa parte de ordenar foi feita lendo os seguintes artigos:
   //  https://reactgo.com/javascript-sort-objects-alphabetically/
   //  https://www.w3docs.com/snippets/javascript/how-to-sort-array-alphabetically-in-javascript.html
 
-  let sortedOutputArray = outputArray.sort (function(a, b) {
+  let sortedOutputArray = outputArray.sort(function (a, b) {
     if (a.tech < b.tech) {
       return -1;
     }
@@ -25,13 +26,65 @@ function techList(techs, name) {
 
   return sortedOutputArray;
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
-
+// console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(phoneNumber) {
+  // verificar se é diferente de 11:
+  if (phoneNumber.length != 11) {
+    return "Array com tamanho incorreto.";
+  };
+
+  // verificar se tem numero menor q 0:
+  for (let index in phoneNumber) {
+    if (phoneNumber[index] < 0) {
+      return "não é possível gerar um número de telefone com esses valores"
+    }
+  }
+
+  // verificar numero de repeticoes:
+  let repeats = 0;
+  let mostRepeat = 0;
+  for (let index in phoneNumber) {
+    for (let indexNumber = 0; indexNumber < phoneNumber.length; indexNumber += 1) {
+      if (phoneNumber[index] === phoneNumber[indexNumber]) {
+        repeats += 1;
+      }
+    }
+    if (repeats > mostRepeat) {
+      mostRepeat = repeats;
+    }
+    repeats = 0;
+  }
+  if (mostRepeat >= 3) {
+    return "não é possível gerar um número de telefone com esses valores"
+  }
+
+  // verificar maior numero:
+  let maxNumber = phoneNumber.reduce(function (a, b) {
+    return Math.max(a, b);
+  });
+
+  if (maxNumber > 9) {
+    return "não é possível gerar um número de telefone com esses valores";
+  }
+
+  // em fim, vamos gerar o numero de telefone:
+  let outputPhoneNumber = '';
+  for (let index = 0; index < phoneNumber.length; index += 1) {
+    if (index === 0) {
+      outputPhoneNumber += '(';
+    } else if (index === 2) {
+      outputPhoneNumber += ') ';
+    } else if (index === 7) {
+      outputPhoneNumber += '-';
+    }
+    outputPhoneNumber += phoneNumber[index];
+  }
+  return outputPhoneNumber
 }
+// let phoneNumbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
+// console.log(generatePhoneNumber(phoneNumbersArray));
 
 // Desafio 12
 function triangleCheck() {
