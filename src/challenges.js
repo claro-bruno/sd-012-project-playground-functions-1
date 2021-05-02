@@ -1,93 +1,47 @@
 // Desafio 1
-function compareTrue(par1, par2) {
-  return par1 && par2;
+function compareTrue() {
+  // seu código aqui
 }
 
 // Desafio 2
-function calcArea(base, height) {
-  return ((base * height) / 2);
+function calcArea() {
+  // seu código aqui
 }
 
 // Desafio 3
-function splitSentence(frase) {
-  let resposta = [];
-  resposta = frase.split(' ');
-  return resposta;
+function splitSentence() {
+  // seu código aqui
 }
 
 // Desafio 4
-function concatName(matriz) {
-  let resposta = matriz[matriz.length - 1];
-  resposta += ', ';
-  resposta += matriz[0];
-  return resposta;
+function concatName() {
+  // seu código aqui
 }
 
 // Desafio 5
-function footballPoints(wins, ties) {
-  return (wins * 3) + (ties);
+function footballPoints() {
+  // seu código aqui
 }
 
 // Desafio 6
 function highestCount() {
+  // seu código aqui
 }
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
-  if (cat1 === cat2) {
-    return 'os gatos trombam e o rato foge';
-  }
-  if ((cat1 - mouse) < (cat2 - mouse)) {
-    return 'cat1';
-  }
-  return 'cat2';
+function catAndMouse() {
+  // seu código aqui
 }
 
 // Desafio 8
-function fizzBuzz(matriz) {
-  /* matriz = ["Carla","bruna","lucia"]; */
-  let resposta = [];
-  for (let index = 0; index < matriz.length; index += 1) {
-    if (matriz[index] % 3) {
-      matriz.push('fizz');
-    } else if (matriz[index] % 5) {
-      matriz.push('buzz');
-    } else {
-      matriz.push('bug!');
-    }
-  }
-  /* console.log(matriz); */
-  return matriz;
+function fizzBuzz() {
+  // seu código aqui
 }
 
 // Desafio 9
-function encode(variavel) {
-  let caracter = '';
-  let resposta = '';
-  for (let index = 0; index < variavel.length; index += 1) {
-    switch (variavel.substr(index,1)) {
-      case 'a':
-        caracter = '1';
-        break;
-      case 'e':
-        caracter = '2';
-        break;
-      case 'i':
-        caracter = '3';
-        break;
-      case 'o':
-        caracter = '4';
-        break;
-      case 'u':
-        caracter = '5';
-        break;
-      default:
-        caracter = variavel.substr(index,1);
-    }
-    resposta += caracter;
-  }
+function encode() {
+  // seu código aqui
 }
-
 function decode() {
   // seu código aqui
 }
