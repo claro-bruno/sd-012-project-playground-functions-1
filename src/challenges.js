@@ -102,30 +102,30 @@ function encode(encodeText) {
     if (frase[index] === 'a') {
       resultado = frase.replace('a', '1');
       frase = resultado;
-  } else if (frase[index] === 'e') {
+    } else if (frase[index] === 'e') {
       resultado = frase.replace('e', '2');
       frase = resultado;
-  } else if (frase[index] === 'i') {
+    } else if (frase[index] === 'i') {
       resultado = frase.replace('i', '3');
       frase = resultado;
-  } else if (frase[index] === 'o') {
+    } else if (frase[index] === 'o') {
       resultado = frase.replace('o', '4');
       frase = resultado;
-  } else if (frase[index] === 'u') {
+    } else if (frase[index] === 'u') {
       resultado = frase.replace('u', '5');
       frase = resultado;
-  }
+    }
 }
   return frase;
 }
 
 function decode(decodeText) {
   // seu código aqui
-    let frase = decodeText;
-    let resultado;
-  
-    for (let index = 0; index <= frase.length; index += 1) {
-      if (frase[index] === '1') {
+  let frase = decodeText;
+  let resultado;
+
+  for (let index = 0; index <= frase.length; index += 1) {
+    if (frase[index] === '1') {
       resultado = frase.replace('1', 'a');
       frase = resultado;
     } else if (frase[index] === '2') {
