@@ -63,32 +63,32 @@ function highestCount(numberList) {
   return timesNumber;
 };
 
-
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
+  let distanceCat1;
+  let distanceCat2;
  
   if (mouse - cat1 >= 0){
-    let distanceCat1 = mouse - cat1;
+    distanceCat1 = mouse - cat1;
   };
 
   if(mouse - cat1 < 0){
-    distanceCat1 = (mouse - cat1) * -1   
+    distanceCat1 = (mouse - cat1) * -1;   
   };
 
   if (mouse - cat2 >= 0){
-    let distanceCat2  = mouse - cat2;
+    distanceCat2  = mouse - cat2;
   };
   if(mouse - cat2 < 0){
-    distanceCat2 = (mouse - cat2) * -1   
+    distanceCat2 = (mouse - cat2) * -1;   
   };
 
-
-  if(distanceCat1 > distanceCat2){
+  if(distanceCat1 < distanceCat2){
   return 'cat1';
 
   }
 
-  if (distanceCat1 < distanceCat2){
+  if (distanceCat1 > distanceCat2){
     return 'cat2';
 
   }
@@ -99,7 +99,6 @@ function catAndMouse(mouse, cat1, cat2) {
     }
 
 }
-console.log(catAndMouse(1,0,2))
 
 // Desafio 8
 function fizzBuzz(numberArray) {
