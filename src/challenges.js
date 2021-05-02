@@ -194,3 +194,5 @@ function catAndMouse(mouse, cat1, cat2) {
     fizzBuzz,
     footballPoints,
     highestCount,
+    splitSentence,
+  };
