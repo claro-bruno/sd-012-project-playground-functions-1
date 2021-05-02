@@ -36,48 +36,51 @@ function highestCount(Array) {
 }
 
 // Desafio 7
-// function catAndMouse(mouse, cat1, cat2) {
-//   let distancia1 = cat1 - mouse;
-//   let distancia2 = cat2 - mouse;
-//   if (distancia2 < distancia1) {
-//     return 'cat2';
-//   } else if (distancia1 < distancia2) {
-//     return 'cat1';
-//   } else if (distancia1 === distancia2) {
-//     return 'os gatos trombam e o rato foge';
-//   }
-// }
+function catAndMouse(mouse, cat1, cat2) {
+  let distancia1 = cat1 - mouse;
+  let distancia2 = cat2 - mouse;
+  if (distancia2 < distancia1) {
+    return 'cat2';
+  } else if (distancia1 < distancia2) {
+    return 'cat1';
+  } else if (distancia1 === distancia2) {
+    return 'os gatos trombam e o rato foge';
+  }
+}
 
-// // Desafio 8
-// function fizzBuzz(Array) {
-//   let resultado = [];
-//   Array.forEach(function(numero) {
-//     if ((numero % 3 === 0) && (numero % 5 !== 0)) {
-//       resultado.push('fizz');
-//     } else if ((numero % 3 !== 0) && (numero % 5 === 0)) {
-//       resultado.push('buzz');
-//     } else if ((numero % 3 === 0) && (numero % 5 === 0)) {
-//       resultado.push('fizzBuzz');
-//     } else {
-//       resultado.push('bug!');
-//     }
-//   });
-// }
+// Desafio 8
+function fizzBuzz(Array) {
+  let resultado = [];
+  Array.forEach(function(numero) {
+    if ((numero % 3 === 0) && (numero % 5 !== 0)) {
+      resultado.push('fizz');
+    } else if ((numero % 3 !== 0) && (numero % 5 === 0)) {
+      resultado.push('buzz');
+    } else if ((numero % 3 === 0) && (numero % 5 === 0)) {
+      resultado.push('fizzBuzz');
+    } else {
+      resultado.push('bug!');
+    }
+  });
+}
 
 // Desafio 9
 function encode(string) {
-  string.replaceAll('a', '1');
-  string.replaceAll('e', '2');
-  string.replaceAll('i', '3');
-  string.replaceAll('o', '4');
-  string.replaceAll('u', '5');
+  string = string.split('a').join('1');
+  string = string.split('e').join('2');
+  string = string.split('i').join('3');
+  string = string.split('o').join('4');
+  string = string.split('u').join('5');
+  return string;
 }
+
 function decode(string) {
-  string.replaceAll('1', 'a');
-  string.replaceAll('2', 'e');
-  string.replaceAll('3', 'i');
-  string.replaceAll('4', 'o');
-  string.replaceAll('5', 'u');
+  string.split('1').join('a');
+  string.split('2').join('e');
+  string.split('3').join('i');
+  string.split('4').join('o');
+  string.split('5').join('u');
+  return string;
 }
 
 module.exports = {
