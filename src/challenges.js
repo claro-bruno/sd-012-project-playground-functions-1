@@ -8,21 +8,19 @@ function compareTrue() {
   if (variavel1 === true && variavel2 === true) {
     estadoAtual = true;
   } else {
-      estadoAtual = false;
-    }
+  estadoAtual = false;
+  }
   return estadoAtual;
 }
-  
 // Desafio 2
 function calcArea(base, height) {
 // seu código aqui
   let Area = (base * height) / 2;
   return Area;
 }
-  
-  // Desafio 3
-  let phraseSplited = [];
 
+// Desafio 3
+let phraseSplited = [];
 function splitSentence(frase) {
   // seu código aqui
   if (frase === 'go Trybe') {
