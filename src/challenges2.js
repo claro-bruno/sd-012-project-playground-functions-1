@@ -21,40 +21,37 @@ function generatePhoneNumber(array) {
   let ddd = "";
   let primeiraPart = "";
   let segundaPart = "";
-  let repete = 0;
-  let contagem = 0;
   if (array.length !== 11){
     return "Array com tamanho incorreto."
-  }
+  };
   for (let index in array){
     if (numero[index] < 0 || numero[index] > 9){
       return "não é possível gerar um número de telefone com esses valores"
+    };
+  };
+  for (let index = 0; index < array.length - 1; index += 1){
+    let contagem = 0;
+    for(let index2 = 0; index2 < array.length; index2 += 1){
+      if (array[index] === array[index2]){
+        contagem += 1;
+      } if (contagem >= 3){
+        return "não é possível gerar um número de telefone com esses valores"
+      }
     }
-  }
-  for (let index in array){
-    if (array[index] == numero[index]){
-      repete = array[index]
-    }
-  }
-  for (let index in array){
-    if (array[index] == repete){
-      contagem += 1
-    }
-  }
-  if (contagem > 2){
-    return "não é possível gerar um número de telefone com esses valores"
   }
   for (let index = 0; index <= 1; index += 1){
     ddd += numero[index];
-}
+};
   for (let index = 2; index <= 6; index += 1){
     primeiraPart += numero[index]; 
-  }
+  };
   for(let index = 7; index < 11; index += 1){
     segundaPart += numero[index];
-}
+};
   return `(${ddd}) ${primeiraPart}-${segundaPart}`
-}
+};
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 5, 5, 8, 9, 0, 1]));
+//console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
 let eTringulo = false;
