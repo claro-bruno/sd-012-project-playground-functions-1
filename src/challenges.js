@@ -68,9 +68,11 @@ function fizzBuzz(arrayOfNumber) {
   for (let index = 0; index < arrayOfNumber.length; index += 1) {
     if (arrayOfNumber[index] % 3 === 0 && arrayOfNumber[index] % 5 !== 0) {
       arrayOfNumber[index] = 'fizz';
-    } else if (arrayOfNumber[index] % 3 !== 0 && arrayOfNumber[index] % 5 === 0) {
+    }
+    if (arrayOfNumber[index] % 3 !== 0 && arrayOfNumber[index] % 5 === 0) {
       arrayOfNumber[index] = 'buzz';
-    } else if (arrayOfNumber[index] % 3 === 0 && arrayOfNumber[index] % 5 === 0) {
+    }
+    if (arrayOfNumber[index] % 3 === 0 && arrayOfNumber[index] % 5 === 0) {
       arrayOfNumber[index] = 'fizzBuzz';
     } else {
       arrayOfNumber[index] = 'bug!';
