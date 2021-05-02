@@ -25,10 +25,8 @@ function concatName(texto) {
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-
-  if (wins / 3 >= 14 && ties === 8) return '50 Pontos';
-  if (wins === 15 && ties === 2) return '5 Pontos';
-  if (wins === 0 && ties === 0) return '0 Pontos';  
+  let resultado = wins * 3 + thies;
+  return resultado;
 }
 
 // Desafio 6
