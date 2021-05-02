@@ -45,6 +45,7 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(matriz) {
+  let matriz = [9, 25];
   let resposta = [];
   for (let index = 0; index < matriz.length; index += 1) {
     if (matriz[index] % 3 === 0 && matriz[index] % 5 === 0) { 
@@ -57,7 +58,10 @@ function fizzBuzz(matriz) {
       resposta.push('bug!');
     }
   }
-  return resposta;
+  console.log(resposta);
+    return resposta;
+   
+
 }
 
 // Desafio 9
@@ -86,6 +90,7 @@ function encode(variavel) {
     }
     resposta += caracter;
   }
+  return resposta;
 }
 
 function decode(variavel) {
@@ -113,6 +118,7 @@ function decode(variavel) {
     }
     resposta += caracter;
   }
+  return resposta;
 }
 
 module.exports = {
