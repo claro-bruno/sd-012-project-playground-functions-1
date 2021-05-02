@@ -74,13 +74,24 @@ function fizzBuzz(arrayFizzBuzz) {
 }
 
 // Desafio 9
+ //https://www.devmedia.com.br/javascript-replace-substituindo-valores-em-uma-string/39176
 function encode(stringEncode) {
-  // seu código aqui
+  let stringEncodedA = stringEncode.replace(/a/g, '1');
+  let stringEncodedAE = stringEncodedA.replace(/e/g, '2');
+  let stringEncodedAEI = stringEncodedAE.replace(/i/g, '3');
+  let stringEncodedAEIO = stringEncodedAEI.replace(/o/g, '4');
+  let stringEncodedAEIOU = stringEncodedAEIO.replace(/u/g, '5'); 
+ 
+  return stringEncodedAEIOU
 }
-function decode() {
-  // seu código aqui
+function decode(stringDecode) {
+  let stringDecoded1 = stringDecode.replace(/1/g, 'a');
+  let stringDecoded12 = stringDecoded1.replace(/2/g, 'e');
+  let stringDecoded123 = stringDecoded12.replace(/3/g, 'i');
+  let stringDecoded1234 = stringDecoded123.replace(/4/g, 'o');
+  let stringDecoded12345 = stringDecoded1234.replace(/5/g, 'u');
+  return stringDecoded12345 
 }
-
 module.exports = {
   calcArea,
   catAndMouse,
