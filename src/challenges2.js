@@ -64,7 +64,7 @@ function hydrate(drink1, drink2, drink3) {
   };
   let cupOfWater = 0;
   let regex = /\d+/g;
-  for (value of Object.values(drinks)) {
+  for (let value of Object.values(drinks)) {
     if (value.match(regex)) {
       cupOfWater += parseInt (value.match(regex));
     }
@@ -72,11 +72,11 @@ function hydrate(drink1, drink2, drink3) {
   if (cupOfWater === 0) {
     return 'Comece a se embebedar!';     
   }
-  else if (cupOfWater === 1) {
-    return 'Beba um copo de água'
+  if (cupOfWater === 1) {
+    return 'Beba 1 copo de água';
   }
   else {
-    return 'Beba' + ' ' + cupOfWater + ' ' + 'copos de água'
+    return 'Beba' + ' ' + cupOfWater + ' ' + 'copos de água';
   }
 }
 console.log (hydrate (5 + ' ' + 'wine', 9 + ' ' + 'cachaça', 8 + ' ' + 'beer'));
