@@ -1,7 +1,7 @@
 // Desafio 10
 function techList(arrayNomeTech, name) {
-  if (arrayNomeTech === []) {
-    return "Vazio!";
+  if (arrayNomeTech.length === 0) {
+    return 'Vazio!;
   }
 
   let lista = [];
@@ -80,7 +80,7 @@ function triangleCheck(lineA, lineB, lineC) {
   let c = teste3(lineA, lineB, lineC);
   return a && b && c;
 } 
- console.log(triangleCheck(16, 9, 2));
+ 
 
 // Desafio 13
 function hydrate(bebida) {
@@ -92,7 +92,7 @@ function hydrate(bebida) {
     sum = sum + parseInt(result[index]);
   }
 
-    return [sum + " copos de água"];
+    return `${'Beba'} ${sum}` + ' copos de água';
 }
 
 
