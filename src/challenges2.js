@@ -7,14 +7,12 @@ function techList(receiveArray, name) {
   
   if (receiveArray.length === 0) {
     return 'Vazio!';
-  } else if (receiveArray.length <= 5) {
-
-    for (let index = 0; index < objTechOrdened.length; index += 1) {
-      objTechList.push({tec: objTechOrdened[index], name: name});
-    }
-    return objTechList;
-
   }
+
+  for (let index = 0; index < objTechOrdened.length; index += 1) {
+    objTechList.push({tec: objTechOrdened[index], name: name});
+  }
+  return objTechList;
 
 }
 
