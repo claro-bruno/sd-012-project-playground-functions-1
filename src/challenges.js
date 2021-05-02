@@ -84,6 +84,9 @@ function highestCount(arrayDeNumbers) {
 // Desafio 7
 
 function catAndMouse(mouse, cat1, cat2) {
+  let mouse = 0;
+  let cat1 = 0;
+  let cat2 = 0;
     // seu código aqui
     if (cat1 > cat2) {
       conclusao = "cat2";
