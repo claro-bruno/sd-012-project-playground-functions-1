@@ -113,7 +113,7 @@ function encode(texto) {
   }
   return resultado
 }
-console.log(encode('arara'))
+console.log(encode('aeibola'))
 function decode() {
   // seu código aqui
 }
