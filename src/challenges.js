@@ -104,7 +104,7 @@ function encode(string1) {
 
 function decode(string2) {
   let numero = string2.split('');
-  for (let index = 0; index < numero.length; index +=1) {
+  for (let index = 0; index < numero.length; index += 1) {
     if (numero[index] === '1') {
       numero[index] = 'a';
     } else if (numero[index] === '2') { 
