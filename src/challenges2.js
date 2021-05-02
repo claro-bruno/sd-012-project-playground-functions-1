@@ -1,7 +1,22 @@
 // Desafio 10
-function techList() {
+let arrTest = [];
+
+function techList(receiveArray, name) {
   // seu código aqui
+  if (receiveArray == 0) {
+    return 'Vazio!';
+  }
+
+  let objTechOrdened = receiveArray.sort();
+  let objTechList = [];
+
+
+  for (let index = 0; index < objTechOrdened.length; index += 1) {
+    objTechList.push({tec: objTechOrdened[index], name: name});
+  }
+  return objTechList;
 }
+console.log(techList(arrTest, 'Lucas'));
 
 // Desafio 11
 function generatePhoneNumber() {
