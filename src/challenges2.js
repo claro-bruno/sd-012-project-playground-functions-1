@@ -1,6 +1,4 @@
 // Desafio 10
-let arrTest = [];
-
 function techList(receiveArray, name) {
   // seu código aqui
   if (receiveArray == 0) {
@@ -16,7 +14,6 @@ function techList(receiveArray, name) {
   }
   return objTechList;
 }
-console.log(techList(arrTest, 'Lucas'));
 
 // Desafio 11
 function generatePhoneNumber() {
