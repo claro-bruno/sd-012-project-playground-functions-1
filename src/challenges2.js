@@ -14,6 +14,25 @@ function techList(tech, nome) {
 }
 
 // Desafio 11
+function formatNumberPhone(indexArray, value) {
+  let retornoFormato = '';
+  switch (indexArray) {
+  case 0:
+    retornoFormato = `(${value}`;
+    break;
+  case 1:
+    retornoFormato = `${value})`;
+    break;
+  case 6:
+    retornoFormato = `${value} - )`;
+    break;
+  default:
+    retornoFormato = `${value}`;
+    break;
+  }
+  return retornoFormato;
+}
+
 function countNumber(arrayTelefone, value) {
   let counter = 0;
   for (let index = 0; index < arrayTelefone.length; index += 1) {
@@ -21,35 +40,42 @@ function countNumber(arrayTelefone, value) {
   }
   return counter;
 }
+function checkErrorPhone(arrayTelefone, value) {
+  let errorMessage = '';
+
+  if (arrayTelefone.length > 11) {
+    errorMessage = 'Array com tamanho incorreto.';
+  } else if (countNumber(arrayTelefone, value) > 2 || value < 0 || value > 9) {
+    errorMessage = 'não é possível gerar um número de telefone com esses valores';
+  }
+  return errorMessage;
+}
+
 function generatePhoneNumber(arrayTelefone) {
   let phoneFormated = '';
-  let errorMessage = '';
-  let counter = 0;
+  let mensagemErro = '';
 
-  if (arrayTelefone.length === 11) {
-    for (let index = 0; index < arrayTelefone.length ; index += 1) {
-      counter = countNumber(arrayTelefone, arrayTelefone[index]);
-      errorMessage = arrayTelefone[index] < 0 || arrayTelefone[index] > 9 || counter > 2 ? errorMessage = 'não é possível gerar um número de telefone com esses valores' : '';
-      if (errorMessage.length > 0) {
-        break;
-      } else {
-        phoneFormated += index === 0 ? `(${arrayTelefone[index]}` : index === 1 ? `${arrayTelefone[index]}) ` : index === 6 ? `${arrayTelefone[index]}-` : `${arrayTelefone[index]}`;
-      }
+  for (let index = 0; index < arrayTelefone.length; index += 1) {
+    mensagemErro = checkErrorPhone(arrayTelefone, arrayTelefone[index]);
+    if (mensagemErro.length > 0) {
+      break;
+    } else {
+      phoneFormated += formatNumberPhone(index, arrayTelefone[index]);
     }
   }
-  else {
-    errorMessage = 'Array com tamanho incorreto.';
-  }
-  return errorMessage.length === 0 ? phoneFormated : errorMessage ;
+
+  return mensagemErro.length === 0 ? phoneFormated : mensagemErro;
 }
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-    let checklineA = lineA < (lineB + lineC) && lineA > Math.abs(lineB - lineC) ?  true : false;
+
+  let checklineA = lineA < (lineB + lineC) && lineA > Math.abs(lineB - lineC) ?  true : false;
     let checklineB = lineB < (lineA + lineC) && lineB > Math.abs(lineA - lineC) ?  true : false;
     let checklineC = lineC < (lineA + lineB) && lineC > Math.abs(lineA - lineB) ?  true : false;
 
     return checklineA === true || checklineB === true || checklineC === true ? true: false;
+
 }
 
 // Desafio 13
@@ -69,4 +95,7 @@ module.exports = {
   techList,
   hydrate,
   triangleCheck,
+  checkErrorPhone,
+  countNumber,
+  formatNumberPhone,
 };
