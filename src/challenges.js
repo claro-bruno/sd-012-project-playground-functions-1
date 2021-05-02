@@ -103,7 +103,6 @@ function encode(frase9) {
     .replace(/u/gi, '5');
   return fraseCodificada;
 }
-console.log(encode(frase9))
 
 function decode(novaFrase) {
   let fraseDecodificada = novaFrase.replace(/1/gi, 'a')
