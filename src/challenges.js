@@ -54,7 +54,7 @@ function fizzBuzz(array) {
     resultadoArray.push('fizzBuzz');
   } else if (array[indice] % 3 === 0){
     resultadoArray.push('fizz')
-  } else if (array[indice] % 5 === 0)){
+  } else if (array[indice] % 5 === 0){
     resultadoArray.push('buzz')
   } else {
     resultadoArray.push('bug!')
