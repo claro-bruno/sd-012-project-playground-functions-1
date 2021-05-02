@@ -116,9 +116,29 @@ function encode(stringParam) {
 }
 // console.log(encode('hi there!'));
 
-function decode() {
-  
+function decode(stringParam2) {
+  let stringCodificada2 = '';
+  let consoante2 = '';
+
+  for (let index = 0; index < stringParam2.length; index += 1){
+    if (stringParam2[index] === '1'){
+      stringCodificada2 += 'a';
+    } else if (stringParam2[index] === '2') {
+      stringCodificada2 += 'e';
+    } else if (stringParam2[index] === '3') {
+      stringCodificada2 += 'i';
+    } else if (stringParam2[index] === '4') {
+      stringCodificada2 += 'o';
+    } else if (stringParam2[index] === '5') {
+      stringCodificada2 += 'u';
+    } else {
+      consoante2 = stringParam2[index];
+      stringCodificada2 += consoante2;
+    }
+  };
+  return stringCodificada2; 
 }
+// console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
