@@ -1,14 +1,14 @@
 // Desafio 10
 
 let testArray = ["React", "Jest", "HTML", "CSS", "JavaScript"];
-testArray.sort();
 
 function techList(arrayTech, name) {
   let arrayObjetos = [];
+  arrayTech.sort();
   for (let index in arrayTech) {
     arrayObjetos.push({
     tech: arrayTech[index],
-    name: name
+    name: name,
     });
   };
 
