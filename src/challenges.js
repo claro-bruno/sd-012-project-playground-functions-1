@@ -128,29 +128,24 @@ function fizzBuzz() {
   
 // Desafio 9
 function encode(frase2) {
-  let string1 = "aeiou";
-  let string2 = "12345"
+  let string1 = 'aeiou';
+  let string2 = '12345';
   let indice1 = 0;
-  let frase3 = ""; 
-  for (let indice2 = 0; indice2 < frase2.length; indice2 +=1){
-       
-    if (indice1 < frase2.length){
+  let frase3 = '';
+  for (let indice2 = 0; indice2 < frase2.length; indice2 += 1) {
+    if (indice1 < frase2.length) {
       frase3 = frase2.replace(string1[indice1], string2[indice1]);
-      frase2 = frase3; 
+      frase2 = frase3;
       indice1 += 1;
-      
-      if (indice1 > string1.length){
+      if (indice1 > string1.length) {
         indice1 = 0;
-      }    
-    }  
+      }
+    }
   }
-return frase3;
+  return frase3;
 }
 
-//console.log(encode("hi there!"));
- 
-
-
+// console.log(encode("hi there!"));
 function decode(frase4) {
   let string3 = 'aeiou';
   let string4 = '12345';
