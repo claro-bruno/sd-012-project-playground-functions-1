@@ -27,7 +27,7 @@ function generatePhoneNumber(array) {
     return "Array com tamanho incorreto."
   }
   for (let index in array){
-    if (numero[index] <= 0 || numero[index] > 9){
+    if (numero[index] < 0 || numero[index] > 9){
       return "não é possível gerar um número de telefone com esses valores"
     }
   }
