@@ -80,6 +80,7 @@ function triangleCheck(lineA, lineB, lineC) {
   let c = teste3(lineA, lineB, lineC);
   return a && b && c;
 } 
+ console.log(triangleCheck(16, 9, 2));
 
 // Desafio 13
 function hydrate(bebida) {
