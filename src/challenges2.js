@@ -53,26 +53,32 @@ function generatePhoneNumber(numbers) {
 } 
 
 // Desafio 12
-function triangleCheck(lineA, lineB, lineC) {
-  if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
-    let teste1 = true;
-  } else {
+function teste1(lineA, lineB, lineC) {
+  if (lineA > lineB + lineC || lineA < Math.abs(lineB - lineC)) {
     return false;
   }
+  return true;
+} 
 
-  if (lineB < lineA + lineC && lineB > Math.abs(lineA - lineC)) {
-    let teste2 = true;
-  } else {
+function teste2(lineA, lineB, lineC) {
+  if (lineB > lineA + lineC || lineB < Math.abs(lineC - lineA)) {
     return false;
   }
-  
-  if (lineC < lineA + lineB && lineC > Math.abs(lineA - lineB)) {
-    let teste3 = true;
-  } else {
+  return true;
+}
+
+function teste3(lineA, lineB, lineC) {
+  if (lineC > lineA + lineB || lineC < Math.abs(lineA - lineB)) {
     return false;
   }
-  
- return teste1 && teste2 && teste3;
+  return true;
+}
+
+function triangleCheck(lineA, lineB, lineC) {
+  let a = teste1(lineA, lineB, lineC);
+  let a = teste2(lineA, lineB, lineC);
+  let a = teste3(lineA, lineB, lineC);
+  return a && b && c;
 } 
 
 // Desafio 13
