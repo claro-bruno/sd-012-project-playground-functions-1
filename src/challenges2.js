@@ -32,13 +32,13 @@ function techList(techs, name) {
 function generatePhoneNumber(phoneNumber) {
   // verificar se é diferente de 11:
   if (phoneNumber.length !== 11) {
-    return "Array com tamanho incorreto.";
+    return 'Array com tamanho incorreto.';
   }
 
   // verificar se tem numero menor q 0:
   for (let index in phoneNumber) {
     if (phoneNumber[index] < 0) {
-      return "não é possível gerar um número de telefone com esses valores";
+      return 'não é possível gerar um número de telefone com esses valores';
     }
   }
 
@@ -57,7 +57,7 @@ function generatePhoneNumber(phoneNumber) {
     repeats = 0;
   }
   if (mostRepeat >= 3) {
-    return "não é possível gerar um número de telefone com esses valores";
+    return 'não é possível gerar um número de telefone com esses valores';
   }
 
   // verificar maior numero:
@@ -66,7 +66,7 @@ function generatePhoneNumber(phoneNumber) {
   });
 
   if (maxNumber > 9) {
-    return "não é possível gerar um número de telefone com esses valores";
+    return 'não é possível gerar um número de telefone com esses valores';
   }
 
   // em fim, vamos gerar o numero de telefone:
@@ -96,9 +96,19 @@ function triangleCheck(lineA, lineB, lineC) {
 // console.log(triangleCheck(10, 14, 8))
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let numbersInString = (string.match(/\d/g));
+  let sum = 0;
+  for (let index = 0; index < numbersInString.length; index += 1) {
+    let num = parseInt(numbersInString[index]);
+    sum += num;
+  }
+  if (sum === 1) {
+    return (sum + ' copo de água');
+  }
+  return (sum + ' copos de água');
 }
+// console.log(hydrate('1 cachaça'));
 
 module.exports = {
   generatePhoneNumber,
