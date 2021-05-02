@@ -79,14 +79,19 @@ console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate(drinks) {
-  let receivedDrink = drinks.split("").filter(n => (Number(n) || n == 0)).join('');
-  let stringToReplace = receivedDrink.replace(/[^0-9]/g,'');
+  let receivedDrink = drinks.split('').filter(n => (Number(n) || n === 0)).join('');
+  let stringToReplace = receivedDrink.replace(/[^0-9]/g, '');
   let newArray = stringToReplace.split('');
   let sunString = 0;
   for (let index = 0; index < newArray.length; index += 1) {
     sunString += parseInt(newArray[index]);
   }
-  return `${sunString} copos de água`;
+
+  if (sunString === 1) {
+    return `${sunString} copo de água`;
+  } else {
+    return `${sunString} copos de água`;
+  }
 }
 console.log(hydrate('1 cerveja'));
 
