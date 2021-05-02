@@ -43,7 +43,7 @@ function generatePhoneNumber(array2) {
       contador = 0;
     };
   }
-  return '(' + array2[0]+array2[1] + ') ' + array2[2]+array2[3]+array2[4]+array2[5]+array2[6] + '-' + array2[7]+array2[8]+array2[9]+array2[10] + '.';
+  return '(' + array2[0]+array2[1] + ') ' + array2[2]+array2[3]+array2[4]+array2[5]+array2[6] + '-' + array2[7]+array2[8]+array2[9]+array2[10];
 };
 
 console.log(generatePhoneNumber([1, 2, 3, 3, 3, 6, 7, 8, 9, 0, 1]));
