@@ -46,12 +46,20 @@ function generatePhoneNumber(array2) {
   return '(' + array2[0]+array2[1] + ') ' + array2[2]+array2[3]+array2[4]+array2[5]+array2[6] + '-' + array2[7]+array2[8]+array2[9]+array2[10];
 };
 
-console.log(generatePhoneNumber([1, 2, 3, 3, 3, 6, 7, 8, 9, 0, 1]));
+//console.log(generatePhoneNumber([1, 2, 3, 3, 3, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
-}
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA + lineB > lineC && lineA + lineC > lineB && lineB + lineC > lineA) {
+    if (lineA > Math.abs(lineC - lineB) && lineB > Math.abs(lineC - lineA) && lineC > Math.abs(lineA - lineB)) {
+      return true;  
+    }    
+  } else {
+    return false;
+  }
+};
+
+console.log(triangleCheck(100, 14, 8));
 
 // Desafio 13
 function hydrate() {
