@@ -92,20 +92,41 @@ function fizzBuzz(arrayNumbers) {
 // console.log(fizzBuzz([9, 25]));
 
 // // Desafio 9
-// function encode() {
-//   // seu código aqui
-// }
-// function decode() {
-//   // seu código aqui
-// }
+function encode(stringParam) {
+   let stringCodificada = '';
+   let consoante = '';
+
+  for (let index = 0; index < stringParam.length; index += 1){
+    if (stringParam[index] === 'a'){
+      stringCodificada += '1';
+    } else if (stringParam[index] === 'e') {
+      stringCodificada += '2';
+    } else if (stringParam[index] === 'i') {
+      stringCodificada += '3';
+    } else if (stringParam[index] === 'o') {
+      stringCodificada += '4';
+    } else if (stringParam[index] === 'u') {
+      stringCodificada += '5';
+    } else {
+      consoante = stringParam[index];
+      stringCodificada += consoante;
+    }
+  };
+  return stringCodificada; 
+}
+// console.log(encode('hi there!'));
+
+function decode() {
+  
+}
 
 module.exports = {
   calcArea,
   catAndMouse,
   compareTrue,
   concatName,
-  // decode,
-  // encode,
+  decode,
+  encode,
   fizzBuzz,
   footballPoints,
   highestCount,
