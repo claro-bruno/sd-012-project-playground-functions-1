@@ -1,6 +1,5 @@
 // Desafio 1
 function compareTrue() {
-  // seu código aqui
 }
 
 // Desafio 2
@@ -10,15 +9,16 @@ function calcArea() {
 
 // Desafio 3
 function splitSentence() {
-  // seu código aqui
+
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(nomes) {
+let nomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];{
+ console.log(nomes [nomes.length-1],"," ,nomes[0])
 }
 
-// Desafio 5
+  // Desafio 5
 function footballPoints() {
   // seu código aqui
 }
