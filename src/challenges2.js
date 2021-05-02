@@ -2,7 +2,7 @@
 function techList(name, array7) {
   novaArray = [];
  
-  for (indiceDaArray7 = 0; indiceDaArray7 < array7.length; indiceDaArray7 =+ 1 ) {
+  for (let indiceDaArray7 = 0; indiceDaArray7 < array7.length; indiceDaArray7 =+ 1 ) {
     saidaFuncao = {
       tech: array7[indiceDaArray7], 
       nome: name
@@ -16,9 +16,9 @@ function techList(name, array7) {
   return novaArray;
 }
 
-techList("Eder", ["React", "Jest", "HTML", "CSS", "JavaScript"]) 
+//techList('Eder', ['React', 'Jest', 'HTML', 'CSS', 'JavaScript']) 
 
-console.log(novaArray);
+//console.log(novaArray);
 
 // Desafio 11
 function generatePhoneNumber() {
