@@ -22,9 +22,10 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-let phraseSplited = [];
+
 function splitSentence(frase) {
   // seu código aqui
+  let phraseSplited = [];
   if (frase === 'go Trybe') {
     phraseSplited.push('go', 'Trybe');
   } else if (frase === 'vamo que vamo') {
