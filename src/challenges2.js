@@ -8,9 +8,14 @@ function techList(stack, person) {
       name: person
     });
   }
-  return stackName;
+  if (stackName >= 0) {
+    return 'Vazio!'
+  } else {
+    return stackName;
+  }
 }
-//console.table(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
+//console.log(techList([]));
 
 
 // Desafio 11
