@@ -1,7 +1,7 @@
 // Desafio 10
 function techList(arrayOfTech, names) {
   let newArrayTech = [];
-  if (arrayOfTech === []) {
+  if (arrayOfTech.length === 0) {
     return 'Vazio!';
   } else {
     for (let index = 0; index < arrayOfTech.length; index += 1) {
@@ -22,7 +22,7 @@ function techList(arrayOfTech, names) {
     return newArrayTech;
   }
 }
-// console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 console.log(techList([], 'Lucas'));
 
 // Desafio 11
