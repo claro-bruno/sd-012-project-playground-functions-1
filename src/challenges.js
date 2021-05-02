@@ -1,11 +1,10 @@
 // Desafio 1
-function compareTrue(param1 , param2) {
-  if(param1 === param2 && param1 === true) {
-  return true;
+function compareTrue(param1, param2) {
+if (param1 === param2 && param1 === true) {
+      return true;
 
-}
-else {
-  return false; 
+  }else {
+    return false; 
 }
 };
 
@@ -58,15 +57,12 @@ function footballPoints(wins, ties) {
 let mais;
 function highestCount(array) {
   for (let index = 0; index < array.length; index += 1){
-    if (array[index] = Math.max(array)){
+    (array[index] = Math.max(array))
       mais += 1;
-      return mais;
+    
     }
-    else (Math.max(array) = 0){
-      return mais;
-    }
+    return mais;
   }
-}
 
 // Desafio 7
 function catAndMouse() {
