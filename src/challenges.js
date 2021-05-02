@@ -119,13 +119,51 @@ function fizzBuzz(numbersFizzBuzz) {
 //console.log (fizzBuzz([9, 25]))
 
 // Desafio 9
-function encode() {
+function encode(stringEncode) {
   // seu código aqui
+  let code = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  };
+  let outEncode = '';
+  
+  for (let index of stringEncode) {
+    for (let key in code) {
+      if (index === key) {
+        index = code[key];
+      }; 
+    };
+    outEncode += index;
+  };
+  return outEncode
 };
-function decode() {
-  // seu código aqui
-};
+//console.log(encode('cafe'))
 
+function decode(stringEncode) {
+  // seu código aqui
+  let code = {
+   1: 'a',
+   2: 'e',
+   3: 'i',
+   4: 'o',
+   5: 'u',
+  };
+  let outEncode = '';
+  
+  for (let index of stringEncode) {
+    for (let key in code) {
+      if (index === key) {
+        index = code[key];
+      }; 
+    };
+    outEncode += index;
+  };
+  return outEncode
+};
+console.log(decode("12345"))
 module.exports = {
   calcArea,
   catAndMouse,
@@ -138,3 +176,18 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+
+
+
+let codificar = {
+  a: 1,
+  e: 2,
+  i: 3,
+  o: 4,
+  u: 5,
+}
+for(key in codificar){
+  console.log(key)
+}
+
+
