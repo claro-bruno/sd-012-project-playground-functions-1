@@ -129,29 +129,25 @@ return decodifica.join('');
 };
 // Desafio 10
 function techList(tecno, name){
-    
+  let objectListSorting = tecno.sort();
   let objectList = [];
   
-      if(tecno.length === 0){
-          return '"Vazio!"'         
+      if(objectListSorting.length === 0){
+          return 'Vazio!'         
           
       } else {
-        for(let index = 0; index < tecno.length ; index += 1){
-          let valor = tecno[index]
-            let objectTech  = { 
+        for(let index = 0; index < objectListSorting.length; index += 1){
+          let valor = objectListSorting[index]
+            objectList[index]  = { 
             "tech": valor, 
             "name": name
-          }; 
-          objectList.push(objectTech);      
+          };       
       };
     };
   
-  return objectList.sort(function(a, b){
-      if(a.tech < b.tech) return -1;
-      if(a.tech > a.tech) return 1;
-      });
+  return objectList
 };
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas'));
+
 
 module.exports = {
   calcArea,
