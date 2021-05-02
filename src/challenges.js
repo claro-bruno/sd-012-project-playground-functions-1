@@ -28,8 +28,6 @@ function splitSentence(string) {
 }
 // console.log(splitSentence('Waltton Coelho'));
 
-
-
 // Desafio 4
 
 function concatName(palavra) {
@@ -39,11 +37,9 @@ function concatName(palavra) {
   return `${ palavra[palavra.length - 1] }, ${ palavra[0] }`;
   // A função está retornando apenas a primeira letra das palavras.
 
-}
+};
 
 // console.log(concatName('Waltton Clayton Coelho Santos'));
-
-
 
 // Desafio 5
 function footballPoints(wins, ties) {
