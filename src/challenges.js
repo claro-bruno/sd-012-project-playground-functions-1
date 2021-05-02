@@ -5,6 +5,7 @@
 
 function compareTrue(variavel1, variavel2) {
   // seu código aqui
+  let condicao = false;
   if ( ((variavel1 + variavel2) % 2) == 0 && ((variavel1 + variavel2) % 5) == 0) {
     condicao = true;
   } else {
