@@ -9,18 +9,19 @@ const { concatName } = require("./challenges");
 function techList(lista, nomeT) {
   let listaTech = {};
   lista = lista.sort();
-  for(let i = 0; i < lista.length; i++){ 
-    listaTech["tech"+[i]] = {tech:lista[i], name:nomeT};
-  }
-  for(let iV = 0; iV < listaTech; iV++){
-    return (listaTech[iV]);
-  }
- 
+    for(let i = 0; i < lista.length; i++){ 
+      listaTech["tech"+[i]] = {tech:lista[i], name:nomeT};
+    }
+    for(let cr = 0; cr < listaTech.length; cr++){
+      
+    }
+    return listaTech;
 }
 
-let listaVar = ["React", "Jest", "HTML", "CSS", "JavaScript"];
-let nomeT = "Janderson";
-techList(listaVar, nomeT);
+
+// let listaVar = ["React", "Jest", "HTML", "CSS", "JavaScript"];
+// let nomeT = "Janderson";
+// techList(listaVar, nomeT);
 
 
 
@@ -42,10 +43,10 @@ function generatePhoneNumber(n) {
       if(n[i] !== number){
         contador++;
         number.push(n[i]);
-        console.log(number);
-        console.log(contador);
+        // console.log(number);
+        // console.log(contador);
       }else{
-        console.log("deu ruim")
+        // console.log("deu ruim")
       }
     // if(n.length < 10 && n.length >10);{
     //     outputNumber = "Array com tamanho incorreto.";
@@ -56,7 +57,7 @@ function generatePhoneNumber(n) {
   }
 let nu = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
 generatePhoneNumber(nu);
-console.log(result);
+return result;
 }
 
 // Desafio 12
