@@ -19,17 +19,13 @@ function splitSentence(fraseDesafio3) {
 
 // Desafio 4
 function concatName(arrayString) {
-
   let finalElement = arrayString[arrayString.length - 1] + ', ' + arrayString[0];
-
   return finalElement;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-
   let points = (wins * 3) + (ties * 1);
-
   return points;
 }
 
@@ -66,11 +62,11 @@ function catAndMouse(mouse, cat1, cat2) {
   let distanciaCat2 = mouse - cat2;
 
   if (Math.abs(distanciaCat1) < Math.abs(distanciaCat2)) {
-    return "cat1";
+    return 'cat1';
   } else if (Math.abs(distanciaCat1) === Math.abs(distanciaCat2)) {
-    return "os gatos trombam e o rato foge";
+    return 'os gatos trombam e o rato foge';
   } else {
-    return "cat2";
+    return 'cat2';
   }
 }
 
@@ -80,13 +76,13 @@ function fizzBuzz(arrayDesafio8) {
   let arrayNova8 = [];
   for (let a = 0; a < arrayDesafio8.length; a += 1) {
     if (arrayDesafio8[a] % 5 === 0 && arrayDesafio8[a] % 3 === 0) {
-      arrayNova8.push("fizzBuzz");
+      arrayNova8.push('fizzBuzz');
     } else if (arrayDesafio8[a] % 5 === 0) {
-      arrayNova8.push("buzz");
+      arrayNova8.push('buzz');
     } else if (arrayDesafio8[a] % 3 === 0) {
-      arrayNova8.push("fizz");
+      arrayNova8.push('fizz');
     } else {
-      arrayNova8.push("bug!");
+      arrayNova8.push('bug!');
     }
   }
   return arrayNova8;

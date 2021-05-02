@@ -15,19 +15,18 @@ function techList(techs, name) {
   return listaVazia;
 }
 
-
 // Desafio 11
 function generatePhoneNumber(phNumber) {
 
   //verifica se é diferente de 11
   if (phNumber.length !== 11) {
-    return "Array com tamanho incorreto.";
+    return 'Array com tamanho incorreto.';
   }
 
   //verifica se é menor que 0 ou maior que 9
   for (let key in phNumber) {
     if (phNumber[key] < 0 || phNumber[key] > 9) {
-      return "não é possível gerar um número de telefone com esses valores";
+      return 'não é possível gerar um número de telefone com esses valores';
     }
   }
 
