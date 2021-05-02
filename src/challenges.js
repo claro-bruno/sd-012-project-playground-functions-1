@@ -93,14 +93,14 @@ console.log(catAndMouse(8, 9, 7));
 
 let arrayTeste = [9, 25];
 
-function fizzBuzz( array) {
+function fizzBuzz(array1) {
   let resultado4 = [];
-  for (let index in array) {
-    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
+  for (let index in array1) {
+    if (array1[index] % 3 === 0 && array1[index] % 5 === 0) {
       resultado4.push('fizzBuzz');
-    } else if (array[index] % 3 === 0) {
+    } else if (array1[index] % 3 === 0) {
       resultado4.push('fizz');
-    } else if (array[index] % 5 === 0) {
+    } else if (array1[index] % 5 === 0) {
       resultado4.push('buzz');
     } else {
       resultado4.push('bug!');
@@ -112,12 +112,69 @@ function fizzBuzz( array) {
 console.log(fizzBuzz(arrayTeste));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+
+let frase2 = 'Hi there!';
+
+function encode(frase) {
+  let codificada = '';
+  for (let key = 0; key < frase.length; key +=1) {
+    switch (frase[key]) {
+      case 'a':
+        codificada += 1;
+        break;
+      case 'e':
+        codificada += 2;
+        break;
+      case 'i':
+        codificada += 3;
+        break;
+      case 'o':
+          codificada += 4;
+          break;
+      case 'u':
+          codificada += 5;
+          break;
+      default:
+          codificada += frase[key];
+          break;
+    };
+  };
+  return codificada;
+};
+
+console.log(encode(frase2));
+
+let fraseCod = 'H3 th2r2!';
+
+function decode(frase3) {
+  let decodificada = '';
+
+  for (let index = 0; index < frase3.length; index += 1) {
+    switch (frase3[index]) {
+      case '1':
+        decodificada += 'a';
+        break;
+      case '2':
+        decodificada += 'e';
+        break;
+      case '3':
+        decodificada += 'i';
+        break;
+      case '4':
+        decodificada += 'o';
+        break;
+      case '5':
+        decodificada += 'u';
+        break;
+      default:
+        decodificada += frase3[index];
+        break;
+    };
+  };
+  return decodificada;
+};
+
+console.log(decode(fraseCod));
 
 module.exports = {
   calcArea,
