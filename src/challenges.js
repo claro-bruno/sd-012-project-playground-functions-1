@@ -39,8 +39,6 @@ let pontuação = ((wins * 3) + (ties * 1));
 console.log(footballPoints(14, 8));
 
 // Desafio 6
-let valores = [9, 1, 2, 9, 9, 5, 7];
-
 function highestCount(valores) {
   let maiorNumero = Math.max(...valores)
   let contador = 0;
@@ -51,7 +49,7 @@ function highestCount(valores) {
   }
   return contador;
 }
-console.log(highestCount(valores));
+console.log(highestCount([9, 1, 2, 9, 0, 5, 7]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
