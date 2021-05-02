@@ -45,7 +45,7 @@ function generatePhoneNumber(arrayOfNumber) {
     }
   }
   if (arrayOfNumber.length !== 11) {
-    return 'Array com tamanho incorreto';
+    return 'Array com tamanho incorreto.';
   } else if (isPossible === false) {
     return 'não é possível gerar um número de telefone com esses valores';
   } else {
