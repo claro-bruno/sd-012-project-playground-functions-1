@@ -117,7 +117,7 @@ let frase2 = 'Hi there!';
 
 function encode(frase) {
   let codificada = '';
-  for (let key = 0; key < frase.length; key +=1) {
+  for (let key = 0; key < frase.length; key += 1) {
     switch (frase[key]) {
       case 'a':
         codificada += 1;
@@ -129,14 +129,14 @@ function encode(frase) {
         codificada += 3;
         break;
       case 'o':
-          codificada += 4;
-          break;
+        codificada += 4;
+        break;
       case 'u':
-          codificada += 5;
-          break;
+        codificada += 5;
+        break;
       default:
-          codificada += frase[key];
-          break;
+        codificada += frase[key];
+        break;
     };
   };
   return codificada;
