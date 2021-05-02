@@ -33,7 +33,7 @@ function generatePhoneNumber(numeros) {
   let posicaoMaxima = 15;
   let resultado = "";
 
-  if (numeros.length < 11) {
+  if (numeros.length != 11) {
     resultado = "Array com tamanho incorreto.";
   } else {
     for (let index of numeros) {
