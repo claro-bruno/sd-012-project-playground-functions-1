@@ -8,7 +8,10 @@ function techList(name, array7) {
       nome: name,
     };
     novaArray.push(saidaFuncao);
-  }
+    if (array7.length === 0) {
+      novaArray = 'Vazio!';    
+    }
+  }  
   return novaArray;
 }
 
