@@ -127,7 +127,7 @@ function fizzBuzz(numeros) {
   return result;
 }
 
-console.log(fizzBuzz([9, 25]));
+
 
 // Desafio 9
 function encode() {
