@@ -77,6 +77,7 @@ function highestCount(arrayDeNumbers) {
 // Desafio 7
 
 function catAndMouse(mouse, cat1, cat2) {
+  let conclusao = "";
   if (cat1 > cat2 && cat2 >= mouse) {
     conclusao = "cat2";
   } else if (cat2 > cat1 && cat1 >= mouse) {
@@ -91,7 +92,7 @@ function catAndMouse(mouse, cat1, cat2) {
 return conclusao;
 }
   
-// console.log(catAndMouse(9, 10, 11));
+//console.log(catAndMouse(9, 10, 11));
   
 // Desafio 8
 function fizzBuzz() {
