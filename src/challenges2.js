@@ -44,12 +44,8 @@ function generatePhoneNumber(candidateNumbers) {
 function triangleCheck(lineA, lineB, lineC) {
     let possibleA = lineA > Math.abs(lineB - lineC) && lineA < lineB + lineC;
     let possibleB = lineB > Math.abs(lineA - lineC) && lineB < lineA + lineC;
-    let possibleC = lineC > Math.abs(lineA - lineB) && lineC < lineA + lineA;
-    if ((possibleA && possibleB && possibleC) === true) {
-        return true;
-    } else {
-        return false;
-    }
+    let possibleC = lineC > Math.abs(lineA - lineB) && lineC < lineA + lineB;
+    return possibleA && possibleB && possibleC
 }
 
 // Desafio 13
