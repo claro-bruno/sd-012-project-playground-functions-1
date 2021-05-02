@@ -60,7 +60,7 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat1Abs = Math.abs(cat1);
   let cat2Abs = Math.abs(cat2);
 
-  if (cat1Abs === cat2Abs) {
+  if ((cat1Abs - mouseAbs) === (cat2Abs - mouseAbs)) {
     return 'os gatos trombam e o rato foge';
   } else if ((cat1Abs - mouseAbs) < cat2Abs) {
     return 'cat1';
@@ -68,7 +68,7 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat2';
   }
 }
-console.log(catAndMouse(1, 0, -2));
+console.log(catAndMouse(1, 0, 2));
 
 // Desafio 8
 function fizzBuzz(arrayOfNumbers) {
