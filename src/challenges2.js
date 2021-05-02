@@ -37,6 +37,7 @@ function generatePhoneNumber(candidateNumbers) {
         }
     }
     let phone = `(${candidateNumbers[0]}${candidateNumbers[1]}) ${candidateNumbers[2]}${candidateNumbers[3]}${candidateNumbers[4]}${candidateNumbers[5]}${candidateNumbers[6]}-${candidateNumbers[7]}${candidateNumbers[8]}${candidateNumbers[9]}${candidateNumbers[10]}`;
+    return phone
 }
 
 // Desafio 12
