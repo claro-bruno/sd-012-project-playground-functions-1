@@ -1,28 +1,21 @@
 // Desafio 10
-
-function ordena (beforeOrdena) {
-
-}
-
 function techList(tecName, name) {
   // seu código aqui
   let techNameOrdenado = tecName.sort();
-  let tecListReturn = []; 
+  let tecListReturn = [];
   if (tecName.length !== 0) {
-  for (const posicaoTechNameOrdenado in techNameOrdenado) {
-    let tecList = {
-      tech: techNameOrdenado[posicaoTechNameOrdenado],
-      name: name
+    for (let key = 0; techNameOrdenado.length > key; key += 1) {
+      let tecList = {
+        tech: techNameOrdenado[key],
+        n4me: name,
+      };
+      tecListReturn.push(tecList);
     }
-    tecListReturn.push(tecList); 
-  }
   } else {
-    return 'Vazio!'
+    return 'Vazio!';
   }
   return tecListReturn;
 }
-
-console.log(techList([], "Lucas"))
 
 // Desafio 11
 function generatePhoneNumber() {
