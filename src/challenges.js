@@ -12,7 +12,7 @@ function compareTrue(variavel1, variavel2, variavel3, variavel4) {
   }
   return estadoAtual;
 }
-console.log(compareTrue(2,2,2,2));
+//console.log(compareTrue(2,2,2,2));
 
 // Desafio 2
 function calcArea(base, height) {
