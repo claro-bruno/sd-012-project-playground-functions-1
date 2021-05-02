@@ -2,9 +2,8 @@
 function compareTrue(val1, val2) {
   // seu código aqui
   return val1 && val2;
-  
 }
-compareTrue();
+
 // Desafio 2
 function calcArea() {
   // seu código aqui
