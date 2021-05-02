@@ -2,7 +2,7 @@
 
 function compareTrue(variavel1, variavel2) {
   let condicao = false;
-  if ( variavel1 && variavel2) {
+  if (variavel1 && variavel2) {
     condicao = true;
   } else {
     condicao = false;
@@ -51,47 +51,46 @@ function footballPoints(wins, ties) {
   return Points;
 }
   
-  // Desafio 6
-  /** Consultei o repositório do Luiz henrique para resolver essa parte.
+// Desafio 6
+ /** Consultei o repositório do Luiz henrique para resolver essa parte.
 Link do repositório: https://github.com/tryber/sd-012-project-playground-functions/pull/117
 */
 
 function highestCount(arrayDeNumbers) {
   let repeticoesMaiorNumero = 0;
   let numeroMaisAlto = 0;
-  for (let index1Array = 0; index1Array < arrayDeNumbers.length; index1Array +=1) {
-    if(arrayDeNumbers[index1Array] > numeroMaisAlto) {
+  for (let index1Array = 0; index1Array < arrayDeNumbers.length; index1Array += 1) {
+    if (arrayDeNumbers[index1Array] > numeroMaisAlto) {
       numeroMaisAlto = arrayDeNumbers[index1Array];
     }
   }
-    for (let index2Array = 0; index2Array < arrayDeNumbers.length; index2Array += 1) {
-      if (arrayDeNumbers[index2Array] === numeroMaisAlto) {
+  for (let index2Array = 0; index2Array < arrayDeNumbers.length; index2Array += 1) {
+    if (arrayDeNumbers[index2Array] === numeroMaisAlto) {
           repeticoesMaiorNumero += 1;
 
-      } 
-    }
-
-  return repeticoesMaiorNumero;
+    } 
+  }
+return repeticoesMaiorNumero;
 }
 
 // Desafio 7
 
 function catAndMouse(mouse, cat1, cat2) {
-  let conclusao = "";
+  let conclusao = '';
   if (cat1 > cat2 && cat2 >= mouse) {
-    conclusao = "cat2";
+    conclusao = 'cat2';
   } else if (cat2 > cat1 && cat1 >= mouse) {
-      conclusao = "cat1";
-  } else if (cat1 > cat2 && mouse >= cat1){
-      conclusao = "cat1";
-  } else if (cat2 > cat1 && mouse >= cat2){
-      conclusao = "cat2";
+      conclusao = 'cat1';
+  } else if (cat1 > cat2 && mouse >= cat1) {
+      conclusao = 'cat1';
+  } else if (cat2 > cat1 && mouse >= cat2) {
+      conclusao = 'cat2';
   } else {
-      conclusao = "os gatos trombam e o rato foge";
+      conclusao = 'os gatos trombam e o rato foge';
   }
 return conclusao;
 }
-  
+
 //console.log(catAndMouse(9, 10, 11));
   
 // Desafio 8
