@@ -103,8 +103,7 @@ let splitada = string.split('');
     };
 };
 return splitada.join('');
-};
-
+}
 function decode(string) {
   // seu código aqui
   let decodifica = string.split('');
@@ -126,29 +125,73 @@ function decode(string) {
     }
   }
 return decodifica.join('');
-};
+}
 // Desafio 10
 function techList(tecno, name){
-  let objectListSorting = tecno.sort();
+    
   let objectList = [];
   
-      if(objectListSorting.length === 0){
-          return 'Vazio!'         
-          
-      } else {
-        for(let index = 0; index < objectListSorting.length; index += 1){
-          let valor = objectListSorting[index]
-            objectList[index]  = { 
-            "tech": valor, 
-            "name": name
+      if(tecno.length === 0){
+          return 'Vazio!'            
+      } 
+      else {
+        for(let index = 0; index < tecno.length ; index += 1){
+          objectList[index]  = { 
+            tech: tecno[index], 
+            name: name
           };       
+        };
       };
-    };
   
-  return objectList
-};
+  return objectList.sort(function(a, b){
+      if(a.tech < b.tech) return -1;
+      if(a.tech > a.tech) return 1;
+      });
+}
+console.log(techList([], "Lucas"));
+// Desafio 11
+function generatePhoneNumber(numbers){
+  let contRepeat = 0;
+  let testNumbers = true;
+  let numberValid = [];
+  if(numbers.length < 11){
+    return 'Array com tamanho incorreto.'
+    testNumbers = false;
+  };
+  for(let index of numbers){
+      let valor = index;
+      if (index < 0) {
+      return 'não é possivel gerar um numero de telefone com esses valores.1'
+      testNumbers = false;
+   } else if (index > 9){
+      return "não é possivel gerar um numero de telefone com esses valores.2"
+      testNumbers = false;
+   } else if (valor === numbers[index] + 1) {
+      return "não é possivel gerar um numero de telefone com esses valores.3"
+      contRepeat += 1;    
+   }  
+  };
+  if(testNumbers === true && contRepeat < 3){
+    for(let indexTwo = 0; indexTwo < 14; indexTwo += 1){
+      if(indexTwo === 0){
+        numberValid.push = '(';
+      }
+      if (indexTwo === 3) {
+        numberValid.push = ')';
+      }
+      if (indexTwo === 4) {
+        numberValid.push = ' ';
+      }
+      if (indexTwo === 10){
+        numberValid.push = '-';
+      }
+      numberValid.push = numbers[indexTwo]
+    }    
+  }
+  return numberValid
 
-
+}
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 module.exports = {
   calcArea,
   catAndMouse,
