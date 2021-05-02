@@ -12,14 +12,6 @@ function compareTrue(x, y) {
 console.log(resposta);
 
 // Desafio 2
-// let base = 10;
-// let height = 50;
-// function calcArea(base, height) {  
-//   return (base * height) / 2;
-// }
-// console.log((base * height) / 2);
-
-
 function calcArea(base, height) { 
 let calculo = (base * height) / 2; 
   return (calculo);
@@ -33,11 +25,11 @@ function splitSentence(string) {
 console.log(splitSentence('go Trybe'));
 
 // Desafio 4
-let strings = ['foguete', 'não', 'tem', 'ré'];
 function concatName(strings) {
-  return strings[strings.length -1] + ', ' + [strings[0]];
+let primeiroEUltimo = strings[strings.length -1] + ', ' + [strings[0]];
+  return primeiroEUltimo;
 }
-console.log(strings[strings.length -1] + ', ' + [strings[0]]);
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 
 // Desafio 5
 let wins = 14;
