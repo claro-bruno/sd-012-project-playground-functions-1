@@ -4,15 +4,15 @@ function techList(nameTec,name) {
   if (nameTec.length === 0) {
     return 'Vazio!';
   }
-  let objetoList = [];
+  let objeto = [];
   for (let index = 0; index < nameTec.length; index += 1) {
-    let objeto = {
+    objeto.push({
       tech: nameTec[index],
-      name: name,
-    };
-    objetoList.push(objeto);
+      name: name
+    });
+    
   }
-  return objetoList;
+  return objeto;
 }
   
 console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
