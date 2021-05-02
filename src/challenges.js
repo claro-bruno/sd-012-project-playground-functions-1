@@ -49,7 +49,7 @@ function highestCount(maiorInteiro) {
   let tamanho = maiorInteiro.length;
   let maior = -999;
   let conta = 0;
-  for (let index = 0; index <= tamanho; index += 1) {
+  for (let index in maiorInteiro) {
     if (maior < maiorInteiro[index]) {
       maior = maiorInteiro[index];
     };
@@ -82,8 +82,7 @@ console.log(catAndMouse(7, 5, 8));
 // Desafio 8
 function fizzBuzz(listaInteiros) {
   let arrayFizzBuzz = [];
-  let total = listaInteiros.length;
-  for (let index = 0; index < total; index += 1) {
+  for (let index in listaInteiros) {
     if (((listaInteiros[index] % 3) === 0) && ((listaInteiros[index] % 5) === 0)) {
       arrayFizzBuzz.push("fizzBuzz");
     } else if ((listaInteiros[index] % 3) === 0) {
@@ -102,8 +101,7 @@ console.log(fizzBuzz([2, 15, 7, 9, 45]));
 function encode(string) {
   let separado = string.split("");
   //console.log(separado);
-  let tamanho = string.length;
-  for (let index = 0; index < tamanho; index += 1) {
+  for (let index in string) {
     if (string[index] === "a") {
       separado[index] = "1";
     } else if (string[index] === "e") {
@@ -123,8 +121,7 @@ function encode(string) {
 
 function decode(string) {
   let separado = string.split("");
-  let tamanho = string.length;
-  for (let index = 0; index < tamanho; index += 1) {
+  for (let index in string) {
     if (string[index] === "1") {
       separado[index] = "a";
     } else if (string[index] === "2") {
