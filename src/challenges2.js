@@ -1,25 +1,20 @@
 // Desafio 10
 function techList(nameTec,name) {
   
- let objetoTech = [];
-
-    if ( nameTec.length > 0 ){
-      
-
-      objetoTech.push({
-        tech: nameTec,
-        name: name
-    })
-   
-    return objetoTech;
-  }else{
+  if (nameTec.length === 0) {
     return 'Vazio!';
   }
-  
+  let objetoList = [];
+  for (let index = 0; index < nameTec.length; index += 1) {
+    let objeto = {
+      tech: nameTec[index],
+      name: name,
+    };
+    objetoList.push(objeto);
+  }
+  return objetoList;
 }
-
-
-
+  
 
 
 
