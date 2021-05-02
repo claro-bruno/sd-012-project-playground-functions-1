@@ -1,7 +1,7 @@
 // Desafio 10
 function techList(arrayTech, name) {
   // seu código aqui
-  // Para retornar uma lista ordenada por ordem alfabética, a condição que se inicia na linha 11 foi inspirada pela explicação que se encontra no link https://bit.ly/3tiJIUM, onde na função sort é inserida uma função anônima que atribui um valor para cada propriedade tech dos objetos, retornando os mesmos por ordem alfabética
+  // Para retornar uma lista ordenada por ordem alfabética, a condição que se inicia na linha 11 foi inspirada pela explicação que se encontra no link https://bit.ly/3tiJIUM, onde na função sort é inserida uma função anônima que atribui um valor para cada propriedade tech dos objetos, retornando os mesmos por ordem alfabética.
    let saida = [];
 
   if (arrayTech.length > 0){
@@ -30,25 +30,24 @@ function generatePhoneNumber(number) {
   let message;
   let phonenumber;
 
-  if (number.length > 11 || number.length < 11){
+  if (number.length > 11 || number.length < 11) {
     message= "Array com tamanho incorreto."
     phonenumber = message;
   } else {
-    for (let index = 0; index < number.length; index += 1){
+    for (let index = 0; index < number.length; index += 1) {
       if (number[index] < 0 || number[index] > 9) {
         message = "não é possível gerar um número de telefone com esses valores";
         phonenumber = message;
       } else {
         phone.push(number[index]);
-        let phonenumberarray = ['(', phone[0], phone[1], ')', phone[2], phone[3], phone[4], phone[5], phone[6], '-', phone[7], phone[8], phone[9], phone[10]];
-        phonenumber = phonenumberarray.join('');
+        phonenumber = `(${phone[0]}${phone[1]})${phone[2]}${phone[3]}${phone[4]}${phone[5]}${phone[6]}-${phone[7]}${phone[8]}${phone[9]}${phone[10]}`;
       }
     }
   }
   return phonenumber;
 }
 
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2]));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
@@ -67,7 +66,7 @@ function triangleCheck(lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(drink) {
   // seu código aqui
-  // RegEx utilizado para extrair números da String visto no link https://bit.ly/3eMQPiW, onde utiiza-se a função .replace para localizar todos caracteres que não sejam números inteiros de 1 a 9 (\D), procurando "globalmente" na string inteira (/g), então substituindo por espaços vazios.
+  // RegEx utilizado para extrair números da String visto no link https://bit.ly/3eMQPiW, onde utiiza-se a função .replace para localizar todos caracteres que não sejam números inteiros de 1 a 9 (\D), procurando "globalmente" na string inteira (/g), então substituindo-os por espaços vazios.
   let cups = drink.replace(/\D/g, '');
   let array = cups.split('')
   let soma = 0;
