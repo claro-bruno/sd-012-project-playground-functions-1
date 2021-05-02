@@ -163,7 +163,7 @@ function decode(stringEncode) {
   };
   return outEncode
 };
-console.log(decode("12345"))
+//console.log(decode("12345"))
 module.exports = {
   calcArea,
   catAndMouse,
@@ -177,17 +177,5 @@ module.exports = {
   splitSentence,
 };
 
-
-
-let codificar = {
-  a: 1,
-  e: 2,
-  i: 3,
-  o: 4,
-  u: 5,
-}
-for(key in codificar){
-  console.log(key)
-}
 
 
