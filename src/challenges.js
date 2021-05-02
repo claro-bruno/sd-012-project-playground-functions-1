@@ -54,14 +54,14 @@ function highestCount(maiorInteiro) {
       maior = maiorInteiro[index];
     };
   };
-  for (let index = 0; index <= tamanho; index +=1) {
+  for (let index in maiorInteiro) {
     if (maior === maiorInteiro[index]) {
       conta = conta += 1;
     };
   };
   return conta;
 }
-console.log(highestCount([0, 0, 0]));
+console.log(highestCount([5, 2, 8, 4, 2, 5, 8, 5, 8]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
