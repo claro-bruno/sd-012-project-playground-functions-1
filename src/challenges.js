@@ -25,7 +25,7 @@ function splitSentence(stringSentence) {
 
   return result;
 }
-console.log(splitSentence('foguete'))
+
 
 
 
@@ -39,7 +39,7 @@ function concatName(contato) {
 }
 let names = ['captain', 'my', 'captain'];
 
-console.log(concatName(names));
+
 
 
 
@@ -58,7 +58,6 @@ function footballPoints(wins, ties) {
   return pontosWins + pontosTies;
 }
 
-console.log(footballPoints(0, 0));
 
 
 
@@ -105,7 +104,7 @@ function catAndMouse(mouse, cat1, cat2) {
   return result;
 }
 
-console.log(catAndMouse(1,0,2));
+
 
 
 
@@ -116,20 +115,20 @@ function fizzBuzz(numeros) {
   //for of pega o valor do indice
   for(let index of numeros){
     if(index % 15 === 0){
-      result.push("fizzbuzz");
+      result.push('fizzbuzz');
     }else if(index % 3 === 0){
-      result.push("fizz");
+      result.push('fizz');
     }else if(index % 5 === 0){
-      result.push("buzz");
+      result.push('buzz');
     }else{
-      result.push("bug!");
+      result.push('bug!');
     }  
   }
 
   return result;
 }
 
-console.log(fizzBuzz([2, 15, 7, 9, 45] ));
+
 
 // Desafio 9
 //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
@@ -169,7 +168,7 @@ function encode(code) {
   return codigo.join('');
 }
 
-console.log(encode('hi there!'));
+
 
 
 
@@ -208,7 +207,7 @@ function decode(deCode) {
   return deCodigo.join('');
 }
 
-console.log(decode(encode('hi there!')));
+
 
 
 module.exports = {

@@ -1,26 +1,29 @@
 // Desafio 10
 function techList(nameTec,name) {
-  let objetoTech = {
-      tech: "nome",
-      name: name
-  }
- let listObjetoTech = [];
+  
+ let objetoTech = [];
 
     if ( nameTec.length > 0 ){
-    //adiciona uma tecnologia ao objeto
-    objetoTech.tech = nameTec;
-    //adiciona o objeto ao array listObjetoTech
-    listObjetoTech.push(objetoTech);
+      
 
-    return listObjetoTech;
+      objetoTech.push({
+        tech: nameTec,
+        name: name
+    })
+   
+    return objetoTech;
   }else{
     return 'Vazio!';
   }
   
 }
 
-console.log(techList('java'));
 
+
+
+
+
+  
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
