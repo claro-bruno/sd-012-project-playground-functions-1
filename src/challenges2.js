@@ -9,14 +9,14 @@ function techList(name, array7) {
     };
     novaArray.push(saidaFuncao);
     if (array7.length === 0) {
-      novaArray = 'Vazio!';    
+      novaArray = 'Vazio!';
     }
-  }  
+  }
   return novaArray;
 }
 
-// techList('Eder', ['React', 'Jest', 'HTML', 'CSS', 'JavaScript']) 
-
+// techList('Eder', ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'])
+// teste
 // console.log(novaArray);
 
 // Desafio 11
