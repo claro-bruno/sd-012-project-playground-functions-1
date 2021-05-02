@@ -1,8 +1,17 @@
 // Desafio 10
 function techList(nomeTech, name) {
- // seu código aqui
+let code = []; 
+nomeTech.sort();
+
+  if (nomeTech.length > 4) {
+    for (let index in nomeTech){
+    code.push ({ tech: nomeTech[index], name: name})
+    }
+      return code;
+  } else {
+      return ('Vazio');
+  }
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Martin'))
 
 // Desafio 11
 function generatePhoneNumber() {
@@ -21,7 +30,6 @@ function triangleCheck(lineA, lineB, lineC) {
   }
   return boolean;
 }
-console.log(triangleCheck(10, 14, 8))
 
 // Desafio 13
 function hydrate() {
