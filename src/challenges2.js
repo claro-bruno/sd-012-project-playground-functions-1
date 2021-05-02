@@ -22,7 +22,7 @@ function techList(arrayNomeTech, name) {
 
 
 // Desafio 11
-function generatePhoneNumber(numbers){
+function generatePhoneNumber(numbers) {
   let format = "(xx) xxxxx-xxxx";
   
   if (numbers.length !== 11 ) {
@@ -55,14 +55,24 @@ function generatePhoneNumber(numbers){
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
-    return true;
-  } else if (lineB < lineA + lineC && lineB > Math.abs(lineA - lineC)) {
-    return true;
-  } else if (lineC < lineA + lineB && lineC > Math.abs(lineA - lineB)) {
-    return true;
+    let teste1 = true;
   } else {
     return false;
- }
+  }
+
+  if (lineB < lineA + lineC && lineB > Math.abs(lineA - lineC)) {
+    let teste2 = true;
+  } else {
+    return false;
+  }
+  
+  if (lineC < lineA + lineB && lineC > Math.abs(lineA - lineB)) {
+    let teste3 = true;
+  } else {
+    return false;
+  }
+  
+ return teste1 && teste2 && teste3;
 } 
 
 // Desafio 13
