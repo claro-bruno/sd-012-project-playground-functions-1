@@ -40,7 +40,12 @@ function hydrate(manyDrinks) {
     for (let index = 0; index < matches.length; index += 1) {
         sum = sum + matches[index];
     }
-    return `${sum} copos de água`;
+    if (sum === 1) {
+        return `${sum} copo de água`;
+    } else {
+        return `${sum} copos de água`;
+    }
+
     //code idea by https://stackoverflow.com/questions/1623221/how-to-find-a-number-in-a-string-using-javascript/30160994
 }
 

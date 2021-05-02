@@ -96,24 +96,22 @@ function encode(stringToEncode) {
     // A new array to put all characters inside of it
     let encodedString = [];
     // Code algorythm
-    for (
-        let encodeReader = 0; encodeReader < stringToEncode.length; encodeReader += 1
-    ) {
-        if (stringToEncode[encodeReader] === 'a') {
-            encodedString.push((stringToEncode[encodeReader] = '1'));
-        } else if (stringToEncode[encodeReader] === 'e') {
-            encodedString.push((stringToEncode[encodeReader] = '2'));
-        } else if (stringToEncode[encodeReader] === 'i') {
-            encodedString.push((stringToEncode[encodeReader] = '3'));
-        } else if (stringToEncode[encodeReader] === 'o') {
-            encodedString.push(stringToEncode[(encodeReader = '4')]);
-        } else if (stringToEncode[encodeReader] === 'u') {
-            encodedString.push((stringToEncode[encodeReader] = '5'));
+    for (let index = 0; index < stringToEncode.length; index += 1) {
+        if (stringToEncode[index] == 'a') {
+            encodedString.push('1');
+        } else if (stringToEncode[index] == 'e') {
+            encodedString.push('2');
+        } else if (stringToEncode[index] == 'i') {
+            encodedString.push('3');
+        } else if (stringToEncode[index] == 'o') {
+            encodedString.push('4');
+        } else if (stringToEncode[index] == 'u') {
+            encodedString.push('5');
         } else {
-            encodedString.push(stringToEncode[encodeReader]);
+            encodedString.push(stringToEncode[index]);
         }
+        // Return the array but joining it without a comma
     }
-    // Return the array but joining it without a comma
     return encodedString.join('');
 }
 
@@ -122,27 +120,27 @@ function decode(stringToDecode) {
     let decodedString = [];
     // Decode algorythm
 
-    for (
-        let decodeReader = 0; decodeReader < stringToDecode.length; decodeReader += 1
-    ) {
-        if (stringToDecode[decodeReader] === '1') {
-            decodedString.push((stringToDecode[decodeReader] = '1'));
-        } else if (stringToDecode[decodeReader] === '2') {
-            decodedString.push((stringToDecode[decodeReader] = 'e'));
-        } else if (stringToDecode[decodeReader] === '3') {
-            decodedString.push((stringToDecode[decodeReader] = 'i'));
-        } else if (stringToDecode[decodeReader] === '4') {
-            decodedString.push(stringToDecode[(decodeReader = 'o')]);
-        } else if (stringToDecode[decodeReader] === '5') {
-            decodedString.push((stringToDecode[decodeReader] = 'u'));
+    for (let index = 0; index < stringToDecode.length; index += 1) {
+        if (stringToDecode[index] == '1') {
+            decodedString.push('a');
+        } else if (stringToDecode[index] == '2') {
+            decodedString.push('e');
+        } else if (stringToDecode[index] == '3') {
+            decodedString.push('i');
+        } else if (stringToDecode[index] == '4') {
+            decodedString.push('o');
+        } else if (stringToDecode[index] == '5') {
+            decodedString.push('u');
         } else {
-            decodedString.push(stringToDecode[decodeReader]);
+            decodedString.push(stringToDecode[index]);
         }
+        // Return the array but joining it without a comma
     }
 
     // Return the array but joining it without a comma
     return decodedString.join('');
 }
+console.log(decode('Th3s 3s 1n 2nc4d3ng t2st.'));
 
 module.exports = {
     calcArea,
