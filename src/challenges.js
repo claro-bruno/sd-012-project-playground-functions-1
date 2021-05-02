@@ -135,12 +135,11 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   
   // Desafio 9
-  string1 = "aeiou";
-  string2 = "12345"
-  let indice1 = 0;
-  let frase3 = ""; 
-  
   function encode(frase2) {
+    let string1 = "aeiou";
+    let string2 = "12345"
+    let indice1 = 0;
+    let frase3 = ""; 
     for (let indice2 = 0; indice2 < frase2.length; indice2 +=1){
        
       if (indice1 < frase2.length){
