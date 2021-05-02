@@ -5,11 +5,12 @@ nomeTech.sort();
 
   if (nomeTech.length > 4) {
     for (let index in nomeTech){
-    code.push ({ tech: nomeTech[index], name: name})
+    code.push ({ tech: nomeTech[index],
+    name: name});
     }
       return code;
   } else {
-      return ('Vazio');
+      return ('Vazio!');
   }
 }
 
@@ -32,8 +33,8 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(bebida) {
+ // seu código aqui
 }
 
 module.exports = {

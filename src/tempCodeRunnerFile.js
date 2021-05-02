@@ -1,15 +1,13 @@
-function techList(nomeTech, name) {
-let code = []; 
-nomeTech.sort();
 
-  if (nomeTech.length > 4) {
-    for (let index in nomeTech){
-    code.push ({ tech: nomeTech[index],
-    name: name});
+// Desafio 13
+function hydrate(bebida) {
+  let agua = 0;
+  let sum = 0;
+  if( bebida.length > 0){
+    for (let index = 0; index < bebida.length; bebida += 1){
+    sum = bebida[index] + bebida[index] 
+    return sum;
     }
-      return code;
-  } else {
-      return ('Vazio!');
-  }
 }
-console.log(techList([], "Lucas"))
+}
+console.log(hydrate(4))
