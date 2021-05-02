@@ -1,0 +1,61 @@
+let frase = 'hi there!';
+
+function encode(frase) {
+
+  let fraseSeparada = frase.split('')
+
+  for (let key in fraseSeparada) {
+    switch (fraseSeparada[key]) {
+      case 'a':
+        fraseSeparada[key] = '1';
+        break;
+      case 'e':
+        fraseSeparada[key] = '2';
+        break;
+      case 'i':
+        fraseSeparada[key] = '3';
+        break;
+      case 'o':
+        fraseSeparada[key] = '4';
+        break;
+      case 'u':
+        fraseSeparada[key] = '5';
+        break;
+    };
+  };
+  return fraseSeparada.join('');
+};
+
+console.log(encode(frase))
+
+
+
+let fraseNova = 'hi there!';
+
+function decode(fraseNova) {
+
+  let fraseSeparada = fraseNova.split('')
+
+  for (let key in fraseSeparada) {
+    switch (fraseSeparada[key]) {
+      case '1':
+        fraseSeparada[key] = 'a';
+        break;
+      case '2':
+        fraseSeparada[key] = 'e';
+        break;
+      case '3':
+        fraseSeparada[key] = 'i';
+        break;
+      case '4':
+        fraseSeparada[key] = 'o';
+        break;
+      case '5':
+        fraseSeparada[key] = 'u';
+        break;
+    };
+  };
+  return fraseSeparada.join('');
+};
+
+console.log(decode(fraseNova))
