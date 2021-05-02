@@ -57,11 +57,21 @@ function triangleCheck(lineA, lineB, lineC) {
   return result;
 }
 
-console.log(triangleCheck(5, 14, 8));
-
 // Desafio 13
-function hydrate() {
+function hydrate(drink) {
   // seu código aqui
+  let cups = drink.replace(/\D/g, '');
+  let array = cups.split('')
+  let soma = 0;
+
+  for (index = 0; index < array.length; index += 1){
+    let inteiro = parseInt(array[index]);
+    soma += inteiro;
+  }
+
+  let result = `${soma} copos de água `;
+
+  return result;
 }
 
 module.exports = {
