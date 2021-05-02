@@ -12,12 +12,19 @@ function compareTrue(x, y) {
 console.log(resposta);
 
 // Desafio 2
-let base = 10;
-let height = 50;
-function calcArea(base, height) {  
-  return (base * height) / 2;
+// let base = 10;
+// let height = 50;
+// function calcArea(base, height) {  
+//   return (base * height) / 2;
+// }
+// console.log((base * height) / 2);
+
+
+function calcArea(base, height) { 
+let calculo = (base * height) / 2; 
+  return (calculo);
 }
-console.log((base * height) / 2);
+console.log(calcArea(10, 50));
 
 // Desafio 3
 function splitSentence(string) {
@@ -65,7 +72,7 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'os gatos trombam e o rato foge';
   }
 }
-console.log(catAndMouse(6, 2, 8));
+console.log(catAndMouse(7, 2, 8));
 
 // Desafio 8
 
@@ -87,10 +94,10 @@ function fizzBuzz(array) {
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
-function encode() {
+function encode(stringVogais) {
   // seu código aqui
 }
-function decode() {
+function decode(stringNumeros) {
   // seu código aqui
 }
 
