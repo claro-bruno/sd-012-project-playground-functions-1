@@ -1,22 +1,22 @@
 // Desafio 10
-function techList(arrTech, nome) {
-
-  if (arrTech === []) {
+function techList(arrTech, nome1) {
+  if (arrTech.length === 0) {
     return 'Vazio!'
-  } else {
-    let arrTechSorted = arrTech.sort();
-    const objTech = {};
-
-    for (let tech of arrTechSorted){
-      objTech['tech'] = tech;
-      objTech['nome'] = nome;
+  }else {
+    let arrTechSorted = arrTech.sort(); //ordena o array inicial arrTech
+    let arrObjTech = []; //array que irá conter a lista de objetos
+    let objTech = {};
+    
+    for (let index = 0; index < arrTechSorted.length; index += 1) {  // percorre cada elemento do array
+      objTech = {
+      tech: arrTechSorted[index],
+      nome: nome1
+      }
+      arrObjTech.push(objTech);  
     }
-    return objTech  
+    return arrObjTech;
+    }
   }
-}
-
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
-
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
