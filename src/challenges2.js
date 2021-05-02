@@ -14,11 +14,30 @@ function techList(technologies, person) {
 
 // Desafio 11
 function generatePhoneNumber(candidateNumbers) {
+    // Length = 11 verification
+    if (candidateNumbers.length !== 11) {
+        return 'Array com tamanho incorreto.';
+    }
+    // Lower than 0 or higher than 9 verification
+    for (let index = 0; index < candidateNumbers.length; index += 1) {
+        if (candidateNumbers[index] < 0 || candidateNumbers[index] > 9) {
+            return 'não é possível gerar um número de telefone com esses valores';
+        }
+    }
+    // 3 equals numbers verification
+    for (let reader = 0; reader < candidateNumbers.length; reader += 1) {
+        let overThanThree = 0;
+        for (let spotted = 0; spotted < candidateNumbers.length; spotted += 1) {
+            if (candidateNumbers[spotted] === candidateNumbers[reader]) {
+                overThanThree += 1;
+            }
+        }
+        if (overThanThree >= 3) {
+            return 'não é possível gerar um número de telefone com esses valores';
+        }
+    }
     let phone = `(${candidateNumbers[0]}${candidateNumbers[1]}) ${candidateNumbers[2]}${candidateNumbers[3]}${candidateNumbers[4]}${candidateNumbers[5]}${candidateNumbers[6]}-${candidateNumbers[7]}${candidateNumbers[8]}${candidateNumbers[9]}${candidateNumbers[10]}`;
-    return phone;
 }
-
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
 function triangleCheck() {
