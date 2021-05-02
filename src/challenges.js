@@ -48,6 +48,7 @@ function highestCount(arrayNumbers) {
       contaNum += 1;
     }
   }
+  }
   return contaNum;
 }
 
@@ -88,4 +89,4 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-};
+}
