@@ -55,7 +55,6 @@ function footballPoints(wins, ties) {
 /** Consultei o repositório do Luiz henrique para resolver essa parte.
 Link do repositório: https://github.com/tryber/sd-012-project-playground-functions/pull/117
 */
-
 function highestCount(arrayDeNumbers) {
   let repeticoesMaiorNumero = 0;
   let numeroMaisAlto = 0;
@@ -97,22 +96,22 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(array5) {
   let array6 = [];
   for (let index3Array = 0; index3Array < array5.length; index3Array += 1) {
-    if (((array5[index3Array]) % 3) == 0){
-      if (((array5[index3Array] ) % 5) == 0){
+    if (((array5[index3Array]) % 3) === 0) {
+      if (((array5[index3Array]) % 5) === 0) {
         array6.push('fizzBuzz');
       } else {
         array6.push('fizz');
       }
-    } else if (((array5[index3Array]) % 5) == 0){
-        array6.push('buzz');
-      } else {
-          array6.push('bug!');
-        }
+    } else if (((array5[index3Array]) % 5) === 0) {
+      array6.push('buzz');
+    } else {
+      array6.push('bug!');
+    }
   }
   return array6;
 }
 
-//console.log(fizzBuzz([9, 25]));
+// console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode(frase2) {
