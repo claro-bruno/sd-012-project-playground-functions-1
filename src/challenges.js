@@ -86,7 +86,6 @@ console.log(catAndMouse(1, 2, 2));
 
 // Desafio 8
 function fizzBuzz(arrayDiv) {
-
   for (let index = 0; index < arrayDiv.length; index += 1) {
     if (arrayDiv[index] % 3 === 0 && arrayDiv[index] % 5 === 0) {
       arrayDiv[index] = 'fizzBuzz';
@@ -139,7 +138,6 @@ function decode(convert) {
     }
   });
   return numeros;
-
 }
 console.log(decode('12345'));
 
