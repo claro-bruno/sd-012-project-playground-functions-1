@@ -15,54 +15,42 @@ function techList(techs, name) {
   return listaVazia;
 };
 
-// Desafio 11
-let phNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
 
+// Desafio 11
 function generatePhoneNumber(phNumber) {
 
   //verifica se é diferente de 11
-  let difOuiguala11;
-
   if (phNumber.length !== 11) {
-    difOuiguala11 = "Array com tamanho incorreto.";
-  } else {
-    difOuiguala11 = phNumber;
-  };
-
-  let menorOumaior;
+    return "Array com tamanho incorreto.";
+  }
 
   //verifica se é menor que 0 ou maior que 9
-  for (let index = 0; index < difOuiguala11.length; index += 1) {
-    if (difOuiguala11[index] < 0 || difOuiguala11[index] > 9) {
-      menorOumaior = "não é possível gerar um número de telefone com esses valores";
-    } else {
-      menorOumaior = ok11;
-    }
+  for (let key in phNumber){
+    if (phNumber[key] < 0 || phNumber[key] > 9){
+      return "não é possível gerar um número de telefone com esses valores";
+    } 
   }
 
-  //verifica se o número se repete 3 vezes
-  for (let index2 = 0; index2 < menorOumaior.length; index2 += 1) {
-    let seRepete3 = 0;
-    for (let index3 = 0; index3 < menorOumaior.length; index3 += 1) {
-      if (menorOumaior[index2] === menorOumaior[index3]) {
-        seRepete3 += 1;
+  //verifica se o valor se repete 3 vezes ou mais
+  for (let index = 0; index < phNumber.length; index += 1){
+    let numDeRepeticoes = 0;
+    for (let index2 = 0; index2 < phNumber.length; index2 += 1){
+      if (phNumber[index] === phNumber[index2]){
+        numDeRepeticoes += 1;
       }
     }
+  if (numDeRepeticoes >= 3){
+    return "não é possível gerar um número de telefone com esses valores";
+  }
   }
 
-  if (verificador > 3) {
-    ok11 = "não é possível gerar um número de telefone com esses valores";
-  } else {
-    ok11 = ok11;
-  }
 
-};
+  return `(${phNumber[0]}${phNumber[1]}) ${phNumber[2]}${phNumber[3]}${phNumber[4]}${phNumber[5]}${phNumber[6]}-${phNumber[7]}${phNumber[8]}${phNumber[9]}${phNumber[10]}`
+  
 
-console.log(generatePhoneNumber(phNumber));
+}
 
-
-
-
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 
 // Desafio 12
