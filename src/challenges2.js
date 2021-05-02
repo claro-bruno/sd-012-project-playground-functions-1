@@ -31,14 +31,14 @@ function techList(techs, name) {
 // Desafio 11
 function generatePhoneNumber(phoneNumber) {
   // verificar se é diferente de 11:
-  if (phoneNumber.length != 11) {
+  if (phoneNumber.length !== 11) {
     return "Array com tamanho incorreto.";
-  };
+  }
 
   // verificar se tem numero menor q 0:
   for (let index in phoneNumber) {
     if (phoneNumber[index] < 0) {
-      return "não é possível gerar um número de telefone com esses valores"
+      return "não é possível gerar um número de telefone com esses valores";
     }
   }
 
@@ -57,7 +57,7 @@ function generatePhoneNumber(phoneNumber) {
     repeats = 0;
   }
   if (mostRepeat >= 3) {
-    return "não é possível gerar um número de telefone com esses valores"
+    return "não é possível gerar um número de telefone com esses valores";
   }
 
   // verificar maior numero:
@@ -81,15 +81,37 @@ function generatePhoneNumber(phoneNumber) {
     }
     outputPhoneNumber += phoneNumber[index];
   }
-  return outputPhoneNumber
+  return outputPhoneNumber;
 }
 // let phoneNumbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1];
 // console.log(generatePhoneNumber(phoneNumbersArray));
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let checkLineA
+  let checkLineB
+  let checkLineC
+  if (lineA < (lineB + lineC) && lineA > Math.abs(lineB - lineC)){
+    checkLineA = true;
+  }else {
+    checkLineA = false;
+  }
+
+  if (lineB < (lineA + lineC) && lineB > Math.abs(lineA - lineC)){
+    checkLineB = true;
+  }else {
+    checkLineB = false;
+  }
+
+  if (lineC < (lineA + lineB) && lineC > Math.abs(lineA - lineB)){
+    checkLineC = true;
+  }else {
+    checkLineC = false;
+  }
+
+  return (checkLineA && checkLineB && checkLineC);
 }
+// console.log(triangleCheck(10, 14, 99))
 
 // Desafio 13
 function hydrate() {
