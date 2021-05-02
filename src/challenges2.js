@@ -1,18 +1,19 @@
 // Desafio 10
-function techList(techName, name) {
-  if (techList.length === 0) {
+function techList(arrayTechName, name) {
+  if (arrayTechName.length === 0) {
     return 'Vazio!';
   }
-  let techNameSorted = techName.sort();
-  let arrObTech = [];
-  for (let index = 0; index < techNameSorted.length; index += 1) {
-    let objTech = {
-      tech: techNameSorted[index],
-      name: name,
-    };
-    arrObTech.push(objTech);
-  }
-  return arrObTech;
+  let lista = [];
+  let arrayTechNameSort = arrayTechName.sort();
+   for (let key in arrayTechNameSort) {
+      lista.push(
+      {
+        tech: arrayTechName[key],
+        name: name,
+      };
+      )
+   }
+   return lista;
 }
 
 // Desafio 11
