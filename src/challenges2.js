@@ -1,6 +1,7 @@
 // Desafio 10
 function techList(arrayTech, name) {
   // seu código aqui
+  // Para retornar uma lista ordenada por ordem alfabética, a condição que se inicia na linha 11 foi inspirada pela explicação que se encontra no link https://bit.ly/3tiJIUM, onde na função sort é inserida uma função anônima que atribui um valor para cada propriedade tech dos objetos, retornando os mesmos por ordem alfabética
    let saida = [];
 
   if (arrayTech.length > 0){
@@ -15,14 +16,12 @@ function techList(arrayTech, name) {
          return 0;
        }
      });
-      } 
+    } 
   } else {
       saida = 'Vazio!';
   }
   return saida;
 }
-
-  console.log(techList(["React", "Jest", "HTML", "CSS","JavaScript"], 'Luciano'));
   
 // Desafio 11
 function generatePhoneNumber(number) {
@@ -74,7 +73,7 @@ function hydrate(drink) {
   let soma = 0;
   let result;
 
-  for (index = 0; index < array.length; index += 1){
+  for (let index = 0; index < array.length; index += 1){
     let inteiro = parseInt(array[index]);
     soma += inteiro;
   }
