@@ -94,9 +94,6 @@ function fizzBuzz(arrayDesafio8) {
   return arrayNova8;
 };
 
-
-
-
 // Desafio 9 FALTA
 function encode(frase9) {
   let fraseCodificada = frase9.replace(/a/gi, '1')
@@ -116,6 +113,70 @@ function decode(novaFrase) {
     .replace(/5/gi, 'u');
   return fraseDecodificada;
 }
+
+/*
+let frase = 'hi there!';
+
+function encode(frase) {
+
+  let fraseSeparada = frase.split('')
+
+  for (let key in fraseSeparada) {
+    switch (fraseSeparada[key]) {
+      case 'a':
+        fraseSeparada[key] = '1';
+        break;
+      case 'e':
+        fraseSeparada[key] = '2';
+        break;
+      case 'i':
+        fraseSeparada[key] = '3';
+        break;
+      case 'o':
+        fraseSeparada[key] = '4';
+        break;
+      case 'u':
+        fraseSeparada[key] = '5';
+        break;
+    };
+  };
+  return fraseSeparada.join('');
+};
+
+console.log(encode(frase))
+
+
+
+let fraseNova = 'hi there!';
+
+function decode(fraseNova) {
+
+  let fraseSeparada = fraseNova.split('')
+
+  for (let key in fraseSeparada) {
+    switch (fraseSeparada[key]) {
+      case '1':
+        fraseSeparada[key] = 'a';
+        break;
+      case '2':
+        fraseSeparada[key] = 'e';
+        break;
+      case '3':
+        fraseSeparada[key] = 'i';
+        break;
+      case '4':
+        fraseSeparada[key] = 'o';
+        break;
+      case '5':
+        fraseSeparada[key] = 'u';
+        break;
+    };
+  };
+  return fraseSeparada.join('');
+};
+
+console.log(decode(fraseNova))
+*/
 
 module.exports = {
   calcArea,
