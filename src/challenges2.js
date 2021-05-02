@@ -25,28 +25,28 @@ function generatePhoneNumber(phNumber) {
   }
 
   //verifica se é menor que 0 ou maior que 9
-  for (let key in phNumber){
-    if (phNumber[key] < 0 || phNumber[key] > 9){
+  for (let key in phNumber) {
+    if (phNumber[key] < 0 || phNumber[key] > 9) {
       return "não é possível gerar um número de telefone com esses valores";
-    } 
+    }
   }
 
   //verifica se o valor se repete 3 vezes ou mais
-  for (let index = 0; index < phNumber.length; index += 1){
+  for (let index = 0; index < phNumber.length; index += 1) {
     let numDeRepeticoes = 0;
-    for (let index2 = 0; index2 < phNumber.length; index2 += 1){
-      if (phNumber[index] === phNumber[index2]){
+    for (let index2 = 0; index2 < phNumber.length; index2 += 1) {
+      if (phNumber[index] === phNumber[index2]) {
         numDeRepeticoes += 1;
       }
     }
-  if (numDeRepeticoes >= 3){
-    return "não é possível gerar um número de telefone com esses valores";
-  }
+    if (numDeRepeticoes >= 3) {
+      return "não é possível gerar um número de telefone com esses valores";
+    }
   }
 
 
   return `(${phNumber[0]}${phNumber[1]}) ${phNumber[2]}${phNumber[3]}${phNumber[4]}${phNumber[5]}${phNumber[6]}-${phNumber[7]}${phNumber[8]}${phNumber[9]}${phNumber[10]}`
-  
+
 
 }
 
@@ -68,9 +68,24 @@ function triangleCheck(lineA, lineB, lineC) {
 console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
-  
-}
+let bebidas = '1 cachaça, 5 cervejas e 1 copo de vinho';
+
+function hydrate(bebidas) {
+  let getNumbers = /\d+/g;
+  let numbersArray = bebidas.match(getNumbers);
+  let soma = 0;
+
+  for (let index = 0; index < numbersArray.length; index += 1) {
+    soma += parseInt(numbersArray[index]);
+  };
+
+  if (soma === 1) {
+    return `${soma} copo de água`;
+  };
+  return `${soma} copos de água`;
+};
+
+console.log(hydrate(bebidas))
 
 module.exports = {
   generatePhoneNumber,
