@@ -26,9 +26,72 @@ function techList(array, nome) {
 console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(numeros) {
+  let telefoneNumero = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
+  let phoneNumberPosition = 0;
+  let posicaoDeEntrada = 0;
+  let posicaoMaxima = 15;
+  let resultado = "";
+
+  if (numeros.length < 11) {
+    resultado = "Array com tamanho incorreto.";
+  } else {
+    for (let index of numeros) {
+      if (index < 0 || index > 9) {
+        resultado = "não é possível gerar um número de telefone com esses valores";
+      };
+    };
+    
+    let repeticao = 0;
+    let atual = 0;
+    for (let index of numeros) {
+      //console.log(index);
+      atual = index;
+      for (let i of numeros) {
+        if (atual === i) {
+          repeticao += 1;
+          //console.log(repeticao);
+        };
+        if (repeticao >= 3) {
+          resultado = "não é possível gerar um número de telefone com esses valores";
+        };
+      };
+      repeticao = 0;
+    };
+
+    if (resultado === "") {
+      for (let index = 0; index < posicaoMaxima; index += 1) {
+        if (telefoneNumero[index] == "") {
+          if (phoneNumberPosition === 0) {
+            telefoneNumero[index] = "(";
+            phoneNumberPosition += 1;
+          } else if (phoneNumberPosition === 3) {
+            telefoneNumero[index] = ")";
+            phoneNumberPosition += 1;
+          } else if (phoneNumberPosition === 4) {
+            telefoneNumero[index] = " ";
+            phoneNumberPosition += 1;
+          } else if (phoneNumberPosition === 10) {
+            telefoneNumero[index] = "-";
+            phoneNumberPosition += 1;
+          } else {
+            telefoneNumero[index] = numeros[posicaoDeEntrada];
+            phoneNumberPosition += 1;
+            posicaoDeEntrada += 1;
+          };
+        };
+      };
+      telefoneNumero = Object.values(telefoneNumero);
+      resultado = telefoneNumero.join();
+      for (let index in resultado) {
+        resultado = resultado.replace(",", "");
+      };
+    };    
+  };
+  return resultado;
+  // (12) 34567-8901
 }
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
 function triangleCheck() {
