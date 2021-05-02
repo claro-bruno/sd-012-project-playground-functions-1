@@ -1,15 +1,22 @@
 // Desafio 1
 function compareTrue() {
-  // seu código aqui
-  //ok
-  
+  let result;
+  if(value1 == true && value2 == true){
+    
+    return result = true;
+  }
+  else{
+    return result = false;
+
+  }
 }
+
 
 // Desafio 2
 function calcArea() {
   // seu código aqui
 }
-
+dd
 // Desafio 3
 function splitSentence() {
   // seu código aqui
