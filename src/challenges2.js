@@ -1,20 +1,26 @@
 const { concatName } = require("./challenges");
 
+
+
+
+
+
 // Desafio 10
 function techList(lista, nomeT) {
   let listaTech = {};
   lista = lista.sort();
   for(let i = 0; i < lista.length; i++){ 
-    listaTech["tech"+ [i]] = lista[i];
-    listaTech["name"+ [i]] = nomeT;
+    listaTech["tech"+[i]] = {tech:lista[i], name:nomeT};
   }
-  return listaTech;
-  // console.log(listaTech);
+  for(let iV = 0; iV < listaTech; iV++){
+    return (listaTech[iV]);
+  }
+ 
 }
-// let listaVar = ["React", "Jest", "HTML", "CSS", "JavaScript"];
-// let nomeT = "Janderson"
-// techList(listaVar, nomeT);
 
+let listaVar = ["React", "Jest", "HTML", "CSS", "JavaScript"];
+let nomeT = "Janderson";
+techList(listaVar, nomeT);
 
 
 
@@ -63,20 +69,20 @@ function triangleCheck() {
 function hydrate(botaAlcoolAk) {
   // Separada a string em array
   let arrayHy = botaAlcoolAk.split(" ");
-   console.log(arrayHy);
+  //  console.log(arrayHy);
   //Empurrar numeros para arrayN
   let arrayN = [];
   for(let indexH = 0; indexH < arrayHy.length; indexH++){
    arrayN.push(Number(arrayHy[indexH]));
   }
-  console.log(arrayN);
+  // console.log(arrayN);
   //Soma numeros da ArrayN e joga em glassWaters, mas não funciona 8'(
   let glassWaters = 0;
  for(let iN = 0; iN < arrayN.length; iN++){
     if(arrayN[iN] > 0){
       glassWaters = glassWaters + arrayN[iN];
       } else {
-      console.log("não soma");
+      // console.log("não soma");
       }
     }
     if(glassWaters == 1){
@@ -86,13 +92,13 @@ function hydrate(botaAlcoolAk) {
     }
 }
 
-hydrate("1 cachaça, 5 cervejas e 1 copo de vinho");
+// hydrate("1 cachaça, 5 cervejas e 1 copo de vinho");
 
   
 
 module.exports = {
-  generatePhoneNumber,
-  techList,
-  hydrate,
-  triangleCheck,
-};
+   generatePhoneNumber,
+   techList,
+   hydrate,
+   triangleCheck,
+}
