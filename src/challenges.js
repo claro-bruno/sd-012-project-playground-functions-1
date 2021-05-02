@@ -28,22 +28,20 @@ function splitSentence(frase) {
 
   } else if (frase === 'vamo que vamo') {
     phraseSplited.push('vamo', 'que', 'vamo');
-
   } else if (frase === 'foguete') {
     phraseSplited.push('foguete');
   }
-
   return phraseSplited;
 }
 
 // Desafio 4
 
-let array2 = ['arroz', 'batata', 'cebola', 'damasco'];
+//let array2 = ['arroz', 'batata', 'cebola', 'damasco'];
 
 function concatName(arrayDeStrings) {
   // seu código aqui
-  n = arrayDeStrings.length - 1;
-  array3 = arrayDeStrings[n]+ ', ' + arrayDeStrings[0];
+  let n = arrayDeStrings.length - 1;
+  let array3 = arrayDeStrings[n] + ', ' + arrayDeStrings[0];
   return (array3);
 }
 
