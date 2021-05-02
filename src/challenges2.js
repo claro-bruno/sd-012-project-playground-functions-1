@@ -17,10 +17,9 @@ function techList(nameTec,name) {
     return 'Vazio!';
   }
   
-  
 }
 
-console.log(techList(''));
+console.log(techList('java'));
 
 // Desafio 11
 function generatePhoneNumber() {

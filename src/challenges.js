@@ -115,11 +115,11 @@ function fizzBuzz(numeros) {
 
   //for of pega o valor do indice
   for(let index of numeros){
-    if(index % 5 === 0 && index % 3 === 0){
+    if(index % 15 === 0){
       result.push("fizzbuzz");
-    }else if(index % 3 === 0 && index % 5 !== 0){
+    }else if(index % 3 === 0){
       result.push("fizz");
-    }else if(index % 5 === 0 && index % 3 !== 0){
+    }else if(index % 5 === 0){
       result.push("buzz");
     }else{
       result.push("bug!");
