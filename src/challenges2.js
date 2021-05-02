@@ -44,7 +44,7 @@ function generatePhoneNumber(phNumber) {
     }
   }
 
-  return `(${phNumber[0]}${phNumber[1]}) ${phNumber[2]}${phNumber[3]}${phNumber[4]}${phNumber[5]}${phNumber[6]}-${phNumber[7]}${phNumber[8]}${phNumber[9]}${phNumber[10]}`
+  return `(${phNumber[0]}${phNumber[1]}) ${phNumber[2]}${phNumber[3]}${phNumber[4]}${phNumber[5]}${phNumber[6]}-${phNumber[7]}${phNumber[8]}${phNumber[9]}${phNumber[10]}`;
 
 }
 
@@ -66,7 +66,7 @@ function hydrate(bebidas) {
   let soma = 0;
 
   for (let index = 0; index < numbersArray.length; index += 1) {
-    soma += parseInt(numbersArray[index])
+    soma += parseInt(numbersArray[index]);
   }
 
   if (soma === 1) {

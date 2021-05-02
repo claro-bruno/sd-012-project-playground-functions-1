@@ -2,15 +2,13 @@
 function compareTrue(bool1, bool2) {
   if (bool1 === true && bool2 === true) {
     return true;
-  } else {
-    return false;
   }
-};
+}
 
 // Desafio 2
 function calcArea(base, height) {
-  let operationCalcArea = (base * height) / 2
-  return operationCalcArea
+  let operationCalcArea = (base * height) / 2;
+  return operationCalcArea;
 }
 
 // Desafio 3
@@ -46,8 +44,8 @@ function highestCount(arrayDesafio6) {
       higherNumber = arrayDesafio6[index];
     } else {
       higherNumber = higherNumber;
-    };
-  };
+    }
+  }
 
   let numberOfRepetitions = 0;
 
@@ -55,8 +53,8 @@ function highestCount(arrayDesafio6) {
     .length; counter += 1) {
     if (arrayDesafio6[counter] === higherNumber) {
       numberOfRepetitions += 1;
-    };
-  };
+    }
+  }
 
   return numberOfRepetitions;
 
@@ -74,25 +72,25 @@ function catAndMouse(mouse, cat1, cat2) {
   } else {
     return "cat2";
   }
-};
+}
 
 
 // Desafio 8
 function fizzBuzz(arrayDesafio8) {
   let arrayNova8 = [];
   for (let a = 0; a < arrayDesafio8.length; a += 1) {
-    if (arrayDesafio8[a] % 5 == 0 && arrayDesafio8[a] % 3 == 0) {
+    if (arrayDesafio8[a] % 5 === 0 && arrayDesafio8[a] % 3 === 0) {
       arrayNova8.push("fizzBuzz");
-    } else if (arrayDesafio8[a] % 5 == 0) {
+    } else if (arrayDesafio8[a] % 5 === 0) {
       arrayNova8.push("buzz");
-    } else if (arrayDesafio8[a] % 3 == 0) {
+    } else if (arrayDesafio8[a] % 3 === 0) {
       arrayNova8.push("fizz");
     } else {
       arrayNova8.push("bug!");
     }
   }
   return arrayNova8;
-};
+}
 
 // Desafio 9 FALTA
 function encode(frase9) {
