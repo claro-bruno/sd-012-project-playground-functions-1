@@ -37,25 +37,24 @@ function generatePhoneNumber(number) {
   }
   return `(${number[0]}${number[1]}) ${number[2]}${number[3]}${number[4]}${number[5]}${number[6]}-${number[7]}${number[8]}${number[9]}${number[10]}`;
 }
-console.log (generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   let AB = lineA + lineB;
-  let ABdif = Math.abs (lineA - lineB);
+  let ABdif = Math.abs(lineA - lineB);
   let BC = lineB + lineC;
-  let BCdif = Math.abs (lineA - lineB);
+  let BCdif = Math.abs(lineA - lineB);
   let CA = lineA + lineC;
-  let ACdif = Math.abs (lineA - lineB);
+  let ACdif = Math.abs(lineA - lineB);
   let result = false;
-  if (lineA < BC && lineB < CA && lineC < AB && lineA > BCdif && lineB > ACdif && lineC > ABdif){
-    result = true
+  if (lineA < BC && lineB < CA && lineC < AB && lineA > BCdif && lineB > ACdif && lineC > ABdif) {
+    result = true;
   }
-  return result
+  return result;
 }
 console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-// eslint-disable-next-line max-lines-per-function
 function hydrate(drink1, drink2, drink3) {
   let drinks = {
     0: drink1,
@@ -65,21 +64,17 @@ function hydrate(drink1, drink2, drink3) {
   let cupOfWater = 0;
   let regex = /\d+/g;
   for (let value of Object.values(drinks)) {
-    if (value.match(regex)) {
-      cupOfWater += parseInt (value.match(regex));
+    let verify = value.match(regex);
+    if (verify) {
+      cupOfWater += parseInt(value.match(regex));
     }
-  }
-  if (cupOfWater === 0) {
-    return 'Comece a se embebedar!';     
   }
   if (cupOfWater === 1) {
     return 'Beba 1 copo de água';
   }
-  else {
-    return 'Beba' + ' ' + cupOfWater + ' ' + 'copos de água';
-  }
+  return `${'Beba'} ${cupOfWater} ` + 'copos de água';
 }
-console.log (hydrate (5 + ' ' + 'wine', 9 + ' ' + 'cachaça', 8 + ' ' + 'beer'));
+console.log(hydrate(`${5} ` + 'wine', `${9} ` + 'cachaça', `${8} ` + 'beer'));
 module.exports = {
   generatePhoneNumber,
   techList,
