@@ -71,21 +71,84 @@ function catAndMouse(mouse,cat1,cat2) {
    return 'cat2';
  } else if (cat2distancia > cat1distancia){
    return 'cat1';
- }
+ } else {
    return 'os gatos trobam e o rato foge';
+ }
 }
+
+function divisivelPorCinco(value) {
+  if (value % 5 === 0) {
+    return 'fizzBuzz';
+  } else {
+    return 'fizz';
+  }
+}
+
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+
+function fizzBuzz(array) {
+  let resultado = [];
+  for (let value  of listaDesafio) {
+    if (value % 3 === 0){
+      resultado.push(divisivelPorCinco(value));
+    } else if (value % 5 === 0) {
+      resultado.push('buzz');
+    } else {
+      resultado.push('bug!');
+    }
+  }
+   return resultado;
 }
 
-// Desafio 9
-function encode() {
-  // seu código aqui
+function encode(fraseDesafio) {
+  let listaDeLetras = fraseDesafio.split(' ');
+  for (let key in listaDeLetras) {
+    switch (listaDeLetras[key]){
+    case 'a':
+      listaDeLetras[key] = 1;
+      break;
+    case 'e':
+      listaDeLetras[key] = 2;
+      break;
+    case 'i':
+      listaDeLetras[key] = 3;
+      break;
+    case 'o':
+      listaDeLetras[key] = 4;
+      break;
+    case 'u':
+      listaDeletras[key] = 5;
+      break;    
+    }
+  }
+  return listaDeLetras;
 }
-function decode() {
-  // seu código aqui
+
+console.log(encode(listaDeLetras));
+
+function decode(desafioDecode) {
+  let listaDenumeros = desafioDecode.split(' ');
+  for (let key in listaDenumeros) {
+    switch (listaDenumeros[key]) {
+      case 1:
+        listaDeNumeros[key] = a;
+        break;
+      case 2:
+        listaDenumeros[key] = e;
+        break;
+      case 3:
+        listaDenumeros[key] = i;
+        break;
+      case 4:
+        listaDenumeros[key] = o;
+        break;
+      case 5:
+        listaDenumeros[key] = u;
+        break;          
+    }
+  }
+  return listaDenumeros;
 }
 
 module.exports = {
