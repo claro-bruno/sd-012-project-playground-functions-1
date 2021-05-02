@@ -6,14 +6,14 @@
 function compareTrue(variavel1, variavel2) {
   // seu código aqui
   let condicao = false;
-  if ( ((variavel1 + variavel2) % 2) == 0 && ((variavel1 + variavel2) % 5) == 0) {
+  if ( variavel1 && variavel2) {
     condicao = true;
   } else {
     condicao = false;
   }
   return condicao;
 }
-//console.log(compareTrue(10,20));
+//console.log(compareTrue(false, true));
 
 // Desafio 2
 function calcArea(base, height) {
