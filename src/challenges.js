@@ -4,7 +4,8 @@ function compareTrue(valor1, valor2) {
   if (valor1 === true && valor2 === true) {
     resposta = true;
     return resposta;
-  } else if (valor1 === false || valor2 === false) {
+  }
+  if (valor1 === false || valor2 === false) {
     resposta = false;
     return resposta;
   }
@@ -30,14 +31,13 @@ console.log(splitSentence('Vamo que Vamo'));
 function concatName(array) {
   let primeiroNome = array[0];
   let ultimoNome = array[array.length - 1];
-  let primeiroUltimo = (ultimoNome + ', ' + primeiroNome);
-  return primeiroUltimo;
+  return ultimoNome + ', ' + primeiroNome;
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  wins = wins * 3;
+  wins *= 3;
   let totalPoints = wins + ties;
   return totalPoints;
 }
@@ -50,13 +50,13 @@ function highestCount(maiorInteiro) {
   for (let index in maiorInteiro) {
     if (maior < maiorInteiro[index]) {
       maior = maiorInteiro[index];
-    };
-  };
+    }
+  }
   for (let index in maiorInteiro) {
     if (maior === maiorInteiro[index]) {
-      conta = conta += 1;
-    };
-  };
+      conta += 1;
+    }
+  }
   return conta;
 }
 console.log(highestCount([5, 2, 8, 4, 2, 5, 8, 5, 8]));
@@ -69,7 +69,8 @@ function catAndMouse(mouse, cat1, cat2) {
 
   if (cat1 < cat2) {
     return 'cat1';
-  } else if (cat2 < cat1) {
+  } 
+  if (cat2 < cat1) {
     return 'cat2';
   } else {
     return 'os gatos trombam e o rato foge';
@@ -90,7 +91,7 @@ function fizzBuzz(listaInteiros) {
     } else {
       arrayFizzBuzz.push('bug!');
     }
-  };
+  }
   return arrayFizzBuzz;
 }
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
@@ -110,9 +111,9 @@ function encode(string) {
       separado[index] = '4';
     } else if (string[index] === 'u') {
       separado[index] = '5';
-    };
-  };
-  separado = separado.join("");
+    }
+  }
+  separado = separado.join('');
   // console.log(separado);
   return separado;
 }
@@ -125,13 +126,13 @@ function decode(string) {
     } else if (string[index] === '2') {
       separado[index] = 'e';
     } else if (string[index] === '3') {
-      separado[index] = 'i'
+      separado[index] = 'i';
     } else if (string[index] === '4') {
       separado[index] = 'o';
     } else if (string[index] === '5') {
       separado[index] = 'u';
-    };
-  };
+    }
+  }
   separado = separado.join('');
   return separado;
 }
