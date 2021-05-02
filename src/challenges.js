@@ -3,16 +3,16 @@
 //let variavel2 = true;
 //let estadoAtual = false;
 
-function compareTrue(variavel1, variavel2, variavel3, variavel4) {
+function compareTrue(variavel1, variavel2) {
   // seu código aqui
-  if (variavel1 === variavel2 && variavel3 === variavel4) {
-    estadoAtual = true;
+  if ( ((variavel1 + variavel2) % 2) == 0 && ((variavel1 + variavel2) % 5) == 0) {
+    condicao = true;
   } else {
-    estadoAtual = false;
+    condicao = false;
   }
-  return estadoAtual;
+  return condicao;
 }
-//console.log(compareTrue(2,2,2,2));
+//console.log(compareTrue(10,20));
 
 // Desafio 2
 function calcArea(base, height) {
