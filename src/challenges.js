@@ -36,33 +36,33 @@ function highestCount(Array) {
 }
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
-  let distancia1 = cat1 - mouse;
-  let distancia2 = cat2 - mouse;
-  if (distancia2 < distancia1) {
-    return 'cat2';
-  } else if (distancia1 < distancia2) {
-    return 'cat1';
-  } else if (distancia1 === distancia2) {
-    return 'os gatos trombam e o rato foge';
-  }
-}
+// function catAndMouse(mouse, cat1, cat2) {
+//   let distancia1 = cat1 - mouse;
+//   let distancia2 = cat2 - mouse;
+//   if (distancia2 < distancia1) {
+//     return 'cat2';
+//   } else if (distancia1 < distancia2) {
+//     return 'cat1';
+//   } else if (distancia1 === distancia2) {
+//     return 'os gatos trombam e o rato foge';
+//   }
+// }
 
-// Desafio 8
-function fizzBuzz(Array) {
-  let resultado = [];
-  Array.forEach(function(numero) {
-    if ((numero % 3 === 0) && (numero % 5 !== 0)) {
-      resultado.push('fizz');
-    } else if ((numero % 3 !== 0) && (numero % 5 === 0)) {
-      resultado.push('buzz');
-    } else if ((numero % 3 === 0) && (numero % 5 === 0)) {
-      resultado.push('fizzBuzz');
-    } else {
-      resultado.push('bug!');
-    }
-  });
-}
+// // Desafio 8
+// function fizzBuzz(Array) {
+//   let resultado = [];
+//   Array.forEach(function(numero) {
+//     if ((numero % 3 === 0) && (numero % 5 !== 0)) {
+//       resultado.push('fizz');
+//     } else if ((numero % 3 !== 0) && (numero % 5 === 0)) {
+//       resultado.push('buzz');
+//     } else if ((numero % 3 === 0) && (numero % 5 === 0)) {
+//       resultado.push('fizzBuzz');
+//     } else {
+//       resultado.push('bug!');
+//     }
+//   });
+// }
 
 // Desafio 9
 function encode(string) {
