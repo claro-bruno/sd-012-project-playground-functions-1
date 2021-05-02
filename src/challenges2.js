@@ -1,25 +1,27 @@
 // Desafio 10
 function techList(receiveArray, name) {
   // seu código aqui
+  if (receiveArray.length === 0) {
+    return 'Vazio!';
+  }
   
   let objTechOrdened = receiveArray.sort();
   let objTechList = [];
   
-  
   for (let index = 0; index < objTechOrdened.length; index += 1) {
-    objTechList.push({tec: objTechOrdened[index], name: name});
+    let obj = {
+      tech: objTechOrdened[index],
+      name: name
+    };
+    objTechList.push(obj);
   }
-  if (receiveArray.length === 0) {
-    return 'Vazio!';
-  } {
-    return objTechList;
-  }
-
+  return objTechList;
 }
 
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
+ 
 }
 
 // Desafio 12
