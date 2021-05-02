@@ -7,7 +7,7 @@ function techList(arrTech, nome1) {
   for (let index = 0; index < arrTechSorted.length; index += 1) { 
     let objTech = {
       tech: arrTechSorted[index],
-      nome: nome1,
+      name: nome1,
       };
     arrObTech.push(objTech);  
   }
@@ -15,7 +15,16 @@ function techList(arrTech, nome1) {
 }
 // Desafio 11
 function generatePhoneNumber(numeros) {
-  if (numeros.length)
+  
+  for (let index = 0; index < numeros.length; index += 1){
+    if (numeros[index] < 0 || numeros[index] > 9 ){
+      return "não é possível gerar um número de telefone com esses valores"
+    }
+  }
+  
+  for (let index = 0; index < numeros.length; index += 1){
+    if ()
+  }
   
   
   let doisPrimeirosNum = '(' + `${numeros[0]}` + `${numeros[1] }`+ ')' + ' ';
