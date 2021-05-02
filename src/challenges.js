@@ -138,8 +138,11 @@ function techList(tecno, name){
       } else {
         for(let index = 0; index < tecno.length ; index += 1){
           let valor = tecno[index]
-          objectList[index] = { tech: valor, 
-                                  name: name};       
+            let objectTech  = { 
+            "tech": valor, 
+            "name": name
+          }; 
+          objectList.push(objectTech);      
       };
     };
   
@@ -148,7 +151,7 @@ function techList(tecno, name){
       if(a.tech > a.tech) return 1;
       });
 };
-
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas'));
 
 module.exports = {
   calcArea,
