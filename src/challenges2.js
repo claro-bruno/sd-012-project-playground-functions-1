@@ -92,56 +92,37 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function one2five(bebidas) {
-  if (bebidas === '1') {
-    return 1;
-  }
-  if (bebidas === '2') {
-    return 2;
-  }
-  if (bebidas === '3') {
-    return 3;
-  }
-  if (bebidas === '4') {
-    return 4;
+function reducao(arrayAgua, numeroBebida, arrayBebidas) {
+  for (let key in numeroBebida) {
+    if (arrayBebidas === numeroBebida[key]) {
+      return arrayAgua[key - 1];
+    }
   }
 }
 
-function six2nine(bebidas) {
-  switch (bebidas) {
-  case '6':
-    return 6;
-  case '7':
-    return 7;
-  case '8':
-    return 8;
-  case '9':
-    return 9;
-  default:
-    break;
-  }
-}
-
-function switchNum(bebidas) {
-  if (bebidas < '5' && bebidas > '0') {
-    return one2five(bebidas);
-  }
-  if (bebidas > '5' && bebidas <= '9') {
-    return six2nine(bebidas);
-  }
-  return 0;
+function chamaObjeto() {
+  let numeroBebida = {
+    1: '1',
+    2: '2',
+    3: '3',
+    4: '4',
+    5: '5',
+    6: '6',
+    7: '7',
+    8: '8',
+    9: '9',
+  };
+  return numeroBebida;
 }
 
 function hydrate(bebidas) {
   // seu código aqui
   let agua = 0;
-  let arrayBebidas = bebidas.split();
-  for (let key; key < arrayBebidas.length; key += 1) {
-    if (arrayBebidas[key] === '5') {
-      agua += 5;
-    } else {
-      agua += switchNum(arrayBebidas[key]);
-    }
+  let arrayBebidas = bebidas.split('');
+  let arrayAgua = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let numeroBebida = chamaObjeto();
+  for (let charBebida = 0; charBebida < arrayBebidas.length; charBebida += 1) {
+    agua += reducao(arrayAgua[charBebida], numeroBebida, arrayBebidas);
   }
   if (agua !== 1) {
     return `${agua} copos de água`;
