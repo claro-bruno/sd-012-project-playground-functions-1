@@ -1,78 +1,97 @@
 // Desafio 10
-function techList(arr, name) {
+function techList(arr, nome) {
   arr.sort();
   let finalList = [];
 
   for (let index = 0; index < arr.length; index += 1) {
     let objeto = {
       tech: arr[index],
-      name: name
-    }
+      name: nome,
+    };
     finalList.push(objeto);
   }
-  if (arr.length == 0) {
-    return 'Vazio!'
-  } else {
-    return finalList;
-  };
-};
+  if (arr.length === 0) {
+    return 'Vazio!';
+  }
+  return finalList;
+}
 
 // Desafio 11
-function generatePhoneNumber(arr) {
-
-  if (arr.length !== 11) {
-    return 'Array com tamanho incorreto.'
-  }
-
+function check09(arr) {
   for (let index = 0; index <= arr.length; index += 1) {
     if (arr[index] < 0 || arr[index] > 9) {
+      return true;
+    }
+  }
+  return false;
+}
+function unprecedentedArray(arr) {
+  let newArray = [];
+  for (let index = 0; index < arr.length; index += 1) {
+    if (!newArray.includes(arr[index])) {
+      newArray.push(arr[index]);
+    }
+  }
+  return newArray;
+}
+function checkCount(arr, number) {
+  let count = 0;
+  for (let index = 0; index < arr.length; index += 1) {
+    if (arr[index] === number) {
+      count += 1;
+    }
+  }
+  return count >= 3;
+}
+function generatePhoneNumber(arr) {
+  if (arr.length !== 11) {
+    return 'Array com tamanho incorreto.';
+  }
+  if (check09(arr)) {
+    return 'não é possível gerar um número de telefone com esses valores';
+  }
+  let cleanArray = unprecedentedArray(arr);
+  for (let index = 0; index < cleanArray.length; index += 1) {
+    if (checkCount(arr, cleanArray[index])) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
-
-  for (let index = 0; index <= arr.length; index += 1) {
-    let count = 0;
-    for (let index2 = 0; index2 < arr.length; index2 += 1) {
-      if (arr[index] == arr[index2]) {
-        count += 1;
-          if (count >= 3) {
-            return 'não é possível gerar um número de telefone com esses valores';
-          }
-      }
-    }
-  }
-  return `(${arr[0]}${arr[1]}) ${arr[2]}${arr[3]}${arr[4]}${arr[5]}${arr[6]}-${arr[7]}${arr[8]}${arr[9]}${arr[10]}`
+  let prefix = `(${arr[0]}${arr[1]}) `;
+  let firstFive = `${arr[2]}${arr[3]}${arr[4]}${arr[5]}${arr[6]}-`;
+  let lastFour = `${arr[7]}${arr[8]}${arr[9]}${arr[10]}`;
+  return prefix + firstFive + lastFour;
 }
 
 // Desafio 12
-function triangleCheck(lineA, lineB, lineC) {
-  let sideA = lineA < lineB + lineC && lineA > Math.abs(lineB - lineC);
-  let sideB = lineB < lineA + lineC && lineB > Math.abs(lineA - lineC);
-  let sideC = lineC < lineB + lineA && lineC > Math.abs(lineA - lineB);
-
-  if (sideA == true && sideB == true && sideC == true) {
-    return true;
-  } else {
-    return false;
-  }
+function check1(lineA, lineB, lineC) {
+  return lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineB + lineA;
 }
-console.log(triangleCheck(10, 14, 8))
+
+function check2(lineA, lineB, lineC) {
+  return lineA > Math.abs(lineB - lineC)
+      && lineB > Math.abs(lineA - lineC)
+      && lineC > Math.abs(lineA - lineB);
+}
+
+function triangleCheck(lineA, lineB, lineC) {
+  return check1(lineA, lineB, lineC) && check2(lineA, lineB, lineC);
+}
+console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate(str) {
-  
   let glassesOfWater = 0;
   let reg = /\d+/g;
   let result = str.match(reg);
-  for (let index = 0; index < result.length; index += 1){
-    glassesOfWater += parseInt(result[index]);
+  for (let index = 0; index < result.length; index += 1) {
+    glassesOfWater += parseInt(result[index], 10);
   }
   if (glassesOfWater > 1) {
     return `${glassesOfWater} copos de água`;
-  } else {
-    return `${glassesOfWater} copo de água`;
   }
+  return `${glassesOfWater} copo de água`;
 }
+console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
