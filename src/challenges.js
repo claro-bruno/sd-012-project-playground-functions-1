@@ -6,7 +6,7 @@ function compareTrue(a, b) {
 // Desafio 2
 function calcArea(base, height){
   return base * height /2;
-};
+}
  
 // Desafio 3
 function splitSentence(foguete) {
@@ -22,9 +22,17 @@ function concatName(Array) {
 function footballPoints(wins, ties) {
   return wins * 3 + ties * 1;
 }
+
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(Array) {
+  let resultado = Array.sort((a,b) => b-a)[0];
+  let soma = 0;
+  Array.forEach(function(numero) {
+    if (numero == resultado) {
+      soma = soma + 1;
+    }
+  })
+  return soma;
 }
 
 // Desafio 7
