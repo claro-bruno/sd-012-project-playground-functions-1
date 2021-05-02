@@ -3,21 +3,25 @@ function techList(arrayTech, name) {
   // seu código aqui
    let saida = [];
 
-   if (arrayTech.length > 0){
-   for (let index = 0; index < arrayTech.length; index += 1){
+  if (arrayTech.length > 0){
+    for (let index = 0; index < arrayTech.length; index += 1){
      saida.push({'tech':arrayTech[index],'name':name});
-    }
+     saida.sort();
+      } 
   } else {
-    saida = 'Vazio!';
+      saida = 'Vazio!';
   }
-   return saida;
-  }
+  return saida;
+}
 
+  console.log(techList(["React", "Jest", "HTML", "CSS","JavaScript"], 'Luciano'));
+  
 // Desafio 11
 function generatePhoneNumber(number) {
   // seu código aqui
   let phone = [];
   let message;
+  let phonenumber;
 
   if (number.length > 11 || number.length < 11){
     message= "Array com tamanho incorreto."
@@ -29,13 +33,11 @@ function generatePhoneNumber(number) {
         phonenumber = message;
       } else {
         phone.push(number[index]);
+        let phonenumberarray = ['(', phone[0], phone[1], ')', phone[2], phone[3], phone[4], phone[5], phone[6], '-', phone[7], phone[8], phone[9], phone[10]];
+        phonenumber = phonenumberarray.join('');
       }
     }
   }
-
-  let phonenumberarray = ['(', phone[0], phone[1], ')', phone[2], phone[3], phone[4], phone[5], phone[6], '-', phone[7], phone[8], phone[9], phone[10]];
-  let phonenumber = phonenumberarray.join('');
-
   return phonenumber;
 }
 
