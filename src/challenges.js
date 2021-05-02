@@ -159,26 +159,26 @@ function catAndMouse(mouse, cat1, cat2) {
 
   //  console.log(encode("hi there!"));
  
-  string1 = "aeiou";
-  string2 = "12345"
-  let indice1 = 0;
-  let frase3 = ""; 
+  string3 = "aeiou";
+  string4 = "12345"
+  let indice3 = 0;
+  let frase5 = ""; 
 
-  function decode(frase2) {
-    for (let indice2 = 0; indice2 < frase2.length; indice2 +=1){
+  function decode(frase4) {
+    for (let indice4 = 0; indice4 < frase4.length; indice4 +=1){
          
-      if (indice1 < frase2.length){
-        frase3 = frase2.replace(string2[indice1], string1[indice1]);
-        frase2 = frase3; 
-        indice1 += 1;
+      if (indice3 < frase4.length){
+        frase5 = frase4.replace(string4[indice3], string3[indice3]);
+        frase4 = frase5; 
+        indice3 += 1;
         
-        if (indice1 > string1.length){
-          indice1 = 0;
+        if (indice3 > string3.length){
+          indice3 = 0;
         }    
       }  
     }
                     
-    return frase3;
+    return frase4;
          
   }
   
