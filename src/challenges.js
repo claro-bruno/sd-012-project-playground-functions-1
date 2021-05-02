@@ -2,9 +2,9 @@
 function compareTrue(par1, par2) {
   // seu código aqui
 
-  if (par1 == true && par2 == true){
+  if (par1 === true && par2 === true) {
     return true;
-  } else{
+  }else {
     return false;
   }
 }
@@ -44,8 +44,8 @@ function highestCount(numeros) {
   let maiorNumero = 0;
   let contador = 0;
 
-  for (let index = 0; index <= numeros.length; index +=1){
-    if (maiorNumero < numeros[index]){
+  for (let index = 0; index <= numeros.length; index += 1) {
+    if (maiorNumero < numeros[index]) {
       maiorNumero = numeros[index];
     };
   };
@@ -146,7 +146,7 @@ function decode(decodeText) {
       frase = resultado;
     }
   }
-    return frase;
+  return frase;
 }
 
 module.exports = {
