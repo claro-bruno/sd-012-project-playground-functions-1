@@ -1,9 +1,30 @@
 const { concatName } = require("./challenges");
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(lista, nomeT) {
+  let listaTech = {};
+  lista = lista.sort();
+  for(let i = 0; i < lista.length; i++){ 
+    listaTech["tech"+ [i]] = lista[i];
+    listaTech["name"+ [i]] = nomeT;
+  }
+  return listaTech;
+  // console.log(listaTech);
 }
+// let listaVar = ["React", "Jest", "HTML", "CSS", "JavaScript"];
+// let nomeT = "Janderson"
+// techList(listaVar, nomeT);
+
+
+
+
+
+
+
+
+
+
+
 
 // Desafio 11
 function generatePhoneNumber(n) {
