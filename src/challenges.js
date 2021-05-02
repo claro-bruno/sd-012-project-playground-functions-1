@@ -1,7 +1,7 @@
 // Desafio 1
-let variavel1 = true;
-let variavel2 = true;
-let estadoAtual = false;
+//let variavel1 = true;
+//let variavel2 = true;
+//let estadoAtual = false;
 
 function compareTrue(variavel1, variavel2, variavel3, variavel4) {
   // seu código aqui
@@ -12,7 +12,7 @@ function compareTrue(variavel1, variavel2, variavel3, variavel4) {
   }
   return estadoAtual;
 }
-//console.log(compareTrue(1,1,1,1));
+console.log(compareTrue(2,2,2,2));
 
 // Desafio 2
 function calcArea(base, height) {
