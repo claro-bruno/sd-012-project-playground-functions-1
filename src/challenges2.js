@@ -92,8 +92,60 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
+function one2five(bebidas) {
+  if (bebidas === '1') {
+    return 1;
+  }
+  if (bebidas === '2') {
+    return 2;
+  }
+  if (bebidas === '3') {
+    return 3;
+  }
+  if (bebidas === '4') {
+    return 4;
+  }
+  if (bebidas === '5') {
+    return 5;
+  }
+}
+
+function six2nine(bebidas) {
+  switch (bebidas) {
+  case '6':
+    return 6;
+  case '7':
+    return 7;
+  case '8':
+    return 8;
+  case '9':
+    return 9;
+  default:
+    break;
+  }
+}
+
+function switchNum(bebidas) {
+  if (bebidas < '6' && bebidas > '1') {
+    return one2five(bebidas);
+  }
+  if (bebidas > '5' && bebidas <= '9') {
+    return six2nine(bebidas);
+  }
+  return 0;
+}
+
+function hydrate(bebidas) {
   // seu código aqui
+  let agua = 0;
+  let arrayBebidas = bebidas.split();
+  for (let key; key < arrayBebidas.length; key += 1) {
+    agua += switchNum(arrayBebidas[key]);
+  }
+  if (agua !== 1) {
+    return `${agua} copos de água`;
+  }
+  return '1 copo de água';
 }
 
 module.exports = {
