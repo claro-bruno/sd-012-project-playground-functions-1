@@ -70,38 +70,19 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function getFizzBuzz(arrayBuzz) {
-  let status = 0
-  let objeto = {
-    0: 'fizz',
-    1: 'buzz',
-    10: 'fizzBuzz',
-    11: 'bug!'
-  }
-  for (let key in arrayBuzz) {
-    if ((arrayBuzz[key] % 3) === 0) {
-      status += 1
-    }
-  } if ((arrayBuzz[key] % 5) === 0) {
-      status += 10
-  }
-}
-console.log(getFizzBuzz([2, 15, 7, 9, 45]))
 function fizzBuzz(arrayBuzz) {
-  let resultado = [];
-  for (let key in arrayBuzz) {
-    if (arrayBuzz[key] % 3 === 0 && arrayBuzz[key] % 5 !== 0) {
-      resultado.push('fizz');
-    } else if (arrayBuzz[key] % 5 === 0 && arrayBuzz[key] % 3 !== 0) {
-      resultado.push('buzz');
-    } else if (arrayBuzz[key] % 3 === 0 && arrayBuzz[key] % 5 === 0) {
-      resultado.push('fizzBuzz');
-    } else if (arrayBuzz[key] % 3 !== 0 && arrayBuzz[key] % 5 !== 0) {
-      resultado.push('bug!');
-    }
+  let status = 0;
+  let objeto = { 0: 'fizz', 1: 'buzz', 10: 'fizzBuzz', 11: 'bug!'};
+  if (arrayBuzz === arrayBuzz) {
+    for (let key in arrayBuzz) {
+      status = 0;
+      if ((arrayBuzz[key] % 3) === 0) {status += 1;}
+      if ((arrayBuzz[key] % 5) === 0) {status += 10;}
+      arrayBuzz[key] = objeto[status];}
+    return arrayBuzz;
   }
-  return resultado;
 }
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
 function encode(toEncode) {
