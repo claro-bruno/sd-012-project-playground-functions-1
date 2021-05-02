@@ -61,7 +61,7 @@ function teste1(lineA, lineB, lineC) {
 } 
 
 function teste2(lineA, lineB, lineC) {
-  if (lineB > lineA + lineC || lineB < Math.abs(lineC - lineA)) {
+  if (lineB > lineC + lineA || lineB < Math.abs(lineC - lineA)) {
     return false;
   }
   return true;
@@ -76,8 +76,8 @@ function teste3(lineA, lineB, lineC) {
 
 function triangleCheck(lineA, lineB, lineC) {
   let a = teste1(lineA, lineB, lineC);
-  let a = teste2(lineA, lineB, lineC);
-  let a = teste3(lineA, lineB, lineC);
+  let b = teste2(lineA, lineB, lineC);
+  let c = teste3(lineA, lineB, lineC);
   return a && b && c;
 } 
 
