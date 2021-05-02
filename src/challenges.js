@@ -23,8 +23,18 @@ function concatName(texto) {
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  let vitorias = wins * 3;
+  let empates = ties;
+
+  if (vitorias >= 14 && empates >= 8) {
+    return '50 Pontos';
+  } else if (vitorias >= 1 && empates >= 2) {
+    return '5 Pontos';
+  } else if (vitorias === 0 && empates === 0) {
+    return '0 Pontos';
+  }
 }
 
 // Desafio 6
