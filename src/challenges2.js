@@ -69,9 +69,10 @@ function generatePhoneNumber(arrayTelefone) {
 }
 
 // Desafio 12
+
 function checkLines(line1, line2, line3) {
   let firstcheck = line1 < (line2 + line3);
-  let secondCheck = line1 < (line2 + line3);
+  let secondCheck = line1 > Math.abs(line2 - line3);
 
   let checkLetter = firstcheck === true && secondCheck === true;
   return checkLetter;
@@ -85,7 +86,7 @@ function triangleCheck(lineA, lineB, lineC) {
   let result = checkA === true || checkB === true || checkC === true;
   return result;
 }
-
+console.log(triangleCheck(6, 2, 2));
 // Desafio 13
 function hydrate(stringRecebida) {
   let ct = 0;
