@@ -23,8 +23,7 @@ function splitSentence(arraySplitSentence) {
 // Desafio 4
 function concatName(arrayConcatName) {
   // seu código aqui
-  let stringReturn = `${arrayConcatName[arrayConcatName.length - 1]}, ${arrayConcatName[0]}`;
-  return stringReturn;
+  return `${arrayConcatName[arrayConcatName.length - 1]}, ${arrayConcatName[0]}`;
 }
 
 // Desafio 5
@@ -94,13 +93,11 @@ function fizzBuzz(arrayFizzBuzz) {
 function encode(strEncode) {
   // seu código aqui
   let separa = strEncode;
-  for (let key = 0; key < separa.length; key += 1) {
-    separa = separa.replace('a', '1');
-    separa = separa.replace('e', '2');
-    separa = separa.replace('i', '3');
-    separa = separa.replace('o', '4');
-    separa = separa.replace('u', '5');
-  }
+  separa = separa.replace(/a/g, '1');
+  separa = separa.replace(/e/g, '2');
+  separa = separa.replace(/i/g, '3');
+  separa = separa.replace(/o/g, '4');
+  separa = separa.replace(/u/g, '5');
   return separa;
 }
 
