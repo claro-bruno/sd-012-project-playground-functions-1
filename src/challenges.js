@@ -56,7 +56,6 @@ function highestCount(arrayCount) {
   // Descobrindo quantas vezes se repete
   return getNumberRepeater(arrayCount);
 }
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]))
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -64,7 +63,7 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat2Distance = cat2 - mouse;
   if (Math.abs(cat1Distance) < Math.abs(cat2Distance)) {
     return 'cat1';
-  } else if (Math.abs(cat1Distance) > Math.abs(cat2Distance)) {
+  } if (Math.abs(cat1Distance) > Math.abs(cat2Distance)) {
     return 'cat2';
   }
   return 'os gatos trombam e o rato foge';
