@@ -74,7 +74,7 @@ function fizzBuzz(arrayFizzBuzz) {
 }
 
 // Desafio 9
-function encode() {
+function encode(stringEncode) {
   // seu código aqui
 }
 function decode() {
