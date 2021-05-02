@@ -97,20 +97,19 @@ return conclusao;
 // Desafio 8
 function fizzBuzz(array5) {
   let array6 = [];
-  let index3Array = 0;
   for (let index3Array = 0; index3Array < array5.length; index3Array += 1) {
-    if(((array5[index3Array] ) % 3) == 0 ){
-      if(((array5[index3Array] ) % 5) == 0){
+    if (((array5[index3Array]) % 3) == 0){
+      if (((array5[index3Array] ) % 5) == 0){
         array6.push('fizzBuzz');
-      }else{
+      } else {
         array6.push('fizz');
       }
-    } else if (((array5[index3Array] ) % 5) == 0){
+    } else if (((array5[index3Array]) % 5) == 0){
         array6.push('buzz');
       } else {
           array6.push('bug!');
         }
-  }        
+  }
   return array6;
 }
 
