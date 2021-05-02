@@ -1,19 +1,3 @@
-// Desafio 10
-function techList(nomeTech, name) {
-let code = []; 
-nomeTech.sort();
-
-  if (nomeTech.length > 4) {
-    for (let index in nomeTech){
-    code.push ({ tech: nomeTech[index],
-    name: name});
-    }
-      return code;
-  } else {
-      return ('Vazio!');
-  }
-}
-
 // Desafio 11
 function generatePhoneNumber(numero) {
   let repetidos = 0;
@@ -44,28 +28,4 @@ function generatePhoneNumber(numero) {
     verifica = ( '(' + pC[0] + pC[1] + ')' + ' ' + pC[2] + pC[3] + pC[4] + pC[5] + pC[6] + '-' + pC[7] + pC[8] + pC[9] + pC[10]);
     return verifica;
  }
-
-// Desafio 12
-function triangleCheck(lineA, lineB, lineC) {
-  let sumAB = Math.abs(lineA + lineB);
-  let sumAC = Math.abs(lineA + lineC);
-  let sumCB = Math.abs(lineC + lineB);
-  let boolean = false;
-  if (lineA < sumCB && lineB < sumAC && lineC < sumAB) {
-    boolean = true
-    return boolean;
-  }
-  return boolean;
-}
-
-// Desafio 13
-function hydrate(bebida) {
- // seu código aqui
-}
-
-module.exports = {
-  generatePhoneNumber,
-  techList,
-  hydrate,
-  triangleCheck,
-};
+console.log(generatePhoneNumber([5, 2, 8, 1, 5, 3, 7, 2, 7, 9, 0]))
