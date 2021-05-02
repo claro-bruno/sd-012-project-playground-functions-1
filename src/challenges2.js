@@ -1,6 +1,6 @@
-// Desafio 10 - POR FINALIZAR
+// Desafio 10
 function techList(arrayNomeTech, name) {
-  if (arrayNomeTech === '') {
+  if (arrayNomeTech === []) {
     return "Vazio!";
   }
 

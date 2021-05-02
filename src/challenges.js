@@ -88,7 +88,6 @@ function encode(stringStart) {
   return resposta;
 }
 
-
 function decode(stringFinal) {
   let resposta = stringFinal.replace(/1/g, "a");
   resposta = resposta.replace(/2/g, "e");
