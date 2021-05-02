@@ -1,10 +1,6 @@
 // Desafio 1
-//let variavel1 = true;
-//let variavel2 = true;
-//let estadoAtual = false;
 
 function compareTrue(variavel1, variavel2) {
-  // seu código aqui
   let condicao = false;
   if ( variavel1 && variavel2) {
     condicao = true;
@@ -13,11 +9,11 @@ function compareTrue(variavel1, variavel2) {
   }
   return condicao;
 }
-//console.log(compareTrue(false, true));
+// console.log(compareTrue(false, true));
 
 // Desafio 2
+
 function calcArea(base, height) {
-// seu código aqui
   let Area = (base * height) / 2;
   return Area;
 }
@@ -25,7 +21,6 @@ function calcArea(base, height) {
 // Desafio 3
 
 function splitSentence(frase) {
-  // seu código aqui
   let phraseSplited = [];
   if (frase === 'go Trybe') {
     phraseSplited.push('go', 'Trybe');
@@ -37,11 +32,9 @@ function splitSentence(frase) {
   return phraseSplited;
 }
 
-//console.log(splitSentence("foguete"))
+// console.log(splitSentence("foguete"))
 
 // Desafio 4
-
-//let array2 = ['arroz', 'batata', 'cebola', 'damasco'];
 
 function concatName(arrayDeStrings) {
   // seu código aqui
@@ -51,6 +44,7 @@ function concatName(arrayDeStrings) {
 }
 
 // Desafio 5
+
 function footballPoints(wins, ties) {
   // seu código aqui
   let Points = wins * 3 + ties;
@@ -63,7 +57,6 @@ Link do repositório: https://github.com/tryber/sd-012-project-playground-functi
 */
 
 function highestCount(arrayDeNumbers) {
-  //let arrayDeNumbers = [0, 0, 0];
   let repeticoesMaiorNumero = 0;
   let numeroMaisAlto = 0;
   for (let index1Array = 0; index1Array < arrayDeNumbers.length; index1Array +=1) {
@@ -98,19 +91,19 @@ function catAndMouse(mouse, cat1, cat2) {
 return conclusao;
 }
   
-//console.log(catAndMouse(9, 10, 11));
+// console.log(catAndMouse(9, 10, 11));
   
-  // Desafio 8
-  function fizzBuzz() {
-    let array4 = [2, 15, 7, 9, 45];
-    let array5 = [];
+// Desafio 8
+function fizzBuzz() {
+  let array4 = [2, 15, 7, 9, 45];
+  let array5 = [];
      
-    function fizzBuzz() {
-      for (let index3Array = 0; index3Array < array4.length; index3Array += 1){
-        let possiveisCasos = [((array4[index3Array]) % 3) == 0, ((array4[index3Array]) % 5),((array4[index3Array]) % 3) == 0 && ((array4[index3Array]) % 5) == 0, ((array4[index3Array]) % 3) != 0 && ((array4[index3Array]) % 5) != 0];
-        switch (possiveisCasos.indexOf(true)) {
-          case 0:
-            array5.push("fizz");
+  function fizzBuzz() {
+    for (let index3Array = 0; index3Array < array4.length; index3Array += 1){
+      let possiveisCasos = [((array4[index3Array]) % 3) == 0, ((array4[index3Array]) % 5),((array4[index3Array]) % 3) == 0 && ((array4[index3Array]) % 5) == 0, ((array4[index3Array]) % 3) != 0 && ((array4[index3Array]) % 5) != 0];
+      switch (possiveisCasos.indexOf(true)) {
+        case 0:
+          array5.push("fizz");
         break
         case 1:
           array5.push("buzz");
@@ -133,65 +126,60 @@ return conclusao;
     
   }
   
-  // Desafio 9
-  function encode(frase2) {
-    let string1 = "aeiou";
-    let string2 = "12345"
-    let indice1 = 0;
-    let frase3 = ""; 
-    for (let indice2 = 0; indice2 < frase2.length; indice2 +=1){
+// Desafio 9
+function encode(frase2) {
+  let string1 = "aeiou";
+  let string2 = "12345"
+  let indice1 = 0;
+  let frase3 = ""; 
+  for (let indice2 = 0; indice2 < frase2.length; indice2 +=1){
        
-      if (indice1 < frase2.length){
-        frase3 = frase2.replace(string1[indice1], string2[indice1]);
-        frase2 = frase3; 
-        indice1 += 1;
+    if (indice1 < frase2.length){
+      frase3 = frase2.replace(string1[indice1], string2[indice1]);
+      frase2 = frase3; 
+      indice1 += 1;
       
-        if (indice1 > string1.length){
-          indice1 = 0;
-        }    
-      }  
-    }
-                  
-  return frase3;
-       
-    }
+      if (indice1 > string1.length){
+        indice1 = 0;
+      }    
+    }  
+  }
+return frase3;
+}
 
-  //  console.log(encode("hi there!"));
+//console.log(encode("hi there!"));
  
+
+
+function decode(frase4) {
   string3 = "aeiou";
   string4 = "12345"
   let indice3 = 0;
   let frase5 = ""; 
-
-  function decode(frase4) {
-    for (let indice4 = 0; indice4 < frase4.length; indice4 +=1){
-         
-      if (indice3 < frase4.length){
-        frase5 = frase4.replace(string4[indice3], string3[indice3]);
-        frase4 = frase5; 
-        indice3 += 1;
-        
-        if (indice3 > string3.length){
-          indice3 = 0;
-        }    
-      }  
-    }
-                    
-    return frase4;
-         
+  for (let indice4 = 0; indice4 < frase4.length; indice4 +=1){
+    if (indice3 < frase4.length){
+      frase5 = frase4.replace(string4[indice3], string3[indice3]);
+      frase4 = frase5; 
+      indice3 += 1;
+      if (indice3 > string3.length){
+        indice3 = 0;
+      }    
+    }  
   }
+return frase4;
+}
   
-      console.log(decode("h3 th2r2"));
+// console.log(decode("h3 th2r2"));
   
-  module.exports = {
-    calcArea,
-    catAndMouse,
-    compareTrue,
-    concatName,
-    decode,
-    encode,
-    fizzBuzz,
-    footballPoints,
-    highestCount,
-    splitSentence,
-  };
+module.exports = {
+  calcArea,
+  catAndMouse,
+  compareTrue,
+  concatName,
+  decode,
+  encode,
+  fizzBuzz,
+  footballPoints,
+  highestCount,
+  splitSentence,
+};
