@@ -14,11 +14,35 @@ juncao.push(objetoCoisas);
   }
   return juncao;
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"))
+
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(array) {
+  let numero = array.map(String);
+  let ddd = "";
+  let primeiraPart = "";
+  let segundaPart = "";
+  let repete = 0;
+  if (array.length !== 11){
+    return "Array com tamanho incorreto."
+  }
+  for (let index in array){
+    if (numero[index] < 0 || numero[index] > 9){
+      return "não é possível gerar um número de telefone com esses valores"
+    }
+  }
+  for (let index = 0; index <= 1; index += 1){
+    ddd += numero[index];
 }
+  for (let index = 2; index <= 5; index += 1){
+    primeiraPart += numero[index]; 
+  }
+  for(let index = 7; index < 11; index += 1){
+    segundaPart += numero[index];
+}
+  return `(${ddd})${primeiraPart}-${segundaPart}`
+}
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
+
 
 // Desafio 12
 let eTringulo = false;
