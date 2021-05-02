@@ -1,7 +1,7 @@
 // Desafio 10
 function techList(arrayNomeTech, name) {
   if (arrayNomeTech.length === 0) {
-    return 'Vazio!;
+    return 'Vazio!';
   }
 
   let lista = [];
