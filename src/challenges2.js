@@ -1,22 +1,26 @@
-// Desafio 10 FALTA Retornar a mensagem de erro 'Vazio!' quando a lista não tiver tecnologias
+// Desafio 10
 function techList(arrayOfTech, names) {
   let newArrayTech = [];
-  for (let index = 0; index < arrayOfTech.length; index += 1) {
-    newArrayTech.push({
-      tech: arrayOfTech[index],
-      name: names
-    })
+  if (arrayOfTech !== undefined) {
+    for (let index = 0; index < arrayOfTech.length; index += 1) {
+      newArrayTech.push({
+        tech: arrayOfTech[index],
+        name: names
+      })
+    }
+    newArrayTech.sort(function (a, b) {
+      if (a.tech > b.tech) {
+        return 1;
+      } else if (a.tech < b.tech) {
+        return -1;
+      } else {
+        return 0;
+      };
+    });
+    return newArrayTech
+  } else if (arrayOfTech === undefined) {
+    return 'Vazio!'
   }
-  newArrayTech.sort(function (a, b) {
-    if (a.tech > b.tech) {
-      return 1;
-    } else if (a.tech < b.tech) {
-      return -1;
-    } else {
-      return 0;
-    };
-  });
-  return newArrayTech
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
