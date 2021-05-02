@@ -19,7 +19,7 @@ function splitSentence(texto) {
 // Desafio 4
 function concatName(texto) {
   // seu código aqui
-  return texto[texto.length - 1]  + ", " + texto[0];
+  return texto[texto.length - 1] + ', ' + texto[0];
 }
 
 // Desafio 5
