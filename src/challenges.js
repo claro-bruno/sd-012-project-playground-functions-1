@@ -90,7 +90,7 @@ function encode(variavel) {
   }
   return resposta;
 }
-console.log(decode('h3 th2r2!'))
+
 function decode(variavel) {
   let caracter = '';
   let resposta = '';
