@@ -42,11 +42,9 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(contador) {
-  let quantos = Math.max.apply(...contador);
-  return quantos();
+function highestCount() {
+  // seu código aqui
 }
-  console.log(contador([1,2,3,4,5,6,6]));
 
 // Desafio 7
 function catAndMouse() {
