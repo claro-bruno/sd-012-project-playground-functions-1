@@ -1,7 +1,4 @@
 // X Desafio 1
-let x = true;
-let y = false;
-let resposta = x && y;
 function compareTrue(x, y) {
   if (x && y) {
     return true;
@@ -9,7 +6,7 @@ function compareTrue(x, y) {
     return false;
   }
 }
-console.log(resposta);
+console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, height) { 
