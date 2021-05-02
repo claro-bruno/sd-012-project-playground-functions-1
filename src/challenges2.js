@@ -20,6 +20,10 @@ function techList(stack, person) {
 // Desafio 11
 function generatePhoneNumber(phone) {
   phoneFormat = "(xx) xxxxx-xxxx";
+  if (phone.length !== 11) {
+    return "Array com tamanho incorreto.";
+  }
+
   for (let index = 0; index < phone.length; index += 1) {
     if (phone[index] < 0 || phone[index] > 9) {
       return "não é possível gerar um número de telefone com esses valores";
@@ -40,14 +44,12 @@ function generatePhoneNumber(phone) {
   for (let index = 0; index < phone.length; index += 1) {
     phoneFormat = phoneFormat.replace('x', phone[index]);
   }
-  if (phone.length !== 11) {
-    return "Array com tamanho incorreto.";
-  }
+
 
   return phoneFormat;
 }
 
-// console.log(generatePhoneNumber([1, 2, 3, 2, 4, 3, 6, 7, 8, 9, 7]));
+console.log(generatePhoneNumber([1, 2, 3, 2, 4, 3, 6, 7, 8, 9, 7]));
 
 
 // Desafio 12
