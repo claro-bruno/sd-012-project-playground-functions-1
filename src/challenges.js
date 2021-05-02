@@ -110,23 +110,21 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(numeros) {
-  let result = [];
-
-  //for of pega o valor do indice
-  for(let index of numeros){
-    if(index % 15 === 0){
-      result.push('fizzbuzz');
-    }else if(index % 3 === 0){
-      result.push('fizz');
-    }else if(index % 5 === 0){
-      result.push('buzz');
-    }else{
-      result.push('bug!');
-    }  
+  for (let index = 0; index < numeros.length; index += 1) {
+    if (numeros[index] % 3 === 0 && numeros[index] % 5 !== 0) {
+      numeros[index] = 'fizz';
+    } else if (numeros[index] % 3 !== 0 && numeros[index] % 5 === 0) {
+      numeros[index] = 'buzz'
+    } else if (numeros[index] % 3 === 0 && numeros[index] % 5 === 0) {
+      numeros[index] = 'fizzBuzz';
+    } else {
+      numeros[index] = 'bug!';
+    }
   }
-
-  return result;
+  return numeros 
 }
+
+
 
 
 

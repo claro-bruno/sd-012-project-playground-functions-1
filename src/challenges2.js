@@ -15,7 +15,8 @@ function techList(nameTec,name) {
   return objetoList;
 }
   
-
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
+"Lucas"));
 
 
   
