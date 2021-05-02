@@ -10,7 +10,7 @@ function techList(stack, person) {
   }
   return stackName;
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
+console.table(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
   "Lucas"));
 
 
