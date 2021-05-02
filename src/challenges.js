@@ -59,26 +59,14 @@ function catAndMouse(positionMouse, positionCat1, positionCat2) {
 }
 
 // Desafio 8
-function changeFizzbuzz(status) {
-  switch (status) {
-  case 0:
-    return 'bug!';
-  case 1:
-    return 'fizz';
-  case 10:
-    return 'buzz';
-  case 11:
-    return 'fizzBuzz';
-  default:
-  }
-}
 function fizzBuzz(arrayNum) {
   let status = 0;
+  let object = { 0: 'bug!', 1: 'fizz', 10: 'buzz', 11: 'fizzBuzz' };
   for (let index = 0; index < (arrayNum.length); index += 1) {
     status = 0;
     if ((arrayNum[index] % 3) === 0) { status += 1; }
     if ((arrayNum[index] % 5) === 0) { status += 10; }
-    arrayNum[index] = changeFizzbuzz(status);
+    arrayNum[index] = object(status);
   }
   return arrayNum;
 }
