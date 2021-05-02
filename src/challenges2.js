@@ -1,5 +1,5 @@
 // Desafio 10
-function techList(tecName, name) {
+function techList(tecName, n4me) {
   // seu código aqui
   let techNameOrdenado = tecName.sort();
   let tecListReturn = [];
@@ -7,7 +7,7 @@ function techList(tecName, name) {
     for (let key = 0; techNameOrdenado.length > key; key += 1) {
       let tecList = {
         tech: techNameOrdenado[key],
-        n4me: name,
+        name: n4me,
       };
       tecListReturn.push(tecList);
     }
@@ -66,8 +66,9 @@ function generatePhoneNumber(T) {
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+
 }
 
 // Desafio 13
