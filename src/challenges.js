@@ -99,9 +99,10 @@ function fizzBuzz(oi) {
 console.log(fizzBuzz([3, 5, 7, 9, 45]));
 
 // Desafio 9
-function encode(texto) {
+function encode() {
   // seu código aqui
-  
+}
+function decode() {
   // seu código aqui
 }
 
