@@ -29,32 +29,32 @@ function generatePhoneNumber(arrayOfNumber) {
   let phoneNumber;
   let isPossible = true;
   for (let index = 0; index < arrayOfNumber.length; index += 1) {
-      if (arrayOfNumber[index] < 0 || arrayOfNumber[index] > 9) {
-          isPossible = false;
-      }
+    if (arrayOfNumber[index] < 0 || arrayOfNumber[index] > 9) {
+      isPossible = false;
+    }
   }
   for (let number = 0; number < 10; number += 1) {
-      let contador = 0;
-      for (let index = 0; index < arrayOfNumber.length; index += 1) {
-          if (number === arrayOfNumber[index]) {
-              contador += 1;
-          }
-      }  
-      if (contador > 2) {
-          isPossible = false;
+    let contador = 0;
+    for (let index = 0; index < arrayOfNumber.length; index += 1) {
+      if (number === arrayOfNumber[index]) {
+        contador += 1;
       }
+    }
+    if (contador > 2) {
+      isPossible = false;
+    }
   }
   if (arrayOfNumber.length !== 11) {
-      console.log('Array com tamanho incorreto');
+    return 'Array com tamanho incorreto';
   } else if (isPossible === false) {
-      console.log('não é possível gerar um número de telefone com esses valores');
+    return 'não é possível gerar um número de telefone com esses valores';
   } else {
-      let stringPhone = arrayOfNumber.join('');
-      let part1 = stringPhone.slice(0, 2);
-      let part2 = stringPhone.slice(2, 7);
-      let part3 = stringPhone.slice(7);
-      phoneNumber = `(${part1}) ${part2}-${part3}`;
-      return phoneNumber;
+    let stringPhone = arrayOfNumber.join('');
+    let part1 = stringPhone.slice(0, 2);
+    let part2 = stringPhone.slice(2, 7);
+    let part3 = stringPhone.slice(7);
+    phoneNumber = `(${part1}) ${part2}-${part3}`;
+    return phoneNumber;
   }
 }
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
