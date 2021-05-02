@@ -66,9 +66,29 @@ function generatePhoneNumber(T) {
 }
 
 // Desafio 12
+function soma(a, b, c) {
+  if (a > b + c || b > a + c || c > a + b) {
+    return false;
+  }
+  return true;
+}
+
+function subtracao(a, b, c) {
+  if (a < Math.abs(b - c) || b < Math.abs(a - c) || c < Math.abs(a - b)) {
+    return false;
+  }
+  return true;
+}
+
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-
+  if (soma(lineA, lineB, lineC) === false) {
+    return false;
+  }
+  if (subtracao(lineA, lineB, lineC) === false) {
+    return false;
+  }
+  return true;
 }
 
 // Desafio 13
