@@ -53,7 +53,7 @@ function generatePhoneNumber(array) {
   for(let index = 7; index < 11; index += 1){
     segundaPart += numero[index];
 }
-  return `(${ddd})" "${primeiraPart}-${segundaPart}`
+  return `(${ddd}) ${primeiraPart}-${segundaPart}`
 }
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
 
