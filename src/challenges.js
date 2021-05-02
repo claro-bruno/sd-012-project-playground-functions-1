@@ -35,6 +35,8 @@ function splitSentence(frase) {
   return phraseSplited;
 }
 
+//console.log(splitSentence("foguete"))
+
 // Desafio 4
 
 //let array2 = ['arroz', 'batata', 'cebola', 'damasco'];
