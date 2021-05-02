@@ -14,6 +14,7 @@ function techList(tech, nome) {
 }
 
 // Desafio 11
+console.log(generatePhoneNumber([]));
 function formatNumberPhone(indexArray, value) {
   let retornoFormato = '';
   switch (indexArray) {
@@ -44,7 +45,7 @@ function countNumber(arrayTelefone, value) {
 function checkErrorPhone(arrayTelefone, value) {
   let errorMessage = '';
 
-  if (arrayTelefone.length != 11) {
+  if (arrayTelefone.length !== 11) {
     errorMessage = 'Array com tamanho incorreto.';
   } else if (countNumber(arrayTelefone, value) > 2 || value < 0 || value > 9) {
     errorMessage = 'não é possível gerar um número de telefone com esses valores';
@@ -55,7 +56,7 @@ function checkErrorPhone(arrayTelefone, value) {
 function generatePhoneNumber(arrayTelefone) {
   let phoneFormated = '';
   let mensagemErro = '';
-
+  mensagemErro = checkErrorPhone(arrayTelefone, '');
   for (let index = 0; index < arrayTelefone.length; index += 1) {
     mensagemErro = checkErrorPhone(arrayTelefone, arrayTelefone[index]);
     if (mensagemErro.length > 0) {
