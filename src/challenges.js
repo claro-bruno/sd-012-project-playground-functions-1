@@ -1,10 +1,5 @@
 // Desafio 1
 function compareTrue(value1, value2) {
-  /*
-  &&
-  receba 2 valores boleanos
-  retorn true ou false
-  */
   if (value1 && value2 === true) {
     return true;
   } else {
@@ -15,34 +10,18 @@ console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, height) {
-  /*
-  receba valor de base
-  receba valor de altura
-  return calculo da area
-  formula (base * altura) / 2
-   */
   return (base * height) / 2;
 }
 console.log(calcArea(51, 1));
 
 // Desafio 3
 function splitSentence(stringToSplit) {
-  /*
-  recebe "string"
-  return = [array, de, strings] separadas
-  */
   return stringToSplit.split(' ');
 }
 console.log(splitSentence('vamo que vamo'));
 
 // Desafio 4
 function concatName(arrayOfStrings) {
-  /*
-  concatenacao +
-  recebe = [array, de, strings]
-  return "string" 'ÚLTIMO ITEM, PRIMEIRO ITEM' independente do tamanho da array
-  pop()
-  */
   let ultimoItem = arrayOfStrings.pop();
   let primeiroItem = arrayOfStrings[0];
   return ultimoItem + ', ' + primeiroItem;
@@ -51,12 +30,6 @@ console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  /*
-  calculo
-  recebe numero de vitorias wins = 3pontos
-  receba numero de empates ties = 1ponto
-  return qntde de pontos
-  */
   let winsPoints = wins * 3;
   let tiesPoints = ties * 1;
   return winsPoints + tiesPoints;

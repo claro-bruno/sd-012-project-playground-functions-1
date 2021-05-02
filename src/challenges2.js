@@ -22,9 +22,9 @@ function techList(arrayOfTech, names) {
     return 'Vazio!';
   }
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas'));
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
-// Desafio 11 
+// Desafio 11
 function generatePhoneNumber(arrayOfNumber) {
   let phoneNumber;
   let isPossible = true;
@@ -78,9 +78,17 @@ function triangleCheck(lineA, lineB, lineC) {
 console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(drinks) {
+  let receivedDrink = drinks.split("").filter(n => (Number(n) || n == 0)).join('');
+  let stringToReplace = receivedDrink.replace(/[^0-9]/g,'');
+  let newArray = stringToReplace.split('');
+  let sunString = 0;
+  for (let index = 0; index < newArray.length; index += 1) {
+    sunString += parseInt(newArray[index]);
+  }
+  return `${sunString} copos de água`;
 }
+console.log(hydrate('1 cerveja'));
 
 module.exports = {
   generatePhoneNumber,
