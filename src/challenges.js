@@ -45,7 +45,6 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(matriz) {
-  let matriz = [9, 25];
   let resposta = [];
   for (let index = 0; index < matriz.length; index += 1) {
     if (matriz[index] % 3 === 0 && matriz[index] % 5 === 0) { 
@@ -58,10 +57,7 @@ function fizzBuzz(matriz) {
       resposta.push('bug!');
     }
   }
-  console.log(resposta);
-    return resposta;
-   
-
+  return resposta;
 }
 
 // Desafio 9
