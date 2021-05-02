@@ -88,7 +88,7 @@ function catAndMouse(mouse, cat1, cat2) {
   }    
 }
 
-catAndMouse(0, 3, 2);
+// catAndMouse(0, 3, 2);
 
 
 
