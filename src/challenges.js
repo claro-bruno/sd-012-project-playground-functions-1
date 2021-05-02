@@ -37,7 +37,7 @@ function highestCount(matriz) {
 
   for (let resultado = 0; matrizOrganizada.length - 1; resultado += 1) {
     if (matriz[resultado] === matrizOrganizada[matrizOrganizada.length - 1]) {
-        contar++;
+      contar += 1;
     }
   }
   return contar;
