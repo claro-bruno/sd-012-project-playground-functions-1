@@ -58,7 +58,7 @@ function fizzBuzz(array) {
     resultadoArray.push('buzz');
   } else {
     resultadoArray.push('bug!');
-  }
+  } return resultadoArray
 }
 
 // Desafio 9
