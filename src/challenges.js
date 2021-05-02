@@ -50,9 +50,9 @@ function footballPoints(wins, ties) {
   let Points = wins * 3 + ties;
   return Points;
 }
-  
+
 // Desafio 6
- /** Consultei o repositório do Luiz henrique para resolver essa parte.
+/** Consultei o repositório do Luiz henrique para resolver essa parte.
 Link do repositório: https://github.com/tryber/sd-012-project-playground-functions/pull/117
 */
 
@@ -66,11 +66,11 @@ function highestCount(arrayDeNumbers) {
   }
   for (let index2Array = 0; index2Array < arrayDeNumbers.length; index2Array += 1) {
     if (arrayDeNumbers[index2Array] === numeroMaisAlto) {
-          repeticoesMaiorNumero += 1;
+      repeticoesMaiorNumero += 1;
 
-    } 
+    }
   }
-return repeticoesMaiorNumero;
+  return repeticoesMaiorNumero;
 }
 
 // Desafio 7
