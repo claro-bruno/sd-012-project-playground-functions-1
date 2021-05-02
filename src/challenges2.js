@@ -1,6 +1,6 @@
 // Desafio 10
 function techList(arrayNomeTech, name) {
-  if (arrayNomeTech.length === 0) {
+  if (arrayNomeTech !== '[]') {
     return 'Vazio!';
   }
 
