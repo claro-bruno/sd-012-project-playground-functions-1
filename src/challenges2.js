@@ -16,9 +16,9 @@ function techList(name, array7) {
   return novaArray;
 }
 
-//techList("Eder", ["React", "Jest", "HTML", "CSS", "JavaScript"]) 
+techList("Eder", ["React", "Jest", "HTML", "CSS", "JavaScript"]) 
 
-//console.log(novaArray);
+console.log(novaArray);
 
 // Desafio 11
 function generatePhoneNumber() {
