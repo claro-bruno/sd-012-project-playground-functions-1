@@ -5,9 +5,8 @@ function compareTrue(par1, par2) {
   if (par1 === true && par2 === true) {
     return true;
   }
-    return false;
-  }
-
+  return false;
+}
 
 // Desafio 2
 function calcArea(base, altura) {
@@ -28,7 +27,7 @@ function concatName(nomes) {
   // seu código aqui
   let firstName = nomes[0];
   let lastName = nomes[nomes.length - 1];
-  return lastName + ", " + firstName;
+  return lastName + ', ' + firstName;
 }
 
 // Desafio 5
@@ -52,7 +51,7 @@ function highestCount(numeros) {
 
   for (let index = 0; index <= numeros.length; index += 1) {
     if (maiorNumero === numeros[index]) {
-      contador+= 1;
+      contador += 1;
     }
   }
   return contador;
@@ -69,9 +68,8 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat1';
   } else if (gato2 < gato1) {
     return 'cat2';
-  } else {
-    return 'os gatos trombam e o rato foge';
   }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
@@ -81,7 +79,7 @@ function fizzBuzz(inputNumbers) {
   let outputString = [];
 
   for (let index = 0; index < inputNumbers.length; index += 1) {
-    if (inputNumbers[index] % 3 === 0 && inputNumbers[index] % 5 == 0) {
+    if (inputNumbers[index] % 3 === 0 && inputNumbers[index] % 5 === 0) {
       outputString.push('fizzBuzz');
     } else if (inputNumbers[index] % 3 === 0) {
       outputString.push('fizz');
@@ -102,20 +100,20 @@ function encode(encodeText) {
 
   for (let index = 0; index <= frase.length; index += 1) {
     if (frase[index] === 'a') {
-    resultado = frase.replace('a', '1');
-    frase = resultado;
+      resultado = frase.replace('a', '1');
+      frase = resultado;
   } else if (frase[index] === 'e') {
-    resultado = frase.replace('e', '2');
-    frase = resultado;
+      resultado = frase.replace('e', '2');
+      frase = resultado;
   } else if (frase[index] === 'i') {
-    resultado = frase.replace('i', '3');
-    frase = resultado;
+      resultado = frase.replace('i', '3');
+      frase = resultado;
   } else if (frase[index] === 'o') {
-    resultado = frase.replace('o', '4');
-    frase = resultado;
+      resultado = frase.replace('o', '4');
+      frase = resultado;
   } else if (frase[index] === 'u') {
-    resultado = frase.replace('u', '5');
-    frase = resultado;
+      resultado = frase.replace('u', '5');
+      frase = resultado;
   }
 }
   return frase;
