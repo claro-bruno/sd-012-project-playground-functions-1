@@ -53,11 +53,11 @@ function fizzBuzz(array) {
     if(array[indice] % 3 === 0 && array[indice] % 5 === 0){
     resultadoArray.push('fizzBuzz');
   } else if (array[indice] % 3 === 0){
-    resultadoArray.push('fizz')
+    resultadoArray.push('fizz');
   } else if (array[indice] % 5 === 0){
-    resultadoArray.push('buzz')
+    resultadoArray.push('buzz');
   } else {
-    resultadoArray.push('bug!')
+    resultadoArray.push('bug!');
   }
 }
 
