@@ -22,7 +22,7 @@ function techList(arrayOfTech, names) {
     return 'Vazio!';
   }
 }
-// console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas'));
 
 // Desafio 11 
 function generatePhoneNumber(arrayOfNumber) {
@@ -57,14 +57,19 @@ function generatePhoneNumber(arrayOfNumber) {
     return phoneNumber;
   }
 }
-// console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  let vaLineA = Math.abs(lineA);
-  let vaLineB = Math.abs(lineB);
-  let vaLineC = Math.abs(lineC);
-  if (lineA < (lineB + lineC) && lineA > (vaLineB / vaLineC)) {
+  let firstCheck = false;
+  if (lineA < (lineB + lineC) && lineB < (lineA + lineC) && lineC < (lineA + lineB)) {
+    firstCheck = true;
+  }
+  let secondCheck = false;
+  if (lineA > (Math.abs(lineB) / Math.abs(lineC)) && lineB > (Math.abs(lineA) / Math.abs(lineC)) && lineC > (Math.abs(lineA) / Math.abs(lineB))) {
+    secondCheck = true;
+  }
+  if (firstCheck === true && secondCheck === true) {
     return true;
   } else {
     return false;
