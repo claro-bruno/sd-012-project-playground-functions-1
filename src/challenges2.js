@@ -1,7 +1,9 @@
 // Desafio 10
 function techList(arrayOfTech, names) {
   let newArrayTech = [];
-  if (arrayOfTech !== undefined) {
+  if (arrayOfTech === null) {
+    return 'Vazio!';
+  } else {
     for (let index = 0; index < arrayOfTech.length; index += 1) {
       newArrayTech.push({
         tech: arrayOfTech[index],
@@ -18,11 +20,9 @@ function techList(arrayOfTech, names) {
       }
     });
     return newArrayTech;
-  } else if (arrayOfTech === undefined) {
-    return 'Vazio!';
   }
 }
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+console.log(techList(null, 'Lucas'));
 
 // Desafio 11
 function generatePhoneNumber(arrayOfNumber) {
