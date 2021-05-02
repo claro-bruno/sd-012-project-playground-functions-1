@@ -20,7 +20,6 @@ console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 // Desafio 11
 function generatePhoneNumber(phone) {
   phoneFormat = "(xx) xxxxx-xxxx";
-
   for (let index = 0; index < phone.length; index += 1) {
     if (phone[index] < 0 || phone[index] > 9) {
       return "não é possível gerar um número de telefone com esses valores";
