@@ -10,8 +10,7 @@ function techList(stack, person) {
   }
   return stackName;
 }
-console.table(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
-  "Lucas"));
+//console.table(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
 
 
 // Desafio 11
