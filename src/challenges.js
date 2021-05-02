@@ -158,11 +158,32 @@ function catAndMouse(mouse, cat1, cat2) {
     }
 
   //  console.log(encode("hi there!"));
-  
+ 
+  string1 = "aeiou";
+  string2 = "12345"
+  let indice1 = 0;
+  let frase3 = ""; 
 
-  function decode() {
-    // seu código aqui
+  function decode(frase2) {
+    for (let indice2 = 0; indice2 < frase2.length; indice2 +=1){
+         
+      if (indice1 < frase2.length){
+        frase3 = frase2.replace(string2[indice1], string1[indice1]);
+        frase2 = frase3; 
+        indice1 += 1;
+        
+        if (indice1 > string1.length){
+          indice1 = 0;
+        }    
+      }  
+    }
+                    
+    return frase3;
+         
   }
+  
+      console.log(decode("h3 th2r2"));
+  
   module.exports = {
     calcArea,
     catAndMouse,
