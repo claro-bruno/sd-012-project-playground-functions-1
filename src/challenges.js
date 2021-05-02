@@ -128,25 +128,27 @@ function decode(string) {
 return decodifica.join('');
 };
 // Desafio 10
-function techName(tecno, name){
+function techList(tecno, name){
     
   let objectList = [];
-  for(let index = 0; index <= tecno.length; index += 1){
-      let valor = tecno[index];
-      if(valor === undefined){
-          return 'Vazio!'
-
+  
+      if(tecno.length === 0){
+          return '"Vazio!"'         
+          
       } else {
-      objectList[index] = { tech: valor, 
-                              name: name};       
-      }
-  };
+        for(let index = 0; index < tecno.length ; index += 1){
+          let valor = tecno[index]
+          objectList[index] = { tech: valor, 
+                                  name: name};       
+      };
+    };
+  
   return objectList.sort(function(a, b){
       if(a.tech < b.tech) return -1;
       if(a.tech > a.tech) return 1;
+      });
+};
 
-  })
-}
 
 module.exports = {
   calcArea,
