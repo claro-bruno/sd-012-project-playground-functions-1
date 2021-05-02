@@ -51,12 +51,12 @@ function fizzBuzz(matriz) {
     conteudo = 'bug!';
     if (matriz[index] % 3 === 0) {
       conteudo = 'fizz';
-      if (matriz[index] % 5 === 0) { 
-         conteudo = 'fizzBuzz';
+      if (matriz[index] % 5 === 0) {
+        conteudo = 'fizzBuzz';
       }
     } else if (matriz[index] % 5 === 0) {
       conteudo = 'buzz';
-      } 
+      }
     resposta.push(conteudo);
   } 
   return resposta;
@@ -90,26 +90,26 @@ function encode(variavel) {
   }
   return resposta;
 }
-
+console.log(decode('h3 th2r2!'))
 function decode(variavel) {
   let caracter = '';
   let resposta = '';
   for (let index = 0; index < variavel.length; index += 1) {
     switch (variavel.substr(index,1)) {
-      case 'a':
-        caracter = '1';
+      case '1':
+        caracter = 'a';
         break;
-      case 'e':
-        caracter = '2';
+      case '2':
+        caracter = 'e';
         break;
-      case 'i':
-        caracter = '3';
+      case '3':
+        caracter = 'i';
         break;
-      case 'o':
-        caracter = '4';
+      case '4':
+        caracter = 'o';
         break;
-      case 'u':
-        caracter = '5';
+      case '5':
+        caracter = 'u';
         break;
       default:
         caracter = variavel.substr(index,1);
