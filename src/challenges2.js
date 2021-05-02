@@ -21,7 +21,7 @@ console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 function generatePhoneNumber(cpf) {
   cpfFormat = "(xx) xxxxx-xxxx";
 
-  for (let index = 0; index < cpf.length; index += 1) {
+  for (let index = 0; index > cpf.length; index += 1) {
     if (cpf[index] < 0 || cpf[index] > 9) {
       return "não é possível gerar um número de telefone com esses valores";
     }
