@@ -1,6 +1,4 @@
 // Desafio 10
-let arrTest = ["React", "Jest", "HTML", "CSS", "JavaScript"];
-
 function techList(receiveArray, name) {
   // seu código aqui
   
@@ -19,7 +17,6 @@ function techList(receiveArray, name) {
   }
 
 }
-console.log(techList(arrTest, 'Lucas'));
 
 // Desafio 11
 function generatePhoneNumber() {
