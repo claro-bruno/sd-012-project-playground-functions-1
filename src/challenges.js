@@ -31,20 +31,20 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function getHighestNumber(arrayCount) {
-  let maior = arrayCount[0];
-  for (let key in arrayCount) {
-    if (maior < arrayCount[key]) {
-      maior = arrayCount[key];
+function getHighestNumber(getHighArrayCount) {
+  let maior = getHighArrayCount[0];
+  for (let key in getHighArrayCount) {
+    if (maior < getHighArrayCount[key]) {
+      maior = getHighArrayCount[key];
     }
   }
   return maior;
 }
-function getNumberRepeater(arrayCount) {
+function getNumberRepeater(getNumberArrayCount) {
   let repete = 0;
-  let maior = getHighestNumber(arrayCount);
-  for (let key in arrayCount) {
-    if (maior === arrayCount[key]) {
+  let maior = getHighestNumber(getNumberArrayCount);
+  for (let key in getNumberArrayCount) {
+    if (maior === getNumberArrayCount[key]) {
       repete += 1;
     }
   }
@@ -70,19 +70,27 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(arrayBuzz) {
+function getAgainFizzBuzz(valor) { // pega os valores de key e arrayBuzz em getFizzBuzz e faz as checagens e retona os valores
   let status = 0;
-  let objeto = { 0: 'fizz', 1: 'buzz', 10: 'fizzBuzz', 11: 'bug!'};
-  if (arrayBuzz === arrayBuzz) {
-    for (let key in arrayBuzz) {
-      status = 0;
-      if ((arrayBuzz[key] % 3) === 0) {status += 1;}
-      if ((arrayBuzz[key] % 5) === 0) {status += 10;}
-      arrayBuzz[key] = objeto[status];}
-    return arrayBuzz;
-  }
+  let objeto = { 0: 'fizz', 1: 'buzz', 10: 'fizzBuzz', 11: 'bug!' };
+  if ((valor % 3) === 0) { status += 1; }
+  if ((valor % 5) === 0) { status += 10; }
+  valor = objeto[status];
+  return valor;
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]))
+
+function getFizzBuzz(getArrayBuzz) { // Sistema de repetição para key e arrayBuzz
+  for (let key in getArrayBuzz) { // for in pega posicao e For of pega Valor
+    if (Object.prototype.hasOwnProperty.call(getArrayBuzz, key)) {
+      getArrayBuzz[key] = getAgainFizzBuzz(getArrayBuzz[key]);
+    }
+  }
+  return getArrayBuzz;
+}
+function fizzBuzz(arrayBuzz) {
+  return getFizzBuzz(arrayBuzz);
+}
+console.log(getFizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode(toEncode) {
