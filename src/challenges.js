@@ -58,10 +58,14 @@ let mais;
 function highestCount(array) {
   const maior = Math.max(array);
   for (let index = 0; index < array.length; index += 1){
-    (array[index] === maior)
+    if (array[index] === maior){
       mais += 1;
-    
     }
+    else {
+      (array[index] === maior && maior === 0)
+      mais += 1;
+    }
+  }
     return mais;
   }
 
