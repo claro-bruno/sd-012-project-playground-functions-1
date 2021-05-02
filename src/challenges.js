@@ -32,12 +32,11 @@ let primeiroEUltimo = strings[strings.length -1] + ', ' + [strings[0]];
 console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 
 // Desafio 5
-let wins = 14;
-let ties = 8;
 function footballPoints(wins, ties) {
-  return ((wins * 3) + (ties * 1));
+let pontuação = ((wins * 3) + (ties * 1));
+  return pontuação;
 }
-console.log((wins * 3) + (ties * 1));
+console.log(footballPoints(14, 8));
 
 // Desafio 6
 let valores = [9, 1, 2, 9, 9, 5, 7];
