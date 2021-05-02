@@ -113,40 +113,76 @@ return resultado;
 
 
 // Desafio 8
-let resultado;
+let resultado = [];
 
 function fizzBuzz(num) {
-  for(index = 0; index < num.length; index += 1) {
-    for(indice = 2; indice < num[index]; indice += 1) {
-      if(num[index] % 3 == 0 && num[index] % indice != 0) {
-        resultado = 'fizz';
-      }
-      else if(num[index] % 5 == 0 && num[index] % indice != 0) {
-        resultado = 'buzz';
-      }
-      else if(num[index] % 3 == 0 && num[index] % 5 == 0) {
-        resultado = 'fizzBuzz';
-      }
-      else {
-        resultado = 'bug!';
-      }
-    }
-  }
-return resultado;
+  resultado = num[0] + 1;
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
-
-
+return resultado;
+console.log(fizzBuzz('6'));
 
 // Desafio 9
 function encode(vogal) {
-  for(index = 0; index < vogal.length; index += 1) {
-    
-  }
+  let resultado = [];
+  let valor;
+  
+   for(index = 0; index < vogal.length; index += 1) {
+     switch(vogal[index]){
+       case('a'):
+       resultado[index] = 1;
+       break;
+       case('e'):
+       resultado[index] = 2;
+       break;
+       case('i'):
+       resultado[index] = 3;
+       break;
+       case('o'):
+       resultado[index] = 4;
+       break;
+       case('u'):
+       resultado[index] = 5;
+       break;
+       default:
+       resultado[index] = vogal[index];
+      }
+      valor = resultado.join('');
+   }
+   return valor;
 }
+
+//console.log(encode('i love you'));
+
+
 function decode(numero) {
-  // seu código aqui
+  let resultado = [];
+  let valor;
+  
+   for(index = 0; index < numero.length; index += 1) {
+     switch(numero[index]){
+       case('1'):
+       resultado[index] = 'a';
+       break;
+       case('2'):
+       resultado[index] = 'e';
+       break;
+       case(3):
+       resultado[index] = 'i';
+       break;
+       case(4):
+       resultado[index] = 'o';
+       break;
+       case('5'):
+       resultado[index] = 'u';
+       break;
+       default:
+       resultado[index] = numero[index];
+      }
+      valor = resultado.join('');
+   }
+   return valor;
 }
+//console.log(decode('i love you'));
 
 module.exports = {
   calcArea,
