@@ -88,30 +88,12 @@ function generatePhoneNumber(phoneNumber) {
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  let checkLineA
-  let checkLineB
-  let checkLineC
-  if (lineA < (lineB + lineC) && lineA > Math.abs(lineB - lineC)){
-    checkLineA = true;
-  }else {
-    checkLineA = false;
-  }
-
-  if (lineB < (lineA + lineC) && lineB > Math.abs(lineA - lineC)){
-    checkLineB = true;
-  }else {
-    checkLineB = false;
-  }
-
-  if (lineC < (lineA + lineB) && lineC > Math.abs(lineA - lineB)){
-    checkLineC = true;
-  }else {
-    checkLineC = false;
-  }
-
+  let checkLineA = (lineA < (lineB + lineC) && lineA > Math.abs(lineB - lineC));
+  let checkLineB = (lineB < (lineA + lineC) && lineB > Math.abs(lineA - lineC));
+  let checkLineC = (lineC < (lineA + lineB) && lineC > Math.abs(lineA - lineB));
   return (checkLineA && checkLineB && checkLineC);
 }
-// console.log(triangleCheck(10, 14, 99))
+// console.log(triangleCheck(10, 14, 8))
 
 // Desafio 13
 function hydrate() {
