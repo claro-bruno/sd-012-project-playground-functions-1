@@ -3,7 +3,7 @@ function techList(array, nome) {
   let total = [];
   let objetos = {};
   let tamanho = array.length;
-  if (array === null) {
+  if (array == "") {
     return "Vazio!";
   } else {
     for (let index = 0; index < tamanho; index += 1) {
@@ -21,8 +21,7 @@ function techList(array, nome) {
       return -1;
     }
   });
-
-  return total.sort();
+  return total;
 };
 console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 
