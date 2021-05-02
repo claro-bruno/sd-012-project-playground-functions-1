@@ -76,21 +76,18 @@ function highestCount(arrayDeNumbers) {
 
 function catAndMouse(mouse, cat1, cat2) {
   let conclusao = '';
-  if (cat1 > cat2 && cat2 >= mouse) {
+  // comparar o módulo da diferença para saber qual gato está mais próximo
+  if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
     conclusao = 'cat2';
-  } else if (cat2 > cat1 && cat1 >= mouse) {
+  } else if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
     conclusao = 'cat1';
-  } else if (cat1 > cat2 && mouse >= cat1) {
-    conclusao = 'cat1';
-  } else if (cat2 > cat1 && mouse >= cat2) {
-    conclusao = 'cat2';
   } else {
     conclusao = 'os gatos trombam e o rato foge';
   }
   return conclusao;
 }
 
-// console.log(catAndMouse(9, 10, 11));
+//console.log(catAndMouse(11, 10, 30));
 
 // Desafio 8
 function fizzBuzz(array5) {
