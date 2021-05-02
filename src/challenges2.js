@@ -55,17 +55,12 @@ function triangleCheck(lineA, lineB, lineC) {
 console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate(drink1, drink2, drink3) {
-  let drinks = {
-    0: drink1,
-    1: drink2,
-    2: drink3,
-  };
+function hydrate(drinks) {
   let cupOfWater = 0;
-  let regex = /\d+/g;
-  for (let value of Object.values(drinks)) {
-    let verify = value.match(regex);
-    if (verify) {
+  let regex = (/\d+/g);
+  let separetedDrinks = drinks.replace(/[^0-9]/g, '').split ('');
+  for (let value of Object.values(separetedDrinks)) {
+    if (value.match(regex)) {
       cupOfWater += parseInt(value.match(regex));
     }
   }
@@ -74,7 +69,7 @@ function hydrate(drink1, drink2, drink3) {
   }
   return `${'Beba'} ${cupOfWater} ` + 'copos de água';
 }
-console.log(hydrate(`${5} ` + 'wine', `${9} ` + 'cachaça', `${8} ` + 'beer'));
+console.log(hydrate('5 cachaças, 9 wine and 8 beer'));
 module.exports = {
   generatePhoneNumber,
   techList,
