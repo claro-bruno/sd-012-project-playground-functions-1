@@ -14,7 +14,7 @@ function techList(stack, person) {
     return stackName;
   }
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
+// console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 
 
 // Desafio 11
@@ -47,7 +47,7 @@ function generatePhoneNumber(phone) {
   return phoneFormat;
 }
 
-console.log(generatePhoneNumber([1, 2, 3, 2, 4, 3, 6, 7, 8, 9, 7]));
+// console.log(generatePhoneNumber([1, 2, 3, 2, 4, 3, 6, 7, 8, 9, 7]));
 
 
 // Desafio 12
