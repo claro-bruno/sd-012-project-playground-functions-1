@@ -31,17 +31,17 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(matriz) {
-  // seu código aqui  
-  let matrizOrganizada = matriz.sort();  
+  // seu código aqui
+  let matrizOrganizada = matriz.sort();
+  let contar = 0;
 
   for (let resultado = 0; matrizOrganizada.length - 1; resultado += 1) {
-       if (matriz[resultado] === matrizOrganizada[matrizOrganizada.length - 1]) {
+    if (matriz[resultado] === matrizOrganizada[matrizOrganizada.length - 1]) {
         contar++;
-       }
+    }
   }
   return contar;
 }
-
 
 // Desafio 7
 function catAndMouse() {
