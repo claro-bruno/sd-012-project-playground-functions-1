@@ -55,6 +55,8 @@ function catAndMouse(mouse, cat1, cat2) {
     cases = 'cat1';
   } else if (positionCat2Mouse < positionCat1Mouse) {
     cases = 'cat2';
+  } else {
+    cases = 'como você conseguiu isso?'
   }
   return cases;
 }
@@ -93,9 +95,9 @@ function fizzBuzz(arrayFizzBuzz) {
 function encode(strEncode) {
   // seu código aqui
   let separa = strEncode;
-  separa = separa.replace(/a/g, '1');
-  separa = separa.replace(/e/g, '2');
-  separa = separa.replace(/i/g, '3');
+  separa = separa.replace(/a/g, '1'); //replace('a', 'b') substitui o primeiro 'a' por 'b'
+  separa = separa.replace(/e/g, '2'); //replace(/a/g, 'b') substitui todos 'a' por 'b'
+  separa = separa.replace(/i/g, '3'); //replace(/a/gi, 'b') substitui todos 'a/A' por 'b'
   separa = separa.replace(/o/g, '4');
   separa = separa.replace(/u/g, '5');
   return separa;
@@ -104,13 +106,11 @@ function encode(strEncode) {
 function decode(strDecode) {
   // seu código aqui
   let separa = strDecode;
-  for (let key = 0; key < separa.length; key += 1) {
-    separa = separa.replace('1', 'a');
-    separa = separa.replace('2', 'e');
-    separa = separa.replace('3', 'i');
-    separa = separa.replace('4', 'o');
-    separa = separa.replace('5', 'u');
-  }
+  separa = separa.replace(/1/g, 'a');
+  separa = separa.replace(/2/g, 'e');
+  separa = separa.replace(/3/g, 'i');
+  separa = separa.replace(/4/g, 'o');
+  separa = separa.replace(/5/g, 'u');
   return separa;
 }
 
