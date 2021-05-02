@@ -92,40 +92,30 @@ return conclusao;
 }
 
 //console.log(catAndMouse(9, 10, 11));
-  
-// Desafio 8
-function fizzBuzz() {
-  let array4 = [2, 15, 7, 9, 45];
-  let array5 = [];
-     
-  function fizzBuzz() {
-    for (let index3Array = 0; index3Array < array4.length; index3Array += 1){
-      let possiveisCasos = [((array4[index3Array]) % 3) == 0, ((array4[index3Array]) % 5),((array4[index3Array]) % 3) == 0 && ((array4[index3Array]) % 5) == 0, ((array4[index3Array]) % 3) != 0 && ((array4[index3Array]) % 5) != 0];
-      switch (possiveisCasos.indexOf(true)) {
-        case 0:
-          array5.push("fizz");
-        break
-        case 1:
-          array5.push("buzz");
-        break
-        case 2:
-          array5.push("fizzBuzz");
-        break
-        case 3:
-          array5.push("bug!");
-        break
-              
-      }
-    }
-      return array5;
-    }
-     
-    fizzBuzz(array4)
-    console.log(array5);
 
-    
-  }
-  
+
+// Desafio 8
+function fizzBuzz(array5) {
+  let array6 = [];
+  let index3Array = 0;
+  for (let index3Array = 0; index3Array < array5.length; index3Array += 1) {
+    if(((array5[index3Array] ) % 3) == 0 ){
+      if(((array5[index3Array] ) % 5) == 0){
+        array6.push('fizzBuzz');
+      }else{
+        array6.push('fizz');
+      }
+    } else if (((array5[index3Array] ) % 5) == 0){
+        array6.push('buzz');
+      } else {
+          array6.push('bug!');
+        }
+  }        
+  return array6;
+}
+
+//console.log(fizzBuzz([9, 25]));
+
 // Desafio 9
 function encode(frase2) {
   let string1 = 'aeiou';
@@ -145,7 +135,8 @@ function encode(frase2) {
   return frase3;
 }
 
-// console.log(encode("hi there!"));
+//console.log(encode("hi there!"));
+
 function decode(frase4) {
   let string3 = 'aeiou';
   let string4 = '12345';
