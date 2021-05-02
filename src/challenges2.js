@@ -14,8 +14,6 @@ function techList(tech, nome) {
 }
 
 // Desafio 11
-console.log(generatePhoneNumber([9, 2, 3, 0, 5, -6, 7, 8, -7, 0, 1, 10]));
-
 function formatNumberPhone(indexArray, value) {
   let retornoFormato = '';
   switch (indexArray) {
@@ -71,14 +69,21 @@ function generatePhoneNumber(arrayTelefone) {
 }
 
 // Desafio 12
+function checkLines(line1, line2, line3) {
+  let firstcheck = line1 < (line2 + line3);
+  let secondCheck = line1 < (line2 + line3);
+
+  let checkLetter = firstcheck === true && secondCheck === true;
+  return checkLetter;
+}
+
 function triangleCheck(lineA, lineB, lineC) {
+  let checkA = checkLines(lineA, lineB, lineC);
+  let checkB = checkLines(lineB, lineA, lineC);
+  let checkC = checkLines(lineC, lineA, lineB);
 
-  let checklineA = lineA < (lineB + lineC) && lineA > Math.abs(lineB - lineC) ?  true : false;
-    let checklineB = lineB < (lineA + lineC) && lineB > Math.abs(lineA - lineC) ?  true : false;
-    let checklineC = lineC < (lineA + lineB) && lineC > Math.abs(lineA - lineB) ?  true : false;
-
-    return checklineA === true || checklineB === true || checklineC === true ? true: false;
-
+  let result = checkA === true || checkB === true || checkC === true;
+  return result;
 }
 
 // Desafio 13
@@ -101,4 +106,5 @@ module.exports = {
   checkErrorPhone,
   countNumber,
   formatNumberPhone,
+  checkLines,
 };
