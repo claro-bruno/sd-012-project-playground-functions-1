@@ -31,9 +31,7 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(arrayDesafio6) {
-
   let higherNumber = arrayDesafio6[0];
-
   for (let index = 0; index < arrayDesafio6
     .length; index += 1) {
     if (arrayDesafio6[index] > higherNumber) {
@@ -42,25 +40,20 @@ function highestCount(arrayDesafio6) {
       higherNumber = higherNumber;
     }
   }
-
   let numberOfRepetitions = 0;
-
   for (let counter = 0; counter < arrayDesafio6
     .length; counter += 1) {
     if (arrayDesafio6[counter] === higherNumber) {
       numberOfRepetitions += 1;
     }
   }
-
   return numberOfRepetitions;
-
 }
 
 // Desafio 7 - FALTA
 function catAndMouse(mouse, cat1, cat2) {
   let distanciaCat1 = mouse - cat1;
   let distanciaCat2 = mouse - cat2;
-
   if (Math.abs(distanciaCat1) < Math.abs(distanciaCat2)) {
     return 'cat1';
   } else if (Math.abs(distanciaCat1) === Math.abs(distanciaCat2)) {
@@ -69,7 +62,6 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat2';
   }
 }
-
 
 // Desafio 8
 function fizzBuzz(arrayDesafio8) {
