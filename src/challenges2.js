@@ -67,7 +67,7 @@ function hydrate(drinks) {
   if (cupOfWater === 1) {
     return '1 copo de água';
   }
-  return `${cupOfWater}` + 'copos de água';
+  return `${cupOfWater}`+' ' + 'copos de água';
 }
 console.log(hydrate('5 cachaças, 9 wine and 8 beer'));
 module.exports = {
