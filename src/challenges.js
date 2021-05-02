@@ -45,6 +45,7 @@ return array
 console.log(splitSentence('go Trybe'))
 
 
+
 // Desafio 4  
 let nome = [ ];
 
@@ -56,6 +57,7 @@ function concatName (nome) {
 //console.log(concatName(['captain', 'my', 'captain']));
 
 
+
 // Desafio 5
 function footballPoints(wins,ties) {
   return (wins * 3) + ties; 
@@ -64,8 +66,9 @@ function footballPoints(wins,ties) {
 //console.log(footballPoints(1,2));
 //console.log(footballPoints(0,0));
 
+
+
 // Desafio 6
-let repeticao = [ ];
 let resultado = 0;
 
 function highestCount(repeticao) {
@@ -78,10 +81,11 @@ for(index = 0; index < a.length; index += 1)
     }
   return resultado;
 }
-
 //console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 //console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 //console.log(highestCount([0, 0, 0]));
+
+
 
 // Desafio 7
 let resultado;
@@ -106,16 +110,41 @@ return resultado;
 //console.log(catAndMouse(5,6,2));
 //console.log(catAndMouse(3,1,5));
 
+
+
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+let resultado;
+
+function fizzBuzz(num) {
+  for(index = 0; index < num.length; index += 1) {
+    for(indice = 2; indice < num[index]; indice += 1) {
+      if(num[index] % 3 == 0 && num[index] % indice != 0) {
+        resultado = 'fizz';
+      }
+      else if(num[index] % 5 == 0 && num[index] % indice != 0) {
+        resultado = 'buzz';
+      }
+      else if(num[index] % 3 == 0 && num[index] % 5 == 0) {
+        resultado = 'fizzBuzz';
+      }
+      else {
+        resultado = 'bug!';
+      }
+    }
+  }
+return resultado;
 }
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+
+
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(vogal) {
+  for(index = 0; index < vogal.length; index += 1) {
+    
+  }
 }
-function decode() {
+function decode(numero) {
   // seu código aqui
 }
 
