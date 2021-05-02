@@ -14,8 +14,8 @@ function splitSentence(foguete) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(Array) {
+  return `${Array[Array.length - 1]}, ${Array[0]}`;
 }
 
 // Desafio 5
@@ -45,7 +45,7 @@ function encode() {
 function decode() {
   // seu código aqui
 }
-
+namename
 module.exports = {
   calcArea,
   catAndMouse,
