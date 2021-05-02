@@ -15,11 +15,11 @@ function splitSentence(texto) {
   // seu código aqui
   return texto.split(' ');
 }
-splitSentence('go trybe');
 
 // Desafio 4
-function concatName() {
+function concatName(texto) {
   // seu código aqui
+  return texto[texto.length - 1]  + ", " + texto[0];
 }
 
 // Desafio 5
