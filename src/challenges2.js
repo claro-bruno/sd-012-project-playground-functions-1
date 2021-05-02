@@ -8,11 +8,11 @@ function generatePhoneNumber(numbers) {
   let format = "(xx) xxxxx-xxxx";
   
   if (numbers.length !== 11 ) {
-    return "Array com tamanho incorreto.";
+    return 'Array com tamanho incorreto.';
   }  
   for ( let key in numbers) {
     if (numbers[key] < 0 || numbers[key] > 9) {
-      return "não é possível gerar um número de telefone com esses valores";
+      return 'não é possível gerar um número de telefone com esses valores';
     }  
   }
   let count = 0;
@@ -23,7 +23,7 @@ function generatePhoneNumber(numbers) {
       }
     }
     if (count > 2) {
-      return "não é possível gerar um número de telefone com esses valores";
+      return 'não é possível gerar um número de telefone com esses valores';
     }
     count = 0;
   }
@@ -67,7 +67,7 @@ function triangleCheck(lineA, lineB, lineC) {
 function hydrate(bebida) {
   let cupOfWater = 0;
   let regex = /\d+/g; 
-    for (let value of Object.values(bebidas)) {
+    for (let value of Object.values(bebida)) {
       if (value.match(regex)) {
         cupOfWater += parseInt(value.match(regex));
       }
@@ -75,7 +75,7 @@ function hydrate(bebida) {
     if (cupOfWater === 1) {
       return '1 copo de água';
     }
-    return `${cupOfWater}` + ' copos de água'
+    return `${cupOfWater}` + ' copos de água';
 }
 
 module.exports = {
