@@ -78,39 +78,27 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9 - POR FAZER
-function encode(array) {
-  let vogais = {
-    a: 1,
-    e: 2,
-    i: 3,
-    o: 4,
-    u: 5,
-  };
+function encode(stringStart) {
+  let resposta = stringStart.replace(/a/g, "1");
+   resposta = resposta.replace(/e/g, "2");
+   resposta = resposta.replace(/i/g, "3");
+   resposta = resposta.replace(/o/g, "4");
+   resposta = resposta.replace(/u/g, "5");
 
-  let arrayNumbers = [];
-  let result = 0;
-
-  for (let index in array) {
-    for (let indexSub in vogais) {
-      if (array[index] === indexSub){
-        
-      }
-    }
-    if (array[index] == vogais.toLowerCase()){
-      alert ('lower case true');
-     }
-  }
-  
-
-  return result;
+  return resposta;
 }
 
 
+function decode(stringFinal) {
+  let resposta = stringFinal.replace(/1/g, "a");
+  resposta = resposta.replace(/2/g, "e");
+  resposta = resposta.replace(/3/g, "i");
+  resposta = resposta.replace(/4/g, "o");
+  resposta = resposta.replace(/5/g, "u");
 
-
-function decode() {
-  // seu código aqui
+ return resposta;
 }
+
 
 module.exports = {
   calcArea,
