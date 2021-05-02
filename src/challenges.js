@@ -95,7 +95,7 @@ function fizzBuzz(arrayDiv) {
     } else if (arrayDiv[index] % 5 === 0 && arrayDiv[index] % 3 != 0) {
       arrayDiv[index] = 'buzz';
     } else {
-      arrayDiv[index] = 'bug';
+      arrayDiv[index] = 'bug!';
     }
   }
   return arrayDiv;
