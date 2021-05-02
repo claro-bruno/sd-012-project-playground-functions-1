@@ -15,8 +15,6 @@ function techList(arrTech, nome1) {
     }
   return arrObjTech;
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"))
-
 // Desafio 11
 function generatePhoneNumber(numeros) {
 
@@ -26,7 +24,7 @@ function generatePhoneNumber(numeros) {
   for(let index = 2; index < numeros.length; index += 1){
       noveNum += `${numeros[index]}`;
     }
-  let numTelefone = doisPrimeirosNum + noveNum;
+  let numTelefone = doisPrimeirosNum + ' ' + noveNum;
   return numTelefone;
 }
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
