@@ -39,6 +39,7 @@ function footballPoints(wins, ties) {
 function maiorNumero(numInArray) {
   let Numero = 0;
   for (let i in numInArray) {
+    Numero = numInArray[i];
     if (numInArray[i] > Numero) {
       Numero = numInArray[i];
     }
@@ -62,6 +63,8 @@ function highestCount(array) {
   }
   return repetiu;
 }
+
+console.log(highestCount([-2, -2, -1]))
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
