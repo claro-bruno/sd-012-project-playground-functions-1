@@ -131,7 +131,7 @@ function decode(desafioDecode) {
   for (let key in listaDenumeros) {
     switch (listaDenumeros[key]) {
       case '1':
-        listaDeNumeros[key] = 'a';
+        listaDenumeros[key] = 'a';
         break;
       case '2':
         listaDenumeros[key] = 'e';
