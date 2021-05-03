@@ -1,4 +1,7 @@
 // Desafio 10
+/** Consultei o repositório do Jossany Moura para resolver essa parte.
+Link do repositório: https://github.com/tryber/sd-012-project-playground-functions/pull/45/commits/d5881230ba053d4f0f5565c6d1a35f917fdd4e11
+*/
 function techList(name, array7) {
   let novaArray = [];
 
@@ -10,10 +13,10 @@ function techList(name, array7) {
     novaArray.push(saidaFuncao);
     if (array7.length === 0) {
       novaArray = 'Vazio!';
-    }
-  }
+    };
+  };
   return novaArray;
-}
+};
 
 // techList('Eder', ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'])
 // teste
