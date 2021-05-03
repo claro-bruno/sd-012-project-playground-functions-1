@@ -121,7 +121,7 @@ function fizzBuzz(num) {
   }
 return resultad;
 }
-// console.log(fizzBuzz([9, 25]));
+ console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 
 
@@ -129,8 +129,8 @@ return resultad;
 let resultou = [];
 let valor;
 function encode(vogal) {
-  
-   for(index = 0; index < vogal.length; index += 1) {
+  valor = 0
+   for (index = 0; index < vogal.length; index += 1) {
      switch(vogal[index]){
        case 'a':
        resultou[index] = 1;
@@ -151,23 +151,22 @@ function encode(vogal) {
        resultou[index] = vogal[index];
       }
       valor = resultou.join('');
-    if (valor.length === vogal.lenght){
-      break;
-    }
+    // if (valor.length === vogal.lenght){
+    //   break;
+    // }
     }
 
    return valor;
 }
- console.log(encode('go Trybe!'));
-
-
+// console.log(encode('go Trybe!'));
 
 let resto = [];
 let valores;
 function decode(numero) {
   
-   for(index = 0; index < numero.length; index += 1) {
-     switch(numero[index]){
+   for (index = 0; index < numero.length; index += 1) {
+    valores = 0
+     switch (numero[index]){
        case '1':
        resto[index] = ('a');
        break;
@@ -190,7 +189,7 @@ function decode(numero) {
    }
    return valores;
 }
-//console.log(decode('h2ll4'));
+// console.log(decode('h2ll4'));
 
 
 
