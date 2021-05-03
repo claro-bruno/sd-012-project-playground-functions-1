@@ -21,7 +21,7 @@ function techList(tecnologia, name) {
 // Desafio 11
 function generatePhoneNumber(telefone) {
   // seu código aqui
-  if (telefone.length != 11) {
+  if (telefone.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
 
@@ -47,8 +47,16 @@ function generatePhoneNumber(telefone) {
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  let hipotenusa = lineA;
+  let catetoAdjacente = lineB;
+  let catetoOposto = lineC;
+
+  if (hipotenusa < catetoAdjacente + catetoOposto && hipotenusa > Math.abs(catetoOposto - catetoAdjacente)) {
+    return true;
+  }
+  return false;
 }
 
 // Desafio 13
