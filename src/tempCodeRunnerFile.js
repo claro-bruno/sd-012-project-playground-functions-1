@@ -1,7 +1,5 @@
-// Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-
   if ((mouse - cat1) < (mouse - cat2)) {
     return "cat1";
   } else if (mouse - cat2 < mouse - cat1){

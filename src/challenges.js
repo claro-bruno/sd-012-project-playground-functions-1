@@ -45,27 +45,45 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(array) {
   // seu código aqui
-  array = ['acerola', 'abbacte', 'buroti'];
-  let elem1 = array[0];
-  let elem2 = array[(array.length) - 1];
+  return array[array.length -1] + ", " + array[0]; 
 
-  console.log(concatName(`${elem2}, ${elem1}`));
-
-}
+}console.log(concatName(['eer', 'urm', 'ebl']));
   
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+let placarWins = wins * 3;
+let placarTies = ties * 1;
+let pontos = placarTies + placarWins;
+
+console.log(footballPoints(`${pontos}`))
+return pontos;
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(array) {
   // seu código aqui
+  let contagem = 0;
+
+let maiorNum = Math.max(...array); //referencia retirada da documentação Math.max()
+
+  for (let index = 0; index < array.length; index += 1) {
+      if (array[index] == maiorNum)
+        contagem += 1;
+  }
+    return contagem;
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  if ((mouse - cat1) < (mouse - cat2)) {
+    return "cat1";
+  } else if (mouse - cat2 < mouse - cat1){
+    return "cat2";
+  } else {
+    return "Os gatos trombam e o rato foge."
+  }  
 }
 
 // Desafio 8
