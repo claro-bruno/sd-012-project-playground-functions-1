@@ -52,11 +52,11 @@ function concatName(array) {
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  let placarWins = wins * 3;
-  let placarTies = ties * 1;
-  let pontos = placarTies + placarWins;
+  // let placarWins = wins * 3;
+  // let placarTies = ties * 1;
+  let pontos = (wins * 3) + ties;
   
-  console.log(footballPoints(`${pontos}`))
+  console.log(pontos)
   return pontos;
 }
 
@@ -77,9 +77,9 @@ let maiorNum = Math.max(...array); //referencia retirada da documentação Math.
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if ((mouse - cat1) < (mouse - cat2)) {
+  if ((cat1 - mouse) < (cat2 - mouse)) {
     return "cat1";
-  } else if (mouse - cat2 < mouse - cat1){
+  } else if ((cat2 - mouse) < (cat1 - mouse)){
     return "cat2";
   } else {
     return "Os gatos trombam e o rato foge."
@@ -89,18 +89,19 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(array) {
   // seu código aqui
-  let fbArray = [];
+  let fbrray = [];
 for (let index in array) {
   if ((array[index] % 3 == 0) && (array[index] % 5 == 0)) {
-    fbArray.push("fizzbuzz");
+    fbrray.push("fizzBuzz");
   } else if (array[index] % 3 == 0) {
-    fbArray.push("fizz");
+    fbrray.push("fizz");
   } else if (array[index] % 5 == 0) {
-    fbArray.push("buzz");
+    fbrray.push("buzz");
   } else {
-    fbArray.push("bug!");
+    fbrray.push("bug!");
   }
-} return fbArray;
+} 
+return fbrray;
 }
 
 // Desafio 9
