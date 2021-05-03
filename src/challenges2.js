@@ -29,7 +29,7 @@ function generatePhoneNumber(numbers) {
 
   for (let index = 0; index < numbers.length; index += 1) {
     if(numbers[index] < 0 || numbers[index] > 9) {
-      return "não é possível gerar um número de telefone com esses valores."
+      return "não é possível gerar um número de telefone com esses valores"
     }
     for (let index2 = 0; index2 < numbers.length; index2 += 1) {
       if(numbers[index] === numbers[index2]) {
@@ -39,11 +39,14 @@ function generatePhoneNumber(numbers) {
         } 
       }
     }
+  
+    let phone = numbers.map(String);
+    let final = "(" + phone[0] + phone[1] + ") " + phone[2] + phone[3] + phone[4] + phone[5] + phone[6] + "-" + phone[7] + phone[8] + phone[9] + phone[10];
+    return final;
   }
-  let phone = numbers.map(String);
-  let final = "(" + phone[0] + phone[1] + ") " + phone[2] + phone[3] + phone[4] + phone[5] + phone[6] + "-" + phone[7] + phone[8] + phone[9] + phone[10];
-  return final;
 }
+ console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   let isTriangle = false;
