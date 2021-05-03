@@ -51,30 +51,45 @@ function highestCount(arrayNum) {
   let aux = [0];
   let howManyTimes = 0;
   for (let index = 0; index < arrayNum.length; index += 1) {
-  if ( arrayNum[index] > aux) { 
-    aux = arrayNum[index]
-  }  
-}
-for (let index2 = 0; index2 < arrayNum.length; index2 += 1) {
-  if (arrayNum[index2] == aux) {
-    howManyTimes += 1
+    if (arrayNum[index] > aux) {
+      aux = arrayNum[index];
+    }
   }
+  for (let index2 = 0; index2 < arrayNum.length; index2 += 1) {
+    if (arrayNum[index2] == aux) {
+      howManyTimes += 1;
+    }
+  }
+  return howManyTimes;
 }
-return howManyTimes
-}
-console.log(highestCount([9,1,2,3,9,5,7]))
-console.log(highestCount([0,4,4,4,9,2,1]))
-console.log(highestCount([0,0,0]))
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numbers) {
+  let auxFizzBuzz = [];
+  for (let indexRight = 0; indexRight < numbers.length; indexRight += 1) {
+    if (numbers[indexRight] % 3 === 0 && numbers[indexRight] % 5 === 0) {
+      auxFizzBuzz.push('fizzBuzz');
+    } else if (numbers[indexRight] % 3 === 0) {
+      auxFizzBuzz.push('fizz');
+    } else if (numbers[indexRight] % 5 === 0) {
+      auxFizzBuzz.push('buzz');
+    } else {
+      auxFizzBuzz.push('bug!');
+    }
+    return auxFizzBuzz;
+  }
 }
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+console.log(fizzBuzz([7, 9]));
+console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode() {
