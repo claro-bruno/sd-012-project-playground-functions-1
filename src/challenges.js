@@ -26,8 +26,12 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName(arrayS) {
-  // seu código aqui
+function concatName(arrayString) {
+  let ultimo = arrayString[arrayString.length - 1];
+  let primeiro = arrayString[0];
+  let resultado = ultimo + ', ' + primeiro;
+
+  return resultado;
 }
 
 // Desafio 5
@@ -42,13 +46,13 @@ function highestCount(arrayNum) {
   let maiorNum = 0;
   let repet = 0;
 
-  for(let aux = 0; aux < arrayNum.lenght; aux+= 1){
+  for(let aux = 0; aux < arrayNum.length; aux+= 1){
     if(arrayNum[aux] > maiorNum){
       maiorNum = arrayNum[aux];
     }
   }
-  for(let aux2 = 0; aux2 < arrayNum.lenght; aux2+= 1){
-      if(arrayNum[aux] === maiorNum){
+  for(let aux2 = 0; aux2 < arrayNum.length; aux2+= 1){
+      if(arrayNum[aux2] === maiorNum){
         repet+= 1;
       }
   }
