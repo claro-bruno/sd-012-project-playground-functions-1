@@ -6,7 +6,7 @@ function techList(tech, name) {
     let order = tech.sort();
     let object = {
       tech: order[index],
-      nome: name
+      nome: name,
     };
     list.push(object);
   }
