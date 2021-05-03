@@ -105,7 +105,7 @@ function decode(string) {
     } else if (string[indice] === '2') {
       novaString += string[indice].replace('2', 'e');
     } else if (string[indice] === '3') {
-      novaString += novaString + string[indice].replace('3', 'i');
+      novaString += string[indice].replace('3', 'i');
     } else if (string[indice] === '4') {
       novaString += string[indice].replace('4', 'o');
     } else if (string[indice] === '5') {
