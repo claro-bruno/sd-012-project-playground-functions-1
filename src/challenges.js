@@ -137,7 +137,7 @@ return word;
 }
 console.log(encode('aeiou'));
 */
-
+}
 function decode() {
 /*let number = 0;
 number = string2.split('');
@@ -164,7 +164,7 @@ return number;
 console.log(decode('1234567'));
 //usar o metodo join para juntar. */
 }
-}
+
 module.exports = {
   calcArea,
   catAndMouse,
