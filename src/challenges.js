@@ -8,7 +8,7 @@ if(ParametroA === true && ParametroB === true){
 }
 }
 //Teste da função
-//let result = compareTrue(true,true)
+let result = compareTrue(true,true)
 //console.log(result);
 
 // Desafio 2
@@ -20,7 +20,7 @@ calcArea = (base * heigth)/2;
 return calcArea;
 }
 //Teste de função
-//let result = calcArea(2,4);
+let result = calcArea(2,4);
 //console.log(result);
 
 // Desafio 3
@@ -30,15 +30,15 @@ function splitSentence(string) {
 return string.split(' ');
 }
 //Teste de função
-console.log(splitSentence('go Trybe'));
+//console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName(array) {
-  // seu código aqui
-  let firstName = array[0];
-  let lastName = array[(array.length -1)];
-  let result = lastName + ', ' + firstName;
-  return result;
+// seu código aqui
+let firstName = array[0];
+let lastName = array[(array.length -1)];
+let result = lastName + ', ' + firstName;
+return result;
 }
 //Teste de função
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
@@ -51,7 +51,7 @@ function footballPoints(wins,ties) {
   totalDePontos =  wins * 3 + ties;
   return totalDePontos;
 }
-console.log(footballPoints(0,0))
+//console.log(footballPoints(0,0))
 
 // Desafio 6
 function highestCount(array) {
@@ -69,7 +69,7 @@ for(accountant = 0; accountant < array.length; accountant+=1){
 }
 return repeat;
 }
-console.log(highestCount([9,1,2,3,9,5,7]));
+//console.log(highestCount([9,1,2,3,9,5,7]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -86,11 +86,7 @@ let distanciaCat2 = Math.abs(cat2 - mouse)
     return 'os gatos trombam e o rato foge';
   }
 }
-  console.log(catAndMouse(0,3,3));
-
-
-
-
+ // console.log(catAndMouse(0,3,3));
 
 // Desafio 8
 function fizzBuzz(inArray) {
@@ -113,7 +109,7 @@ for(let index = 0; index < inArray.length; index += 1){
 }
 return outArray;
 }
-console.log(fizzBuzz([7, 15]));
+//console.log(fizzBuzz([7, 15]));
 
 
 // Desafio 9
@@ -140,10 +136,10 @@ return word;
  
 }
 console.log(encode('aeiou'));
+*/
 
-
-function decode(string2) {
-let number = 0;
+function decode() {
+/*let number = 0;
 number = string2.split('');
 
  for(index = 0; index < number.length; index += 1){
@@ -167,7 +163,7 @@ return number;
 }
 console.log(decode('1234567'));
 //usar o metodo join para juntar. */
-
+}
 }
 module.exports = {
   calcArea,
