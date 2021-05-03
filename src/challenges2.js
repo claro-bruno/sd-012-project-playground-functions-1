@@ -1,5 +1,19 @@
 // Desafio 10
-function techList(){
+function techList(arrayTech, name) {
+  let arraySort = arrayTech.sort();
+  let output = [];
+  if (arrayTech.length === 0) {
+    return 'Vazio!';
+  } else {
+    for ( let key of arraySort) {
+      let objOutput = {
+        tech: key,
+        name: name,
+      };
+      output.push(objOutput);
+    }
+    return output;
+  }
   
 }
 
