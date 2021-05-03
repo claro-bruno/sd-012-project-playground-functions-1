@@ -98,8 +98,22 @@ function encode(string1) {
   }
   return string.join("");
 }
-function decode() {
-  // seu código aqui
+function decode(string2) {
+  let string = string2.split('');
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index] === 'a') {
+      string[index] = 1;
+    } else if (string[index] === 'e') {
+      string[index] = 2;
+    } else if (string[index] === 'i') {
+      string[index] = 3;
+    } else if (string[index] === 'o') {
+      string[index] = 4;
+    } else if (string[index] === 'u') {
+      string[index] = 5;
+    }
+  }
+  return string.join("");
 }
 
 module.exports = {
