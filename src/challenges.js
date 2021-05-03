@@ -77,21 +77,20 @@ function fizzBuzz(numeros) {
 // Desafio 9
 function encode(string) {
   // seu código aqui
-  let novaString = '';
-  
+  let novaString = '';  
   for (let indice = 0; indice < string.length; indice += 1) {
     if (string[indice] === 'a') {
-      novaString = novaString + string[indice].replace('a', 1);
+      novaString += string[indice].replace('a', 1);
     } else if (string[indice] === 'e') {
-      novaString = novaString + string[indice].replace('e', 2);
+      novaString += string[indice].replace('e', 2);
     } else if (string[indice] === 'i') {
-      novaString = (novaString + string[indice].replace('i', 3));
+      novaString += string[indice].replace('i', 3);
     } else if (string[indice] === 'o') {
-      novaString = novaString + string[indice].replace('o', 4);
+      novaString += string[indice].replace('o', 4);
     } else if (string[indice] === 'u') {
-      novaString = novaString + string[indice].replace('u', 5);
+      novaString += string[indice].replace('u', 5);
     } else {
-      novaString = novaString + string[indice];
+      novaString += string[indice];
     }
   }
   return novaString;
@@ -99,21 +98,20 @@ function encode(string) {
 
 function decode(string) {
   // seu código aqui
-  let novaString = '';
-  
+  let novaString = '';  
   for (let indice = 0; indice < string.length; indice += 1) {
     if (string[indice] === '1') {
-      novaString = novaString + string[indice].replace('1', 'a');
+      novaString += string[indice].replace('1', 'a');
     } else if (string[indice] === '2') {
-      novaString = novaString + string[indice].replace('2', 'e');
+      novaString += string[indice].replace('2', 'e');
     } else if (string[indice] === '3') {
-      novaString = (novaString + string[indice].replace('3', 'i'));
+      novaString += novaString + string[indice].replace('3', 'i');
     } else if (string[indice] === '4') {
-      novaString = novaString + string[indice].replace('4', 'o');
+      novaString += string[indice].replace('4', 'o');
     } else if (string[indice] === '5') {
-      novaString = novaString + string[indice].replace('5', 'u');
+      novaString += string[indice].replace('5', 'u');
     } else {
-      novaString = novaString + string[indice];
+      novaString += string[indice];
     }
   }
   return novaString;
