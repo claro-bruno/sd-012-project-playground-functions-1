@@ -125,8 +125,6 @@ function encode(fraseDesafio) {
   return listaDeLetras;
 }
 
-console.log(encode(listaDeLetras));
-
 function decode(desafioDecode) {
   let listaDenumeros = desafioDecode.split(' ');
   for (let key in listaDenumeros) {
