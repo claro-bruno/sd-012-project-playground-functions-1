@@ -108,6 +108,7 @@ function fizzBuzz(array) {
     if ((array[i] % 5) && (array[i] % 3) !== 0) {
       arrayFinal[i] += 'bug!';
     }
+    if (arrayFinal[i].length >= 8) arrayFinal[i] = arrayFinal[i].replace('fizzbuzz', 'fizzBuzz');
   }
   return arrayFinal;
 }
