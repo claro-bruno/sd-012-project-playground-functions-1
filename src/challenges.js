@@ -111,8 +111,6 @@ function fizzBuzz(array) {
   return arrayFinal;
 }
 
-console.log(fizzBuzz([9, 25]));
-
 // Desafio 9
 let encodeStrings = {
   a: '1',
