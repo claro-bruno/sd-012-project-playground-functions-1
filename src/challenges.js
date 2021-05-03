@@ -114,9 +114,25 @@ function catAndMouse(mouse, cat1, cat2) {
 console.log(catAndMouse(0, 1, 2));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(array) {
+  
+  let imprint = [];
+
+  for (let numbers of array) {
+    if ((numbers % 3 === 0) && (numbers % 5 === 0)){
+      imprint.push("fizzBuzz");
+    } else if (numbers % 3 === 0){
+      imprint.push("fizz");
+    } else if (numbers % 5 === 0){
+      imprint.push("buzz");
+    } else {
+      imprint.push("bug!");
+    };
+    
+  };
+  return imprint;
+};
+console.log(fizzBuzz([9,25]));
 
 // Desafio 9
 function encode() {
