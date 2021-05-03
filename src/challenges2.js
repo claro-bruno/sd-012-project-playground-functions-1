@@ -43,9 +43,9 @@ function generatePhoneNumber(number) {
     resultado = "Array com tamanho incorreto.";
   }
   else if(num[10] > 9 || num[0] < 0) { 
-    resultado = "Não é possível gerar um número de telefone com esses valores1.";
+    resultado = "Não é possível gerar um número de telefone com esses valores.";
 } else if(tri != 0) {
-    resultado = "Não é possível gerar um número de telefone com esses valores2.";
+    resultado = "Não é possível gerar um número de telefone com esses valores.";
   }
  else {
   resultado = resposta
