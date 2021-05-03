@@ -19,20 +19,16 @@ function calcArea() {
 
 // Desafio 3
 function splitSentence() {
-  let nomes = ["go" ,"trybe"];{
-    console.log(nomes)
+  let frase = "go trybe;
+    console.log(nomes = ["go" ,"trybe"];)
   }
+
 // Desafio 4
 function concatName(nomes) {
-let nomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];{
- console.log(nomes [nomes.length-1],"," ,nomes[0])
-}
-let nomes = ['foguete', 'não', 'tem', 'ré'];{
-  console.log(nomes [nomes.length-1],"," ,nomes[0])
- }
- let nomes = ['captain', 'my', 'captain'];{
-  console.log(nomes [nomes.length-1],"," ,nomes[0])
- }
+console.log(nomes[nomes.length-1],"," ,nomes[0]);
+concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']);
+concatName(['foguete', 'não', 'tem', 'ré']);
+concatName(['captain', 'my', 'captain'])}
 
   // Desafio 5
 function footballPoints() {
