@@ -36,16 +36,22 @@ function footballPoints(wins, ties) {
 // console.log(footballPoints(1, 2))
 // Desafio 6
 function highestCount(arrayNumberInput) {
-  let arrayNumber = arrayNumberInput.sort();
-  let maior = arrayNumber[arrayNumber.length - 1];
+//  let arrayNumber = arrayNumberInput.sort();
+  let maiorAtual = arrayNumberInput[0];
+  for (let index = 1; index < arrayNumberInput.length; index += 1) {
+    if (arrayNumberInput[index] > maiorAtual) {
+      maiorAtual = arrayNumberInput[index]
+    }
+  }
   let contador = 0;
-  for (let index = 0; index < arrayNumber.length; index += 1) {
-    if (maior === arrayNumber[index]) {
+  for (let index = 0; index < arrayNumberInput.length; index += 1) {
+    if (maiorAtual === arrayNumberInput[index]) {
       contador += 1;
     }
   }
   return contador;
 }
+console.log(highestCount([-2, -2, -1]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
