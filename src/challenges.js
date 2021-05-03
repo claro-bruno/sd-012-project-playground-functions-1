@@ -96,24 +96,24 @@ function encode(string1) {
       string[index] = 5;
     }
   }
-  return string.join("");
+  return string.join('');
 }
 function decode(string2) {
   let string = string2.split('');
   for (let index = 0; index < string.length; index += 1) {
-    if (string[index] === 'a') {
-      string[index] = 1;
-    } else if (string[index] === 'e') {
-      string[index] = 2;
-    } else if (string[index] === 'i') {
-      string[index] = 3;
-    } else if (string[index] === 'o') {
-      string[index] = 4;
-    } else if (string[index] === 'u') {
-      string[index] = 5;
+    if (string[index] === 1) {
+      string[index] = 'a';
+    } else if (string[index] === 2) {
+      string[index] = 'e';
+    } else if (string[index] === 3) {
+      string[index] = 'i';
+    } else if (string[index] === 4) {
+      string[index] = 'o';
+    } else if (string[index] === 5) {
+      string[index] = 'u';
     }
   }
-  return string.join("");
+  return string.join('');
 }
 
 module.exports = {
