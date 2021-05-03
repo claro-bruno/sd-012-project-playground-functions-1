@@ -63,10 +63,9 @@ function triangleCheck(lineA, lineB, lineC) {
 
 // Desafio 13
 function hydrate(drinks) {
-  let numbers = [];
-  let teste = [1,2,3];
+  let numbers = [];  
   
-  numbers.push(drinks.match(/\d+/g)).map(Number);
+  numbers.push(drinks.match(/\d+/g));
   
   let sum = 0;
 
