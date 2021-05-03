@@ -8,11 +8,13 @@ const { concatName } = require("./challenges");
 // Desafio 10
 function techList(lista, nomeT) {
   let listaTech = {};
+  let outLista = [];
   lista = lista.sort();
     for(let i = 0; i < lista.length; i++){ 
       listaTech[+[i]] = {tech:lista[i], name:nomeT};
-      return listaTech[i];
+      outLista.push(listaTech[i]);
     }
+   return outLista;
 }
    
 // let listaVar = ["React", "Jest", "HTML", "CSS", "JavaScript"];
