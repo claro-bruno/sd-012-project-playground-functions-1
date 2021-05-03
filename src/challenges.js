@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(param1, param2) {
-  let resultado
+  let resultado;
   if (param1 && param2 === true) {
     resultado = true;
   } else {
@@ -23,13 +23,11 @@ function splitSentence(stringExemplo) {
 
 // Desafio 4
 function concatName(stringExemplo) {
-  let valorUm;
-  let valorDois;
-  let resultado;
-  for (let index = 0; index < stringExemplo.length; index++) {
-
+  let valorUm = stringExemplo[0];
+  let valorDois = stringExemplo[stringExemplo.length - 1]
+  let resultado = valorDois + ", " + valorUm
+  return resultado;
   }
-}
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -40,8 +38,8 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(arrayDeNumeros) {
+  let 
 }
 
 // Desafio 7
