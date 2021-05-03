@@ -2,10 +2,10 @@
 let obj = {};
 let resultado = [];
 function techList(tech, name) {
-  if(tech.length > 0) {
+  if (tech.length > 0) {
   let ordtech = [];
   ordtech = tech.sort();
-  for(index = 0; index < tech.length; index += 1) {
+  for(let index = 0; index < tech.length; index += 1) {
     obj = {
       tech: ordtech[index],
       name: name
@@ -43,16 +43,16 @@ function generatePhoneNumber(number) {
     result = "Array com tamanho incorreto.";
   }
   else if(num[10] > 9 || num[0] < 0) { 
-    result = "Não é possível gerar um número de telefone com esses valores.";
+    result = "não é possível gerar um número de telefone com esses valores";
 } else if(tri != 0) {
-    result = "Não é possível gerar um número de telefone com esses valores.";
+    result = "não é possível gerar um número de telefone com esses valores";
   }
  else {
   result = resposta
     } 
 return result;
 }
-console.log(generatePhoneNumber([9,7,2,1,5,8,7,4,1,6,5]))
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
 
 
 
