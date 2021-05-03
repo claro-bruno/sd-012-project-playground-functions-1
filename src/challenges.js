@@ -66,10 +66,10 @@ function fizzBuzz(numeros) {
     } else if (numeros[indice] % 3 === 0) {
       array.push('fizz');
     } else if (numeros[indice] % 5 === 0) {
-      array.push('Buzz'); 
-    } else if (numeros[indice] % 3 != 0 && numeros[indice] % 5 != 0) {
-      array.push('bug!'); 
-    }    
+      array.push('Buzz');
+    } else if (numeros[indice] % 3 !== 0 && numeros[indice] % 5 !== 0) {
+      array.push('bug!');
+    }
   }
   return array;
 }
