@@ -117,6 +117,19 @@ function decode(string) {
   return novaString;
 }
 
+// Desafio 13
+function hydrate(string) {
+  // seu código aqui
+  let words = string.split(' ');
+  let c = 0;
+  for (let indice = 0; indice < words.length; indice += 1) {
+    if (parseInt(words[indice])) {
+      c += parseInt(words[indice]);
+    }
+  }
+  return c > 1 ? c + ' copos de água' : c + ' copo de água';
+}
+
 module.exports = {
   calcArea,
   catAndMouse,
@@ -132,11 +145,12 @@ module.exports = {
 
 // Desafio 10
 function arrayFunction(array, name) {
-
+  // seu código aqui
 }
 
 // Desafio 11
 function generatePhoneNumber(numeros) {
+    // seu código aqui
   /* for (let numero of numeros) {
     if (numero < 0 || numero > 9) {
       return 'não é possível gerar um número de telefone com esses valores'
@@ -148,17 +162,5 @@ function generatePhoneNumber(numeros) {
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  
-}
-
-// Desafio 13
-function hydrate(string) {
-  let words = string.split(' ');
-  let cont = 0;  
-  for (let indice = 0; indice < words.length; indice += 1) {
-    if (parseInt(words[indice])) {
-      cont += parseInt(words[indice]);
-    }
-  }
-  return cont > 1 ? cont + ' copos de água' : cont + ' copo de água';
+    // seu código aqui
 }
