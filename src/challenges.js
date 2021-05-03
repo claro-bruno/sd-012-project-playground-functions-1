@@ -35,9 +35,10 @@ function highestCount(numbers) {
   for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] > num) {
       num = numbers[index];
-      cont = 0;
     }
-    if (numbers[index] === numbers) {
+  }
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] === num) {
       cont += 1;
     }
   }
@@ -57,6 +58,7 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'Os gatos trombam e o rato foge';
   }
 }
+console.log(catAndMouse(3, 4, 3));
 
 // Desafio 8
 function fizzBuzz(numbers) {
