@@ -88,7 +88,7 @@ function divisivelPorCinco(value) {
 
 function fizzBuzz(array) {
   let resultado = [];
-  for (let value  of listaDesafio) {
+  for (let value  of array) {
     if (value % 3 === 0){
       resultado.push(divisivelPorCinco(value));
     } else if (value % 5 === 0) {
