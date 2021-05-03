@@ -32,8 +32,7 @@ function footballPoints(wins, ties) {
 function highestCount(matriz) {
   let maior = matriz[0];
   let vezes = 0;
-  let valor = 0 ;
-  for (index = 0; index < matriz.length; index += 1) {
+  for (let index = 0; index < matriz.length; index += 1) {
     if (matriz[index] > maior) {
       maior = matriz[matriz];
       vezes = 1;
@@ -48,13 +47,13 @@ function highestCount(matriz) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let resposta = 'os gatos trombam e o rato foge';
-  rato = Math.abs(mouse);
-  gato1 = Math.abs(cat1);
-  gato2 = Math.abs(cat2);
-  if ( (gato1 === gato2) && ((gato1 - rato) === (gato2 - rato)) ) {
+  let rato = Math.abs(mouse);
+  let gato1 = Math.abs(cat1);
+  let gato2 = Math.abs(cat2);
+  if ( (gato1 === gato2) && ((gato1 - rato) === (gato2 - rato))) {
     return resposta;
   }
-  if ((gato1 - rato) < (gato2 -rato)) {
+  if ((gato1 - rato) < (gato2 - rato)) {
     resposta = 'cat1';
   }
   if ((gato1 - rato) > (gato2 - rato)) {
@@ -74,7 +73,7 @@ function fizzBuzz(matriz) {
       if (matriz[index] % 5 === 0) {
         conteudo = 'fizzBuzz';
       }
-    } else 
+    } else
     if (matriz[index] % 5 === 0) {
       conteudo = 'buzz';
     }
@@ -96,7 +95,7 @@ function encode(variavel) {
       caracter === '2';
       break;
     case 'i':
-      caracter ==='3';
+      caracter === '3';
       break;
     case 'o':
       caracter === '4';
