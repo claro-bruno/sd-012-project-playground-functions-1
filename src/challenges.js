@@ -102,9 +102,29 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(numberArray) {
-  
+  let result8 = [];
+  for (let index = 0; index < numberArray.length; index += 1) {
+    
+    if (numberArray[index] % 3 === 0 && numberArray[index] % 5 === 0) {
+      result8[index] = 'fizzBuzz';
+
+    } 
+    if (numberArray[index] % 5 === 0 && numberArray[index] % 3 != 0) {
+      result8[index] = 'buzz';
+
+    } 
+    if (numberArray[index] % 3 === 0 && numberArray[index] % 5 != 0) { 
+      result8[index] = 'fizz'; 
+
+    }
+    if (numberArray[index] % 3 != 0 && numberArray[index] % 5 != 0) {
+      result8[index] = 'bug!';
+
+    }
+  }
+  return result8
 }
-console.log(2 / 3)
+
 
 // Desafio 9
 function encode() {
