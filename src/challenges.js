@@ -77,8 +77,8 @@ function fizzBuzz(numeros) {
 // Desafio 9
 function encode(string) {
   // seu código aqui
-  let novaString = '';  
-  for (let indice = 0; indice < string.length; indice += 1) {
+  let novaString = '';
+  for (let indice of string) {
     if (string[indice] === 'a') {
       novaString += string[indice].replace('a', 1);
     } else if (string[indice] === 'e') {
@@ -98,7 +98,7 @@ function encode(string) {
 
 function decode(string) {
   // seu código aqui
-  let novaString = '';  
+  let novaString = '';
   for (let indice = 0; indice < string.length; indice += 1) {
     if (string[indice] === '1') {
       novaString += string[indice].replace('1', 'a');
