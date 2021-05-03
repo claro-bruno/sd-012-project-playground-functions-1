@@ -73,7 +73,11 @@ function hydrate(drinks) {
     sum = sum + numbers[index];
   };
 
-  return sum + " copos de água";
+  if(sum === 1) {
+    return sum + " copo de água";
+  }else{    
+    return sum + " copos de água";
+  };
 }
 
 
