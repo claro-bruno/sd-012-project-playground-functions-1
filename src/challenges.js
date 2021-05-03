@@ -73,8 +73,14 @@ function encode(param1) {
     o: 4,
     u: 5,
   };
-  return Encode
-};
+let algo = string.split (' ')
+let valor = 1;
+  for(index = 0; index < algo.lenght; index +=1) {
+  if(algo[index] ===a); {
+  algo[index] = valor;
+  }
+}
+}
 function decode() {
   let Decode = {
     1: 'a',
