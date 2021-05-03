@@ -41,9 +41,9 @@ let result = lastName + ', ' + firstName;
 return result;
 }
 //Teste de função
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
-console.log(concatName(['foguete', 'não', 'tem', 'ré']));
-console.log(concatName(['captain', 'my', 'captain']));
+//console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+//console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+//console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints(wins,ties) {
