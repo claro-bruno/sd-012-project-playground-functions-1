@@ -70,10 +70,10 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(arrayNumeros) {
-	//restruturei a função ao contrario para diminuir 'ifs'.
+	// restruturei a função ao contrario para diminuir 'ifs'.
   for (let index = 0; index < arrayNumeros.length; index += 1) {
-		arrayNumeros[index] = 'bug!';
-		if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
+    arrayNumeros[index] = 'bug!';
+    if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
       arrayNumeros[index] = 'fizzBuzz';
     } else if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 !== 0) {
       arrayNumeros[index] = 'fizz';
@@ -81,27 +81,27 @@ function fizzBuzz(arrayNumeros) {
       arrayNumeros[index] = 'buzz';
     }
   }
-  return arrayFinal;
+  return arrayNumeros;
 }
 
 // Desafio 9
 function encode(stringEncode) {
-	//https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+  // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
   stringEncode = stringEncode.replace(/a/g, '1');
   stringEncode = stringEncode.replace(/e/g, '2');
   stringEncode = stringEncode.replace(/i/g, '3');
   stringEncode = stringEncode.replace(/o/g, '4');
   stringEncode = stringEncode.replace(/u/g, '5');
-  return stringEncode
+  return stringEncode;
 }
 
 function decode(stringDecode) {
-  //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
-  stringEncode = stringEncode.replace(/1/g, 'a');
-  stringEncode = stringEncode.replace(/2/g, 'e');
-  stringEncode = stringEncode.replace(/3/g, 'i');
-  stringEncode = stringEncode.replace(/4/g, 'o');
-  stringEncode = stringEncode.replace(/5/g, 'u');
+  // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+  stringDecode = stringDecode.replace(/1/g, 'a');
+  stringDecode = stringDecode.replace(/2/g, 'e');
+  stringDecode = stringDecode.replace(/3/g, 'i');
+  stringDecode = stringDecode.replace(/4/g, 'o');
+  stringDecode = stringDecode.replace(/5/g, 'u');
   return stringDecode
 }
 
