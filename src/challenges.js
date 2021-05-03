@@ -50,7 +50,7 @@ function catAndMouse(mouse, cat1, cat2) {
   let rato = Math.abs(mouse);
   let gato1 = Math.abs(cat1);
   let gato2 = Math.abs(cat2);
-  if ( (gato1 === gato2) && ((gato1 - rato) === (gato2 - rato))) {
+  if ((gato1 === gato2) && ((gato1 - rato) === (gato2 - rato))) {
     return resposta;
   }
   if ((gato1 - rato) < (gato2 - rato)) {
@@ -89,19 +89,19 @@ function encode(variavel) {
   for (let index = 0; index < variavel.length; index += 1) {
     caracter = variavel.substr(index, 1);
     if (variavel.substr(index, 1) === 'a') {
-      caracter = '1'
+      caracter = '1';
     }
     if (variavel.substr(index, 1) === 'e') {
-      caracter = '2'
+      caracter = '2';
     }
     if (variavel.substr(index, 1) === 'i') {
-      caracter = '3'
+      caracter = '3';
     }
     if (variavel.substr(index, 1) === 'o') {
-      caracter = '4'
+      caracter = '4';
     }
     if (variavel.substr(index, 1) === 'u') {
-      caracter = '5'
+      caracter = '5';
     }
     resposta += caracter;
   }
@@ -114,19 +114,19 @@ function decode(variavel) {
   for (let index = 0; index < variavel.length; index += 1) {
     caracter = variavel.substr(index, 1);
     if (variavel.substr(index, 1) === '1') {
-      caracter = 'a'
+      caracter = 'a';
     }
     if (variavel.substr(index, 1) === '2') {
-      caracter = 'e'
+      caracter = 'e';
     }
     if (variavel.substr(index, 1) === '3') {
-      caracter = 'i'
+      caracter = 'i';
     }
     if (variavel.substr(index, 1) === '4') {
-      caracter = 'o'
+      caracter = 'o';
     }
     if (variavel.substr(index, 1) === '5') {
-      caracter = 'u'
+      caracter = 'u';
     }
     resposta += caracter;
   }
