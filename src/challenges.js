@@ -1,11 +1,13 @@
 // Desafio 1 - Verificação de números pares
+let retorno;
 function compareTrue(valor1, valor2) {
   if (valor1 % 2 == 0 && valor2 % 2 == 0) {
-    return('true');
+    retorno ='true';
   }
   else {
-    return('false');
+    retorno ='false';
   }
+return retorno;
 }
 //console.log(compareTrue(89,56));
 //console.log(compareTrue(73,11));
@@ -14,8 +16,10 @@ function compareTrue(valor1, valor2) {
 
 
 // Desafio 2 - Cálculo da área do triângulo
+let resposta;
 function calcArea(base, height) {
- return ((base * height) / 2);
+ resposta =(base * height) / 2;
+ return resposta;
 }
 //console.log(calcArea(10,50));
 //console.log(calcArea(5,2));
@@ -24,21 +28,20 @@ function calcArea(base, height) {
 
 
 // Desafio 3
-let resultado = [];
-
+let results = [];
 function splitSentence(frase) {
-resultado = frase.split(' ', 20);
-return resultado;
+results = frase.split(' ', 20);
+return results;
 }
 //console.log(splitSentence('vamos que vamos'))
 
 
 
 // Desafio 4  
-let nome = [ ];
-
+let result = [ ];
 function concatName (nome) {
-  return nome[nome.length - 1] + ', ' + nome[0];  
+  result = nome[nome.length - 1] + ', ' + nome[0];  
+  return result;
 }
 //console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 //console.log(concatName(['foguete', 'não', 'tem', 'ré']));
@@ -47,8 +50,10 @@ function concatName (nome) {
 
 
 // Desafio 5
+let pontos;
 function footballPoints(wins,ties) {
-  return (wins * 3) + ties; 
+  pontos = (wins * 3) + ties; 
+  return pontos;
 }
 //console.log(footballPoints(14,8));
 //console.log(footballPoints(1,2));
@@ -57,17 +62,16 @@ function footballPoints(wins,ties) {
 
 
 // Desafio 6
-let resultado = 0;
-
+let resultados = 0;
 function highestCount(repeticao) {
   let a = repeticao.sort();
   let b = a[a.length - 1]
 for(index = 0; index < a.length; index += 1)
     if (a[index] === b){
-    resultado = resultado + 1;
+    resultados = resultados + 1;
     } else { 
     }
-  return resultado;
+  return resultados;
 }
 //console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 //console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
@@ -76,23 +80,22 @@ for(index = 0; index < a.length; index += 1)
 
 
 // Desafio 7
-let resultado;
+let resulta;
 let posicaoCat1;
 let posicaoCat2;
-
 function catAndMouse(mouse, cat1, cat2) {
   posicaoCat1 = (mouse - cat1) * (mouse - cat1);
   posicaoCat2 = (mouse - cat2) * (mouse - cat2);
   if(posicaoCat1 < posicaoCat2){
-    resultado = 'cat1';
+    resulta = 'cat1';
     }
   else if(posicaoCat2 < posicaoCat1) {
-    resultado = 'cat2';
+    resulta = 'cat2';
     }
   else {
-    resultado = 'os gatos trombam e o rato foge'
+    resulta = 'os gatos trombam e o rato foge'
     }
-return resultado;
+return resulta;
 }
 //console.log(catAndMouse(5,1,2));
 //console.log(catAndMouse(5,6,2));
@@ -101,87 +104,90 @@ return resultado;
 
 
 // Desafio 8
-let resultado = [];
+let resultad = [];
 
 function fizzBuzz(num) {
   for(let i = 0; i < num.length; i += 1) {
     if(num[i] % 3 == 0 && num[i] % 5 != 0) {
-      resultado[i] = 'fizz';
+      resultad[i] = 'fizz';
     } else if(num[i] % 5 == 0 && num[i] % 3 != 0) {
-      resultado[i] = 'buzz';
+      resultad[i] = 'buzz';
     } else if(num[i] % 3 == 0 && num[i] % 5 == 0) {
-      resultado[i] = 'fizzBuzz';
+      resultad[i] = 'fizzBuzz';
     } else {
-      resultado[i] = 'bug!';
+      resultad[i] = 'bug!';
     }
   }
-return resultado;
+return resultad;
 }
+//console.log(fizzBuzz([9, 25]));
 
-console.log(fizzBuzz([9, 25]));
+
 
 // Desafio 9
 function encode(vogal) {
-  let resultado = [];
+  let resultou = [];
   let valor;
   
    for(index = 0; index < vogal.length; index += 1) {
      switch(vogal[index]){
        case('a'):
-       resultado[index] = 1;
+       resultou[index] = 1;
        break;
        case('e'):
-       resultado[index] = 2;
+       resultou[index] = 2;
        break;
        case('i'):
-       resultado[index] = 3;
+       resultou[index] = 3;
        break;
        case('o'):
-       resultado[index] = 4;
+       resultou[index] = 4;
        break;
        case('u'):
-       resultado[index] = 5;
+       resultou[index] = 5;
        break;
        default:
-       resultado[index] = vogal[index];
+       resultou[index] = vogal[index];
       }
-      valor = resultado.join('');
+      valor = resultou.join('');
    }
    return valor;
 }
-
 //console.log(encode('i love you'));
 
 
+
 function decode(numero) {
-  let resultado = [];
-  let valor;
+  let resto = [];
+  let valores;
   
    for(index = 0; index < numero.length; index += 1) {
      switch(numero[index]){
-       case('1'):
-       resultado[index] = 'a';
+       case(1):
+       resto[index] = 'a';
        break;
-       case('2'):
-       resultado[index] = 'e';
+       case(2):
+       resto[index] = 'e';
        break;
        case(3):
-       resultado[index] = 'i';
+       resto[index] = 'i';
        break;
        case(4):
-       resultado[index] = 'o';
+       resto[index] = 'o';
        break;
-       case('5'):
-       resultado[index] = 'u';
+       case(5):
+       resto[index] = 'u';
        break;
        default:
-       resultado[index] = numero[index];
+       resto[index] = numero[index];
       }
-      valor = resultado.join('');
+      valores = resto.join('');
    }
-   return valor;
+   return valores;
 }
 //console.log(decode('i love you'));
+
+
 
 module.exports = {
   calcArea,
