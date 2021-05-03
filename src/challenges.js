@@ -97,15 +97,15 @@ function fizzBuzz(numbers) {
 }
 
 // Desafio 9
-let vowels = {
-  a: 1,
-  e: 2,
-  i: 3,
-  o: 4,
-  u: 5,
-};
+function changeVowelToNumber(string, index, splitedString) {
+  let vowels = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  };
 
-function changeCaracter(string, index, splitedString) {
   for (let key in vowels) {
     if (string[index] === key) {
       splitedString[index] = vowels[key];
@@ -118,27 +118,36 @@ function encode(string) {
   let arrayString = string.split('');
   let result = '';
 
-  for (let indexWord = 0; indexWord < string.length; indexWord += 1) {
-    result += changeCaracter(string, indexWord, arrayString);
+  for (let indexString = 0; indexString < string.length; indexString += 1) {
+    result += changeVowelToNumber(string, indexString, arrayString);
   }
 
   return result;
 }
 
-vowels = {
-  1: 'a',
-  2: 'e',
-  3: 'i',
-  4: 'o',
-  5: 'u',
-};
+function changeNumberToVowel(string, index, splitedString) {
+  let vowels = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  };
+
+  for (let key in vowels) {
+    if (string[index] === key) {
+      splitedString[index] = vowels[key];
+    }
+  }
+  return splitedString[index];
+}
 
 function decode(string) {
   let arrayString = string.split('');
   let result = '';
 
   for (let indexString = 0; indexString < string.length; indexString += 1) {
-    result += changeCaracter(string, indexString, arrayString);
+    result += changeNumberToVowel(string, indexString, arrayString);
   }
 
   return result;
