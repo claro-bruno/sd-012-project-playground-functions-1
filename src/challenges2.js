@@ -6,11 +6,11 @@ function techList(arrayTech, name){
     return 'vazio!';
   } else { 
     for(let key of arraySort){
-      let objSaida = {
+      let objetoSaida = {
       tec: key,
       name: name,
     };
-    output.push(objSaida);
+    output.push(objetoSaida);
     }
     return saida;
   }
