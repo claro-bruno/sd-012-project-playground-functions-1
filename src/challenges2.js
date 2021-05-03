@@ -12,7 +12,8 @@ function techList(name, tec) {
 };
     array.push(list);
 }
-  return array
+   }
+   } return array
 
   // seu código aqui parametro e um array (nomes de tecnologia) usar o .sort if length ===0  = null return null }
 
