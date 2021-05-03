@@ -5,7 +5,7 @@ function techList(Array, Nome) {
     resultado.push({
       tech: tecnologia,
       name: Nome,
-      });
+    });
   });
   return resultado;
 }

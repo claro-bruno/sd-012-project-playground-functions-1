@@ -51,19 +51,18 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(Array) {
-  let resultado = [];
-  Array.forEach((numero) => {
+function fizzBuzz(array) {
+  for (index = 0; index < array.length += 1){
     if ((numero % 3 === 0) && (numero % 5 !== 0)) {
-      resultado.push('fizz');
+      array.index = 'fizz';
     } else if ((numero % 3 !== 0) && (numero % 5 === 0)) {
-      resultado.push('buzz');
+      array.index = 'buzz';
     } else if ((numero % 3 === 0) && (numero % 5 === 0)) {
-      resultado.push('fizzBuzz');
+      array.index = 'fizzBuzz';
     } else {
-      resultado.push('bug!');
+      array.index = 'bug!';
     }
-  });
+  }
 }
 
 // Desafio 9
