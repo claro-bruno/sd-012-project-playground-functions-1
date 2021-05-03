@@ -25,7 +25,8 @@ function splitSentence(string) {
 function concatName(arrayString) {
   let first = arrayString[arrayString.length - 1] + ', ';
   let second = arrayString[0];
-  return first + second;
+  let final = first + second;
+  return final;
 }
 
 // Desafio 5
@@ -69,16 +70,15 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(arrayNumeros) {
-  let arrayFinal = [];
+	//restruturei a função ao contrario para diminuir 'ifs'.
   for (let index = 0; index < arrayNumeros.length; index += 1) {
-    if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 !== 0) {
-      arrayFinal.push('fizz');
-    } if (arrayNumeros[index] % 5 === 0 && arrayNumeros[index] % 3 !== 0) {
-      arrayFinal.push('buzz');
-    } if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
-      arrayFinal.push('fizzBuzz');
-    } if (arrayNumeros[index] % 3 !== 0 && arrayNumeros[index] % 5 !== 0) {
-      arrayFinal.push('bug!');
+		arrayNumeros[index] = 'bug!';
+		if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
+      arrayNumeros[index] = 'fizzBuzz';
+    } else if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 !== 0) {
+      arrayNumeros[index] = 'fizz';
+    } else if (arrayNumeros[index] % 5 === 0 && arrayNumeros[index] % 3 !== 0) {
+      arrayNumeros[index] = 'buzz';
     }
   }
   return arrayFinal;
@@ -86,41 +86,23 @@ function fizzBuzz(arrayNumeros) {
 
 // Desafio 9
 function encode(stringEncode) {
-  stringEncode = stringEncode.split('');
-  for (let index = 0; index < stringEncode.length; index += 1) {
-    switch (stringEncode[index]) {
-      case 'a': stringEncode[index] = '1';
-      break;
-      case 'e': stringEncode[index] = '2';
-      break;
-      case 'i': stringEncode[index] = '3';
-      break;
-      case 'o': stringEncode[index] = '4';
-      break;
-      case 'u': stringEncode[index] = '5';
-      break;
-    }
-  }
-  return stringEncode.join('');
+	//https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+  stringEncode = stringEncode.replace(/a/g, '1');
+  stringEncode = stringEncode.replace(/e/g, '2');
+  stringEncode = stringEncode.replace(/i/g, '3');
+  stringEncode = stringEncode.replace(/o/g, '4');
+  stringEncode = stringEncode.replace(/u/g, '5');
+  return stringEncode
 }
 
 function decode(stringDecode) {
-  stringDecode = stringDecode.split('');
-  for (let index = 0; index < stringDecode.length; index += 1) {
-    switch (stringDecode[index]) {
-      case '1': stringDecode[index] = 'a';
-      break;
-      case '2': stringDecode[index] = 'e';
-      break;
-      case '3': stringDecode[index] = 'i';
-      break;
-      case '4': stringDecode[index] = 'o';
-      break;
-      case '5': stringDecode[index] = 'u';
-      break;
-    }
-  }
-  return stringDecode.join('');
+  //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+  stringEncode = stringEncode.replace(/1/g, 'a');
+  stringEncode = stringEncode.replace(/2/g, 'e');
+  stringEncode = stringEncode.replace(/3/g, 'i');
+  stringEncode = stringEncode.replace(/4/g, 'o');
+  stringEncode = stringEncode.replace(/5/g, 'u');
+  return stringDecode
 }
 
 module.exports = {
