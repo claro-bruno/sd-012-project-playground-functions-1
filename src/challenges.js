@@ -27,20 +27,18 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(arrayS) {
-  for(let aux = 0; aux < arrayS.length; aux+= 1){
-      if(arrayS.length)
-  }
-  
+  // seu código aqui
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
+  let resultado = 0;
   resultado = (wins * 3) + ties;
   return resultado;
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(arrayNum) {
   // seu código aqui
 }
 
