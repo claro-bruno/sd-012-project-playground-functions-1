@@ -7,7 +7,7 @@ function techList(skills, name) {
 
   let listSkill = [];
 
-  for (tecSkills of skills.soft()) {
+  for (let tecSkills of skills.soft()) {
     let object = {
       tech : tecSkills,
       name : name,

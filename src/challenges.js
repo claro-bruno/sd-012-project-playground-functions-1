@@ -77,11 +77,14 @@ let maiorNum = Math.max(...array); //referencia retirada da documentação Math.
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if ((cat1 - mouse) < (cat2 - mouse)) {
+  let distCat1 = Math.abs(cat1 - mouse); //sugestão vista em outro exercicio do projeto, e a referencia emcontrada na docimentação do Math.abs.
+  let distCat2 = Math.abs(cat2 - mouse);
+
+  if (distCat1 < distCat2) {
     return "cat1";
-  } else if ((cat2 - mouse) < (cat1 - mouse)){
+  } else if (distCat2 < distCat1){
     return "cat2";
-  } else if ((cat1 - mouse) == (cat2 - mouse)){
+  } else if (distCat1 == distCat2){
     return "os gatos trombam e o rato foge"
   }  
 } console.log(catAndMouse(4, 16, 16));
