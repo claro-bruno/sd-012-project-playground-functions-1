@@ -61,15 +61,16 @@ function hydrate(str) {
   // seu código aqui
   let sum = 0;
   let numbers = str.match(/\d+/g).map(Number);
-  let ressaca = ' copos de água';
+  // https://stackoverflow.com/questions/53897373/js-how-to-got-the-sum-of-numbers-from-a-string
   for (let index = 0; index < numbers.length; index+=1) {
     sum += numbers[index]
+  }if (sum === 1) {
+    return (`${sum} copo de água`);
   }
-  if(sum <= 0 || sum >= 10) {
-    return 'Error';
-  }
-  return sum + ressaca;
+  return (`${sum} copos de água`);
 }
+
+console.log(hydrate('5 cervejas, 1 pingas'));
 
 module.exports = {
   generatePhoneNumber,
