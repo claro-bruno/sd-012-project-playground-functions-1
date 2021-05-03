@@ -80,16 +80,21 @@ function triangleCheck(lineA,lineB,lineC) {
 // Desafio 13
 function hydrate(string) {
   let separa=[];
+  let saida='';
   separa=string.split("").filter(n => (Number(n) || n == 0)).join("").replace( /\s/g, '');
   let separa2=separa.split("");
   let contador=0;
-  console.log(separa2);
   for(let i=0;i<separa2.length;i+=1){
-    contador+=separa2[i];
+    contador+=Number(separa2[i]);
   }
-  return contador;
+  if(contador==1){
+    saida=contador +' copo de água'
+  }
+  else{
+    saida=contador +' copos de água' 
+  }
+  return saida;
 }
-console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"))
 
 
 module.exports = {
