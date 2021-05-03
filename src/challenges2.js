@@ -22,7 +22,7 @@ return resultado;
 
 
 // Desafio 11 ||
-let resultado;
+let result;
 let tri = 0;
 let num = [];
 let resposta;
@@ -40,17 +40,17 @@ function generatePhoneNumber(number) {
   }
 
   if(number.length != 11) {
-    resultado = "Array com tamanho incorreto.";
+    result = "Array com tamanho incorreto.";
   }
   else if(num[10] > 9 || num[0] < 0) { 
-    resultado = "Não é possível gerar um número de telefone com esses valores.";
+    result = "Não é possível gerar um número de telefone com esses valores.";
 } else if(tri != 0) {
-    resultado = "Não é possível gerar um número de telefone com esses valores.";
+    result = "Não é possível gerar um número de telefone com esses valores.";
   }
  else {
-  resultado = resposta
+  result = resposta
     } 
-return resultado;
+return result;
 }
 console.log(generatePhoneNumber([9,7,2,1,5,8,7,4,1,6,5]))
 
