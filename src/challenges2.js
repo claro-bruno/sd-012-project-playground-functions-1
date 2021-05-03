@@ -17,27 +17,11 @@ function techList(techArray, name) {
 
 // Desafio 11
 function generatePhoneNumber(numbers) {
-    let numbersArray = numbers;
-    numbersArray.sort();
-    let maior = numbersArray[numbersArray.length - 1];
-    let menor = numbersArray[0];
-    let repete = 0;
-    let cont = 0;
-    for (let number of numbers) {
-        for (let num of numbersArray) {
-            if (number === num && repete < 3) {
-                repete += 1;
-            } else if (repete >= 3) {
-                cont = repete
-            }
-            repete = 0;
-        }
-    }
     switch (true) {
         case numbers.length != 11:
             return 'Array com tamanho incorreto.';
             break;
-        case (maior > 9 || menor < 0 || cont >= 3):
+        case (maiorNumero(numbers) > 9 || menorNumero(numbers) < 0 || repeteTresVezes(numbers)):
             return 'não é possível gerar um número de telefone com esses valores';
             break;
         default:
@@ -59,7 +43,7 @@ function generatePhoneNumber(numbers) {
             break;
     }
 }
-
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 // Desafio 12
 function triangleCheck() {
     // seu código aqui
@@ -68,6 +52,45 @@ function triangleCheck() {
 // Desafio 13
 function hydrate() {
     // seu código aqui
+}
+
+function menorNumero(numbers) {
+    let menor = numbers[0];
+    for (let num of numbers) {
+        if (num < menor) {
+            menor = num;
+        }
+    }
+    return menor;
+}
+
+function maiorNumero(numbers) {
+    let maior = numbers[0];
+    for (let num of numbers) {
+        if (num > maior) {
+            maior = num;
+        }
+    }
+    return maior;
+}
+
+function repeteTresVezes(numbers) {
+    let repete = 0;
+    let cont = 0;
+    for (let number of numbers) {
+        if (cont < 3) {
+            cont = 0;
+            for (let num of numbers) {
+                if (number === num) {
+                    cont += 1;
+                }
+            }
+            repete = false;
+        } else {
+            repete = true;
+        }
+    }
+    return repete;
 }
 
 module.exports = {
