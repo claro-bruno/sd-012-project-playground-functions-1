@@ -53,9 +53,23 @@ function triangleCheck(lineA, lineB, lineC) {
 };
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
-}
+function hydrate(string) {
+  let numerosDaString = [];
+  let somaDosValores = 0;
+  for (let caracteres of string) {
+    if (caracteres == 1 || caracteres == 2 || caracteres == 3  || caracteres == 4  || caracteres == 5  || caracteres == 6  || caracteres == 7  || caracteres == 8  || caracteres == 9) {
+      numerosDaString.push(caracteres);
+    };  
+  };
+  for (let index = 0; index < numerosDaString.length; index += 1) {
+    somaDosValores += parseInt(numerosDaString[index]);      
+  };
+  if (somaDosValores === 1) {
+    return somaDosValores + " copo de água";
+  } else {
+    return somaDosValores + " copos de água";
+  };  
+};
 
 module.exports = {
   generatePhoneNumber,
