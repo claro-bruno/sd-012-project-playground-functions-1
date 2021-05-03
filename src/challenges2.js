@@ -3,9 +3,9 @@ function techList(Array, Nome) {
   let resultado = [];
   Array.forEach((tecnologia) => {
     resultado.push({
-                    tech: tecnologia,
-                    name: Nome 
-                  });
+      tech: tecnologia,
+      name: Nome,
+      });
   });
   return resultado;
 }
@@ -24,7 +24,7 @@ function triangleCheck() {
 function hydrate() {
   // seu código aqui
 }
-kdjdkdkdk 
+
 module.exports = {
   generatePhoneNumber,
   techList,
