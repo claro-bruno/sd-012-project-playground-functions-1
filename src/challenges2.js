@@ -1,13 +1,21 @@
 // Desafio 10
-function techList(param1, param2) {
-  let param1 = ['react', 'jest', 'html'];
-  let param1obj = {};
-  for (let index = 0; index < param1.length; index += 1) {
-    param1.tech = param1[index];
-    param1obj.push(param1.tech);
+function techList(arrTech, name) {
+  let arrOrden = arrTech.sort();// ordenar a variável de entrada.
+  let techObject = [];// variável vazia que vai receber os objetos.
+  if (arrTech.length === 0) {// se a lista estiver vazia, o tamanho é 0.
+    return 'Vazio!';
+  } else {// cado arrTech não seja vazio, execute:
+    for ( let index = 0; index < arrOrden.length; index += 1) {
+      let obj_index = {
+        tech: arrOrden[index],
+        name: name,
+      };
+      techObject.push(obj_index);
+    }
+    return techObject;
   }
-  console.log(param1obj)
 }
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],'Cristiano'));
 
 // Desafio 11
 function generatePhoneNumber() {
