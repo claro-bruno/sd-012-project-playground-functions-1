@@ -57,9 +57,15 @@ function triangleCheck(lineA, lineB, lineC) {
 console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
+function hydrate(str) {
   // seu código aqui
-  
+  let sum = 0;
+  let numbers = str.match(/\d+/g).map(Number);
+  let ressaca = ' copos de água';
+  for (let index = 0; index < numbers.length; index+=1) {
+    sum += numbers[index]
+  }
+  return sum + ressaca;
 }
 
 module.exports = {
@@ -68,5 +74,3 @@ module.exports = {
   hydrate,
   triangleCheck,
 };
-
-
