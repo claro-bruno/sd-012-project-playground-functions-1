@@ -59,7 +59,6 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numeros) {
   // seu código aqui
   let array = [];
-
   for (let indice of numeros) {
     if (indice % 3 === 0 && indice % 5 === 0) {
       array.push('fizzBuzz');
