@@ -85,8 +85,24 @@ else if (cat2x < cat1x) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+let div3 = array[index] % 3;
+let div5 = array[index] % 5;
+let storage = [];
+for (let index = 0; index < array.length; index += 1);
+    if (div3 != 0 && div5 != 0){
+      return ('bug!').push(storage);
+    }
+    else if (div3 === 0 && div5 ===0){
+      return ('fizzBuzz').push(storage);
+    }
+    else if (div3 === 0){
+      return ('fizz').push(storage);
+    }
+    else if (div5 === 0){
+      return ('buzz').push(storage);
+    }
+   return storage; 
 }
 
 // Desafio 9
