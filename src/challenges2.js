@@ -3,7 +3,7 @@ function techList(techName, name) {
   // seu código aqui
   if (!techName.length) return 'Vazio!';
   let arrayFinal = [];
-  for (let i = 0; i < techName.length; i += 1) {
+  for (let i in techName.sort()) {
     let pull = {
       tech: techName[i],
       name: name,
