@@ -1,9 +1,11 @@
 // Desafio 10
 function techList(name, tec) {
   let array = [];
-  tec.sort();
   let list = {}
-    for (let key in tec){
+  if( tec.length ===0) {
+    return 'Vazio!';
+  } else {
+    for (let key in tec.sort()){
       list = {
         tec: tec[key],
         name : name,
@@ -11,7 +13,8 @@ function techList(name, tec) {
     array.push(list);
 }
   return array
-  // seu código aqui parametro e um array (nomes de tecnologia) usar o .sort if vier = null return null }
+
+  // seu código aqui parametro e um array (nomes de tecnologia) usar o .sort if length ===0  = null return null }
 
 // Desafio 11
 function generatePhoneNumber(numerostelefone) {

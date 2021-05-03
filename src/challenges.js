@@ -66,30 +66,9 @@ function fizzBuzz() {
 
 // Desafio 9
 function encode(param1) {
-  let Encode = {
-    a: 1,
-    e: 2,
-    i: 3,
-    o: 4,
-    u: 5,
-  };
-let algo = string.split (' ')
-let valor = 1;
-  for(index = 0; index < algo.lenght; index +=1) {
-  if(algo[index] ===a); {
-  algo[index] = valor;
-  }
-}
+
 }
 function decode() {
-  let Decode = {
-    1: 'a',
-    2: 'e',
-    3: 'i',
-    4: 'o',
-    5: 'u',
-    };
-    return Decode
 };
 
 module.exports = {
