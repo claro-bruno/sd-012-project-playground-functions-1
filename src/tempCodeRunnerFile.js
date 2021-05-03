@@ -6,6 +6,5 @@ function catAndMouse(mouse, cat1, cat2) {
     return "cat2";
   } else {
     return "Os gatos trombam e o rato foge."
-  }
-}
-console.log(catAndMouse(1,6,12))
+  }  
+} console.log(catAndMouse(6, 14, 5))

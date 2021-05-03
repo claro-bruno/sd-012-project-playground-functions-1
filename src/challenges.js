@@ -52,12 +52,12 @@ function concatName(array) {
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-let placarWins = wins * 3;
-let placarTies = ties * 1;
-let pontos = placarTies + placarWins;
-
-console.log(footballPoints(`${pontos}`))
-return pontos;
+  let placarWins = wins * 3;
+  let placarTies = ties * 1;
+  let pontos = placarTies + placarWins;
+  
+  console.log(footballPoints(`${pontos}`))
+  return pontos;
 }
 
 // Desafio 6
@@ -87,8 +87,20 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(array) {
   // seu código aqui
+  let fbArray = [];
+for (let index in array) {
+  if ((array[index] % 3 == 0) && (array[index] % 5 == 0)) {
+    fbArray.push("fizzbuzz");
+  } else if (array[index] % 3 == 0) {
+    fbArray.push("fizz");
+  } else if (array[index] % 5 == 0) {
+    fbArray.push("buzz");
+  } else {
+    fbArray.push("bug!");
+  }
+} return fbArray;
 }
 
 // Desafio 9
