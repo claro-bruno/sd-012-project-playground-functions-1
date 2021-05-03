@@ -24,24 +24,23 @@ function concatName(nome) {
 
 // Desafio 5
 function footballPoints(win, ties) {
-    return (win * 3) + (ties);
+    return (win * 3) + ties;
 } 
 
 // Desafio 6
 function highestCount(numbers) {
     let num = 0;
+    let cont = 0;
+    
     for (let index = 0; index < numbers.length; index += 1) {
-      
       if (numbers[index] > num) {
         num = numbers[index];
+        cont = 0;
       }
-    }
-    let cont = 0;
-    for (let index = 0; index < numbers.length; index += 1) {
       if (numbers === numbers[index]) {
         cont += 1;
       }
-    }
+    }  
     return cont;
 }
 
@@ -55,7 +54,7 @@ function catAndMouse(mouse, cat1, cat2) {
   } else if (cat2 < cat1) {
     return 'cat2';
   } else {
-    return 'Os gatos trombam e o rato foge.';
+    return 'Os gatos trombam e o rato foge';
   }
 }
 
@@ -78,13 +77,26 @@ function fizzBuzz(numbers) {
 } 
 
 // Desafio 9
-function encode() {
-    
+function encode(strEncode) {
+  for (let index = 0; index < strEncode.length; index += 1) {
+    strEncode = strEncode.replace('a', '1');
+    strEncode = strEncode.replace('e', '2');
+    strEncode = strEncode.replace('i', '3');
+    strEncode = strEncode.replace('o', '4');
+    strEncode = strEncode.replace('u', '5');
+  }
+  return strEncode;
+} 
+function decode(strDecode) {
+  for (let index = 0; index < strDecode.length; index += 1) {
+    strDecode = strDecode.replace('1', 'a');
+    strDecode = strDecode.replace('2', 'e');
+    strDecode = strDecode.replace('3', 'i');
+    strDecode = strDecode.replace('4', 'o');
+    strDecode = strDecode.replace('5', 'u');
+  }
+  return strDecode;
 }
-function decode() {
-  // seu código aqui
-}
-
 module.exports = {
   calcArea,
   catAndMouse,
