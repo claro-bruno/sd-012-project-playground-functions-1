@@ -66,35 +66,35 @@ function fizzBuzz(arrayDeNumeros) {
   let novoArray = [];
   for (let index = 0; index < arrayDeNumeros.length; index += 1) {
     if(arrayDeNumeros[index] % 3 === 0 ){
-      let divisivelPor = [3]
+      let divisivelPor = [3];
       for (let divisor = 2; divisor < arrayDeNumeros[index]; divisor += 1){
         if (arrayDeNumeros[index] % divisor === 0 && divisor != 3) {
-          divisivelPor.push(divisor)
+          divisivelPor.push(divisor);
         }
       } 
       if (divisivelPor.length === 1) {
-        novoArray.push('fizz')
+        novoArray.push('fizz');
       }
     }  
     if(arrayDeNumeros[index] % 5 === 0 ){
-      let divisivelPor = [5]
+      let divisivelPor = [5];
       for (let divisor = 2; divisor < arrayDeNumeros[index]; divisor += 1){
         if (arrayDeNumeros[index] % divisor === 0 && divisor != 5) {
-          divisivelPor.push(divisor)
+          divisivelPor.push(divisor);
         }
       } 
       if (divisivelPor.length === 1) {
-        novoArray.push('buzz')
+        novoArray.push('buzz');
       }
     }
     if (arrayDeNumeros[index] % 3 === 0 && arrayDeNumeros[index] % 5 === 0) {
-      novoArray.push('fizzBuzz')
+      novoArray.push('fizzBuzz');
     }
     if (arrayDeNumeros[index] % 3 != 0 && arrayDeNumeros[index] % 5 != 0) {
-      novoArray.push('bug!')
+      novoArray.push('bug!');
     }
   }
-  return novoArray
+  return novoArray;
 }
 
 // Desafio 9
@@ -104,37 +104,64 @@ function encode(string) {
     if (string[index] === string[index].toLowerCase()) {
       switch (string[index]) {
         case 'a':
-          novaString += 1
+          novaString += 1;
           break
 
         case 'e':
-          novaString += 2
+          novaString += 2;
           break
 
         case 'i':
-          novaString += 3
+          novaString += 3;
           break
 
         case 'o':
-          novaString += 4
+          novaString += 4;
           break
           
         case 'u':
-          novaString += 5
+          novaString += 5;
           break
 
         default:
-          novaString += string[index]
+          novaString += string[index];
           break;
       }
     }
   }
-  return novaString
+  return novaString;
 }
 
-// Desafio 10
-function decode() {
-  // seu código aqui
+function decode(string) {
+  let novaString = ''
+  for (let index = 0; index < string.length; index += 1) {
+    switch (string[index]) {
+      case 1:
+        novaString += 'a';
+        break
+
+      case 2:
+        novaString += 'e';
+        break
+
+      case 3:
+        novaString += 'i';
+        break
+
+      case 4:
+        novaString += 'o';
+        break
+        
+      case 5:
+        novaString += 'u';
+        break
+
+      default:
+        novaString += string[index];
+        break;
+    }
+  }
+  return novaString;
 }
 
 module.exports = {
