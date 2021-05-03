@@ -59,12 +59,25 @@ function triangleCheck(lineA, lineB, lineC) {
   }
 };
 
-console.log(triangleCheck(100, 14, 8));
+//console.log(triangleCheck(100, 14, 8));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let soma = 0;
+  let numbers = string.match(/\d+/g);
+
+  for (let index = 0; index < numbers.length; index +=1) {  
+    soma = soma + parseInt(numbers[index]);
+  }
+  
+  if (soma === 1) {
+    return '1 copo de água';
+  } else {
+    return `${soma} ` + 'copos de água';
+  }
 }
+
+//console.log(hydrate('1 vinho'));
 
 module.exports = {
   generatePhoneNumber,
