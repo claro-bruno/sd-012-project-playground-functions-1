@@ -1,23 +1,20 @@
+const getLenght = require('./challenges.js').getLenght
 // Desafio 10
 function techList(array, name) {
-  
   let res = []
   array.sort()
-
-  if(!array){
+  if (getLenght(array) === undefined){
     return 'Vazio!'
   }
-  else{
+  else {
     for (let techs of array){
       res.push({
         tech: techs,
         name: name
       })
     }
-  
     return res
   }
-
 }
 
 // Desafio 11

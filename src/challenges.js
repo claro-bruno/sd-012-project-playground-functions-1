@@ -173,4 +173,5 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
+  getLenght,
 };
