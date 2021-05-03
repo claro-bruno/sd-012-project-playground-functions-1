@@ -5,7 +5,6 @@ function compareTrue(bool1, bool2) {
   return false;
 }
 
-console.log(compareTrue(true, true))
 // Desafio 2
 function calcArea(base, height) {
   let area = (base * height) / 2;
