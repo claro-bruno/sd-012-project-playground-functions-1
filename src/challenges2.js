@@ -69,8 +69,8 @@ function hydrate(drinks) {
   
   let sum = 0;
 
-  for (let index = 0; index <allNumbers.length; index += 1) {
-    sum = sum + allNumbers[index];
+  for (let index = 0; index <numbers.length; index += 1) {
+    sum = sum + numbers[index];
   };
 
   return sum + " copos de água";
