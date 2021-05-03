@@ -1,21 +1,21 @@
-// Desafio 1 - Verificação de números pares
+// Desafio 1 
 let retorno;
 function compareTrue(valor1, valor2) {
-  if (valor1 % 2 == 0 && valor2 % 2 == 0) {
-    retorno ='true';
+  if (valor1 == 'true' && valor2 == 'true') {
+    retorno = 'true';
   }
   else {
-    retorno ='false';
+    retorno = 'false';
   }
 return retorno;
 }
-//console.log(compareTrue(89,56));
+//console.log(compareTrue('false', 'false'));
 //console.log(compareTrue(73,11));
 //console.log(compareTrue(98,42));
 
 
 
-// Desafio 2 - Cálculo da área do triângulo
+// Desafio 2 
 let resposta;
 function calcArea(base, height) {
  resposta =(base * height) / 2;
@@ -70,11 +70,12 @@ for(index = 0; index < a.length; index += 1)
     if (a[index] === b){
     resultados = resultados + 1;
     } else { 
+      resultados = resultados;
     }
   return resultados;
 }
 //console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-//console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 //console.log(highestCount([0, 0, 0]));
 
 
@@ -120,14 +121,14 @@ function fizzBuzz(num) {
   }
 return resultad;
 }
-//console.log(fizzBuzz([9, 25]));
+//console.log(fizzBuzz([7, 9]));
 
 
 
 // Desafio 9
+let resultou = [];
+let valor;
 function encode(vogal) {
-  let resultou = [];
-  let valor;
   
    for(index = 0; index < vogal.length; index += 1) {
      switch(vogal[index]){
@@ -157,9 +158,9 @@ function encode(vogal) {
 
 
 
+let resto = [];
+let valores;
 function decode(numero) {
-  let resto = [];
-  let valores;
   
    for(index = 0; index < numero.length; index += 1) {
      switch(numero[index]){
