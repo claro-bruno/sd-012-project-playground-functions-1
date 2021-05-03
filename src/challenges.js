@@ -85,21 +85,19 @@ else if (cat2x < cat1x) {
 }
 
 // Desafio 8
-function fizzBuzz([array]) {
+function fizzBuzz(array) {
 for (let index = 0; index < array.length; index += 1);
-let div3 = array[index] % 3;
-let div5 = array[index] % 5;
 let storage = [];
-if (div3 != 0 && div5 != 0){
+if (array[index] % 3   != 0 && array[index] % 5 != 0){
       return ('bug!').push(storage);
     }
-    else if (div3 === 0 && div5 ===0){
+    else if (array[index] % 3 === 0 && array[index] % 5 === 0){
       return ('fizzBuzz').push(storage);
     }
-    else if (div3 === 0){
+    else if (array[index] % 3 === 0){
       return ('fizz').push(storage);
     }
-    else if (div5 === 0){
+    else if (array[index] % 5 === 0){
       return ('buzz').push(storage);
     }
    return (storage); 
