@@ -104,10 +104,21 @@ return resultado;
 let resultado = [];
 
 function fizzBuzz(num) {
-  resultado = num[0] + 1;
-}
+  for(let i = 0; i < num.length; i += 1) {
+    if(num[i] % 3 == 0 && num[i] % 5 != 0) {
+      resultado[i] = 'fizz';
+    } else if(num[i] % 5 == 0 && num[i] % 3 != 0) {
+      resultado[i] = 'buzz';
+    } else if(num[i] % 3 == 0 && num[i] % 5 == 0) {
+      resultado[i] = 'fizzBuzz';
+    } else {
+      resultado[i] = 'bug!';
+    }
+  }
 return resultado;
-console.log(fizzBuzz('6'));
+}
+
+console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode(vogal) {
