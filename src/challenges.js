@@ -32,12 +32,12 @@ let palavra;
 function splitSentence(frase) {
 for(index = 0; index < frase.length; index += 1){
   if(frase[index] = ' ') {
-    palavra.push [index = posicaoInicial;] = posicaoInicial[index]
+    palavra.push (index = posicaoInicial) = posicaoInicial[index]
     array.push(frase);
     
   }
   else {
-    posicaoFinal = posicaoFinal + 1;
+    posicaoFinal = (posicaoFinal + 1);
   }
 }
 return array
