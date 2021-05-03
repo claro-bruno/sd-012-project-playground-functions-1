@@ -6,7 +6,7 @@ function techList(techName, name) {
   for (let i = 0; i < techName.length; i += 1) {
     let pull = {
       tech: techName[i],
-      name: name,
+      nome: name,
     };
     arrayFinal.push(pull);
   }
