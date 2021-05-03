@@ -83,7 +83,7 @@ function fizzBuzz(arrayOfNumber) {
 // Desafio 9
 function encode(string1) {
   let string = string1.split('');
-  for (index = 0; index < string.length; index += 1) {
+  for (let index = 0; index < string.length; index += 1) {
     if (string[index] === 'a') {
       string[index] = 1;
     } else if (string[index] === 'e') {
@@ -97,11 +97,7 @@ function encode(string1) {
     }
   }
   return string.join("");
-  // seu código aqui // usar split() // tentar objetos
 }
-string1 = 'hi there!';
-let string = string1.split('');
-console.log(string);
 function decode() {
   // seu código aqui
 }
