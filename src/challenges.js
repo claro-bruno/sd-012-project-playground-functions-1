@@ -20,16 +20,39 @@ function calcArea(base, height) {
 console.log(calcArea(7, 8));
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(string) {
     // seu código aqui
-    
+      let frase = '';
+      let array = [];
+
+      for(let index = 0; index < string.length; index += 1){
+        if(index === string.length - 1){
+          frase += string[index];
+          array.push(frase);
+        }
+        else if(string[index] != ' '){
+          frase += string[index];
+        }
+        else{
+          array.push(frase);
+          frase = '';
+        }
+      }
+      console.log(array)
+      return array;
 }
 
 // Desafio 4
-function concatName() {
+function concatName(array) {
   // seu código aqui
-}
+  array = ['acerola', 'abbacte', 'buroti'];
+  let elem1 = array[0];
+  let elem2 = array[(array.length) - 1];
 
+  console.log(concatName(`${elem2}, ${elem1}`));
+
+}
+  
 // Desafio 5
 function footballPoints() {
   // seu código aqui
