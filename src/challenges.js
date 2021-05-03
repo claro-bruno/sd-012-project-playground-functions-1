@@ -153,14 +153,12 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-/* function hydrate(string1) {
+function hydrate(string) {
   // seu código aqui
   let con = 0;
-  let words = string1.split(' ');
-  for (let indice = 0; indice < words.length; indice += 1) {
-    if (parseInt(words[indice])) {
-      con += parseInt(words[indice]);
-    }
+  let numeros = string.match(/\d+/g).map(Number);
+  for (let indice = 0; indice < numeros.length; indice += 1) {    
+    con += 1;
   }
   return con > 1 ? con + ' copos de água' : con + ' copo de água';
-} */
+}
