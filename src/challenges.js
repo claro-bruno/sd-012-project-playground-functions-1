@@ -14,11 +14,11 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(sentence) {
   let arrayPalavras = [];
-  let palavra = "";
+  let palavra = '';
   for (let char of sentence) {
-    if (char === " ") {
+    if (char === ' ') {
       arrayPalavras.push(palavra);
-      palavra = "";
+      palavra = '';
     } else {
       palavra += char;
     }
@@ -29,7 +29,7 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(arrayPalavras) {
-  let nome = arrayPalavras[arrayPalavras.length - 1] + ", " + arrayPalavras[0];
+  let nome = arrayPalavras[arrayPalavras.length - 1] + ', ' + arrayPalavras[0];
   return nome;
 }
 
@@ -57,11 +57,11 @@ function catAndMouse(mouse, cat1, cat2) {
   let distMouseCat1 = Math.abs(cat1 - mouse);
   let distMouseCat2 = Math.abs(cat2 - mouse);
   if (distMouseCat1 < distMouseCat2) {
-    return "cat1";
+    return 'cat1';
   } else if (distMouseCat2 < distMouseCat1) {
-    return "cat2";
+    return 'cat2';
   } else {
-    return "os gatos trombam e o rato foge";
+    return 'os gatos trombam e o rato foge';
   }
 }
 
@@ -70,13 +70,13 @@ function fizzBuzz(numeros) {
   let retorno = [];
   for (let num of numeros) {
     if (num % 3 === 0 && num % 5 === 0) {
-      retorno.push("fizzBuzz");
+      retorno.push('fizzBuzz');
     } else if (num % 3 === 0) {
-      retorno.push("fizz");
+      retorno.push('fizz');
     } else if (num % 5 === 0) {
-      retorno.push("buzz");
+      retorno.push('buzz');
     } else {
-      retorno.push("bug!");
+      retorno.push('bug!');
     }
   }
   return retorno;
@@ -92,7 +92,7 @@ let decodificador = {
 };
 
 function encode(frase) {
-  let novaFrase = "";
+  let novaFrase = '';
   for (let letra of frase) {
     for (let key in decodificador) {
       if (letra === key) {
@@ -105,7 +105,7 @@ function encode(frase) {
 }
 
 function decode(frase) {
-  let novaFrase = "";
+  let novaFrase = '';
   for (let letra of frase) {
     for (let key in decodificador) {
       if (letra == decodificador[key]) {

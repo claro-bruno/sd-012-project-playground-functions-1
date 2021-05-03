@@ -8,35 +8,35 @@ function techList(techArray, name) {
     };
     objectArray.push(techObject);
   }
-  if (objectArray.length != 0) {
+  if (objectArray.length !== 0) {
     return objectArray;
   } else {
-    return "Vazio!";
+    return 'Vazio!';
   }
 }
 
 // Desafio 11
 function generatePhoneNumber(numbers) {
   switch (true) {
-    case numbers.length != 11:
-      return "Array com tamanho incorreto.";
+    case numbers.length !== 11:
+      return 'Array com tamanho incorreto.';
       break;
     case maiorNumero(numbers) > 9 ||
       menorNumero(numbers) < 0 ||
       repeteTresVezes(numbers):
-      return "não é possível gerar um número de telefone com esses valores";
+      return 'não é possível gerar um número de telefone com esses valores';
       break;
     default:
-      let phoneNumber = "(";
+      let phoneNumber = '(';
       phoneNumber += numbers[0];
       phoneNumber += numbers[1];
-      phoneNumber += ") ";
+      phoneNumber += ') ';
       phoneNumber += numbers[2];
       phoneNumber += numbers[3];
       phoneNumber += numbers[4];
       phoneNumber += numbers[5];
       phoneNumber += numbers[6];
-      phoneNumber += "-";
+      phoneNumber += '-';
       phoneNumber += numbers[7];
       phoneNumber += numbers[8];
       phoneNumber += numbers[9];
@@ -81,9 +81,9 @@ function hydrate(texto) {
     qtde += num;
   }
   if (qtde <= 1) {
-    return qtde + " copo de água";
+    return qtde + ' copo de água';
   } else {
-    return qtde + " copos de água";
+    return qtde + ' copos de água';
   }
 }
 
