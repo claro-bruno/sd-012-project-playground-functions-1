@@ -64,21 +64,21 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate(drinks) {
+function hydrate(pubTrybe) {
 
-  let coposDagua = (drinks.match(/\d+/g)); // Retira os caracteres alfanuméricos deixando apenas números.
-  coposDagua = coposDagua.split(''); // Divide a String em uma lista ordenada
-  let agua = 0;
+  let drinks = (pubTrybe.match(/\d+/g)); // Retira os caracteres alfanuméricos
+  let totalDrinks = 0;
 
+  for (let index = 0; index < drinks.length; index += 1) {
 
-  for (let index = 0; index < coposDagua.length; index += 1) {
-    agua = coposDagua[index];
+    totalDrinks += parseInt(drinks[index]);
 
-    agua += parseInt(coposDagua[index]);
   }
-  return agua;
-
-  //return `${'Beba'} %{quantidade}` + 'copo água';
+  if (totalDrinks === 1) {
+    return `${totalDrinks} copo de água`
+  } else {
+    return `${totalDrinks} copos de água`
+  }
 
 }
 console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
