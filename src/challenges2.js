@@ -17,7 +17,7 @@ function generatePhoneNumber(numero) {
         return 'não é possível gerar um número de telefone com esses valores';
       }
       if (posicao === 2) {
-        numerotel += ')';
+        numerotel += ') ';
       } 
       if (posicao === 7) {
         numerotel += '-';
@@ -56,3 +56,4 @@ module.exports = {
   hydrate,
   triangleCheck,
 };
+

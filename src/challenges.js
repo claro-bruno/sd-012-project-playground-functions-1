@@ -29,7 +29,20 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(matriz) {
+  let maior = matriz[0];
+  let vezes = 0;
+  let valor = 0 ;
+  for (index = 0; index < matriz.length; index += 1) {
+    if (matriz[index] > maior) {
+      maior = matriz[matriz];
+      vezes = 1;
+    } else
+    if (maior === matriz[index]) {
+      vezes += 1;
+    }
+  }
+  return vezes;
 }
 
 // Desafio 7
@@ -55,11 +68,11 @@ function fizzBuzz(matriz) {
         conteudo = 'fizzBuzz';
       }
     } else 
-      if (matriz[index] % 5 === 0) {
-        conteudo = 'buzz';
-      }
+    if (matriz[index] % 5 === 0) {
+      conteudo = 'buzz';
+    }
     resposta.push(conteudo);
-  } 
+  }
   return resposta;
 }
 
@@ -68,24 +81,24 @@ function encode(variavel) {
   let caracter = '';
   let resposta = '';
   for (let index = 0; index < variavel.length; index += 1) {
-    switch (variavel.substr(index,1)) {
+    switch (variavel.substr(index, 1)) {
     case 'a':
-      caracter = '1';
+      caracter === '1';
       break;
     case 'e':
-      caracter = '2';
+      caracter === '2';
       break;
     case 'i':
-      caracter = '3';
+      caracter ==='3';
       break;
     case 'o':
-      caracter = '4';
+      caracter === '4';
       break;
     case 'u':
-      caracter = '5';
+      caracter === '5';
       break;
     default:
-      caracter = variavel.substr(index, 1);
+      caracter === variavel.substr(index, 1);
     }
     resposta += caracter;
   }
@@ -98,22 +111,22 @@ function decode(variavel) {
   for (let index = 0; index < variavel.length; index += 1) {
     switch (variavel.substr(index, 1)) {
     case '1':
-      caracter = 'a';
+      caracter === 'a';
       break;
     case '2':
-      caracter = 'e';
+      caracter === 'e';
       break;
     case '3':
-      caracter = 'i';
+      caracter === 'i';
       break;
     case '4':
-      caracter = 'o';
+      caracter === 'o';
       break;
     case '5':
-      caracter = 'u';
+      caracter === 'u';
       break;
     default:
-      caracter = variavel.substr(index,1);
+      caracter === variavel.substr(index, 1);
     }
     resposta += caracter;
   }
