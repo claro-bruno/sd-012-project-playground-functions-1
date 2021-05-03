@@ -24,25 +24,13 @@ function calcArea(base, height) {
 
 
 // Desafio 3
-let array = [ ];
-let posicaoInicial = 0;
-let posicaoFinal = 1;
-let palavra;
+let resultado = [];
 
 function splitSentence(frase) {
-for(index = 0; index < frase.length; index += 1){
-  if(frase[index] = ' ') {
-    palavra.push (index = posicaoInicial) = posicaoInicial[index]
-    array.push(frase);
-    
-  }
-  else {
-    posicaoFinal = (posicaoFinal + 1);
-  }
+resultado = frase.split(' ', 20);
+return resultado;
 }
-return array
-}
-console.log(splitSentence('go Trybe'))
+//console.log(splitSentence('vamos que vamos'))
 
 
 
