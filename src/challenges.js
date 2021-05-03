@@ -127,6 +127,8 @@ function encode(string) {
           novaString += string[index];
           break;
       }
+    } else {
+      novaString += string[index]
     }
   }
   return novaString;
@@ -163,7 +165,7 @@ function decode(string) {
   }
   return novaString;
 }
-console.log(decode('h3 th2r2!'))
+
 module.exports = {
   calcArea,
   catAndMouse,
