@@ -30,25 +30,25 @@ function footballPoints(win, ties) {
 // Desafio 6
 function highestCount(numbers) {
     let num = 0;
-    for (let index = 0; index < numeros.length; index += 1) {
+    for (let index = 0; index < numbers.length; index += 1) {
       
       if (numbers[index] > num) {
         num = numbers[index];
       }
     }
-    let repeticao = 0;
-    for (let index in numbers) {
+    let cont = 0;
+    for (let index = 0; index < numbers.length; index += 1) {
       if (numbers === numbers[index]) {
-        repeticao += 1;
+        cont += 1;
       }
     }
-    return repeticao;
+    return cont;
 }
 
 // Desafio 7
-function catAndMouse(cat1, cat2, mouse) {
-  cat1 = Math.abs(cat1 - mouse);
-  cat2 = Math.abs(cat2 - mouse);
+function catAndMouse(mouse, cat1, cat2) {
+  cat1 = Math.abs(mouse - cat1);
+  cat2 = Math.abs(mouse - cat2);
 
   if (cat1 < cat2) {
     return 'cat1';
@@ -56,17 +56,30 @@ function catAndMouse(cat1, cat2, mouse) {
     return 'cat2';
   } else {
     return 'Os gatos trombam e o rato foge.';
-  };
+  }
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(numbers) {
+  let array = [];
+  
+  for (let index of numbers) {
+    if (index % 3 === 0 && index % 5 === 0) {
+      array.push('fizzBUzz');
+    } else if (index % 3 === 0) {
+      array.push('fizz');
+    } else if (index % 5 === 0) {
+      array.push('buzz');
+    } else {
+      array.push('bug!');
+    }
+  }
+  return array;
+} 
 
 // Desafio 9
 function encode() {
-  // seu código aqui
+    
 }
 function decode() {
   // seu código aqui
