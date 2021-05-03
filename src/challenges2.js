@@ -7,7 +7,7 @@ function techList(arrayTech, name){
   } else { 
     for(let key of arraySort){
       let objetoSaida = {
-      tec: key,
+      tech: key,
       name: name,
     };
     saida.push(objetoSaida);
@@ -15,7 +15,7 @@ function techList(arrayTech, name){
     return saida;
   }
 }
-//console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],'Lucas'));
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
 
  
 // Desafio 11
