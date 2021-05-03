@@ -3,7 +3,7 @@ function techList(array, nome) {
   let total = [];
   let objetos = {};
   let tamanho = array.length;
-  if (array == '') {
+  if (array === '') {
     return 'Vazio!';
   } else {
     for (let index = 0; index < tamanho; index += 1) {
@@ -11,18 +11,17 @@ function techList(array, nome) {
       objetos.name = nome;
       total.push(objetos);
       objetos = {};
-    };
-  };
+    }
+  }
   total.sort((a, b) => {
     if (a.tech > b.tech) {
       return 1;
-    }
-    else {
+    } else {
       return -1;
     }
   });
   return total;
-};
+}
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 // Desafio 11
@@ -33,7 +32,7 @@ function generatePhoneNumber(numeros) {
   let posicaoMaxima = 15;
   let resultado = '';
 
-  if (numeros.length != 11) {
+  if (numeros.length !== 11) {
     resultado = 'Array com tamanho incorreto.';
   } else {
     for (let index of numeros) {
