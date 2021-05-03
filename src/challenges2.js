@@ -62,9 +62,21 @@ function triangleCheck(lineA, lineB, lineC) {
 
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(drinks) {
+  let numbers = [];
+  let teste = [1,2,3];
+  
+  numbers.push(drinks.match(/\d+/g)).map(Number);
+  
+  let sum = 0;
+
+  for (let index = 0; index <allNumbers.length; index += 1) {
+    sum = sum + allNumbers[index];
+  };
+
+  return allNumbers;
 }
+
 
 module.exports = {
   generatePhoneNumber,
