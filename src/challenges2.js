@@ -1,6 +1,6 @@
 // Desafio 10
-function techList(){
-  /*let arraySort = arrayTech.sort();
+function techList(arrayTech, name){
+  let arraySort = arrayTech.sort();
   let saida = [];
   if (arrayTech.length === 0){
     return 'vazio!';
@@ -15,8 +15,8 @@ function techList(){
     return saida;
   }
 }
-console.log(techList([],'Lucas'));*/
-}
+console.log(techList([],'Lucas'));
+
  
 // Desafio 11
 function generatePhoneNumber() {
