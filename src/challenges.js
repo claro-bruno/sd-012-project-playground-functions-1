@@ -82,20 +82,36 @@ function catAndMouse(mouse, cat1, cat2) {
   let catString1 = "";
   let catString2 = "";
   let mousewin = "";
+  let cat1Dist;
+  let cat2Dist;
 
-  if (cat1 < cat2){
-    catString1 = 'cat1';
+  if (mouse > cat1){
+    cat1Dist = mouse - cat1;
 
-  } else if (cat2 < cat1){
-    catString2 = 'cat2';
   } else {
-    mousewin = 'os gatos trombam e o rato foge';
+    cat1Dist = cat1 - mouse;
   };
-  let winner = catString1 + catString2 + mousewin;
 
-  return winner;
+  if (mouse > cat2){
+    cat2Dist = mouse - cat2;
+
+  } else {
+    cat2Dist = cat2 - mouse;
+  };
+
+  if (cat1Dist < cat2Dist){
+    catString1 = "cat1";
+    return catString1;
+  } else if (cat2Dist < cat1Dist){
+    catString2 = "cat2";
+    return catString2;
+  } else {
+    mousewin = "os gatos trombam e o rato foge";
+    return mousewin;
+  };
+ 
 };
-console.log(catAndMouse(0, 6, 6));
+console.log(catAndMouse(0, 1, 2));
 
 // Desafio 8
 function fizzBuzz() {
