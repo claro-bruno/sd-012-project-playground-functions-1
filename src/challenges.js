@@ -47,7 +47,7 @@ function highestCount(arrayNum) {
       maiorNum = arrayNum[aux];
     }
   }
-  for(let aux2 = 0; aux2 < arrayS.lenght; aux2+= 1){
+  for(let aux2 = 0; aux2 < arrayNum.lenght; aux2+= 1){
       if(arrayNum[aux] === maiorNum){
         repet+= 1;
       }
