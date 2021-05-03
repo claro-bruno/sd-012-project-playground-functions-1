@@ -137,13 +137,13 @@ function arrayFunction(array, name) {
 
 // Desafio 11
 function generatePhoneNumber(numeros) {
-  /*for (let numero of numeros) {
+  /* for (let numero of numeros) {
     if (numero < 0 || numero > 9) {
       return 'não é possível gerar um número de telefone com esses valores'
     } else if (numeros.lenght < 10) {
-      return 'Array com tamanho incorreto.';      
+      return 'Array com tamanho incorreto.';
     };
-  }*/    
+  } */
 }
 
 // Desafio 12
@@ -154,17 +154,11 @@ function triangleCheck(lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(string) {
   let words = string.split(' ');
-  let contar = 0;
-  
+  let contar = 0;  
   for (let indice = 0; indice < words.length; indice += 1) {
     if (parseInt(words[indice])) {
       contar += parseInt(words[indice]);
     }
   }
-  return contar > 0 ? contar + ' copos de água' : contar + ' copo de água';
+  return contar > 1 ? contar + ' copos de água' : contar + ' copo de água';
 }
-//console.log(hydrate("12 cachaça, 5 cervejas e 1 copo de vinho"));
-/* let arrey = ["1","1","2","2","2"];
-var counts = {};
-arrey.forEach(function(x) { counts[x] = (counts[x] || 0)+1; });
-*/
