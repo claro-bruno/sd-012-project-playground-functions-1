@@ -18,17 +18,36 @@ function calcArea() {
 }
 
 // Desafio 3
-function splitSentence() {
-  let frase = "go trybe;
-    console.log(nomes = ["go" ,"trybe"];)
-  }
+function splitSentence(a) {
+return ([] +" , "+ a[0])
+}
+console.log(splitSentence("go Trybe"));
+console.log(splitSentence("vamo que vamo"));
+console.log(csplitSentence("foguete"));
+
+
 
 // Desafio 4
-function concatName(nomes) {
-console.log(nomes[nomes.length-1],"," ,nomes[0]);
-concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']);
-concatName(['foguete', 'não', 'tem', 'ré']);
-concatName(['captain', 'my', 'captain'])}
+function concatName(a){
+return (a[a.length-1] +" , "+ a[0])
+}
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+console.log(concatName(['captain', 'my', 'captain']));
+
+
+
+// let nomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];{
+//  console.log(nomes[nomes.length-1],"," ,nomes[0])
+// }
+// let nomes = ['foguete', 'não', 'tem', 'ré'];{
+//   console.log(nomes[nomes.length-1],"," ,nomes[0])
+//  }
+//  let nomes = ['captain', 'my', 'captain'];{
+//   console.log(nomes[nomes.length-1],"," ,nomes[0])
+//  } }
+
+
 
   // Desafio 5
 function footballPoints() {
