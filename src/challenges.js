@@ -91,7 +91,7 @@ function fizz(valor) {
 function buzz(valor) {
   let buz = '';
   if ((valor % 5) === 0) {
-    buz = 'Buzz';
+    buz = 'buzz';
   }
   return buz;
 }
@@ -110,6 +110,8 @@ function fizzBuzz(array) {
   }
   return arrayFinal;
 }
+
+console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 let encodeStrings = {
