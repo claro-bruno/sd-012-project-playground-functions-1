@@ -164,9 +164,34 @@ function encode(string) {
 };
 console.log(encode('hi there!'));
 
-function decode() {
+function decode(string) {
+  let decode = string.split("");
+  let code = [];
+
+  for (let index = 0; index < decode.length; index += 1){
+    if (decode[index] === "1"){
+      code.push("a");
+    } 
+    else if (decode[index] === "2"){
+      code.push("e");
+    } 
+    else if (decode[index] === "3"){
+      code.push("i");
+    } 
+    else if (decode[index] === "4"){
+      code.push("o");
+    } 
+    else if (decode[index] === "5"){
+      code.push("u");
+    } else {
+      code.push(decode[index]);
+    };
+  };
+  decode = code.join("");
   
-}
+  return decode; 
+};
+console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
