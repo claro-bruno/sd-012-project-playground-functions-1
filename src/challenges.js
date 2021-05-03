@@ -1,13 +1,15 @@
 // Desafio 1
 function compareTrue(a,b) {
-  if ( a === true && b === false){
+  if (a === true && b === false){
     return false
-  } else if ( a === false && b === false){
+  } else if (a === false && b === false){
     return false
-  } else if ( a === true && b === true){
+  } else if (a === true && b === true){
       return true }
 }
-
+console.log(compareTrue(true,false));
+console.log(compareTrue(false,false));
+console.log(compareTrue(true,true));
 
 
 // Desafio 2
@@ -32,20 +34,6 @@ return (a[a.length - 1] + " , " + a[0]);
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 console.log(concatName(['captain', 'my', 'captain']));
-
-
-
-// let nomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];{
-//  console.log(nomes[nomes.length-1],"," ,nomes[0])
-// }
-// let nomes = ['foguete', 'não', 'tem', 'ré'];{
-//   console.log(nomes[nomes.length-1],"," ,nomes[0])
-//  }
-//  let nomes = ['captain', 'my', 'captain'];{
-//   console.log(nomes[nomes.length-1],"," ,nomes[0])
-//  } }
-
-
 
   // Desafio 5
 function footballPoints() {
