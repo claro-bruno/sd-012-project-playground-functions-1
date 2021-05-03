@@ -2,15 +2,15 @@
 function techList(arrayTech, name) {
   let arraySort = arrayTech.sort();
   let output = [];
-  if ( arrayTech.lenght === 0) {
+  if ( arrayTech.length === 0) {
     return 'Vazio!';
   } else {
     for ( let key of arraySort) {
-      let objOutput = {
+      let techObj = {
         tech: key,
         name: name,
       };
-      output.push(objOutput);
+      output.push(techObj);
     }
     return output;
   } 
