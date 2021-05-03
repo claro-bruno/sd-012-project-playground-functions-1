@@ -4,14 +4,19 @@ function techList(array, name) {
   let res = []
   array.sort()
 
-  for (let techs of array){
-    res.push({
-      tech: techs,
-      name: name
-    })
+  if(!array){
+    return 'Vazio!'
   }
-
-  return res
+  else{
+    for (let techs of array){
+      res.push({
+        tech: techs,
+        name: name
+      })
+    }
+  
+    return res
+  }
 
 }
 
