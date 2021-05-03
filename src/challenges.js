@@ -87,24 +87,21 @@ function encode(variavel) {
   let caracter = '';
   let resposta = '';
   for (let index = 0; index < variavel.length; index += 1) {
-    switch (variavel.substr(index, 1)) {
-    case 'a':
-      caracter === '1';
-      break;
-    case 'e':
-      caracter === '2';
-      break;
-    case 'i':
-      caracter === '3';
-      break;
-    case 'o':
-      caracter === '4';
-      break;
-    case 'u':
-      caracter === '5';
-      break;
-    default:
-      caracter === variavel.substr(index, 1);
+    caracter = variavel.substr(index, 1);
+    if (variavel.substr(index, 1) === 'a') {
+      caracter = '1'
+    }
+    if (variavel.substr(index, 1) === 'e') {
+      caracter = '2'
+    }
+    if (variavel.substr(index, 1) === 'i') {
+      caracter = '3'
+    }
+    if (variavel.substr(index, 1) === 'o') {
+      caracter = '4'
+    }
+    if (variavel.substr(index, 1) === 'u') {
+      caracter = '5'
     }
     resposta += caracter;
   }
@@ -115,24 +112,21 @@ function decode(variavel) {
   let caracter = '';
   let resposta = '';
   for (let index = 0; index < variavel.length; index += 1) {
-    switch (variavel.substr(index, 1)) {
-    case '1':
-      caracter === 'a';
-      break;
-    case '2':
-      caracter === 'e';
-      break;
-    case '3':
-      caracter === 'i';
-      break;
-    case '4':
-      caracter === 'o';
-      break;
-    case '5':
-      caracter === 'u';
-      break;
-    default:
-      caracter === variavel.substr(index, 1);
+    caracter = variavel.substr(index, 1);
+    if (variavel.substr(index, 1) === '1') {
+      caracter = 'a'
+    }
+    if (variavel.substr(index, 1) === '2') {
+      caracter = 'e'
+    }
+    if (variavel.substr(index, 1) === '3') {
+      caracter = 'i'
+    }
+    if (variavel.substr(index, 1) === '4') {
+      caracter = 'o'
+    }
+    if (variavel.substr(index, 1) === '5') {
+      caracter = 'u'
     }
     resposta += caracter;
   }
