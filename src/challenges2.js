@@ -78,7 +78,11 @@ function hydrate(texto) {
     for (let num of numerosDoTexto) {
         qtde += num;
     }
-    return (qtde + ' copos de água');
+    if (qtde <= 1) {
+        return (qtde + ' copo de água');
+    } else {
+        return (qtde + ' copos de água');
+    }
 }
 
 function menorNumero(numbers) {
