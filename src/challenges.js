@@ -7,9 +7,7 @@ function compareTrue(a,b) {
   } else if ( a === true && b === true){
       return true }
 }
-console.log (compareTrue(true,false))
-console.log (compareTrue(false,false))
-console.log (compareTrue(true,true))
+
 
 
 // Desafio 2
@@ -19,17 +17,17 @@ function calcArea() {
 
 // Desafio 3
 function splitSentence(a) {
-return ([] +" , "+ a[0])
+return (a.split(" "))
 }
 console.log(splitSentence("go Trybe"));
 console.log(splitSentence("vamo que vamo"));
-console.log(csplitSentence("foguete"));
+console.log(splitSentence("foguete"));
 
 
 
 // Desafio 4
 function concatName(a){
-return (a[a.length-1] +" , "+ a[0])
+return (a[a.length - 1] + " , " + a[0]);
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 console.log(concatName(['foguete', 'não', 'tem', 'ré']));
