@@ -65,6 +65,9 @@ function hydrate(str) {
   for (let index = 0; index < numbers.length; index+=1) {
     sum += numbers[index]
   }
+  if(sum <= 0 || sum >= 10) {
+    return 'Error';
+  }
   return sum + ressaca;
 }
 
