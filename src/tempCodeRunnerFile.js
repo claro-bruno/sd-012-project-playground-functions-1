@@ -1,10 +1,10 @@
-// Desafio 1
-function compareTrue(value1, value2) {
+// Desafio 4
+function concatName(array) {
   // seu código aqui
-  if ((value1 === true) && (value2 === true)) {
-    console.log(value1);
-    return true;
-  } else {
-    return false;
-  }
+  // let elem1 = array[0];
+  // let elem2 = array[array.length - 1];
+return array[array.length -1] + ", " + array[0]; 
 }
+console.log(concatName(['eer', 'urm', 'ebl']));
+
+  
