@@ -1,11 +1,11 @@
 // Desafio 10
-function techList(array = [], name) {
+function techList(techName, name) {
   // seu código aqui
-  if (!array.length) return 'Vazio!';
+  if (!techName.length) return 'Vazio!';
   let arrayFinal = [];
-  for (let i = 0; i < array.length; i += 1) {
+  for (let i = 0; i < techName.length; i += 1) {
     let pull = {
-      tech: array[i],
+      tech: techName[i],
       name: name,
     };
     arrayFinal.push(pull);
