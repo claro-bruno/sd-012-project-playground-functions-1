@@ -24,7 +24,7 @@ function triangleCheck() {
 function hydrate() {
   // seu código aqui
 }
-
+kdjdkdkdk 
 module.exports = {
   generatePhoneNumber,
   techList,
