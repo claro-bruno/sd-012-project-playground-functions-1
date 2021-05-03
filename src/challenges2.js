@@ -1,18 +1,16 @@
 // Desafio 10
 function techList(skills, name) {
   // seu código aqui
+  let listSkill = [];
   if (skills.lenght === 0){
     return "Vazio!";
   }
 
-  let listSkill = [];
-
   for (let tecSkills of skills.soft()) {
-    let object = {
+    listSkills.push({
       tech : tecSkills,
       name : name,
-    }
-  listSkill.push(object);
+    })
   }
   return listSkill;
 };
