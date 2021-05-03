@@ -135,11 +135,37 @@ function fizzBuzz(array) {
 console.log(fizzBuzz([9,25]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
+function encode(string) {
+  let encode = string.split("");
+  let code = [];
+
+  for (let index = 0; index < encode.length; index += 1){
+    if (encode[index] === "a"){
+      code.push(1);
+    } 
+    else if (encode[index] === "e"){
+      code.push(2);
+    } 
+    else if (encode[index] === "i"){
+      code.push(3);
+    } 
+    else if (encode[index] === "o"){
+      code.push(4);
+    } 
+    else if (encode[index] === "u"){
+      code.push(5);
+    } else {
+      code.push(encode[index]);
+    };
+  };
+  encode = code.join("");
+  
+  return encode;
+};
+console.log(encode('hi there!'));
+
 function decode() {
-  // seu código aqui
+  
 }
 
 module.exports = {
