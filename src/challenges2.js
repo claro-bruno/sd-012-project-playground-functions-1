@@ -17,16 +17,14 @@ function techList(tech, name) {
   }
   return resultado;
 }
-
 // console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
 
 // Desafio 11 ||
 let result;
-let tri = 0;
 let num = [];
 let resposta;
-
 function generatePhoneNumber(number) {
+  let tri = 0;
   resposta ='(' + number[0] + number[1] + ') ' + number[2] + number[3] + number[4] + number[5] + number[6] + '-' + number[7] + number[8] + number[9] + number[10];
   num = number.sort((a, b) => a - b);
   for (let i = 0; i < 9; i += 1) {
@@ -50,7 +48,12 @@ function generatePhoneNumber(number) {
     }; 
 return result;
 }
-// console.log(generatePhoneNumber([1, 2, 8, 0, 5, 3, 7, 8, 9, 1, 8]));
+// console.log(generatePhoneNumber([1, 0, 0, 0, 5, 3, 7, 8, 9, 1, 8]));
+// console.log(generatePhoneNumber([1, 2, -8, 0, 5, 3, 7, 8, 9, 1, 8]));
+// console.log(generatePhoneNumber([1, 2, 8, 10, 5, 3, 7, 8, 9, 1, 8]));
+// console.log(generatePhoneNumber([ 8, 0, 5, 3, 7, 8, 9, 1, 8]));
+// console.log(generatePhoneNumber([0, 1, 2, 8, 0, 5, 3, 7, 8, 9, 1, 8]));
+// console.log(generatePhoneNumber([1, 2, 4, 0, 5, 3, 7, 8, 9, 1, 8]));
 
 // Desafio 12
 let triangulo = []

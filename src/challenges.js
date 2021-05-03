@@ -11,9 +11,6 @@ return retorno;
 }
 // console.log(compareTrue(false, true));
 
-
-
-
 // Desafio 2 
 let resposta;
 function calcArea(base, height) {
@@ -24,8 +21,6 @@ function calcArea(base, height) {
 // console.log(calcArea(5,2));
 // console.log(calcArea(51,1));
 
-
-
 // Desafio 3
 let results = [];
 function splitSentence(frase) {
@@ -33,8 +28,6 @@ results = frase.split(' ', 20);
 return results;
 }
 // console.log(splitSentence('vamos que vamos'))
-
-
 
 // Desafio 4  
 let result = [ ];
@@ -46,8 +39,6 @@ function concatName (nome) {
 // console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 // console.log(concatName(['captain', 'my', 'captain']));
 
-
-
 // Desafio 5
 let pontos;
 function footballPoints(wins,ties) {
@@ -58,12 +49,10 @@ function footballPoints(wins,ties) {
 // console.log(footballPoints(1,2));
 // console.log(footballPoints(0,0));
 
-
-
 // Desafio 6
 function highestCount(repeticao) {
   let resultados = 0;
-  let a = repeticao.sort();
+  let a = repeticao.sort((a, b) => a - b);
   let b = a[a.length - 1]
 for(let index = a.length - 1; index >= 0; index -= 1)
     if (a[index] === b){
@@ -74,10 +63,8 @@ for(let index = a.length - 1; index >= 0; index -= 1)
   return resultados;
 }
 // console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-//console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+// console.log(highestCount([ -4, -4, -4, -9, -9, -1, 0, 1, 1, 1, 1]));
 // console.log(highestCount([0, 0, 0]));
-
-
 
 // Desafio 7
 let resulta;
@@ -97,39 +84,37 @@ function catAndMouse(mouse, cat1, cat2) {
     }
 return resulta;
 }
-//console.log(catAndMouse(5,1,2));
-//console.log(catAndMouse(5,6,2));
-//console.log(catAndMouse(3,1,5));
-
-
+// console.log(catAndMouse(5,1,2));
+// console.log(catAndMouse(5,6,2));
+// console.log(catAndMouse(3,1,5));
 
 // Desafio 8
-let resultad = [];
-let string;
 function fizzBuzz(num) {
+  let resultad = [];
+  let string;
   for(let i = 0; i < num.length; i += 1) {
     if(num[i] % 3 === 0 && num[i] % 5 !== 0) {
-      string = ' fizz ';
+      string = 'fizz';
     } else if(num[i] % 5 === 0 && num[i] % 3 !== 0) {
-      string = ' buzz ';
+      string = 'buzz';
     } else if(num[i] % 3 === 0 && num[i] % 5 === 0) {
-      string = ' fizzBuzz ';
+      string = 'fizzBuzz';
     } else {
-      string = ' bug! ';
+      string = 'bug!';
     }
     resultad[i] = string;
   }
 return resultad;
 }
- console.log(fizzBuzz([2, 15, 7, 9, 45]));
-
-
+// console.log(fizzBuzz([2, 15, 7, 9, 45]));
+// console.log(fizzBuzz([7, 9]));
+// console.log(fizzBuzz([9, 25]));
+// console.log(fizzBuzz([2, 6, 8, 5, 35]));
 
 // Desafio 9
-let resultou = [];
-let valor;
 function encode(vogal) {
-  valor = 0
+  let resultou = [];
+  let valor = 0;
    for (index = 0; index < vogal.length; index += 1) {
      switch(vogal[index]){
        case 'a':
@@ -159,10 +144,13 @@ function encode(vogal) {
    return valor;
 }
 // console.log(encode('go Trybe!'));
+// console.log(encode('how are you'));
+// console.log(encode('hello'));
+// console.log(encode('enconding test'));
 
-let resto = [];
-let valores;
 function decode(numero) {
+  let resto = [];
+  let valores;
   
    for (index = 0; index < numero.length; index += 1) {
     valores = 0
@@ -190,8 +178,6 @@ function decode(numero) {
    return valores;
 }
 // console.log(decode('h2ll4'));
-
-
 
 module.exports = {
   calcArea,
