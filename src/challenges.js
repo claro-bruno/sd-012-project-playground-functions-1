@@ -82,7 +82,7 @@ function encode(imputCode) {
   for (let bit of imputCode) {
     for (let key in imputLetter) {
       if (bit === key) {
-      bit = imputLetter[key]; 
+        bit = imputLetter[key];
       }
     }
     output += bit;
@@ -102,7 +102,7 @@ function decode(imputCode) {
   for (let num of imputCode) {
     for (let key in imputLetter) {
       if (num === key) {
-      num = imputLetter[key]; 
+        num = imputLetter[key];
       }
     }
     output += num;
