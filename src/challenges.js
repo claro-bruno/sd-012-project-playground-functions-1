@@ -47,13 +47,20 @@ function highestCount(matriz) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if (cat1 === cat2) {
-    return 'os gatos trombam e o rato foge';
+  let resposta = 'os gatos trombam e o rato foge';
+  rato = Math.abs(mouse);
+  gato1 = Math.abs(cat1);
+  gato2 = Math.abs(cat2);
+  if ( (gato1 === gato2) && ((gato1 - rato) === (gato2 - rato)) ) {
+    return resposta;
   }
-  if ((cat1 - mouse) < (cat2 - mouse)) {
-    return 'cat1';
+  if ((gato1 - rato) < (gato2 -rato)) {
+    resposta = 'cat1';
   }
-  return 'cat2';
+  if ((gato1 - rato) > (gato2 - rato)) {
+    resposta = 'cat2';
+  }
+  return resposta;
 }
 
 // Desafio 8
