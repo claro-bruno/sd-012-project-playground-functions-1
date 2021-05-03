@@ -1,8 +1,19 @@
-// Desafio 2
-function calcArea(base, height) {
-  // seu código aqui
-  let area = (base * height) / 2;
-  console.log(area)
-  return area;
-}
-console.log(calcArea(7, 8));
+// Desafio 3
+function splitSentence(string) {
+    // seu código aqui
+      let frase = '';
+      let array = [];
+      for(let index = 0; index < string.length; index += 1){
+        if(index == string.length - 1){
+          frase += string[index];
+          array.push(frase);
+        }
+        else if(string[index] != ' '){
+          frase += string[index];
+        }
+        else{
+          array.push(frase);
+          frase = '';
+        }
+      }
+      console.log(array)
