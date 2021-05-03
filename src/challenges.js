@@ -118,7 +118,7 @@ function decode(string) {
 }
 
 // Desafio 13
-function hydrate(string1) {
+/* function hydrate(string1) {
   // seu código aqui
   let con = 0;
   let words = string1.split(' ');
@@ -128,7 +128,7 @@ function hydrate(string1) {
     }
   }
   return con > 1 ? con + ' copos de água' : con + ' copo de água';
-}
+} */
 
 module.exports = {
   calcArea,
