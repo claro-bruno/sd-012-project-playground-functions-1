@@ -81,7 +81,7 @@ function fizzBuzz(array) {
 
   let res = []
 
-  for(let number of arrayTeste){
+  for(let number of array){
 
     if(number % 3 !== 0 && number % 5 !== 0){
       res.push('bug!')
