@@ -86,11 +86,11 @@ else if (cat2x < cat1x) {
 
 // Desafio 8
 function fizzBuzz(array) {
+for (let index = 0; index < array.length; index += 1);
 let div3 = array[index] % 3;
 let div5 = array[index] % 5;
 let storage = [];
-for (let index = 0; index < array.length; index += 1);
-    if (div3 != 0 && div5 != 0){
+if (div3 != 0 && div5 != 0){
       return ('bug!').push(storage);
     }
     else if (div3 === 0 && div5 ===0){
