@@ -51,8 +51,7 @@ function highestCount(arrayNumberInput) {
   }
   return contador;
 }
-console.log(highestCount([-2, -2, -1]));
-
+// console.log(highestCount([-2, -2, -1]));
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let dist1 = Math.abs(cat1 - mouse);
