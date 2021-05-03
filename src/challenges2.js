@@ -74,7 +74,7 @@ function hydrate(drinks) {
     sum = sum + allNumbers[index];
   };
 
-  return allNumbers;
+  return sum + " copos de água";
 }
 
 
