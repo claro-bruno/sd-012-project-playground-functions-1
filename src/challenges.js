@@ -60,7 +60,7 @@ function fizzBuzz(numeros) {
   // seu código aqui
   let array = [];
 
-  for (let indice = 0; indice <= numeros.length - 1; indice += 1) {
+  for (let indice = 0; indice < numeros.length; indice += 1) {
     if (numeros[indice] % 3 === 0 && numeros[indice] % 5 === 0) {
       array.push('fizzBuzz');
     } else if (numeros[indice] % 3 === 0) {
