@@ -117,11 +117,25 @@ console.log(fizzBuzz([7, 15]));
 
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string1) {
+//let array = [];//não precisa
+let word = string1.split('');
+
+ for(index = 0; index < word.length; index += 1){
+  if(word[index === a]){
+    let convert
+  }
 }
+
+return word;
+ 
+}
+console.log(encode('aeiou'));
+
+
 function decode() {
   // seu código aqui
+  //usar o metodo join para juntar. 
 }
 
 module.exports = {
