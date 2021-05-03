@@ -15,7 +15,7 @@ function techList(arrayTech, name){
     return output;
   }
 }
-console.log(techList([],'Sérgio'));
+console.log(techList([],'Lucas'));
 
  
 // Desafio 11
