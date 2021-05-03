@@ -8,7 +8,7 @@ if(ParametroA === true && ParametroB === true){
 }
 }
 //Teste da função
-let result = compareTrue(true,true)
+//let result = compareTrue(true,true)
 //console.log(result);
 
 // Desafio 2
