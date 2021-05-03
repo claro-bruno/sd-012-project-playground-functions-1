@@ -64,10 +64,24 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate(drink1, drink2, drink3) {
-  return whater = drink1 + drink2 + drink3;
+function hydrate(drinks) {
+
+  let coposDagua = (drinks.match(/\d+/g)); // Retira os caracteres alfanuméricos deixando apenas números.
+  coposDagua = coposDagua.split(''); // Divide a String em uma lista ordenada
+  let agua = 0;
+
+
+  for (let index = 0; index < coposDagua.length; index += 1) {
+    agua = coposDagua[index];
+
+    agua += parseInt(coposDagua[index]);
+  }
+  return agua;
+
+  //return `${'Beba'} %{quantidade}` + 'copo água';
+
 }
-console.log(hydrate(1, 5, 1));
+console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
