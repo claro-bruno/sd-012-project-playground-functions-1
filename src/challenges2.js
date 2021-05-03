@@ -2,6 +2,9 @@
 function techList(arrayTech, name) {
   let output = [];
   let arraySort = arrayTech.sort();
+  if (arrayTech === 0) {
+    output.push('Vazio!')
+  }
   for ( let key of arraySort) {
     let objOutput = {
       tech: key,
@@ -11,6 +14,7 @@ function techList(arrayTech, name) {
   }
   return output;
 }
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Elias'));
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
