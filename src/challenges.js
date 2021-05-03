@@ -119,7 +119,7 @@ function encode(fraseDesafio) {
       listaDeLetras[key] = 4;
       break;
     case 'u':
-      listaDeletras[key] = 5;
+      listaDeLetras[key] = 5;
       break;    
     }
   }
