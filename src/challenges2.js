@@ -114,9 +114,31 @@ function triangleCheck(linha1, linha2, linha3) {
 console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(quantidade) {
+  let string;
+  let soma = 0;
+  // for (let index in quantidade) {
+  //   array[index] = quantidade[index];
+  // }
+   // quantidade = array.join();
+  // let soma = 0;
+  // for (let index in array) {
+    
+  // }
+  let expressao = /\d+/g;
+  while ((string = expressao.exec(quantidade)) != null) {
+    soma += Math.abs(string);
+    //console.log(string[0]);
+  }
+  if (soma !== 1) {
+    string = soma + ' copos de água';
+  } else {
+    string = soma + ' copo de água';
+  }
+  //array = quantidade.match(/\d+/);
+  return string;
 }
+console.log(hydrate('1 cachaça, 0 cervejas e 0 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
