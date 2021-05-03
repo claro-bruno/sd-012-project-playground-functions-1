@@ -1,17 +1,16 @@
 // Desafio 1 
 let retorno;
 function compareTrue(valor1, valor2) {
-  if (valor1 == 'true' && valor2 == 'true') {
-    retorno = 'true';
+  if (valor1 == true && valor2 == true) {
+    retorno = true;
   }
   else {
-    retorno = 'false';
+    retorno = false;
   }
 return retorno;
 }
-//console.log(compareTrue('false', 'false'));
-//console.log(compareTrue(73,11));
-//console.log(compareTrue(98,42));
+//console.log(compareTrue(false, true));
+
 
 
 
@@ -74,8 +73,8 @@ for(index = 0; index < a.length; index += 1)
     }
   return resultados;
 }
-//console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+//console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 //console.log(highestCount([0, 0, 0]));
 
 
@@ -106,22 +105,23 @@ return resulta;
 
 // Desafio 8
 let resultad = [];
-
+let string;
 function fizzBuzz(num) {
   for(let i = 0; i < num.length; i += 1) {
     if(num[i] % 3 == 0 && num[i] % 5 != 0) {
-      resultad[i] = 'fizz';
+      string = 'fizz';
     } else if(num[i] % 5 == 0 && num[i] % 3 != 0) {
-      resultad[i] = 'buzz';
+      string = 'buzz';
     } else if(num[i] % 3 == 0 && num[i] % 5 == 0) {
-      resultad[i] = 'fizzBuzz';
+      string = 'fizzBuzz';
     } else {
-      resultad[i] = 'bug!';
+      string = 'bug!';
     }
+    resultad[i] = string;
   }
 return resultad;
 }
-//console.log(fizzBuzz([7, 9]));
+console.log(fizzBuzz([9, 25]));
 
 
 
@@ -132,19 +132,19 @@ function encode(vogal) {
   
    for(index = 0; index < vogal.length; index += 1) {
      switch(vogal[index]){
-       case('a'):
+       case 'a':
        resultou[index] = 1;
        break;
-       case('e'):
+       case 'e':
        resultou[index] = 2;
        break;
-       case('i'):
+       case 'i':
        resultou[index] = 3;
        break;
-       case('o'):
+       case 'o':
        resultou[index] = 4;
        break;
-       case('u'):
+       case 'u':
        resultou[index] = 5;
        break;
        default:
@@ -154,7 +154,7 @@ function encode(vogal) {
    }
    return valor;
 }
-//console.log(encode('i love you'));
+console.log(encode('How are you today?'));
 
 
 
@@ -164,20 +164,20 @@ function decode(numero) {
   
    for(index = 0; index < numero.length; index += 1) {
      switch(numero[index]){
-       case(1):
-       resto[index] = 'a';
+       case '1':
+       resto[index] = ('a');
        break;
-       case(2):
-       resto[index] = 'e';
+       case '2':
+       resto[index] = ('e');
        break;
-       case(3):
-       resto[index] = 'i';
+       case '3':
+       resto[index] = ('i');
        break;
-       case(4):
-       resto[index] = 'o';
+       case '4':
+       resto[index] = ('o');
        break;
-       case(5):
-       resto[index] = 'u';
+       case '5':
+       resto[index] = ('u');
        break;
        default:
        resto[index] = numero[index];
@@ -186,7 +186,7 @@ function decode(numero) {
    }
    return valores;
 }
-//console.log(decode('i love you'));
+console.log(decode('h2ll4'));
 
 
 

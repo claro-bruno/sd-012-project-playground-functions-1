@@ -43,7 +43,7 @@ function generatePhoneNumber(number) {
     result = "Array com tamanho incorreto.";
   }
   else if(num[10] > 9 || num[0] < 0) { 
-    result = "não é possível gerar um número de telefone com esses valores";
+    result = "não é possível gerar um número de telefone com esses valores 1";
 } else if(tri != 0) {
     result = "não é possível gerar um número de telefone com esses valores";
   }
@@ -52,7 +52,7 @@ function generatePhoneNumber(number) {
     } 
 return result;
 }
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 
 
