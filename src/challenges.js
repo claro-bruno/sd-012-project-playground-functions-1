@@ -24,8 +24,8 @@ function splitSentence(stringExemplo) {
 // Desafio 4
 function concatName(stringExemplo) {
   let valorUm = stringExemplo[0];
-  let valorDois = stringExemplo[stringExemplo.length - 1]
-  let resultado = valorDois + ", " + valorUm
+  let valorDois = stringExemplo[stringExemplo.length - 1];
+  let resultado = valorDois + ", " + valorUm;
   return resultado;
   }
 
@@ -39,7 +39,19 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(arrayDeNumeros) {
-  let 
+  let maiorNumero = 0;
+  let indexMaior = 0;
+  for (let index = 0; index < arrayDeNumeros.length; index++) {
+    if (arrayDeNumeros[index] > maiorNumero) {
+      maiorNumero = arrayDeNumeros[index];
+    }
+  }
+   for (let contador = 0; contador < arrayDeNumeros.length; contador++) {
+     if(arrayDeNumeros[contador] === maiorNumero) {
+       indexMaior++;
+     }
+   }
+   return indexMaior;
 }
 
 // Desafio 7
