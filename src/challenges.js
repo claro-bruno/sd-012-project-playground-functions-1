@@ -23,9 +23,9 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(arrayString) {
-  let first = arrayString[arrayString.length - 1];
+  let first = arrayString[arrayString.length - 1] + ', ';
   let second = arrayString[0];
-  return first + ', ' + second;
+  return first + second;
 }
 
 // Desafio 5
@@ -73,14 +73,11 @@ function fizzBuzz(arrayNumeros) {
   for (let index = 0; index < arrayNumeros.length; index += 1) {
     if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 !== 0) {
       arrayFinal.push('fizz');
-    }
-    if (arrayNumeros[index] % 5 === 0 && arrayNumeros[index] % 3 !== 0) {
+    } if (arrayNumeros[index] % 5 === 0 && arrayNumeros[index] % 3 !== 0) {
       arrayFinal.push('buzz');
-    }
-    if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
+    } if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
       arrayFinal.push('fizzBuzz');
-    }
-    if (arrayNumeros[index] % 3 !== 0 && arrayNumeros[index] % 5 !== 0) {
+    } if (arrayNumeros[index] % 3 !== 0 && arrayNumeros[index] % 5 !== 0) {
       arrayFinal.push('bug!');
     }
   }
@@ -92,23 +89,16 @@ function encode(stringEncode) {
   stringEncode = stringEncode.split('');
   for (let index = 0; index < stringEncode.length; index += 1) {
     switch (stringEncode[index]) {
-      case 'a':
-        stringEncode[index] = '1';
-        break;
-      case 'e':
-        stringEncode[index] = '2';
-        break;
-      case 'i':
-        stringEncode[index] = '3';
-        break;
-      case 'o':
-        stringEncode[index] = '4';
-        break;
-      case 'u':
-        stringEncode[index] = '5';
-        break;
-      default:
-        stringEncode[index] === stringEncode[index];
+      case 'a': stringEncode[index] = '1';
+      break;
+      case 'e': stringEncode[index] = '2';
+      break;
+      case 'i': stringEncode[index] = '3';
+      break;
+      case 'o': stringEncode[index] = '4';
+      break;
+      case 'u': stringEncode[index] = '5';
+      break;
     }
   }
   return stringEncode.join('');
@@ -118,23 +108,16 @@ function decode(stringDecode) {
   stringDecode = stringDecode.split('');
   for (let index = 0; index < stringDecode.length; index += 1) {
     switch (stringDecode[index]) {
-      case '1':
-        stringDecode[index] = 'a';
-        break;
-      case '2':
-        stringDecode[index] = 'e';
-        break;
-      case '3':
-        stringDecode[index] = 'i';
-        break;
-      case '4':
-        stringDecode[index] = 'o';
-        break;
-      case '5':
-        stringDecode[index] = 'u';
-        break;
-      default:
-        stringDecode[index] === stringDecode[index];
+      case '1': stringDecode[index] = 'a';
+      break;
+      case '2': stringDecode[index] = 'e';
+      break;
+      case '3': stringDecode[index] = 'i';
+      break;
+      case '4': stringDecode[index] = 'o';
+      break;
+      case '5': stringDecode[index] = 'u';
+      break;
     }
   }
   return stringDecode.join('');
