@@ -76,16 +76,20 @@ function hydrate(bebida) {
   let somaTotal = 0;
   let numero = [];
   for (i = 0; i < bebida.length; i += 1) {
-    if(bebida[i] > 0) {
+    if (bebida[i] > 0) {
       numero = parseInt(bebida[i]);
       somaTotal = somaTotal + numero;
     }
   }
-  return somaTotal;
+  if (somaTotal === 1) {
+    return somaTotal + ' copo de água';
+  } else {
+    return somaTotal + ' copos de água';
+  }
 }
 // console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"));
 // console.log(hydrate("1 cachaça, 6 cervejas e 1 copo de vinho"));
-// console.log(hydrate("2 cachaça, 0 cervejas e 1 copo de vinho"));
+// console.log(hydrate("0 cachaça, 0 cervejas e 1 copo de vinho"));
 // console.log(hydrate("8 cachaça, 9 cervejas e 7 copo de vinho"));
 
 module.exports = {
