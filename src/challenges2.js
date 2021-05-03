@@ -6,11 +6,11 @@ function techList(arrTech, strName) {
     return 'Vazio!';
   } else { // cado arrTech não seja vazio, execute:
     for (let index = 0; index < arrOrden.length; index += 1) { // 'for' para percorrer cada elemento da array.
-      let obj_index = { // criar objeto (igual faz com let).
+      let objIndex = { // criar objeto (igual faz com let).
         tech: arrOrden[index], // chave 'tech' que vai conter um elemento do array.
         name: strName, // chave 'name' que conterá o parâmetro 'name', que é uma string.
       };
-      techObject.push(obj_index);
+      techObject.push(objIndex);
     }
     return techObject;
   }
