@@ -3,7 +3,7 @@ function techList(arrayTech, name){
   let arraySort = arrayTech.sort();
   let saida = [];
   if (arrayTech.length === 0){
-    return 'vazio!';
+    return 'Vazio!';
   } else { 
     for(let key of arraySort){
       let objetoSaida = {
