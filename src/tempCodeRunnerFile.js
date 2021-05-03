@@ -1,15 +1,12 @@
-function fizzBuzz(array) {
+
+// Desafio 7
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let fbArray = [];
-for (let index in array) {
-  if ((array[index] % 3 == 0) && (array[index] % 5 == 0)) {
-    fbArray.push("fizzbuzz");
-  } else if (array[index] % 3 == 0) {
-    fbArray.push("fizz");
-  } else if (array[index] % 5 == 0) {
-    fbArray.push("buzz");
-  } else {
-    fbArray.push("bug!");
-  }
-} return fbArray;
-}console.log(fbArray([2, 15, 7, 9, 45]));
+  if ((cat1 - mouse) < (cat2 - mouse)) {
+    return "cat1";
+  } else if ((cat2 - mouse) < (cat1 - mouse)){
+    return "cat2";
+  } else if ((cat1 - mouse) == (cat2 - mouse)){
+    return "os gatos trombam e o rato foge"
+  }  
+} console.log(catAndMouse(4, 16, 16));
