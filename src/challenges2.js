@@ -11,7 +11,7 @@ function techList(tech, name) {
     list.push(object);
   }
   if (list.length === 0) {
-    return 'Vazio';
+    return 'Vazio!';
   } else {
     return list;
   }
