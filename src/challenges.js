@@ -35,17 +35,22 @@ console.log(concatName(array));
 
   
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+let placarWins = wins * 3;
+let placarTies = ties * 1;
+let pontos = placarTies + placarWins;
 
+console.log(`${pontos}`)
+return pontos;
 } 
 
 // Desafio 6
 function highestCount(array) {
   // seu código aqui
-array = [4, 7, 8, 8];
 let contagem = 0;
-let maiorNum = Math.max(...array);
+let maiorNum = Math.max(...array); //referencia retirada da documentação Math.max()
+
   
   for (let index = 0; index < array.length; index += 1) {
       if (array[index] == maiorNum)
@@ -53,9 +58,7 @@ let maiorNum = Math.max(...array);
   }
     return contagem;
 }
-
-
-
+  
 // Desafio 7
 function catAndMouse() {
   // seu código aqui

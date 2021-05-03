@@ -1,12 +1,10 @@
-function highestCount(array) {
+// Desafio 1
+function compareTrue(value1, value2) {
   // seu código aqui
-array = [4, 7, 8, 8];
-let contagem = 0;
-let maiorNum = Math.max(...array);
-  
-  for (let index = 0; index < array.length; index += 1) {
-      if (array[index] == maiorNum)
-        contagem += 1;
+  if ((value1 === true) && (value2 === true)) {
+    console.log(value1);
+    return true;
+  } else {
+    return false;
   }
-    return contagem;
 }
