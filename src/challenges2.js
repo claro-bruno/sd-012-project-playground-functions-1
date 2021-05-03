@@ -1,18 +1,18 @@
 // Desafio 10
 function techList(arrayTech, name){
   let arraySort = arrayTech.sort();
-  let output = [];
+  let saida = [];
   if (arrayTech.length === 0){
     return 'vazio!';
   } else { 
     for(let key of arraySort){
-      let objOutput = {
+      let objSaida = {
       tec: key,
       name: name,
     };
-    output.push(objOutput);
+    output.push(objSaida);
     }
-    return output;
+    return saida;
   }
 }
 console.log(techList([],'Lucas'));
