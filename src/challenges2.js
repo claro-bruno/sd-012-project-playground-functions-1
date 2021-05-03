@@ -13,18 +13,49 @@ function techList(lista, nome) {
     retorno = listaObjetos;
   } else {
     retorno = 'Vazio!';
-  }  
+  }
   return retorno;
 }
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(array) {
+  let final;
+  if (array.length == 11) {
+    for (let n = 0; n > array.length; n += 1) {
+
+    }
+  } else {
+    final = 'Array com tamanho incorreto.';
+  }
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let check = [];
+  let ret;
+  if (lineA <= lineB + lineC && lineA > Math.abs(lineB - lineC)) {
+    check.push(true);
+  } 
+  else {
+    check.push(false);
+  }
+  if (lineB <= lineA + lineC && lineB > Math.abs(lineA - lineC)) {
+    check.push(true);
+  } 
+  else {
+    check.push(false);
+  }
+  if (lineC <= lineB + lineA && lineC > Math.abs(lineB - lineA)) {
+    check.push(true);
+  } else {
+    check.push(false);
+  }
+  if (check[0] == true && check[1] == true && check[2] == true) {
+    ret = true;
+  } else {
+    ret = false;
+  }
+  return ret;
 }
 
 // Desafio 13
@@ -39,4 +70,3 @@ module.exports = {
   triangleCheck,
 };
 
-console.log(techList([], "Lucas"))
