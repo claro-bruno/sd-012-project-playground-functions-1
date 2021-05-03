@@ -33,12 +33,18 @@ function generatePhoneNumber(foneNumber) {
   }
 return prefix + numberBegin + '-' + numberFinal;
 }
-console.log(generatePhoneNumber([1,2,3,4,5,5,6,8,9,0,2]));
+// console.log(generatePhoneNumber([1,2,3,4,5,5,6,8,9,0,2]));
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  if (lineA < (lineB + lineC) && (lineB < (lineA + lineC)) && (lineC < (lineA + lineB))) {
+    if (lineA > Math.abs(lineB - lineC) && (lineB > Math.abs(lineA - lineC)) && (lineC > Math.abs(lineA - lineB))) {
+      return true;
+    } 
+  }
+  return false;
 }
-
+console.log(triangleCheck(-9,17,13));
 // Desafio 13
 function hydrate() {
   // seu código aqui

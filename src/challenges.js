@@ -120,7 +120,7 @@ function encode(string) {
 
 function decode(stringCode) {
   // seu código aqui
-  // let vogals = 'aeiou';
+  let vogals = 'aeiou';
   let string = '';
 
   for (let index = 0; index < stringCode.length; index += 1) {
@@ -134,7 +134,7 @@ function decode(stringCode) {
   }
   return string;
 }
-console.log(encode('hello'));
+// console.log(encode('hello'));
 module.exports = {
   calcArea,
   catAndMouse,
