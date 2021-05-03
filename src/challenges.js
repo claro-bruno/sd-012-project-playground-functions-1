@@ -75,25 +75,23 @@ function highestDistance(distCat1, distCat2) {
 
 function catAndMouse(mouse, cat1, cat2) {
   let distCat1 = Math.abs(cat1 - mouse);
-
   let distCat2 = Math.abs(cat2 - mouse);
 
   return highestDistance(distCat1, distCat2);
 }
 
 // Desafio 8
+function pushString(numbers, index) {
+  if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) return 'fizzBuzz';
+  if (numbers[index] % 3 === 0) return 'fizz';
+  if (numbers[index] % 5 === 0) return 'buzz';
+  return 'bug!';
+}
+
 function fizzBuzz(numbers) {
   let result = [];
   for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) {
-      result.push('fizzBuzz');
-    } else if (numbers[index] % 3 === 0) {
-      result.push('fizz');
-    } else if (numbers[index] % 5 === 0) {
-      result.push('buzz');
-    } else {
-      result.push('bug!');
-    }
+    result.push(pushString(numbers, index));
   }
   return result;
 }
