@@ -1,48 +1,48 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
-    if (valor1 === true && valor2 === valor1) {
-      return true;
-    } else {
-      return false;
-    }
-};
+  if (valor1 === true && valor2 === valor1) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // Desafio 2
 function calcArea(base, height) {
-    return (base * height) / 2;
-};
+  return (base * height) / 2;
+}
 
 // Desafio 3
 function splitSentence(frase) {
-    return frase.split(' ');  
-};
+  return frase.split(' ');  
+}
 
 // Desafio 4
 function concatName(nome) { 
-    return `${nome[nome.length - 1]}, ${nome[0]}`;
-};
+  return `${nome[nome.length - 1]}, ${nome[0]}`;
+}
 
 // Desafio 5
 function footballPoints(win, ties) {
-    return (win * 3) + ties;
-};
+  return (win * 3) + ties;
+}
 
 // Desafio 6
 function highestCount(numbers) {
-    let num = 0;
-    let cont = 0;
+  let num = 0;
+  let cont = 0;
     
-    for (let index = 0; index < numbers.length; index += 1) {
-      if (numbers[index] > num) {
-        num = numbers[index];
-        cont = 0;
-      }
-      if (numbers[index] === numbers) {
-        cont += 1;
-      }
-    }  
-    return cont;
-};
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] > num) {
+      num = numbers[index];
+      cont = 0;
+    }
+    if (numbers[index] === numbers) {
+      cont += 1;
+    }
+  }  
+  return cont;
+}
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -56,7 +56,7 @@ function catAndMouse(mouse, cat1, cat2) {
   } else {
     return 'Os gatos trombam e o rato foge';
   }
-};
+}
 
 // Desafio 8
 function fizzBuzz(numbers) {
@@ -74,7 +74,7 @@ function fizzBuzz(numbers) {
     }
   }
   return array;
-};
+}
 
 // Desafio 9
 function encode(strEncode) {
@@ -85,8 +85,8 @@ function encode(strEncode) {
     strEncode = strEncode.replace('o', '4');
     strEncode = strEncode.replace('u', '5');
   }
-  return strEncode;
-};
+  return strEncode
+}
 function decode(strDecode) {
   for (let index = 0; index < strDecode.length; index += 1) {
     strDecode = strDecode.replace('1', 'a');

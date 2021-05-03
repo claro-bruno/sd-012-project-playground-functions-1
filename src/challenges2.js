@@ -2,20 +2,20 @@
 function techList(tech, name) {
   let list = [];
 
-  for (let index in tech){
+  for (let index in tech) {
     let order = tech.sort();
     let object = {
       tech: order[index],
-      name: name
-    }
+      nome: name
+    };
     list.push(object);
   }
   if (list.length === 0) {
-    return 'Vazio'
+    return 'Vazio';
   } else {
     return list;
-  };
-};
+  }
+}
 console.log(techList(['BioPython', 'BioPerl', 'BioJava', 'BioC++', 'BioRuby'], 'Henrique'));
 
 // Desafio 11
