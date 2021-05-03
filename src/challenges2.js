@@ -60,8 +60,18 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(pedido) {
   // seu código aqui
+  let quantidade = pedido.match(/\d+/g).map(Number);
+  let soma = 0;
+
+  for (let index = 0; index < quantidade.length; index += 1) {
+    soma = quantidade[index] + soma;
+  }
+  if (soma > 1) {
+    return soma + ' copos de água';
+  }
+  return soma + ' copo de água';
 }
 
 module.exports = {
