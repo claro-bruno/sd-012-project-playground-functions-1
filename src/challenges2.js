@@ -41,9 +41,16 @@ function generatePhoneNumber(array) {
 };
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
-}
+function triangleCheck(lineA, lineB, lineC) {
+  let lineBC = lineB - lineC;
+  let lineAC = lineA - lineC;
+  let lineAB = lineA - lineB;
+  if ((lineA < (lineB + lineC) && lineA < Math.abs(lineBC)) || (lineB < (lineA + lineC) && lineB < Math.abs(lineAC)) || (lineC < (lineA + lineB) && lineC < Math.abs(lineAB))) {
+    return true;
+  } else {
+    return false;
+  };  
+};
 
 // Desafio 13
 function hydrate() {
