@@ -10,12 +10,12 @@ function techList(arrayTech, name){
       tec: key,
       name: name,
     };
-    output.push(objetoSaida);
+    saida.push(objetoSaida);
     }
     return saida;
   }
 }
-console.log(techList([],'Lucas'));
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],'Lucas'));
 
  
 // Desafio 11

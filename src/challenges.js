@@ -118,26 +118,57 @@ console.log(fizzBuzz([7, 15]));
 
 // Desafio 9
 function encode() {
-//let array = [];//não precisa
 /*let word = string1.split('');
 
- for(index = 0; index < word.length; index += 1){
-  if(word[index] === a){
-    let convert
+ for(let index = 0; index < word.length; index += 1){
+  if(word[index] === 'a'){
+    word[index] = '1';
+  }else if(word[index] === 'e'){
+    word[index] = '2';
+  }else if(word[index] === 'i'){
+    word[index] = '3'; 
+  }else if(word[index] === 'o'){
+    word[index] = '4';
+  }else if(word[index] === 'u'){
+    word[index] = '5';
+  }
+  
   }
 }
 
 return word;
  
 }
-console.log(encode('aeiou'));*/
-}
+console.log(encode('aeiou'));
 
-function decode() {
-  // seu código aqui
-  //usar o metodo join para juntar. 
-}
 
+function decode(string2) {
+let number = 0;
+number = string2.split('');
+
+ for(index = 0; index < number.length; index += 1){
+  if(number[index] === '1'){
+    number[0] = 'a';
+  }else if(number[index] === '2'){
+    number[1] = 'e';
+  }else if(number[index] === '3'){
+    number[2] = 'i'; 
+  }else if(number[index] === '4'){
+    number[3] = 'o';
+  }else if(number[index] === '5'){
+    number[4] = 'u';
+  }
+  
+    
+  }
+
+}
+return number;
+}
+console.log(decode('1234567'));
+//usar o metodo join para juntar. */
+
+}
 module.exports = {
   calcArea,
   catAndMouse,
