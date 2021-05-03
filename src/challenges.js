@@ -1,6 +1,16 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(a,b) {
+  if ( a === true && b === false){
+    return false
+  } else if ( a === false && b === false){
+    return false
+  } else if ( a === true && b === true){
+      return true }
 }
+console.log (compareTrue(true,false))
+console.log (compareTrue(false,false))
+console.log (compareTrue(true,true))
+
 
 // Desafio 2
 function calcArea() {
@@ -9,14 +19,20 @@ function calcArea() {
 
 // Desafio 3
 function splitSentence() {
-
-}
-
+  let nomes = ["go" ,"trybe"];{
+    console.log(nomes)
+  }
 // Desafio 4
 function concatName(nomes) {
 let nomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];{
  console.log(nomes [nomes.length-1],"," ,nomes[0])
 }
+let nomes = ['foguete', 'não', 'tem', 'ré'];{
+  console.log(nomes [nomes.length-1],"," ,nomes[0])
+ }
+ let nomes = ['captain', 'my', 'captain'];{
+  console.log(nomes [nomes.length-1],"," ,nomes[0])
+ }
 
   // Desafio 5
 function footballPoints() {
