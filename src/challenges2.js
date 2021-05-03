@@ -120,22 +120,22 @@ function hydrate(quantidade) {
   // for (let index in quantidade) {
   //   array[index] = quantidade[index];
   // }
-   // quantidade = array.join();
+  // quantidade = array.join();
   // let soma = 0;
   // for (let index in array) {
-    
+  // 
   // }
   let expressao = /\d+/g;
   while ((string = expressao.exec(quantidade)) != null) {
     soma += Math.abs(string);
-    //console.log(string[0]);
+    // console.log(string[0]);
   }
   if (soma !== 1) {
     string = soma + ' copos de água';
   } else {
     string = soma + ' copo de água';
   }
-  //array = quantidade.match(/\d+/);
+  // array = quantidade.match(/\d+/);
   return string;
 }
 console.log(hydrate('1 cachaça, 0 cervejas e 0 copo de vinho'));
