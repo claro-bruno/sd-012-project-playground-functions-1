@@ -31,19 +31,10 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(nameList) {
   // seu código aqui
-  // let firstName = nameList[0];
-  // let lastName = nameList.slice(-1); // Slice() para copiar e adicionar em novo Array.
-  // let lastAndFirstName = []; // Criar novo array para adicionar o lastName e firstName.
-
-  // lastAndFirstName.push(lastName + ',' +firstName); // Adiciona no array.
-
-  // return lastAndFirstName;
-  return`${nameList[nameList.length - 1]}, ${nameList[0]}`;
-  // let concatName = nameList[nameList.length - 1] + nameList[0];
-  // return concatName;
+  return `${nameList[nameList.length - 1]}, ${nameList[0]}`;
 }
-let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-console.log(concatName(nameList));
+// let nameList = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+// console.log(concatName(nameList));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -120,28 +111,28 @@ function encode(string) {
   for (let index = 0; index < string.length; index += 1) {
     if (vogals.includes(string[index])) {
       stringCode += codes[string[index]];
+    } else {
+      stringCode += string[index];
     }
-    stringCode += string[index];
   }
   return stringCode;
 }
 
 function decode(stringCode) {
   // seu código aqui
-  let string = '';
-  //let vogals = 'aeiou';
 
   for (let index = 0; index < stringCode.length; index += 1) {
     let number = Number(stringCode[index]);
 
     if (!Number.isNaN(number) && number > 0) {
       string += vogals[number - 1];
+    } else {
+      string += stringCode[index];
     }
-    string += stringCode[index];
   }
   return string;
 }
-console.log(encode('hello'));
+// console.log(encode('hi there !'));
 module.exports = {
   calcArea,
   catAndMouse,
