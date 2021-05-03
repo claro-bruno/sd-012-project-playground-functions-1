@@ -2,7 +2,7 @@
 function compareTrue(booleano1, booleano2) {
     if (booleano1 && booleano2) {
         return true;
-    };
+    }
     return false;
 }
 
@@ -15,7 +15,7 @@ function calcArea(base, height) {
 function splitSentence(sentence) {
     let arrayPalavras = [];
     let palavra = '';
-    for (char of sentence) {
+    for (let char of sentence) {
         if (char === ' ') {
             arrayPalavras.push(palavra);
             palavra = '';
@@ -44,7 +44,7 @@ function highestCount(numeros) {
     let numerosOrdenados = numeros.sort();
     let maior = numerosOrdenados[numerosOrdenados.length - 1];
     let contador = 0;
-    for (num of numeros) {
+    for (let num of numeros) {
         if (num === maior) {
             contador += 1;
         }
@@ -68,7 +68,7 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(numeros) {
     let retorno = [];
-    for (num of numeros) {
+    for (let num of numeros) {
         if ((num % 3 === 0) && (num % 5 === 0)) {
             retorno.push('fizzBuzz');
         } else if (num % 3 === 0) {
@@ -89,14 +89,14 @@ let decodificador = {
     i: 3,
     o: 4,
     u: 5
-}
+};
 
 function encode(frase) {
     let novaFrase = '';
     for (let letra of frase) {
-        for (key in decodificador) {
+        for (let key in decodificador) {
             if (letra === key) {
-                letra = decodificador[key]
+                letra = decodificador[key];
             }
         }
         novaFrase += letra;
@@ -107,9 +107,9 @@ function encode(frase) {
 function decode(frase) {
     let novaFrase = '';
     for (let letra of frase) {
-        for (key in decodificador) {
+        for (let key in decodificador) {
             if (letra == decodificador[key]) {
-                letra = key
+                letra = key;
             }
         }
         novaFrase += letra;
