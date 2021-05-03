@@ -1,10 +1,15 @@
-function catAndMouse(mouse, cat1, cat2) {
+function fizzBuzz(array) {
   // seu código aqui
-  if ((mouse - cat1) < (mouse - cat2)) {
-    return "cat1";
-  } else if (mouse - cat2 < mouse - cat1){
-    return "cat2";
+  let fbArray = [];
+for (let index in array) {
+  if ((array[index] % 3 == 0) && (array[index] % 5 == 0)) {
+    fbArray.push("fizzbuzz");
+  } else if (array[index] % 3 == 0) {
+    fbArray.push("fizz");
+  } else if (array[index] % 5 == 0) {
+    fbArray.push("buzz");
   } else {
-    return "Os gatos trombam e o rato foge."
-  }  
-} console.log(catAndMouse(6, 14, 5))
+    fbArray.push("bug!");
+  }
+} return fbArray;
+}console.log(fbArray([2, 15, 7, 9, 45]));
