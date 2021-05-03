@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(param1, param2) {
-  if (param1 && param2 == true) {
+  if (param1 && param2 === true) {
     console.log(true);
   } else {
     console.log(false);
