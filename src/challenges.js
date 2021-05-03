@@ -85,7 +85,7 @@ else if (cat2x < cat1x) {
 }
 
 // Desafio 8
-function fizzBuzz(array) {
+function fizzBuzz([array]) {
 for (let index = 0; index < array.length; index += 1);
 let div3 = array[index] % 3;
 let div5 = array[index] % 5;
@@ -102,7 +102,7 @@ if (div3 != 0 && div5 != 0){
     else if (div5 === 0){
       return ('buzz').push(storage);
     }
-   return storage; 
+   return (storage); 
 }
 
 // Desafio 9
