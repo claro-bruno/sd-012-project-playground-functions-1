@@ -63,22 +63,24 @@ function triangleCheck(lineA, lineB, lineC) {
 
 // Desafio 13
 function hydrate(drinks) {
-  let numbers = [];  
-  
-  numbers.push((drinks.match(/\d+/g)).map(Number));
-  
+  let numbers = drinks.match(/\d+/g);
   let sum = 0;
-
-  for (let index = 0; index <numbers.length; index += 1) {
-    sum = sum + numbers[index];
-  };
-
+  
+  for (let index = 0; index < numbers.length; index += 1){
+    sum = sum + Number(numbers[index]);
+    }
+ 
   if(sum === 1) {
     return sum + " copo de água";
   }else{    
     return sum + " copos de água";
-  };
+  }; 
+ 
 }
+
+
+
+
 
 
 module.exports = {
