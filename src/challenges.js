@@ -62,10 +62,41 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(arrayDeNumeros) {
+  let novoArray = [];
+  for (let index = 0; index < arrayDeNumeros.length; index += 1) {
+    if(arrayDeNumeros[index] % 3 === 0 ){
+      let divisivelPor = [3]
+      for (let divisor = 2; divisor < arrayDeNumeros[index]; divisor += 1){
+        if (arrayDeNumeros[index] % divisor === 0 && divisor != 3) {
+          divisivelPor.push(divisor)
+        }
+      } 
+      if (divisivelPor.length === 1) {
+        novoArray.push('fizz')
+      }
+    }  
+    if(arrayDeNumeros[index] % 5 === 0 ){
+      let divisivelPor = [5]
+      for (let divisor = 2; divisor < arrayDeNumeros[index]; divisor += 1){
+        if (arrayDeNumeros[index] % divisor === 0 && divisor != 5) {
+          divisivelPor.push(divisor)
+        }
+      } 
+      if (divisivelPor.length === 1) {
+        novoArray.push('buzz')
+      }
+    }
+    if (arrayDeNumeros[index] % 3 === 0 && arrayDeNumeros[index] % 5 === 0) {
+      novoArray.push('fizzBuzz')
+    }
+    if (arrayDeNumeros[index] % 3 != 0 && arrayDeNumeros[index] % 5 != 0) {
+      novoArray.push('bug!')
+    }
+  }
+  return novoArray
 }
-
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
 // Desafio 9
 function encode() {
   // seu código aqui
