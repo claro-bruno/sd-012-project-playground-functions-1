@@ -104,8 +104,8 @@ function fizzBuzz(arrayNumeros) {
 // Desafio 9
 function encode(string) {
   // seu código aqui
-  const codes = { a: '1', e: '2', i: '3', o: '4', u: '5' };
-  const vogals = 'aeiou';
+  let codes = { a: '1', e: '2', i: '3', o: '4', u: '5' };
+  let vogals = 'aeiou';
   let stringCode = '';
 
   for (let index = 0; index < string.length; index += 1) {
@@ -120,6 +120,8 @@ function encode(string) {
 
 function decode(stringCode) {
   // seu código aqui
+  let vogals = 'aeiou';
+  let string = stringCode;
 
   for (let index = 0; index < stringCode.length; index += 1) {
     let number = Number(stringCode[index]);
@@ -132,7 +134,7 @@ function decode(stringCode) {
   }
   return string;
 }
-// console.log(encode('hi there !'));
+// console.log(encode('hello'));
 module.exports = {
   calcArea,
   catAndMouse,
