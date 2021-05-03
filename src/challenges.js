@@ -26,13 +26,17 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayS) {
+  for(let aux = 0; aux < arrayS.length; aux+= 1){
+      if(arrayS.length)
+  }
+  
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  resultado = (wins * 3) + ties;
+  return resultado;
 }
 
 // Desafio 6
