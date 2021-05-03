@@ -127,11 +127,19 @@ function fizzBuzz(numberArray) {
 
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(letterNumber) {
+// https://www.w3schools.com/jsref/jsref_replace.asp
+// utilizei a função 'string replace' para deixar o codigo mais conciso.
+  letterNumber = letterNumber.replace(/a/g, '1');
+  letterNumber = letterNumber.replace(/e/g, '2');
+  letterNumber = letterNumber.replace(/i/g, '3');
+  letterNumber = letterNumber.replace(/o/g, '4');
+  letterNumber = letterNumber.replace(/u/g, '5');
+
+  return letterNumber;
 }
 function decode() {
-  // seu código aqui
+
 }
 
 module.exports = {
