@@ -9,7 +9,7 @@ if(ParametroA === true && ParametroB === true){
 }
 //Teste da função
 let result = compareTrue(true,true)
-//console.log(result);
+console.log(result);
 
 // Desafio 2
 function calcArea(base,heigth) {
@@ -21,7 +21,7 @@ return calcArea;
 }
 //Teste de função
 let result = calcArea(2,4);
-//console.log(result);
+console.log(result);
 
 // Desafio 3
 function splitSentence(string) {
@@ -30,7 +30,7 @@ function splitSentence(string) {
 return string.split(' ');
 }
 //Teste de função
-//console.log(splitSentence('go Trybe'));
+console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName(array) {
@@ -41,9 +41,9 @@ let result = lastName + ', ' + firstName;
 return result;
 }
 //Teste de função
-//console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
-//console.log(concatName(['foguete', 'não', 'tem', 'ré']));
-//console.log(concatName(['captain', 'my', 'captain']));
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints(wins,ties) {
@@ -51,7 +51,7 @@ function footballPoints(wins,ties) {
   totalDePontos =  wins * 3 + ties;
   return totalDePontos;
 }
-//console.log(footballPoints(0,0))
+console.log(footballPoints(0,0))
 
 // Desafio 6
 function highestCount(array) {
@@ -69,7 +69,7 @@ for(accountant = 0; accountant < array.length; accountant+=1){
 }
 return repeat;
 }
-//console.log(highestCount([9,1,2,3,9,5,7]));
+console.log(highestCount([9,1,2,3,9,5,7]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -86,7 +86,7 @@ let distanciaCat2 = Math.abs(cat2 - mouse)
     return 'os gatos trombam e o rato foge';
   }
 }
- // console.log(catAndMouse(0,3,3));
+console.log(catAndMouse(0,3,3));
 
 // Desafio 8
 function fizzBuzz(inArray) {
@@ -109,7 +109,7 @@ for(let index = 0; index < inArray.length; index += 1){
 }
 return outArray;
 }
-//console.log(fizzBuzz([7, 15]));
+console.log(fizzBuzz([7, 15]));
 
 
 // Desafio 9
