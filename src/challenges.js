@@ -2,12 +2,12 @@
 function compareTrue(boleano1, boleano2) {
   if (boleano1 === true && boleano2 === true) {
     return true;
-} return false;
+  } return false;
 };
 // Desafio 2
 function calcArea(base, height) {
   let area = (base * height) / 2;
-  return area; 
+  return area;
 };
 // Desafio 3
 function splitSentence(string) {
@@ -21,7 +21,7 @@ function concatName(string) {
 };
 // Desafio 5
 function footballPoints(wins, ties) {
-  return wins * 3 + ties 
+  return wins * 3 + ties
 };
 
 // Desafio 6
@@ -35,9 +35,9 @@ function checkHighestCount(numero, maiorNumero, contagem) {
   return [maiorNumero, contagem];
 }
 function highestCount(numeros) {
-let maiornumero = 0;
-let maiornumerorepetir = 0;
-let resultado = [];
+  let maiornumero = 0;
+  let maiornumerorepetir = 0;
+  let resultado = [];
   for (let index = 0; index < numeros.length; index += 1) {
     resultado = checkHighestCount(numeros[index], maiornumero, maiornumerorepetir);
     [maiornumero] = resultado;
@@ -47,25 +47,46 @@ let resultado = [];
 }
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let distanciaGato1 = Math.abs(cat1 - mouse)
-  let distanciaGato2 = Math.abs(cat2 - mouse)
+  let distanciaGato1 = Math.abs(cat1 - mouse);
+  let distanciaGato2 = Math.abs(cat2 - mouse);
   if (distanciaGato1 > distanciaGato2) {
-      return "cat2";
-  }
-  else if (distanciaGato2 > distanciaGato1) {
-      return "cat1"
-  }
-  else if (distanciaGato1 === distanciaGato2) {
-      return "os gatos trombam e o rato foge"
+    return "cat2";
+  } else if (distanciaGato2 > distanciaGato1) {
+    return "cat1";
+  } else if (distanciaGato1 === distanciaGato2) {
+    return "os gatos trombam e o rato foge";
   }
 };
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let string = [];
+
+  for (let index = 0; index < array.length; index += 1) {
+
+    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
+      string.push('fizzBuzz');
+  } 
+    else {
+      if (array[index] % 3 === 0) {
+        string.push('fizz');
+      }
+
+      if (array[index] % 5 === 0) {
+        string.push('buzz');
+      }
+
+  };
+
+    if (array[index] % 3 !== 0 && array[index] % 5 !== 0) {
+      string.push('bug!');
+    };
+  };
+
+  return string;
 };
 
 // Desafio 9
-function encode(param1) {
+function encode() {
 
 }
 function decode() {
