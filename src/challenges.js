@@ -72,9 +72,11 @@ function catAndMouse(mouse,cat1,cat2) {
  } else if (cat2distancia > cat1distancia){
    return 'cat1';
  } else {
-   return 'os gatos trobam e o rato foge';
+   return 'os gatos trombam e o rato foge';
  }
 }
+
+// Desafio 8
 
 function divisivelPorCinco(value) {
   if (value % 5 === 0) {
@@ -83,9 +85,6 @@ function divisivelPorCinco(value) {
     return 'fizz';
   }
 }
-
-
-// Desafio 8
 
 function fizzBuzz(array) {
   let resultado = [];
@@ -100,6 +99,8 @@ function fizzBuzz(array) {
   }
    return resultado;
 }
+
+// Desafio 9
 
 function encode(fraseDesafio) {
   let listaDeLetras = fraseDesafio.split(' ');
