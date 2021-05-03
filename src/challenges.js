@@ -138,7 +138,16 @@ function encode(letterNumber) {
 
   return letterNumber;
 }
-function decode() {
+function decode(numberLetter) {
+  // https://www.w3schools.com/jsref/jsref_replace.asp
+  // utilizei a função 'string replace' para deixar o codigo mais conciso.
+  numberLetter = numberLetter.replace(/1/g, 'a');
+  numberLetter = numberLetter.replace(/2/g, 'e');
+  numberLetter = numberLetter.replace(/3/g, 'i');
+  numberLetter = numberLetter.replace(/4/g, 'o');
+  numberLetter = numberLetter.replace(/5/g, 'u');
+
+  return numberLetter;
 
 }
 
