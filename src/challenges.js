@@ -92,7 +92,7 @@ function fizz(valor) {
 function buzz(valor) {
   let buz = '';
   if ((valor % 5) === 0) {
-    buz = 'buzz';
+    buz = 'Buzz';
   }
   return buz;
 }
