@@ -1,10 +1,6 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
-  if (valor1 === true && valor2 === valor1) {
-    return true;
-  } else {
-    return false;
-  }
+  return valor1 && valor2;
 }
 
 // Desafio 2
@@ -60,7 +56,7 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   return result;
 }
-console.log(catAndMouse(3, 4, 3));
+console.log(catAndMouse(1, 0, 2));
 
 // Desafio 8
 function fizzBuzz(numbers) {
@@ -99,7 +95,7 @@ function decode(strDecode) {
     strDecode = strDecode.replace('3', 'i');
     strDecode = strDecode.replace('4', 'o');
     strDecode = strDecode.replace('5', 'u');
-  }
+  };
   return strDecode;
 }
 module.exports = {
