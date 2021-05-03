@@ -33,8 +33,8 @@ function vezesRepetido(array) {
 }
 
 function errorPhoneNumber(array) {
-  let msgError = 'Não é possível gerar um número de telefone com esses valores';
-  if (array.length !== 11) return 'array com tamanho incorreto';
+  let msgError = 'não é possível gerar um número de telefone com esses valores';
+  if (array.length !== 11) return 'Array com tamanho incorreto.';
   for (let i = 0; i < array.length; i += 1) {
     if (array[i] < 0 || array[i] > 9) return msgError;
   }
