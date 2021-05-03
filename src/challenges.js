@@ -73,7 +73,7 @@ for(index = 0; index < a.length; index += 1)
     }
   return resultados;
 }
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+//console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 //console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 //console.log(highestCount([0, 0, 0]));
 
@@ -121,7 +121,7 @@ function fizzBuzz(num) {
   }
 return resultad;
 }
-console.log(fizzBuzz([9, 25]));
+//console.log(fizzBuzz([9, 25]));
 
 
 
@@ -154,7 +154,7 @@ function encode(vogal) {
    }
    return valor;
 }
-console.log(encode('How are you today?'));
+//console.log(encode('How are you today?'));
 
 
 
@@ -186,7 +186,7 @@ function decode(numero) {
    }
    return valores;
 }
-console.log(decode('h2ll4'));
+//console.log(decode('h2ll4'));
 
 
 
