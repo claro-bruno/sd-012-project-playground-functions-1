@@ -3,23 +3,22 @@ let obj = {};
 let resultado = [];
 function techList(tech, name) {
   if (tech.length > 0) {
-  let ordtech = [];
-  ordtech = tech.sort();
-  for(let index = 0; index < tech.length; index += 1) {
-    obj = {
-      tech: ordtech[index],
-      name: name
+    let ordtech = [];
+    ordtech = tech.sort();
+    for(let index = 0; index < tech.length; index += 1) {
+      obj = {
+        tech: ordtech[index],
+        name: name,
+      };
+      resultado[index] = obj;
     }
-  resultado[index] = obj;
-}
-} else {
-  resultado = "Vazio!";
-}
-return resultado;
+  } else {
+  resultado = 'Vazio!';
+  }
+  return resultado;
 }
 
-//console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
-
+// console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
 
 // Desafio 11 ||
 let result;
@@ -32,7 +31,7 @@ function generatePhoneNumber(number) {
   num = number.sort((a,b)=> a - b);
   
   for(let i = 0; i < 9; i += 1) {
-    if(num [i] == num[i + 2]) {
+    if(num [i] === num[i + 1] === num[i + 2]) {
       tri = tri + 1;
     } else {
       tri = tri;
@@ -43,7 +42,7 @@ function generatePhoneNumber(number) {
     result = "Array com tamanho incorreto.";
   }
   else if(num[10] > 9 || num[0] < 0) { 
-    result = "não é possível gerar um número de telefone com esses valores 1";
+    result = "não é possível gerar um número de telefone com esses valores";
 } else if(tri != 0) {
     result = "não é possível gerar um número de telefone com esses valores";
   }

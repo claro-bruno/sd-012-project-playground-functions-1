@@ -9,7 +9,7 @@ function compareTrue(valor1, valor2) {
   }
 return retorno;
 }
-//console.log(compareTrue(false, true));
+// console.log(compareTrue(false, true));
 
 
 
@@ -20,9 +20,9 @@ function calcArea(base, height) {
  resposta =(base * height) / 2;
  return resposta;
 }
-//console.log(calcArea(10,50));
-//console.log(calcArea(5,2));
-//console.log(calcArea(51,1));
+// console.log(calcArea(10,50));
+// console.log(calcArea(5,2));
+// console.log(calcArea(51,1));
 
 
 
@@ -32,7 +32,7 @@ function splitSentence(frase) {
 results = frase.split(' ', 20);
 return results;
 }
-//console.log(splitSentence('vamos que vamos'))
+// console.log(splitSentence('vamos que vamos'))
 
 
 
@@ -42,9 +42,9 @@ function concatName (nome) {
   result = nome[nome.length - 1] + ', ' + nome[0];  
   return result;
 }
-//console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
-//console.log(concatName(['foguete', 'não', 'tem', 'ré']));
-//console.log(concatName(['captain', 'my', 'captain']));
+// console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+// console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+// console.log(concatName(['captain', 'my', 'captain']));
 
 
 
@@ -54,9 +54,9 @@ function footballPoints(wins,ties) {
   pontos = (wins * 3) + ties; 
   return pontos;
 }
-//console.log(footballPoints(14,8));
-//console.log(footballPoints(1,2));
-//console.log(footballPoints(0,0));
+// console.log(footballPoints(14,8));
+// console.log(footballPoints(1,2));
+// console.log(footballPoints(0,0));
 
 
 
@@ -65,17 +65,17 @@ let resultados = 0;
 function highestCount(repeticao) {
   let a = repeticao.sort();
   let b = a[a.length - 1]
-for(index = 0; index < a.length; index += 1)
+for(let index = a.length - 1; index >= 0; index -= 1)
     if (a[index] === b){
     resultados = resultados + 1;
     } else { 
-      resultados = resultados;
+      break;
     }
   return resultados;
 }
-//console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-//console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
-//console.log(highestCount([0, 0, 0]));
+// console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+// console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+// console.log(highestCount([0, 0, 0]));
 
 
 
@@ -108,20 +108,20 @@ let resultad = [];
 let string;
 function fizzBuzz(num) {
   for(let i = 0; i < num.length; i += 1) {
-    if(num[i] % 3 == 0 && num[i] % 5 != 0) {
-      string = 'fizz';
-    } else if(num[i] % 5 == 0 && num[i] % 3 != 0) {
-      string = 'buzz';
-    } else if(num[i] % 3 == 0 && num[i] % 5 == 0) {
-      string = 'fizzBuzz';
+    if(num[i] % 3 === 0 && num[i] % 5 !== 0) {
+      string = ' fizz ';
+    } else if(num[i] % 5 === 0 && num[i] % 3 !== 0) {
+      string = ' buzz ';
+    } else if(num[i] % 3 === 0 && num[i] % 5 === 0) {
+      string = ' fizzBuzz ';
     } else {
-      string = 'bug!';
+      string = ' bug! ';
     }
     resultad[i] = string;
   }
 return resultad;
 }
-//console.log(fizzBuzz([9, 25]));
+// console.log(fizzBuzz([9, 25]));
 
 
 
@@ -151,10 +151,14 @@ function encode(vogal) {
        resultou[index] = vogal[index];
       }
       valor = resultou.join('');
-   }
+    if (valor.length === vogal.lenght){
+      break;
+    }
+    }
+
    return valor;
 }
-//console.log(encode('How are you today?'));
+ console.log(encode('go Trybe!'));
 
 
 
