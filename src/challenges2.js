@@ -6,16 +6,16 @@ function techList(arrTech, name) {
     return 'Vazio!';
   } else {// cado arrTech não seja vazio, execute:
     for ( let index = 0; index < arrOrden.length; index += 1) {// 'for' para percorrer cada elemento da array.
-      let obj_index = {
-        tech: arrOrden[index],
-        name: name,
+      let obj_index = {// criar objeto (igual faz com let).
+        tech: arrOrden[index], // chave 'tech' que vai conter um elemento do array.
+        name: name, // chave 'name' que conterá o parâmetro 'name', que é uma string.
       };
       techObject.push(obj_index);
     }
     return techObject;
   }
 }
-// console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'],'Cristiano'));
+//console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'],'Cristiano'));
 
 // Desafio 11
 function generatePhoneNumber() {
