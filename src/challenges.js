@@ -1,16 +1,13 @@
 // Desafio 1
 function compareTrue(a,b) {
-  if (a === true && b === false){
-    return false
-  } else if (a === false && b === false){
-    return false
-  } else if (a === true && b === true){
+if (a === true && b === true){
       return true }
+else {return false}
 }
-console.log(compareTrue(true,false));
+console.log(compareTrue(false,true));
 console.log(compareTrue(false,false));
 console.log(compareTrue(true,true));
-
+console.log(compareTrue(true, false));
 
 // Desafio 2
 function calcArea() {
@@ -29,7 +26,7 @@ console.log(splitSentence("foguete"));
 
 // Desafio 4
 function concatName(a){
-return (a[a.length - 1] + " , " + a[0]);
+return (a[a.length - 1] + ", " + a[0]);
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 console.log(concatName(['foguete', 'não', 'tem', 'ré']));
