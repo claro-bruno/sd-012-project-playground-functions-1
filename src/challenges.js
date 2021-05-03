@@ -36,10 +36,9 @@ function footballPoints(wins, ties) {
 // console.log(footballPoints(1, 2))
 // Desafio 6
 function highestCount(arrayNumberInput) {
-//  let arrayNumber = arrayNumberInput.sort();
-  let maiorAtual = arrayNumberInput[0];
+  let maiorAtual = arrayNumberInput[0]; // considera o 1º elemento como sendo o maior para comparar com os outros. Vai guardar também o único valor maior, após todas as iterações.
   for (let index = 1; index < arrayNumberInput.length; index += 1) {
-    if (arrayNumberInput[index] > maiorAtual) {
+    if (arrayNumberInput[index] > maiorAtual) { // se o número do array for maior que maiorAtual, o número do array assume o lugar de maiorAtual.
       maiorAtual = arrayNumberInput[index]
     }
   }
