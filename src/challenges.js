@@ -21,7 +21,7 @@ return calcArea;
 }
 //Teste de função
 let result = calcArea(2,4);
-//console.log(result);
+console.log(result);
 
 // Desafio 3
 function splitSentence(string) {
