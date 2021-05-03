@@ -78,19 +78,19 @@ function fizzBuzz(numeros) {
 function encode(string) {
   // seu código aqui
   let novaString = '';
-  for (let indice of string) {
-    if (indice === 'a') {
-      novaString += indice.replace('a', 1);
-    } else if (indice === 'e') {
-      novaString += indice.replace('e', 2);
-    } else if (indice === 'i') {
-      novaString += indice.replace('i', 3);
-    } else if (indice === 'o') {
-      novaString += indice.replace('o', 4);
-    } else if (indice === 'u') {
-      novaString += indice.replace('u', 5);
+  for (let indice = 0; indice < string.length; indice += 1) {
+    if (string[indice] === 'a') {
+      novaString += string[indice].replace('a', 1);
+    } else if (string[indice] === 'e') {
+      novaString += string[indice].replace('e', 2);
+    } else if (string[indice] === 'i') {
+      novaString += string[indice].replace('i', 3);
+    } else if (string[indice] === 'o') {
+      novaString += string[indice].replace('o', 4);
+    } else if (string[indice] === 'u') {
+      novaString += string[indice].replace('u', 5);
     } else {
-      novaString += indice;
+      novaString += string[indice];
     }
   }
   return novaString;
