@@ -9,15 +9,13 @@ function compareTrue(valor1, valor2) {
 
 // Desafio 2
 function calcArea(base, height) {
-    let resultado = (base * height) / 2;
+    return (base * height) / 2;
 };
-  return resultado;
 
 // Desafio 3
 function splitSentence(frase) {
-    let resultado = frase.splint(' ');  
+    return frase.splint(' ');  
 };
-  return resultado;
 
 // Desafio 4
 function concatName(nome) { 
@@ -26,14 +24,26 @@ function concatName(nome) {
 
 // Desafio 5
 function footballPoints(win, ties) {
-    let pontos = (win * 3) + (ties);
-}
-  return pontos;
+    return (win * 3) + (ties);
+}; 
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(numbers) {
+    let num = 0;
+    for (let index = 0; index < numeros.length; index += 1) {
+      
+      if (numbers[index] > num) {
+        num = numbers[index];
+      }
+    }
+    let repeticao = 0;
+    for (let index in numbers) {
+      if (numbers === numbers[index]) {
+        repeticao += 1;
+      }
+    }
+    return repeticao;
+};
 
 // Desafio 7
 function catAndMouse() {
