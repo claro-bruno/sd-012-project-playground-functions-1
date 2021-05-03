@@ -98,8 +98,38 @@ function fizzBuzz(arrayDeNumeros) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let novaString = ''
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index] === string[index].toLowerCase()) {
+      switch (string[index]) {
+        case 'a':
+          novaString += 1
+          break
+
+        case 'e':
+          novaString += 2
+          break
+
+        case 'i':
+          novaString += 3
+          break
+
+        case 'o':
+          novaString += 4
+          break
+          
+        case 'u':
+          novaString += 5
+          break
+
+        default:
+          novaString += string[index]
+          break;
+      }
+    }
+  }
+  return novaString
 }
 
 // Desafio 10
