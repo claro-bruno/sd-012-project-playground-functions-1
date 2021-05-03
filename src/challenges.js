@@ -51,13 +51,13 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(array) {
-  for (index = 0; index < array.length; index += 1){
-    if ((numero % 3 === 0) && (numero % 5 !== 0)) {
+function fizzBuzz(array){
+  for (index = 0; index < array.length; index += 1) {
+    if (array[index] % 3 === 0 && array[index] % 5 !== 0) {
       array.index = 'fizz';
-    } else if ((numero % 3 !== 0) && (numero % 5 === 0)) {
+    } else if (array[index] % 3 !== 0 && array[index] % 5 === 0) {
       array.index = 'buzz';
-    } else if ((numero % 3 === 0) && (numero % 5 === 0)) {
+    } else if (array[index] % 3 === 0 && array[index] % 5 === 0) {
       array.index = 'fizzBuzz';
     } else {
       array.index = 'bug!';
