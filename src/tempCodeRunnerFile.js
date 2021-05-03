@@ -1,10 +1,13 @@
-// Desafio 4
-function concatName(array) {
+// Desafio 7
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  // let elem1 = array[0];
-  // let elem2 = array[array.length - 1];
-return array[array.length -1] + ", " + array[0]; 
-}
-console.log(concatName(['eer', 'urm', 'ebl']));
 
-  
+  if ((mouse - cat1) < (mouse - cat2)) {
+    return "cat1";
+  } else if (mouse - cat2 < mouse - cat1){
+    return "cat2";
+  } else {
+    return "Os gatos trombam e o rato foge."
+  }
+}
+console.log(catAndMouse(1,6,12))

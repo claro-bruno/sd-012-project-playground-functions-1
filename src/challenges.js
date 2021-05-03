@@ -8,6 +8,7 @@ function compareTrue(value1, value2) {
     return false;
   }
 }
+console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, height) {
@@ -21,44 +22,47 @@ console.log(calcArea(7, 8));
 // Desafio 3
 function splitSentence(string) {
     // seu código aqui
-  return string.split(" ");
-};
+      let frase = '';
+      let array = [];
+
+      for(let index = 0; index < string.length; index += 1){
+        if(index === string.length - 1){
+          frase += string[index];
+          array.push(frase);
+        }
+        else if(string[index] != ' '){
+          frase += string[index];
+        }
+        else{
+          array.push(frase);
+          frase = '';
+        }
+      }
+      console.log(array)
+      return array;
+}
 
 // Desafio 4
 function concatName(array) {
   // seu código aqui
-  // let elem1 = array[0];
-  // let elem2 = array[array.length - 1];
-return array[array.length -1] + ", " + array[0]; 
-}
-console.log(concatName(array));
+  array = ['acerola', 'abbacte', 'buroti'];
+  let elem1 = array[0];
+  let elem2 = array[(array.length) - 1];
 
+  console.log(concatName(`${elem2}, ${elem1}`));
+
+}
   
 // Desafio 5
-function footballPoints(wins, ties) {
+function footballPoints() {
   // seu código aqui
-let placarWins = wins * 3;
-let placarTies = ties * 1;
-let pontos = placarTies + placarWins;
-
-console.log(`${pontos}`)
-return pontos;
-} 
+}
 
 // Desafio 6
-function highestCount(array) {
+function highestCount() {
   // seu código aqui
-let contagem = 0;
-let maiorNum = Math.max(...array); //referencia retirada da documentação Math.max()
-
-  
-  for (let index = 0; index < array.length; index += 1) {
-      if (array[index] == maiorNum)
-        contagem += 1;
-  }
-    return contagem;
 }
-  
+
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
