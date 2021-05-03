@@ -1,8 +1,12 @@
 // Desafio 1
 function compareTrue(param1, param2) {
+  let resultado
   if (param1 && param2 === true) {
-    return true;
+    resultado = true;
+  } else {
+    resultado = false;
   }
+  return resultado;
 }
 
 // Desafio 2
@@ -18,13 +22,21 @@ function splitSentence(stringExemplo) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(stringExemplo) {
+  let valorUm;
+  let valorDois;
+  let resultado;
+  for (let index = 0; index < stringExemplo.length; index++) {
+
+  }
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let winsPoints = wins * 3;
+  let tiesPoints = ties * 1;
+  let resultado = winsPoints + tiesPoints;
+  return resultado;
 }
 
 // Desafio 6
