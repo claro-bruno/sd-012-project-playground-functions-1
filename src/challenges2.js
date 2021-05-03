@@ -59,7 +59,7 @@ function generatePhoneNumber(array = []) {
   // seu código aqui
   let error = errorPhoneNumber(array);
   let str = '';
-  let errorMsg = 'Não é possível gerar um número de telefone com esses valores';
+  let errorMsg = 'não é possível gerar um número de telefone com esses valores';
   if (vezesRepetido(array) >= 3) return errorMsg;
   if (error === false) {
     str = Numeros(array);
