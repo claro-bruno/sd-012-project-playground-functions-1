@@ -45,15 +45,14 @@ function highestCount(matriz) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  // seu código aqui
+  // seu código aqui  
   if (Math.abs(mouse - cat1) === Math.abs(mouse - cat2)) {
     return 'os gatos trombam e o rato foge';
-  }
-  if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)) {
+  } else if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)) {
     return 'cat1';
   } else {
     return 'cat2';
-  }   
+  }
 }
 
 // Desafio 8
