@@ -61,8 +61,8 @@ function footballPoints(wins,ties) {
 
 
 // Desafio 6
-let resultados = 0;
 function highestCount(repeticao) {
+  let resultados = 0;
   let a = repeticao.sort();
   let b = a[a.length - 1]
 for(let index = a.length - 1; index >= 0; index -= 1)
@@ -74,7 +74,7 @@ for(let index = a.length - 1; index >= 0; index -= 1)
   return resultados;
 }
 // console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-// console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+//console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 // console.log(highestCount([0, 0, 0]));
 
 
