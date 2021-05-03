@@ -36,49 +36,36 @@ function techList(listOfTechs, name) {
 
 // Desafio 11
 function checkNumbers(numbers) {
-  if (numbers.length !== 11) {
-    return 1;
-  }
+  if (numbers.length !== 11) return 1;
+
   return 0;
 }
 
 function checkNumbers2(numbers) {
   for (let indexNumbers = 0; indexNumbers < numbers.length; indexNumbers += 1) {
-    if (numbers[indexNumbers] < 0 || numbers[indexNumbers] > 9) {
-      return 2;
-    }
+    if (numbers[indexNumbers] < 0 || numbers[indexNumbers] > 9) return 2;
   }
   return 0;
 }
 
-function checkNumbers3(numbers) {
+function checkRepetition(numbers, indexNumbers) {
   let counter = 0;
+  for (let indexCheck = 0; indexCheck < numbers.length; indexCheck += 1) {
+    if (numbers[indexNumbers] === numbers[indexCheck]) counter += 1;
+  }
+  return counter;
+}
 
+function checkNumbers3(numbers) {
   for (let indexNumbers = 0; indexNumbers < numbers.length; indexNumbers += 1) {
-    for (let indexCheck = 0; indexCheck < numbers.length; indexCheck += 1) {
-      if (numbers[indexNumbers] === numbers[indexCheck]) {
-        counter += 1;
-      }
-    }
-    if (counter >= 3) {
-      return 2;
-    }
-    counter = 0;
+    if (checkRepetition(numbers, indexNumbers) >= 3) return 2;
   }
   return 0;
 }
 
 function numberHasError(numbers) {
-  let test1 = checkNumbers(numbers);
-  let test2 = checkNumbers2(numbers);
-  let test3 = checkNumbers3(numbers);
-
-  if (test1 === 1) {
-    return 1;
-  }
-  if (test2 === 2 || test3 === 2) {
-    return 2;
-  }
+  if (checkNumbers(numbers) === 1) return 1;
+  if (checkNumbers2(numbers) === 2 || checkNumbers3(numbers) === 2) return 2;
 
   return 0;
 }
