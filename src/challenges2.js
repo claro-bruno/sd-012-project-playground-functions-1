@@ -10,11 +10,15 @@ function techList(lista, nomeT) {
   let listaTech = {};
   let outLista = [];
   lista = lista.sort();
+  if(lista == ""){
+    return "Vazio!";
+  }else{ 
     for(let i = 0; i < lista.length; i++){ 
       listaTech[+[i]] = {tech:lista[i], name:nomeT};
       outLista.push(listaTech[i]);
     }
-   return outLista;
+    return outLista;
+  }
 }
    
 // let listaVar = ["React", "Jest", "HTML", "CSS", "JavaScript"];
