@@ -6,6 +6,9 @@ function compareTrue(valor1, valor2) {
   if(valor1 === false && valor2 === false){
     return false;
   }
+  else{
+    return false;
+  }
 }
 
 // Desafio 2
