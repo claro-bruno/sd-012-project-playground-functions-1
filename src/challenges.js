@@ -45,7 +45,9 @@ function highestCount(array) {
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] > maior) {
       maior = array[index]; 
-    }
+    } else if (maior == 0) {
+      maior = array[index];
+    } 
   }
 
   function buscaRepetidos (valor) {
@@ -54,8 +56,13 @@ function highestCount(array) {
   }
   let numerosRepetidos = array.filter(buscaRepetidos);
   
-  return numerosRepetidos.length;
+  
+ 
+  console.log(numerosRepetidos.length);
 }
+highestCount([0,0,0]);
+
+
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -71,8 +78,21 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let strings = [];
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
+      strings.push('fizzBuzz');
+    } else if (array[index] % 3 === 0) {
+      strings.push('fizz');
+    } else if (array[index] % 5 === 0) {
+      strings.push('buzz');
+    } else {
+      strings.push('bug!');
+    }
+    
+  }
+    return strings;
 }
 
 // Desafio 9
