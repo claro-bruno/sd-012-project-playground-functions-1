@@ -72,8 +72,13 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-    // seu código aqui
+function hydrate(texto) {
+    let qtde = 0;
+    var numerosDoTexto = texto.match(/\d+/g).map(Number);
+    for (let num of numerosDoTexto) {
+        qtde += num;
+    }
+    return (qtde + ' copos de água');
 }
 
 function menorNumero(numbers) {
