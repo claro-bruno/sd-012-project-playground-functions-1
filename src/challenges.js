@@ -92,8 +92,8 @@ function fizzBuzz(arrayNumbers) {
 
 // // Desafio 9
 function encode(stringParam) {
-   let stringCodificada = '';
-   let consoant= '';
+  let stringCodificada = '';
+  let consoante= '';
 
   for (let index = 0; index < stringParam.length; index += 1) {
     if (stringParam[index] === 'a'){
