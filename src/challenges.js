@@ -53,10 +53,10 @@ function catAndMouse(mouse, cat1, cat2) {
   if ((gato1 === gato2) && ((gato1 - rato) === (gato2 - rato))) {
     return resposta;
   }
-  if ((gato1 - rato) < (gato2 - rato)) {
+  if (Math.abs(gato1 - rato) < Math.abs(gato2 - rato)) {
     resposta = 'cat1';
   }
-  if ((gato1 - rato) > (gato2 - rato)) {
+  if (Math.abs(gato1 - rato) > Math.abs(gato2 - rato)) {
     resposta = 'cat2';
   }
   return resposta;

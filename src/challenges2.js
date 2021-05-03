@@ -36,12 +36,12 @@ function generatePhoneNumber(numero) {
 }
 
 // Desafio 12
- function triangleCheck(lineA, lineB, lineC) {
-  let resposta = false;
-  if ( (lineA < (lineB + lineC)) && (lineA > Math.abs(lineB - lineC)) ) {
-    resposta = true;
-  }
-  return (resposta);
+function triangleCheck(lineA, lineB, lineC) {
+let resposta = false;
+if ( (lineA < (lineB + lineC)) && (lineA > Math.abs(lineB - lineC))) {
+  resposta = true;
+}
+return (resposta);
 }
 
 // Desafio 13
