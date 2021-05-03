@@ -94,9 +94,26 @@ function generatePhoneNumber(numeros) {
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(linha1, linha2, linha3) {
+  linha1 = Math.abs(linha1);
+  linha2 = Math.abs(linha2);
+  linha3 = Math.abs(linha3);
+  let isTriangulo = false;
+
+  if (linha1 < (linha2 + linha3) &&
+  linha1 > (Math.abs(linha2 - linha3))) {
+    isTriangulo = true;
+  } else if (linha2 < (linha1 + linha3) &&
+  linha2 > (Math.abs(linha1 + linha3))) {
+    isTriangulo = true;
+  } else if (linha3 < (linha1 + linha2) &&
+  linha3 > (Math.abs(linha1 + linha2))) {
+    isTriangulo = true;
+  }
+  return isTriangulo;
 }
+console.log(triangleCheck(10, 14, 8));
+
 
 // Desafio 13
 function hydrate() {
