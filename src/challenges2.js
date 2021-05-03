@@ -16,9 +16,15 @@ function techList(arrayTech, nameTech) {
 }
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(lista) {
+  if(lista.length != 11 ){
+    return "Array com tamanho incorreto";
+  } else if(lista.length < 0 || lista.length > 9) {
+    return "não é possível gerar um número de telefone com esses valores";
+  } 
 }
+
+// [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]
 
 // Desafio 12
 function triangleCheck() {

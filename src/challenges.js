@@ -103,9 +103,9 @@ function fizzBuzz(array) {
 // Desafio 9
 
 function encode(fraseDesafio) {
-  let listaDeLetras = fraseDesafio.split(' ');
+  let listaDeLetras = fraseDesafio.split('');
   for (let key in listaDeLetras) {
-    switch (listaDeLetras[key]){
+    switch (listaDeLetras[key]){ 
     case 'a':
       listaDeLetras[key] = 1;
       break;
@@ -123,31 +123,31 @@ function encode(fraseDesafio) {
       break;    
     }
   }
-  return listaDeLetras;
+  return listaDeLetras.join('');
 }
 
 function decode(desafioDecode) {
-  let listaDenumeros = desafioDecode.split(' ');
+  let listaDenumeros = desafioDecode.split('');
   for (let key in listaDenumeros) {
     switch (listaDenumeros[key]) {
-      case 1:
-        listaDeNumeros[key] = a;
+      case '1':
+        listaDeNumeros[key] = 'a';
         break;
-      case 2:
-        listaDenumeros[key] = e;
+      case '2':
+        listaDenumeros[key] = 'e';
         break;
-      case 3:
-        listaDenumeros[key] = i;
+      case '3':
+        listaDenumeros[key] = 'i';
         break;
-      case 4:
-        listaDenumeros[key] = o;
+      case '4':
+        listaDenumeros[key] = 'o';
         break;
-      case 5:
-        listaDenumeros[key] = u;
+      case '5':
+        listaDenumeros[key] = 'u';
         break;          
     }
   }
-  return listaDenumeros;
+  return listaDenumeros.join('');
 }
 
 module.exports = {
