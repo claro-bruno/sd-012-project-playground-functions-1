@@ -70,13 +70,16 @@ for (let index = 0; index < array.length; index += 1){
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-if ((cat1 - cat2) === 0 && mouse ===0 || (cat1 - mouse) === (cat2 - mouse)){
+let cat1x = Math.abs(cat1 - mouse);
+let cat2x = Math.abs(cat2 - mouse);
+
+  if ((cat1 - cat2) === 0 && mouse === 0 || (cat1x === cat2x)) {
   return ('os gatos trombam e o rato foge');
 }
-else if ((cat1 - mouse) < (cat2 - mouse)){
+else if (cat1x < cat2x) {
   return ('cat1');
 }
-else if ((cat2 - mouse) < (cat1 - mouse)){
+else if (cat2x < cat1x) {
   return ('cat2');
 }
 }
