@@ -1,14 +1,14 @@
 // Desafio 10
-function createArrayTechList(tech, name) {
-  if (tech.length === 0) {
+function createArrayTechList(listOfTechs, name) {
+  if (listOfTechs.length === 0) {
     return 'Vazio!';
   }
 
   let objects = [];
 
-  for (let indexTech = 0; indexTech < tech.length; indexTech += 1) {
+  for (let indexTech = 0; indexTech < listOfTechs.length; indexTech += 1) {
     objects[indexTech] = {
-      tech: tech[indexTech],
+      tech: listOfTechs[indexTech],
       name,
     };
   }
@@ -16,8 +16,8 @@ function createArrayTechList(tech, name) {
   return objects;
 }
 
-function techList(tech, name) {
-  let objects = createArrayTechList(tech, name);
+function techList(listOfTechs, name) {
+  let objects = createArrayTechList(listOfTechs, name);
 
   let change;
 
@@ -111,8 +111,6 @@ function generatePhoneNumber(numbers) {
   return number.join('');
 }
 
-console.log(generatePhoneNumber([0, 2, 3, 4, 4, 2, 7, 8, 9, 9, 4]));
-
 // Desafio 12
 function triangleCheckLineA(lineA, lineB, lineC) {
   if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
@@ -162,19 +160,16 @@ function triangleCheck(lineA, lineB, lineC) {
 
 // Desafio 13
 function hydrate(string) {
-  let array = string.match(/[0-9]+/g);
+  let array = string.match(/[0-9]+/g); //  Source: https://stackoverflow.com/questions/42532450/extract-number-from-string-javascript
   let counter = 0;
   for (let indexArray = 0; indexArray < array.length; indexArray += 1) {
     let indexToNumber = Number(array[indexArray]);
     counter += indexToNumber;
   }
-  let result;
-  if (counter > 1) {
-    result = `${counter} copos de água`;
-  } else {
-    result = '1 copo de água';
-  }
-  return result;
+
+  if (counter > 1) return `${counter} copos de água`;
+
+  return '1 copo de água';
 }
 
 module.exports = {
