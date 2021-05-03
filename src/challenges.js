@@ -20,8 +20,8 @@ calcArea = (base * heigth)/2;
 return calcArea;
 }
 //Teste de função
-let result = calcArea(2,4);
-console.log(result);
+//let result = calcArea(10,50);
+//console.log(result);
 
 // Desafio 3
 function splitSentence(string) {
