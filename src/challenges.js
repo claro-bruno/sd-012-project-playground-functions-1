@@ -136,23 +136,23 @@ function decode(string) {
   let novaString = ''
   for (let index = 0; index < string.length; index += 1) {
     switch (string[index]) {
-      case 1:
+      case '1':
         novaString += 'a';
         break
 
-      case 2:
+      case '2':
         novaString += 'e';
         break
 
-      case 3:
+      case '3':
         novaString += 'i';
         break
 
-      case 4:
+      case '4':
         novaString += 'o';
         break
         
-      case 5:
+      case '5':
         novaString += 'u';
         break
 
@@ -163,7 +163,7 @@ function decode(string) {
   }
   return novaString;
 }
-
+console.log(decode('h3 th2r2!'))
 module.exports = {
   calcArea,
   catAndMouse,
