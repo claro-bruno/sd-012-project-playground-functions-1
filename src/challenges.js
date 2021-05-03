@@ -80,15 +80,15 @@ function encode(string) {
   let novaString = '';
   for (let indice = 0; indice < string.length; indice += 1) {
     if (string[indice] === 'a') {
-      novaString += string[indice].replace('a', 1);
+      novaString += string[indice].replace('a', '1');
     } else if (string[indice] === 'e') {
-      novaString += string[indice].replace('e', 2);
+      novaString += string[indice].replace('e', '2');
     } else if (string[indice] === 'i') {
-      novaString += string[indice].replace('i', 3);
+      novaString += string[indice].replace('i', '3');
     } else if (string[indice] === 'o') {
-      novaString += string[indice].replace('o', 4);
+      novaString += string[indice].replace('o', '4');
     } else if (string[indice] === 'u') {
-      novaString += string[indice].replace('u', 5);
+      novaString += string[indice].replace('u', '5');
     } else {
       novaString += string[indice];
     }
