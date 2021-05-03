@@ -37,9 +37,9 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function maiorNumero(numInArray) {
-  let Numero = 0;
+  let Numero = null;
   for (let i in numInArray) {
-    Numero = numInArray[i];
+    if (Numero === null) Numero = numInArray[i];
     if (numInArray[i] > Numero) {
       Numero = numInArray[i];
     }
