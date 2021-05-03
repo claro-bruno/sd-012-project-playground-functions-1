@@ -45,22 +45,22 @@ let pontos = wins * 3 + ties;
 
 // Desafio 6
 function highestCount(array){ 
-let maiorValor = 0;
-let repeticao = 0; 
-
-for(let contador = 0; contador < array.length; contador+=1){
-  if(array[contador] > maiorValor) {
-    maiorValor = array[contador];
+  let maiorValor = 0;
+  let repeticao = 0; 
+  
+  for(let contador = 0; contador < array.length; contador+=1){
+    if(array[contador] > maiorValor) {
+      maiorValor = array[contador];
+    }
   }
-}
-
-for(let value of array){
-  if(maiorValor === value){
-    repeticao += 1;
-  } 
-}
-  return repeticao;
-}
+  
+  for(let value of array){
+    if(maiorValor === value){
+      repeticao += 1;
+    } 
+  }
+    return repeticao;
+  }
 
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
