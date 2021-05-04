@@ -21,8 +21,11 @@ function splitSentence(separacao) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(nomes) {
   // seu código aqui
+  let primeiroPosicao = nomes[0]
+  let segundoPosicao = nomes[nomes.length - 1]
+  return segundoPosicao + ', ' + primeiroPosicao;
 
 }
 
