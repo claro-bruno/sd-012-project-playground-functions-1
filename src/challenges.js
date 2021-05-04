@@ -45,7 +45,7 @@ let pontos = wins * 3 + ties;
 
 // Desafio 6
 function highestCount(array){ 
-  let maiorValor = 0;
+  let maiorValor = array[0];
   let repeticao = 0; 
   
   for(let contador = 0; contador < array.length; contador+=1){
@@ -53,7 +53,7 @@ function highestCount(array){
       maiorValor = array[contador];
     }
   }
-  
+  console.log(maiorValor);
   for(let value of array){
     if(maiorValor === value){
       repeticao += 1;
