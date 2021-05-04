@@ -114,8 +114,8 @@ return outArray;
 
 
 // Desafio 9
-function encode() {
-/*let word = string1.split('');
+function encode(string1) {
+let word = string1.split('');
 
  for(let index = 0; index < word.length; index += 1){
   if(word[index] === 'a'){
@@ -129,42 +129,34 @@ function encode() {
   }else if(word[index] === 'u'){
     word[index] = '5';
   }
-  
-  }
+}  
+  return word;
 }
+//console.log(encode('hi there!'));
 
-return word;
- 
-}
-console.log(encode('aeiou'));
-*/
-}
-function decode() {
-/*let number = 0;
-number = string2.split('');
+
+function decode(string2) {
+let number = string2.split('');
 
  for(index = 0; index < number.length; index += 1){
   if(number[index] === '1'){
-    number[0] = 'a';
+    number[index] = 'a';
   }else if(number[index] === '2'){
-    number[1] = 'e';
+    number[index] = 'e';
   }else if(number[index] === '3'){
-    number[2] = 'i'; 
+    number[index] = 'i'; 
   }else if(number[index] === '4'){
-    number[3] = 'o';
+    number[index] = 'o';
   }else if(number[index] === '5'){
-    number[4] = 'u';
+    number[index] = 'u';
   }
-  
-    
+      
   }
-
+  return number;
 }
-return number;
-}
-console.log(decode('1234567'));
+//console.log(decode('h3 th2r2!'));
 //usar o metodo join para juntar. */
-}
+
 
 module.exports = {
   calcArea,
