@@ -117,11 +117,9 @@ function encode(letras) {
   }
   
   }
-  return novaPalavra
-}
-console.log(encode('hi there'))
-
-function decode(letras) {
+ return novaPalavra
+ 
+ function decode(letras) {
   // seu código aqui
   let novaPalavra = ''
 
@@ -150,6 +148,10 @@ function decode(letras) {
     return novaPalavra 
   }
 }
+}
+
+
+
 
 module.exports = {
   calcArea,
