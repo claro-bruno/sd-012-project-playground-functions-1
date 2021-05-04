@@ -54,7 +54,7 @@ function fizzBuzz(arrayNum) {
   // seu código aqui
 
   let result = []; 
-  for (count = 0; count < arrayNum.length; count += 1); 
+  for (let count = 0; count < arrayNum.length; count += 1); 
     if (arrayNum[count] % 3 === 0) {
       result.push('fizz');
     } else if (arrayNum[count] % 5 === 0) {
@@ -67,8 +67,6 @@ function fizzBuzz(arrayNum) {
 
     return result; 
 };
-
-
 
 // Desafio 9
 function encode() {
