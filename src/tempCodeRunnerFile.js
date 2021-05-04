@@ -1,7 +1,6 @@
-function calcArea(base,height) {
-  let area = (base * height) / 2;
-  return area;
- }
-console.log(calcArea(10,50));
-console.log(calcArea(5,2));
-console.log(calcArea(51,1));
+function concatName(array) {
+  let primeiroNome = array[array.length -1];         
+  let ultimoNome =  array[0];
+  let nome = primeiroNome + ', ' + ultimoNome;
+
+  return nome; 

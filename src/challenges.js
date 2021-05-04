@@ -1,13 +1,7 @@
-Desafio 1
-function compareTrue(bool1,bool2) {
-  if ( bool1 == true && bool2 == true) {
-    return true ;
- } else {
-    return false;
- }  
- }
-
-
+//Desafio 1
+//function compareTrue(bool1,bool2) {
+//    return bool1 && bool2 ;
+//} 
 
  //Desafio 2
 //function calcArea(base,height) {
@@ -15,6 +9,24 @@ function compareTrue(bool1,bool2) {
   //return area;
  //}
 
+ //Desafio 3
+//function splitSentence(newfrase) {
+ // let array = [];
+  //let text = " ";
+  //for ( let index=0; index< newfrase.length; index///+=1); {
+   // if (newfrase[index] == text);
+ //     array.push(text + newfrase[index];)
+ //   } 
+ //     return array;
+ // }
+
+ Desafio 4
+function concatName(array) {
+ let firstname = array[0];
+ let lastName = array[array.length - 1];
+ return firstname + lastName;
+
+console.log(concatName('foguete,'não', 'ré'));
 
 
 
@@ -33,22 +45,6 @@ function compareTrue(bool1,bool2) {
 
 
 
-
-
-
-
-
-
-
-// Desafio 3
-//function splitSentence() {
-  // seu código aqui
-//}
-
-// Desafio 4
-//function concatName() {
-  // seu código aqui
-//}
 
 // Desafio 5
 //function footballPoints() {
