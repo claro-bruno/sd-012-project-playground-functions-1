@@ -124,7 +124,8 @@ function hydrate(string) {
   let numeros = string.match(/\d+/g).map(Number);
   for (let indice = 0; indice < numeros.length; indice += 1) {
     con += numeros[indice];
-  } if (con === 1) {
+  }
+  if (con === 1) {
     return '1 copo de água';
   }
   return (`${con} copos de agua`);
