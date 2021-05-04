@@ -75,6 +75,7 @@ function highestCount(number) {
       repetition += 1;
     };
   };
+  
   return repetition;
 
 };
@@ -127,9 +128,33 @@ console.log(catAndMouse(30, 15, 15));
 
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(arrayOfNumbers) {
+  let array8 = [];
 
-}
+  for (let index = 0; index < arrayOfNumbers.length; index +=1)
+
+  switch(true) {
+    case (arrayOfNumbers[index] % 3 === 0):
+      array8.push('fizz');
+      break;
+    
+    case (arrayOfNumbers[index] % 5 === 0):
+        array8.push('buzz');
+        break;
+    
+    case (arrayOfNumbers[index] % 3 ===0 && arrayOfNumbers[index] % 5 ===0):
+      array8.push('fizzBuzz');
+      break;
+    
+    default:
+      array8.push('bug!');
+      break;
+  };
+
+  return array8;
+};
+
+console.log(fizzBuzz([3, 5, 6, 10, 13, 15]));
 
 
 // Desafio 9
