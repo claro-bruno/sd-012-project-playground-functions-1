@@ -41,9 +41,16 @@ function splitSentence(frase, array) {
 console.log(splitSentence(frase, array));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+let array = ['captain', 'my', 'captain'];
+let concatenado;
+
+function concatName(array, concatenado) {
+    concatenado = array[array.length - 1] + ', ' + array[0];
+
+    return concatenado;
 }
+
+console.log(concatName(array, concatenado));
 
 // Desafio 5
 function footballPoints() {
