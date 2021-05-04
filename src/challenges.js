@@ -130,9 +130,10 @@ let word = string1.split('');
     word[index] = '5';
   }
 }  
-  return word;
+let palavraPronta = word.join('')
+  return palavraPronta;
 }
-//console.log(encode('hi there!'));
+console.log(encode('hi there!'));
 
 
 function decode(string2) {
@@ -150,11 +151,12 @@ let number = string2.split('');
   }else if(number[index] === '5'){
     number[index] = 'u';
   }
-      
+    
   }
-  return number;
+  let palavraPronta = number.join('')
+  return palavraPronta;
 }
-//console.log(decode('h3 th2r2!'));
+console.log(decode('h3 th2r2!'));
 //usar o metodo join para juntar. */
 
 
