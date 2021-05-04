@@ -88,19 +88,19 @@ else if (cat2x < cat1x) {
 function fizzBuzz(array) {
 for (let index = 0; index < array.length; index += 1);
 let storage = [];
-if (array[index] % 3   != 0 && array[index] % 5 != 0){
-      return ('bug!').push(storage);
+if (array[index] % 3 != 0 && array[index] % 5 != 0){
+      return storage.push('bug!');
     }
     else if (array[index] % 3 === 0 && array[index] % 5 === 0){
-      return ('fizzBuzz').push(storage);
+      return storage.push('fizzBuzz');
     }
     else if (array[index] % 3 === 0){
-      return ('fizz').push(storage);
+      return storage.push('fizz');
     }
     else if (array[index] % 5 === 0){
-      return ('buzz').push(storage);
+      return storage.push('buzz');
     }
-   return (storage); 
+   return (storage);
 }
 
 // Desafio 9
