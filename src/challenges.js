@@ -16,12 +16,17 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(frase) {
   let fraseSeparada = frase.split(" ");
+ 
   return fraseSeparada;
 }
 
 // Desafio 4
-function concatName() {
-  
+function concatName(array) {
+  let lastPosition = array[array.length -1];
+  let firstPosition = array[0];
+  let result = lastPosition + ', ' + firstPosition;
+ 
+  return result;
 }
 
 
@@ -40,7 +45,7 @@ function highestCount() {
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(cat1, cat2, mouse) {
   // seu código aqui
 }
 
