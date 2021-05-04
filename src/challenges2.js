@@ -42,7 +42,7 @@ function generatePhoneNumber(number) {
   if (number.length > 11 || number.length < 11) {
     message= "Array com tamanho incorreto."
     return message;
-
+    
   } else {
     for (let index = 0; index < number.length; index += 1) {
       if (number[index] < 0 || number[index] > 9 || count >= 3) {
@@ -50,14 +50,13 @@ function generatePhoneNumber(number) {
         return message;
         
       } else {
-        phonenumber = `(${number[0]}${number[1]})${number[2]}${number[3]}${number[4]}${number[5]}${number[6]}-${number[7]}${number[8]}${number[9]}${number[10]}`;
-        return phonenumber;
+        phone.push(number[index]);
+        phonenumber = `(${phone[0]}${phone[1]})${phone[2]}${phone[3]}${phone[4]}${phone[5]}${phone[6]}-${phone[7]}${phone[8]}${phone[9]}${phone[10]}`;
       }
-      
     }
   }
- 
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
+  return phonenumber;
+}
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
