@@ -67,7 +67,7 @@ function triangleCheck(a, b, c) {
   if (b < (a + c) && b > Math.abs(a - c)) {
     return true;
   }
-  if (c < (b + a) && c > Math.abs(b - b)) {
+  if (c < (b + a) && c > Math.abs(a - b)) {
     return true;
   }
 
