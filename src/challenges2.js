@@ -23,13 +23,13 @@ function checkNumbers(numbers){
   let contador = 0;
   if (numbers.length == 11) {
     for (key in numbers) {
-      if (numbers[key > 9 || numbers[key] < 0]) {
-        return 1;
-      }
       for (key2 in numbers) {
+        if (numbers[key] > 9 || numbers[key] < 0) {
+          return 1;
+        }
         if (numbers[key] === numbers[key2]) {
           contador += 1;
-          if (contador >= 2) {
+          if (contador >= 3) {
             return 1;
           }
         }
@@ -93,5 +93,3 @@ module.exports = {
   hydrate,
   triangleCheck,
 };
-
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
