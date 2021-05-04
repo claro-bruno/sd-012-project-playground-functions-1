@@ -19,7 +19,7 @@ function techList(arrTech, strName) {
 
 // Desafio 11
 function generatePhoneNumber() {
-  // seu código aqui
+  // seu código aqui Teste
 }
 
 // Desafio 12
