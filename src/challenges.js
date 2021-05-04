@@ -134,13 +134,24 @@ function generatePhoneNumber() {
   } */
 }
 
-// Desafio 12
+// Desafio 12 - Parte 1
+function isTriangulo1(lineA, lineB, lineC) {  
+  return lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB;
+}
+
+// Desafio 12 - Parte 2
+function isTriangulo2(lineA1, lineB1, lineC1) {  
+return lineB1 > Math.abs(lineA1 - lineC1) && lineB1 > Math.abs(lineA1 - lineC1) && lineC1 > Math.abs(lineA1 - lineB1);
+}
+
+// Desafio 12 - Parte 3
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-  let verlineA = lineA < lineB + lineC && lineA > Math.abs(lineB - lineC);
-  let verlineB = lineB < lineA + lineC && lineB > Math.abs(lineA - lineC);
-  let verlineC = lineC < lineA + lineB && lineC > Math.abs(lineA - lineB);
-  return verlineA && verlineB && verlineC;
+  let lineA1 = lineA;
+  let lineB1 = lineB;
+  let lineC1 = lineC;
+  let resultado = (isTriangulo1(lineA, lineB, lineC) && isTriangulo2(lineA1, lineB1, lineC1));  
+  return resultado;
 }
 
 // Desafio 13
