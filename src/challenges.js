@@ -36,11 +36,12 @@ function splitSentence(string) {
   // console.log(splitSentence("Vamo que Vamo"))
 
 // Desafio 4
-function concatName(array) {
+function concatName(concatarray) {
   // seu código aqui
-  let firstArray = array[0];
-  let lastArray = array[(array.length) - 1];
-  let resultado = [lastArray +', '+ firstArray];
+  let firstArray = concatarray[0];
+  let lastArray = concatarray[(concatarray.length) - 1];
+  let resultado = '${lastArray}, ${firstArray}';
+  // let resultado = [lastArray +', '+ firstArray];
   return (resultado);
 
 };
@@ -65,7 +66,7 @@ function highestCount(highestNumber) {
  let orderNumber = highestNumber.sort();
  let resultado = [];
  
- for (let index = 0; index <orderNumber.length; index +=1) {
+ for (let index = 0; index < orderNumber.length; index += 1) {
    if (orderNumber[index] === orderNumber[(orderNumber.length - 1)]) {
      resultado.push(orderNumber[index]);
    } 
@@ -73,12 +74,13 @@ function highestCount(highestNumber) {
  return (resultado.length);
 };
 // console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-// console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
-// console.log(highestCount([0, 0, 0]))
+// console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+// console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
+
 }
 
 // Desafio 8
