@@ -39,6 +39,7 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(arrayNumbers) {
   // seu código aqui
+  // Com a ajuda do Bruno Yamamoto
   let greater = Math.max.apply(null, arrayNumbers);
   let counter = 0;
   for (let index = 0; index < arrayNumbers.length; index += 1) {
@@ -53,6 +54,17 @@ function highestCount(arrayNumbers) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2){
   // seu código aqui
+  if(cat1 === cat2){
+    return 'Os gatos trombam e o rato foge'
+  }
+  let cat1Chegou = cat1 - mouse
+  let cat2Chegou = cat2 - mouse
+
+  if (cat1Chegou > cat2Chegou){
+    return 'cat1'
+  } else {
+    return 'cat2'
+  }
   
 }
 
