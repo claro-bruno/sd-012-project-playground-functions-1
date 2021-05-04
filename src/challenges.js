@@ -134,6 +134,10 @@ function fizzBuzz(arrayOfNumbers) {
   for (let index = 0; index < arrayOfNumbers.length; index +=1)
 
   switch(true) {
+    case (arrayOfNumbers[index] % 3 ===0 && arrayOfNumbers[index] % 5 ===0):
+      array8.push('fizzBuzz');
+      break;
+    
     case (arrayOfNumbers[index] % 3 === 0):
       array8.push('fizz');
       break;
@@ -141,10 +145,6 @@ function fizzBuzz(arrayOfNumbers) {
     case (arrayOfNumbers[index] % 5 === 0):
         array8.push('buzz');
         break;
-    
-    case (arrayOfNumbers[index] % 3 ===0 && arrayOfNumbers[index] % 5 ===0):
-      array8.push('fizzBuzz');
-      break;
     
     default:
       array8.push('bug!');
@@ -154,7 +154,9 @@ function fizzBuzz(arrayOfNumbers) {
   return array8;
 };
 
-console.log(fizzBuzz([3, 5, 6, 10, 13, 15]));
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+console.log(fizzBuzz([7, 9]));
+console.log(fizzBuzz([9, 25]));
 
 
 // Desafio 9
