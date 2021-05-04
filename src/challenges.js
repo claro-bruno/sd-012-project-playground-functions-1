@@ -57,7 +57,7 @@ function highestCount(numeros) {
   }
   return repeticao;
 }
-console.log(highestCount([15,15,15,10,10,13]));
+console.log(highestCount([15, 15, 15, 10, 10, 13]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -98,7 +98,7 @@ function fizzBuzz(resultado) {
   }
   return total;
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
+// console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
