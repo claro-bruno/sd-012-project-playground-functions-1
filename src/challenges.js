@@ -104,14 +104,47 @@ for (let index = 0; index < array.length; index += 1) {
  }
  return array1;
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]))
+console.log(fizzBuzz([9, 25]))
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let codifica = string.split('');
+  for (let index in codifica) {
+    if (codifica[index] === 'a') {
+      codifica[index] = 1;
+    } else if (codifica[index] === 'e') {
+      codifica[index] = 2;
+    } else if (codifica[index] === 'i') {
+      codifica[index] = 3;
+    } else if (codifica[index] === 'o') {
+      codifica[index] = 4;
+    } else if (codifica[index] === 'u') {
+      codifica[index] = 5;
+    }
+  }
+  return codifica.join('');
 }
-function decode() {
+console.log(encode(`hi there!`));
+
+function decode(string) {
   // seu código aqui
+  let decodifica = string.split('');
+  for (let index in decodifica) {
+    if (decodifica[index] === '1') {
+      decodifica[index] = 'a';
+    } else if (decodifica[index] === '2') {
+      decodifica[index] = 'e';
+    } else if (decodifica[index] === '3') {
+      decodifica[index] = 'i';
+    } else if (decodifica[index] === '4') {
+      decodifica[index] = 'o';
+    } else if (decodifica[index] === '5') {
+      decodifica[index] = 'u';
+    }
+  }
+  return decodifica.join('');
 }
+    console.log(decode(`h3 th2r2!`));
+
 
 module.exports = {
   calcArea,
