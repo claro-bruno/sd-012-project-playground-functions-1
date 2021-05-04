@@ -1,5 +1,6 @@
 // Desafio 10
 function techList(arrayTech, name) {
+  arrayTech.sort();
   let arrayObj = [];
   for (let index = 0; index < arrayTech.length; index += 1) {
     let obj = {
