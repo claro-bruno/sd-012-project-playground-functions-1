@@ -19,7 +19,7 @@ function techList(arrayTech, nameTech) {
 function generatePhoneNumber(lista) {
   let repeticao = 0;
   if(lista.length != 11 ){
-    return "Array com tamanho incorreto";
+    return "Array com tamanho incorreto.";
   } 
   for(let value of lista){
     repeticao = 0
