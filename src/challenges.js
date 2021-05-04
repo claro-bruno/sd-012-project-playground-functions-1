@@ -55,21 +55,21 @@ function footballPoints(wins,ties) {
 
 // Desafio 6
 function highestCount(array) {
-let repeat = 0;
-let highNumber = 0;
-for(accountant = 0; accountant<array.length; accountant+=1){
-  if (array[accountant] > highNumber){
-    highNumber = array[accountant]
+let highNumber = array[0];
+for(let index = 0; index<array.length; index+=1){
+  if (array[index] > highNumber){
+    highNumber = array[index]
+  }
+let contador = 0;
+for(let index = 0; index < array.length; index+=1){
+  if(highNumber === array[index]){
+    contador += 1;
   }
 }
-for(accountant = 0; accountant < array.length; accountant+=1){
-  if(highNumber === array[accountant]){
-    repeat += 1
+  return contador;
   }
 }
-return repeat;
-}
-console.log(highestCount([9,1,2,3,9,5,7]));
+//console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
