@@ -55,11 +55,8 @@ function highestCount(array) {
       numerosRepetidos = numerosRepetidos += 1
     }
   }
-  
- 
-  console.log(numerosRepetidos);
+  return numerosRepetidos;
 }
-highestCount([0,0,0]);
 
 
 
@@ -110,17 +107,16 @@ function encode(vogais) {
       substituiçao += '4';
     } else if (vogais[index] === 'u') {
       substituiçao += '5';
+    } else {
+      substituiçao += vogais[index];
     }
     
   }
-  
+  return substituiçao;
 }
 
-
-encode("hi there!");
-
 function decode() {
-  // seu código aqui
+  
 }
 
 module.exports = {
