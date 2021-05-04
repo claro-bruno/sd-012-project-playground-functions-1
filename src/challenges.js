@@ -12,9 +12,13 @@ function compareTrue(value1, value2) {
 console.log(compareTrue());
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
-}
+
+  return (base * height) / 2; 
+};
+
+console.log(calcArea()); 
 
 // Desafio 3
 function splitSentence() {
