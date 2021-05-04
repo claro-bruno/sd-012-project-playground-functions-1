@@ -46,7 +46,7 @@ function highestCount(arrayNumbers) {
     }
   }
   let contaNum = 0;
-  for (let numero = 0; numero < arrayNumbers.length; index +=1) {
+  for (let numero = 0; numero < arrayNumbers.length; numero += 1) {
     if (maior === arrayNumbers[numero]) {
       contaNum += 1;
     }
