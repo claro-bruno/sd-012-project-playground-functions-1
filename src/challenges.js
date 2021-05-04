@@ -20,36 +20,38 @@
  //     return array;
  // }
 
- Desafio 4
-function concatName(array) {
- let firstname = array[0];
- let lastName = array[array.length - 1];
- return firstname + lastName;
-
-console.log(concatName('foguete,'não', 'ré'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Desafio 5
-//function footballPoints() {
-  // seu código aqui
+ //Desafio 4
+  //function concatName(array) {
+  //let primeiroNome = array[array.length -1];         
+  //let ultimoNome =  array[0];
+  //let nome = primeiroNome + ', ' + ultimoNome;
+//
+  //return nome; 
 //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function footballPoints(wins,ties) {
+    let match = wins *3 + ties *1;
+    return match;
+}
+
+
 
 // Desafio 6
 //function highestCount() {
