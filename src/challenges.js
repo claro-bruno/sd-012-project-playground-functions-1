@@ -10,9 +10,12 @@ console.log(compareTrue(true,true));
 console.log(compareTrue(true, false));
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base,height) {
+return((base*height)/2);
 }
+console.log(calcArea(10,50))
+console.log(calcArea(5,2))
+console.log(calcArea(51,1))
 
 // Desafio 3
 function splitSentence(a) {
@@ -21,8 +24,6 @@ return (a.split(" "))
 console.log(splitSentence("go Trybe"));
 console.log(splitSentence("vamo que vamo"));
 console.log(splitSentence("foguete"));
-
-
 
 // Desafio 4
 function concatName(a){
@@ -33,14 +34,33 @@ console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 console.log(concatName(['captain', 'my', 'captain']));
 
   // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return(wins*3)+(ties*1)
 }
+console.log(footballPoints(14,8));
+console.log(footballPoints(1,2));
+console.log(footballPoints(0,0));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(a) {
+for(index = 0; index <a.length; index +=1 ) {
+
 }
+
+}
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]);
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]);
+console.log(highestCount([0, 0, 0]);
+
+
+Escreva uma função chamada highestCount que, ao receber uma array de números, retorne a quantidade de vezes que o maior deles se repete.
+
+Retorne 2 quando o parâmetro passado na função highestCount seja 
+Retorne 1 quando o parâmetro passado na função highestCount seja 
+Retorne 3 quado o parâmetro passado na função highestCount seja 
+
+
+
 
 // Desafio 7
 function catAndMouse() {
