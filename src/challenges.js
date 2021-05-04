@@ -57,17 +57,16 @@ function catAndMouse(mouse, cat1, cat2){
   if(cat1 === cat2){
     return 'Os gatos trombam e o rato foge'
   }
-  let cat1Chegou = cat1 - mouse
-  let cat2Chegou = cat2 - mouse
+  
 
-  if (cat1Chegou > cat2Chegou){
+  if ((cat1 - mouse) > (cat2 - mouse)){
     return 'cat1'
   } else {
     return 'cat2'
   }
   
 }
-
+console.log(catAndMouse(2,4,5))
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
