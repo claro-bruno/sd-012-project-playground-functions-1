@@ -3,7 +3,7 @@ function compareTrue(val1, val2) {
   // seu código aqui
   let rescompare
 
-  if (val1 == true && val2 == true) {
+  if (val1 && val2) {
     rescompare = true;
   } else {
     rescompare = false;
@@ -55,8 +55,25 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(valCount) {
   // seu código aqui
+
+  let highestNumber = Math.max.apply(null, valCount);
+
+  let count = 0;
+
+  for (let number = 0; number < valCount.length; number += 1) {
+
+    if (valCount[number] === highestNumber) {
+
+      count += 1;
+
+    }
+
+  }
+
+  return count;
+
 }
 
 // Desafio 7
