@@ -44,7 +44,7 @@ function catAndMouse(mouse, cat1, cat2) {
     resultado = 'cat2';
   } else if (distancia1 < distancia2) {
     resultado = 'cat1';
-  } else if (distancia1 === distancia2) {
+  } else { (distancia1 === distancia2)
     resultado = 'os gatos trombam e o rato foge';
   }
   return resultado;
@@ -63,7 +63,7 @@ function fizzBuzz(array){
       array.index = 'bug!';
     }
   }
-  return array
+  return array;
 }
 
 // Desafio 9
