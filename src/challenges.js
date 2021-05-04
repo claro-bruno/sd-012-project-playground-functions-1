@@ -33,8 +33,16 @@ function splitSentence(valSentence) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(val) {
   // seu código aqui
+
+  let firstWord = val[0];
+  let lastWord = val[(val.length) - 1];
+  let resArray = `${lastWord}, ${firstWord}`;
+
+  return resArray;
+
+
 }
 
 // Desafio 5
