@@ -39,7 +39,9 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(arrayNumbers) {
   // seu código aqui
-  // Referencia : bruno-yamamoto
+  /** Consultei o repositório do Bruno Yamato para resolver esse desafio.
+Link: https://github.com/tryber/sd-012-project-playground-functions/blob/bruno-yamamoto-playground-functions/src/challenges.js
+*/
   let maior = Math.max.apply(null, arrayNumbers);
   let counter = 0;
   for (let index = 0; index < arrayNumbers.length; index += 1) {
@@ -54,7 +56,9 @@ function highestCount(arrayNumbers) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2){
   // seu código aqui
-  //referencia : alice-gonçalves
+  /** Consultei o repositório do Alice Gonçalves para resolver esse desafio.
+Link: https://github.com/tryber/sd-012-project-playground-functions/blob/alice-gon%C3%A7alves-playground-functions/src/challenges.js
+*/
   let distancia1 = Math.abs(mouse - cat1);
   let distancia2 = Math.abs(mouse - cat2);
   
@@ -89,7 +93,9 @@ return lista
 // Desafio 9
 function encode(letras) {
   // seu código aqui
-  // referencia : Emerson-MM-Filho
+  /** Consultei o repositório do Alice Gonçalves para resolver esse desafio.
+Link: https://github.com/tryber/sd-012-project-playground-functions/blob/emerson-mm-filho-playground-functions/src/challenges.js
+*/
   let novaPalavra = ''
   for(let index = 0; index < letras.length; index += 1){
     switch (letras[index]) {
@@ -125,7 +131,9 @@ function encode(letras) {
 
 function decode(letras) {
   // seu código aqui
-  //referencia : Emerson-MM-Filho
+  /** Consultei o repositório do Alice Gonçalves para resolver esse desafio.
+Link: https://github.com/tryber/sd-012-project-playground-functions/blob/emerson-mm-filho-playground-functions/src/challenges.js
+*/
   let novaPalavra = ''
 
   for(let index = 0; index < letras.length; index += 1){
