@@ -5,7 +5,7 @@ function compareTrue(bool1, bool2) {
   } else {
     return false;
   }
-};
+}
 
 // Desafio 2
 function calcArea(base, height) {
@@ -18,18 +18,22 @@ function splitSentence(frase) {
   let fraseSeparada = frase.split(" ");
   return fraseSeparada;
 }
-console.log(splitSentence("go trybe"));
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
+  
 }
+
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+function footballPoints(wins, ties) {
+  let pointsWins = wins * 3;
+  let pointsTies = ties;
 
+  let totalPoints = pointsWins + pointsTies;
+
+  return totalPoints;
+}
 // Desafio 6
 function highestCount() {
   // seu código aqui
