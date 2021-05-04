@@ -21,7 +21,7 @@ function techList(tech, name) {
    //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 function generatePhoneNumber(phoneNumber) {
   if (phoneNumber.length <= 10 || phoneNumber.length >= 12) {
-    return 'Array com tamanho incorreto';
+    return 'Array com tamanho incorreto.';
   }
      for (let phoneNumberIndex = 0; phoneNumberIndex < phoneNumber.length; phoneNumberIndex += 1){
       let repeatedValueCount = 0
@@ -46,7 +46,6 @@ function generatePhoneNumber(phoneNumber) {
 
           return `(${phoneNumber1J}) ${phoneNumber2J}-${phoneNumber3J}`
         }
-
 // Desafio 12
 function triangleCheck() {
   // seu código aqui
