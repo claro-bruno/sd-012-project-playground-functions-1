@@ -41,16 +41,16 @@ function splitSentence(frase, array) {
 console.log(splitSentence(frase, array));
 
 // Desafio 4
-let array = ['captain', 'my', 'captain'];
+let afray = ['captain', 'my', 'captain'];
 let concatenado;
 
-function concatName(array, concatenado) {
-    concatenado = array[array.length - 1] + ', ' + array[0];
+function concatName(afray, concatenado) {
+    concatenado = afray[afray.length - 1] + ', ' + afray[0];
 
     return concatenado;
 }
 
-console.log(concatName(array, concatenado));
+console.log(concatName(afray, concatenado));
 
 // Desafio 5
 let wins = 0;
