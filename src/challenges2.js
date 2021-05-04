@@ -1,28 +1,8 @@
 // Desafio 10
-function techList(matriz, nome) {
-  if (matriz.length < 1){
-    return 'Vazio!';
-  }
-}
 function techList() {
-  /* array, name
-  /* if array ===0
-  return vazio
-  for (let
-  let saida =
-  tec: key,
-  name: name
-  
-  output push
-  return saida
-
-  let tabela = {
-    nome: "Hum",
-    idade: 10, */
-  };
-  /* //console.log(tabela);
-  tabela.push("dois");
-  console.log(tabela); */
+ //
+}
+ 
 // Desafio 11
 function generatePhoneNumber(numero) {
   if (numero.length !== 11) {
