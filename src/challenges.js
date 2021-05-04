@@ -138,7 +138,7 @@ function generatePhoneNumber() {
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
   let verlineA = lineA < lineB + lineC && lineA > Math.abs(lineB - lineC);
-  let vetlineB = lineB < lineA + lineC && lineB > Math.abs(lineA - lineC);
+  let verlineB = lineB < lineA + lineC && lineB > Math.abs(lineA - lineC);
   let verlineC = lineC < lineA + lineB && lineC > Math.abs(lineA - lineB);
   return verlineA && verlineB && verlineC;
 }
