@@ -31,10 +31,9 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(matriz) {
-  // seu código aqui
-  let matrizOrganizada = matriz.sort();
+  // seu código aqui  
   let contar = 0;
-
+  let matrizOrganizada = matriz.sort();
   for (let indice = 0; indice <= matriz.length - 1; indice += 1) {
     if (matrizOrganizada[indice] === matrizOrganizada[matrizOrganizada.length - 1]) {
       contar += 1;
@@ -118,21 +117,21 @@ function decode(string) {
 }
 
 // Desafio 10
-//function arrayFunction() {
-  // seu código aqui numeros
-//}
+// function arrayFunction() {
+// seu código aqui numeros
+// }
 
 // Desafio 11
-//function generatePhoneNumber() {
-  // seu código aqui numeros
-  /* for (let numero of numeros) {
+// function generatePhoneNumber() {
+// seu código aqui numeros
+/* for (let numero of numeros) {
     if (numero < 0 || numero > 9) {
       return 'não é possível gerar um número de telefone com esses valores'
     } else if (numeros.lenght < 10) {
       return 'Array com tamanho incorreto.';
     };
   } */
-//}
+// }
 
 module.exports = {
   calcArea,
