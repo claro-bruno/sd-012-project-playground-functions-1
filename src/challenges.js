@@ -90,32 +90,34 @@ console.log(highestCount(numeroAleatorio, contador));
 // Desafio 7
 let cat1 = 6;
 let cat2 = 12;
+let mouse;
 
-function catAndMouse(cat1, cat2, mouse){
-  mouse = 0; 
-  let dist1 = mouse + cat1;
-  let dist2 = mouse + cat2;
+function catAndMouse(mouse, cat1, cat2){
+  mouse = 0;
+
+  let dist1 = mouse - cat1;
+  let dist2 = mouse - cat2;
 
   let resp;
   
-  if(dist1 < dist2){
+  if(Math.abs(dist1) < Math.abs(dist2)){
     resp = 'cat1';
 
-  }else if(dist1 > dist2){
+  }else if(Math.abs(dist1) > Math.abs(dist2)){
     resp = 'cat2';
   
-  }else if(dist1 === dist2){
+  }else if(Math.abs(dist1) === Math.abs(dist2)){
     resp = 'os gatos trombam e o rato foge';
   }
 
   return resp;
 }
 
-console.log(catAndMouse(cat1, cat2));
+console.log(catAndMouse(mouse, cat1, cat2));
 
 // Desafio 8
 function fizzBuzz() {
-  // seu código aqui
+  
 }
 
 // Desafio 9
