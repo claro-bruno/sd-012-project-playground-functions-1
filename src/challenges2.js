@@ -31,7 +31,6 @@ function generatePhoneNumber(phoneNumber) {
       for (let repeatedValueIndex = 0; repeatedValueIndex < phoneNumber.length; repeatedValueIndex +=1){
         if (phoneNumber[repeatedValueIndex] == phoneNumber[phoneNumberIndex]) {
           repeatedValueCount += 1
-          console.log(repeatedValueCount)
         } if(repeatedValueCount >= 3) {
           return 'não é possível gerar um número de telefone com esses valores'
         }
@@ -46,8 +45,7 @@ function generatePhoneNumber(phoneNumber) {
       let phoneNumber3J = phoneNumber3.join('');
 
           return `(${phoneNumber1J}) ${phoneNumber2J}-${phoneNumber3J}`
-        }
- console.log(generatePhoneNumber([1,2,3,3,3,5,3,7,8,9,0,]))       
+        }       
 
 // Desafio 12
 function triangleCheck() {
