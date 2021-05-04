@@ -88,7 +88,7 @@ function fizzBuzz0(numeros) {
   if (numeros % 5 === 0) {
     return 'buzz';
   }
-  return 'bug';
+  return 'bug!';
 }
 
 function fizzBuzz(resultado) {
