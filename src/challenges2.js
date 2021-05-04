@@ -27,48 +27,46 @@ function getRepetedPhoneNumber(telefone) {
         contadorNumero += 1;
       }
     }
-      if (contadorNumero > valorRepetido) {
-        valorRepetido = contadorNumero;
-      }
-      contadorNumero = 0;
+    if (contadorNumero > valorRepetido) {
+      valorRepetido = contadorNumero;
     }
-  return valorRepetido
+    contadorNumero = 0;
+  }
+  return valorRepetido;
 }
 function generatePhoneNumber(telefone) {
   let valorRepetido = getRepetedPhoneNumber(telefone);
-  console.log(valorRepetido)
-  if (telefone.length > 11 || telefone.length < 11){
-    return 'Array com tamanho incorreto.'
-  } else {
-    for (let key of telefone) {
-      if (valorRepetido >= 3 || key < 0 || key > 9) {
-        return 'não é possível gerar um número de telefone com esses valores'
-      }
+  if (telefone.length > 11 || telefone.length < 11) {
+    return 'Array com tamanho incorreto.';
+  }
+  for (let key of telefone) {
+    if (valorRepetido >= 3 || key < 0 || key > 9) {
+      return 'não é possível gerar um número de telefone com esses valores'
     }
   }
-  return `(${telefone[0]}${telefone[1]}) ${telefone[2]}${telefone[3]}${telefone[4]}${telefone[5]}${telefone[6]}-${telefone[7]}${telefone[8]}${telefone[9]}${telefone[10]}`
+  return `(${telefone[0]}${telefone[1]}) ${telefone[2]}${telefone[3]}${telefone[4]}${telefone[5]}${telefone[6]}-${telefone[7]}${telefone[8]}${telefone[9]}${telefone[10]}`;
 }
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  let difA = (lineB - lineC)
-  let difB = (lineA - lineC)
-  let difC = (lineB - lineA)
+  let difA = (lineB - lineC);
+  let difB = (lineA - lineC);
+  let difC = (lineB - lineA);
   if (Math.abs(lineA) > Math.abs(difA)) {
     if (lineA < (lineB + lineC)){
-      return true
+      return true;
     }
   } else if (Math.abs(lineB) > Math.abs(difB)) {
     if (lineB < (lineA + lineC)) {
-      return true
+      return true;
     }
   } else if (Math.abs(lineC) > Math.abs(difC)) {
     if (lineC < (lineB + lineA)) {
-      return true
+      return true;
     }
   }
-  return false
+  return false;
 }
 
 // Desafio 13
@@ -76,13 +74,13 @@ function hydrate(hydrate) {
   let regRule = /\d+/g;
   let arrayHydrate = hydrate.match(regRule);
   let quantia = 0;
-  let result = ''
-  for (let key in arrayHydrate) {
-    quantia += parseInt(arrayHydrate[key])
-  } if (quantia === 1){
+  let result = '';
+  for (let key = 0; key < arrayHydrate.length; key += 1) {
+    quantia += parseInt(arrayHydrate[key]);
+  } if (quantia === 1) {
     result = `${quantia} copo de água`;
   } else {
-    result = `${quantia} copos de água`
+    result = `${quantia} copos de água`;
   }
   return result;
 }
