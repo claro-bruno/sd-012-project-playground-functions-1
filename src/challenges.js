@@ -115,9 +115,30 @@ function encode(vogais) {
   return substituiçao;
 }
 
-function decode() {
+function decode(numeros){
+  numeros = numeros.toLowerCase();
   
-}
+  let substituiçao = '';
+  for (let index = 0; index < numeros.length; index += 1) {
+    if (numeros[index] === '1') {
+      substituiçao += 'a';
+    } else if (numeros[index] === '2') {
+      substituiçao += 'e';
+    } else if (numeros[index] === '3') {
+      substituiçao += 'i';
+    } else if (numeros[index] === '4') {
+      substituiçao += 'o';
+    } else if (numeros[index] === '5') {
+      substituiçao += 'u';
+    } else {
+      substituiçao += numeros[index];
+    }
+    
+  }
+  console.log(substituiçao)
+} 
+
+decode('H3 th2r2')
 
 module.exports = {
   calcArea,
