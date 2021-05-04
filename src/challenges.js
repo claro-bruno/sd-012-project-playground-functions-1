@@ -40,13 +40,21 @@ function highestCount(arrayNumbers) {
   // seu código aqui
   let highestNumber = -(1000000 ** 100000);
   let quantity = 0;
+  let equal = 0;
   for (let index = 0; index < arrayNumbers.length; index += 1) {
     for (let index2 = 0; index2 < arrayNumbers.length; index2 += 1) {
       if (arrayNumbers[index] > arrayNumbers[index2] && arrayNumbers[index] > highestNumber) {
         highestNumber = arrayNumbers[index];
-      };
+      } else if (arrayNumbers[index] === arrayNumbers[index2]) {
+        equal += 1;
+      }
     };
   };
+
+  if (equal === arrayNumbers.length ** 2) {
+    return arrayNumbers.length;
+  };
+
   for (let index3 = 0; index3 < arrayNumbers.length; index3 += 1) {
     if (arrayNumbers[index3] === highestNumber) {
       quantity += 1;
