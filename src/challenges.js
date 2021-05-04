@@ -59,14 +59,14 @@ function catAndMouse(mouse, cat1, cat2){
   }
   
 
-  if ((cat1 - mouse) > (cat2 - mouse)){
+  if ((cat1 - mouse) < (cat2 - mouse)){
     return 'cat1'
   } else {
     return 'cat2'
   }
   
 }
-console.log(catAndMouse(2,4,5))
+
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
