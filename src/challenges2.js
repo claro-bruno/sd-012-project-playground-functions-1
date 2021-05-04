@@ -70,10 +70,7 @@ function hydrate(alcoholString) {
   for (let alcoholIndex = 0; alcoholIndex < alcoholArrayNumbers.length; alcoholIndex += 1) {
     alcoholNumber = parseInt(alcoholArrayNumbers[alcoholIndex], 10)
       waterCount += alcoholNumber
-      console.log(waterCount)
   }
-  
-  console.log(waterCount)
   if (waterCount === 1) {
     return `${waterCount} copo de água`
   } else {
