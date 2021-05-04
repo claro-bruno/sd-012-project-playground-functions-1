@@ -126,10 +126,10 @@ function encode(parametro) {
       parametro[index] = 5;
     }
   };
-  return parametro;
+  return parametro;*/
 }
 console.log(encode("hi there!"));
-*/
+
 
 function decode(parametro) {
 }
