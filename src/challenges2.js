@@ -27,7 +27,6 @@ function generatePhoneNumber(numero) {
     }
         if (repetidos > valRepetidos) {
          valRepetidos = repetidos;
-         console.log(valRepetidos)
       } repetidos = 0;
   }
   if (numero.length < 11 || numero.length > 11){
@@ -44,8 +43,7 @@ function generatePhoneNumber(numero) {
   }
     verifica = ( '(' + pC[0] + pC[1] + ')' + ' ' + pC[2] + pC[3] + pC[4] + pC[5] + pC[6] + '-' + pC[7] + pC[8] + pC[9] + pC[10]);
     return verifica;
- }
- console.log(generatePhoneNumber([2, 6, 6, 5, 9, 9, 7, 7, 7, 1, 3]))
+ };
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
@@ -69,13 +67,12 @@ function hydrate(bebida) {
    for (let index = 0; index < agua.length; index += 1){
    contador += parseInt(agua[index]);
    } if(contador > 2) {
-     return (contador + " copos de agua");
+     return (contador + " copos de água");
      }
       else if (contador === 1){
-       return (contador + " copo de agua");
+       return (contador + " copo de água");
       }
- }
- console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"))
+ };
 
 module.exports = {
   generatePhoneNumber,
