@@ -118,12 +118,12 @@ function decode(string) {
 }
 
 // Desafio 10
-function arrayFunction() {
+//function arrayFunction() {
   // seu código aqui numeros
-}
+//}
 
 // Desafio 11
-function generatePhoneNumber() {
+//function generatePhoneNumber() {
   // seu código aqui numeros
   /* for (let numero of numeros) {
     if (numero < 0 || numero > 9) {
@@ -132,7 +132,7 @@ function generatePhoneNumber() {
       return 'Array com tamanho incorreto.';
     };
   } */
-}
+//}
 
 module.exports = {
   calcArea,
@@ -144,5 +144,5 @@ module.exports = {
   fizzBuzz,
   footballPoints,
   highestCount,
-  splitSentence, 
+  splitSentence,
 };
