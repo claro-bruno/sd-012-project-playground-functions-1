@@ -20,7 +20,7 @@ function techList(tech, name) {
   //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/toString
    //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 function generatePhoneNumber(phoneNumber) {
-  if (phoneNumber.length !== 11 ) {
+  if (phoneNumber.length <= 10 || phoneNumber.length >= 12) {
     return 'Array com tamanho incorreto';
   }
      for (let phoneNumberIndex = 0; phoneNumberIndex < phoneNumber.length; phoneNumberIndex += 1){
@@ -45,7 +45,7 @@ function generatePhoneNumber(phoneNumber) {
       let phoneNumber3J = phoneNumber3.join('');
 
           return `(${phoneNumber1J}) ${phoneNumber2J}-${phoneNumber3J}`
-        }       
+        }
 
 // Desafio 12
 function triangleCheck() {
