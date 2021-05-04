@@ -69,11 +69,11 @@ function footballPoints(wins, ties) {
 console.log(footballPoints(wins, ties));
 
 // Desafio 6
-let numeroAleatorio = [-20, -2, -13, -23, -2, -13, -19, -2];
+let numeroAleatorio = [0, 0, 0];
 let contador = 0;
 let maior = 0;
 
-function highestCount(numeroAleatorio, contador){
+function highestCount(numeroAleatorio, maior, contador){
   for (let index = 0; index < numeroAleatorio.length; index += 1 ){
     maior = Math.max.apply(null, numeroAleatorio);
 
@@ -85,7 +85,7 @@ function highestCount(numeroAleatorio, contador){
   return contador;
 }
 
-console.log(highestCount(numeroAleatorio, contador));
+console.log(highestCount(numeroAleatorio, maior, contador));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2){
