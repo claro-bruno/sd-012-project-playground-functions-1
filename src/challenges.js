@@ -1,12 +1,8 @@
 // Desafio 1
 function compareTrue(value1, value2) {
   // seu código aqui  
-
-    if (value1 == true && value2 == true) {
-      return true; 
-    } else {
-      return false; 
-    };
+  
+    return value1 && value2 === true; 
 };
 
 console.log(compareTrue());
@@ -63,8 +59,8 @@ function fizzBuzz(arrayNum) {
       result.push('fizzBuzz');
     } else {
       result.push('bug!');
-    };
-  };
+    }
+  }
     return result; 
 };
 
