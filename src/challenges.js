@@ -40,9 +40,9 @@ function concatName(concatenedArray) {
   // seu código aqui
   return concatenedArray[concatenedArray.length - 1] +', '+ concatenedArray[0];
 };
-console.log(concatName(['Lucas','Cassiano','Ferraz','Paolillo']));
-console.log(concatName(['foguete', 'não', 'tem','ré']));
-console.log(concatName(['captain', 'my', 'captain']));
+// console.log(concatName(['Lucas','Cassiano','Ferraz','Paolillo']));
+// console.log(concatName(['foguete', 'não', 'tem','ré']));
+// console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints(wins,ties) {
@@ -56,32 +56,70 @@ function footballPoints(wins,ties) {
 
 
 // Desafio 6
-function highestCount(highestNumber) {
+function highestCount(arrayNumberInput) {
   // seu código aqui
- let orderNumber = highestNumber.sort();
- let resultado = [];
+//  let orderNumber = highestNumber.sort();
+//  let resultado = [];
  
- for (let index = 0; index < orderNumber.length; index += 1) {
-   if (orderNumber[index] === orderNumber[(orderNumber.length - 1)]) {
-     resultado.push(orderNumber[index]);
-   } 
- }
- return (resultado.length);
+//  for (let index = 0; index < orderNumber.length; index ++) {
+//    if (orderNumber[index] === orderNumber[(orderNumber.length - 1)]) {
+//      resultado.push(orderNumber[index]);
+//    } 
+//  }
+//  return (resultado.length);
+let maiorAtual = arrayNumberInput[0];
+for (let index = 1; index < arrayNumberInput.length; index += 1) {
+  if (arrayNumberInput[index] > maiorAtual) {
+    maiorAtual = arrayNumberInput[index]
+  }
 };
-// console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-// console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
-// console.log(highestCount([0, 0, 0]));
+let contador = 0;
+for (let index = 0; index < arrayNumberInput.length; index +=1) {
+  if (maiorAtual === arrayNumberInput[index]) {
+    contador += 1;
+  }
+}
+};
+console.log(highestCount([-2, -2, -1]));
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+console.log(highestCount([0, 0, 0]));
+
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let cat1Distance = Math.abs(cat1 - mouse);
+  let cat2Distance = Math.abs(cat2 - mouse);
+  if (cat1Distance > cat2Distance) {
+    return 'cat2';
+  } if (cat2Distance > cat1Distance) {
+    return 'cat1';
+  } if (cat1Distance === cat2Distance) {
+    return 'os gatos trombam e o rato foge';
+  }
 
-}
+};
+// console.log(catAndMouse(1,4,3));
+// console.log(catAndMouse(1,7,13));
+// console.log(catAndMouse(1,5,5));
+
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(numberBuzz) {
   // seu código aqui
-}
+  let answer = [];
+  for (let index = 0; index < numberBuzz.length; index += 1) {
+    answer[index] = 'bug!';
+    if (numberBuzz[index] % 15 === 0) {
+      answer[index] = 'fizzBuzz';
+    } else if (numberBuzz[index] % 5 === 0) {
+      answer[index] = 'buzz';
+    } else if (numberBuzz[index] % 3 === 0) { answer[index] = 'fizz'; }
+  }
+  return answer;
+};
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
 function encode() {
