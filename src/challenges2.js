@@ -28,10 +28,12 @@ function generatePhoneNumber(arrayPhone) {
   let prefixo = '';
   let sufixo = '';
 
+  if (arrayPhone.length !== 11) {
+    return 'Array com tamanho incorreto.';  
+  }
+
   for (let index = 0; index < arrayPhone.length; index += 1) {
-    if (arrayPhone.length !== 11) {
-      return 'Array com tamanho incorreto.';
-    }
+    
     let equal = 0;
     for (let index2 = 0; index2 < arrayPhone.length; index2 += 1) {
       if (arrayPhone[index] === arrayPhone[index2]) {
