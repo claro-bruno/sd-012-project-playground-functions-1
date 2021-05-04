@@ -9,7 +9,10 @@ function compareTrue(valor1, valor2) {
  }
   return (resultado);
 };
-console.log(compareTrue(3,3));
+// console.log(compareTrue(false,true));
+// console.log(compareTrue(false,false));
+// console.log(compareTrue(true,true));
+
 
 
 // Desafio 2
@@ -18,36 +21,41 @@ function calcArea(base, height) {
   let area = (base * height) /2;
   return (area);
   }
-
-  console.log(calcArea(51,1))
+  // console.log(calcArea(10,50));
+  // console.log(calcArea(5,2));
+  // console.log(calcArea(51,1));
 
 
 // Desafio 3
 function splitSentence(string) {
   // seu código aqui
-  let divisao = string.split(" ");
-  return (divisao);
+  let resultado = string.split([" "]);
+  return (resultado);
 };
-
+  // console.log(splitSentence("Go Trybe"));
+  // console.log(splitSentence("Vamo que Vamo"))
 
 // Desafio 4
-let stringConcat = [];
-function concatName(string) {
-  
+function concatName(array) {
+  // seu código aqui
   let firstArray = array[0];
   let lastArray = array[(array.length) - 1];
   let resultado = [lastArray, firstArray];
   return (resultado);
 
 };
-console.log(concatName(concatenacaoDaString));
+// console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins,ties) {
   // seu código aqui
   let resultado = (wins*3) + (ties*1);
   return (resultado);
-}
+};
+  // console.log (footballPoints(14,8))
+  // console.log (footballPoints(1,2))
+  // console.log (footballPoints(0,0))
+
 
 // Desafio 6
 function highestCount() {
