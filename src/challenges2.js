@@ -1,5 +1,4 @@
 // Desafio 10
-
 function techList(array, name) {
   let listaObjetos = [];
   if (array.length > 0) {
@@ -12,24 +11,59 @@ function techList(array, name) {
   return 'Vazio!';
 }
 
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'],
-  'Lucas'));
-
-// Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function verificaNumeros(array) {
+  if (array.length !== 11) { return 'Array com tamanho incorreto.'; }
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] > 9 || array[i] < 0) {
+      return 'não é possível gerar um número de telefone com esses valores';
+    }
+  }
+  return true;
 }
 
+function changePosition(arr, from, to) {
+  arr.splice(to, 0, arr.splice(from, 1)[0]);
+  return arr;
+}
+
+// Desafio 11
+
+function generatePhoneNumber(array) {
+  let resposta = verificaNumeros(array);
+  if (resposta === true) {
+    array.unshift('(', ')', '-', ' ');
+    array = changePosition(array, 1, 3);
+    array = changePosition(array, 4, 1);
+    array = changePosition(array, 2, 9);
+    array = changePosition(array, 4, 2);
+    array = changePosition(array, 3, 4);
+    array = array.join('');
+    return array;
+  }
+  return resposta;
+}
+
+console.log(generatePhoneNumber([4, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 // Desafio 12
 function triangleCheck() {
   // seu código aqui
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
-
+function hydrate(string) {
+  let dale = 0;
+  let numeros = string.split('');
+  console.log(numeros);
+  numeros = numeros.filter((valor) => {
+    if (Number(valor)) {
+      dale += Number(valor);
+    }
+    return dale;
+  });
+  return dale > 1 ? `${dale} copos de água` : `${dale} copo de agua`;
 }
+
+console.log(hydrate('3 cerveja 8'));
 
 module.exports = {
   generatePhoneNumber,
