@@ -3,9 +3,9 @@ function techList(matriz, nome) {
   if (matriz.length < 1){
     return 'Vazio!';
   }
-    
 }
-function techList(array, name) {
+function techList() {
+  /* array, name
   /* if array ===0
   return vazio
   for (let
@@ -29,7 +29,6 @@ function generatePhoneNumber(numero) {
     return 'Array com tamanho incorreto.';
   }
   let numerotel = '(';
-  /* let caracter = ''; */
   let repetiu = 0;
   for (let posicao = 0; posicao < numero.length; posicao += 1) {
     if (numero[posicao] < 0 || numero[posicao] > 9) {
