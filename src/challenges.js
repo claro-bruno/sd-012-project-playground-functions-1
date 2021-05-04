@@ -81,7 +81,6 @@ function fizzBuzz(teste) {
 
   let memoria = [];
   for (let index = 0; index < teste.length; index += 1);
-  
   if (teste[index] % 3 === 0) {
     memoria.push('fizz');
   }
@@ -94,25 +93,9 @@ function fizzBuzz(teste) {
   else if (teste[index] % 3 !== 0 && teste[index] % 5 !== 0) {
     memoria.push('bug!');
   }
-return memoria;
+  return memoria;
 }
-console.log(fizzBuzz(9, 25));
-  /*
-  if (teste % 3 === 0) {
-    console.log('fizz');
-  }
-  else if (teste % 5 === 0) {
-    console.log('buzz');
-  }
-  else if (teste % 3 === 0 && teste % 5 === 0) {
-    console.log('fizzBuzz');
-  } else {
-    console.log('bug!');
-  }
-}
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
-*/
-
+console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode() {
