@@ -59,10 +59,27 @@ function triangleCheck(lineA,lineB,lineC) {
    }
 }
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+ //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
+  //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/typeof
+   //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
+    //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+function hydrate(alcoholString) {
+  let waterCount = 0
+  let alcoholNumber = 0
+  let alcoholArrayNumbers = alcoholString.match(/[1-9]/g)
+  for (let alcoholIndex = 0; alcoholIndex < alcoholArrayNumbers.length; alcoholIndex += 1) {
+    alcoholNumber = parseInt(alcoholArrayNumbers[alcoholIndex], 10)
+      waterCount += alcoholNumber
+      console.log(waterCount)
+  }
+  
+  console.log(waterCount)
+  if (waterCount === 1) {
+    return `${waterCount} copo de água`
+  } else {
+    return `${waterCount} copos de água`
+  }
 }
-
 module.exports = {
   generatePhoneNumber,
   techList,
