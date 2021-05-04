@@ -88,9 +88,30 @@ function highestCount(numeroAleatorio, contador){
 console.log(highestCount(numeroAleatorio, contador));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+let cat1 = 1211;
+let cat2 = 1211;
+let mouse = 0;
+
+function catAndMouse(cat1, cat2){
+  let dist1 = mouse - cat1;
+  let dist2 = mouse - cat2;
+
+  let resp;
+  
+  if(Math.abs(dist1) < Math.abs(dist2)){
+    resp = 'cat1';
+
+  }else if(Math.abs(dist1) > Math.abs(dist2)){
+    resp = 'cat2';
+  
+  }else if(Math.abs(dist1) === Math.abs(dist2)){
+    resp = 'os gatos trombam e o rato foge';
+  }
+
+  return resp;
 }
+
+console.log(catAndMouse(cat1, cat2));
 
 // Desafio 8
 function fizzBuzz() {
