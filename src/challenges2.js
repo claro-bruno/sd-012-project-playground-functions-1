@@ -1,7 +1,9 @@
 // Desafio 10
 function techList() {
   // seu código aqui
-  let umber;
+
+
+
 }
 
 // Desafio 11
