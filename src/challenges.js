@@ -3,20 +3,20 @@
  //return bool1 && bool2 ;
   } 
  //Desafio 2
-  function calcArea(base,height) {
-    let area = (base * height) / 2;
-    return area;
+  //function calcArea(base,height) {
+  //let area = (base * height) / 2;
+  //return area;
  //}
  //Desafio 3
-  //function splitSentence(newfrase) {
-  //let array = [];
-  //let text = " ";
-  //  for ( let index=0; index< newfrase.length; index +=1); {
-  // if (newfrase[index] == text);
-   //   array.push(text + newfrase[index];)
-  //  } 
-  // return array;
-  //}
+  function splitSentence(newfrase) {
+  let array = [];
+  let text = " ";
+    for ( let index=0; index< newfrase.length; index +=1); {
+   if (newfrase[index] == text);
+      array.push(text + newfrase[index];)
+    } 
+   return array;
+    }
 
  //Desafio 4
   //function concatName(array) {
