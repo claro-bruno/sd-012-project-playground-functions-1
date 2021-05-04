@@ -11,18 +11,19 @@ function compareTrue(a,b) {
 // Desafio 2
 function calcArea(base, altura) {
   // seu código aqui
-return (base * altura) / 2
-
+return (base * altura) / 2;
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(separacao) {
   // seu código aqui
+  return separacao.split (' ');
 }
 
 // Desafio 4
 function concatName() {
   // seu código aqui
+
 }
 
 // Desafio 5
