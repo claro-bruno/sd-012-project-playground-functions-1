@@ -24,8 +24,8 @@ function splitSentence(separacao) {
 function concatName(nomes) {
   // seu código aqui
   let primeiroPosicao = nomes[0]
-  let segundoPosicao = nomes[nomes.length - 1]
-  return segundoPosicao + ', ' + primeiroPosicao;
+  let ultimaPosicao = nomes[nomes.length - 1]
+  return ultimaPosicao + ', ' + primeiroPosicao;
 
 }
 
@@ -39,7 +39,7 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(arrayNumbers) {
   // seu código aqui
-  // Com a ajuda do Bruno Yamamoto
+  // Referencia : bruno-yamamoto
   let maior = Math.max.apply(null, arrayNumbers);
   let counter = 0;
   for (let index = 0; index < arrayNumbers.length; index += 1) {
@@ -54,6 +54,7 @@ function highestCount(arrayNumbers) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2){
   // seu código aqui
+  //referencia : alice-gonçalves
   let distancia1 = Math.abs(mouse - cat1);
   let distancia2 = Math.abs(mouse - cat2);
   
@@ -88,6 +89,7 @@ return lista
 // Desafio 9
 function encode(letras) {
   // seu código aqui
+  // referencia : Emerson-MM-Filho
   let novaPalavra = ''
   for(let index = 0; index < letras.length; index += 1){
     switch (letras[index]) {
@@ -123,33 +125,41 @@ function encode(letras) {
 
 function decode(letras) {
   // seu código aqui
+  //referencia : Emerson-MM-Filho
   let novaPalavra = ''
 
   for(let index = 0; index < letras.length; index += 1){
     switch (letras[index]){
       case '1':
-        novaPalavra += 'a'
+        novaPalavra += 'a';
         break;
 
         case '2':
-        novaPalavra += 'e'
+        novaPalavra += 'e';
         break;
 
         case '3':
-        novaPalavra += 'i'
+        novaPalavra += 'i';
         break;
 
         case '4':
-        novaPalavra += 'o'
+        novaPalavra += 'o';
         break;
 
         case '5':
-        novaPalavra += 'u'
+        novaPalavra += 'u';
         break;
+
+        default:
+          novaPalavra += letras[index];
+          break;
     }
-    return novaPalavra 
+    
   }
+  return novaPalavra 
 }
+
+
 
 module.exports = {
   calcArea,
