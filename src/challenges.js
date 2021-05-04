@@ -57,7 +57,6 @@ function highestCount(numeros) {
   }
   return repeticao;
 }
-console.log(highestCount([15, 15, 15, 10, 10, 13]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -90,7 +89,8 @@ function fizzBuzz0(numeros) {
   }
   return 'bug!';
 }
-
+// nesse caso foi necessario criar outra function para imprimir o resultado da função
+// tentei fazer colocando .push em cada if mas não dá certo
 function fizzBuzz(resultado) {
   let total = [];
   for (let numeros of resultado) {
