@@ -3,16 +3,16 @@ function techList(technologies, name) {
   // seu código aqui
   let techname = [];
   technologies.sort();
+
   if (technologies.length === 0) {
-      return 'Vazio!';
-  } else {
-      for (let index = 0; index < technologies.length; index += 1) {
-          techname.push({ tech: technologies[index], name: name });
-      }
-      return techname;
+    return 'Vazio!';
   }
+  for (let index = 0; index < technologies.length; index += 1) {
+    techname.push({ tech: technologies[index], name: name });
+  }
+  return techname; 
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
+// console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 // Desafio 11
 function generatePhoneNumber(foneNumber) {
   // seu código aqui
@@ -29,7 +29,6 @@ function generatePhoneNumber(foneNumber) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
-
   for (let indexCheck = 0; indexCheck < foneNumber.length; indexCheck += 1) {
     for (let indexCompare = 0; indexCompare < foneNumber.length; indexCompare += 1) {
       if (foneNumber[indexCheck] === foneNumber[indexCompare]) {
@@ -43,7 +42,7 @@ function generatePhoneNumber(foneNumber) {
   }
   return `(${prefix}) ${numberBegin}-${numberFinal}`;
 }
- console.log(generatePhoneNumber([1,2,3,4,5,5,6,8,9,0,2,9]));
+// console.log(generatePhoneNumber([1,2,3,4,5,5,6,8,9,0,2,9]));
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
@@ -54,34 +53,24 @@ function triangleCheck(lineA, lineB, lineC) {
   }
   return false;
 }
-//console.log(triangleCheck(-9, 17, 13));
+// console.log(triangleCheck(-9, 17, 13));
 // Desafio 13
 function hydrate(drinks) {
   // seu código aqui
-    const drink = fn.splitSentence(drinks);
-    let sum = 0;
-  
-    for (let index = 0; index < drink.length; i += 1) {
-      const number = parseInt(drink[index], 10);
-      if (!Number.isNaN(number)) sum += number;
-    }
-    return sum === 1 ? `${sum} copo de água` : `${sum} copos de água`;
+  let numberDrinks = drinks.replace(/\D/g, '');
+  let sumDrinks = 0;
 
-/*
-  let bebida = '';
-  let soma = 0;
+  numberDrinks = numberDrinks.split('');
 
-  for (let index = 0; index < bebida.length; index +=1 ) {
-    stringPraInt = parseInt(bebidaQtd[index]);
-    soma += stringPraInt;
-  }
-  if (soma === 1) {
-    return "1 copo de água";
+  for (let indice = 0; indice < numberDrinks.length; indice += 1) {
+    sumDrinks += parseInt(numberDrinks[indice]);
+  } if(sumNumberDrinks === 1) {
+    return `${sumDrinks} copo de água`;
   } else {
-    return `${soma} copos de água`;
-  }*/
+    return `${sumDrinks} copos de água`;
+  }
 }
-console.log(hydrate(5));
+// console.log(hydrate(5));
 module.exports = {
   generatePhoneNumber,
   techList,
