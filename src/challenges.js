@@ -106,11 +106,34 @@ function fizzBuzz() {
 }
 
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
+
+  let letter = string;
+
+  letter = letter.replace(/a/g, '1');
+
+  letter = letter.replace(/e/g, '2');
+
+  letter = letter.replace(/i/g, '3');
+
+  letter = letter.replace(/o/g, '4');
+
+  letter = letter.replace(/u/g, '5');
+
+  return letter;
+
 }
-function decode() {
+
+function decode(string) {
   // seu código aqui
+  let letter = string;
+  letter = letter.replace(/1/g, 'a');
+  letter = letter.replace(/2/g, 'e');
+  letter = letter.replace(/3/g, 'i');
+  letter = letter.replace(/4/g, 'o');
+  letter = letter.replace(/5/g, 'u');
+  return letter;
 }
 
 module.exports = {
