@@ -3,7 +3,7 @@ function techList(techNames, personName) {
   let secondList = [];
   if (techNames.length === 0) {
     return 'Vazio!';
-  } 
+  }
   let firstList = techNames.sort();
   for (let index = 0; index < firstList.length; index += 1) {
     secondList.push(
@@ -13,7 +13,7 @@ function techList(techNames, personName) {
       },
     );
   }
-  return secondList;  
+  return secondList;
 }
 
 // Desafio 11

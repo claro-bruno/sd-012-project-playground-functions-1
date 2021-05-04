@@ -49,7 +49,8 @@ function highestCount(numbers) {
 function catAndMouse(mouse, cat1, cat2) {
   if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
     return 'cat1';
-  } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
+  }
+  if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
     return 'cat2';
   } else {
     return 'os gatos trombam e o rato foge';
@@ -60,7 +61,7 @@ function catAndMouse(mouse, cat1, cat2) {
 
 function fizzBuzz(numbers) {
   let result = [];
-  for (let index = 0; index < numbers.length; index += 1) {   
+  for (let index = 0; index < numbers.length; index += 1) {
     if ((numbers[index] % 3 === 0) && (numbers[index] % 5 !== 0)) {
       result.push('fizz');
     } else if ((numbers[index] % 3 !== 0) && (numbers[index] % 5 === 0)) {
@@ -77,21 +78,21 @@ function fizzBuzz(numbers) {
 // Desafio 9
 function encode(string1) {
   let encoded = string1
-  .replaceAll('a', '1')
-  .replaceAll('e', '2')
-  .replaceAll('i', '3')
-  .replaceAll('o', '4')
-  .replaceAll('u', '5');
+    .replaceAll('a', '1')
+    .replaceAll('e', '2')
+    .replaceAll('i', '3')
+    .replaceAll('o', '4')
+    .replaceAll('u', '5');
   return encoded;
 }
 
 function decode(string2) {
   let decoded = string2
-  .replaceAll('1', 'a')
-  .replaceAll('2', 'e')
-  .replaceAll('3', 'i')
-  .replaceAll('4', 'o')
-  .replaceAll('5', 'u');
+    .replaceAll('1', 'a')
+    .replaceAll('2', 'e')
+    .replaceAll('3', 'i')
+    .replaceAll('4', 'o')
+    .replaceAll('5', 'u');
   return decoded;
 }
 
