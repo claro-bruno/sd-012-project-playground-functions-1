@@ -1,11 +1,11 @@
 //Desafio 1
-  function compareTrue(bool1,bool2) {
-    return bool1 && bool2 ;
+// function compareTrue(bool1,bool2) {
+ //return bool1 && bool2 ;
   } 
  //Desafio 2
-//function calcArea(base,height) {
-  //let area = (base * height) / 2;
-  //return area;
+  function calcArea(base,height) {
+    let area = (base * height) / 2;
+    return area;
  //}
  //Desafio 3
   //function splitSentence(newfrase) {
