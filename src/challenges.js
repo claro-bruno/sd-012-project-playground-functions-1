@@ -72,18 +72,17 @@ console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  Math.abs(mouse);
-  Math.abs(cat1);
-  Math.abs(cat2);
-  if ((cat1 - mouse) > (cat2 - mouse)){
+  let distMouseCat1 = mouse - cat1;
+  let distMouseCat2 = mouse - cat2;
+  if ((Math.abs(distMouseCat1) < Math.abs(distMouseCat2))){
     return 'cat2';
-  } else if ((cat1 - mouse) < (cat2 - mouse)){
+  } else if ((Math.abs(distMouseCat2) < Math.abs(distMouseCat1))){
     return 'cat1';
-  } else if ((cat1 - mouse) == (cat2 - mouse)){
+  } else if ((Math.abs(distMouseCat1) == Math.abs(distMouseCat2))){
     return 'os gatos trombam e o rato foge';
   }
 }
-console.log(catAndMouse(1, 4, 3));
+console.log(catAndMouse(1, 0, 2));
 console.log(catAndMouse(1, 7, 13));
 console.log(catAndMouse(1, 4, 4));
 
@@ -113,7 +112,7 @@ function encode(parametro) {
   let substE;
   let substI;
   let substO;
-  let substU;*/
+  let substU;
   for (index = 0; index < parametro.length; index += 1){
     if(parametro[index] === 'a'){
       parametro[index] = 1;
@@ -130,6 +129,7 @@ function encode(parametro) {
   return parametro;
 }
 console.log(encode("hi there!"));
+*/
 
 function decode(parametro) {
 }
