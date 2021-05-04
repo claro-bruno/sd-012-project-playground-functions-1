@@ -47,12 +47,27 @@ function highestCount() {
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
+
+  
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz([]) {
   // seu código aqui
-}
+
+  for (count = 0; count < fizzBuzz.length; count += 1); 
+    if (fizzBuzz.count / 3 === 0) {
+      console.log('fizz');
+    } else if (fizzBuzz.count / 5 === 0) {
+      console.log('buzz');
+    } else if (fizzBuzz.count / 3 === 0 && fizzBuzz.count / 5 === 0) {
+      console.log('fizzBuzz')
+    } else {
+      console.log('bug!')
+    };
+};
+
+console.log(fizzBuzz());
 
 // Desafio 9
 function encode() {
