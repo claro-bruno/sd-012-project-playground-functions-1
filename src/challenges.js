@@ -120,7 +120,7 @@ function decode(string) {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-  return lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB && lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB)
+  return lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB && lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB);
 }
 
 // Desafio 13
@@ -148,16 +148,20 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
+  arrayFunction,
+  generatePhoneNumber,
+  triangleCheck,
+  hydrate,
 };
 
 // Desafio 10
-function arrayFunction(array, name) {
-  // seu código aqui
+function arrayFunction(x) {
+  // seu código aqui numeros
 }
 
 // Desafio 11
-function generatePhoneNumber(numeros) {
-  // seu código aqui
+function generatePhoneNumber() {
+  // seu código aqui numeros
   /* for (let numero of numeros) {
     if (numero < 0 || numero > 9) {
       return 'não é possível gerar um número de telefone com esses valores'
