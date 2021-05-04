@@ -67,18 +67,14 @@ function highestCount(arrayNumberInput) {
 //    } 
 //  }
 //  return (resultado.length);
-let maiorAtual = arrayNumberInput[0];
-for (let index = 1; index < arrayNumberInput.length; index += 1) {
-  if (arrayNumberInput[index] > maiorAtual) {
-    maiorAtual = arrayNumberInput[index]
+let matrizOrganizada = matriz.sort();
+  let contar = 0;
+  for (let indice = 0; indice <= matriz.length - 1; indice += 1) {
+    if (matrizOrganizada[indice] === matrizOrganizada[matrizOrganizada.length - 1]) {
+      contar += 1;
+    }
   }
-};
-let contador = 0;
-for (let index = 0; index < arrayNumberInput.length; index +=1) {
-  if (maiorAtual === arrayNumberInput[index]) {
-    contador += 1;
-  }
-}
+  return contar;
 };
 console.log(highestCount([-2, -2, -1]));
 console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
@@ -119,14 +115,48 @@ function fizzBuzz(numberBuzz) {
   }
   return answer;
 };
-console.log(fizzBuzz([2, 15, 7, 9, 45]))
+// console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
 function encode() {
   // seu código aqui
+  codeVowels = codeVowels.split('');
+  for (let index = 0; index < codeVowels.length; index += 1) {
+    switch (codeVowels[index]) {
+    case 'a': codeVowels[index] = '1';
+      break;
+    case 'e': codeVowels[index] = '2';
+      break;
+    case 'i': codeVowels[index] = '3';
+      break;
+    case 'o': codeVowels[index] = '4';
+      break;
+    case 'u': codeVowels[index] = '5';
+      break;
+    default:
+    }
+  }
+  return(codeVowels.join(''));
 }
 function decode() {
   // seu código aqui
+  codeNumber = codeNumber.split('');
+  for (let index = 0; index < codeNumber.length; index += 1) {
+    switch (codeNumber[index]) {
+    case '1': codeNumber[index] = 'a';
+      break;
+    case '2': codeNumber[index] = 'e';
+      break;
+    case '3': codeNumber[index] = 'i';
+      break;
+    case '4': codeNumber[index] = 'o';
+      break;
+    case '5': codeNumber[index] = 'u';
+      break;
+    default:
+    }
+  }
+  return codeNumber.join('');
 }
 
 module.exports = {
