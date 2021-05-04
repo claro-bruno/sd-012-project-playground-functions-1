@@ -68,13 +68,14 @@ function triangleCheck() {
 function hydrate(string) {
   let dale = 0;
   let numeros = string.split('');
+  console.log(numeros);
   numeros = numeros.filter((valor) => {
     if (Number(valor)) {
       dale += Number(valor);
     }
     return dale;
   });
-  return dale > 1 ? `${dale} copos de água` : `${dale} copo de agua`;
+  return dale > 1 ? `${dale} copos de água` : `${dale} copo de água`;
 }
 
 console.log(hydrate('3 cerveja 8'));
