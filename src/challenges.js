@@ -76,10 +76,10 @@ let matrizOrganizada = matriz.sort();
   }
   return contar;
 };
-console.log(highestCount([-2, -2, -1]));
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
-console.log(highestCount([0, 0, 0]));
+// console.log(highestCount([-2, -2, -1]));
+// console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+// console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+// console.log(highestCount([0, 0, 0]));
 
 
 // Desafio 7
@@ -120,43 +120,11 @@ function fizzBuzz(numberBuzz) {
 // Desafio 9
 function encode() {
   // seu código aqui
-  codeVowels = codeVowels.split('');
-  for (let index = 0; index < codeVowels.length; index += 1) {
-    switch (codeVowels[index]) {
-    case 'a': codeVowels[index] = '1';
-      break;
-    case 'e': codeVowels[index] = '2';
-      break;
-    case 'i': codeVowels[index] = '3';
-      break;
-    case 'o': codeVowels[index] = '4';
-      break;
-    case 'u': codeVowels[index] = '5';
-      break;
-    default:
-    }
-  }
-  return(codeVowels.join(''));
+  
 }
 function decode() {
   // seu código aqui
-  codeNumber = codeNumber.split('');
-  for (let index = 0; index < codeNumber.length; index += 1) {
-    switch (codeNumber[index]) {
-    case '1': codeNumber[index] = 'a';
-      break;
-    case '2': codeNumber[index] = 'e';
-      break;
-    case '3': codeNumber[index] = 'i';
-      break;
-    case '4': codeNumber[index] = 'o';
-      break;
-    case '5': codeNumber[index] = 'u';
-      break;
-    default:
-    }
-  }
-  return codeNumber.join('');
+  
 }
 
 module.exports = {
