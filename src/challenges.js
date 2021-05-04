@@ -67,7 +67,7 @@ function fizzBuzz(array){
 }
 
 // Desafio 9
-function encode(string) {
+function decode(string) {
   string = string.split('a').join('1');
   string = string.split('e').join('2');
   string = string.split('i').join('3');
@@ -76,12 +76,12 @@ function encode(string) {
   return string;
 }
 
-function decode(string) {
-  string.split('1').join('a');
-  string.split('2').join('e');
-  string.split('3').join('i');
-  string.split('4').join('o');
-  string.split('5').join('u');
+function encode(string) {
+  string = string.split('1').join('a');
+  string = string.split('2').join('e');
+  string = string.split('3').join('i');
+  string = string.split('4').join('o');
+  string = string.split('5').join('u');
   return string;
 }
 
