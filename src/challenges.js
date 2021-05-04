@@ -74,7 +74,7 @@ let contador = 0;
 
 function highestCount(numeroAleatorio, maior, contador){
   for (let index = 0; index < numeroAleatorio.length; index += 1 ){
-    maior = Math.max.apply(null, numeroAleatorio);
+    maior = Math.max.apply(maior, numeroAleatorio);
 
     if(maior === numeroAleatorio[index]){
       contador = contador + 1;
@@ -84,7 +84,7 @@ function highestCount(numeroAleatorio, maior, contador){
   return contador;
 }
 
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7], maior, contador));
+console.log(highestCount([-1, -2, -3], maior, contador));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2){
