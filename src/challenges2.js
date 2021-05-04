@@ -16,6 +16,15 @@ function createArrayTechList(listOfTechs, name) {
   return objects;
 }
 
+function checkAndSort(objects, indexArray, indexArray2, change) {
+  if (objects[indexArray].tech < objects[indexArray2].tech) {
+    change = objects[indexArray].tech;
+    objects[indexArray].tech = objects[indexArray2].tech;
+    objects[indexArray2].tech = change;
+  }
+  return objects;
+}
+
 function techList(listOfTechs, name) {
   let objects = createArrayTechList(listOfTechs, name);
 
@@ -23,11 +32,7 @@ function techList(listOfTechs, name) {
 
   for (let indexArray = 0; indexArray < objects.length; indexArray += 1) {
     for (let indexArray2 = 0; indexArray2 < objects.length; indexArray2 += 1) {
-      if (objects[indexArray].tech < objects[indexArray2].tech) {
-        change = objects[indexArray].tech;
-        objects[indexArray].tech = objects[indexArray2].tech;
-        objects[indexArray2].tech = change;
-      }
+      checkAndSort(objects, indexArray, indexArray2, change);
     }
   }
 
@@ -101,7 +106,7 @@ function generatePhoneNumber(numbers) {
 
   return number.join('');
 }
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
+
 // Desafio 12
 function triangleCheckLineA(lineA, lineB, lineC) {
   if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
