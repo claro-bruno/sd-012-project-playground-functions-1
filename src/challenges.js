@@ -54,13 +54,13 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(array){
   for (index = 0; index < array.length; index += 1) {
     if (array[index] % 3 === 0 && array[index] % 5 !== 0) {
-      array.index = 'fizz';
+      array[index] = 'fizz';
     } else if (array[index] % 3 !== 0 && array[index] % 5 === 0) {
-      array.index = 'buzz';
+      array[index] = 'buzz';
     } else if (array[index] % 3 === 0 && array[index] % 5 === 0) {
-      array.index = 'fizzBuzz';
-    } else {
-      array.index = 'bug!';
+      array[index] = 'fizzBuzz';
+    } else if (array[index] % 3 !== 0 && array[index] % 5 !=== 0) {
+      araay[index] = 'bug!';
     }
   }
   return array;
