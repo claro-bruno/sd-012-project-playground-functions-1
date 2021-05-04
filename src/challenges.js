@@ -90,7 +90,7 @@ function fizzBuzz(arrayNumberInput) {
       resultado.push('bug!')
     }
   }
-  console.log(resultado);
+  return resultado;
 }
 
 // Desafio 9
