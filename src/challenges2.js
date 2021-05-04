@@ -3,7 +3,6 @@ function techList(projectTech, name) {
   if (projectTech.length === 0){
     return"Vazio!";
   } else {
-    let projectTechSort = projectTech.sort();
     let array = [];
     for (let index = 0; index < projectTech.length; index += 1){
       let object = {
