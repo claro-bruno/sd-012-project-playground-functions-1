@@ -79,10 +79,9 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'os gatos trombam e o rato foge';
   }
 }
-console.log(catAndMouse(0,3,2))
-console.log(catAndMouse(1,7,13))
-console.log(catAndMouse(-1,-1,-1))
-
+console.log(catAndMouse(0, 3, 2));
+console.log(catAndMouse(1, 7, 13));
+console.log(catAndMouse(-1, -1, -1));
 
 // Desafio 8
 function fizzBuzz(numbers) {
@@ -120,13 +119,28 @@ function encode(code) {
       encodeVar[indexCode] = 5;
     }
   }
-  return encodeVar;
+  return encodeVar.join('');
 }
 console.log(encode('hi there!'));
 
-function decode() {
-  // seu código aqui
+function decode(uncode) {
+  let decodeVar = uncode.split('');
+  for (let indexUncode = 0; indexUncode < decodeVar.length; indexUncode += 1) {
+    if (decodeVar[indexUncode] === '1') {
+      decodeVar[indexUncode] = 'a';
+    } else if (decodeVar[indexUncode] === '2') {
+      decodeVar[indexUncode] = 'e';
+    } else if (decodeVar[indexUncode] === '3') {
+      decodeVar[indexUncode] = 'i';
+    } else if (decodeVar[indexUncode] === '4') {
+      decodeVar[indexUncode] = 'o';
+    } else if (decodeVar[indexUncode] === '5') {
+      decodeVar[indexUncode] = 'u';
+    }
+  }
+  return decodeVar.join('');
 }
+console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
