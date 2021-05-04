@@ -137,7 +137,10 @@ function generatePhoneNumber() {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-  return lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB && lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB);
+  let verlineA = lineA < lineB + lineC && lineA > Math.abs(lineB - lineC);
+  let vetlineB = lineB < lineA + lineC && lineB > Math.abs(lineA - lineC);
+  let verlineC = lineC < lineA + lineB && lineC > Math.abs(lineA - lineB);
+  return verlineA && verlineB && verlineC;
 }
 
 // Desafio 13
@@ -149,7 +152,7 @@ function hydrate(string) {
     con += numeros[indice];
   } if (con === 1) {
     return ('1 copo de água');
-  };
+  }
   return (`${con} copos de água`);
 }
 
