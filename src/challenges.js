@@ -117,6 +117,23 @@ function decode(string) {
   return novaString;
 }
 
+// Desafio 10
+function arrayFunction() {
+  // seu código aqui numeros
+}
+
+// Desafio 11
+function generatePhoneNumber() {
+  // seu código aqui numeros
+  /* for (let numero of numeros) {
+    if (numero < 0 || numero > 9) {
+      return 'não é possível gerar um número de telefone com esses valores'
+    } else if (numeros.lenght < 10) {
+      return 'Array com tamanho incorreto.';
+    };
+  } */
+}
+
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
@@ -153,20 +170,3 @@ module.exports = {
   triangleCheck,
   hydrate,
 };
-
-// Desafio 10
-function arrayFunction(x) {
-  // seu código aqui numeros
-}
-
-// Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui numeros
-  /* for (let numero of numeros) {
-    if (numero < 0 || numero > 9) {
-      return 'não é possível gerar um número de telefone com esses valores'
-    } else if (numeros.lenght < 10) {
-      return 'Array com tamanho incorreto.';
-    };
-  } */
-}
