@@ -1,7 +1,16 @@
 // Desafio 1
 function compareTrue() {
   // seu código aqui
-  let number;
+  let val;
+  let val2;
+
+  if (val && val2) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+
+
 }
 
 // Desafio 2
