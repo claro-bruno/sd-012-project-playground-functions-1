@@ -118,8 +118,10 @@ function encode(letras) {
   
   }
  return novaPalavra
- 
- function decode(letras) {
+}
+
+
+function decode(letras) {
   // seu código aqui
   let novaPalavra = ''
 
@@ -148,10 +150,6 @@ function encode(letras) {
     return novaPalavra 
   }
 }
-}
-
-
-
 
 module.exports = {
   calcArea,
