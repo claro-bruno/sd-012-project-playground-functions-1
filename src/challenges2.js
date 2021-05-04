@@ -1,6 +1,21 @@
 // Desafio 10
-function techList() {
+function techList(listaTec, nome) {
   // seu código aqui
+  let objeto = [];
+  let lista = {};
+  
+  if (listaTec.length === 0) {
+    return 'Vazio!';
+  } else {
+    for (let varIni = 0; varIni < listaTec.length; varIni += 1) {
+      lista = {
+        tech: listaTec[varIni],
+        name: nome
+      }
+      objeto.push(lista);
+    }
+  }
+  return objeto;
 }
 
 // Desafio 11
@@ -38,7 +53,7 @@ function hydrate(string) {
   }
   return con > 1 ? con + ' copos de água' : con + ' copo de água';
 }
-//console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho 5 pettras"));
+
 module.exports = {
   generatePhoneNumber,
   techList,
