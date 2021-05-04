@@ -1,49 +1,47 @@
 // Desafio 1
-function compareTrue(number1,number2) {
-  // seu código aqui
- let number1 = 5;
- let number2 = 3;
- let isTrue = (number1 >= 3 && number2 >= 3  );
-//  let isFalse = (number1 <= 2 && number2 <= 2 );
-
- if (number1 >= 3 && number2 >= 3){
-   return isTrue;
+function compareTrue(valor1, valor2) {
+//   // seu código aqui
+  let resultado;
+ if (valor1 === true && valor2 === true){
+    resultado = true;
  } else {
-   return isTrue = False;
+    resultado = false;
  }
+  return resultado;
 };
-// console.log(compareTrue(2,2));
+console.log(compareTrue(3,3));
+
 
 // Desafio 2
-function calcArea(base, altura) {
+function calcArea(base, height) {
   // seu código aqui
   let area = 0;
-  if(base > 0 && altura > 0) {
-    area = (base * altura) /2;
+  if(base > 0 && height > 0) {
+    area = (base * height) /2;
   }
   return area;
 };
-// console.log(calcArea(2,4))
+
 
 // Desafio 3
-function splitSentence(" ") {
+function splitSentence(string) {
   // seu código aqui
   let divisao = string.split(" ");
   return divisao;
 };
-// console.log(splitSentence(" "));
+
 
 // Desafio 4
+let concatenacaoDaString = ["Lucas", "Cassiano," "Ferraz", "Paolillo"];
 function concatName(string) {
-  // seu código aqui
-  let concatenacaoDaString = [];
-
-  for (let index = 0; index < string.length; index++) {
+  
+  for (let index = 0; index <= string.length; index++) {
     concatenacaoDaString = string[index] + "," +
   };
   return concatenacaoDaString;
 
 };
+console.log(concatName(concatenacaoDaString));
 
 // Desafio 5
 function footballPoints() {
