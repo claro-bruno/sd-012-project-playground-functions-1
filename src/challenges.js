@@ -65,7 +65,7 @@ function catAndMouse(mouse, cat1, cat2){
     return 'os gatos trombam e o rato foge';
   };
 };
-console.log(catAndMouse(1, 0, 2))
+
 // Desafio 8
 function fizzBuzz(numeros) {
   // seu código aqui
@@ -83,7 +83,7 @@ function fizzBuzz(numeros) {
   };
 return lista
 };
-console.log(fizzBuzz([2, 15, 7, 9, 45]))
+
 
 // Desafio 9
 function encode(letras) {
@@ -93,28 +93,28 @@ function encode(letras) {
     switch (letras[index]) {
       case 'a':
         novaPalavra += 1;
-        break
+        break;
 
       case 'e':
         novaPalavra += 2;
-        break
+        break;
 
       case 'i':
         novaPalavra += 3;
-        break
+        break;
 
       case 'o':
         novaPalavra += 4;
-        break
+        break;
 
       case 'u':
         novaPalavra += 5;
-        break
+        break;
 
       default:
         novaPalavra += letras[index];
         break;
-  }
+    }
   
   }
  return novaPalavra
@@ -129,23 +129,23 @@ function decode(letras) {
     switch (letras[index]){
       case '1':
         novaPalavra += 'a'
-        break
+        break;
 
         case '2':
         novaPalavra += 'e'
-        break
+        break;
 
         case '3':
         novaPalavra += 'i'
-        break
+        break;
 
         case '4':
         novaPalavra += 'o'
-        break
+        break;
 
         case '5':
         novaPalavra += 'u'
-        break
+        break;
     }
     return novaPalavra 
   }
