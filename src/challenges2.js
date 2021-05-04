@@ -23,18 +23,10 @@ function isTriangulo2(lineA1, lineB1, lineC1) {
 // Desafio 12 - Parte 3
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-  /*let lineA1 = lineA;
-  let lineB1 = lineB;
-  let lineC1 = lineC;*/
   let resultado = (isTriangulo1(lineA, lineB, lineC) && isTriangulo2(lineA, lineB, lineC));
-  if (resultado) {
-    console.log(true);
-  } else {
-    console.log(false;
-  }
   return resultado;
 }
-console.log(triangleCheck(16, 20, 30));
+
 // Desafio 13
 function hydrate(string) {
   // seu código aqui
@@ -44,9 +36,9 @@ function hydrate(string) {
       con += parseInt(string[indice]);
     }
   }
-  return con;
+  return con > 1 ? con + ' copos de água' : con + ' copo de água';
 }
-//console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"));
+//console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho 5 pettras"));
 module.exports = {
   generatePhoneNumber,
   techList,
