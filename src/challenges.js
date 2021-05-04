@@ -135,10 +135,9 @@ function decode(numeros){
     }
     
   }
-  console.log(substituiçao)
+  return substituiçao;
 } 
 
-decode('H3 th2r2')
 
 module.exports = {
   calcArea,
