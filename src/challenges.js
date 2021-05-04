@@ -50,8 +50,8 @@ function highestCount(numeros) {
     }
   }
   let repeticao = 0;
-  for (let index2 = 0; index2 < numeros.length; index2 +=1) {
-    if (numeros[index2] == numeroMaior) {
+  for (let index2 = 0; index2 < numeros.length; index2 += 1) {
+    if (numeros[index2] === numeroMaior) {
       repeticao += 1;
     }
   }
