@@ -70,16 +70,20 @@ function numberHasError(numbers) {
   return 0;
 }
 
+function numberToArray(numbers, arrayNumbers, index) {
+  for (let indexArray = 0; indexArray < arrayNumbers.length; indexArray += 1) {
+    if (arrayNumbers[indexArray] === ' ') {
+      arrayNumbers[indexArray] = numbers[index];
+      return arrayNumbers;
+    }
+  }
+}
+
 function createPhoneArray(numbers) {
   let arrayNumbers = ['(', ' ', ' ', ')', '_', ' ', ' ', ' ', ' ', ' ', '-', ' ', ' ', ' ', ' '];
 
   for (let index = 0; index < numbers.length; index += 1) {
-    for (let indexArray = 0; indexArray < arrayNumbers.length; indexArray += 1) {
-      if (arrayNumbers[indexArray] === ' ') {
-        arrayNumbers[indexArray] = numbers[index];
-        break;
-      }
-    }
+    arrayNumbers = numberToArray(numbers, arrayNumbers, index);
   }
 
   return arrayNumbers;
@@ -97,7 +101,7 @@ function generatePhoneNumber(numbers) {
 
   return number.join('');
 }
-
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
 // Desafio 12
 function triangleCheckLineA(lineA, lineB, lineC) {
   if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
