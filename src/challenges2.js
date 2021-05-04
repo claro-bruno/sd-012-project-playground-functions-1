@@ -13,8 +13,8 @@ function techList(array, name) {
 
 function repeticao(array) {
   for (let i = 0; i < array.length; i += 1) {
-    for (let j = 0; j < array.length; j += 1) {
     let vezes = 0;
+    for (let j = 0; j < array.length; j += 1) {
       if (array[i] === array[j]) {
         vezes += 1;
       }
@@ -58,17 +58,16 @@ function generatePhoneNumber(array) {
   return resposta;
 }
 
-console.log(generatePhoneNumber([1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 4]));
 // Desafio 12
 function triangleCheck(a, b, c) {
   // seu código aqui
-  if (a > Math.abs(b - c)) {
+  if (a < (b + c) && a > Math.abs(c - b)) {
     return true;
   }
-  if (b > Math.abs(a - c)) {
+  if (b < (a + c) && b > Math.abs(a - c)) {
     return true;
   }
-  if (c > Math.abs(b - a)) {
+  if (c < (b + a) && c > Math.abs(b - b)) {
     return true;
   }
 
@@ -88,8 +87,6 @@ function hydrate(string) {
   });
   return dale > 1 ? `${dale} copos de água` : `${dale} copo de água`;
 }
-
-console.log(hydrate('3 cerveja 8'));
 
 module.exports = {
   generatePhoneNumber,
