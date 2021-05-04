@@ -45,20 +45,19 @@ function highestCount(array) {
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] > maior) {
       maior = array[index]; 
-    } else if (maior == 0) {
-      maior = array[index];
-    } 
+    }
   }
-
-  function buscaRepetidos (valor) {
-    if (valor === maior)
-    return valor;
-  }
-  let numerosRepetidos = array.filter(buscaRepetidos);
   
+  let numerosRepetidos = 0;
+  
+  for (let indice = 0; indice < array.length; indice += 1) {
+    if (maior === array[indice]) {
+      numerosRepetidos = numerosRepetidos += 1
+    }
+  }
   
  
-  console.log(numerosRepetidos.length);
+  console.log(numerosRepetidos);
 }
 highestCount([0,0,0]);
 
@@ -96,9 +95,30 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(vogais) {
+  vogais = vogais.toLowerCase();
+  
+  let substituiçao = '';
+  for (let index = 0; index < vogais.length; index += 1) {
+    if (vogais[index] === 'a') {
+      substituiçao += '1';
+    } else if (vogais[index] === 'e') {
+      substituiçao += '2';
+    } else if (vogais[index] === 'i') {
+      substituiçao += '3';
+    } else if (vogais[index] === 'o') {
+      substituiçao += '4';
+    } else if (vogais[index] === 'u') {
+      substituiçao += '5';
+    }
+    
+  }
+  
 }
+
+
+encode("hi there!");
+
 function decode() {
   // seu código aqui
 }
