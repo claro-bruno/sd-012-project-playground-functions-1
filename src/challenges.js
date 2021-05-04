@@ -2,23 +2,21 @@
 //function compareTrue(bool1,bool2) {
 //    return bool1 && bool2 ;
 //} 
-
  //Desafio 2
 //function calcArea(base,height) {
   //let area = (base * height) / 2;
   //return area;
  //}
-
- //Desafio 3
-//function splitSentence(newfrase) {
- // let array = [];
-  //let text = " ";
-  //for ( let index=0; index< newfrase.length; index///+=1); {
-   // if (newfrase[index] == text);
- //     array.push(text + newfrase[index];)
- //   } 
- //     return array;
- // }
+ Desafio 3
+  function splitSentence(newfrase) {
+  let array = [];
+  let text = " ";
+    for ( let index=0; index< newfrase.length; index +=1); {
+    if (newfrase[index] == text);
+      array.push(text + newfrase[index];)
+    } 
+      return array;
+    }
 
  //Desafio 4
   //function concatName(array) {
@@ -29,27 +27,10 @@
   //return nome; 
 //}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function footballPoints(wins,ties) {
-    let match = wins *3 + ties *1;
-    return match;
-}
+//function footballPoints(wins,ties) {
+  //  let match = wins *3 + ties *1;
+    //return match;
+//}
 
 
 
