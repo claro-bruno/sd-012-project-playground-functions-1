@@ -57,6 +57,7 @@ function highestCount(numeros) {
   }
   return repeticao;
 }
+console.log(highestCount([15,15,15,10,10,13]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -77,9 +78,27 @@ function catAndMouse(mouse, cat1, cat2) {
 // https://www.javascriptprogressivo.net/2019/01/Tutorial-Objeto-Math-Trabalhando-Matematica-JS.html
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz0(numeros) {
+  if (numeros % 3 === 0 && numeros % 5 === 0) {
+    return 'fizzBuzz';
+  }
+  if (numeros % 3 === 0) {
+    return 'fizz';
+  }
+  if (numeros % 5 === 0) {
+    return 'buzz';
+  }
+  return 'bug';
 }
+
+function fizzBuzz(resultado) {
+  let total = [];
+  for (let numeros of resultado) {
+    total.push(fizzBuzz0(numeros));
+  }
+  return total;
+}
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
