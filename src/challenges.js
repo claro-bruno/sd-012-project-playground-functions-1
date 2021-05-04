@@ -54,12 +54,12 @@ function highestCount(arrayNumbers) {
 }
 return repetidor;
 }
- console.log(highestCount([0, 0, 0]))
+ 
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2){
   // seu código aqui
-
+  
 }
 
 // Desafio 8
