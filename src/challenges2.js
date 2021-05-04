@@ -1,8 +1,16 @@
 // Desafio 10
-function techList() {
- //
-}
- 
+function techList(array, name) {
+  array.sort();
+  let novoarray = [];
+  for (let index = 0; index < array.length; index += 1) {
+    novoarray[index] = {
+      tech: array[index],
+      name: name,
+    }
+  }
+  return novoarray; 
+};
+
 // Desafio 11
 function generatePhoneNumber(numero) {
   if (numero.length !== 11) {
@@ -36,11 +44,11 @@ function generatePhoneNumber(numero) {
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-let resposta = false;
-if ( (lineA < (lineB + lineC)) && (lineA > Math.abs(lineB - lineC))) {
-  resposta = true;
-}
-return (resposta);
+  let resposta = false;
+  if ( (lineA < (lineB + lineC)) && (lineA > Math.abs(lineB - lineC))) {
+    resposta = true;
+  }
+  return (resposta);
 }
 
 // Desafio 13
@@ -52,10 +60,9 @@ function hydrate(bebida) {
     }
   }
   if (copoBebida > 1) {
-    return copoBebida + ' copos de água';
-  } else {
-    return copoBebida + ' copo de água';
+    return copoBebida += ' copos de água';
   }
+  return copoBebida += ' copo de água';
 }
 
 module.exports = {
