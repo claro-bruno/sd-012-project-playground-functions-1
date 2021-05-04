@@ -77,25 +77,9 @@ function catAndMouse(mouse, cat1, cat2) {
 // https://www.javascriptprogressivo.net/2019/01/Tutorial-Objeto-Math-Trabalhando-Matematica-JS.html
 
 // Desafio 8
-function fizzBuzz(teste) {
-
-  let memoria = [];
-  for (let index = 0; index < teste.length; index += 1);
-  if (teste[index] % 3 === 0) {
-    memoria.push('fizz');
-  }
-  else if (teste[index] % 5 === 0) {
-    memoria.push('buzz');
-  }
-  else if (teste[index] % 3 === 0 && teste[index] % 5 === 0) {
-    memoria.push('fizzBuzz');
-  }
-  else if (teste[index] % 3 !== 0 && teste[index] % 5 !== 0) {
-    memoria.push('bug!');
-  }
-  return memoria;
+function fizzBuzz() {
+  // seu código aqui
 }
-console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode() {
