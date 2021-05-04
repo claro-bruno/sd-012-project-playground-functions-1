@@ -40,46 +40,115 @@ function footballPoints(wins, ties) {
 function highestCount(arrayNumbers) {
   // seu código aqui
   // Com a ajuda do Bruno Yamamoto
-  let greater = Math.max.apply(null, arrayNumbers);
+  let maior = Math.max.apply(null, arrayNumbers);
   let counter = 0;
   for (let index = 0; index < arrayNumbers.length; index += 1) {
     if (arrayNumbers[index] === greater) {
-      counter += 1;
+      maior += 1;
     }
   }
-  return counter;
+  return maior;
 }
  
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2){
   // seu código aqui
-  let distance1 = Math.abs(mouse - cat1);
-  let distance2 = Math.abs(mouse - cat2);
+  let distancia1 = Math.abs(mouse - cat1);
+  let distancia2 = Math.abs(mouse - cat2);
   
-  if( distance1 < distance2){
+  if( distancia1 < distancia2){
     return 'cat1';
-  } else if (distance1 > distance2) {
+  } else if (distancia1 > distancia2) {
     return 'cat2';
-  } else if (distance1 === distance2) {
+  } else if (distancia1 === distancia2) {
     return 'os gatos trombam e o rato foge';
   };
 };
-
+console.log(catAndMouse(1, 0, 2))
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(numeros) {
   // seu código aqui
-
-
-
-}
+  let lista = []
+  for(let index = 0; index < numeros.length; index += 1){
+    if(numeros[index] % 3 === 0 && numeros[index] % 5 === 0){
+      lista.push('fizzBuzz')
+    } else if (numeros[index] % 3 === 0){
+      lista.push('fizz')
+    } else if (numeros[index] % 5 === 0){
+      lista.push('buzz')
+    } else if (numeros[index] % 3 != 0 && numeros[index] % 5 != 0) {
+      lista.push('bug!')
+    };
+  };
+return lista
+};
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
-function encode() {
+function encode(letras) {
   // seu código aqui
+  let novaPalavra = ''
+  for(let index = 0; index < letras.length; index += 1){
+    switch (letras[index]) {
+      case 'a':
+        novaPalavra += 1;
+        break
+
+      case 'e':
+        novaPalavra += 2;
+        break
+
+      case 'i':
+        novaPalavra += 3;
+        break
+
+      case 'o':
+        novaPalavra += 4;
+        break
+
+      case 'u':
+        novaPalavra += 5;
+        break
+
+      default:
+        novaPalavra += letras[index];
+        break;
+  }
+  
+  }
+  return novaPalavra
 }
-function decode() {
+console.log(encode('hi there'))
+
+function decode(letras) {
   // seu código aqui
+  let novaPalavra = ''
+
+  for(let index = 0; index < letras.length; index += 1){
+    switch (letras[index]){
+      case '1':
+        novaPalavra += 'a'
+        break
+
+        case '2':
+        novaPalavra += 'e'
+        break
+
+        case '3':
+        novaPalavra += 'i'
+        break
+
+        case '4':
+        novaPalavra += 'o'
+        break
+
+        case '5':
+        novaPalavra += 'u'
+        break
+    }
+    return novaPalavra 
+  }
 }
 
 module.exports = {
