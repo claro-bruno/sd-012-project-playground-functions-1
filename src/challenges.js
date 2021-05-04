@@ -118,14 +118,49 @@ function fizzBuzz(numberBuzz) {
 // console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
+  let novaString = '';
+  for (let indice = 0; indice < string.length; indice += 1) {
+    if (string[indice] === 'a') {
+      novaString += string[indice].replace('a', '1');
+    } else if (string[indice] === 'e') {
+      novaString += string[indice].replace('e', '2');
+    } else if (string[indice] === 'i') {
+      novaString += string[indice].replace('i', '3');
+    } else if (string[indice] === 'o') {
+      novaString += string[indice].replace('o', '4');
+    } else if (string[indice] === 'u') {
+      novaString += string[indice].replace('u', '5');
+    } else {
+      novaString += string[indice];
+    }
+  }
+  return novaString;
   
 }
-function decode() {
+function decode(string) {
   // seu código aqui
-  
+  let novaString = '';
+  for (let indice = 0; indice < string.length; indice += 1) {
+    if (string[indice] === '1') {
+      novaString += string[indice].replace('1', 'a');
+    } else if (string[indice] === '2') {
+      novaString += string[indice].replace('2', 'e');
+    } else if (string[indice] === '3') {
+      novaString += string[indice].replace('3', 'i');
+    } else if (string[indice] === '4') {
+      novaString += string[indice].replace('4', 'o');
+    } else if (string[indice] === '5') {
+      novaString += string[indice].replace('5', 'u');
+    } else {
+      novaString += string[indice];
+    }
+  }
+  return novaString;
 }
+console.log(encode("hi there!"));
+console.log(decode("h3 th2r2!"))
 
 module.exports = {
   calcArea,
