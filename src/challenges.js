@@ -38,9 +38,10 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
+// Ajuda do colega Cristiano Lima turma 12 para a correção da variavel 'maior'
 function highestCount(arrayNumbers) {
-  let maior = 0;
-  for (let index = 0; index < arrayNumbers.length; index += 1) {
+  let maior = arrayNumbers[0];
+  for (let index = 1; index < arrayNumbers.length; index += 1) {
     if (arrayNumbers[index] > maior) {
       maior = arrayNumbers[index];
     }
