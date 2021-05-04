@@ -134,12 +134,59 @@ function fizzBuzz(verificaArray) {
 console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(encodificando) { //frase é uma string
+  let arraySepara = [];
+  let arrayJunta = [];
+  arraySepara = encodificando.split('');
+  for(index = 0; index < arraySepara.length; index += 1){
+    if(arraySepara[index] === 'a'){
+      arraySepara.splice(0, 1, '1');
+
+    }else if(arraySepara[index] === 'e'){
+      arraySepara.splice(index, 1, '2');
+
+    }else if(arraySepara[index] === 'i'){
+      arraySepara.splice(index, 1, '3');
+      
+    }else if(arraySepara[index] === 'o'){
+      arraySepara.splice(index, 1, '4');
+      
+    }else if(arraySepara[index] === 'u'){
+      arraySepara.splice(index, 1, '5'); 
+    }
+  }
+  arrayJunta = arraySepara.join('');
+  return arrayJunta;
 }
-function decode() {
-  // seu código aqui
+
+console.log(encode('hi there!'));
+
+function decode(decodificando) {
+  let separa = [];
+  let junta = [];
+  separa = decodificando.split('');
+  for(index = 0; index < separa.length; index += 1){
+    if(separa[index] === '1'){
+      separa.splice(0, 1, 'a');
+
+    }else if(separa[index] === '2'){
+      separa.splice(index, 1, 'e');
+
+    }else if(separa[index] === '3'){
+      separa.splice(index, 1, 'i');
+      
+    }else if(separa[index] === '4'){
+      separa.splice(index, 1, 'o');
+      
+    }else if(separa[index] === '5'){
+      separa.splice(index, 1, 'u'); 
+    }
+  }
+  junta = separa.join('');
+  return junta;
 }
+
+console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
