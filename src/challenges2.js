@@ -10,15 +10,15 @@ function techList(techNames, personName) {
         {
           tech: firstList[index],
           name: personName,
-        }
-      )
+        },
+      );
     }
     return secondList;
   }
 }
 
 // Desafio 11
-function generatePhoneNumber(numbers) {  
+function generatePhoneNumber(numbers) {
   if (numbers.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
@@ -34,12 +34,12 @@ function generatePhoneNumber(numbers) {
           return 'não é possível gerar um número de telefone com esses valores';
         }
       }
-    } 
+    }
   }
   let phone = numbers.map(String);
   let final = '(' + phone[0] + phone[1] + ') ' + phone[2] + phone[3] + phone[4] + phone[5] + phone[6] + '-' + phone[7] + phone[8] + phone[9] + phone[10];
   return final;
-} 
+}
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
@@ -65,15 +65,10 @@ function hydrate(drinks) {
   } 
   if (sum === 1) {
     return sum + ' copo de água';
-  } else {    
+  } else {  
     return sum + ' copos de água';
-  } 
+  }
 }
-
-
-
-
-
 
 module.exports = {
   generatePhoneNumber,
