@@ -88,13 +88,7 @@ function highestCount(numeroAleatorio, contador){
 console.log(highestCount(numeroAleatorio, contador));
 
 // Desafio 7
-let cat1 = 6;
-let cat2 = 12;
-let mouse;
-
 function catAndMouse(mouse, cat1, cat2){
-  mouse = 0;
-
   let dist1 = mouse - cat1;
   let dist2 = mouse - cat2;
 
@@ -113,7 +107,7 @@ function catAndMouse(mouse, cat1, cat2){
   return resp;
 }
 
-console.log(catAndMouse(mouse, cat1, cat2));
+console.log(catAndMouse(0,8,8));
 
 // Desafio 8
 function fizzBuzz() {
