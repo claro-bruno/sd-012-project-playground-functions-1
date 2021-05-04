@@ -1,8 +1,28 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(matriz, nome) {
+  if (matriz.length < 1){
+    return 'Vazio!';
+  }
+    
 }
+function techList(array, name) {
+  /* if array ===0
+  return vazio
+  for (let
+  let saida =
+  tec: key,
+  name: name
+  
+  output push
+  return saida
 
+  let tabela = {
+    nome: "Hum",
+    idade: 10, */
+  };
+  /* //console.log(tabela);
+  tabela.push("dois");
+  console.log(tabela); */
 // Desafio 11
 function generatePhoneNumber(numero) {
   if (numero.length !== 11) {
@@ -45,8 +65,18 @@ return (resposta);
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(bebida) {
+  let copoBebida = 0;
+  for (let index = 0; index < bebida.length; index += 1) {
+    if ((parseInt(bebida[index]) > 0) && (parseInt(bebida[index]) < 9)) {
+      copoBebida += parseInt(bebida[index]);
+    }
+  }
+  if (copoBebida > 1) {
+    return copoBebida + ' copos de água';
+  } else {
+    return copoBebida + ' copo de água';
+  }
 }
 
 module.exports = {
