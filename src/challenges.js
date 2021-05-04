@@ -1,15 +1,15 @@
 // Desafio 1
 function compareTrue(val1, val2) {
   // seu código aqui
-  let res
+  let rescompare
 
   if (val1 == true && val2 == true) {
-    res = true;
+    rescompare = true;
   } else {
-    res = false;
+    rescompare = false;
   }
 
-  return res;
+  return rescompare;
 
 }
 
@@ -17,15 +17,19 @@ function compareTrue(val1, val2) {
 function calcArea(base, height) {
   // seu código aqui
 
-  let res = (base * height) / 2;
+  let rescalc = (base * height) / 2;
 
-  return res;
+  return rescalc;
 
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(valSentence) {
   // seu código aqui
+  let resSentence = valSentence.split(' ');
+
+  return resSentence;
+
 }
 
 // Desafio 4
