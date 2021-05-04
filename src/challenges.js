@@ -72,7 +72,7 @@ console.log(footballPoints(wins, ties));
 let maior;
 let contador = 0;
 
-function highestCount(numeroAleatorio, maior, contador){
+function highestCount(numeroAleatorio, contador){
   for (let index = 0; index < numeroAleatorio.length; index += 1 ){
     maior = Math.max.apply(maior, numeroAleatorio);
 
@@ -84,7 +84,7 @@ function highestCount(numeroAleatorio, maior, contador){
   return contador;
 }
 
-console.log(highestCount([-1, -2, -3], maior, contador));
+console.log(highestCount([-1, -2, -1, -3], contador));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2){
@@ -106,7 +106,7 @@ function catAndMouse(mouse, cat1, cat2){
   return resp;
 }
 
-console.log(catAndMouse(0,8,8));
+console.log(catAndMouse(0, 8, 8));
 
 // Desafio 8
 function fizzBuzz() {
