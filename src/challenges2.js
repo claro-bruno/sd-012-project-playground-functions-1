@@ -32,10 +32,16 @@ function generatePhoneNumber(number) {
   let count = 0;
 
   for (let index = 0; index < number.length; index += 1) {
+    count = 0;
+
     for (let indice = 0; indice < number.length; indice += 1) {
       if ((index !== indice) && (number[index] === number[indice])){
         count += 1;
       }
+    }
+    
+    if (count >= 2) {
+      return "não é possível gerar um número de telefone com esses valores";
     }
   }
   
@@ -45,7 +51,7 @@ function generatePhoneNumber(number) {
     
   } else {
     for (let index = 0; index < number.length; index += 1) {
-      if (number[index] < 0 || number[index] > 9 || count >= 3) {
+      if (number[index] < 0 || number[index] > 9) {
         message = "não é possível gerar um número de telefone com esses valores";
         return message;
         
@@ -57,6 +63,7 @@ function generatePhoneNumber(number) {
   }
   return phonenumber;
 }
+console.log(generatePhoneNumber([5, 2, 8, 1, 2, 3, 7, 2, 8, 9, 0]));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
