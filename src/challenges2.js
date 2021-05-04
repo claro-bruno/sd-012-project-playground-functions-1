@@ -47,10 +47,17 @@ function generatePhoneNumber(phoneNumber) {
           return `(${phoneNumber1J}) ${phoneNumber2J}-${phoneNumber3J}`
         }
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA,lineB,lineC) {
+  let subAB = Math.abs(lineA - lineB );
+  let subAC = Math.abs(lineA - lineC);
+  let subBC = Math.abs(lineB - lineC);
+  if (lineA < (lineB + lineC) && lineA > subBC && lineB < (lineA + lineC)
+   && lineB > subAC && lineC < (lineA + lineB) && lineC > subAB) {
+     return true
+   } else {
+     return false
+   }
 }
-
 // Desafio 13
 function hydrate() {
   // seu código aqui
