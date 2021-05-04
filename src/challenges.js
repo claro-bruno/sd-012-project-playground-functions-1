@@ -90,7 +90,7 @@ function getFizzBuzz(getArrayBuzz) { // Sistema de repetição para key e arrayB
 function fizzBuzz(arrayBuzz) {
   return getFizzBuzz(arrayBuzz);
 }
-console.log(getFizzBuzz([2, 15, 7, 9, 45]));
+console.log(getFizzBuzz([7, 9]));
 
 // Desafio 9
 function encode(toEncode) {
