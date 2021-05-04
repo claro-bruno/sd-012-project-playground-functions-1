@@ -66,7 +66,6 @@ function highestCount(arrayDeNumbers) {
   for (let index2Array = 0; index2Array < arrayDeNumbers.length; index2Array += 1) {
     if (arrayDeNumbers[index2Array] === numeroMaisAlto) {
       repeticoesMaiorNumero += 1;
-
     }
   }
   return repeticoesMaiorNumero;
