@@ -23,9 +23,9 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(arrayString) {
-  let first = `${arrayString[arrayString.length - 1]} ${', '}`;
+  let first = `${arrayString[arrayString.length - 1]}${', '}`;
   let second = arrayString[0];
-  let final = `${first} ${second}`;
+  let final = `${first}${second}`;
   return final;
 }
 
@@ -46,8 +46,8 @@ function highestCount(arrayNumbers) {
     }
   }
   let contaNum = 0;
-  for (let numero in arrayNumbers) {
-    if (arrayNumbers[numero] === maior) {
+  for (let numero = 0; numero < arrayNumbers.length; index +=1) {
+    if (maior === arrayNumbers[numero]) {
       contaNum += 1;
     }
   }
