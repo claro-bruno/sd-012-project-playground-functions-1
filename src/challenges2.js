@@ -3,18 +3,17 @@ function techList(techNames, personName) {
   let secondList = [];
   if (techNames.length === 0) {
     return 'Vazio!';
-  } else {
-    let firstList = techNames.sort();
-    for (let index = 0; index < firstList.length; index += 1) {
-      secondList.push(
-        {
-          tech: firstList[index],
-          name: personName,
-        },
-      );
-    }
-    return secondList;
+  } 
+  let firstList = techNames.sort();
+  for (let index = 0; index < firstList.length; index += 1) {
+    secondList.push(
+      {
+        tech: firstList[index],
+        name: personName,
+      },
+    );
   }
+  return secondList;  
 }
 
 // Desafio 11
@@ -59,13 +58,13 @@ function triangleCheck(lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(drinks) {
   let numbers = drinks.match(/\d+/g);
-  let sum = 0;  
+  let sum = 0;
   for (let index = 0; index < numbers.length; index += 1) {
     sum += Number(numbers[index]);
-  } 
+  }
   if (sum === 1) {
     return sum + ' copo de água';
-  } else {  
+  } else {
     return sum + ' copos de água';
   }
 }
