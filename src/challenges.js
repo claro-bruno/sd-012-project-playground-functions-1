@@ -88,7 +88,7 @@ else if (cat2x < cat1x) {
 function fizzBuzz(array) {
 for (let index = 0; index < array.length; index += 1);
 let storage = [];
-if (array[index] % 3 != 0 && array[index] % 5 != 0){
+if (array[index] % 3 !== 0 && array[index] % 5 !== 0){
       return storage.push('bug!');
     }
     else if (array[index] % 3 === 0 && array[index] % 5 === 0){
