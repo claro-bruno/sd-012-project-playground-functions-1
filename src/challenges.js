@@ -2,9 +2,9 @@
 function compareTrue(valor1, valor2) {
 //   // seu código aqui
   let resultado;
- if (valor1 === true && valor2 === true){
+    if (valor1 === true && valor2 === true) {
     resultado = true;
- } else {
+ }  else {
     resultado = false;
  }
   return (resultado);
@@ -36,18 +36,13 @@ function splitSentence(string) {
   // console.log(splitSentence("Vamo que Vamo"))
 
 // Desafio 4
-function concatName(concatarray) {
+function concatName(concatenedArray) {
   // seu código aqui
-  let firstArray = concatarray[0];
-  let lastArray = concatarray[(concatarray.length) - 1];
-  let resultado = '${lastArray}, ${firstArray}';
-  // let resultado = [lastArray +', '+ firstArray];
-  return (resultado);
-
+  return concatenedArray[concatenedArray.length - 1] +', '+ concatenedArray[0];
 };
-// console.log(concatName(['Lucas','Cassiano','Ferraz','Paolillo']));
-// console.log(concatName(['foguete', 'não', 'tem','ré']));
-// console.log(concatName(['captain', 'my', 'captain']));
+console.log(concatName(['Lucas','Cassiano','Ferraz','Paolillo']));
+console.log(concatName(['foguete', 'não', 'tem','ré']));
+console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints(wins,ties) {
