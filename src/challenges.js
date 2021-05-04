@@ -93,7 +93,6 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(vogais) {
-  vogais = vogais.toLowerCase();
   
   let substituiçao = '';
   for (let index = 0; index < vogais.length; index += 1) {
@@ -116,7 +115,6 @@ function encode(vogais) {
 }
 
 function decode(numeros){
-  numeros = numeros.toLowerCase();
   
   let substituiçao = '';
   for (let index = 0; index < numeros.length; index += 1) {
