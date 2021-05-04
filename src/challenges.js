@@ -162,5 +162,5 @@ function hydrate(string) {
   } if (con === 1) {
     return '1 copo de água';
   }
-  return `${con} copos de agua`;
+  return (`${con} copos de agua`);
 }
