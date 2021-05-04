@@ -39,7 +39,7 @@ function highestCount(Array) {
 function catAndMouse(mouse, cat1, cat2) {
   let distancia1 = cat1 - mouse;
   let distancia2 = cat2 - mouse;
-  let resultado = '';
+  let resultado;
   if (distancia1 < distancia2) {
     resultado = 'cat1';
   } else if (distancia2 > distancia1) {
