@@ -70,18 +70,19 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(arrayNumeros) {
-	// restruturei a função ao contrario para diminuir 'ifs'.
+  // restruturei a função ao contrario para diminuir 'ifs'.
+  let arrayFinal = [];
   for (let index = 0; index < arrayNumeros.length; index += 1) {
-    arrayNumeros[index] = 'bug!';
+    arrayFinal[index] = 'bug!';
     if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
-      arrayNumeros[index] = 'fizzBuzz';
+      arrayFinal[index] = 'fizzBuzz';
     } else if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 !== 0) {
-      arrayNumeros[index] = 'fizz';
+      arrayFinal[index] = 'fizz';
     } else if (arrayNumeros[index] % 5 === 0 && arrayNumeros[index] % 3 !== 0) {
-      arrayNumeros[index] = 'buzz';
+      arrayFinal[index] = 'buzz';
     }
   }
-  return arrayNumeros;
+  return arrayFinal;
 }
 
 // Desafio 9
@@ -102,7 +103,7 @@ function decode(stringDecode) {
   stringDecode = stringDecode.replace(/3/g, 'i');
   stringDecode = stringDecode.replace(/4/g, 'o');
   stringDecode = stringDecode.replace(/5/g, 'u');
-  return stringDecode
+  return stringDecode;
 }
 
 module.exports = {
