@@ -3,7 +3,7 @@
 //  return bool1 && bool2;
 //} 
 // // Desafio 2
-function calcArea(base,height) {
+function calcArea() {
   let area = (base * height) / 2;
   return area;
 }
