@@ -1,3 +1,6 @@
+/* eslint-disable sonarjs/cognitive-complexity */
+/* eslint-disable complexity */
+/* eslint-disable sonarjs/no-unused-collection */
 // Desafio 1
 // Primeiro commit
 function compareTrue(boolean1, boolean2) {
@@ -43,19 +46,33 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(higherNumber) {
-  // seu código aqui
-  let orderNumber = higherNumber.sort();
-  let result = [];
 
-  for (let index = 0; index < orderNumber.length; index += 1) {
-    if (orderNumber[index] === orderNumber[(orderNumber.length - 1)]) {
-      result.push(orderNumber[index]);
+function getHighestNumber(getHighestArrayCount) {
+  let higher = getHighestArrayCount[0];
+  for (let key in getHighestArrayCount) {
+    if (higher < getHighestArrayCount[key]) {
+      higher = getHighestArrayCount[key];
     }
   }
-  return (result.length);
+  return higher;
+}
+function getNumberRepeater(getNumberArrayCount) {
+  let repete = 0;
+  let higher = getHighestNumber(getNumberArrayCount);
+  for (let key in getNumberArrayCount) {
+    if (higher === getNumberArrayCount[key]) {
+      repete += 1;
+    }
+  }
+  return repete;
 }
 
+function highestCount(arrayCount) {
+  // Identifica o maior valor
+  getHighestNumber(arrayCount);
+  // Descobre quantas vezes o maior valor se repete
+  return getNumberRepeater(arrayCount);
+}
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
@@ -72,39 +89,59 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(numberFizzBuzzz) {
-  // seu código aqui
-  let result = [];
-  for (let index = 0; index < numberFizzBuzzz.length; index += 1) {
-    result[index] = 'bug!';
-    if (numberFizzBuzzz[index] % 15 === 0) {
-      result[index] = 'fizzBuzz';
-    } else if (numberFizzBuzzz[index] % 5 === 0) {
-      result[index] = 'buzz';
-    } else if (numberFizzBuzzz[index] % 3 === 0) {
-      result[index] = 'fizz';
+
+function fizzBuzz(array) {
+  let fizzBuzzArray = [];
+  for (let key of array) {
+    if (key % 3 === 0 && key % 5 === 0) {
+      fizzBuzzArray.push('fizzBuzz');
+    } else if (key % 3 === 0) {
+      fizzBuzzArray.push('fizz');
+    } else if (key % 5 === 0) {
+      fizzBuzzArray.push('buzz');
+    } else {
+      fizzBuzzArray.push('bug!');
     }
   }
+  return fizzBuzzArray;
 }
 
 // Desafio 9
 function encode(vowel) {
   // seu código aqui
-  vowel = vowel.replace(/a/g, '1');
-  vowel = vowel.replace(/e/g, '2');
-  vowel = vowel.replace(/i/g, '3');
-  vowel = vowel.replace(/o/g, '4');
-  vowel = vowel.replace(/u/g, '5');
-  return vowel;
+  let vowelToArray = vowel.split('');
+  for (let index in vowelToArray) {
+    if (vowelToArray[index] === 'a') {
+      vowelToArray[index] = 1;
+    } else if (vowelToArray[index] === 'e') {
+      vowelToArray[index] = 2;
+    } else if (vowelToArray[index] === 'i') {
+      vowelToArray[index] = 3;
+    } else if (vowelToArray[index] === 'o') {
+      vowelToArray[index] = 4;
+    } else if (vowelToArray[index] === 'u') {
+      vowelToArray[index] = 5;
+    }
+  }
+  return vowelToArray.join('');
 }
 function decode(number) {
   // seu código aqui
-  number = number.replace(/1/g, 'e');
-  number = number.replace(/2/g, 'i');
-  number = number.replace(/3/g, 'o');
-  number = number.replace(/4/g, 'u');
-  number = number.replace(/5/g, 'a');
-  return number;
+  let numberToArray = number.split('');
+  for (let index in numberToArray) {
+    if (numberToArray[index] === '1') {
+      numberToArray[index] = 'a';
+    } else if (numberToArray[index] === '2') {
+      numberToArray[index] = 'e';
+    } else if (numberToArray[index] === '3') {
+      numberToArray[index] = 'i';
+    } else if (numberToArray[index] === '4') {
+      numberToArray[index] = 'o';
+    } else if (numberToArray[index] === '5') {
+      numberToArray[index] = 'u';
+    }
+  }
+  return numberToArray.join('');
 }
 
 module.exports = {
