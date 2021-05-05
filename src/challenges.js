@@ -38,9 +38,19 @@ function footballPoints(wins, ties) {
 };
 
 // Desafio 6
-function highestCount() {
+function highestCount(highestNumber) {
   // seu código aqui
-}
+
+  let order = Math.max.apply(Math, highestNumber); 
+  let conclusion = 0; 
+
+  for (let value of highestNumber) {
+    if (value === order) {
+      conclusion += 1; 
+    };
+  };
+  return conclusion;
+};
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -87,31 +97,11 @@ function fizzBuzz(arrayNum) {
 };
 
 // Desafio 9
-function encode(string) {
+function encode() {
   // seu código aqui
-
-  let vowels = string; 
-
-  vowels = vowels.replace(/a/g, '1');
-  vowels = vowels.replace(/e/g, '2');
-  vowels = vowels.replace(/i/g, '3');
-  vowels = vowels.replace(/o/g, '4');
-  vowels = vowels.replace(/u/g, '5');
-
-  return vowels; 
 }
 function decode() {
   // seu código aqui
-
-  let numbers = string; 
-
-  numbers = numbers.replace(/1/g, 'a');
-  numbers = numbers.replace(/2/g, 'e');
-  numbers = numbers.replace(/3/g, 'i');
-  numbers = numbers.replace(/4/g, 'o');
-  numbers = numbers.replace(/5/g, 'u');
-
-  return numbers; 
 }
 
 module.exports = {
