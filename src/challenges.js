@@ -69,12 +69,12 @@ function fizzBuzz(arrayNum) {
 
   let result = []; 
   for (let count = 0; count < arrayNum.length; count += 1) {
-    if (arrayNum[count] % 3 === 0) {
-      result.push('fizz');
+    if (arrayNum[count] % 3 === 0 && arrayNum[count] % 5 === 0) {
+      result.push('fizzBuzz');
+    } else if (arrayNum[count] % 3 === 0) {
+      result.push('fuzz');
     } else if (arrayNum[count] % 5 === 0) {
       result.push('buzz');
-    } else if (arrayNum[count] % 3 === 0 && arrayNum[count] % 5 === 0) {
-      result.push('fizzBuzz');
     } else {
       result.push('bug!');
     }
