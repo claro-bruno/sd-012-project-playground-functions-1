@@ -89,8 +89,6 @@ function fizzBuzz(numArray) {
   }
 }
 
-console.log(fizzBuzz(2, 5, 7, 9, 15, 45))
-
 // Desafio 9
 function encode(frase) {
   // seu código aqui
