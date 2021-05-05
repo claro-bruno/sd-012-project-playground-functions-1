@@ -1,13 +1,27 @@
 // Desafio 10
 function techList(arrayTech, name) {
-  tecnologia = {tech:arrayTech , nome:name}
+  let ordenada = arrayTech.sort();
+  let resposta = [];
+  
+  if(ordenada.length === 0){
+    resposta = 'Vazio!';
 
-  return tecnologia;
+  }else{
+    for(let value of ordenada){
+      let objeto = {};
+      objeto['tech'] = value;
+      objeto['nome'] = name;
+      resposta.push(objeto);
+    };
+  }
+
+  return resposta;
+  
 }
 
-let minhaHonda = {cor: "vermelho", rodas: 4, motor: {cilindros: 4, tamanho: 2.2}};
-console.log(minhaHonda);
-console.log(techList('JavaScript','Pedro'));
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],'Lucas'));
+
+
 
 // Desafio 11
 function generatePhoneNumber() {
