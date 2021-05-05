@@ -80,7 +80,7 @@ function hydrate(drinksNumber) {
   let drinkCount = 0;
 
   if (numbers[0] === 1 && numbers.length === 1) {
-    return '1 compo de água'
+    return '1 copo de água'
   } 
 
   if (numbers.length > 1) {
