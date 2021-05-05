@@ -1,5 +1,5 @@
 // Desafio 10
-function techList(listaTec, nome) {  
+function techList(listaTec, nome) {
   // Algoritmo de Caio Takeshi - colega de turma
   let objeto = [];
   let lista = {};
@@ -15,7 +15,7 @@ function techList(listaTec, nome) {
     }
   }
   // https://www.edsonemiliano.com.br/blog/como-ordenar-uma-array-de-objetos-com-javascript-sort/#:~:text=Como%20ordenar%20uma%20array%20de%20objetos%20com%20Javascript%20sort(),-Javascript&text=Caso%20voc%C3%AA%20tenha%20um%20array,usar%20o%20m%C3%A9todo%20sort().
-  return objeto.sort(function(a, b) {
+  return objeto.sort(function (a, b) {
     return (a.tech > b.tech) ? 1 : ((b.tech > a.tech) ? -1 : 0);
   });
 }
