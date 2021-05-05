@@ -26,12 +26,9 @@ function generatePhoneNumber(arrNumb) {
     if (arrNumb[index] < 0 || arrNumb[index] > 9) {
       return 'Não é possível gerar um número de telefone com esses valores.';
     }
-    let arrSort = arrNumb.sort(function (a, b) {
-      return a - b;
-    })
     let contador = 0;
-      for (let key = 0; key < arrSort.length; key += 1) {
-      if (arrSort[arrSort.length - 1] === arrSort[key]) {
+      for (let key = 0; key < arrNumb.length; key += 1) {
+      if (arrNumb[index] === arrNumb[key]) {
         contador += 1;
       }
       }
@@ -39,6 +36,7 @@ function generatePhoneNumber(arrNumb) {
         return 'Não é possível gerar um número de telefone com esses valores.';
     }
   }
+//console.log(contador);
 }
 console.log(generatePhoneNumber([0, 1, 2, 3, 4, 5, 6, 7, 9, 9, 9]));
 
