@@ -16,14 +16,14 @@ function calcArea(base, height) {
 function splitSentence(sentence) {
   // seu código aqui
 
-  return sentence.slipt(' ');
+  return sentence.split(' ');
 }
 
 // Desafio 4
 function concatName(names) {
   // seu código aqui
 
-  return names[names.length - 1], names[0];
+  return (names[names.length - 1], names[0]);
 };
 
 // Desafio 5
