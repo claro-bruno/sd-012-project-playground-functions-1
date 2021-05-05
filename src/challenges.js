@@ -124,15 +124,20 @@ function decode(string) {
   return codedString;
 }
 
-function techList (array, name) {
-  let ordenedArray = array.sort();
-  let techList = [];
-  for (let index = 0; index < ordenedArray.length; index += 1) {
-    let techListItem = {tech: ordenedArray[index], name: name};
-    techList.push(techListItem);
+function techList(array, name) {
+  if (array.length != 0) {
+    let ordenedArray = array.sort();
+    let techList = [];
+    for (let index = 0; index < ordenedArray.length; index += 1) {
+      let techListItem = {tech: ordenedArray[index], name: name};
+      techList.push(techListItem);
+    }
+    return techList;
+    } else {
+    return 'Vazio!'
   }
-  return techList;
 }
+console.log(techList([], 'Lucas'));
 
 module.exports = {
   calcArea,
