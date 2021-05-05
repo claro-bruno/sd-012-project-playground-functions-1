@@ -1,18 +1,17 @@
 // Desafio 10
 function techList(array, name) {
-  if ( array.length != 0 ) {
+  if ( array.length = 0) {
+    return 'Vazio!';
+  } else {
     array.sort();
     let novoarray = [];
     for (let index = 0; index < array.length; index += 1) {
       novoarray[index] = {
         tech: array[index],
         name: name,
-      }
+      };
     } 
-    return novoarray; 
-  } 
-    else {
-    return 'Vazio!';
+    return novoarray;
   }
 };
 
@@ -50,7 +49,7 @@ function generatePhoneNumber(numero) {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   let resposta = false;
-  if ( (lineA < (lineB + lineC)) && (lineA > Math.abs(lineB - lineC))) {
+  if ((lineA < (lineB + lineC)) && (lineA > Math.abs(lineB - lineC))) {
     resposta = true;
   }
   return (resposta);
@@ -65,9 +64,9 @@ function hydrate(bebida) {
     }
   }
   if (copoBebida > 1) {
-    return copoBebida += ' copos de água';
+    return (copoBebida += ' copos de água');
   }
-  return copoBebida += ' copo de água';
+  return (copoBebida += ' copo de água');
 }
 
 module.exports = {
