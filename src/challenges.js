@@ -67,7 +67,7 @@ function catAndMouse(mouse, cat1, cat2) {
     quemPegaRato = 'cat2'
   }
   else {
-    quemPegaRato = 'os gatos trombra e o rato foge';
+    quemPegaRato = 'os gatos trombam e o rato foge';
   }
   return quemPegaRato;
 }
