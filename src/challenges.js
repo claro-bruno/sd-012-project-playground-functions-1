@@ -5,8 +5,6 @@ function compareTrue(value1, value2) {
     return value1 && value2 === true; 
 };
 
-console.log(compareTrue());
-
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
@@ -14,17 +12,19 @@ function calcArea(base, height) {
   return (base * height) / 2; 
 };
 
-console.log(calcArea()); 
-
 // Desafio 3
-function splitSentence() {
+function splitSentence(sentence) {
   // seu código aqui
+
+  return sentence.slipt(' ');
 }
 
 // Desafio 4
-function concatName() {
+function concatName(name) {
   // seu código aqui
-}
+
+  return names[names.length - 1], names[0];
+};
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -32,8 +32,6 @@ function footballPoints(wins, ties) {
 
   return (wins * 3 + ties * 1); 
 };
-
-console.log(footballPoints());
 
 // Desafio 6
 function highestCount() {

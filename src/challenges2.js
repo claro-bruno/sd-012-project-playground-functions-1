@@ -15,9 +15,10 @@ function triangleCheck(lineA, lineB, lineC) {
   const lado1 = (lineA, lineB, lineC) => lineA + lineB > lineC && lineB + lineC > lineA && lineA + lineC > lineB;
   const lado2 = (lineA, lineB, lineC) => Math.abs(lineA - lineB) < lineC && Math.abs(lineB - lineC) < lineA && Math.abs(lineA - lineC) < lineB; 
   const triangleCheck = (lineA, lineB, lineC) => lado1(lineA, lineB, lineC) && lado2(lineA, lineB, lineC);
-}
 
-console.log(triangleCheck())
+  return triangleCheck === true; 
+}; 
+
 
 // Desafio 13
 function hydrate() {
