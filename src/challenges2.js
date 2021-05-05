@@ -19,6 +19,23 @@ function generatePhoneNumber(numberArray) {
     return 'Array com tamanho incorreto.';
   }
 
+  let numberCount = 0;
+
+  for (let firstIndex = 0; firstIndex < numberArray.length; firstIndex += 1) {
+    if (numberArray[firstIndex] < 0 | numberArray[firstIndex] > 9) {
+      return 'Array com tamanho incorreto.';
+    }
+    for (let secondIndex = 0; secondIndex < numberArray.length; secondIndex += 1) {
+      if (numberArray[firstIndex] === numberArray[secondIndex]) {
+        numberCount += 1;
+      }
+
+      if (numberCount >= 3) {
+        return 'Array com tamanho incorreto.';
+      }
+    }
+  }
+
   let phoneNumber = '';
 
   for (let index = 0; index < numberArray.length; index += 1) {
