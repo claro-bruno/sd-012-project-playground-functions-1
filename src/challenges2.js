@@ -13,8 +13,29 @@ function techList(techArray, nameInput) {
 }
 
 // Desafio 11
-function generatePhoneNumber() {
+function generatePhoneNumber(numberArray) {
   // seu código aqui
+  if (numberArray.length !== 11) {
+    return 'Array com tamanho incorreto.';
+  }
+
+  let phoneNumber = '';
+
+  for (let index = 0; index < numberArray.length; index += 1) {
+    if (index === 0) {
+      phoneNumber += '(';
+      phoneNumber += numberArray[index];
+    } else if (index === 2) {      
+      phoneNumber += ')';
+      phoneNumber += numberArray[index];
+    } else if (index === 7) {      
+      phoneNumber += '-';
+      phoneNumber += numberArray[index];
+    } else {
+      phoneNumber += numberArray[index];  
+    }    
+  }
+  return phoneNumber;
 }
 
 // Desafio 12
