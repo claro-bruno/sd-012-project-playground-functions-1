@@ -31,7 +31,7 @@ function generatePhoneNumber(numbersArray) {
   } else if (menorZero > 0 || maiorNove > 0 || somaNoves > 3) {
     return "não é possível gerar um número de telefone com esses valores";
   } else {
-    return `(${numbersArray[0]}${numbersArray[1]})${numbersArray[2]}${numbersArray[3]}${numbersArray[4]}${numbersArray[5]}${numbersArray[6]}-${numbersArray[7]}${numbersArray[8]}${numbersArray[9]}${numbersArray[10]}`
+    return `(${numbersArray[0]}${numbersArray[1]}) ${numbersArray[2]}${numbersArray[3]}${numbersArray[4]}${numbersArray[5]}${numbersArray[6]}-${numbersArray[7]}${numbersArray[8]}${numbersArray[9]}${numbersArray[10]}`
   }
 }
 
