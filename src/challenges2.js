@@ -1,7 +1,13 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(arrayTech, name) {
+  tecnologia = {tech:arrayTech , nome:name}
+
+  return tecnologia;
 }
+
+let minhaHonda = {cor: "vermelho", rodas: 4, motor: {cilindros: 4, tamanho: 2.2}};
+console.log(minhaHonda);
+console.log(techList('JavaScript','Pedro'));
 
 // Desafio 11
 function generatePhoneNumber() {

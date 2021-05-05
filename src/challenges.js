@@ -167,7 +167,7 @@ function decode(decodificando) {
   separa = decodificando.split('');
   for(index = 0; index < separa.length; index += 1){
     if(separa[index] === '1'){
-      separa.splice(index, 1, 'a');
+      separa.splice(index, 1, 'a'); // separa[index] = '1' 
 
     }else if(separa[index] === '2'){
       separa.splice(index, 1, 'e');
