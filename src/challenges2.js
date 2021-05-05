@@ -21,14 +21,14 @@ function techList(arrTech, strName) {
 function repeted(arrNumb) {
   let contador = 0;
   let repetedNamb = 0;
-  for (let key of arrNumb) {
-    let numero = key;
-    for (let key2 of arrNumb) {
-      if (numero === key2) {
-        contador += 1;
-      }
-    }
+  for (let index in arrNumb) { 
+    for (let key in arrNumb) { 
+      if (arrNumb[key] === arrNumb[index]) { //&& index != key
+        contador += 1; 
+      } 
+    } 
     repetedNamb = contador;
+    contador = 0;
   }
   return repetedNamb;
 }
@@ -44,8 +44,6 @@ function generatePhoneNumber(arrNumb) {
   }
   return `(${arrNumb[0]}${arrNumb[1]}) ${arrNumb[2]}${arrNumb[3]}${arrNumb[4]}${arrNumb[5]}${arrNumb[6]}-${arrNumb[7]}${arrNumb[8]}${arrNumb[9]}${arrNumb[10]}`;
 }
-// console.log(generatePhoneNumber([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9]));
-
 // Desafio 12
 function triangleCheck() {
   // seu código aqui
