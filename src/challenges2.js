@@ -4,11 +4,12 @@ function techList(array, name) {
     return 'Vazio!';
   } 
   array.sort();
+  let nome = name;
   let novoarray = [];
   for (let index = 0; index < array.length; index += 1) {
     novoarray[index] = {
       tech: array[index],
-      name: name,
+      name: nome,
     };
   }
   return novoarray;
@@ -63,9 +64,9 @@ function hydrate(bebida) {
     }
   }
   if (copoBebida > 1) {
-    return (copoBebida += ' copos de água');
+    return (copoBebida + ' copos de água');
   }
-  return (copoBebida += ' copo de água');
+  return (copoBebida + ' copo de água');
 }
 
 module.exports = {
