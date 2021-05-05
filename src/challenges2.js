@@ -10,7 +10,7 @@ function techList(arrayTech, name) {
     for(let value of ordenada){
       let objeto = {};
       objeto['tech'] = value;
-      objeto['nome'] = name;
+      objeto['name'] = name;
       resposta.push(objeto);
     };
   }
