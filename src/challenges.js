@@ -51,11 +51,11 @@ function catAndMouse(mouse, cat1, cat2) {
   let distanceCat2 = cat2 - mouse; 
 
   if (distanceCat1 < 0) {
-    distanceCat1 * -1 == distanceCat1; 
+    distanceCat1 = distanceCat1 * -1; 
   };
   
   if (distanceCat2 < 0) {
-    distance * -1 == distanceCat2; 
+    distanceCat2 = distanceCat2 * -1; 
   };
 
   if (distanceCat1 === distanceCat2) {
