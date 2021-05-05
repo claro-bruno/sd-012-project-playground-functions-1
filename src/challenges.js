@@ -49,22 +49,28 @@ function highestCount(array) {
   }
   
 }
-//console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let quemPegaRato;
-  if (mouse - cat1 > mouse - cat2) {
-    quemPegaRato = 'cat1';
+  let distanciaCat1 = Math.abs(mouse - cat1);
+  let distanciaCat2 = Math.abs(mouse - cat2);
+  
+  if (distanciaCat1 < distanciaCat2) {
+    quemPegaRato = 'cat1'
   }
-  else if (mouse - cat1 < mouse - cat2) {
-    quemPegaRato = 'cat2';
+  else if (distanciaCat1 > distanciaCat2) {
+    quemPegaRato = 'cat2'
   }
   else {
-    quemPegaRato = 'os gatos trombam e o rato foge';
+    quemPegaRato = 'os gatos trombram e o rato foge';
   }
   return quemPegaRato;
 }
-console.log(catAndMouse(10, 11, 12))
+console.log(catAndMouse(10, 8, 7));
+console.log(catAndMouse(0, 12, 6));
+console.log(catAndMouse(10, 5, 5));
+
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
