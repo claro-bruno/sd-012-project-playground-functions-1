@@ -20,7 +20,7 @@ function splitSentence(sentence) {
 }
 
 // Desafio 4
-function concatName(name) {
+function concatName(names) {
   // seu código aqui
 
   return names[names.length - 1], names[0];
@@ -34,9 +34,27 @@ function footballPoints(wins, ties) {
 };
 
 // Desafio 6
-function highestCount() {
+function highestCount(numbers) {
   // seu código aqui
-}
+
+    let contadorHighestCount = 0;
+    let highestValue = highestNumber(numbers);
+
+    for (let indexHighestCount = 0; indexHighestCount < numbers.length; indexHighestCount += 1) {
+      if (numbers[indexHighestCount] === highestValue) {
+        contadorHighestCount += 1;
+      }
+    }
+    return contadorHighestCount;
+  }
+
+  function highestNumber (numbers) {
+    let maiorNumero = numbers[0];
+    for (let indexHighestNumber = 0; indexHighestNumber < array2.length; indexHighestNumber += 1) {
+      maiorNumero = numbers[indexHighestNumber] > maiorNumero ? array2[indexHighestNumber] : maiorNumero;
+   }
+   return maiorNumero;
+  }
 
 // Desafio 7
 function catAndMouse() {
