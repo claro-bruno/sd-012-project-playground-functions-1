@@ -60,7 +60,7 @@ function catAndMouse(mouse, cat1, cat2) {
     return "cat1"; 
   } else {
     return "cat2"; 
-  ;}
+  };
 };
 
 // Desafio 8
@@ -73,7 +73,7 @@ function fizzBuzz(arrayNum) {
       result.push('fizz');
     } else if (arrayNum[count] % 5 === 0) {
       result.push('buzz');
-    } else if (arrayNum[count] % 3 === 0 && arrayNum[count] / 5 === 0) {
+    } else if (arrayNum[count] % 3 === 0 && arrayNum[count] % 5 === 0) {
       result.push('fizzBuzz');
     } else {
       result.push('bug!');
