@@ -39,17 +39,23 @@ function footballPoints(wins, ties) {
 
   return totalPoints;
 }
+
 // Desafio 6
 function highestCount(array) {
   let arrayOcurrenceCount = 0;
+  let hieghstValue = Math.max(...array);
 
   for (let indexArray = 0; indexArray < array.length; indexArray += 1) {
-    
+    if (hieghstValue === array[indexArray]) {
+      arrayOcurrenceCount += 1;
+    }
+  }  
 
-  }
-  
+  return arrayOcurrenceCount;
 }
-
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+console.log(highestCount([0, 0, 0, 0]));
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let quemPegaRato;
@@ -67,9 +73,6 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   return quemPegaRato;
 }
-console.log(catAndMouse(10, 8, 7));
-console.log(catAndMouse(0, 12, 6));
-console.log(catAndMouse(10, 5, 5));
 
 // Desafio 8
 function fizzBuzz() {
