@@ -140,7 +140,7 @@ function encode(encodificando) {
   arraySepara = encodificando.split('');
   for(index = 0; index < arraySepara.length; index += 1){
     if(arraySepara[index] === 'a'){
-      arraySepara.splice(0, 1, '1');
+      arraySepara.splice(index, 1, '1');
 
     }else if(arraySepara[index] === 'e'){
       arraySepara.splice(index, 1, '2');
@@ -159,7 +159,7 @@ function encode(encodificando) {
   return arrayJunta;
 }
 
-console.log(encode(''));
+console.log(encode('hi there!'));
 
 function decode(decodificando) {
   let separa = [];
@@ -167,7 +167,7 @@ function decode(decodificando) {
   separa = decodificando.split('');
   for(index = 0; index < separa.length; index += 1){
     if(separa[index] === '1'){
-      separa.splice(0, 1, 'a');
+      separa.splice(index, 1, 'a');
 
     }else if(separa[index] === '2'){
       separa.splice(index, 1, 'e');
@@ -186,7 +186,7 @@ function decode(decodificando) {
   return junta;
 }
 
-console.log(decode(''));
+console.log(decode('h3 th2r2!'));
 
 
 module.exports = {
