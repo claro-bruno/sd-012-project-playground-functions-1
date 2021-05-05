@@ -22,8 +22,12 @@ function splitSentence(sentence) {
 // Desafio 4
 function concatName(names) {
   // seu código aqui
+  
+  let firstName = names[0]; 
+  let lastName = names[(names.length) - 1]; 
+  let concName = `${lastName}, ${firstName}`;
 
-  return `${names.length - 1}, ${names[0]}`;
+  return concName;
 };
 
 // Desafio 5
@@ -68,15 +72,16 @@ function fizzBuzz(arrayNum) {
   // seu código aqui
 
   let result = []; 
+
   for (let count = 0; count < arrayNum.length; count += 1) {
     if (arrayNum[count] % 3 === 0 && arrayNum[count] % 5 === 0) {
-      result.push('fizzBuzz');
+      result[count] = 'fizzBuzz';
     } else if (arrayNum[count] % 3 === 0) {
-      result.push('fuzz');
+      result[count] = 'fizz';
     } else if (arrayNum[count] % 5 === 0) {
-      result.push('buzz');
+      result[count] = 'buzz';
     } else {
-      result.push('bug!');
+      result[count] = 'bug!';
     }
   }
     return result; 
