@@ -23,7 +23,7 @@ function splitSentence(sentence) {
 function concatName(names) {
   // seu código aqui
 
-  return `${names[names.length - 1]} ${names[0]}`;
+  return `${names.length - 1}, ${names[0]}`;
 };
 
 // Desafio 5
