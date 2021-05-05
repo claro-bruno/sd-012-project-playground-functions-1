@@ -47,6 +47,7 @@ console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 console.log(concatName(['captain', 'my', 'captain']));
 
 
+
 // Desafio 5
 function footballPoints(wins, ties) {
   let points = (wins * 3)+ ties;
@@ -67,14 +68,14 @@ function highestCount(number) {
   for (let index = 0; index < number.length; index += 1) {
     if (highestNumber < number[index]) {
       highestNumber = number[index];
-    };
-  };
+    }
+  }
 
   for (let index = 0; index < number.length; index += 1) {
     if (number[index] === highestNumber) {
       repetition += 1;
-    };
-  };
+    }
+  }
   
   return repetition;
 
@@ -83,6 +84,7 @@ function highestCount(number) {
 console.log(highestCount([9,1,2,3,9,5,7]));
 console.log(highestCount([0,4,4,4,9,2,1]));
 console.log(highestCount([0,0,0]));
+
 
 
 // Desafio 7
