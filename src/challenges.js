@@ -134,7 +134,7 @@ function fizzBuzz(verificaArray) {
 console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode(encodificando) { //frase é uma string
+function encode(encodificando) { 
   let arraySepara = [];
   let arrayJunta = [];
   arraySepara = encodificando.split('');
@@ -159,7 +159,7 @@ function encode(encodificando) { //frase é uma string
   return arrayJunta;
 }
 
-console.log(encode('hi there!'));
+console.log(encode(''));
 
 function decode(decodificando) {
   let separa = [];
@@ -186,7 +186,8 @@ function decode(decodificando) {
   return junta;
 }
 
-console.log(decode('h3 th2r2!'));
+console.log(decode(''));
+
 
 module.exports = {
   calcArea,
