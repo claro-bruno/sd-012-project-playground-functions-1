@@ -23,14 +23,24 @@
 //   return nome; 
 //  }
 // // Desafio 5 
-  function footballPoints() {
-   let match = wins *3 + ties *1;
-    return match;
-  }
+  // function footballPoints() {
+  //  let match = wins *3 + ties *1;
+  //   return match;
+  // }
 // // Desafio 6
-// function highestCount() {
-//   // seu código aqui
-// }
+function highestCount() {
+  function highestCount() {
+       let highestNumber = 0;
+       let counter = 0;
+       for (let index = 0; index < array.length; index += 1) {
+         if (array[index] >= highestNumber) {
+           highestNumber = array[index];
+           counter += 1;
+         }
+       }
+       return counter;
+      }
+}
 
 // // Desafio 7
 // function catAndMouse() {
