@@ -3,15 +3,18 @@
 //  return bool1 && bool2;
 //} 
 // // Desafio 2
-function calcArea() {
-  let area = (base * height) / 2;
-  return area;
-}
+//function calcArea() {//let area = (base * height) / 2;//return area;
+//}
 // // Desafio 3
-// function splitSentence() {
-//   // seu código aqui
-// }
-
+ function splitSentence() {
+  let array = [];
+     let text = " ";
+       for ( let index=0; index< newfrase.length; index +=1); {
+      if (newfrase[index] == text);
+        array.push(text + newfrase[index];)
+     } 
+     return array;
+    }
 // // Desafio 4
 // function concatName() {
 //   // seu código aqui
