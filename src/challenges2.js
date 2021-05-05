@@ -16,38 +16,37 @@ function techList(tech, nome) {
 
 // Desafio 11
 function generatePhoneNumber() {
-  // seu código aqui
-  function countNumber(arrayTelefone, value) {
-    let counter = 0;
-    for (let index = 0; index < arrayTelefone.length; index += 1) {
-      counter += arrayTelefone[index] === value ? 1 : 0;
-    }
-    return counter;
+  // seu código aquifunction countNumber(arrayTelefone, value) {
+  let counter = 0;
+  for (let index = 0; index < arrayTelefone.length; index += 1) {
+    counter += arrayTelefone[index] === value ? 1 : 0;
   }
-  function checkErrorPhone(celuloiros, value) {
-    let erro = '';
-    if (celuloiros.length !== 11) {
-      erro = 'Array com tamanho incorreto.';
-    } else if (countNumber(celuloiros, value) > 2 || value < 0 || value > 9) {
-      erro = 'não é possível gerar um número de telefone com esses valores';
-    }
-    return erro;
-  }
-  function generatePhoneNumber(celuloiros) {
-    let zapDaPitanga = '';
-    let erro = '';
-    erro = checkErrorPhone(celuloiros, '');
-    for (let index = 0; index < celuloiros.length; index += 1) {
-      erro = checkErrorPhone(celuloiros, celuloiros[index]);
-      if (erro.length > 0) {
-        break;
-      } else {
-        zapDaPitanga += formatNumberPhone(index, celuloiros[index]);
-      }
-    }
-    return erro.length === 0 ? zapDaPitanga : erro;
-  }
+  return counter;
 }
+function checkErrorPhone(arrayTelefone, value) {
+  let errorMessage = '';
+  if (arrayTelefone.length !== 11) {
+    errorMessage = 'Array com tamanho incorreto.';
+  } else if (countNumber(arrayTelefone, value) > 2 || value < 0 || value > 9) {
+    errorMessage = 'não é possível gerar um número de telefone com esses valores';
+  }
+  return errorMessage;
+}
+function generatePhoneNumber(arrayTelefone) {
+  let phoneFormated = '';
+  let mensagemErro = '';
+  mensagemErro = checkErrorPhone(arrayTelefone, '');
+  for (let index = 0; index < arrayTelefone.length; index += 1) {
+    mensagemErro = checkErrorPhone(arrayTelefone, arrayTelefone[index]);
+    if (mensagemErro.length > 0) {
+      break;
+    } else {
+      phoneFormated += formatNumberPhone(index, arrayTelefone[index]);
+    }
+  }
+  return mensagemErro.length === 0 ? phoneFormated : mensagemErro;
+}
+
 
 // Desafio 12
 function triangleCheck() {
