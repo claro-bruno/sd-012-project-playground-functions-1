@@ -15,7 +15,7 @@ function techList(listaTec, nome) {
       objeto.push(lista);
     }
   }
-  return objeto;
+  return objeto.sort();
 }
 
 // Desafio 11
