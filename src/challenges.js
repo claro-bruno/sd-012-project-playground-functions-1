@@ -67,7 +67,7 @@ function catAndMouse(mouse, cat1, cat2) {
     quemPegaRato = 'cat2'
   }
   else {
-    quemPegaRato = 'os gatos trombram e o rato foge';
+    quemPegaRato = 'os gatos trombra e o rato foge';
   }
   return quemPegaRato;
 }
@@ -94,10 +94,6 @@ function fizzBuzz(array) {
   }
   return resultArray;
 }
-
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
-console.log(fizzBuzz([7, 9]));
-console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode() {
