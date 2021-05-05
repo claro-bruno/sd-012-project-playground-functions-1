@@ -10,8 +10,8 @@ function techList(listaTec, nome) {
     for (let varIni = 0; varIni < listaTec.length; varIni += 1) {
       lista = {
         tech: listaTec[varIni],
-        name: nome
-      }
+        name: nome,
+      };
       objeto.push(lista);
     }
   }
