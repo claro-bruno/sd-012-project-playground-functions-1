@@ -15,8 +15,9 @@ function techList(tech, nome) {
 }
 
 // Desafio 11
-
-
+function generatePhoneNumber() {
+  // seu código aqui
+}
 // Desafio 12
 function firstCheck(lineA, lineB, lineC) {
   if (lineA <= lineB + lineC && lineB <= lineA + lineC && lineC <= lineA + lineB) return true;
