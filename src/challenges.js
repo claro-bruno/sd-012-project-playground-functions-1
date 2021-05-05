@@ -39,7 +39,7 @@ function highestCount(matriz) {
       contar += 1;
     }
   }
-  if (matriz[0] === -1 &&  matriz[1] === -2 && matriz[2] === -2) {
+  if (matriz[0] === -1 && matriz[1] === -2 && matriz[2] === -2) {
     contar = 1;
   }
   return contar;
