@@ -53,8 +53,6 @@ function highestCount(array) {
   return count;
 }
 
-console.log(highestCount([2, 3, 5, 9, 9, 7, 9]))
-
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
@@ -74,33 +72,43 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(numArray) {
   // seu código aqui
-  for (let index = 0; index <= numArray.length; index += 1) {
-    let resultadu
-    if (numArray[index] % 3 === 0) {
-      resultadu = "fizz"
+  // Nesse código eu tive ajuda do André Lorenzoni
+  let resultadu = [];
+  for (let index = 0; index < numArray.length; index += 1) {
+    if ((numArray[index] % 3 === 0) && (numArray[index] % 5 === 0)) {
+      resultadu[index] = "fizzBuzz"
     } else if (numArray[index] % 5 === 0) {
-      resultadu = "buzz"
-    } else if ((numArray[index] % 3 === 0) && (numArray[index] % 5 === 0)) {
-      resultadu = "fizzBuzz"
+      resultadu[index] = "buzz"
+    } else if (numArray[index] % 3 === 0) {
+      resultadu[index] = "fizz"
     } else {
-      resultadu = "bug!"
+      resultadu[index] = "bug!"
     }
-    return resultadu
   }
+  return resultadu;
 }
 
 // Desafio 9
 function encode(frase) {
   // seu código aqui
-  let arraay = frase;
-  for (index = 0; index <= arraay.length; index += 1){
-    if (arraay[index] === a) {
-      arraay.replace(a, 1)
-    }
-  }
+  // fonte: shorturl.at/bnwG1
+  // Nesse código eu tive ajuda do André Lorenzoni
+  frase = frase.replace(/a/g, '1');
+  frase = frase.replace(/e/g, '2');
+  frase = frase.replace(/i/g, '3');
+  frase = frase.replace(/o/g, '4');
+  frase = frase.replace(/u/g, '5');
+  return frase;
 }
-function decode() {
+function decode(frase) {
   // seu código aqui
+  // fonte: shorturl.at/bnwG1
+  frase = frase.replace(/1/g, 'a');
+  frase = frase.replace(/2/g, 'e');
+  frase = frase.replace(/3/g, 'i');
+  frase = frase.replace(/4/g, 'o');
+  frase = frase.replace(/5/g, 'u');
+  return frase;
 }
 
 module.exports = {
