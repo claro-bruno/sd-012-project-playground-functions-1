@@ -31,17 +31,16 @@ function repeted(arrNumb) {
     repetedNamb = contador;
   }
   return repetedNamb;
-  contador = 0;
 }
 function generatePhoneNumber(arrNumb) {
   if (arrNumb.length === 11) {
-    for (let index of arrNumb){
+    for (let index of arrNumb) {
       if (index < 0 || index > 9 || repeted(arrNumb) > 2) {
         return 'não é possível gerar um número de telefone com esses valores';
       }
     }
   } else {
-    return 'Array de tamanho incorreto.';
+    return 'Array com tamanho incorreto.';
   }
   return `(${arrNumb[0]}${arrNumb[1]}) ${arrNumb[2]}${arrNumb[3]}${arrNumb[4]}${arrNumb[5]}${arrNumb[6]}-${arrNumb[7]}${arrNumb[8]}${arrNumb[9]}${arrNumb[10]}`;
 }
