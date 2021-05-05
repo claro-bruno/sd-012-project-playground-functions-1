@@ -73,8 +73,50 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(stringBebidas) {
   // seu código aqui
+
+  let copos = 0;
+
+  let arrayBebidas = stringBebidas.split('');
+
+  for (let index3 = 0; index3 < arrayBebidas.length; index3 += 1) {
+    switch (arrayBebidas[index3]) {
+      case '1':
+        copos = copos + parseInt(arrayBebidas[index3]);
+        break;
+      case '2':
+        copos = copos + parseInt(arrayBebidas[index3]);
+        break;
+      case '3':
+        copos = copos + parseInt(arrayBebidas[index3]);
+        break;
+      case '4':
+        copos = copos + parseInt(arrayBebidas[index3]);
+        break;
+      case '5':
+        copos = copos + parseInt(arrayBebidas[index3]);
+        break;
+      case '6':
+        copos = copos + parseInt(arrayBebidas[index3]);
+        break;
+      case '7':
+        copos = copos + parseInt(arrayBebidas[index3]);
+        break;
+      case '8':
+        copos = copos + parseInt(arrayBebidas[index3]);
+        break;
+      case '9':
+        copos = copos + parseInt(arrayBebidas[index3]);
+        break;
+    };
+  };
+
+  if (copos === 1) { 
+    return copos + ' copo de água'
+  } else if (copos > 1) {
+    return copos + ' copos de água'
+  };
 }
 
 module.exports = {
