@@ -4,8 +4,9 @@ function techList(array, name) {
   
   let objectArray=[];
 
-  if (array.length < 0) {
-    return 'Vazio!';
+  if (array.length === 0) {
+    let empty = 'Vazio!';
+    return empty;
   }
   else {
     for (let index = 0; index <array.length; index +=1){
@@ -16,6 +17,7 @@ function techList(array, name) {
     }
   }
   //Credito:https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+  
   objectArray.sort(function (a, b) {
     if (a.tech > b.tech) {
       return 1;
@@ -23,12 +25,11 @@ function techList(array, name) {
     if (a.tech < b.tech) {
       return -1;
     }
-    // a must be equal to b
     return 0;
   });
   return objectArray;
 };
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
+console.log(techList([], "Lucas"));
 
 // Desafio 11
 function generatePhoneNumber() {
