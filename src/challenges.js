@@ -16,16 +16,17 @@
 //      return array;
 //     }
 // // Desafio 4
- function concatName() {
-  let primeiroNome = array[array.length -1];         
-  let ultimoNome =  array[0];
-  let nome = primeiroNome + ', ' + ultimoNome;
-  return nome; 
- }
+//  function concatName() {
+//   let primeiroNome = array[array.length -1];         
+//   let ultimoNome =  array[0];
+//   let nome = primeiroNome + ', ' + ultimoNome;
+//   return nome; 
+//  }
 // // Desafio 5 
-//   // seu código aqui
-// }
-
+  function footballPoints() {
+   let match = wins *3 + ties *1;
+    return match;
+  }
 // // Desafio 6
 // function highestCount() {
 //   // seu código aqui
