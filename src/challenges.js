@@ -45,7 +45,7 @@ function highestCount(highestNumber) {
   let conclusion = 0; 
 
   for (let value of highestNumber) {
-    if (value === highestNumber) {
+    if (value === order) {
       conclusion += 1; 
     };
   };
