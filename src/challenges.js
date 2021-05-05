@@ -17,8 +17,7 @@ function calcArea() {
 //   // seu código aqui
 // }
 
-// // Desafio 5
-// function footballPoints() {
+// // Desafio 5 
 //   // seu código aqui
 // }
 
