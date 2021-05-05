@@ -22,7 +22,7 @@ function generatePhoneNumber(numberArray) {
   let numberCount = 0;
 
   for (let firstIndex = 0; firstIndex < numberArray.length; firstIndex += 1) {
-    if (numberArray[firstIndex] < 0 | numberArray[firstIndex] > 9) {
+    if (numberArray[firstIndex] < 0 || numberArray[firstIndex] > 9) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
     for (let secondIndex = 0; secondIndex < numberArray.length; secondIndex += 1) {
