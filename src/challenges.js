@@ -23,9 +23,10 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(arrayString) {
-  let string = (`${arrayString[((arrayString.length)-1)]},${arrayString[0]}`);
-  return string;
+  return `${arrayString[arrayString.length - 1]}, ${arrayString[0]}`;
+
 }
+
 
 // Desafio 5
 function footballPoints() {
