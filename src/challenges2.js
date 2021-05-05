@@ -15,7 +15,7 @@ function techList(array, name) {
     return 'Vazio!';
   }
 };
-console.log(techList(['teclist','kajfk', 'dfjaklfjk'],'eurides'));
+
 // Desafio 11
 function generatePhoneNumber(numero) {
   if (numero.length !== 11) {
