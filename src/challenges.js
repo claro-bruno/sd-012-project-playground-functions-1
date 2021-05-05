@@ -34,7 +34,7 @@ function highestCount(matriz) {
   let vezes = 0;
   for (let index = 0; index < matriz.length; index += 1) {
     if (matriz[index] > maior) {
-      maior = matriz[matriz];
+      maior = matriz[index];
       vezes = 1;
     } else
     if (maior === matriz[index]) {
