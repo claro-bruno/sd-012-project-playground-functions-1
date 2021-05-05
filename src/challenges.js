@@ -66,7 +66,7 @@ function numberCountVerify(highestNumber, numberArray) {
 // Desafio 6
 function highestCount(numberArray) {
   // seu código aqui
-  let highestNumber = 0;
+  let highestNumber = numberArray[0];
   for (let index = 0; index < numberArray.length; index += 1) {
     if (numberArray[index] > highestNumber) {
       highestNumber = numberArray[index];
