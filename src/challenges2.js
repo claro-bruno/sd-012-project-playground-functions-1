@@ -18,6 +18,21 @@ function techList(arrTech, strName) {
 // console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'],'Cristiano'));
 
 // Desafio 11
+function repeted(arrNumb) {
+  let contador = 0;
+  let repetedNamb = 0;
+  for (let key of arrNumb) {
+    let numero = key;
+    for (let key2 of arrNumb) {
+      if (numero === key2) {
+        contador += 1;
+      }
+    }
+    repetedNamb = contador;
+  }
+  return repetedNamb;
+  contador = 0;
+}
 function generatePhoneNumber(arrNumb) {
   if (arrNumb.length === 11) {
     for (let index of arrNumb){
@@ -28,34 +43,9 @@ function generatePhoneNumber(arrNumb) {
   } else {
     return 'Array de tamanho incorreto.';
   }
-  function repeted(arrNumb) {
-    let contador = 0;
-    let repetedNamb = 0;
-    for (let key of arrNumb) {
-      let numero = key;
-      for (let key2 of arrNumb) {
-        if (numero === key2) {
-          contador += 1;
-        }
-      }
-      repetedNamb = contador;
-    }
-    return contador;
-    contador = 0;
-    }
-  return `(${arrNumb[0]}${arrNumb[1]})${arrNumb[2]}${arrNumb[3]}${arrNumb[4]}${arrNumb[5]}${arrNumb[6]}-${arrNumb[7]}${arrNumb[8]}${arrNumb[9]}${arrNumb[10]}`;
+  return `(${arrNumb[0]}${arrNumb[1]}) ${arrNumb[2]}${arrNumb[3]}${arrNumb[4]}${arrNumb[5]}${arrNumb[6]}-${arrNumb[7]}${arrNumb[8]}${arrNumb[9]}${arrNumb[10]}`;
 }
-console.log(generatePhoneNumber([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9]));
-
-
-
-
-
-
-
-
-
-
+// console.log(generatePhoneNumber([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9]));
 
 // Desafio 12
 function triangleCheck() {
