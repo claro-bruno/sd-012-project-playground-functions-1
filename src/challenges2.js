@@ -45,6 +45,7 @@ function generatePhoneNumber(numberArray) {
       phoneNumber += numberArray[index];
     } else if (index === 2) {      
       phoneNumber += ')';
+      phoneNumber += ' ';
       phoneNumber += numberArray[index];
     } else if (index === 7) {      
       phoneNumber += '-';
@@ -55,7 +56,7 @@ function generatePhoneNumber(numberArray) {
   }
   return phoneNumber;
 }
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+
 // Desafio 12
 function triangleCheck() {
   // seu código aqui
