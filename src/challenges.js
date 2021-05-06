@@ -1,7 +1,7 @@
 // // Desafio 1
-//function compareTrue(bool1,bool2) {
-//  return bool1 && bool2;
-//} 
+function compareTrue(bool1,bool2) {
+ return bool1 && bool2;
+} 
 // // Desafio 2
 //function calcArea() {//let area = (base * height) / 2;//return area;
 //}
@@ -28,17 +28,7 @@
   //   return match;
   // }
 // // Desafio 6
-function highestCount() {
-  let highestNumber = 0;
-  let counter = 0;
-  for (let index = 0; index < array.length; index += 1) {
-    if (array[index] >= highestNumber) {
-      highestNumber = array[index];
-      counter += 1;
-    }
-  }
-  return counter;
- }
+//
 // // Desafio 7
 // function catAndMouse() {
 //   // seu código aqui
