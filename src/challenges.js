@@ -6,15 +6,15 @@
 //function calcArea() {//let area = (base * height) / 2;//return area;
 //}
 // Desafio 3
- function splitSentence() {
-  let array = [];
-     let text = " ";
-      for ( let index=0; index< newfrase.length; index +=1); {
-      if (newfrase[index] == text);
-        array.push(text + newfrase[index];)
-     } 
-     return array;
-    }
+//  function splitSentence() {
+//   let array = [];
+//      let text = " ";
+//       for ( let index=0; index< newfrase.length; index +=1); {
+//       if (newfrase[index] == text);
+//         array.push(text + newfrase[index];)
+//      } 
+//      return array;
+//     }
 //  Desafio 4
 //  function concatName() {
 //   let primeiroNome = array[array.length -1];         
@@ -28,7 +28,17 @@
   //   return match;
   // }
 // // Desafio 6
-// f//
+  function highestCount() {
+  let highestNumber = 0;
+  let counter = 0;
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] >= highestNumber) {
+      highestNumber = array[index];
+      counter += 1;
+    }
+  }
+  return counter;
+ }
 // // Desafio 7
 // function catAndMouse() {
 //   // seu código aqui
