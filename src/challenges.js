@@ -28,7 +28,7 @@
   //   return match;
   // }
 // // Desafio 6
-  function highestCount() {
+function highestCount() {
   let highestNumber = 0;
   let counter = 0;
   for (let index = 0; index < array.length; index += 1) {
