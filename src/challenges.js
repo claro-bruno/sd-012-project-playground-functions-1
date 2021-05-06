@@ -1,99 +1,95 @@
 // Desafio 1
 function compareTrue(value1, value2) {
-  // seu código aqui  
+  // seu código aqui 
   
-    return value1 && value2 === true; 
+  if (value1 === true && value2 === true) {
+    return true; 
+  };
 };
 
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
 
-  return (base * height) / 2; 
+  return ((base * height) / 2); 
 };
 
 // Desafio 3
 function splitSentence(sentence) {
   // seu código aqui
 
-  return sentence.split(' ');
-}
+  return (sentence.split(' '));
+};
 
 // Desafio 4
-function concatName(names) {
+function concatName(name) {
   // seu código aqui
-  
-  let firstName = names[0]; 
-  let lastName = names[(names.length) - 1]; 
-  let concName = `${lastName}, ${firstName}`;
 
-  return concName;
+  return (name[lenght - 1] + ',' + name[0]);
 };
 
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
 
-  return (wins * 3 + ties * 1); 
+  return ((wins * 3) + ties); 
 };
 
 // Desafio 6
-function highestCount(highestNumber) {
+function highestCount(arrayNum) {
   // seu código aqui
 
-  let order = Math.max.apply(Math, highestNumber); 
-  let conclusion = 0; 
+  let highestValues = Math.max.apply(Math, arrayNum); 
+  let result = 0; 
 
-  for (let value of highestNumber) {
-    if (value === order) {
-      conclusion += 1; 
+  for (let key of arrayNum) {
+
+    if (key === highestValues) {
+      result += 1; 
     };
   };
-  return conclusion;
+
+  return result; 
 };
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
 
-  let distanceCat1 = cat1 - mouse; 
-  let distanceCat2 = cat2 - mouse; 
-
-  if (distanceCat1 < 0) {
-    distanceCat1 = distanceCat1 * -1; 
-  };
-  
-  if (distanceCat2 < 0) {
-    distanceCat2 = distanceCat2 * -1; 
+  let distance = {
+    distanceCat1: Math.abs(mouse - cat1),
+    distanceCat2: Math.abs(mouse - cat2) 
   };
 
-  if (distanceCat1 === distanceCat2) {
-    return "os gatos trombam e o rato foge"; 
-  } else if (distanceCat1 > distanceCat2) {
-    return "cat2"; 
+  if (distance.distanceCat1 > distance.distanceCat2) {
+    return "cat2";
+  } else if (distance.distanceCat2 > distance.distanceCat1) {
+    return "cat1";
   } else {
-    return "cat1"; 
+    return "os gatos trombam e o rato foge";
   };
 };
 
+
 // Desafio 8
-function fizzBuzz(arrayNum) {
+function fizzBuzz(arrayNum2) {
   // seu código aqui
 
-  let result = []; 
+  let arrayResult = [];
 
-  for (let count = 0; count < arrayNum.length; count += 1) {
-    if (arrayNum[count] % 3 === 0 && arrayNum[count] % 5 === 0) {
-      result[count] = 'fizzBuzz';
-    } else if (arrayNum[count] % 3 === 0) {
-      result[count] = 'fizz';
-    } else if (arrayNum[count] % 5 === 0) {
-      result[count] = 'buzz';
+  for (let count = 0; count < arrayNum2.length; count += 1) {
+    if (arrayNum2[count] % 3 === 0 && arrayNum2[count] % 5 === 0) {
+      arrayResult[count] = 'fizzBuzz';
+    } else if (arrayNum2[count] % 3 === 0) {
+      arrayResult[count] = 'fizz'; 
+    } else if (arrayNum2[count] % 5 === 0) {
+      arrayResult[count] = 'buzz'; 
     } else {
-      result[count] = 'bug!';
+      arrayResult[count] = 'bug!'; 
     }
   }
-    return result; 
+  
+  return arrayResult; 
 };
 
 // Desafio 9
@@ -109,8 +105,9 @@ function encode(string) {
   vowels = vowels.replace(/u/g, '5');
 
   return vowels; 
-}
-function decode() {
+};
+
+function decode(string) {
   // seu código aqui
 
   let numbers = string; 
@@ -122,7 +119,7 @@ function decode() {
   numbers = numbers.replace(/5/g, 'u');
 
   return numbers; 
-}
+};
 
 module.exports = {
   calcArea,
