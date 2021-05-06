@@ -4,7 +4,9 @@ function compareTrue(value1, value2) {
   
   if (value1 === true && value2 === true) {
     return true; 
-  };
+  } else {
+    return false; 
+  }
 };
 
 // Desafio 2
@@ -25,7 +27,11 @@ function splitSentence(sentence) {
 function concatName(name) {
   // seu código aqui
 
-  return (name[lenght - 1] + ',' + name[0]);
+  let firstName = names[0]; 
+  let lastName = names[(names.length) - 1]; 
+  let concName = `${lastName}, ${firstName}`;
+
+  return concName;
 };
 
 // Desafio 5
