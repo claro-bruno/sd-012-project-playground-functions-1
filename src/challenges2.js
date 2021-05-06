@@ -22,7 +22,7 @@ function techList(tech, name) {
         resultTechList[indexTechList] = object; 
     };
   } else {
-      resultTechList = "Vázio!";
+      resultTechList = "Vazio!";
   };
 
   return resultTechList; 

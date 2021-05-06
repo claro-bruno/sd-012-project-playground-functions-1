@@ -24,7 +24,7 @@ function splitSentence(sentence) {
 };
 
 // Desafio 4
-function concatName(name) {
+function concatName(names) {
   // seu código aqui
 
   let firstName = names[0]; 
