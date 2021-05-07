@@ -8,7 +8,7 @@ function techList(tech, name) {
   // Código utilizado para entender a questão: 
   // https://github.com/tryber/sd-012-project-playground-functions/pull/98/files
 
-  if (techList.length > 0) {
+  if (tech.length > 0) {
     let order = [];
     order = tech.sort();
   
