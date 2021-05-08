@@ -1,5 +1,5 @@
 // Desafio 1
-function compareTrue(a,b) {
+function compareTrue(a, b) {
 if (a === true && b === true){
       return true }
 else {return false}
@@ -44,13 +44,13 @@ console.log(footballPoints(0,0));
 // Desafio 6
 function highestCount(a) {
 let maiorNumero = a[0]
-for (index = 1; index <a.length; index +=1 ) {
+for (index = 1; index <a.length; index += 1 ) {
   if (a[index] > maiorNumero){
     maiorNumero = a[index];
   }
 }
 let repeticao = 0
-for  (index = 0; index < a.length; index +=1){
+for  (index = 0; index < a.length; index += 1){
     if(a[index] == maiorNumero){
       repeticao = repeticao + 1;
     }
@@ -63,13 +63,23 @@ console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
-  // seu código aqui
+ let distanciaCat1 = mouse - cat1
+ let distanciaCat2 = mouse - cat2
+ if (distanciaCat1 < distanciaCat2) {
+  return ("cat1");
+ } else if (distanciaCat1 === distanciaCat2){
+  return ("os gatos trombam e o rato foge");
+ } else if (distanciaCat1 > distanciaCat2){
+  return ("cat2");
+ }
 }
+console.log(catAndMouse(2,5,3));
+
 
 // Desafio 8
 function fizzBuzz(number) {
  let condicao =  []
-  for (let index = 0; index < number.length; index +=1){
+  for (let index = 0; index < number.length; index += 1){
   if (number[index] % 3 === 0 && number[index] % 5 === 0){
     condicao.push("fizzBuzz");
       } else if (number[index] % 3 === 0){
@@ -79,7 +89,7 @@ function fizzBuzz(number) {
       } else {
         condicao.push( "bug!")
      }
-}
+  }
 return condicao
 }
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
