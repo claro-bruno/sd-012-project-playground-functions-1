@@ -35,7 +35,7 @@ console.log(concatName(['captain', 'my', 'captain']));
 
   // Desafio 5
 function footballPoints(wins, ties) {
-  return(wins*3)+(ties*1)
+  return(wins*3)+(ties*1);
 }
 console.log(footballPoints(14,8));
 console.log(footballPoints(1,2));
@@ -63,8 +63,8 @@ console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
- let distanciaCat1 = mouse - cat1
- let distanciaCat2 = mouse - cat2
+ let distanciaCat1 = Math.abs(mouse - cat1)
+ let distanciaCat2 = Math.abs(mouse - cat2)
  if (distanciaCat1 < distanciaCat2) {
   return ("cat1");
  } else if (distanciaCat1 === distanciaCat2){
@@ -73,7 +73,7 @@ function catAndMouse(mouse,cat1,cat2) {
   return ("cat2");
  }
 }
-console.log(catAndMouse(2,5,3));
+console.log(catAndMouse(0,3,2));
 
 
 // Desafio 8
