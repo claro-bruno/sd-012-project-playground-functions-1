@@ -21,7 +21,6 @@ else{
 }
 
 // Desafio 11
-let phoneNumbers = [3,4,1,2,5,6,7,8,9,1,0];
 function generatePhoneNumber(phoneNumbers) {
   // seu código aqui
  if(verificaPhoneNumber(phoneNumbers) == 0){
@@ -59,14 +58,15 @@ function verificaPhoneNumber(arrays) {
   return 0
 }
 
-
-
-console.log(generatePhoneNumber(phoneNumbers))
 // Desafio 12
 function triangleCheck() {
   // seu código aqui
+  let ladoA = Math.random(1,15)
+  let ladoB = Math.random(1,15)
+  let ladoC = Math.random(1,15)
+  console.log(ladoA)
 }
-
+triangleCheck()
 // Desafio 13
 function hydrate() {
   // seu código aqui
