@@ -35,7 +35,7 @@ console.log(concatName(['captain', 'my', 'captain']));
 
   // Desafio 5
 function footballPoints(wins, ties) {
-  return(wins*3)+(ties*1);
+  return(wins*3)+(ties*1)
 }
 console.log(footballPoints(14,8));
 console.log(footballPoints(1,2));
@@ -64,7 +64,7 @@ console.log(highestCount([0, 0, 0]));
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
  let distanciaCat1 = Math.abs(mouse - cat1)
- let distanciaCat2 = Math.abs(mouse - cat2)
+ let distanciaCat2 = Math.abs (mouse - cat2)
  if (distanciaCat1 < distanciaCat2) {
   return ("cat1");
  } else if (distanciaCat1 === distanciaCat2){
@@ -97,15 +97,56 @@ console.log(fizzBuzz([7, 9]));
 console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
-
+function encode(frase1) {
+for(let index = 0; index < frase1.length; index +=1){
+  if ( frase1[index] === "a" || frase1[index] === "e"||frase1[index] ==="i"||frase1[index] ==="o"||frase1[index] ==="u"){
+    if ( frase1[index] === "a"){
+      frase1 =  frase1.replace( "a", "1");
+    }
+    if ( frase1[index] === "e"){
+      frase1 =  frase1.replace( "e", "2");
+    }
+    if ( frase1[index] === "i"){
+      frase1 =  frase1.replace( "i", "3");
+    }
+    if ( frase1[index] === "o"){
+      frase1 =  frase1.replace( "o", "4");
+    }
+    if ( frase1[index] === "u"){
+      frase1 =  frase1.replace( "u", "5");
+    }
+ }
 }
+return frase1
+}
+console.log(encode("hi there!"))
+
 
 
 // Desafio 10
-function decode() {
-  // seu código aqui
-}
+function decode(frase1) {
+  for(let index = 0; index < frase1.length; index +=1){
+    if ( frase1[index] === "1" || frase1[index] === "2"||frase1[index] ==="3"||frase1[index] ==="4"||frase1[index] ==="5"){
+      if ( frase1[index] === "1"){
+        frase1 =  frase1.replace( "1", "a");
+      }
+      if ( frase1[index] === "2"){
+        frase1 =  frase1.replace( "2", "e");
+      }
+      if ( frase1[index] === "3"){
+        frase1 =  frase1.replace( "3", "i");
+      }
+      if ( frase1[index] === "4"){
+        frase1 =  frase1.replace( "4", "o");
+      }
+      if ( frase1[index] === "5"){
+        frase1 =  frase1.replace( "5", "u");
+      }
+   }
+  }
+  return frase1
+  }
+  console.log(decode("h3 th2r2!"))
 
 module.exports = {
   calcArea,
