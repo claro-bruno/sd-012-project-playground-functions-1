@@ -20,27 +20,30 @@ function techList(tecnologias, name) {
 // Desafio 11
 function generatePhoneNumber(telefone) {
 let numeros = telefone
+let cont = 0;
 
 if (numeros.length < 11 || numeros.length > 11){
   return "Array com tamanho incorreto."
 }
-
 for(let index = 0; index < numeros.length; index +=1){
   if(numeros[index] < 0 || numeros[index] > 9){
     return "não é possível gerar um número de telefone com esses valores"
   }
-  for(let index2 = inicio+1; index2 < numeros.length; index2 +=1){
-  // if (numeros[index] == index2[index2]){
-  //   cont +=1;
+}
+for(let index = 0; index < numeros.length; index +=1){
+  for(let variavel2 = index  + 1; variavel2 < numeros.length; variavel2 +=1){
+   if (numeros[index] == numeros[variavel2]){
+      cont +=1;
   }
 }
-}
-if (cont > 3){
+    if (cont > 3){
   return "não é possível gerar um número de telefone com esses valores"
-}
+    }
+  }
+  return "("+numeros[0]+numeros[1]+")"+""+numeros[2]+numeros[3]+numeros[4]+numeros[5]+numeros[6]+"-"+numeros[7]+numeros[8]+numeros[9]+numeros[10]
 }
 
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1,]))
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
