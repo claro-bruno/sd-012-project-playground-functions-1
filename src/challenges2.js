@@ -19,20 +19,16 @@ console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Marcela"))
 
 // Desafio 11
 function generatePhoneNumber() {
-  // seu código aqui
+  let// seu código aqui
 }
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  // seu código aqui
+  let soma = lineA + lineB + lineC
+  if (soma )
 }
 
-
-
-
-
-
-
+console.log(triangleCheck(10,14,8))
 
 // Desafio 13
 function hydrate() {
