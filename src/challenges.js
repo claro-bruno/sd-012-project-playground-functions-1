@@ -37,7 +37,7 @@ function catAndMouse() {
 function fizzBuzz() {
   // seu código aqui
 }
-
+//
 // Desafio 9
 function encode() {
   // seu código aqui
