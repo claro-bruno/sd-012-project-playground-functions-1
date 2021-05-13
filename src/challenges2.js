@@ -76,9 +76,14 @@ function hydrate(bebidas) {
   for(let index = 0; index < bebida1.length; index +=1){
     total=total+Number(bebida1[index])
   }
-    return (total+" "+ "copos de água")
+  if (total > 1){
+    return (total + " "+ "copos de água")
+  }
+  else{
+    return (total + " "+ "copo de água")
+  }
 }
-console.log(hydrate("4 copos de vinho e 2 cerveja e 5 tequilas"))
+console.log(hydrate("1 cerveja"))
 
 module.exports = {
   generatePhoneNumber,
