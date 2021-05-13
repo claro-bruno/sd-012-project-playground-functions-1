@@ -44,6 +44,7 @@ for(let index = 0; index < numeros.length; index +=1){
 }
 
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1,]))
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 7, 7, 0, 1,]))
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
@@ -64,11 +65,20 @@ function triangleCheck(lineA, lineB, lineC) {
 } else { return true}
 }
 
-
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(bebidas) {
+
+  let NumBebidas = bebidas.replace(/([^\d])+/gim, ''); //https://pt.stackoverflow.com/questions/3719/como-obter-apenas-os-n%C3%BAmeros-de-uma-string-em-javascript
+
+  let bebida1 = NumBebidas.split("")
+  let total = 0;
+
+  for(let index = 0; index < bebida1.length; index +=1){
+    total=total+Number(bebida1[index])
+  }
+    return (total+" "+ "copos de água")
 }
+console.log(hydrate("4 copos de vinho e 2 cerveja e 5 tequilas"))
 
 module.exports = {
   generatePhoneNumber,
