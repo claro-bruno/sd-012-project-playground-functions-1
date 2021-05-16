@@ -96,7 +96,7 @@ function fizzBuzz() {
 }
 //
 // Desafio 9
-function encode() {
+function encode(texto) {
   // seu código aqui
   let newText = texto.replace(/a/g, '1');
             
@@ -107,7 +107,7 @@ function encode() {
     
   return newText;
 }
-function decode() {
+function decode(texto) {
   // seu código aqui
   let newText = texto.replace(/1/g, 'a');
               
