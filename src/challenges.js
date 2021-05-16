@@ -27,9 +27,14 @@ function splitSentence(setence) {
 splitSentence('tatakae sasageyo');
 
 // Desafio 4
-function concatName() {
+function concatName(frase) {
   // seu código aqui
+  // Consultei a página http://embuscadocodigo.com/codigos/javascript/length-array-em-javascript.html#:~:text=Para%20contar%20quantos%20elementos%20tem,chamamos%20o%20nome%20do%20array.
+  // Para pegar o valor do ultimo item do Array;
+  return frase[frase.legth() - 1]+ ", " + frase[0];
 }
+
+concatName("minha nossa nossa nosssaa");
 
 // Desafio 5
 function footballPoints() {
