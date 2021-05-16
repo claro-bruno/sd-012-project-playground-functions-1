@@ -7,6 +7,7 @@ function techList(tec, nome) {
   if (tec.length === 0) {
       return 'Vazio!';
   } else {
+      tec = tec.sort();
       for (let index = 0; index < tec.length; index += 1) {
           tch = {
               tech: tec[index],
