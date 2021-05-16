@@ -56,6 +56,8 @@ function highestCount(numbers) {
       total++;
     }    
   }
+
+  return total;
 }
 
 highestCount(3, 5, 9, 8, 9, 9);
