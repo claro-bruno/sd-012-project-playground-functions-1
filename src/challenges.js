@@ -52,13 +52,16 @@ function highestCount(numbers) {
   
   let total = 0;
   let numbersSorted = numbers.sort();
+  let higher = numbersSorted.length - 1;
 
-  for (let index = 0; index <= numbersSorted.length - 1; index += 1) {
-    if(numbersSorted[index] === numbersSorted[numbersSorted.length -1 ]){
+  for (let index = 0; index <= higher; index += 1) {
+    if(numbersSorted[index] === higher){
       total += 1 ;
     }    
   }
   return total;
+
+
 }
 
 // Desafio 7
