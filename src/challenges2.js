@@ -28,8 +28,15 @@ function generatePhoneNumber() {
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  // Tomei como referencia o código do link a seguir
+  // https://github.com/tryber/sd-012-project-playground-functions/pull/146/commits/f40240ad7d370c0fc7c0eceac064a907a31f0240
+  /* Devido a extensão da sequencia de comandos, não vi necessidade de reescrever. 
+     Ele compara os requisitos exigidos para a formação do triangulo e retorna
+     true ou false de forma ternario. 
+  */
+  return lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB && lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB);
 }
 
 // Desafio 13
