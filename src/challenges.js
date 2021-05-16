@@ -47,20 +47,21 @@ footballPoints(14, 8);
 // Desafio 6
 function highestCount(numbers) {
   // seu código aqui
+  // Tomei como referencia o código do link a seguir.
+  // https://github.com/tryber/sd-012-project-playground-functions/pull/146/commits/6a6a40ecfac3694528755ac9dd5caa0d9afa19c8
+  
+  let total = 0;
+  let numbersSorted = numbers.sort();
 
-  let total;
-  let numbers = numbers.sort();
-
-  for (let index = 0; numbers.length - 1; index += 1) {
-    if(numbers[index] === numbers[numbers.length -1 ]){
-      total++;
+  for (let index = 0; index <= numbersSorted.length - 1; index += 1) {
+    if(numbersSorted[index] === numbersSorted[numbersSorted.length -1 ]){
+      total +=1 ;
     }    
   }
-
   return total;
 }
 
-highestCount(3, 5, 9, 8, 9, 9);
+highestCount([3, 5, 9, 8, 9, 9]);
 
 // Desafio 7
 function catAndMouse() {
