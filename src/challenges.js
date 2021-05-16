@@ -68,12 +68,17 @@ function highestCount(numbers) {
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
 
+  let distCat1 = mouse - cat1;
+  let distCat2 = mouse - cat2;
+
+  if (distCat2 === distCat1) {
+    return 'os gatos trombam e o rato foge';
+  }
+
   if (cat1 < cat2) {
     return 'cat1';
-  } else if(cat2 < cat1) {
-    return 'cat2';
   } else {
-    return 'os gatos trombam e o rato foge';
+    return 'cat2';
   }
 
 }
