@@ -37,9 +37,12 @@ function concatName(frase) {
 concatName("minha nossa nossa nosssaa");
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  return (wins * 3) + (ties * 1);
 }
+
+footballPoints(14, 8);
 
 // Desafio 6
 function highestCount() {
