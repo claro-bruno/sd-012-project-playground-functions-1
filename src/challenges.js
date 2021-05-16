@@ -98,9 +98,25 @@ function fizzBuzz() {
 // Desafio 9
 function encode() {
   // seu código aqui
+  let newText = texto.replace(/a/g, '1');
+            
+    newText = newText.replace(/e/g, '2');
+    newText = newText.replace(/i/g, '3');
+    newText = newText.replace(/o/g, '4');
+    newText = newText.replace(/u/g, '5');
+    
+  return newText;
 }
 function decode() {
   // seu código aqui
+  let newText = texto.replace(/1/g, 'a');
+              
+    newText = newText.replace(/2/g, 'e');
+    newText = newText.replace(/3/g, 'i');
+    newText = newText.replace(/4/g, 'o');
+    newText = newText.replace(/5/g, 'u');
+
+  return newText;
 }
 
 module.exports = {
