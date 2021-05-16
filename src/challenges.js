@@ -51,16 +51,15 @@ function highestCount(numbers) {
   // https://github.com/tryber/sd-012-project-playground-functions/pull/146/commits/6a6a40ecfac3694528755ac9dd5caa0d9afa19c8
   
   let total = 0;
-  let higher = Math.max(numbers);
+  let higher = Math.max.apply(null,numbers);            
+  
+    for (let index = 0; index <= numbers.length - 1; index += 1) {
+        if(numbers[index] === higher){
+        total += 1 ;
+        }    
+    }
 
-  for (let index = 0; index <= higher; index += 1) {
-    if(numbers[index] === higher){
-      total += 1 ;
-    }    
-  }
   return total;
-
-
 }
 
 // Desafio 7
