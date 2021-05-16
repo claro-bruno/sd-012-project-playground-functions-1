@@ -14,8 +14,22 @@ function triangleCheck() {
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(text) {
   // seu código aqui
+  let numbers = text.replace(/[^0-9]/g,'');
+            let valor = 0 ;
+
+            for (let index = 0; index < numbers.length; index += 1) {
+                 valor = valor + parseInt(numbers[index]);                        
+            }
+
+            if (valor !== 0) {
+                if (valor === 1) {
+                    return "1 copo de água";
+                } else {
+                    return valor + ' copos de água';
+                }
+            } 
 }
 
 module.exports = {
