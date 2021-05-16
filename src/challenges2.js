@@ -2,12 +2,13 @@
 function techList(tec, nome) {
   // seu código aqui
   let obj = [];
+  let tch = {};
 
   if (tec.length === 0) {
       return 'Vazio!';
   } else {
       for (let index = 0; index < tec.length; index += 1) {
-          let tch = {
+          tch = {
               tech: tec[index],
               name: nome
           }
