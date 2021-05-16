@@ -55,17 +55,24 @@ function highestCount(numbers) {
 
   for (let index = 0; index <= numbersSorted.length - 1; index += 1) {
     if(numbersSorted[index] === numbersSorted[numbersSorted.length -1 ]){
-      total +=1 ;
+      total += 1 ;
     }    
   }
   return total;
 }
 
-highestCount([3, 5, 9, 8, 9, 9]);
-
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+
+  if (cat1 < cat2) {
+    return 'cat1';
+  } else if(cat2 < cat1) {
+    return 'cat2';
+  } else {
+    return 'os gatos trombam e o rato foge';
+  }
+
 }
 
 // Desafio 8
