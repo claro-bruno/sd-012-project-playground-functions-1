@@ -19,9 +19,12 @@ function calcArea(base, height) {
 calcArea();
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(setence) {
   // seu código aqui
+  return setence.split(' ');
 }
+
+splitSentence('tatakae sasageyo');
 
 // Desafio 4
 function concatName() {
