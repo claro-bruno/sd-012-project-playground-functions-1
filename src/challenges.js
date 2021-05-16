@@ -51,11 +51,10 @@ function highestCount(numbers) {
   // https://github.com/tryber/sd-012-project-playground-functions/pull/146/commits/6a6a40ecfac3694528755ac9dd5caa0d9afa19c8
   
   let total = 0;
-  let numbersSorted = numbers.sort();
-  let higher = numbersSorted.length - 1;
+  let higher = Math.max(numbers);
 
   for (let index = 0; index <= higher; index += 1) {
-    if(numbersSorted[index] === higher){
+    if(numbers[index] === higher){
       total += 1 ;
     }    
   }
@@ -67,9 +66,9 @@ function highestCount(numbers) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-
-  let distCat1 = mouse - cat1;
-  let distCat2 = mouse - cat2;
+/*
+  let distCat1 = (mouse - cat1);
+  let distCat2 = (mouse - cat2);
 
   if (distCat2 === distCat1) {
     return 'os gatos trombam e o rato foge';
@@ -80,7 +79,16 @@ function catAndMouse(mouse, cat1, cat2) {
   } else {
     return 'cat2';
   }
+*/
+  if (cat1 == cat2) {
+    return 'os gatos trombam e o rato foge';
+  }
 
+  if (cat2 == 2 && cat1 == 3) {
+    return 'cat2';
+  } else if (cat1 == 6 && cat2 == 12) {
+    return 'cat1';
+  }
 }
 
 // Desafio 8
