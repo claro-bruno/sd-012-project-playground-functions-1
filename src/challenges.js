@@ -26,7 +26,7 @@ let match = wins *3 + ties *1;
  return match;
 }
  //Desafio 6
- function highestCount(array) {
+   function highestCount(array) {
    let highestNumber = 0;
    let counter = 0;
    for (let index = 0; index < array.length; index += 1) {
@@ -38,11 +38,18 @@ let match = wins *3 + ties *1;
    return counter;
   }
 // Desafio 7
-  function catAndMouse() {
-  
- }
-
-// Desafio 8
+    function catAndMouse(mouse, cat1, cat2) {
+    let distanciaMouse = Math.abs(mouse - cat1)
+    let distanciaMouse2 = Math.abs(mouse - cat2)
+      if (distanciaMouse == distanciaMouse2) {
+        return "os gatos trombam e o rato foge"
+      } else if (distanciaMouse < distanciaMouse2) {
+        return "cat1"
+      } else if (distanciaMouse2 < distanciaMouse) {
+        return "cat2"
+      }
+    }
+ // Desafio 8
       function fizzBuzz(array) {
       let newArray = [];
       for (let index in array) {
