@@ -21,15 +21,24 @@ function techList(arrTech, strName) {
 function repeted(arrNumb) {
   let contador = 0;
   let repetedNamb = 0;
-  for (let index in arrNumb) { 
-    for (let key in arrNumb) { 
-      if (arrNumb[key] === arrNumb[index]) { //&& index != key
-        contador += 1; 
-      } 
-    } 
+  for (let coluna = 0; coluna < arrNumb.length; coluna += 1) {
+    for (let linha = 0; linha < arrNumb.length; linha += 1) {
+      if (coluna !== linha && arrNumb[coluna] === arrNumb[linha]) {
+        contador += 1;
+      }
+    }
     repetedNamb = contador;
     contador = 0;
   }
+  // for (let index in arrNumb) { 
+  //   for (let key in arrNumb) { 
+  //     if (arrNumb[key] === arrNumb[index]) { //&& index != key
+  //       contador += 1; 
+  //     } 
+  //   } 
+  //   repetedNamb = contador;
+  //   contador = 0;
+  // }
   return repetedNamb;
 }
 function generatePhoneNumber(arrNumb) {
