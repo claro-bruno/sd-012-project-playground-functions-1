@@ -30,7 +30,7 @@ let match = wins *3 + ties *1;
    let highestNumber = 0;
    let counter = 0;
    for (let index = 0; index < array.length; index += 1) {
-     if (array[index] >= highestNumber) {
+     if (array[index] > highestNumber) {
        highestNumber = array[index];
        counter += 1;
      }
