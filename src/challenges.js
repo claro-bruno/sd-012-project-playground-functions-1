@@ -11,8 +11,7 @@
   function splitSentence(newfrase) {
      return newfrase.split(' ');
     }
-     return newfrase.split= ' ';
- 
+      
 //  //Desafio 4
  function concatName(array) {
  let primeiroNome = array[array.length -1];         
