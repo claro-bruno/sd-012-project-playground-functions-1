@@ -12,7 +12,7 @@ function techList(tech, nome) {
     }
   }
   return objTech.length > 0 ? objTech : 'Vazio!';
-}
+};
 
 // Desafio 11
 function generatePhoneNumber() {
