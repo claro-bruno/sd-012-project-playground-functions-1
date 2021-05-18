@@ -26,17 +26,24 @@ let match = wins *3 + ties *1;
  return match;
 }
  //Desafio 6
-   function highestCount(array) {
-   let highestNumber = 0;
-   let counter = 0;
-   for (let index = 0; index < array.length; index += 1) {
-     if (array[index] > highestNumber) {
-       highestNumber = array[index];
-       counter += 1;
-     }
-   }
-   return counter;
+ function highestCount(numeros) {
+  let counter = 0;
+  let highNumber = numeros[0]
+
+  for (let index = 1; index < numeros.length; index += 1) {
+    if (numeros[index] > highNumber) {
+      highNumber = numeros[index];
+    }
   }
+
+  for (var chave of numeros) {
+    if (chave === highNumber) {
+      counter++
+    }
+
+  }
+  return counter
+}
 // Desafio 7
     function catAndMouse(mouse, cat1, cat2) {
     let distanciaMouse = Math.abs(mouse - cat1)
