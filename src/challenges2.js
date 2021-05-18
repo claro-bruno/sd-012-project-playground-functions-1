@@ -14,6 +14,7 @@ function techList(techName, name) {
   }
   return arrayFinal;
 }
+}
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
