@@ -61,6 +61,7 @@ let match = wins *3 + ties *1;
           newArray.push('bug!');
         }
       }
+      }
       return newArray;
     }
  
