@@ -52,18 +52,19 @@ let match = wins * 3 + ties * 1;
       }
     }
  // Desafio 8
- function fizzBuzz(numeros) {
+ function fizzBuzz(numbers) {
   let newArray = [];
-
-  for (let index of numeros) {
-    if (index % 3 === 0 && index % 5 === 0) {
-      newArray.push('fizzBUzz');
+  for (const numero of numbers) {
+    if ((numero % 3) === 0 && (numero % 5) === 0) {
       newArray.push('fizzBuzz');
-    } else if (index % 3 === 0) {
-      newArray.push('fizz');
-    } else if (index % 5 === 0) {
+    }
+    if ((numero % 3) !== 0 && (numero % 5) === 0) {
       newArray.push('buzz');
-    } else {
+    }
+    if ((numero % 3) === 0 && (numero % 5) !== 0) {
+      newArray.push('fizz');
+    }
+    if ((numero % 3) !== 0 && (numero % 5) !== 0) {
       newArray.push('bug!');
     }
   }
