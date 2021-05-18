@@ -1,5 +1,5 @@
 // Desafio 1
-   function compareTrue(bool1,bool2) {
+  function compareTrue(bool1,bool2) {
    return bool1 && bool2 ;
    } 
 //  Desafio 2
@@ -21,24 +21,23 @@
 }
 // Desafio 5
 function footballPoints(wins,ties) {
-let match = wins *3 + ties *1;
+let match = wins * 3 + ties * 1;
  return match;
 }
  //Desafio 6
- function highestCount(numeros) {
-  let counter = 0;
-  let highNumber = numeros[0]
-  for (let index = 1; index < numeros.length; index += 1) {
-    if (numeros[index] > highNumber) {
-      highNumber = numeros[index];
+ function highestCount(arrayNumbers) {
+  let counter = 1;
+  let majorNumber = arrayNumbers[0];
+  for (let index = 1; index < (arrayNumbers.length); index += 1) {
+    if (majorNumber === arrayNumbers[index]) {
+      counter += 1;
+    }
+    if (majorNumber < arrayNumbers[index]) {
+      majorNumber = arrayNumbers[index];
+      counter = 1;
     }
   }
-  for (var chave of numeros) {
-    if (chave === highNumber) {
-      counter++
-    }
-  }
-  return counter
+  return counter;
 }
 // Desafio 7
     function catAndMouse(mouse, cat1, cat2) {
