@@ -1,24 +1,19 @@
 // Desafio 10
 
-function techList(arrayTech, nome) {
-    arrayTech.sort();
-    let join = [];
-    for(let index = 0; index < arrayTech.length; index +=1) {
-      let obj = {
-        tech: arrayTech[index],
-        nome: nome
-      };
-      join.push(obj); 
-    }
-    if(arrayTech.length === 0) {
-      return 'Vazio!'
-    } else {
-      return join;
-    }
+function techList(techName, name) {
+  if (!techName.length) 
+  return 'Vazio!';
+  let arrayFinal = [];
+  for (let i = 0; i < techName.length; i += 1) {
+  for (let i in techName.sort()) {
+    let pull = {
+      tech: techName[i],
+      name: name,
+    };
+    arrayFinal.push(pull);
   }
-  
-
-
+  return arrayFinal;
+}
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
