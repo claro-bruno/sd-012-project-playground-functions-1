@@ -16,8 +16,7 @@
  function concatName(array) {
  let primeiroNome = array[array.length -1];         
  let ultimoNome =  array[0];
-let nome = primeiroNome + ', ' + ultimoNome;
-
+ let nome = primeiroNome + ', ' + ultimoNome;
  return nome; 
 }
 // Desafio 5
@@ -29,18 +28,15 @@ let match = wins *3 + ties *1;
  function highestCount(numeros) {
   let counter = 0;
   let highNumber = numeros[0]
-
   for (let index = 1; index < numeros.length; index += 1) {
     if (numeros[index] > highNumber) {
       highNumber = numeros[index];
     }
   }
-
   for (var chave of numeros) {
     if (chave === highNumber) {
       counter++
     }
-
   }
   return counter
 }
@@ -57,22 +53,23 @@ let match = wins *3 + ties *1;
       }
     }
  // Desafio 8
-      function fizzBuzz(array) {
-      let newArray = [];
-      for (let index in array) {
-      for (let index = 0; index < array.length; index += 1) {
-        if ((array[index] % 3 === 0) && (array[index] % 5 !== 0))        { newArray.push('fizz');
-        } else if ((array[index] % 5 === 0) && (array[index] % 3 !== 0)) { newArray.push('buzz');
-        } else if ((array[index] % 3 === 0) && (array[index] % 5 === 0)) { newArray.push('fizzBuzz');
-        } else {
-          newArray.push('bug!');
-        }
-      }
-      }
-      return newArray;
-    }
- 
+ function fizzBuzz(numeros) {
+  let newArray = [];
 
+  for (let index of numeros) {
+    if (index % 3 === 0 && index % 5 === 0) {
+      newArray.push('fizzBUzz');
+      newArray.push('fizzBuzz');
+    } else if (index % 3 === 0) {
+      newArray.push('fizz');
+    } else if (index % 5 === 0) {
+      newArray.push('buzz');
+    } else {
+      newArray.push('bug!');
+    }
+  }
+  return newArray;
+}
 // Desafio 9
    function encode(frase) {
     let novaFrase = frase
@@ -93,8 +90,7 @@ let match = wins *3 + ties *1;
         .replace(/5/g, 'u');
       return novoCodigo;
    }
-  
- module.exports = {
+   module.exports = {
    calcArea,
    catAndMouse,
    compareTrue,
