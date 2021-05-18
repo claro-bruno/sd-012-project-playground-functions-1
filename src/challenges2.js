@@ -19,32 +19,26 @@ function techList(arrTech, strName) {
 
 // Desafio 11
 function repeted(arrNumb) {
-  let contador = 0;
-  let repetedNamb = 0;
+  let arrayRepetidos = []; // recebe quais são os números que se repetem.
   for (let coluna = 0; coluna < arrNumb.length; coluna += 1) {
+    let contador = 0;
     for (let linha = 0; linha < arrNumb.length; linha += 1) {
-      if (coluna !== linha && arrNumb[coluna] === arrNumb[linha]) {
+      if (arrNumb[coluna] === arrNumb[linha]) {
         contador += 1;
+        arrayRepetidos.push(arrNumb[linha]); // resgata cada número repetido
       }
     }
-    repetedNamb = contador;
-    contador = 0;
+
+    if (contador >= 3) {
+      return contador;
+    }
   }
-  // for (let index in arrNumb) { 
-  //   for (let key in arrNumb) { 
-  //     if (arrNumb[key] === arrNumb[index]) { //&& index != key
-  //       contador += 1; 
-  //     } 
-  //   } 
-  //   repetedNamb = contador;
-  //   contador = 0;
-  // }
-  return repetedNamb;
 }
+
 function generatePhoneNumber(arrNumb) {
   if (arrNumb.length === 11) {
     for (let index of arrNumb) {
-      if (index < 0 || index > 9 || repeted(arrNumb) > 2) {
+      if (index < 0 || index > 9 || repeted(arrNumb) >= 3) {
         return 'não é possível gerar um número de telefone com esses valores';
       }
     }
