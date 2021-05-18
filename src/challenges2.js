@@ -34,7 +34,7 @@ function triangleCheck(lineA, lineB, lineC) {
   }
 
 // Desafio 13
-function hydrate() {
+
   function hydrate(drink) {
     // seu código aqui
     let consumo = drink.match(/\d+/g).map(Number);
@@ -49,7 +49,6 @@ function hydrate() {
     return total + ' copo de água';
   }
   
-}
 
 module.exports = {
   generatePhoneNumber,
