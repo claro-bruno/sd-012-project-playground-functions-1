@@ -76,10 +76,9 @@ const footballPoints = (wins, ties) => (wins * 3) + ties;
 // }
 
 const highestCount = (numbers) => {
-  let highest = 0;
-
-  numbers.forEach((number) => {
-    if (number > highest) highest = number;
+  const highest = numbers.reduce((acc, curr) => {
+    const result = curr > acc ? curr : acc;
+    return result;
   });
 
   const filteredByHighest = numbers.filter((number) => number === highest);
