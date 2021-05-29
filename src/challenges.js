@@ -1,17 +1,3 @@
-// Desafio 8 - ESLint
-function validation(number) {
-  if ((number % 5 === 0) && (number % 3 === 0)) {
-    return 'fizzBuzz';
-  }
-  if (number % 3 === 0) {
-    return 'fizz';
-  }
-  if (number % 5 === 0) {
-    return 'buzz';
-  }
-  return 'bug!';
-}
-
 // Desafio 9 - ESLint
 function challengeNine(characters, word, index) {
   for (let key in characters) {
@@ -24,10 +10,7 @@ function challengeNine(characters, word, index) {
 
 // Desafio 1
 function compareTrue(valueOne, valueTwo) {
-  if (valueOne && valueTwo) {
-    return true;
-  }
-  return false;
+  return (valueOne && valueTwo);
 }
 
 // Desafio 2
@@ -42,9 +25,7 @@ function splitSentence(text) {
 
 // Desafio 4
 function concatName(phrase) {
-  let firstWord = phrase[0];
-  let lastWord = phrase[phrase.length - 1];
-  return `${lastWord}, ${firstWord}`;
+  return `${phrase[phrase.length - 1]}, ${phrase[0]}`;
 }
 
 // Desafio 5
@@ -55,13 +36,7 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(numbers) {
   let greater = Math.max.apply(null, numbers);
-  let counter = 0;
-  for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] === greater) {
-      counter += 1;
-    }
-  }
-  return counter;
+  return numbers.filter((item) => item === greater).length;
 }
 
 // Desafio 7
@@ -77,11 +52,12 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(numbers) {
-  let answer = [];
-  for (let index = 0; index < numbers.length; index += 1) {
-    answer.push(validation(numbers[index]));
-  }
-  return answer;
+  return numbers.map((item) => {
+    if ((item % 5 === 0) && (item % 3 === 0)) return 'fizzBuzz';
+    if (item % 3 === 0) return 'fizz';
+    if (item % 5 === 0) return 'buzz';
+    return 'bug!';
+  });
 }
 
 // Desafio 9
@@ -127,5 +103,3 @@ module.exports = {
   highestCount,
   splitSentence,
 };
-
-console.log(highestCount([9, 19, 30, 30, 9, 5, 7]));
