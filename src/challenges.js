@@ -1,25 +1,19 @@
 // Desafio 1
-
 const compareTrue = (bool1, bool2) => bool1 === true && bool2 === true;
 
 // Desafio 2
-
 const calcArea = (base, height) => (base * height) / 2;
 
 // Desafio 3
-
 const splitSentence = (string) => string.split(' ');
 
 // Desafio 4
-
 const concatName = (array) => `${array[array.length - 1]}, ${array[0]}`;
 
 // Desafio 5
-
 const footballPoints = (wins, ties) => (wins * 3) + ties;
 
 // Desafio 6
-
 const highestCount = (numbers) => {
   const highest = numbers.reduce((acc, curr) => {
     const result = curr > acc ? curr : acc;
@@ -32,7 +26,6 @@ const highestCount = (numbers) => {
 };
 
 // Desafio 7
-
 const catAndMouse = (mouse, cat1, cat2) => {
   const distCat1 = Math.abs(cat1 - mouse);
   const distCat2 = Math.abs(cat2 - mouse);
@@ -44,7 +37,6 @@ const catAndMouse = (mouse, cat1, cat2) => {
 };
 
 // Desafio 8
-
 const fizzBuzz = (numbers) => {
   const result = numbers.map((number) => {
     if (number % 3 === 0 && number % 5 === 0) return 'fizzBuzz';
