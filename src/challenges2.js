@@ -50,29 +50,31 @@ const generatePhoneNumber = (numbers) => {
     return phoneNum;
   }, '(');
 };
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+// console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
-function triangleCheck(lineA, lineB, lineC) {
-  let lAMenorBC = (lineA < lineB + lineC);
-  let lBMenorAC = (lineB < lineA + lineC);
-  let lCMenorAB = (lineC < lineA + lineB);
-  let lAMaiorDifBC = lineA > Math.abs(lineB - lineC);
-  let lBMaiorDifAC = lineB > Math.abs(lineA - lineC);
-  let lCMaiorDifAB = lineC > Math.abs(lineA - lineB);
-  let menorQueSoma = (lAMenorBC === true) && (lBMenorAC === true) && (lCMenorAB === true);
-  let maiorQueDif = lAMaiorDifBC && lBMaiorDifAC && lCMaiorDifAB;
-  if (menorQueSoma === true) {
-    switch (maiorQueDif) {
-    case true:
-      return true;
-    default:
-      return false;
-    }
-  } else {
-    return false;
+// Função verifica requisito para formar triangulo: se a medida de qualquer uma das linhas é menor que a soma das medidas das outras duas
+const menorQueSoma = (lineA, lineB, lineC) => {
+  const lAMenorBC = (lineA < lineB + lineC);
+  const lBMenorAC = (lineB < lineA + lineC);
+  const lCMenorAB = (lineC < lineA + lineB);
+  return (lAMenorBC === true) && (lBMenorAC === true) && (lCMenorAB === true);
+};
+// Função verifica requisito para formar triangulo: se a medida de qualquer uma das linhas é maior que o valor absoluto da diferença entre as medidas das outras duas
+const maiorQueDif = (lineA, lineB, lineC) => {
+  const lAMaiorDifBC = lineA > Math.abs(lineB - lineC);
+  const lBMaiorDifAC = lineB > Math.abs(lineA - lineC);
+  const lCMaiorDifAB = lineC > Math.abs(lineA - lineB);
+  return lAMaiorDifBC && lBMaiorDifAC && lCMaiorDifAB;
+};
+// Função retorna true se for triangulo ou false se não for triangulo
+const triangleCheck = (lineA, lineB, lineC) => {
+  if (menorQueSoma(lineA, lineB, lineC) && maiorQueDif(lineA, lineB, lineC)) {
+    return true;
   }
-}
+  return false;
+};
+console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate(strQtdBebida) {
