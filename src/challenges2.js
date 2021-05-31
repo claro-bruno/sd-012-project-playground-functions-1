@@ -6,6 +6,7 @@ const techList = (techs, firstName) => {
   const sortTechs = techs.sort();
   return sortTechs.map((item) => ({ tech: item, name: firstName }));
 };
+// console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Diogo'));
 
 // Desafio 11
 function repeated(arr) {
