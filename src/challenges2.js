@@ -9,49 +9,48 @@ const techList = (techs, firstName) => {
 // console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Diogo'));
 
 // Desafio 11
-function repeated(arr) {
-  let contator = 0;
-  for (let indRep = 0; indRep < arr.length; indRep += 1) {
-    let repetitions = 0;
-    for (let indRep2 = 0; indRep2 < arr.length; indRep2 += 1) {
-      if (arr[indRep] === arr[indRep2]) {
-        repetitions += 1;
+// Função retorna a maior qualidade de vezes que um numero repete
+const repeated = (numbers) => {
+  let result = 0;
+  numbers.forEach((number) => {
+    let counter = 0;
+    numbers.forEach((comparator) => {
+      if (comparator === number) {
+        counter += 1;
       }
+    });
+    if (counter > result) {
+      result = counter;
     }
-    if (repetitions > contator) {
-      contator = repetitions;
-    }
-  }
-  return contator;
-}
-
-function generatePhoneNumber(arr) {
-  let repetitions = repeated(arr);
-  if (arr.length !== 11) {
-    return 'Array com tamanho incorreto.';
-  }
-  if (repetitions >= 3) {
+  });
+  return result;
+};
+// Função verifica se array de números atende as especificações
+const isValid = (numbers) => {
+  if (repeated(numbers) >= 3 || numbers.find((number) => number < 0 || number > 9)) {
     return 'não é possível gerar um número de telefone com esses valores';
   }
-  let ddd = '';
-  let phoneNumberPart1 = '';
-  let phoneNumberPart2 = '';
-  for (let index = 0; index < arr.length; index += 1) {
-    if (arr[index] < 0 || arr[index] > 9) {
-      return 'não é possível gerar um número de telefone com esses valores';
-    }
-    if (index === 0) {
-      ddd += `(${arr[index]}`;
-    } else if (index === 1) {
-      ddd += `${arr[index]})`;
-    } else if (index > 1 && index < 7) {
-      phoneNumberPart1 += arr[index];
-    } else {
-      phoneNumberPart2 += arr[index];
-    }
+  if (numbers.length !== 11) {
+    return 'Array com tamanho incorreto.';
   }
-  return `${ddd} ${phoneNumberPart1}-${phoneNumberPart2}`;
-}
+  return true;
+};
+// Função que gera numero de telefone caso todos os requisitos sejam validos
+const generatePhoneNumber = (numbers) => {
+  if (isValid(numbers) !== true) {
+    return isValid(numbers);
+  }
+  return numbers.reduce((phoneNum, number, index) => {
+    phoneNum += number;
+    if (index === 1) {
+      phoneNum += ') ';
+    } else if (index === 6) {
+      phoneNum += '-';
+    }
+    return phoneNum;
+  }, '(');
+};
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
