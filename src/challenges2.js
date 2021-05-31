@@ -1,22 +1,11 @@
 // Desafio 10
-function techList(tech, nome) {
-  let sortArray = tech.sort();
-  let arrayTechs = [];
-  let techs = {};
-  let result = arrayTechs;
-  if (tech.length === 0) {
-    result = 'Vazio!';
-  } else {
-    for (let index = 0; index < sortArray.length; index += 1) {
-      techs = {
-        tech: sortArray[index],
-        name: nome,
-      };
-      arrayTechs.push(techs);
-    }
+const techList = (techs, firstName) => {
+  if (techs.length === 0) {
+    return 'Vazio!';
   }
-  return result;
-}
+  const sortTechs = techs.sort();
+  return sortTechs.map((item) => ({ tech: item, name: firstName }));
+};
 
 // Desafio 11
 function repeated(arr) {
