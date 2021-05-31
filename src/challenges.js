@@ -1,79 +1,34 @@
 // Desafio 1
-function compareTrue(bool1, bool2) {
-  let saoTrue = false;
-  if ((bool1 && bool2) === true) {
-    saoTrue = true;
-  }
-  return saoTrue;
-}
+const compareTrue = (bool1, bool2) => bool1 && bool2;
+// console.log(compareTrue(true, true));
 
 // Desafio 2
-function calcArea(base, height) {
-  let areaTriangulo = (base * height) / 2;
-  return areaTriangulo;
-}
+const calcArea = (base, height) => (base * height) / 2;
+// console.log(calcArea(51, 1));
 
 // Desafio 3
-function splitSentence(string) {
-  let palavra = '';
-  let fraseDividida = [];
-  for (let index = 0; index <= string.length; index += 1) {
-    if ((string[index] === ' ') || (index === string.length)) {
-      fraseDividida.push(palavra);
-      palavra = '';
-    } else {
-      palavra += string[index];
-    }
-  }
-  return fraseDividida;
-}
+const splitSentence = (string) => string.split(' ');
+// console.log(splitSentence('foguete'));
 
 // Desafio 4
-function concatName(arrayString) {
-  let firstItem = arrayString[0];
-  let lastItem = arrayString.pop();
-  let lastFirstItem = `${lastItem}, ${firstItem}`;
-  return lastFirstItem;
-}
+const concatName = (arrayString) => `${arrayString.pop()}, ${arrayString[0]}`;
+// console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
-function footballPoints(wins, ties) {
-  let pointsForWin = 3;
-  let pointsForTies = 1;
-  let totalPointsOfWin = wins * pointsForWin;
-  let totalPointsOfTie = ties * pointsForTies;
-  let totalPoints = totalPointsOfWin + totalPointsOfTie;
-  return totalPoints;
-}
+const footballPoints = (wins, ties) => (wins * 3) + (ties);
+// console.log(footballPoints(0, 0));
 
 // Desafio 6
-function higherNumber(arrayNumbers) {
-  let numbers = arrayNumbers;
-  let higherNum = numbers[0];
-  for (let index in numbers) {
-    if (numbers[index] > higherNum) {
-      higherNum = numbers[index];
+const highestCount = (arrayNumbers) => {
+  const higherNum = arrayNumbers.sort((a, b) => a - b).pop();
+  return arrayNumbers.reduce((acc, curr) => {
+    if (curr === higherNum) {
+      acc += 1;
     }
-  }
-  return higherNum;
-}
-
-function numRepetitions(arrayNumbers, number) {
-  let amountRepet = 0;
-
-  for (let index in arrayNumbers) {
-    if (number === arrayNumbers[index]) {
-      amountRepet += 1;
-    }
-  }
-  return amountRepet;
-}
-
-function highestCount(arrayNumbers) {
-  let biggerNum = higherNumber(arrayNumbers);
-  let repetitions = numRepetitions(arrayNumbers, biggerNum);
-  return repetitions;
-}
+    return acc;
+  }, 1);
+};
+// console.log(higherNumber([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
