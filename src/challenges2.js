@@ -27,11 +27,11 @@ const repeated = (numbers) => {
 };
 // Função verifica se array de números atende as especificações
 const isValid = (numbers) => {
-  if (repeated(numbers) >= 3 || numbers.find((number) => number < 0 || number > 9)) {
-    return 'não é possível gerar um número de telefone com esses valores';
-  }
   if (numbers.length !== 11) {
     return 'Array com tamanho incorreto.';
+  }
+  if (repeated(numbers) >= 3 || numbers.find((number) => number < 0 || number > 9)) {
+    return 'não é possível gerar um número de telefone com esses valores';
   }
   return true;
 };
@@ -77,18 +77,19 @@ const triangleCheck = (lineA, lineB, lineC) => {
 // console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate(strQtdBebida) {
-  let numbers = strQtdBebida.match(/\d+/g);
-  let resultado = 0;
-  for (let index = 0; index < numbers.length; index += 1) {
-    let parcial = parseInt(numbers[index], 0);
-    resultado += parcial;
+const hydrate = (drinks) => {
+  const numbers = drinks.match(/\d+/g);
+  const amountGlasses = numbers.reduce((glassesWater, amountDrinks) => {
+    glassesWater += parseInt(amountDrinks, 0);
+    return glassesWater;
+  }, 0);
+  if (amountGlasses === 1) {
+    return `${amountGlasses} copo de água`;
   }
-  if (resultado === 1) {
-    return `${resultado} copo de água`;
-  }
-  return `${resultado} copos de água`;
-}
+  return `${amountGlasses} copos de água`;
+};
+
+// console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
