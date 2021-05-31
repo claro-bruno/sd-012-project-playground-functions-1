@@ -1,58 +1,29 @@
 // Desafio 11 - ESLint
-function outLimit(numeros) {
-  for (let num of numeros) {
-    if (num < 0 || num > 9) {
-      return true;
-    }
-  }
-  return false;
-}
-
-// Continuação da função repeatedNumber para respeitar o ESLint;
-function validating(numeros, i) {
-  let count = 0;
-  for (let j = 0; j < numeros.length; j += 1) {
-    if (numeros[i] === numeros[j]) {
-      count += 1;
-    }
-  }
-  return count;
-}
-
 function repeatedNumber(numeros) {
-  let counter = 0;
-  for (let i = 0; i < numeros.length; i += 1) {
-    counter = validating(numeros, i);
-    if (counter >= 3) {
-      return true;
+  let result = false;
+  numeros.forEach((item) => {
+    if (numeros.filter((itemSec) => itemSec === item).length > 2) {
+      result = true;
     }
-  }
-  return false;
+  });
+  return result;
 }
 
 // Desafio 10
 function techList(technology, person) {
-  if (technology.length < 1) {
-    return 'Vazio!';
-  }
+  if (technology.length < 1) return 'Vazio!';
   technology.sort();
-  let result = [];
-  let object = {};
-  for (let index = 0; index < technology.length; index += 1) {
-    object.tech = technology[index];
-    object.name = person;
-    result.push(object);
-    object = {};
-  }
-  return result;
+  return technology.map((item) => ({
+    tech: item,
+    name: person,
+  }));
 }
 
 // Desafio 11
 function generatePhoneNumber(number) {
-  if (number.length !== 11) {
-    return 'Array com tamanho incorreto.';
-  }
-  if (outLimit(number) || repeatedNumber(number)) {
+  if (number.length !== 11) return 'Array com tamanho incorreto.';
+  const correctLimit = number.every((item) => item >= 0 && item < 10);
+  if (!correctLimit || repeatedNumber(number)) {
     return 'não é possível gerar um número de telefone com esses valores';
   }
   number = number.join('');
