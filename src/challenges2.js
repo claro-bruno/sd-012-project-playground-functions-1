@@ -74,7 +74,7 @@ const triangleCheck = (lineA, lineB, lineC) => {
   }
   return false;
 };
-console.log(triangleCheck(10, 14, 8));
+// console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate(strQtdBebida) {
