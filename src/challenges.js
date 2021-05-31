@@ -31,22 +31,21 @@ const highestCount = (arrayNumbers) => {
 // console.log(higherNumber([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
+const catAndMouse = (mouse, cat1, cat2) => {
   let distanceCat1 = Math.abs(cat1 - mouse);
   let distanceCat2 = Math.abs(cat2 - mouse);
-  let resposta;
   if (distanceCat1 < distanceCat2) {
-    resposta = 'cat1';
-  } else if (distanceCat2 < distanceCat1) {
-    resposta = 'cat2';
-  } else {
-    resposta = 'os gatos trombam e o rato foge';
+    return 'cat1';
   }
-  return resposta;
-}
+  if (distanceCat2 < distanceCat1) {
+    return 'cat2';
+  }
+  return 'os gatos trombam e o rato foge';
+};
+// console.log(catAndMouse(0, 3, -2));
 
 // Desafio 8
-function conditionsFizzBuzz(number) {
+const fizzBuzz = (numbers) => numbers.map((number) => {
   if ((number % 3 === 0) && (number % 5 === 0)) {
     return 'fizzBuzz';
   }
@@ -57,56 +56,37 @@ function conditionsFizzBuzz(number) {
     return 'buzz';
   }
   return 'bug!';
-}
-
-function fizzBuzz(numbers) {
-  let newArray = [];
-  for (let index = 0; index < numbers.length; index += 1) {
-    let number = numbers[index];
-    newArray.push(conditionsFizzBuzz(number));
-  }
-  return newArray;
-}
+});
+// console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode(string) {
-  let newString = '';
-  let vowelNumber = {
-    a: '1',
-    e: '2',
-    i: '3',
-    o: '4',
-    u: '5',
-  };
-  for (let index = 0; index < string.length; index += 1) {
-    let str = string[index];
-    if (vowelNumber[str] === undefined) {
-      newString += str;
-    } else {
-      newString += vowelNumber[str];
-    }
-  }
-  return newString;
-}
-function decode(string) {
-  let newString = '';
-  let vowelNumber = {
-    1: 'a',
-    2: 'e',
-    3: 'i',
-    4: 'o',
-    5: 'u',
-  };
-  for (let index = 0; index < string.length; index += 1) {
-    let str = string[index];
-    if (vowelNumber[str] === undefined) {
-      newString += str;
-    } else {
-      newString += vowelNumber[str];
-    }
-  }
-  return newString;
-}
+const encode = (string) => {
+  const strSplit = string.split('');
+  return strSplit.reduce((acc, curr) => {
+    const replaceA = curr.replace('a', 1);
+    const replaceE = replaceA.replace('e', 2);
+    const replaceI = replaceE.replace('i', 3);
+    const replaceO = replaceI.replace('o', 4);
+    const replaceU = replaceO.replace('u', 5);
+    acc += replaceU;
+    return acc;
+  }, '');
+};
+// console.log(encode('hi there!'));
+
+const decode = (string) => {
+  const strSplit = string.split('');
+  return strSplit.reduce((acc, curr) => {
+    const replaceA = curr.replace(1, 'a');
+    const replaceE = replaceA.replace(2, 'e');
+    const replaceI = replaceE.replace(3, 'i');
+    const replaceO = replaceI.replace(4, 'o');
+    const replaceU = replaceO.replace(5, 'u');
+    acc += replaceU;
+    return acc;
+  }, '');
+};
+console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
