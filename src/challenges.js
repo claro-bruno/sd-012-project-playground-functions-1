@@ -20,15 +20,15 @@ const footballPoints = (wins, ties) => (wins * 3) + (ties);
 
 // Desafio 6
 const highestCount = (arrayNumbers) => {
-  const higherNum = arrayNumbers.sort((a, b) => a - b).pop();
+  const higherNum = Math.max(...arrayNumbers);
   return arrayNumbers.reduce((acc, curr) => {
     if (curr === higherNum) {
       acc += 1;
     }
     return acc;
-  }, 1);
+  }, 0);
 };
-// console.log(higherNumber([9, 1, 2, 3, 9, 5, 7]));
+// console.log(highestCount([10, 10, 2, 3, 9, 5, 9]));
 
 // Desafio 7
 const catAndMouse = (mouse, cat1, cat2) => {
@@ -86,7 +86,7 @@ const decode = (string) => {
     return acc;
   }, '');
 };
-console.log(decode('h3 th2r2!'));
+// console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
