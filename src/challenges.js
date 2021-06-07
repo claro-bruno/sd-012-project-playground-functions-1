@@ -14,7 +14,7 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-
+  return string.split(' ')
 }
 
 // Desafio 4
@@ -51,7 +51,7 @@ function decode() {
   
 }
 
-console.log(encode('hi there'));
+// console.log(encode('hi there'));
 
 module.exports = {
   calcArea,
