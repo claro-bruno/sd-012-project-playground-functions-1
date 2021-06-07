@@ -9,17 +9,19 @@ function compareTrue(num1, num2) {
 
 // // Desafio 2
 function calcArea(base, height) {
-  return (base * height) * 2;
+  return (base * height) / 2;
 }
 
 // Desafio 3
 function splitSentence(string) {
-  return string.split(' ')
+  return string.split(' ');
 }
 
 // Desafio 4
 function concatName(array) {
-
+  const firstElement = array[0];
+  const lastElement = array[array.length -1];
+  return [lastElement, firstElement]
 }
 
 // Desafio 5
