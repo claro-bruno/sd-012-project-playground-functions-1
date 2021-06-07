@@ -26,7 +26,10 @@ function concatName(array) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
+  const win = wins * 3;
+  const tie = ties * 1;
 
+  return win + tie;
 }
 
 // Desafio 6
