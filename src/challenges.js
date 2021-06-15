@@ -1,5 +1,5 @@
 // Desafio 1
-function compareTrue(a, b) {
+const compareTrue= (a, b) => {
   if (a === true && b === true) {
     return true
   } else {
@@ -9,14 +9,14 @@ function compareTrue(a, b) {
 
 
 // Desafio 2
-function calcArea(base, height) {
+const calcArea = (base, height) => {
   let result = (base * height) / 2;
   return result;
 };
 
 
 // Desafio 3
-function splitSentence(string) {
+const splitSentence = (string) => {
   let sentence = string;
   let result = sentence.split(' ');
   return result;
@@ -24,7 +24,7 @@ function splitSentence(string) {
 
 
 // Desafio 4
-function concatName(names) {
+const concatName = (names) => {
   let result = (names[names.length -1] + ', ' + names[0]);
   
   return result;
@@ -32,7 +32,7 @@ function concatName(names) {
 
 
 // Desafio 5
-function footballPoints(wins, ties) {
+const footballPoints = (wins, ties) => {
   let totalPoints = (wins * 3) + (ties * 1);
 
   return totalPoints
@@ -40,7 +40,7 @@ function footballPoints(wins, ties) {
 
 
 // Desafio 6
-function highestCount(numbers) {
+const highestCount = (numbers) => {
     let higherNumber = 0;
     let count = 0;
 
@@ -60,7 +60,7 @@ function highestCount(numbers) {
 
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
+const catAndMouse = (mouse, cat1, cat2) => {
   let distance1 = Math.abs(mouse - cat1);
   let distance2 = Math.abs(mouse - cat2);
 
@@ -75,7 +75,7 @@ function catAndMouse(mouse, cat1, cat2) {
 
 
 // Desafio 8
-function fizzBuzz(numbers) {
+const fizzBuzz = (numbers) => {
   let list = [ ]
   for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] % 3 == 0 && numbers[index] % 5 == 0) {
@@ -93,11 +93,26 @@ function fizzBuzz(numbers) {
 
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  const map = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  };
+  return mapString(map, string);
 }
-function decode() {
-  // seu código aqui
+
+function decode(string) {
+  const map = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  };
+  return mapString(map, string);
 }
 
 module.exports = {
