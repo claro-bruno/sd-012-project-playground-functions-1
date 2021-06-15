@@ -49,6 +49,7 @@ for (let index = 0; index < numbers.length; index += 1) {
     higherNumber = numbers[index];
   }
 }
+
 for (let index = 0; index < numbers.length; index += 1) {
   if (higherNumber === numbers[index]) {
     count += 1;
@@ -56,7 +57,6 @@ for (let index = 0; index < numbers.length; index += 1) {
 };
 return count;
 };
-
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
