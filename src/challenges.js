@@ -1,5 +1,5 @@
 // Desafio 1
-const compareTrue= (a, b) => {
+function compareTrue(a, b){
   if (a === true && b === true) {
     return true
   } else {
@@ -9,14 +9,14 @@ const compareTrue= (a, b) => {
 
 
 // Desafio 2
-const calcArea = (base, height) => {
+function calcArea(base, height){
   let result = (base * height) / 2;
   return result;
 };
 
 
 // Desafio 3
-const splitSentence = (string) => {
+function splitSentence(string) {
   let sentence = string;
   let result = sentence.split(' ');
   return result;
@@ -24,7 +24,7 @@ const splitSentence = (string) => {
 
 
 // Desafio 4
-const concatName = (names) => {
+function concatName(names) {
   let result = (names[names.length -1] + ', ' + names[0]);
   
   return result;
@@ -32,7 +32,7 @@ const concatName = (names) => {
 
 
 // Desafio 5
-const footballPoints = (wins, ties) => {
+function footballPoints(wins, ties) {
   let totalPoints = (wins * 3) + (ties * 1);
 
   return totalPoints
@@ -40,7 +40,7 @@ const footballPoints = (wins, ties) => {
 
 
 // Desafio 6
-const highestCount = (numbers) => {
+function highestCount(numbers) {
     let higherNumber = 0;
     let count = 0;
 
@@ -60,7 +60,7 @@ const highestCount = (numbers) => {
 
 
 // Desafio 7
-const catAndMouse = (mouse, cat1, cat2) => {
+function catAndMouse(mouse, cat1, cat2) {
   let distance1 = Math.abs(mouse - cat1);
   let distance2 = Math.abs(mouse - cat2);
 
@@ -75,21 +75,22 @@ const catAndMouse = (mouse, cat1, cat2) => {
 
 
 // Desafio 8
-const fizzBuzz = (numbers) => {
-  let list = [ ]
+function fizzBuzz(numbers) {
+  let list = 0;
   for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 3 == 0 && numbers[index] % 5 == 0) {
-      list.push('fizzBuzz')
-    } else if (numbers[index] % 3 != 0 && numbers[index] % 5 != 0) {
-      list.push('bug!')
-    } else if (numbers[index] % 3 == 0) {
+    if (numbers[index] % 3 == 0) {
       list.push('fizz')
     } else if (numbers[index] % 5 == 0) {
       list.push('buzz')
+    } else if (numbers[index] % 3 == 0 && numbers[index] % 5 == 0) {
+      list.push('fizzBuzz')
+    } else if (numbers[index] % 3 != 0 && numbers[index] % 5 != 0) {
+      list.push ('bug!')
     };
   };
   return list;
 };
+
 
 
 // Desafio 9
