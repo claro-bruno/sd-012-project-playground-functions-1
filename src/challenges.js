@@ -41,21 +41,20 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(numbers) {
-    let higherNumber = 0;
-    let count = 0;
+  let higherNumber = 0;
+  let count = 0;
 
-  for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] > higherNumber) {
-      higherNumber = numbers[index];
-    }
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] > higherNumber) {
+    higherNumber = numbers[index];
   }
-
-  for (let index = 0; index < numbers.length; index += 1) {
-    if (higherNumber === numbers[index]) {
-      count += 1;
-    }
-  };
-  return count;
+}
+for (let index = 0; index < numbers.length; index += 1) {
+  if (higherNumber === numbers[index]) {
+    count += 1;
+  }
+};
+return count;
 };
 
 
@@ -76,24 +75,36 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(numbers) {
-  let list = 0;
+  let list = [ ]
   for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 3 == 0) {
+    if (numbers[index] % 3 == 0 && numbers[index] % 5 == 0) {
+      list.push('fizzBuzz')
+    } else if (numbers[index] % 3 != 0 && numbers[index] % 5 != 0) {
+      list.push('bug!')
+    } else if (numbers[index] % 3 == 0) {
       list.push('fizz')
     } else if (numbers[index] % 5 == 0) {
       list.push('buzz')
-    } else if (numbers[index] % 3 == 0 && numbers[index] % 5 == 0) {
-      list.push('fizzBuzz')
-    } else if (numbers[index] % 3 != 0 && numbers[index] % 5 != 0) {
-      list.push ('bug!')
     };
   };
   return list;
 };
 
 
-
 // Desafio 9
+
+function mapString (objectMap, string) {
+  const splitString = string.split('');
+  const mappedArray = splitString.map((character) => {
+    if (objectMap[character]) {
+      return objectMap [character];
+    }
+    return character;
+  });
+  return mappedArray.join('');
+}
+
+
 function encode(string) {
   const map = {
     a: 1,
