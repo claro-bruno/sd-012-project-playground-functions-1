@@ -1,12 +1,12 @@
+
 // Desafio 1
 function compareTrue(bool1,bool2) {
   // seu código aqui
- if (bool1 === true && bool2 === true ) {
-   return true
-  }
-  else {
-    return false;
-  }
+ if (bool1 === true && bool2 === true) {
+   return true;
+ }else {
+   return false
+ }
 };
 // Desafio 2
 function calcArea(base,height) {
@@ -94,7 +94,7 @@ function encode(string) {
   text = text.replace(/o/g, '4');
   text = text.replace(/u/g, '5');
   return text;
-};
+};  // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 function decode(string) {
   let text = string;
   text = text.replace(/1/g, 'a');
