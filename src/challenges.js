@@ -80,10 +80,52 @@ function fizzBuzz(array) {
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
-function encode(stringVogais) {
-  // seu código aqui
+function encode(string) {
+let stringdividida = string.split('');
+let resultado = '';
+  switch(stringdividida) {
+    case 'a':
+    resultado.push(1);
+    break;
+    case 'e':
+    resultado.push(2);
+    break;
+    case 'i':
+    resultado.push(3);
+    break;
+    case 'o':
+    resultado.push(4);
+    break;
+    case 'u':
+    resultado.push(5);
+    break;
+  }
+  return resultado;
 }
-function decode(stringNumeros) {
+console.log(encode("hi there!"));
+// let string = "hi there!"
+// let stringdividida = string.split('');
+// // console.log(stringdividida)
+// let resultado = '';
+//   for (index = 0; index < stringdividida.length; index ++){
+//     if (stringdividida[index] === 'a') {
+//       resultado.push(1);
+//     } else if (stringdividida[index] === 'e') {
+//       resultado.push(2);
+//     } else if (stringdividida[index] === 'i') {
+//       resultado.push(3);
+//     } else if (stringdividida[index] === 'o') {
+//       resultado.push(4);
+//     } else if (stringdividida[index] === 'u'){
+//       resultado.push(5);
+//     }
+//   }
+//   return resultado;
+// }
+// console.log(encode("hi there!"));
+
+
+function decode(string) {
   // seu código aqui
 }
 
